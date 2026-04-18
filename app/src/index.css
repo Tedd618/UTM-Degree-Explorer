@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    @apply font-sans text-gray-800 bg-gray-50;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Thin scrollbar on webkit */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-gray-400; }
+}
+
+@layer components {
+  /* Status band colours — used as inline style or via data attribute */
+  .status-completed  { @apply bg-emerald-600 text-white; }
+  .status-in-progress { @apply bg-blue-600 text-white; }
+  .status-no-issues  { @apply bg-violet-600 text-white; }
+  .status-issues     { @apply bg-red-600 text-white; }
+  .status-unknown    { @apply bg-gray-400 text-white; }
+
+  /* Sidebar nav item */
+  .sidebar-plan-item {
+    @apply flex items-center gap-2 px-3 py-1.5 rounded-md text-sm cursor-pointer
+           text-gray-700 hover:bg-gray-100 transition-colors;
+  }
+  .sidebar-plan-item.active {
+    @apply bg-utm-light text-utm-navy font-medium border-l-2 border-utm-blue;
+  }
+}

@@ -154,21 +154,13 @@ Format for `programs/cs-major.json`:
 
 ## Milestones
 
-| # | Milestone | Deliverable |
-|---|---|---|
-| 1 | Data extraction | `data/courses.json` with all ~2,540 UTM courses |
-| 2 | Program data | JSON files for target programs |
-| 3 | Core planner | Semester table with drag-and-drop |
-| 4 | Prerequisite engine | Validation + missing prerequisite radar |
-| 5 | One-click import | Add required courses from a program |
-| 6 | Degree progress | Credit tracker + progress bars |
-| 7 | Graph visualizer | DAG view per course |
-| 8 | Polish + export | PDF/image export of plan |
-
----
-
-## Current Task
-
-**Milestone 1** — Run `scraper/scrape_courses.py` to extract all course data
-into `data/courses.json`. The scraper is ready to run with `python3
-scraper/scrape_courses.py`.
+| # | Milestone | Status | Deliverable |
+|---|---|---|---|
+| 1 | Data extraction | ✅ Done | `data/courses.json` — 2,231 UTM courses |
+| 2 | Program data | ✅ Done | `data/programs_structured.json` — 164 programs with ASTs |
+| 3 | Core planner | ✅ Done | Semester grid, prerequisite validation, credit summary, multi-plan support |
+| 4 | Prerequisite radar | 🔜 Next | Surface unmet prereqs with one-click add |
+| 5 | One-click import | 🔜 | Add all required courses from a program in topological order |
+| 6 | Degree progress | 🔜 | Per-requirement credit satisfaction bars |
+| 7 | Graph visualizer | 🔜 | DAG view per course |
+| 8 | Polish + export | 🔜 | Course search, PDF/image export |
