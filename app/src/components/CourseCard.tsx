@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import type { Course, CourseStatus } from '../types'
 
 const STATUS_LABEL: Record<CourseStatus, string> = {
-  completed:   'Completed',
+  completed:     'Completed',
   'in-progress': 'In Progress',
-  'no-issues': 'No Issues',
-  issues:      'Issues Found',
-  unknown:     'Unknown',
+  'no-issues':   'No Issues',
+  issues:        'Issues Found',
+  unknown:       'Unknown',
 }
 
 const STATUS_CLASS: Record<CourseStatus, string> = {
-  completed:   'status-completed',
+  completed:     'status-completed',
   'in-progress': 'status-in-progress',
-  'no-issues': 'status-no-issues',
-  issues:      'status-issues',
-  unknown:     'status-unknown',
+  'no-issues':   'status-no-issues',
+  issues:        'status-issues',
+  unknown:       'status-unknown',
 }
 
 interface Props {
@@ -25,17 +25,39 @@ interface Props {
   onRemove: () => void
 }
 
+interface InfoRowProps { label: string; children: React.ReactNode }
+function InfoRow({ label, children }: InfoRowProps) {
+  return (
+    <div className="flex gap-2 text-[11px] leading-snug">
+      <span className="shrink-0 w-20 text-gray-400 font-medium">{label}</span>
+      <span className="text-gray-200 min-w-0">{children}</span>
+    </div>
+  )
+}
+
 export default function CourseCard({ code, status, issueReasons, course, onRemove }: Props) {
   const [showTip, setShowTip] = useState(false)
+  const cardRef = useRef<HTMLDivElement>(null)
+
+  // Decide whether to flip the tooltip above or below based on card position
+  const [flipUp, setFlipUp] = useState(true)
+  function onMouseEnter() {
+    if (cardRef.current) {
+      const rect = cardRef.current.getBoundingClientRect()
+      setFlipUp(rect.top > 260)  // enough room above to show ~260px tooltip
+    }
+    setShowTip(true)
+  }
 
   return (
     <div
-      className="relative group flex flex-col rounded-md overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-default"
-      onMouseEnter={() => setShowTip(true)}
+      ref={cardRef}
+      className="relative group flex flex-col rounded-md overflow-visible border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-grab active:cursor-grabbing select-none"
+      onMouseEnter={onMouseEnter}
       onMouseLeave={() => setShowTip(false)}
     >
       {/* Colored status band at top */}
-      <div className={`h-1.5 w-full ${STATUS_CLASS[status]}`} />
+      <div className={`h-1.5 w-full rounded-t-md ${STATUS_CLASS[status]}`} />
 
       <div className="px-2 py-1.5 flex items-start justify-between gap-1 min-w-0">
         <div className="min-w-0 flex-1">
@@ -47,9 +69,9 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
 
         {/* Remove button */}
         <button
-          onClick={onRemove}
+          onClick={e => { e.stopPropagation(); onRemove() }}
           title="Remove"
-          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5"
+          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5 cursor-pointer"
         >
           ×
         </button>
@@ -62,33 +84,74 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
         </span>
       </div>
 
-      {/* Tooltip */}
+      {/* Rich tooltip */}
       {showTip && (
-        <div className="absolute bottom-full left-0 z-50 mb-1.5 w-52 bg-gray-900 text-white text-[11px] rounded-lg shadow-xl p-3 pointer-events-none">
-          <p className="font-semibold text-white mb-1">{code}</p>
-          {course && <p className="text-gray-300 mb-2 leading-snug">{course.title}</p>}
-          {course && (
-            <div className="text-gray-400 space-y-0.5 mb-2">
-              <p>{course.credits} credit{course.credits !== 1 ? 's' : ''}</p>
-              {course.distribution && <p>{course.distribution}</p>}
-            </div>
-          )}
-          {issueReasons.length > 0 && (
-            <ul className="mt-1 space-y-0.5 border-t border-white/10 pt-1.5">
-              {issueReasons.map((r, i) => (
-                <li key={i} className="text-red-300 flex gap-1">
-                  <span className="shrink-0">⚠</span>
-                  <span>{r}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-          {course?.prerequisites?.length ? (
-            <p className="mt-1.5 text-gray-500 border-t border-white/10 pt-1.5">
-              <span className="text-gray-400">Prereqs: </span>
-              {course.prerequisites.join(', ')}
-            </p>
-          ) : null}
+        <div
+          className={`absolute ${flipUp ? 'bottom-full mb-2' : 'top-full mt-2'} left-0 z-[200] w-72 bg-gray-900 text-white rounded-xl shadow-2xl overflow-hidden pointer-events-none`}
+          style={{ minWidth: '17rem' }}
+        >
+          {/* Header */}
+          <div className={`px-4 py-3 ${STATUS_CLASS[status]}`}>
+            <p className="font-bold text-sm leading-tight">{code}</p>
+            {course && <p className="text-white/80 text-xs mt-0.5 leading-snug">{course.title}</p>}
+          </div>
+
+          <div className="px-4 py-3 space-y-2">
+            {/* Meta */}
+            {course && (
+              <InfoRow label="Credits">
+                {course.credits} credit{course.credits !== 1 ? 's' : ''}
+                {course.distribution ? ` · ${course.distribution}` : ''}
+                {course.hours ? ` · ${course.hours}` : ''}
+              </InfoRow>
+            )}
+            {course?.delivery && (
+              <InfoRow label="Delivery">{course.delivery}</InfoRow>
+            )}
+
+            {/* Issues */}
+            {issueReasons.length > 0 && (
+              <div className="border-t border-white/10 pt-2 space-y-1">
+                <p className="text-[10px] uppercase tracking-wider text-red-400 font-semibold">Issues Found</p>
+                {issueReasons.map((r, i) => (
+                  <div key={i} className="flex gap-1.5 text-[11px] text-red-300">
+                    <span className="shrink-0 mt-px">⚠</span>
+                    <span className="leading-snug">{r}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Prerequisites */}
+            {course?.prerequisites?.length ? (
+              <div className="border-t border-white/10 pt-2">
+                <InfoRow label="Prerequisites">
+                  {course.prerequisites.join(', ')}
+                </InfoRow>
+              </div>
+            ) : course ? (
+              <div className="border-t border-white/10 pt-2">
+                <InfoRow label="Prerequisites"><span className="text-gray-500">None</span></InfoRow>
+              </div>
+            ) : null}
+
+            {/* Exclusions */}
+            {course?.exclusions?.length ? (
+              <InfoRow label="Exclusions">{course.exclusions.join(', ')}</InfoRow>
+            ) : null}
+
+            {/* Recommended prep */}
+            {course?.recommended_preparation?.length ? (
+              <InfoRow label="Rec. Prep">{course.recommended_preparation.join(', ')}</InfoRow>
+            ) : null}
+
+            {/* Note */}
+            {course?.note ? (
+              <div className="border-t border-white/10 pt-2">
+                <p className="text-[10px] text-gray-400 leading-snug">{course.note}</p>
+              </div>
+            ) : null}
+          </div>
         </div>
       )}
     </div>
