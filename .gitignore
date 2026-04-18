@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Scraper cache (large, regeneratable — run parse_requirements.py to rebuild)
+scraper/programs_html_cache.json
+
+# Scraper resume files (only present mid-run)
+scraper/courses_progress.json
+scraper/programs_progress.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code session files
+.claude/
