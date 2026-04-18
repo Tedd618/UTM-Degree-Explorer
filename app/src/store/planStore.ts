@@ -36,6 +36,9 @@ interface PlanStore {
   removeCourse: (planId: string, semId: string, code: string) => void
   moveCourse: (planId: string, fromSemId: string, toSemId: string, code: string, toIndex: number) => void
 
+  // bulk import — replace courses in each semester by season/year
+  importCourses: (planId: string, entries: Array<{ year: number; season: Season; courses: string[] }>) => void
+
   // derived helpers
   activePlan: () => Plan | undefined
 }
@@ -141,6 +144,19 @@ export const usePlanStore = create<PlanStore>()(
                 return { ...s, courses }
               }
               return s
+            })
+            return { ...p, semesters: sems }
+          }),
+        })),
+
+      importCourses: (planId, entries) =>
+        set(state => ({
+          plans: state.plans.map(p => {
+            if (p.id !== planId) return p
+            const sems = p.semesters.map(s => {
+              const entry = entries.find(e => e.year === s.year && e.season === s.season)
+              if (!entry) return { ...s, courses: [] }
+              return { ...s, courses: entry.courses }
             })
             return { ...p, semesters: sems }
           }),
