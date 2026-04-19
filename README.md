@@ -94,7 +94,10 @@ Array of 2,231 course objects scraped from the UTM course search.
   "title": "Software Design",
   "description": "...",
   "credits": 0.5,                   // H5 = 0.5, Y5 = 1.0
-  "prerequisites": ["CSC148H5"],    // UTM course codes only
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC148H5"
+  },                                // Prereq AST node format
   "prerequisites_raw": "CSC148H5",  // raw text (may include cross-campus refs)
   "exclusions": ["CSC209H5"],
   "exclusions_raw": "...",
