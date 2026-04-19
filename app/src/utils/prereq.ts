@@ -1,5 +1,48 @@
-import type { Course, CourseStatus, Semester } from '../types'
+import type { Course, CourseStatus, Semester, PrereqNode } from '../types'
 import { semesterSortKey, currentSemesterKey, isSemPast, isSemCurrent } from './semester'
+
+export function evaluatePrereq(node: PrereqNode | never[] | undefined, codesBefore: Set<string>): boolean {
+  if (!node) return true
+  if (Array.isArray(node)) return node.length === 0
+  if (node.type === 'COURSE') return codesBefore.has(node.code)
+  if (node.type === 'AND') return (node.operands || []).every((op: any) => evaluatePrereq(op, codesBefore))
+  if (node.type === 'OR') return (node.operands || []).some((op: any) => evaluatePrereq(op, codesBefore))
+  if (node.type === 'RAW') return (node.codes || []).every((c: string) => codesBefore.has(c))
+  return true
+}
+
+export function formatPrereq(node: PrereqNode | never[] | undefined): string {
+  if (!node || (Array.isArray(node) && node.length === 0)) return 'None'
+  if (Array.isArray(node)) return 'Unknown' // unexpected array format
+  if (node.type === 'COURSE') return node.code
+  if (node.type === 'AND') {
+    return node.operands.map(formatPrereq).join(' and ')
+  }
+  if (node.type === 'OR') {
+    const joined = node.operands.map(formatPrereq).join(' or ')
+    // Add parens if nested
+    return `(${joined})`
+  }
+  if (node.type === 'RAW') {
+    return node.codes.join(', ')
+  }
+  return 'Unknown'
+}
+
+export function getMissingPrereqsStrings(node: PrereqNode | never[] | undefined, codesBefore: Set<string>): string[] {
+  if (!node || (Array.isArray(node) && node.length === 0)) return []
+  if (evaluatePrereq(node, codesBefore)) return []
+  
+  // If it's missing, let's just return the top level requirement that's missing
+  if (!Array.isArray(node) && node.type === 'AND') {
+    return (node.operands || [])
+      .filter((op: any) => !evaluatePrereq(op, codesBefore))
+      .map((op: any) => formatPrereq(op))
+  }
+  
+  // For OR, RAW, COURSE, just return the whole formatted string
+  return [formatPrereq(node)]
+}
 
 /**
  * Compute the display status for a course placed in a given semester.
@@ -35,8 +78,8 @@ export function getCourseStatus(
   // All codes present anywhere in the plan
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
-  for (const prereq of course.prerequisites) {
-    if (!codesBefore.has(prereq)) return 'issues'
+  if (!evaluatePrereq(course.prerequisites, codesBefore)) {
+    return 'issues'
   }
 
   for (const excl of course.exclusions) {
@@ -65,9 +108,12 @@ export function getIssueReasons(
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
   const reasons: string[] = []
-  for (const p of course.prerequisites) {
-    if (!codesBefore.has(p)) reasons.push(`Missing prerequisite: ${p}`)
+  
+  const missing = getMissingPrereqsStrings(course.prerequisites, codesBefore)
+  for (const req of missing) {
+    reasons.push(`Missing prerequisite: ${req}`)
   }
+
   for (const e of course.exclusions) {
     if (codesAnywhere.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
   }

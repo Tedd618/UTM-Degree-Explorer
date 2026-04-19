@@ -1,11 +1,17 @@
 export type Season = 'Fall' | 'Winter' | 'Summer'
 
+export type PrereqNode = 
+  | { type: 'AND'; operands: PrereqNode[] }
+  | { type: 'OR'; operands: PrereqNode[] }
+  | { type: 'COURSE'; code: string }
+  | { type: 'RAW'; codes: string[] }
+
 export interface Course {
   code: string
   title: string
   description: string
   credits: number
-  prerequisites: string[]
+  prerequisites: PrereqNode | never[]
   exclusions: string[]
   recommended_preparation: string[]
   distribution: string

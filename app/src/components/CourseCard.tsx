@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import type { Course, CourseStatus } from '../types'
+import { formatPrereq } from '../utils/prereq'
 
 const STATUS_LABEL: Record<CourseStatus, string> = {
   completed:     'Completed',
@@ -134,15 +135,15 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
             )}
 
             {/* Prerequisites */}
-            {course?.prerequisites?.length ? (
+            {course ? (
               <div className="border-t border-white/10 pt-2">
                 <InfoRow label="Prerequisites">
-                  {course.prerequisites.join(', ')}
+                  {formatPrereq(course.prerequisites) === 'None' ? (
+                    <span className="text-gray-500">None</span>
+                  ) : (
+                    formatPrereq(course.prerequisites)
+                  )}
                 </InfoRow>
-              </div>
-            ) : course ? (
-              <div className="border-t border-white/10 pt-2">
-                <InfoRow label="Prerequisites"><span className="text-gray-500">None</span></InfoRow>
               </div>
             ) : null}
 
