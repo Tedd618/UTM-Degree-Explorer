@@ -90,10 +90,13 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
       </div>
 
       {/* Status badge */}
-      <div className="px-2 pb-1.5">
+      <div className="px-2 pb-1.5 flex gap-1 items-center">
         <span className={`inline-block text-[9px] font-medium px-1.5 py-0.5 rounded-full ${STATUS_CLASS[status]}`}>
           {STATUS_LABEL[status]}
         </span>
+        {issueReasons.length > 0 && status !== 'issues' && (
+          <span className="text-[10px] text-red-500 font-bold" title="Prerequisites unmet">⚠</span>
+        )}
       </div>
 
       {/* Rich tooltip */}

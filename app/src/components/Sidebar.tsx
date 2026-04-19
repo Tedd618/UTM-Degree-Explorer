@@ -30,7 +30,7 @@ export default function Sidebar() {
   return (
     <aside className="w-56 shrink-0 flex flex-col bg-white border-r border-gray-200 overflow-y-auto">
       {/* My Plans */}
-      <section className="p-3 border-b border-gray-100">
+        <section className="p-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">My Plans</span>
           <button

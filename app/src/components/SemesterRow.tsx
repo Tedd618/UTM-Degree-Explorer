@@ -211,9 +211,7 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
       >
         {semester.courses.map((code, idx) => {
           const status  = getCourseStatus(code, semester, allSemesters, courseMap)
-          const reasons = status === 'issues'
-            ? getIssueReasons(code, semester, allSemesters, courseMap)
-            : []
+          const reasons = getIssueReasons(code, semester, allSemesters, courseMap)
 
           return (
             <React.Fragment key={code}>

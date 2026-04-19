@@ -84,7 +84,7 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
     }
     if (g.kind === 'or') {
       return (
-        <div className="flex flex-wrap gap-1 items-center">
+        <div className="flex flex-wrap gap-1 items-center rounded border border-dashed border-gray-400 p-1.5 bg-white/50">
           {g.options.map((code, i) => (
             <React.Fragment key={code}>
               {i > 0 && <span className="text-[10px] text-gray-400 font-medium">or</span>}
@@ -96,7 +96,7 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
     }
     if (g.kind === 'and') {
       return (
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 rounded border border-dashed border-gray-400 p-1.5 bg-white/50">
           {g.parts.map((part, i) => (
             <div key={i} className="flex flex-wrap gap-1 items-center">
               {i > 0 && <span className="text-[10px] text-gray-400 font-medium">and</span>}
@@ -172,8 +172,6 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
     )
 
     for (const sem of sorted) {
-      if (isSemPast(sem)) continue
-
       const semKey = semesterSortKey(sem.year, sem.season)
       const codesBefore = new Set<string>(
         sorted
