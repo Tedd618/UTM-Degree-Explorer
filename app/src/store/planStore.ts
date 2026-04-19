@@ -155,7 +155,8 @@ export const usePlanStore = create<PlanStore>()(
             if (p.id !== planId) return p
             const sems = p.semesters.map(s => {
               const entry = entries.find(e => e.year === s.year && e.season === s.season)
-              if (!entry) return { ...s, courses: [] }
+              // Only update semesters present in the import; leave others untouched
+              if (!entry) return s
               return { ...s, courses: entry.courses }
             })
             return { ...p, semesters: sems }

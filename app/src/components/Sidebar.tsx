@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { usePlanStore } from '../store/planStore'
+import ImportModal from './ImportModal'
 
 export default function Sidebar() {
   const plans        = usePlanStore(s => s.plans)
@@ -13,6 +14,7 @@ export default function Sidebar() {
 
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editValue, setEditValue]  = useState('')
+  const [showImport, setShowImport] = useState(false)
 
   function startRename(id: string, current: string) {
     setEditingId(id)
@@ -101,19 +103,33 @@ export default function Sidebar() {
         </label>
       </section>
 
-      <div className="mt-auto p-3 border-t border-gray-100">
-        <p className="text-[10px] text-gray-300 leading-relaxed">
-          UTM Degree Explorer · data from{' '}
-          <a
-            href="https://utm.calendar.utoronto.ca"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-gray-400"
+      <div className="mt-auto border-t border-gray-100">
+        <div className="p-3">
+          <button
+            onClick={() => setShowImport(true)}
+            className="w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-blue text-white hover:bg-utm-navy transition-colors"
           >
-            utm.calendar.utoronto.ca
-          </a>
-        </p>
+            Import
+          </button>
+        </div>
+        <div className="px-3 pb-3">
+          <p className="text-[10px] text-gray-300 leading-relaxed">
+            UTM Degree Explorer · data from{' '}
+            <a
+              href="https://utm.calendar.utoronto.ca"
+              target="_blank"
+              rel="noreferrer"
+              className="underline hover:text-gray-400"
+            >
+              utm.calendar.utoronto.ca
+            </a>
+          </p>
+        </div>
       </div>
+
+      {showImport && (
+        <ImportModal planId={activePlanId} onClose={() => setShowImport(false)} />
+      )}
     </aside>
   )
 }

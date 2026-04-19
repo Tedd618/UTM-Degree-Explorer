@@ -206,11 +206,16 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
             <React.Fragment key={code}>
               {/* Drop indicator — shown before this card */}
               {dropIndex === idx && dragState?.code !== code && (
-                <div className="w-1 self-stretch rounded-full bg-utm-blue shrink-0" />
+                <div
+                  className="w-1 self-stretch rounded-full bg-utm-blue shrink-0 min-h-[56px]"
+                  onDragOver={e => { e.stopPropagation(); handleDragOver(e, idx) }}
+                  onDrop={e => { e.stopPropagation(); handleDrop(e, idx) }}
+                />
               )}
               <div
                 className={`${CELL_W} shrink-0 transition-opacity ${dragState?.code === code ? 'opacity-30' : ''}`}
                 draggable
+                data-dragging={dragState?.code === code ? '' : undefined}
                 onDragStart={e => {
                   dragState = { planId, fromSemId: semester.id, code }
                   e.dataTransfer.effectAllowed = 'move'
@@ -220,8 +225,8 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
                   setDropIndex(null)
                   setIsDragOver(false)
                 }}
-                onDragOver={e => handleDragOver(e, idx)}
-                onDrop={e => handleDrop(e, idx)}
+                onDragOver={e => { e.stopPropagation(); handleDragOver(e, idx) }}
+                onDrop={e => { e.stopPropagation(); handleDrop(e, idx) }}
               >
                 <CourseCard
                   code={code}
@@ -237,7 +242,11 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
 
         {/* Drop indicator at end */}
         {dropIndex === semester.courses.length && (
-          <div className="w-1 self-stretch rounded-full bg-utm-blue shrink-0" />
+          <div
+            className="w-1 self-stretch rounded-full bg-utm-blue shrink-0 min-h-[56px]"
+            onDragOver={e => { e.stopPropagation(); handleDragOver(e, semester.courses.length) }}
+            onDrop={e => { e.stopPropagation(); handleDrop(e, semester.courses.length) }}
+          />
         )}
 
         {/* Add cell */}

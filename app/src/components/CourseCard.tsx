@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import type { Course, CourseStatus } from '../types'
 
 const STATUS_LABEL: Record<CourseStatus, string> = {
@@ -41,10 +41,21 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
 
   // Decide whether to flip the tooltip above or below based on card position
   const [flipUp, setFlipUp] = useState(true)
+
+  // Hide tooltip whenever any drag begins (covers the card being dragged)
+  useEffect(() => {
+    const hide = () => setShowTip(false)
+    document.addEventListener('dragstart', hide)
+    return () => document.removeEventListener('dragstart', hide)
+  }, [])
+
   function onMouseEnter() {
+    // During an active drag the browser suppresses mouseenter,
+    // but guard just in case
+    if (document.querySelector('[data-dragging]')) return
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect()
-      setFlipUp(rect.top > 260)  // enough room above to show ~260px tooltip
+      setFlipUp(rect.top > 260)
     }
     setShowTip(true)
   }
