@@ -75,6 +75,143 @@ def extract_course_codes(field_tag) -> tuple[list[str], str]:
     return utm_codes, raw
 
 
+class TokenType:
+    AND = 'AND'
+    OR = 'OR'
+    LPAREN = 'LPAREN'
+    RPAREN = 'RPAREN'
+    COURSE = 'COURSE'
+
+class Token:
+    def __init__(self, type_, value):
+        self.type = type_
+        self.value = value
+    def __repr__(self):
+        return f"Token({self.type}, {self.value})"
+
+def tokenize(text: str) -> list[Token]:
+    text = text.replace('\n', ' ').replace('\r', ' ')
+    course_pattern = r'[A-Z]{3}\d{3}[HY]\d'
+    and_pattern = r'\b(?:and|plus)\b|&'
+    or_pattern = r'\b(?:or)\b|/'
+    lparen_pattern = r'[\(\[]'
+    rparen_pattern = r'[\)\]]'
+    
+    master_pattern = re.compile(f'({course_pattern})|({and_pattern})|({or_pattern})|({lparen_pattern})|({rparen_pattern})', re.IGNORECASE)
+    
+    tokens = []
+    for match in master_pattern.finditer(text):
+        if match.group(1):
+            tokens.append(Token(TokenType.COURSE, match.group(1).upper()))
+        elif match.group(2):
+            tokens.append(Token(TokenType.AND, 'and'))
+        elif match.group(3):
+            tokens.append(Token(TokenType.OR, 'or'))
+        elif match.group(4):
+            tokens.append(Token(TokenType.LPAREN, '('))
+        elif match.group(5):
+            tokens.append(Token(TokenType.RPAREN, ')'))
+    return tokens
+
+class PrereqParser:
+    def __init__(self, tokens: list[Token]):
+        self.tokens = tokens
+        self.pos = 0
+
+    def parse(self) -> dict | None:
+        if not self.tokens:
+            return None
+        ast = self.parse_expression()
+        return ast
+
+    def peek(self) -> Token | None:
+        if self.pos < len(self.tokens):
+            return self.tokens[self.pos]
+        return None
+
+    def consume(self, expected_type: str) -> Token | None:
+        tok = self.peek()
+        if tok and tok.type == expected_type:
+            self.pos += 1
+            return tok
+        return None
+
+    def parse_expression(self) -> dict | None:
+        nodes = [self.parse_term()]
+        while self.peek() and self.peek().type == TokenType.OR:
+            self.consume(TokenType.OR)
+            nodes.append(self.parse_term())
+            
+        nodes = [n for n in nodes if n is not None]
+        if not nodes:
+            return None
+        if len(nodes) == 1:
+            return nodes[0]
+        
+        flat_operands = []
+        for n in nodes:
+            if n.get('type') == 'OR':
+                flat_operands.extend(n.get('operands', []))
+            else:
+                flat_operands.append(n)
+        return {"type": "OR", "operands": flat_operands}
+
+    def parse_term(self) -> dict | None:
+        nodes = [self.parse_factor()]
+        while self.peek() and self.peek().type == TokenType.AND:
+            self.consume(TokenType.AND)
+            nodes.append(self.parse_factor())
+            
+        while self.peek() and self.peek().type in (TokenType.COURSE, TokenType.LPAREN):
+            nodes.append(self.parse_factor())
+
+        nodes = [n for n in nodes if n is not None]
+        if not nodes:
+            return None
+        if len(nodes) == 1:
+            return nodes[0]
+
+        flat_operands = []
+        for n in nodes:
+            if n.get('type') == 'AND':
+                flat_operands.extend(n.get('operands', []))
+            else:
+                flat_operands.append(n)
+        return {"type": "AND", "operands": flat_operands}
+
+    def parse_factor(self) -> dict | None:
+        tok = self.peek()
+        if not tok:
+            return None
+        if tok.type == TokenType.COURSE:
+            self.consume(TokenType.COURSE)
+            return {"type": "COURSE", "code": tok.value}
+        elif tok.type == TokenType.LPAREN:
+            self.consume(TokenType.LPAREN)
+            node = self.parse_expression()
+            self.consume(TokenType.RPAREN)
+            return node
+        
+        self.pos += 1
+        return None
+
+def convert_prereq_to_ast(raw_text: str, flat_courses: list[str]) -> dict | list:
+    if not flat_courses:
+        return []
+    if not raw_text:
+        return flat_courses
+    
+    tokens = tokenize(raw_text)
+    parser = PrereqParser(tokens)
+    ast = parser.parse()
+    
+    if ast:
+        return ast
+    
+    # fallback
+    return {"type": "RAW", "codes": flat_courses}
+
+
 def parse_course(row_soup) -> dict | None:
     """
     Parse a single course from a views-row div on the listing page.
@@ -112,6 +249,7 @@ def parse_course(row_soup) -> dict | None:
     # Prerequisites
     prereq_tag = get_field("field-prerequisite")
     prereq_utm, prereq_raw = extract_course_codes(prereq_tag)
+    prereq_ast = convert_prereq_to_ast(prereq_raw, prereq_utm) if prereq_raw else prereq_utm
 
     # Exclusions
     excl_tag = get_field("field-exclusion")
@@ -149,7 +287,7 @@ def parse_course(row_soup) -> dict | None:
         "title": title,
         "description": description,
         "credits": infer_credits(code),
-        "prerequisites": prereq_utm,
+        "prerequisites": prereq_ast,
         "prerequisites_raw": prereq_raw,
         "exclusions": excl_utm,
         "exclusions_raw": excl_raw,
