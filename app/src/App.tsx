@@ -4,9 +4,11 @@ import { useCourses } from './hooks/useCourses'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import PlannerGrid from './components/PlannerGrid'
+import PrereqRadarPanel from './components/PrereqRadarPanel'
 
 export default function App() {
   const activePlan = usePlanStore(s => s.activePlan())
+  const activePlanId = usePlanStore(s => s.activePlanId)
   const { courseMap, loading, error } = useCourses()
 
   return (
@@ -16,7 +18,7 @@ export default function App() {
       <div className="flex flex-1 min-h-0">
         <Sidebar />
 
-        <main className="flex-1 flex flex-col min-w-0">
+        <main className="flex-1 flex min-w-0 min-h-0">
           {loading ? (
             <div className="flex items-center justify-center flex-1 text-gray-400">
               <div className="text-center">
@@ -33,7 +35,12 @@ export default function App() {
               </div>
             </div>
           ) : activePlan ? (
-            <PlannerGrid plan={activePlan} courseMap={courseMap} />
+            <>
+              <div className="flex-1 flex flex-col min-w-0 min-h-0">
+                <PlannerGrid plan={activePlan} courseMap={courseMap} />
+              </div>
+              <PrereqRadarPanel planId={activePlanId} courseMap={courseMap} />
+            </>
           ) : (
             <div className="flex items-center justify-center flex-1 text-gray-400">
               <p className="text-sm">No plan selected.</p>

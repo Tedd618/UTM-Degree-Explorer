@@ -1,4 +1,4 @@
-import type { Course, CourseStatus, Semester, PrereqNode } from '../types'
+import type { Course, CourseStatus, Semester, PrereqNode, MissingGroup } from '../types'
 import { semesterSortKey, currentSemesterKey, isSemPast, isSemCurrent } from './semester'
 
 export function evaluatePrereq(node: PrereqNode | never[] | undefined, codesBefore: Set<string>): boolean {
@@ -42,6 +42,70 @@ export function getMissingPrereqsStrings(node: PrereqNode | never[] | undefined,
   
   // For OR, RAW, COURSE, just return the whole formatted string
   return [formatPrereq(node)]
+}
+
+/**
+ * Collect missing prerequisite groups for the Radar panel.
+ * Returns an array of MissingGroup — each is either:
+ *   { kind:'single', code }         — one specific course needed
+ *   { kind:'or', options: string[] } — pick any ONE of these courses
+ *   { kind:'and', parts: MissingGroup[] } — ALL parts must be satisfied
+ */
+export function collectMissingPrereqGroups(
+  node: PrereqNode | never[] | undefined,
+  codesBefore: Set<string>,
+): MissingGroup[] {
+  if (!node || (Array.isArray(node) && node.length === 0)) return []
+  if (evaluatePrereq(node, codesBefore)) return []
+  if (Array.isArray(node)) return []
+
+  return [nodeToGroup(node, codesBefore)].filter(Boolean) as MissingGroup[]
+}
+
+function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup | null {
+  if (evaluatePrereq(node, codesBefore)) return null
+
+  if (node.type === 'COURSE') {
+    return { kind: 'single', code: node.code }
+  }
+
+  if (node.type === 'RAW') {
+    const missing = node.codes.filter(c => !codesBefore.has(c))
+    if (missing.length === 0) return null
+    if (missing.length === 1) return { kind: 'single', code: missing[0] }
+    return { kind: 'and', parts: missing.map(c => ({ kind: 'single', code: c } as MissingGroup)) }
+  }
+
+  if (node.type === 'OR') {
+    // The whole OR is unsatisfied — offer all leaf-code options from each operand
+    const options = flattenOrOptions(node)
+    return { kind: 'or', options }
+  }
+
+  if (node.type === 'AND') {
+    const parts = (node.operands || [])
+      .map(op => nodeToGroup(op, codesBefore))
+      .filter(Boolean) as MissingGroup[]
+    if (parts.length === 0) return null
+    if (parts.length === 1) return parts[0]
+    return { kind: 'and', parts }
+  }
+
+  return null
+}
+
+/** Flatten all leaf COURSE codes reachable from an OR node into a flat list of option strings */
+function flattenOrOptions(node: PrereqNode): string[] {
+  if (node.type === 'COURSE') return [node.code]
+  if (node.type === 'RAW') return node.codes
+  if (node.type === 'OR') return (node.operands || []).flatMap(flattenOrOptions)
+  // For AND inside OR, represent it as a joined label (we won't have this in practice)
+  if (node.type === 'AND') {
+    const codes = (node.operands || []).flatMap(flattenOrOptions)
+    // Return just the first course code from the AND group as the representative option
+    return codes.slice(0, 1)
+  }
+  return []
 }
 
 /**

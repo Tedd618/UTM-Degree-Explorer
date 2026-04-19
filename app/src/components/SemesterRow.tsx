@@ -4,11 +4,12 @@ import { usePlanStore } from '../store/planStore'
 import { getCourseStatus, getIssueReasons } from '../utils/prereq'
 import { semLabel, isSemPast, isSemCurrent } from '../utils/semester'
 import CourseCard from './CourseCard'
+import { RADAR_DRAG_PREFIX } from './PrereqRadarPanel'
 
 const CELL_W = 'w-36'
 const MAX_COURSES = 8
 
-// Module-level drag state — avoids prop drilling
+// Module-level drag state — avoids prop drilling (only for internal card drags)
 let dragState: { planId: string; fromSemId: string; code: string } | null = null
 
 interface Props {
@@ -143,6 +144,7 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
 export default function SemesterRow({ planId, semester, allSemesters, courseMap }: Props) {
   const removeCourse = usePlanStore(s => s.removeCourse)
   const moveCourse   = usePlanStore(s => s.moveCourse)
+  const addCourse    = usePlanStore(s => s.addCourse)
   const [adding, setAdding]       = useState(false)
   const [dropIndex, setDropIndex] = useState<number | null>(null)
   const [isDragOver, setIsDragOver] = useState(false)
@@ -158,15 +160,26 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
   }
 
   function handleDragOver(e: React.DragEvent, idx: number) {
-    if (!dragState) return
+    // Accept both internal card drags and radar drags
+    const hasRadar = e.dataTransfer.types.includes('text/plain')
+    if (!dragState && !hasRadar) return
     e.preventDefault()
-    e.dataTransfer.dropEffect = 'move'
+    e.dataTransfer.dropEffect = dragState ? 'move' : 'copy'
     setDropIndex(idx)
     setIsDragOver(true)
   }
 
   function handleDrop(e: React.DragEvent, idx: number) {
     e.preventDefault()
+    const raw = e.dataTransfer.getData('text/plain')
+    if (raw.startsWith(RADAR_DRAG_PREFIX)) {
+      // Drop from radar panel — add the course into this semester
+      const code = raw.slice(RADAR_DRAG_PREFIX.length)
+      addCourse(planId, semester.id, code)
+      setDropIndex(null)
+      setIsDragOver(false)
+      return
+    }
     if (!dragState) return
     moveCourse(dragState.planId, dragState.fromSemId, semester.id, dragState.code, idx)
     dragState = null

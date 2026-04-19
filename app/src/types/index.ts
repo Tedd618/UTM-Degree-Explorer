@@ -41,3 +41,9 @@ export type CourseStatus =
   | 'no-issues'
   | 'issues'
   | 'unknown'
+
+/** A structured missing prerequisite group, used by the Prerequisite Radar panel. */
+export type MissingGroup =
+  | { kind: 'single'; code: string }
+  | { kind: 'or'; options: string[] }
+  | { kind: 'and'; parts: MissingGroup[] }

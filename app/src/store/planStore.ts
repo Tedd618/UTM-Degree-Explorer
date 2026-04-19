@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Plan, Semester, Season } from '../types'
-import { buildDefaultSemesters } from '../utils/semester'
+import { buildDefaultSemesters, semesterSortKey, currentSemesterKey } from '../utils/semester'
 
 function newId(): string {
   return Math.random().toString(36).slice(2, 10)
@@ -19,6 +19,9 @@ interface PlanStore {
   plans: Plan[]
   activePlanId: string
   hideSummers: boolean
+
+  /** Per-plan set of course codes the user has dismissed from the radar. */
+  ignoredPrereqs: Record<string, string[]>
 
   // plan CRUD
   addPlan: () => void
@@ -39,6 +42,15 @@ interface PlanStore {
   // bulk import — replace courses in each semester by season/year
   importCourses: (planId: string, entries: Array<{ year: number; season: Season; courses: string[] }>) => void
 
+  // radar actions
+  /**
+   * Dismiss a missing prereq from the radar for this plan.
+   * code is the missing prereq course code to ignore.
+   */
+  ignorePrereq: (planId: string, code: string) => void
+  /** Reset all ignored prereqs for this plan. */
+  clearIgnoredPrereqs: (planId: string) => void
+
   // derived helpers
   activePlan: () => Plan | undefined
 }
@@ -51,6 +63,7 @@ export const usePlanStore = create<PlanStore>()(
       plans: [defaultPlan],
       activePlanId: defaultPlan.id,
       hideSummers: false,
+      ignoredPrereqs: {},
 
       activePlan: () => get().plans.find(p => p.id === get().activePlanId),
 
@@ -161,6 +174,23 @@ export const usePlanStore = create<PlanStore>()(
             })
             return { ...p, semesters: sems }
           }),
+        })),
+
+      ignorePrereq: (planId, code) =>
+        set(state => {
+          const existing = state.ignoredPrereqs[planId] ?? []
+          if (existing.includes(code)) return state
+          return {
+            ignoredPrereqs: {
+              ...state.ignoredPrereqs,
+              [planId]: [...existing, code],
+            },
+          }
+        }),
+
+      clearIgnoredPrereqs: (planId) =>
+        set(state => ({
+          ignoredPrereqs: { ...state.ignoredPrereqs, [planId]: [] },
         })),
     }),
     {
