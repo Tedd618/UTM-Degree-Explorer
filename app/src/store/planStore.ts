@@ -1,10 +1,17 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { supabase } from '../utils/supabase'
 import type { Plan, Semester, Season } from '../types'
 import { buildDefaultSemesters, semesterSortKey, currentSemesterKey } from '../utils/semester'
 
 function newId(): string {
-  return Math.random().toString(36).slice(2, 10)
+  if (typeof crypto !== 'undefined' && crypto.randomUUID) {
+    return crypto.randomUUID()
+  }
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    const r = (Math.random() * 16) | 0
+    const v = c === 'x' ? r : (r & 0x3) | 0x8
+    return v.toString(16)
+  })
 }
 
 function createDefaultPlan(): Plan {
@@ -22,6 +29,9 @@ interface PlanStore {
 
   /** Per-plan set of course codes the user has dismissed from the radar. */
   ignoredPrereqs: Record<string, string[]>
+
+  // cloud sync override
+  setStoreData: (plans: Plan[], ignored: Record<string, string[]>, activeId?: string) => void
 
   // plan CRUD
   addPlan: () => void
@@ -57,15 +67,21 @@ interface PlanStore {
 
 const defaultPlan = createDefaultPlan()
 
-export const usePlanStore = create<PlanStore>()(
-  persist(
-    (set, get) => ({
-      plans: [defaultPlan],
-      activePlanId: defaultPlan.id,
-      hideSummers: false,
-      ignoredPrereqs: {},
+export const usePlanStore = create<PlanStore>()((set, get) => ({
+  plans: [defaultPlan],
+  activePlanId: defaultPlan.id,
+  hideSummers: false,
+  ignoredPrereqs: {},
 
-      activePlan: () => get().plans.find(p => p.id === get().activePlanId),
+  setStoreData: (plans, ignored, activeId) => {
+    set({
+      plans,
+      ignoredPrereqs: ignored,
+      activePlanId: activeId || (plans.length > 0 ? plans[0].id : defaultPlan.id)
+    })
+  },
+
+  activePlan: () => get().plans.find(p => p.id === get().activePlanId),
 
       addPlan: () =>
         set(state => {
@@ -192,9 +208,28 @@ export const usePlanStore = create<PlanStore>()(
         set(state => ({
           ignoredPrereqs: { ...state.ignoredPrereqs, [planId]: [] },
         })),
-    }),
-    {
-      name: 'utm-degree-explorer-v1',
-    },
-  ),
-)
+}))
+
+// Auto-save to cloud
+let saveTimeout: ReturnType<typeof setTimeout> | null = null
+
+usePlanStore.subscribe((state, prevState) => {
+  if (state.plans === prevState.plans && state.ignoredPrereqs === prevState.ignoredPrereqs) return
+
+  if (saveTimeout) clearTimeout(saveTimeout)
+  saveTimeout = setTimeout(async () => {
+    const { data: { session } } = await supabase.auth.getSession()
+    if (!session?.user) return
+
+    const rows = state.plans.map(p => ({
+      id: p.id,
+      user_id: session.user.id,
+      name: p.name,
+      semesters: p.semesters,
+      ignored_prereqs: state.ignoredPrereqs[p.id] || []
+    }))
+
+    const { error } = await supabase.from('plans').upsert(rows)
+    if (error) console.error('Failed to sync plans:', error)
+  }, 1000)
+})

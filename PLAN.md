@@ -165,3 +165,7 @@ Format for `programs/cs-major.json`:
 | 7 | Graph visualizer | 🔜 | DAG view per course |
 | 8 | Polish + export | 🔜 | Course search, PDF/image export |
 | 9 | Further improvements | 🔜 | ML-based course recommendations, AI-powered degree planning, gemini vision text recognition, etc. |
+
+
+# TODO: 
+add minimum of # credit as prerec 

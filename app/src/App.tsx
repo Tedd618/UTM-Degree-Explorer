@@ -1,19 +1,89 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import type { Session } from '@supabase/supabase-js'
+import { supabase } from './utils/supabase'
 import { usePlanStore } from './store/planStore'
 import { useCourses } from './hooks/useCourses'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import PlannerGrid from './components/PlannerGrid'
 import PrereqRadarPanel from './components/PrereqRadarPanel'
+import AuthScreen from './components/AuthScreen'
 
 export default function App() {
+  const [session, setSession] = useState<Session | null>(null)
+  const [isInitializing, setIsInitializing] = useState(true)
+  const [showAuth, setShowAuth] = useState(false)
+
   const activePlan = usePlanStore(s => s.activePlan())
   const activePlanId = usePlanStore(s => s.activePlanId)
   const { courseMap, loading, error } = useCourses()
 
+  useEffect(() => {
+    let mounted = true
+
+    const fetchData = async (userId: string) => {
+      const { data, error } = await supabase.from('plans').select('*').eq('user_id', userId)
+      
+      if (data && data.length > 0 && mounted) {
+        const plans = data.map((row: any) => ({
+          id: row.id,
+          name: row.name,
+          semesters: row.semesters
+        }))
+        const ignored: Record<string, string[]> = {}
+        for (const row of data) {
+          ignored[row.id] = row.ignored_prereqs || []
+        }
+        usePlanStore.getState().setStoreData(plans, ignored)
+      }
+      if (mounted) setIsInitializing(false)
+    }
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (!mounted) return
+      setSession(session)
+      if (session) {
+        fetchData(session.user.id)
+      } else {
+        setIsInitializing(false)
+      }
+    })
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (!mounted) return
+      setSession(session)
+      if (session) {
+        fetchData(session.user.id)
+      }
+    })
+
+    return () => {
+      mounted = false
+      subscription.unsubscribe()
+    }
+  }, [])
+
+  if (isInitializing) {
+    return (
+      <div className="flex h-screen items-center justify-center bg-gray-50">
+        <div className="w-8 h-8 border-2 border-utm-blue border-t-transparent rounded-full animate-spin" />
+      </div>
+    )
+  }
+
+  if (!session && showAuth) {
+    return <AuthScreen onCancel={() => setShowAuth(false)} />
+  }
+
   return (
     <div className="flex flex-col h-screen bg-gray-50 overflow-hidden">
-      <Header />
+      <Header 
+        session={session} 
+        onSignInClick={() => setShowAuth(true)} 
+        onLogOutClick={() => supabase.auth.signOut()} 
+      />
 
       <div className="flex flex-1 min-h-0">
         <Sidebar />
