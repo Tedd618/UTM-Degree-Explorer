@@ -20,6 +20,7 @@ export interface Course {
   note: string
   has_experiential: boolean
   has_international: boolean
+  offerings?: Season[]
 }
 
 export interface Semester {
@@ -45,5 +46,5 @@ export type CourseStatus =
 /** A structured missing prerequisite group, used by the Prerequisite Radar panel. */
 export type MissingGroup =
   | { kind: 'single'; code: string }
-  | { kind: 'or'; options: string[] }
+  | { kind: 'or'; options: MissingGroup[] }
   | { kind: 'and'; parts: MissingGroup[] }

@@ -14,7 +14,7 @@ See [`PLAN.md`](PLAN.md) for the full roadmap and upcoming features.
   - `Completed` — semester is in the past
   - `In Progress` — current semester
   - `No Issues` — all prerequisites satisfied in earlier semesters
-  - `Issues Found` — a prerequisite is missing or an excluded course is also in the plan
+  - `Issues Found` — a prerequisite is missing, an excluded course is also in the plan, or the course is scheduled in an invalid season (e.g. Fall-only course in Winter)
 - **Hover tooltips** — show course title, credits, distribution, prerequisites, and issue details
 - **Credit summary panel** — segmented progress bar (completed / in-progress / planned / issues) toward a 20-credit target
 - **Multiple plans** — create, rename, and switch between plans; data persists in `localStorage`
@@ -233,7 +233,6 @@ This is used throughout the app to compare semesters without string parsing.
 
 See [`PLAN.md`](PLAN.md) for the full milestone breakdown. Next planned work:
 
-- **Milestone 4** — Missing prerequisite radar (surface unmet prereqs with one-click add)
 - **Milestone 5** — One-click program import (add all required courses in topological order)
 - **Milestone 6** — Degree progress tracker (per-requirement credit satisfaction)
 - **Milestone 7** — Prerequisite DAG visualizer

@@ -19,7 +19,7 @@ interface Props {
 // ---------------------------------------------------------------------------
 function groupLabel(g: MissingGroup): string {
   if (g.kind === 'single') return g.code
-  if (g.kind === 'or') return g.options.join(' or ')
+  if (g.kind === 'or') return g.options.map(groupLabel).join(' or ')
   if (g.kind === 'and') return g.parts.map(groupLabel).join(' and ')
   return ''
 }
@@ -85,10 +85,10 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
     if (g.kind === 'or') {
       return (
         <div className="flex flex-wrap gap-1 items-center rounded border border-dashed border-gray-400 p-1.5 bg-white/50">
-          {g.options.map((code, i) => (
-            <React.Fragment key={code}>
+          {g.options.map((opt, i) => (
+            <React.Fragment key={i}>
               {i > 0 && <span className="text-[10px] text-gray-400 font-medium">or</span>}
-              <CourseChip code={code} courseMap={courseMap} />
+              {renderGroup(opt)}
             </React.Fragment>
           ))}
         </div>
@@ -112,7 +112,7 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
   // Collect all codes that can be ignored (leaf codes of this group)
   function ignoreKeys(g: MissingGroup): string[] {
     if (g.kind === 'single') return [g.code]
-    if (g.kind === 'or') return g.options
+    if (g.kind === 'or') return g.options.flatMap(ignoreKeys)
     if (g.kind === 'and') return g.parts.flatMap(ignoreKeys)
     return []
   }
@@ -275,9 +275,9 @@ function filterIgnored(group: MissingGroup, ignored: Set<string>): MissingGroup 
     return ignored.has(group.code) ? null : group
   }
   if (group.kind === 'or') {
-    const opts = group.options.filter(c => !ignored.has(c))
+    const opts = group.options.map(o => filterIgnored(o, ignored)).filter(Boolean) as MissingGroup[]
     if (opts.length === 0) return null
-    if (opts.length === 1) return { kind: 'single', code: opts[0] }
+    if (opts.length === 1) return opts[0]
     return { kind: 'or', options: opts }
   }
   if (group.kind === 'and') {

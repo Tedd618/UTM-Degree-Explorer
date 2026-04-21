@@ -77,8 +77,13 @@ function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup |
   }
 
   if (node.type === 'OR') {
-    // The whole OR is unsatisfied — offer all leaf-code options from each operand
-    const options = flattenOrOptions(node)
+    // The whole OR is unsatisfied — return recursively mapped branches
+    const options = (node.operands || [])
+      .map(op => nodeToGroup(op, codesBefore))
+      .filter(Boolean) as MissingGroup[]
+      
+    if (options.length === 0) return null
+    if (options.length === 1) return options[0]
     return { kind: 'or', options }
   }
 
@@ -94,19 +99,7 @@ function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup |
   return null
 }
 
-/** Flatten all leaf COURSE codes reachable from an OR node into a flat list of option strings */
-function flattenOrOptions(node: PrereqNode): string[] {
-  if (node.type === 'COURSE') return [node.code]
-  if (node.type === 'RAW') return node.codes
-  if (node.type === 'OR') return (node.operands || []).flatMap(flattenOrOptions)
-  // For AND inside OR, represent it as a joined label (we won't have this in practice)
-  if (node.type === 'AND') {
-    const codes = (node.operands || []).flatMap(flattenOrOptions)
-    // Return just the first course code from the AND group as the representative option
-    return codes.slice(0, 1)
-  }
-  return []
-}
+
 
 /**
  * Compute the display status for a course placed in a given semester.
@@ -150,6 +143,10 @@ export function getCourseStatus(
     if (codesAnywhere.has(excl) && excl !== code) return 'issues'
   }
 
+  if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+    return 'issues'
+  }
+
   return 'no-issues'
 }
 
@@ -181,5 +178,10 @@ export function getIssueReasons(
   for (const e of course.exclusions) {
     if (codesAnywhere.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
   }
+
+  if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+    reasons.push(`Not offered in ${semester.season}`)
+  }
+
   return reasons
 }

@@ -156,11 +156,11 @@ Format for `programs/cs-major.json`:
 
 | # | Milestone | Status | Deliverable |
 |---|---|---|---|
-| 1 | Data extraction | ✅ Done | `data/courses.json` — 2,231 UTM courses |
+| 1 | Data extraction | ✅ Done | `data/courses.json` with seasonal offerings — 2,231 UTM courses |
 | 2 | Program data | ✅ Done | `data/programs_structured.json` — 164 programs with ASTs |
 | 3 | Core planner | ✅ Done | Semester grid, prerequisite validation, credit summary, multi-plan support |
-| 4 | Prerequisite radar | 🔜 Next | Surface unmet prereqs with one-click add |
-| 5 | One-click import | 🔜 | Add all required courses from a program in topological order |
+| 4 | Prerequisite radar | ✅ Done | Surface unmet prereqs with one-click add and fully recursive AND/OR tree support |
+| 5 | One-click import | 🔜 Next | Add all required courses from a program in topological order |
 | 6 | Degree progress | 🔜 | Per-requirement credit satisfaction bars |
 | 7 | Graph visualizer | 🔜 | DAG view per course |
 | 8 | Polish + export | 🔜 | Course search, PDF/image export |
