@@ -70,7 +70,7 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
       </div>
 
       {/* Right panel */}
-      <RequirementsPanel semesters={plan.semesters} courseMap={courseMap} />
+      <RequirementsPanel plan={plan} courseMap={courseMap} />
     </div>
   )
 }

@@ -235,7 +235,7 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
         <div className="flex-1 overflow-y-auto p-2 space-y-2">
           {count === 0 ? (
             <div className="flex flex-col items-center justify-center gap-2 py-8 text-center">
-              <span className="text-2xl">✅</span>
+              <span className="text-2xl"></span>
               <p className="text-xs text-gray-400 leading-snug">All prerequisites met!</p>
             </div>
           ) : (

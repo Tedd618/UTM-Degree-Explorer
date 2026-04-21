@@ -28,7 +28,8 @@ export default function App() {
         const plans = data.map((row: any) => ({
           id: row.id,
           name: row.name,
-          semesters: row.semesters
+          semesters: row.semesters,
+          programs: row.programs || [],
         }))
         const ignored: Record<string, string[]> = {}
         for (const row of data) {

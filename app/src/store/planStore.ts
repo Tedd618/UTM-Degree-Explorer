@@ -19,6 +19,7 @@ function createDefaultPlan(): Plan {
     id: newId(),
     name: 'My Plan',
     semesters: buildDefaultSemesters(),
+    programs: [],
   }
 }
 
@@ -39,6 +40,10 @@ interface PlanStore {
   renamePlan: (id: string, name: string) => void
   setActivePlan: (id: string) => void
   toggleHideSummers: () => void
+
+  // program management
+  addProgram: (planId: string, code: string) => void
+  removeProgram: (planId: string, code: string) => void
 
   // semester management
   addSemester: (planId: string, year: number, season: Season) => void
@@ -109,6 +114,24 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
       setActivePlan: (id) => set({ activePlanId: id }),
 
       toggleHideSummers: () => set(state => ({ hideSummers: !state.hideSummers })),
+
+      addProgram: (planId, code) =>
+        set(state => ({
+          plans: state.plans.map(p => {
+            if (p.id !== planId) return p
+            const current = p.programs || []
+            if (current.includes(code)) return p
+            return { ...p, programs: [...current, code] }
+          })
+        })),
+
+      removeProgram: (planId, code) =>
+        set(state => ({
+          plans: state.plans.map(p => {
+            if (p.id !== planId) return p
+            return { ...p, programs: (p.programs || []).filter(c => c !== code) }
+          })
+        })),
 
       addSemester: (planId, year, season) =>
         set(state => ({
@@ -226,6 +249,7 @@ usePlanStore.subscribe((state, prevState) => {
       user_id: session.user.id,
       name: p.name,
       semesters: p.semesters,
+      programs: p.programs || [],
       ignored_prereqs: state.ignoredPrereqs[p.id] || []
     }))
 

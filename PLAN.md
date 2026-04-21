@@ -161,7 +161,7 @@ Format for `programs/cs-major.json`:
 | 3 | Core planner | ✅ Done | Semester grid, prerequisite validation, credit summary, multi-plan support |
 | 4 | Prerequisite radar | ✅ Done | Surface unmet prereqs with one-click add and fully recursive AND/OR tree support |
 | 5 | One-click import | 🔜 Next | Add all required courses from a program in topological order |
-| 6 | Degree progress | 🔜 | Per-requirement credit satisfaction bars |
+| 6 | Degree progress | ✅ Done | Per-requirement credit satisfaction bars |
 | 7 | Graph visualizer | 🔜 | DAG view per course |
 | 8 | Polish + export | 🔜 | Course search, PDF/image export |
 | 9 | Further improvements | 🔜 | ML-based course recommendations, AI-powered degree planning, gemini vision text recognition, etc. |

@@ -34,6 +34,43 @@ export interface Plan {
   id: string
   name: string
   semesters: Semester[]
+  programs: string[]
+}
+
+export type RequirementNode =
+  | { type: 'course'; code: string }
+  | { type: 'all_of'; items: RequirementNode[] }
+  | { type: 'one_of'; items: RequirementNode[] }
+  | { type: 'n_from'; n: number; items: RequirementNode[] }
+  | { 
+      type: 'open_pool'; 
+      n: number; 
+      constraint: string;
+      subject: string | null;
+      min_level: number | null;
+      max_level: number | null;
+      specific_courses: string[];
+      excluding: string[];
+      description?: string;
+    }
+  | { type: 'text'; text: string; description?: string }
+  | { type: 'limit'; limit: number; items: RequirementNode[] }
+
+export interface RequirementGroup {
+  label: string
+  condition: string | null
+  items: RequirementNode[]
+}
+
+export interface ProgramStructure {
+  code: string
+  name: string
+  type: string
+  degree_type: string | null
+  completion: {
+    total_credits: { min: number; max: number | null }
+    groups: RequirementGroup[]
+  }
 }
 
 export type CourseStatus =
