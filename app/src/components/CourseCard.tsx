@@ -73,7 +73,12 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
 
       <div className="px-2 py-1.5 flex items-start justify-between gap-1 min-w-0">
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-semibold text-gray-800 leading-tight truncate">{code}</p>
+          <div className="flex items-center gap-1 min-w-0">
+            <p className="text-xs font-semibold text-gray-800 leading-tight truncate">{code}</p>
+            {issueReasons.length > 0 && (
+              <span className="shrink-0 text-[9px] text-red-500 font-bold leading-none" title="Issues found">⚠</span>
+            )}
+          </div>
           {course && (
             <p className="text-[10px] text-gray-400 leading-tight truncate mt-0.5">{course.title}</p>
           )}
@@ -87,16 +92,6 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
         >
           ×
         </button>
-      </div>
-
-      {/* Status badge */}
-      <div className="px-2 pb-1.5 flex gap-1 items-center">
-        <span className={`inline-block text-[9px] font-medium px-1.5 py-0.5 rounded-full ${STATUS_CLASS[status]}`}>
-          {STATUS_LABEL[status]}
-        </span>
-        {issueReasons.length > 0 && status !== 'issues' && (
-          <span className="text-[10px] text-red-500 font-bold" title="Prerequisites unmet">⚠</span>
-        )}
       </div>
 
       {/* Rich tooltip */}
