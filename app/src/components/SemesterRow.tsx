@@ -279,7 +279,7 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
               <button
                 key="__add__"
                 onClick={() => setAdding(true)}
-                className={`${CELL_W} shrink-0 h-[62px] rounded-md border-2 border-dashed border-gray-200 text-gray-300 text-xs hover:border-utm-blue hover:text-utm-blue transition-colors flex items-center justify-center gap-1`}
+                className={`${CELL_W} shrink-0 h-[52px] rounded-md border-2 border-dashed border-gray-200 text-gray-300 text-xs hover:border-utm-blue hover:text-utm-blue transition-colors flex items-center justify-center gap-1`}
               >
                 <span className="text-lg leading-none">+</span>
                 <span>Add</span>
@@ -291,7 +291,7 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
           return (
             <div
               key={`__empty_${slotIdx}`}
-              className={`${CELL_W} shrink-0 h-[62px] rounded-md border border-dashed border-gray-100`}
+              className={`${CELL_W} shrink-0 h-[52px] rounded-md border border-dashed border-gray-100`}
             />
           )
         })}

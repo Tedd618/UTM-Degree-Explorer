@@ -89,8 +89,8 @@ export default function Sidebar() {
         </ul>
       </section>
 
-      {/* Planning Periods */}
-      <section className="p-3">
+      {/* Display options */}
+      <section className="p-3 border-b border-gray-100">
         <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 block mb-2">Display</span>
         <label className="flex items-center gap-2 text-sm text-gray-600 cursor-pointer select-none">
           <input
@@ -101,6 +101,24 @@ export default function Sidebar() {
           />
           Hide summer semesters
         </label>
+      </section>
+
+      {/* Status legend */}
+      <section className="p-3 border-b border-gray-100">
+        <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 block mb-2">Legend</span>
+        <div className="space-y-1.5">
+          {[
+            { color: 'bg-emerald-600', label: 'Completed' },
+            { color: 'bg-blue-600',    label: 'In Progress' },
+            { color: 'bg-violet-600',  label: 'No Issues' },
+            { color: 'bg-red-500',     label: 'Issues Found' },
+          ].map(({ color, label }) => (
+            <div key={label} className="flex items-center gap-2">
+              <span className={`w-3 h-3 rounded-sm shrink-0 ${color}`} />
+              <span className="text-xs text-gray-500">{label}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
       <div className="mt-auto border-t border-gray-100">
