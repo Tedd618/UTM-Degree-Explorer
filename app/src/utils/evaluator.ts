@@ -103,10 +103,11 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       return { met: earned >= target, value: Math.min(earned, target), max: target, label: `Choose ${target} credit(s) from:`, children }
     }
     case 'limit': {
+      // "Up to N credits from ..." is a cap, not a requirement. Always satisfied; value is capped.
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const cap = node.limit || 0
       const earned = Math.min(children.reduce((sum, c) => sum + c.value, 0), cap)
-      return { met: earned >= cap, value: earned, max: cap, label: `Up to ${cap} credit(s) from:`, children }
+      return { met: true, value: earned, max: cap, label: `Up to ${cap} credit(s) from:`, children }
     }
     case 'open_pool': {
       // open_pool is usually credit-based
@@ -176,16 +177,31 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
     // "N additional credit from ... courses listed above" text nodes.
     const nFromCodes = collectNFromCodes(group)
 
+    // Sum of credits already required by sibling n_from nodes — used to compute
+    // how many credits in the pool are still "available" for "N additional credit" requirements.
+    const siblingNFromConsumption = group.items.reduce(
+      (sum, item) => item.type === 'n_from' ? sum + (item.n || 0) : sum,
+      0,
+    )
+
     const children = group.items.map(child => {
       if (child.type === 'text' && nFromCodes.length > 0) {
         const m = child.text?.match(/^(\d+(?:\.\d+)?)\s+additional\s+credits?\s+from/i)
         if (m) {
           const n = parseFloat(m[1])
-          return evaluateNode(
-            { type: 'open_pool', n, specific_courses: nFromCodes, subject: null, min_level: null, max_level: null, excluding: [], sub_constraints: [], description: child.text } as any,
-            userCodes,
-            courseMap,
-          )
+          let poolCredits = 0
+          for (const code of userCodes) {
+            if (nFromCodes.includes(code)) {
+              poolCredits += courseMap.get(code)?.credits ?? 0.5
+            }
+          }
+          const available = Math.max(0, poolCredits - siblingNFromConsumption)
+          return {
+            met: available >= n,
+            value: Math.min(available, n),
+            max: n,
+            label: child.text,
+          }
         }
       }
       return evaluateNode(child, userCodes, courseMap)
