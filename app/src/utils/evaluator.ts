@@ -146,7 +146,7 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       }
 
       const met = collected >= targetCredits
-      return { met, value: collected, max: targetCredits, label: node.description || `Pool: ${targetCredits} credits` }
+      return { met, value: Math.min(collected, targetCredits), max: targetCredits, label: node.description || `Pool: ${targetCredits} credits` }
     }
     case 'text': {
       return { met: false, value: 0, max: 0, label: node.text || 'Requirement notation (Check manually)' }
@@ -194,9 +194,11 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
     const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
     const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
 
+    // Text nodes with max=0 are section headers (e.g. "Higher Years:"); don't block group completion
+    const evaluatableChildren = children.filter(c => c.max > 0)
     return {
       label: group.label || 'Core Requirements',
-      met: children.every(c => c.met),
+      met: evaluatableChildren.length > 0 ? evaluatableChildren.every(c => c.met) : true,
       value: earnedCredits,
       max: totalCredits,
       children
