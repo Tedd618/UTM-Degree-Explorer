@@ -152,7 +152,7 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       return { met: false, value: 0, max: 0, label: node.text || 'Requirement notation (Check manually)' }
     }
     default:
-      return { met: false, value: 0, max: 0, label: `Unknown requirement type: ${node.type}` }
+      return { met: false, value: 0, max: 0, label: 'Unknown requirement' }
   }
 }
 
