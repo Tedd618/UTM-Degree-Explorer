@@ -79,10 +79,13 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
   ignoredPrereqs: {},
 
   setStoreData: (plans, ignored, activeId) => {
-    set({
-      plans,
-      ignoredPrereqs: ignored,
-      activePlanId: activeId || (plans.length > 0 ? plans[0].id : defaultPlan.id)
+    set(state => {
+      // Preserve the current selection if it still exists in the incoming plans
+      const preferredId = activeId ?? state.activePlanId
+      const validId = plans.find(p => p.id === preferredId)
+        ? preferredId
+        : (plans.length > 0 ? plans[0].id : defaultPlan.id)
+      return { plans, ignoredPrereqs: ignored, activePlanId: validId }
     })
   },
 

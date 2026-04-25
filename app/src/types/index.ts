@@ -1,10 +1,12 @@
 export type Season = 'Fall' | 'Winter' | 'Summer'
 
-export type PrereqNode = 
+export type PrereqNode =
   | { type: 'AND'; operands: PrereqNode[] }
   | { type: 'OR'; operands: PrereqNode[] }
   | { type: 'COURSE'; code: string }
   | { type: 'RAW'; codes: string[] }
+  | { type: 'CREDITS'; minimum: number }
+  | { type: 'LEVEL_POOL'; n: number; subjects: string[] | null; min_level: number | null; max_level: number | null; specific_courses: string[] }
 
 export interface Course {
   code: string
@@ -85,3 +87,5 @@ export type MissingGroup =
   | { kind: 'single'; code: string }
   | { kind: 'or'; options: MissingGroup[] }
   | { kind: 'and'; parts: MissingGroup[] }
+  | { kind: 'credit'; minimum: number }
+  | { kind: 'level_pool'; n: number; subjects: string[] | null; min_level: number | null; max_level: number | null; specific_courses: string[] }

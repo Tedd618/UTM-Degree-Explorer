@@ -1,72 +1,116 @@
 import type { Course, CourseStatus, Semester, PrereqNode, MissingGroup } from '../types'
-import { semesterSortKey, currentSemesterKey, isSemPast, isSemCurrent } from './semester'
+import { semesterSortKey, isSemPast, isSemCurrent } from './semester'
 
-export function evaluatePrereq(node: PrereqNode | never[] | undefined, codesBefore: Set<string>): boolean {
+function creditsBefore(codesBefore: Set<string>, courseMap: Map<string, Course>): number {
+  let total = 0
+  for (const code of codesBefore) {
+    const c = courseMap.get(code)
+    if (c) total += c.credits
+  }
+  return total
+}
+
+export function evaluatePrereq(
+  node: PrereqNode | never[] | undefined,
+  codesBefore: Set<string>,
+  courseMap?: Map<string, Course>,
+): boolean {
   if (!node) return true
   if (Array.isArray(node)) return node.length === 0
   if (node.type === 'COURSE') return codesBefore.has(node.code)
-  if (node.type === 'AND') return (node.operands || []).every((op: any) => evaluatePrereq(op, codesBefore))
-  if (node.type === 'OR') return (node.operands || []).some((op: any) => evaluatePrereq(op, codesBefore))
+  if (node.type === 'AND') return (node.operands || []).every((op: any) => evaluatePrereq(op, codesBefore, courseMap))
+  if (node.type === 'OR')  return (node.operands || []).some((op: any) => evaluatePrereq(op, codesBefore, courseMap))
   if (node.type === 'RAW') return (node.codes || []).every((c: string) => codesBefore.has(c))
+  if (node.type === 'CREDITS') {
+    if (!courseMap) return true
+    return creditsBefore(codesBefore, courseMap) >= node.minimum
+  }
+  if (node.type === 'LEVEL_POOL') {
+    if (!courseMap) return true
+    const { n, subjects, min_level, max_level, specific_courses } = node
+    let earned = 0
+    for (const code of codesBefore) {
+      const c = courseMap.get(code)
+      if (!c) continue
+      const lvl = parseInt(code.slice(3, 6), 10)
+      if (specific_courses.length > 0) {
+        if (specific_courses.includes(code)) earned += c.credits
+      } else {
+        const subjectMatch = !subjects || subjects.includes(code.slice(0, 3))
+        const levelMatch = (min_level === null || lvl >= min_level) && (max_level === null || lvl <= max_level)
+        if (subjectMatch && levelMatch) earned += c.credits
+      }
+    }
+    return earned >= n
+  }
   return true
 }
 
 export function formatPrereq(node: PrereqNode | never[] | undefined): string {
   if (!node || (Array.isArray(node) && node.length === 0)) return 'None'
-  if (Array.isArray(node)) return 'Unknown' // unexpected array format
+  if (Array.isArray(node)) return 'Unknown'
   if (node.type === 'COURSE') return node.code
-  if (node.type === 'AND') {
-    return node.operands.map(formatPrereq).join(' and ')
-  }
-  if (node.type === 'OR') {
-    const joined = node.operands.map(formatPrereq).join(' or ')
-    // Add parens if nested
-    return `(${joined})`
-  }
-  if (node.type === 'RAW') {
-    return node.codes.join(', ')
+  if (node.type === 'AND') return node.operands.map(formatPrereq).join(' and ')
+  if (node.type === 'OR') return `(${node.operands.map(formatPrereq).join(' or ')})`
+  if (node.type === 'RAW') return node.codes.join(', ')
+  if (node.type === 'CREDITS') return `≥${node.minimum} credits completed`
+  if (node.type === 'LEVEL_POOL') {
+    const { n, subjects, min_level, max_level, specific_courses } = node
+    if (specific_courses.length > 0) {
+      return `${n} credit(s) from: ${specific_courses.join(', ')}`
+    }
+    const subj = subjects ? subjects.join('/') : 'any subject'
+    const lvl = min_level && max_level ? ` ${min_level}–${max_level}-level` : min_level ? ` ${min_level}+-level` : ''
+    return `${n} credit(s) in${lvl} ${subj}`
   }
   return 'Unknown'
 }
 
-export function getMissingPrereqsStrings(node: PrereqNode | never[] | undefined, codesBefore: Set<string>): string[] {
+export function getMissingPrereqsStrings(
+  node: PrereqNode | never[] | undefined,
+  codesBefore: Set<string>,
+  courseMap?: Map<string, Course>,
+): string[] {
   if (!node || (Array.isArray(node) && node.length === 0)) return []
-  if (evaluatePrereq(node, codesBefore)) return []
-  
-  // If it's missing, let's just return the top level requirement that's missing
+  if (evaluatePrereq(node, codesBefore, courseMap)) return []
+
   if (!Array.isArray(node) && node.type === 'AND') {
     return (node.operands || [])
-      .filter((op: any) => !evaluatePrereq(op, codesBefore))
+      .filter((op: any) => !evaluatePrereq(op, codesBefore, courseMap))
       .map((op: any) => formatPrereq(op))
   }
-  
-  // For OR, RAW, COURSE, just return the whole formatted string
+
   return [formatPrereq(node)]
 }
 
 /**
  * Collect missing prerequisite groups for the Radar panel.
- * Returns an array of MissingGroup — each is either:
- *   { kind:'single', code }         — one specific course needed
- *   { kind:'or', options: string[] } — pick any ONE of these courses
- *   { kind:'and', parts: MissingGroup[] } — ALL parts must be satisfied
  */
 export function collectMissingPrereqGroups(
   node: PrereqNode | never[] | undefined,
   codesBefore: Set<string>,
+  courseMap?: Map<string, Course>,
 ): MissingGroup[] {
   if (!node || (Array.isArray(node) && node.length === 0)) return []
-  if (evaluatePrereq(node, codesBefore)) return []
+  if (evaluatePrereq(node, codesBefore, courseMap)) return []
   if (Array.isArray(node)) return []
 
-  return [nodeToGroup(node, codesBefore)].filter(Boolean) as MissingGroup[]
+  return [nodeToGroup(node, codesBefore, courseMap)].filter(Boolean) as MissingGroup[]
 }
 
-function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup | null {
-  if (evaluatePrereq(node, codesBefore)) return null
+function nodeToGroup(
+  node: PrereqNode,
+  codesBefore: Set<string>,
+  courseMap?: Map<string, Course>,
+): MissingGroup | null {
+  if (evaluatePrereq(node, codesBefore, courseMap)) return null
 
-  if (node.type === 'COURSE') {
-    return { kind: 'single', code: node.code }
+  if (node.type === 'COURSE') return { kind: 'single', code: node.code }
+
+  if (node.type === 'CREDITS') return { kind: 'credit', minimum: node.minimum }
+
+  if (node.type === 'LEVEL_POOL') {
+    return { kind: 'level_pool', n: node.n, subjects: node.subjects, min_level: node.min_level, max_level: node.max_level, specific_courses: node.specific_courses }
   }
 
   if (node.type === 'RAW') {
@@ -77,11 +121,9 @@ function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup |
   }
 
   if (node.type === 'OR') {
-    // The whole OR is unsatisfied — return recursively mapped branches
     const options = (node.operands || [])
-      .map(op => nodeToGroup(op, codesBefore))
+      .map(op => nodeToGroup(op, codesBefore, courseMap))
       .filter(Boolean) as MissingGroup[]
-      
     if (options.length === 0) return null
     if (options.length === 1) return options[0]
     return { kind: 'or', options }
@@ -89,7 +131,7 @@ function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup |
 
   if (node.type === 'AND') {
     const parts = (node.operands || [])
-      .map(op => nodeToGroup(op, codesBefore))
+      .map(op => nodeToGroup(op, codesBefore, courseMap))
       .filter(Boolean) as MissingGroup[]
     if (parts.length === 0) return null
     if (parts.length === 1) return parts[0]
@@ -99,17 +141,8 @@ function nodeToGroup(node: PrereqNode, codesBefore: Set<string>): MissingGroup |
   return null
 }
 
-
-
 /**
  * Compute the display status for a course placed in a given semester.
- *
- * Rules (in priority order):
- *  1. Semester is in the past      → 'completed'
- *  2. Semester is current          → 'in-progress'
- *  3. Any prerequisite is missing from ALL earlier semesters → 'issues'
- *  4. Course appears in exclusions of another planned course → 'issues'
- *  5. Otherwise                    → 'no-issues'
  */
 export function getCourseStatus(
   code: string,
@@ -125,17 +158,15 @@ export function getCourseStatus(
 
   const semKey = semesterSortKey(semester.year, semester.season)
 
-  // All codes present in semesters strictly before this one
   const codesBefore = new Set<string>(
     allSemesters
       .filter(s => semesterSortKey(s.year, s.season) < semKey)
       .flatMap(s => s.courses),
   )
 
-  // All codes present anywhere in the plan
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
-  if (!evaluatePrereq(course.prerequisites, codesBefore)) {
+  if (!evaluatePrereq(course.prerequisites, codesBefore, courseMap)) {
     return 'issues'
   }
 
@@ -169,8 +200,8 @@ export function getIssueReasons(
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
   const reasons: string[] = []
-  
-  const missing = getMissingPrereqsStrings(course.prerequisites, codesBefore)
+
+  const missing = getMissingPrereqsStrings(course.prerequisites, codesBefore, courseMap)
   for (const req of missing) {
     reasons.push(`Missing prerequisite: ${req}`)
   }

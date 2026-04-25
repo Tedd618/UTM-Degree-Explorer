@@ -6,10 +6,9 @@ import { semLabel, isSemPast, isSemCurrent } from '../utils/semester'
 import CourseCard from './CourseCard'
 import { RADAR_DRAG_PREFIX } from './PrereqRadarPanel'
 
-const CELL_W = 'w-36'
 const MAX_COURSES = 8
+const CELL_W = 'w-36'
 
-// Module-level drag state — avoids prop drilling (only for internal card drags)
 let dragState: { planId: string; fromSemId: string; code: string } | null = null
 
 interface Props {
@@ -30,25 +29,34 @@ interface AddInputProps {
 
 function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
   const addCourse = usePlanStore(s => s.addCourse)
-  const [value, setValue]       = useState('')
+  const [value, setValue]             = useState('')
   const [suggestions, setSuggestions] = useState<Course[]>([])
   const [highlighted, setHighlighted] = useState(-1)
-  const [error, setError]       = useState('')
-  const inputRef  = useRef<HTMLInputElement>(null)
-  const listRef   = useRef<HTMLUListElement>(null)
+  const [error, setError]             = useState('')
+  const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => { inputRef.current?.focus() }, [])
 
   function filterCourses(raw: string) {
     const q = raw.toUpperCase().trim()
     if (q.length < 2) { setSuggestions([]); return }
-    const results: Course[] = []
+
+    const exact: Course[]      = []
+    const startsWith: Course[] = []
+    const contains: Course[]   = []
+
     for (const c of courseMap.values()) {
-      if (c.code.includes(q) || c.title.toUpperCase().includes(q)) {
-        results.push(c)
-        if (results.length === 10) break
+      if (c.code === q) {
+        exact.push(c)
+      } else if (c.code.startsWith(q)) {
+        startsWith.push(c)
+      } else if (c.code.includes(q) || c.title.toUpperCase().includes(q)) {
+        contains.push(c)
       }
+      if (exact.length + startsWith.length + contains.length >= 40) break
     }
+
+    const results = [...exact, ...startsWith, ...contains].slice(0, 20)
     setSuggestions(results)
     setHighlighted(-1)
   }
@@ -86,6 +94,7 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
   }
 
   const open = suggestions.length > 0
+  const noResults = value.trim().length >= 2 && suggestions.length === 0
 
   return (
     <div className={`${CELL_W} shrink-0 relative`}>
@@ -101,7 +110,6 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
           }}
           onKeyDown={onKeyDown}
           onBlur={() => {
-            // delay so mousedown on suggestion can fire first
             setTimeout(() => {
               setSuggestions([])
               submit()
@@ -113,19 +121,18 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
           autoComplete="off"
         />
         {error && <p className="text-[10px] text-red-500">{error}</p>}
+        {noResults && !error && (
+          <p className="text-[10px] text-gray-400">No courses found</p>
+        )}
       </div>
 
-      {/* Dropdown */}
       {open && (
-        <ul
-          ref={listRef}
-          className="absolute left-0 top-full mt-0.5 z-50 w-64 bg-white border border-gray-200 rounded-lg shadow-xl overflow-y-auto max-h-56 py-1"
-        >
+        <ul className="absolute left-0 top-full mt-0.5 z-50 w-72 bg-white border border-gray-200 rounded-lg shadow-xl overflow-y-auto max-h-64 py-1">
           {suggestions.map((c, i) => (
             <li
               key={c.code}
               className={`flex items-baseline gap-2 px-3 py-1.5 cursor-pointer text-xs ${i === highlighted ? 'bg-utm-blue text-white' : 'hover:bg-gray-50 text-gray-800'}`}
-              onMouseDown={e => e.preventDefault()} // prevent input blur
+              onMouseDown={e => e.preventDefault()}
               onClick={() => selectSuggestion(c)}
               onMouseEnter={() => setHighlighted(i)}
             >
@@ -145,8 +152,8 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
   const removeCourse = usePlanStore(s => s.removeCourse)
   const moveCourse   = usePlanStore(s => s.moveCourse)
   const addCourse    = usePlanStore(s => s.addCourse)
-  const [adding, setAdding]       = useState(false)
-  const [dropIndex, setDropIndex] = useState<number | null>(null)
+  const [adding, setAdding]         = useState(false)
+  const [dropIndex, setDropIndex]   = useState<number | null>(null)
   const [isDragOver, setIsDragOver] = useState(false)
 
   const isPast    = isSemPast(semester)
@@ -160,7 +167,6 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
   }
 
   function handleDragOver(e: React.DragEvent, idx: number) {
-    // Accept both internal card drags and radar drags
     const hasRadar = e.dataTransfer.types.includes('text/plain')
     if (!dragState && !hasRadar) return
     e.preventDefault()
@@ -173,9 +179,7 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
     e.preventDefault()
     const raw = e.dataTransfer.getData('text/plain')
     if (raw.startsWith(RADAR_DRAG_PREFIX)) {
-      // Drop from radar panel — add the course into this semester
-      const code = raw.slice(RADAR_DRAG_PREFIX.length)
-      addCourse(planId, semester.id, code)
+      addCourse(planId, semester.id, raw.slice(RADAR_DRAG_PREFIX.length))
       setDropIndex(null)
       setIsDragOver(false)
       return
@@ -192,91 +196,105 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
     setIsDragOver(false)
   }
 
+  // Build fixed slot array: filled courses + optional add input + empty placeholders
+  const slots: Array<'course' | 'add' | 'empty'> = []
+  semester.courses.forEach(() => slots.push('course'))
+  if (canAdd && !adding) slots.push('add')
+  if (adding) slots.push('add')
+  while (slots.length < MAX_COURSES) slots.push('empty')
+
+  let courseIdx = 0
+
   return (
     <div className="flex gap-2 items-start group/row">
       {/* Semester label */}
-      <div className={`shrink-0 w-28 rounded-md px-2 py-1 ${semHeaderClass()}`}>
+      <div className={`shrink-0 w-28 rounded-md px-2 py-1.5 ${semHeaderClass()}`}>
         <p className="text-xs font-semibold leading-tight">{semLabel(semester)}</p>
         <p className="text-[10px] opacity-60 mt-0.5">
-          {semester.courses.length} course{semester.courses.length !== 1 ? 's' : ''}
+          {semester.courses.length}/{MAX_COURSES}
         </p>
       </div>
 
-      {/* Course cards */}
+      {/* Fixed grid of slots */}
       <div
-        className={`flex flex-wrap gap-2 flex-1 rounded-md p-1 transition-colors ${isDragOver ? 'bg-utm-blue/5 ring-1 ring-utm-blue/20' : ''}`}
+        className={`grid gap-2 flex-1 rounded-md p-1 transition-colors ${isDragOver ? 'bg-utm-blue/5 ring-1 ring-utm-blue/20' : ''}`}
+        style={{ gridTemplateColumns: `repeat(${MAX_COURSES}, ${9 /* w-36 = 9rem */}rem)` }}
         onDragOver={e => handleDragOver(e, semester.courses.length)}
         onDrop={e => handleDrop(e, semester.courses.length)}
         onDragLeave={handleDragLeave}
       >
-        {semester.courses.map((code, idx) => {
-          const status  = getCourseStatus(code, semester, allSemesters, courseMap)
-          const reasons = getIssueReasons(code, semester, allSemesters, courseMap)
+        {slots.map((slot, slotIdx) => {
+          if (slot === 'course') {
+            const code = semester.courses[courseIdx++]
+            const idx  = slotIdx
+            const status  = getCourseStatus(code, semester, allSemesters, courseMap)
+            const reasons = getIssueReasons(code, semester, allSemesters, courseMap)
 
-          return (
-            <React.Fragment key={code}>
-              {/* Drop indicator — shown before this card */}
-              {dropIndex === idx && dragState?.code !== code && (
+            return (
+              <React.Fragment key={code}>
+                {dropIndex === idx && dragState?.code !== code && (
+                  <div
+                    className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-utm-blue"
+                    onDragOver={e => { e.stopPropagation(); handleDragOver(e, idx) }}
+                    onDrop={e => { e.stopPropagation(); handleDrop(e, idx) }}
+                  />
+                )}
                 <div
-                  className="w-1 self-stretch rounded-full bg-utm-blue shrink-0 min-h-[56px]"
+                  className={`${CELL_W} shrink-0 transition-opacity relative ${dragState?.code === code ? 'opacity-30' : ''}`}
+                  draggable
+                  onDragStart={e => {
+                    dragState = { planId, fromSemId: semester.id, code }
+                    e.dataTransfer.effectAllowed = 'move'
+                  }}
+                  onDragEnd={() => {
+                    dragState = null
+                    setDropIndex(null)
+                    setIsDragOver(false)
+                  }}
                   onDragOver={e => { e.stopPropagation(); handleDragOver(e, idx) }}
                   onDrop={e => { e.stopPropagation(); handleDrop(e, idx) }}
-                />
-              )}
-              <div
-                className={`${CELL_W} shrink-0 transition-opacity ${dragState?.code === code ? 'opacity-30' : ''}`}
-                draggable
-                data-dragging={dragState?.code === code ? '' : undefined}
-                onDragStart={e => {
-                  dragState = { planId, fromSemId: semester.id, code }
-                  e.dataTransfer.effectAllowed = 'move'
-                }}
-                onDragEnd={() => {
-                  dragState = null
-                  setDropIndex(null)
-                  setIsDragOver(false)
-                }}
-                onDragOver={e => { e.stopPropagation(); handleDragOver(e, idx) }}
-                onDrop={e => { e.stopPropagation(); handleDrop(e, idx) }}
+                >
+                  <CourseCard
+                    code={code}
+                    status={status}
+                    issueReasons={reasons}
+                    course={courseMap.get(code)}
+                    onRemove={() => removeCourse(planId, semester.id, code)}
+                  />
+                </div>
+              </React.Fragment>
+            )
+          }
+
+          if (slot === 'add') {
+            return adding ? (
+              <AddInput
+                key="__add__"
+                planId={planId}
+                semId={semester.id}
+                courseMap={courseMap}
+                onDone={() => setAdding(false)}
+              />
+            ) : (
+              <button
+                key="__add__"
+                onClick={() => setAdding(true)}
+                className={`${CELL_W} shrink-0 h-[62px] rounded-md border-2 border-dashed border-gray-200 text-gray-300 text-xs hover:border-utm-blue hover:text-utm-blue transition-colors flex items-center justify-center gap-1`}
               >
-                <CourseCard
-                  code={code}
-                  status={status}
-                  issueReasons={reasons}
-                  course={courseMap.get(code)}
-                  onRemove={() => removeCourse(planId, semester.id, code)}
-                />
-              </div>
-            </React.Fragment>
+                <span className="text-lg leading-none">+</span>
+                <span>Add</span>
+              </button>
+            )
+          }
+
+          // empty placeholder
+          return (
+            <div
+              key={`__empty_${slotIdx}`}
+              className={`${CELL_W} shrink-0 h-[62px] rounded-md border border-dashed border-gray-100`}
+            />
           )
         })}
-
-        {/* Drop indicator at end */}
-        {dropIndex === semester.courses.length && (
-          <div
-            className="w-1 self-stretch rounded-full bg-utm-blue shrink-0 min-h-[56px]"
-            onDragOver={e => { e.stopPropagation(); handleDragOver(e, semester.courses.length) }}
-            onDrop={e => { e.stopPropagation(); handleDrop(e, semester.courses.length) }}
-          />
-        )}
-
-        {/* Add cell */}
-        {adding ? (
-          <AddInput
-            planId={planId}
-            semId={semester.id}
-            courseMap={courseMap}
-            onDone={() => setAdding(false)}
-          />
-        ) : canAdd ? (
-          <button
-            onClick={() => setAdding(true)}
-            className={`${CELL_W} shrink-0 h-[62px] rounded-md border-2 border-dashed border-gray-200 text-gray-300 text-xs hover:border-utm-blue hover:text-utm-blue transition-colors flex items-center justify-center gap-1`}
-          >
-            <span className="text-lg leading-none">+</span>
-            <span>Add course</span>
-          </button>
-        ) : null}
       </div>
     </div>
   )

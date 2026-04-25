@@ -52,10 +52,11 @@ export default function App() {
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    } = supabase.auth.onAuthStateChange((event, session) => {
       if (!mounted) return
       setSession(session)
-      if (session) {
+      // Only re-fetch on actual sign-in; token refreshes should not reset plan state
+      if (session && (event === 'SIGNED_IN' || event === 'USER_UPDATED')) {
         fetchData(session.user.id)
       }
     })

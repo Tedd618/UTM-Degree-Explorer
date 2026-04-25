@@ -4,9 +4,6 @@ import { usePlanStore } from '../store/planStore'
 import { collectMissingPrereqGroups, evaluatePrereq } from '../utils/prereq'
 import { semesterSortKey, isSemPast } from '../utils/semester'
 
-// ---------------------------------------------------------------------------
-// Drag source ID used to identify drags originating from the Radar panel
-// ---------------------------------------------------------------------------
 export const RADAR_DRAG_PREFIX = '__radar__'
 
 interface Props {
@@ -14,19 +11,20 @@ interface Props {
   courseMap: Map<string, Course>
 }
 
-// ---------------------------------------------------------------------------
-// Helper: render a MissingGroup as text
-// ---------------------------------------------------------------------------
 function groupLabel(g: MissingGroup): string {
   if (g.kind === 'single') return g.code
-  if (g.kind === 'or') return g.options.map(groupLabel).join(' or ')
-  if (g.kind === 'and') return g.parts.map(groupLabel).join(' and ')
+  if (g.kind === 'or')     return g.options.map(groupLabel).join(' or ')
+  if (g.kind === 'and')    return g.parts.map(groupLabel).join(' and ')
+  if (g.kind === 'credit') return `≥${g.minimum} credits`
+  if (g.kind === 'level_pool') {
+    if (g.specific_courses.length > 0) return `${g.n} cr from ${g.specific_courses.join('/')}`
+    const subj = g.subjects ? g.subjects.join('/') : 'any'
+    const lvl = g.min_level ? ` ${g.min_level}-level` : ''
+    return `${g.n} cr${lvl} ${subj}`
+  }
   return ''
 }
 
-// ---------------------------------------------------------------------------
-// A single draggable chip for one course code option
-// ---------------------------------------------------------------------------
 interface ChipProps {
   code: string
   courseMap: Map<string, Course>
@@ -35,17 +33,14 @@ function CourseChip({ code, courseMap }: ChipProps) {
   const course = courseMap.get(code)
   const [dragging, setDragging] = useState(false)
 
-  function onDragStart(e: React.DragEvent) {
-    e.dataTransfer.effectAllowed = 'copy'
-    // Encode a special payload so SemesterRow knows this is from the Radar
-    e.dataTransfer.setData('text/plain', `${RADAR_DRAG_PREFIX}${code}`)
-    setDragging(true)
-  }
-
   return (
     <div
       draggable
-      onDragStart={onDragStart}
+      onDragStart={e => {
+        e.dataTransfer.effectAllowed = 'copy'
+        e.dataTransfer.setData('text/plain', `${RADAR_DRAG_PREFIX}${code}`)
+        setDragging(true)
+      }}
       onDragEnd={() => setDragging(false)}
       title={course ? `${code} — ${course.title}` : code}
       className={`
@@ -65,9 +60,15 @@ function CourseChip({ code, courseMap }: ChipProps) {
   )
 }
 
-// ---------------------------------------------------------------------------
-// One missing prereq item row
-// ---------------------------------------------------------------------------
+/** Non-draggable badge for credit-count requirements */
+function CreditBadge({ minimum }: { minimum: number }) {
+  return (
+    <div className="inline-flex items-center gap-1 px-2 py-1 rounded-md border border-amber-200 bg-amber-50 select-none">
+      <span className="text-[10px] text-amber-700 font-semibold leading-tight">≥{minimum} credits completed</span>
+    </div>
+  )
+}
+
 interface ItemProps {
   neededBy: string
   group: MissingGroup
@@ -79,8 +80,21 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
   const ignorePrereq = usePlanStore(s => s.ignorePrereq)
 
   function renderGroup(g: MissingGroup): React.ReactNode {
-    if (g.kind === 'single') {
-      return <CourseChip key={g.code} code={g.code} courseMap={courseMap} />
+    if (g.kind === 'single') return <CourseChip key={g.code} code={g.code} courseMap={courseMap} />
+    if (g.kind === 'credit') return <CreditBadge minimum={g.minimum} />
+    if (g.kind === 'level_pool') {
+      const label = g.specific_courses.length > 0
+        ? `${g.n} cr from: ${g.specific_courses.join(', ')}`
+        : (() => {
+            const subj = g.subjects ? g.subjects.join('/') : 'any subject'
+            const lvl = g.min_level && g.max_level ? ` ${g.min_level}–${g.max_level}-level` : g.min_level ? ` ${g.min_level}+-level` : ''
+            return `${g.n} credit(s) in${lvl} ${subj}`
+          })()
+      return (
+        <div className="inline-flex items-center gap-1 px-2 py-1 rounded-md border border-purple-200 bg-purple-50 select-none">
+          <span className="text-[10px] text-purple-700 font-semibold leading-tight">{label}</span>
+        </div>
+      )
     }
     if (g.kind === 'or') {
       return (
@@ -109,23 +123,25 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
     return null
   }
 
-  // Collect all codes that can be ignored (leaf codes of this group)
   function ignoreKeys(g: MissingGroup): string[] {
     if (g.kind === 'single') return [g.code]
-    if (g.kind === 'or') return g.options.flatMap(ignoreKeys)
-    if (g.kind === 'and') return g.parts.flatMap(ignoreKeys)
+    if (g.kind === 'or')     return g.options.flatMap(ignoreKeys)
+    if (g.kind === 'and')    return g.parts.flatMap(ignoreKeys)
+    if (g.kind === 'credit') return [`__credit_${g.minimum}`]
+    if (g.kind === 'level_pool') return [`__pool_${g.n}_${(g.subjects || []).join('_')}_${g.min_level}_${g.max_level}`]
     return []
   }
 
   function handleIgnore() {
-    for (const code of ignoreKeys(group)) {
-      ignorePrereq(planId, code)
+    for (const key of ignoreKeys(group)) {
+      ignorePrereq(planId, key)
     }
   }
 
+  const hasDraggable = hasDraggableLeaf(group)
+
   return (
     <div className="rounded-lg border border-gray-100 bg-gray-50 p-2.5 space-y-2">
-      {/* Needed by */}
       <div className="flex items-center justify-between gap-1">
         <span className="text-[10px] text-gray-400 font-medium">
           needed by <span className="font-mono text-gray-600">{neededBy}</span>
@@ -139,39 +155,44 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
         </button>
       </div>
 
-      {/* The missing group (draggable chips) */}
       {renderGroup(group)}
 
-      {/* Drag hint */}
-      <p className="text-[9px] text-gray-300 leading-tight">drag into any semester</p>
+      {hasDraggable && (
+        <p className="text-[9px] text-gray-300 leading-tight">drag into any semester</p>
+      )}
     </div>
   )
 }
 
-// ---------------------------------------------------------------------------
-// Main panel
-// ---------------------------------------------------------------------------
+function hasDraggableLeaf(g: MissingGroup): boolean {
+  if (g.kind === 'single') return true
+  if (g.kind === 'credit') return false
+  if (g.kind === 'level_pool') return false
+  if (g.kind === 'or')  return g.options.some(hasDraggableLeaf)
+  if (g.kind === 'and') return g.parts.some(hasDraggableLeaf)
+  return false
+}
+
 export default function PrereqRadarPanel({ planId, courseMap }: Props) {
-  const plans        = usePlanStore(s => s.plans)
-  const ignoredPrereqs = usePlanStore(s => s.ignoredPrereqs)
+  const plans             = usePlanStore(s => s.plans)
+  const ignoredPrereqs    = usePlanStore(s => s.ignoredPrereqs)
   const clearIgnoredPrereqs = usePlanStore(s => s.clearIgnoredPrereqs)
   const [collapsed, setCollapsed] = useState(false)
 
-  const plan = plans.find(p => p.id === planId)
+  const plan    = plans.find(p => p.id === planId)
   const ignored = new Set(ignoredPrereqs[planId] ?? [])
 
-  // Compute missing prereqs for every non-past course in the plan
   const missingItems = useMemo(() => {
     if (!plan) return []
 
     const items: Array<{ neededBy: string; group: MissingGroup }> = []
 
-    // Sort semesters chronologically
     const sorted = [...plan.semesters].sort(
       (a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season)
     )
 
     for (const sem of sorted) {
+      if (isSemPast(sem)) continue
       const semKey = semesterSortKey(sem.year, sem.season)
       const codesBefore = new Set<string>(
         sorted
@@ -182,15 +203,12 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
       for (const code of sem.courses) {
         const course = courseMap.get(code)
         if (!course) continue
-        if (evaluatePrereq(course.prerequisites, codesBefore)) continue
+        if (evaluatePrereq(course.prerequisites, codesBefore, courseMap)) continue
 
-        const groups = collectMissingPrereqGroups(course.prerequisites, codesBefore)
+        const groups = collectMissingPrereqGroups(course.prerequisites, codesBefore, courseMap)
         for (const g of groups) {
-          // Filter out ignored codes — if all leaf codes are ignored, skip group
           const filtered = filterIgnored(g, ignored)
-          if (filtered) {
-            items.push({ neededBy: code, group: filtered })
-          }
+          if (filtered) items.push({ neededBy: code, group: filtered })
         }
       }
     }
@@ -207,7 +225,6 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
         ${collapsed ? 'w-10' : 'w-56'}
       `}
     >
-      {/* Panel header */}
       <div
         className="flex items-center justify-between px-2 py-2 border-b border-gray-100 cursor-pointer select-none"
         onClick={() => setCollapsed(c => !c)}
@@ -230,12 +247,11 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
         </button>
       </div>
 
-      {/* Panel body */}
       {!collapsed && (
         <div className="flex-1 overflow-y-auto p-2 space-y-2">
           {count === 0 ? (
             <div className="flex flex-col items-center justify-center gap-2 py-8 text-center">
-              <span className="text-2xl"></span>
+              <span className="text-2xl">✓</span>
               <p className="text-xs text-gray-400 leading-snug">All prerequisites met!</p>
             </div>
           ) : (
@@ -250,7 +266,6 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
                 />
               ))}
 
-              {/* Clear ignored */}
               {(ignoredPrereqs[planId]?.length ?? 0) > 0 && (
                 <button
                   onClick={() => clearIgnoredPrereqs(planId)}
@@ -267,12 +282,12 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
   )
 }
 
-// ---------------------------------------------------------------------------
-// Filter out any leaf codes that are ignored; return null if group is fully ignored
-// ---------------------------------------------------------------------------
 function filterIgnored(group: MissingGroup, ignored: Set<string>): MissingGroup | null {
-  if (group.kind === 'single') {
-    return ignored.has(group.code) ? null : group
+  if (group.kind === 'single') return ignored.has(group.code) ? null : group
+  if (group.kind === 'credit') return ignored.has(`__credit_${group.minimum}`) ? null : group
+  if (group.kind === 'level_pool') {
+    const key = `__pool_${group.n}_${(group.subjects || []).join('_')}_${group.min_level}_${group.max_level}`
+    return ignored.has(key) ? null : group
   }
   if (group.kind === 'or') {
     const opts = group.options.map(o => filterIgnored(o, ignored)).filter(Boolean) as MissingGroup[]
