@@ -140,6 +140,7 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
   const [summaryExpanded, setSummaryExpanded] = useState(false)
   const [showProgramPicker, setShowProgramPicker] = useState(false)
   const [search, setSearch] = useState('')
+  const [highlighted, setHighlighted] = useState(0)
 
   const s = computeSummary(plan.semesters, courseMap)
   const gen = evaluateGeneralRequirements(plan.semesters, courseMap)
@@ -263,20 +264,28 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
           ) : (
             <div className="mt-4 flex flex-col items-center">
               <div className="relative w-full">
-                <input 
+                <input
                   type="text"
                   autoFocus
                   placeholder="Type to search programs..."
                   className="w-full text-xs border border-gray-200 rounded px-2 py-1.5 outline-none focus:border-utm-blue shadow-inner"
                   value={search}
-                  onChange={e => setSearch(e.target.value)}
+                  onChange={e => { setSearch(e.target.value); setHighlighted(0) }}
+                  onKeyDown={e => {
+                    if (e.key === 'ArrowDown') { e.preventDefault(); setHighlighted(h => Math.min(h + 1, searchResults.length - 1)) }
+                    else if (e.key === 'ArrowUp') { e.preventDefault(); setHighlighted(h => Math.max(h - 1, 0)) }
+                    else if (e.key === 'Enter' && searchResults[highlighted]) {
+                      addProgram(plan.id, searchResults[highlighted].code)
+                      setShowProgramPicker(false); setSearch('')
+                    } else if (e.key === 'Escape') { setShowProgramPicker(false); setSearch('') }
+                  }}
                 />
                 {search.trim().length > 0 && (
                   <div className="absolute z-50 left-0 right-0 mt-1 bg-white border border-gray-200 shadow-xl rounded-lg max-h-56 overflow-y-auto top-full">
                     {searchResults.length === 0 ? (
                       <div className="p-2 text-xs text-gray-400 text-center">No matching programs found.</div>
                     ) : (
-                      searchResults.map(p => (
+                      searchResults.map((p, idx) => (
                         <button
                           key={p.code}
                           onClick={() => {
@@ -284,7 +293,7 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
                             setShowProgramPicker(false)
                             setSearch('')
                           }}
-                          className="w-full text-left text-[11px] p-2 hover:bg-utm-light text-gray-700 leading-tight border-b border-gray-50 last:border-0 transition-colors"
+                          className={`w-full text-left text-[11px] p-2 text-gray-700 leading-tight border-b border-gray-50 last:border-0 transition-colors ${idx === highlighted ? 'bg-utm-light' : 'hover:bg-utm-light'}`}
                         >
                           <div className="font-medium text-utm-navy leading-tight">
                             {p.name} <span className="opacity-80 font-normal">{p.type}</span>
