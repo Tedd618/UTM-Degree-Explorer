@@ -80,24 +80,33 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
     case 'course': {
       const code = node.code || ''
       const meets = userCodes.has(code)
-      return { met: meets, value: meets ? 1 : 0, max: 1, label: code }
+      const credits = courseMap.get(code)?.credits ?? 0.5
+      return { met: meets, value: meets ? credits : 0, max: credits, label: code }
     }
     case 'all_of': {
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
-      const metCount = children.filter(c => c.met).length
-      const total = children.length
-      return { met: metCount === total, value: metCount, max: total, label: 'All of:', children }
+      const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
+      const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
+      return { met: children.every(c => c.met), value: earnedCredits, max: totalCredits, label: 'All of:', children }
     }
     case 'one_of': {
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
-      const metCount = children.filter(c => c.met).length
-      return { met: metCount >= 1, value: metCount >= 1 ? 1 : 0, max: 1, label: 'One of:', children }
+      const anyMet = children.some(c => c.met)
+      const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
+      const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
+      return { met: anyMet, value: earnedCredits, max: totalCredits, label: 'One of:', children }
     }
     case 'n_from': {
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const target = node.n || 1
-      const count = children.filter(c => c.met).length
-      return { met: count >= target, value: count, max: target, label: `Choose ${target} from:`, children }
+      const earned = children.reduce((sum, c) => sum + c.value, 0)
+      return { met: earned >= target, value: earned, max: target, label: `Choose ${target} credit(s) from:`, children }
+    }
+    case 'limit': {
+      const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
+      const cap = node.limit || 0
+      const earned = Math.min(children.reduce((sum, c) => sum + c.value, 0), cap)
+      return { met: earned >= cap, value: earned, max: cap, label: `Up to ${cap} credit(s) from:`, children }
     }
     case 'open_pool': {
       // open_pool is usually credit-based
@@ -150,15 +159,14 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
   
   const groupsEval = program.completion.groups.map(group => {
     const children = group.items.map(child => evaluateNode(child, userCodes, courseMap))
-    // We treat the group itself as an "all_of" for its root items
-    const metCount = children.filter(c => c.met).length
-    const total = children.length
-    
+    const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
+    const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
+
     return {
       label: group.label || 'Core Requirements',
-      met: metCount === total,
-      value: metCount,
-      max: total,
+      met: children.every(c => c.met),
+      value: earnedCredits,
+      max: totalCredits,
       children
     }
   })
