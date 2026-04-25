@@ -106,9 +106,9 @@ function NodeRenderer({ node, forceExpand }: { node: NodeEvalResult; forceExpand
         <span className={`shrink-0 inline-block w-1.5 h-1.5 rounded-full mt-[5px] ${dotColor}`} />
         <div className="flex-1 leading-snug">
           {node.label}
-          {node.max > 1 && (
+          {node.max > 0 && node.children && node.children.length > 0 && (
             <span className="ml-1 text-[10px] opacity-60">
-              ({node.value} / {node.max})
+              ({Number.isInteger(node.value) ? node.value : node.value.toFixed(1)} / {Number.isInteger(node.max) ? node.max : node.max.toFixed(1)} cr)
             </span>
           )}
         </div>
