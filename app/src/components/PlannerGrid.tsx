@@ -18,20 +18,38 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
     ? plan.semesters.filter(s => s.season !== 'Summer')
     : plan.semesters
 
+  // Newest at top, oldest at bottom — matches how a timeline reads when scrolling down into history
   const sorted = [...visibleSemesters].sort(
-    (a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season),
+    (a, b) => semesterSortKey(b.year, b.season) - semesterSortKey(a.year, a.season),
   )
 
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
       {/* Main grid area */}
-      <div className="flex-1 overflow-auto p-5 space-y-3">
+      <div className="flex-1 overflow-auto p-5 space-y-2">
         {/* Plan title bar */}
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-3">
           <h1 className="text-lg font-semibold text-utm-navy">{plan.name}</h1>
           <span className="text-xs text-gray-400">
             {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses across {plan.semesters.length} semesters
           </span>
+        </div>
+
+        {/* Add Year at top — new semesters appear above since grid is newest-first */}
+        <div className="flex justify-center mb-1">
+          <button
+            onClick={() => {
+              const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
+              const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : new Date().getFullYear()
+              const nextYear = maxFall + 1
+              addSemester(plan.id, nextYear, 'Fall')
+              addSemester(plan.id, nextYear + 1, 'Winter')
+              addSemester(plan.id, nextYear + 1, 'Summer')
+            }}
+            className="px-4 py-1 text-sm font-medium rounded-full border border-dashed border-gray-300 text-gray-400 hover:text-utm-blue hover:border-utm-blue hover:bg-utm-blue/5 transition-all flex items-center gap-1.5"
+          >
+            <span className="text-base leading-none">+</span> Add Academic Year
+          </button>
         </div>
 
         {sorted.length === 0 ? (
@@ -51,22 +69,6 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
             />
           ))
         )}
-
-        <div className="flex justify-center mt-6 mb-4">
-          <button
-            onClick={() => {
-              const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
-              const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : new Date().getFullYear()
-              const nextYear = maxFall + 1
-              addSemester(plan.id, nextYear, 'Fall')
-              addSemester(plan.id, nextYear + 1, 'Winter')
-              addSemester(plan.id, nextYear + 1, 'Summer')
-            }}
-            className="px-4 py-1.5 text-sm font-medium rounded-full border border-dashed border-gray-300 text-gray-500 hover:text-utm-blue hover:border-utm-blue hover:bg-utm-blue/5 transition-all w-full max-w-sm flex items-center justify-center gap-2"
-          >
-            <span className="text-lg leading-none">+</span> Add Academic Year
-          </button>
-        </div>
       </div>
 
       {/* Right panel */}
