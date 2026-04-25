@@ -100,7 +100,7 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const target = node.n || 1
       const earned = children.reduce((sum, c) => sum + c.value, 0)
-      return { met: earned >= target, value: earned, max: target, label: `Choose ${target} credit(s) from:`, children }
+      return { met: earned >= target, value: Math.min(earned, target), max: target, label: `Choose ${target} credit(s) from:`, children }
     }
     case 'limit': {
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
@@ -117,9 +117,11 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       // This allows overlap but correctly calculates credit totals assuming the user is fulfilling it.
       for (const code of userCodes) {
         if (node.excluding && node.excluding.includes(code)) continue
-        if (node.specific_courses && node.specific_courses.includes(code)) {
-          const c = courseMap.get(code)
-          collected += c?.credits ?? 0.5
+        if (node.specific_courses && node.specific_courses.length > 0) {
+          if (node.specific_courses.includes(code)) {
+            const c = courseMap.get(code)
+            collected += c?.credits ?? 0.5
+          }
           continue
         }
 
@@ -154,11 +156,41 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
   }
 }
 
+function collectNFromCodes(group: RequirementGroup): string[] {
+  const codes: string[] = []
+  for (const item of group.items) {
+    if (item.type === 'n_from') {
+      for (const child of item.items || []) {
+        if (child.type === 'course' && child.code) codes.push(child.code)
+      }
+    }
+  }
+  return codes
+}
+
 export function evaluateProgram(program: ProgramStructure, semesters: Semester[], courseMap: Map<string, Course>) {
   const userCodes = getUniqueCourses(semesters)
-  
+
   const groupsEval = program.completion.groups.map(group => {
-    const children = group.items.map(child => evaluateNode(child, userCodes, courseMap))
+    // Collect all courses listed in n_from siblings so we can evaluate
+    // "N additional credit from ... courses listed above" text nodes.
+    const nFromCodes = collectNFromCodes(group)
+
+    const children = group.items.map(child => {
+      if (child.type === 'text' && nFromCodes.length > 0) {
+        const m = child.text?.match(/^(\d+(?:\.\d+)?)\s+additional\s+credits?\s+from/i)
+        if (m) {
+          const n = parseFloat(m[1])
+          return evaluateNode(
+            { type: 'open_pool', n, specific_courses: nFromCodes, subject: null, min_level: null, max_level: null, excluding: [], sub_constraints: [], description: child.text } as any,
+            userCodes,
+            courseMap,
+          )
+        }
+      }
+      return evaluateNode(child, userCodes, courseMap)
+    })
+
     const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
     const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
 
