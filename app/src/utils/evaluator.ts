@@ -24,9 +24,9 @@ export function evaluateGeneralRequirements(semesters: Semester[], courseMap: Ma
       if (!c) continue
 
       const credits = c.credits ?? 0.5
-      
+
       total += credits
-      
+
       const numLevelMatch = code.match(/\d{3}/)
       if (numLevelMatch) {
         const numLevel = parseInt(numLevelMatch[0], 10)
@@ -63,7 +63,6 @@ export interface NodeEvalResult {
   children?: NodeEvalResult[]
 }
 
-// Flat set of user planned courses for quick lookup
 function getUniqueCourses(semesters: Semester[]): Set<string> {
   const set = new Set<string>()
   for (const sem of semesters) {
@@ -103,18 +102,16 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       return { met: earned >= target, value: Math.min(earned, target), max: target, label: `Choose ${target} credit(s) from:`, children }
     }
     case 'limit': {
+      // "Up to N credits from ..." is a cap, not a requirement — always satisfied; value is capped.
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const cap = node.limit || 0
       const earned = Math.min(children.reduce((sum, c) => sum + c.value, 0), cap)
-      return { met: earned >= cap, value: earned, max: cap, label: `Up to ${cap} credit(s) from:`, children }
+      return { met: true, value: earned, max: cap, label: `Up to ${cap} credit(s) from:`, children }
     }
     case 'open_pool': {
-      // open_pool is usually credit-based
       const targetCredits = node.n || 0
       let collected = 0
 
-      // Simplistic greedy matching: iterate all user codes and see if they match the pool logic.
-      // This allows overlap but correctly calculates credit totals assuming the user is fulfilling it.
       for (const code of userCodes) {
         if (node.excluding && node.excluding.includes(code)) continue
         if (node.specific_courses && node.specific_courses.length > 0) {
@@ -156,6 +153,7 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
   }
 }
 
+// Collect course codes from all n_from siblings in the group
 function collectNFromCodes(group: RequirementGroup): string[] {
   const codes: string[] = []
   for (const item of group.items) {
@@ -168,33 +166,192 @@ function collectNFromCodes(group: RequirementGroup): string[] {
   return codes
 }
 
+// Collect explicitly required course codes from group (courses inside `course` and `all_of` nodes only)
+function collectRequiredCoursesFromGroup(group: RequirementGroup): Set<string> {
+  const codes = new Set<string>()
+  function collect(node: RequirementNode) {
+    if (node.type === 'course' && node.code) codes.add(node.code)
+    if (node.type === 'all_of') (node.items || []).forEach(collect)
+    // n_from / one_of are optional choices — don't mark as "required"
+  }
+  for (const item of group.items) {
+    if (item.type !== 'text') collect(item)
+  }
+  return codes
+}
+
+interface SubjectPoolSpec {
+  n: number
+  subjects: string[]
+  minLevel: number | null
+  maxLevel: number | null
+}
+
+// Parse "N additional [SUBJ] credits [at X level]" into a structured spec.
+// Returns null for patterns we can't reliably parse (clusters, Italian categories, etc.)
+function parseSubjectPoolText(text: string): SubjectPoolSpec | null {
+  if (!/^\d/.test(text)) return null
+  if (!/additional/i.test(text)) return null
+
+  const nMatch = text.match(/^(\d+(?:\.\d+)?)/)
+  if (!nMatch) return null
+  const n = parseFloat(nMatch[1])
+
+  // English subject name → course prefix
+  const nameToCode: Record<string, string> = {
+    biology: 'BIO',
+    psychology: 'PSY',
+  }
+
+  const subjects: string[] = []
+
+  // "N additional [UTM] CODE credits" — code directly before "credits"
+  const preCredits = text.match(/additional(?:\s+UTM)?\s+([A-Z]{3})\s+credits?/i)
+  if (preCredits) subjects.push(preCredits[1].toUpperCase())
+
+  // "N additional credits in CODE" — code after "in"
+  const inCode = text.match(/additional\s+credits?\s+in\s+([A-Z]{3})\b/i)
+  if (inCode) {
+    const c = inCode[1].toUpperCase()
+    if (!subjects.includes(c)) subjects.push(c)
+  }
+
+  // "N additional credit of CODE [or CODE]" — after "of"
+  const ofCode = text.match(/additional\s+credits?\s+of\s+([A-Z]{3}(?:\s+or\s+[A-Z]{3})*)/i)
+  if (ofCode) {
+    for (const m of (ofCode[1].match(/[A-Z]{3}/g) || [])) {
+      if (!subjects.includes(m)) subjects.push(m)
+    }
+  }
+
+  // Also: "N additional credits of HIS at …"
+  const creditsOf = text.match(/additional\s+credits?\s+of\s+([A-Z]{3})\s+at/i)
+  if (creditsOf) {
+    const c = creditsOf[1].toUpperCase()
+    if (!subjects.includes(c)) subjects.push(c)
+  }
+
+  // English names fallback
+  if (subjects.length === 0) {
+    for (const [name, code] of Object.entries(nameToCode)) {
+      if (text.toLowerCase().includes(name)) subjects.push(code)
+    }
+  }
+
+  // Filter tokens that are not course prefixes
+  const SKIP = new Set(['UTM', 'AND', 'ANY', 'ROP', 'THE', 'ALL', 'FOR', 'NOT', 'DRE'])
+  // "DRE" is kept only if it comes from the "of CODE" pattern (handled above via ofCode)
+  const filtered = subjects.filter(s => !SKIP.has(s) || ofCode?.includes(s))
+  if (filtered.length === 0) return null
+
+  // Parse level constraint
+  let minLevel: number | null = null
+  let maxLevel: number | null = null
+
+  if (/300[/\-]400|300\+|300.*and.*400/i.test(text)) {
+    minLevel = 300
+  } else if (/\b400[-+]?level|\bat\s+(?:the\s+)?400/i.test(text)) {
+    minLevel = 400; maxLevel = 499
+  } else if (/(\d{3})\+\s*level/i.test(text)) {
+    const m = text.match(/(\d{3})\+/)
+    if (m) minLevel = parseInt(m[1])
+  } else if (/at\s+(?:the\s+)?(\d{3})\s*level/i.test(text)) {
+    const m = text.match(/at\s+(?:the\s+)?(\d{3})\s*level/i)
+    if (m) { minLevel = parseInt(m[1]); maxLevel = parseInt(m[1]) + 99 }
+  }
+
+  return { n, subjects: filtered, minLevel, maxLevel }
+}
+
 export function evaluateProgram(program: ProgramStructure, semesters: Semester[], courseMap: Map<string, Course>) {
   const userCodes = getUniqueCourses(semesters)
 
   const groupsEval = program.completion.groups.map(group => {
-    // Collect all courses listed in n_from siblings so we can evaluate
-    // "N additional credit from ... courses listed above" text nodes.
+    // Collect pools needed for "additional credits" text-node resolution
     const nFromCodes = collectNFromCodes(group)
+    const requiredCodesInGroup = collectRequiredCoursesFromGroup(group)
+
+    // Total credits already required by n_from siblings — consumed before "additional" pool starts
+    const siblingNFromConsumption = group.items.reduce(
+      (sum, item) => item.type === 'n_from' ? sum + (item.n || 0) : sum,
+      0,
+    )
 
     const children = group.items.map(child => {
-      if (child.type === 'text' && nFromCodes.length > 0) {
-        const m = child.text?.match(/^(\d+(?:\.\d+)?)\s+additional\s+credits?\s+from/i)
-        if (m) {
-          const n = parseFloat(m[1])
-          return evaluateNode(
-            { type: 'open_pool', n, specific_courses: nFromCodes, subject: null, min_level: null, max_level: null, excluding: [], sub_constraints: [], description: child.text } as any,
-            userCodes,
-            courseMap,
-          )
+      if (child.type === 'text') {
+        const text = child.text || ''
+
+        // ── Pattern 1: "N additional credits from [nFromCodes pool]" ─────────────────
+        // Matches: "1.0 additional credit from the ENG and CCT courses listed above"
+        if (nFromCodes.length > 0) {
+          const m = text.match(/^(\d+(?:\.\d+)?)\s+additional\s+credits?\s+from/i)
+          if (m) {
+            const n = parseFloat(m[1])
+            let poolCredits = 0
+            for (const code of userCodes) {
+              if (nFromCodes.includes(code)) {
+                poolCredits += courseMap.get(code)?.credits ?? 0.5
+              }
+            }
+            const available = Math.max(0, poolCredits - siblingNFromConsumption)
+            return { met: available >= n, value: Math.min(available, n), max: n, label: text }
+          }
+        }
+
+        // ── Pattern 2: "N additional [SUBJ] credits [at level]" ──────────────────────
+        // Matches: "2.5 additional credits in PHL", "1.0 additional RLG credits at any level",
+        //          "0.5 additional credits in MAT at the 400 level", "1.0 additional credit of ENG or DRE", etc.
+        const spec = parseSubjectPoolText(text)
+        if (spec) {
+          const { n, subjects, minLevel, maxLevel } = spec
+
+          // Sum user credits that match subject + level filter
+          let userSubjectCredits = 0
+          for (const code of userCodes) {
+            if (!subjects.some(s => code.startsWith(s))) continue
+            const levelMatch = code.match(/\d{3}/)
+            if (levelMatch) {
+              const level = parseInt(levelMatch[0])
+              if (minLevel !== null && level < minLevel) continue
+              if (maxLevel !== null && level > maxLevel) continue
+            }
+            userSubjectCredits += courseMap.get(code)?.credits ?? 0.5
+          }
+
+          // Subtract credits of explicitly required siblings that match the subject
+          // (e.g., required course CSC108H5 should not also count toward "additional CSC credits")
+          let requiredInSubject = 0
+          for (const code of requiredCodesInGroup) {
+            if (!userCodes.has(code)) continue
+            if (!subjects.some(s => code.startsWith(s))) continue
+            requiredInSubject += courseMap.get(code)?.credits ?? 0.5
+          }
+
+          // Subtract n_from consumption proportional to same-subject items
+          let nFromSubjectConsumption = 0
+          for (const item of group.items) {
+            if (item.type !== 'n_from') continue
+            const items = item.items || []
+            if (items.length === 0) continue
+            const subjectCount = items.filter(
+              c => c.type === 'course' && c.code && subjects.some(s => c.code!.startsWith(s))
+            ).length
+            if (subjectCount === 0) continue
+            nFromSubjectConsumption += (item.n || 0) * (subjectCount / items.length)
+          }
+
+          const available = Math.max(0, userSubjectCredits - requiredInSubject - nFromSubjectConsumption)
+          return { met: available >= n, value: Math.min(available, n), max: n, label: text }
         }
       }
+
       return evaluateNode(child, userCodes, courseMap)
     })
 
     const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
     const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
 
-    // Text nodes with max=0 are section headers (e.g. "Higher Years:"); don't block group completion
+    // Text nodes with max=0 are section headers — don't block group completion
     const evaluatableChildren = children.filter(c => c.max > 0)
     return {
       label: group.label || 'Core Requirements',
