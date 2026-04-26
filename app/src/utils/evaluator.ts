@@ -343,6 +343,24 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
           const available = Math.max(0, userSubjectCredits - requiredInSubject - nFromSubjectConsumption)
           return { met: available >= n, value: Math.min(available, n), max: n, label: text }
         }
+
+        // ── Pattern 3: text node with scraped courses list ──────────────────────────
+        // The scraper preserved course codes from the text in a `courses` field.
+        // Count credits the user has from those courses vs the stated credit target.
+        const coursesList = child.courses
+        if (coursesList && coursesList.length > 0) {
+          const inParens = text.match(/\((\d+(?:\.\d+)?)\s+credits?\)/i)
+          const leading  = text.match(/^(\d+(?:\.\d+)?)\s+credits?/i)
+          const n = inParens ? parseFloat(inParens[1]) : leading ? parseFloat(leading[1]) : null
+
+          let earned = 0
+          for (const code of coursesList) {
+            if (userCodes.has(code)) earned += courseMap.get(code)?.credits ?? 0.5
+          }
+
+          const max = n ?? coursesList.reduce((s, code) => s + (courseMap.get(code)?.credits ?? 0.5), 0)
+          return { met: earned >= max, value: Math.min(earned, max), max, label: text }
+        }
       }
 
       return evaluateNode(child, userCodes, courseMap)

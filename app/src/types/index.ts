@@ -56,7 +56,7 @@ export type RequirementNode =
       excluding: string[];
       description?: string;
     }
-  | { type: 'text'; text: string; description?: string }
+  | { type: 'text'; text: string; description?: string; courses?: string[] }
   | { type: 'limit'; limit: number; items: RequirementNode[] }
 
 export interface RequirementGroup {
