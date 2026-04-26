@@ -380,17 +380,19 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
         r'in\s+([A-Z]{2,4})\s+at\s+the\s+(\d{3})\s+level', text, re.I
     )
 
-    # excluding clause
+    # excluding clause — handle "except", "except for", "excluding", and "or" before last course
     excluding = []
-    excl_m = re.search(r'(?:excluding|except\s+for)\s+((?:[A-Z]{2,4}\d{3}[HY]\d[\s,]+(?:and\s+)?)+)', text)
+    excl_m = re.search(
+        r'(?:excluding|except(?:\s+for)?)\s+((?:[A-Z]{2,4}\d{3}[HY]\d[,\s]*(?:(?:and|or)\s+)?)+)',
+        text, re.I
+    )
     if excl_m:
         excluding = re.findall(r'[A-Z]{2,4}\d{3}[HY]\d', excl_m.group(1))
-    # also excluding = courses in "excluding X and Y" clauses
+    # also catch linked courses preceded by "excluding" / "except" text
     for a in elem.find_all("a", href=True):
         if "/course/" in a["href"]:
-            # check if preceded by "excluding"
             prev = a.find_previous(string=True)
-            if prev and "exclud" in prev.lower():
+            if prev and re.search(r'exclu|except', prev, re.I):
                 code = a["href"].split("/course/")[-1].upper()
                 if code not in excluding:
                     excluding.append(code)
@@ -398,10 +400,16 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
     # sub-constraints: at_least / no_more_than within the text
     sub_constraints = _extract_sub_constraints(text, elem)
 
+    # "SUBJ at the NNN/NNN level" — e.g. "MAT at the 300/400 level or CSC363H5"
+    # This is an open pool with subject + level filter; named courses are specific_courses.
+    subj_at_level_m = re.search(
+        r'\b([A-Z]{2,4})\s+at\s+the\s+(\d{3})[/\-]?(\d{3})?\+?\s*[-–]?\s*level', text, re.I
+    )
+
     # explicit list with no level/subject filter → n_from
-    is_open = any_level_m or level_filt_m or subject_m or subj_level_m
+    is_open = any_level_m or level_filt_m or subject_m or subj_level_m or subj_at_level_m
     # But if all courses are named AND there's no level/subject filter, it's n_from
-    if codes and not any_level_m and not subject_m and not subj_level_m:
+    if codes and not any_level_m and not subject_m and not subj_level_m and not subj_at_level_m:
         non_excluding = [c for c in codes if c not in excluding]
         if non_excluding:
             return {
@@ -438,6 +446,11 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
     if subj_level_m:
         pool["subject"] = subj_level_m.group(1).upper()
         pool["min_level"] = int(subj_level_m.group(2))
+    elif subj_at_level_m:
+        pool["subject"] = subj_at_level_m.group(1).upper()
+        lo = int(subj_at_level_m.group(2))
+        hi = int(subj_at_level_m.group(3)) if subj_at_level_m.group(3) else lo + 99
+        pool.update({"min_level": lo, "max_level": hi})
     elif subject_m:
         pool["subject"] = subject_m.group(2).upper()
     elif bare_subj_m:
@@ -687,6 +700,24 @@ def parse_completion_html(html: str) -> dict:
             merged[-1]["items"].extend(g["items"])
         else:
             merged.append(g)
+
+    # ── surface total_credits_note level constraints as evaluatable text nodes ──
+    # e.g. "including at least 3.0 credits at the 300 level and 0.5 at the 400 level"
+    # These are real requirements hidden in the header line. Add them to the first group
+    # so they appear in the UI and can be evaluated by Pattern 2 (subject pool text).
+    if total_credits_note and re.search(r'at\s+(?:least|the)\s+\d', total_credits_note, re.I):
+        # Split on "and" to surface each sub-constraint as its own text node
+        parts = re.split(r'\band\b', total_credits_note, flags=re.I)
+        constraint_nodes = []
+        for part in parts:
+            part = part.strip().lstrip(',').strip()
+            if re.search(r'\d+\.?\d*\s+credit', part, re.I):
+                constraint_nodes.append({"type": "text", "text": part, "courses": []})
+        if constraint_nodes:
+            if merged:
+                merged[0]["items"].extend(constraint_nodes)
+            else:
+                merged.append({"label": "", "condition": None, "items": constraint_nodes})
 
     return {
         "total_credits": total_credits,

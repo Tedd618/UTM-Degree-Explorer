@@ -2094,6 +2094,16 @@
               "type": "text",
               "text": "2.5 additional credits in PHL",
               "courses": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 3.0 credits at the 300 level",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "0.5 credit at the 400-level.",
+              "courses": []
             }
           ]
         }
@@ -2469,9 +2479,9 @@
               "n": 1.0,
               "constraint": "at_least",
               "description": "Fourth Year: 1.0 credits in FAH or VCC or VST at the 400 level.",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "VST",
+              "min_level": 400,
+              "max_level": 499,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -2482,8 +2492,8 @@
               "constraint": "at_most",
               "description": "NOTES: 1. Completion of the Art History Major Program must include : FAH101H5 and VCC101H5 and ISP100H5 plus 2.0 credits of FAH at the 200 level and 3.0 credits of FAH or VCC or VST at the 300/400 level, of which 0.5 credit must be at the 400 level. 2. A minimum of 1.0 credit from each of the following four areas are required : Ancient & Medieval; 15th-18th Centuries; 19th-21st Centuries; and Visual Culture & Theory. It is highly recommended that students take at least one 300/400 level course in at least three of the four areas. Some courses may satisfy more than one of the distribution requirements. See the departmental website ( www.utm.utoronto.ca/dvs ) for the distribution of courses by area. 3. For the complete list of VCC courses that satisfy Art History program requirements, please see the departmental website ( www.utm.utoronto.ca/dvs ). 4. No St. George courses may be substituted for the required 100 or 200 level courses (see Note 5 below for exceptions). 5. VCC 200 level courses do not satisfy FAH 200 level requirements. 0.5 credit of FAH at the 200 level may be taken at St. George in an area not covered by current UTM offerings (i.e. one of the following courses – FAH248H1 or FAH260H1 or FAH262H1 or FAH270H1 or FAH272H1 ). 6. Courses in other programs which have a significant Art History or Visual Culture content, such as offerings in CCIT, Cinema Studies, Philosophy, Drama, English History, East Asian Studies, and Near & Middle Eastern Civilizations, may be substituted for up to 1.0 credit of FAH or VCC credit. Permission of the Art History Program Director prior to enrolment is required. For possible courses options with appropriate course content, please consult the DVS Undergraduate Counsellor. 7. No more than a total of 10.0 credits of FAH may be completed. 8. Recommended Language Study: Students wishing to pursue graduate studies in Art History must acquire a basic reading knowledge of at least two languages. A minimum of 2.0 credits in one language, or 1.0 credit each in two languages (for a total of 2.0 credits) is recommended. German, French, and Italian are recommended.",
               "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 200,
+              "max_level": 299,
               "specific_courses": [
                 "FAH101H5",
                 "VCC101H5",
@@ -3233,8 +3243,8 @@
               "constraint": "at_least",
               "description": "Second Year: 1. Remaining uncompleted credit(s) from the FAS course list identified in ‘First Year’ (above). 2. 2.0 credit of FAH at the 200 level",
               "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 200,
+              "max_level": 299,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -3250,9 +3260,9 @@
               "n": 1.0,
               "constraint": "at_least",
               "description": "Third & Fourth Years: 1. 1.0 credit of FAH or VCC or VST at the 300/400 level 2. 1.0 credit of FAS at the 300/400 level",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "VST",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -3263,42 +3273,25 @@
               "courses": []
             },
             {
-              "type": "n_from",
+              "type": "open_pool",
               "n": 8.5,
-              "items": [
-                {
-                  "type": "course",
-                  "code": "FAH101H5"
-                },
-                {
-                  "type": "course",
-                  "code": "ISP100H5"
-                },
-                {
-                  "type": "course",
-                  "code": "FAS143H5"
-                },
-                {
-                  "type": "course",
-                  "code": "FAS145H5"
-                },
-                {
-                  "type": "course",
-                  "code": "FAS147H5"
-                },
-                {
-                  "type": "course",
-                  "code": "FAS232H5"
-                },
-                {
-                  "type": "course",
-                  "code": "FAS236H5"
-                },
-                {
-                  "type": "course",
-                  "code": "FAS248H5"
-                }
-              ]
+              "constraint": "at_least",
+              "description": "Completion of the Art & Art History Major Program must include : FAH101H5 and ISP100H5 and FAS143H5 and FAS145H5 and FAS147H5 and FAS232H5 and FAS236H5 and FAS248H5 . Of the total 8.5 credits in the program, 2.0 credits from FAH or VCC or VST or FAS must be at the 300/400 level.",
+              "subject": "BE",
+              "min_level": 300,
+              "max_level": 400,
+              "specific_courses": [
+                "FAH101H5",
+                "ISP100H5",
+                "FAS143H5",
+                "FAS145H5",
+                "FAS147H5",
+                "FAS232H5",
+                "FAS236H5",
+                "FAS248H5"
+              ],
+              "excluding": [],
+              "sub_constraints": []
             },
             {
               "type": "text",
@@ -3329,8 +3322,8 @@
               "constraint": "at_least",
               "description": "0.5 credit of FAH at the 200 level may be taken at St. George in an area not covered by current UTM offerings (i.e. one of the following courses – FAH248H1 or FAH260H1 or FAH262H1 or FAH270H1 or FAH272H1 ).",
               "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 200,
+              "max_level": 299,
               "specific_courses": [
                 "FAH248H1",
                 "FAH260H1",
@@ -4085,8 +4078,8 @@
               "constraint": "at_least",
               "description": "1.0 credit of SOC at the 300 level",
               "subject": "SOC",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 399,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -4097,8 +4090,8 @@
               "constraint": "at_least",
               "description": "1.0 credit of SOC at the 400 level",
               "subject": "SOC",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 400,
+              "max_level": 499,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -4109,8 +4102,8 @@
               "constraint": "at_least",
               "description": "1.0 credit of SOC at the 300/400 level",
               "subject": "SOC",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -4247,8 +4240,8 @@
               "constraint": "at_least",
               "description": "Minimum of 4.0 credits from any 300/400 level CCT/VCC courses, of which 1.0 credit must be at the 400 level.",
               "subject": "CCT",
-              "min_level": 300,
-              "max_level": 400,
+              "min_level": 400,
+              "max_level": 499,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -5413,8 +5406,8 @@
               "constraint": "at_least",
               "description": "1.0 credit in MGT at the 300/400-level",
               "subject": "MGT",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -5694,6 +5687,11 @@
             {
               "type": "course",
               "code": "PSY100Y5"
+            },
+            {
+              "type": "text",
+              "text": "6.5-7.0 credits in Psychology are required, including 2.0 at the 300/400 level.",
+              "courses": []
             }
           ]
         },
@@ -6100,6 +6098,11 @@
               "type": "text",
               "text": "1.5 additional credits in any of the other Italian course categories (excluding those listed above).",
               "courses": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 2.0 credits at the 300/400 level. Some written work",
+              "courses": []
             }
           ]
         }
@@ -6504,18 +6507,19 @@
           "condition": null,
           "items": [
             {
-              "type": "n_from",
+              "type": "open_pool",
               "n": 5.5,
-              "items": [
-                {
-                  "type": "course",
-                  "code": "CCT417H5"
-                },
-                {
-                  "type": "course",
-                  "code": "CCT454H5"
-                }
-              ]
+              "constraint": "at_least",
+              "description": "5.5 credits from any 300 or 400 level WRI courses, including the options of CCT417H5 or CCT454H5 . 0.5 credit must be at the 400-level.",
+              "subject": "BE",
+              "min_level": 400,
+              "max_level": 499,
+              "specific_courses": [
+                "CCT417H5",
+                "CCT454H5"
+              ],
+              "excluding": [],
+              "sub_constraints": []
             }
           ]
         }
@@ -7076,7 +7080,7 @@
               "n": 5.0,
               "constraint": "at_least",
               "description": "5.0 credits from the list of electives below; 1.0 credits must be at the 300+level",
-              "subject": null,
+              "subject": "BE",
               "min_level": 300,
               "max_level": 399,
               "specific_courses": [],
@@ -9587,6 +9591,16 @@
                   "code": "ENG436H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "At least 7.0 ENG credits, including at least 2.0 credits at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements,",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The major also requires the following courses:",
+              "courses": []
             }
           ]
         }
@@ -10674,6 +10688,11 @@
               "type": "text",
               "text": "2.0 additional POL credits",
               "courses": []
+            },
+            {
+              "type": "text",
+              "text": "at least 2.0 credits at the 300 or 400 level.",
+              "courses": []
             }
           ]
         }
@@ -11400,6 +11419,11 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 2.0 credits at the 300/400 level.",
+              "courses": []
             }
           ]
         }
@@ -11623,7 +11647,7 @@
               "n": 4.0,
               "constraint": "at_least",
               "description": "Higher Years: 1.0 DRE at the 300 level and 4.0 credits from the drama-related courses, at least 1.0 at the 300+ level.",
-              "subject": null,
+              "subject": "DRE",
               "min_level": 300,
               "max_level": 399,
               "specific_courses": [],
@@ -11899,14 +11923,15 @@
               "constraint": "at_least",
               "description": "STA256H5 or CSC363H5 or 0.5 credit of MAT at the 300/400 level, except MAT322H5",
               "subject": "MAT",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [
                 "STA256H5",
-                "CSC363H5",
+                "CSC363H5"
+              ],
+              "excluding": [
                 "MAT322H5"
               ],
-              "excluding": [],
               "sub_constraints": []
             },
             {
@@ -12329,6 +12354,11 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 2.0 credits at the 300/400 level. Some written work",
+              "courses": []
             }
           ]
         }
@@ -12840,7 +12870,19 @@
         "max": null
       },
       "total_credits_note": "4.0 credits in PHL are required, including at least 1.0 credits at the 300/400 level.",
-      "groups": [],
+      "groups": [
+        {
+          "label": "",
+          "condition": null,
+          "items": [
+            {
+              "type": "text",
+              "text": "4.0 credits in PHL are required, including at least 1.0 credits at the 300/400 level.",
+              "courses": []
+            }
+          ]
+        }
+      ],
       "notes": []
     }
   },
@@ -13249,7 +13291,7 @@
               "n": 3.5,
               "constraint": "at_least",
               "description": "3.5 credits in at least two distinct disciplines selected from the list below; 1.0 credits must be at the 300+level.",
-              "subject": null,
+              "subject": "BE",
               "min_level": 300,
               "max_level": 399,
               "specific_courses": [],
@@ -13800,9 +13842,9 @@
               "n": 1.5,
               "constraint": "at_least",
               "description": "1.5 credits in FAH/ VCC/ VST at the 300/400 level.",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "VST",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -14516,48 +14558,31 @@
               ]
             },
             {
-              "type": "n_from",
+              "type": "open_pool",
               "n": 2.5,
-              "items": [
+              "constraint": "at_least",
+              "description": "2.5 credits from the following of which at least 1.0 credit must be at the 400 level: HSC300H5 or HSC301H5 or HSC302H5 or HSC307H5 or HSC308H5 or HSC401H5 or HSC402H5 or HSC404H5 or HSC405H5 or HSC406H5",
+              "subject": "BE",
+              "min_level": 400,
+              "max_level": 499,
+              "specific_courses": [
+                "HSC300H5",
+                "HSC301H5",
+                "HSC302H5",
+                "HSC307H5",
+                "HSC308H5",
+                "HSC401H5",
+                "HSC402H5",
+                "HSC404H5",
+                "HSC405H5",
+                "HSC406H5"
+              ],
+              "excluding": [],
+              "sub_constraints": [
                 {
-                  "type": "course",
-                  "code": "HSC300H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC301H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC302H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC307H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC308H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC401H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC402H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC404H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC405H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HSC406H5"
+                  "constraint": "at_least",
+                  "n": 1.0,
+                  "description": ""
                 }
               ]
             }
@@ -14777,6 +14802,11 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 1.0 credit at the 300/400 level.",
+              "courses": []
             }
           ]
         }
@@ -15247,8 +15277,8 @@
               "constraint": "at_least",
               "description": "1.0 credit of FRE at the 300/400 level.",
               "subject": "FRE",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -15293,6 +15323,11 @@
             {
               "type": "course",
               "code": "PSY100Y5"
+            },
+            {
+              "type": "text",
+              "text": "including 1.0 credit at the 300 level or above.",
+              "courses": []
             }
           ]
         },
@@ -15379,11 +15414,10 @@
               "subject": "PSY",
               "min_level": 300,
               "max_level": null,
-              "specific_courses": [
-                "PSY399Y5"
-              ],
+              "specific_courses": [],
               "excluding": [
-                "PSY399H5"
+                "PSY399H5",
+                "PSY399Y5"
               ],
               "sub_constraints": []
             }
@@ -15548,6 +15582,11 @@
             {
               "type": "course",
               "code": "VCC101H5"
+            },
+            {
+              "type": "text",
+              "text": "including at least 1.0 credit at the 300/400 level.",
+              "courses": []
             }
           ]
         },
@@ -15615,6 +15654,11 @@
             {
               "type": "course",
               "code": "ENV100Y5"
+            },
+            {
+              "type": "text",
+              "text": "with at least 1.0 credit at the 300-400 level.",
+              "courses": []
             }
           ]
         },
@@ -16011,6 +16055,11 @@
                   "code": "WGS345H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "4.0 credits, including at least 1.0 credits at the 300/400 level. Students wishing to complete a South Asian Humanities Minor Program must successfully complete 4.0 credits from the courses listed below. These must include courses from two of the following disciplines: History (HIS), History of Religions (RLG) or Women, Gender",
+              "courses": []
             }
           ]
         }
@@ -16124,6 +16173,11 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 1.0 credits at the 300/400 level.",
+              "courses": []
             }
           ]
         }
@@ -16483,6 +16537,11 @@
             {
               "type": "course",
               "code": "ENV100Y5"
+            },
+            {
+              "type": "text",
+              "text": "with at least 1.0 credit at the 300-400 level.",
+              "courses": []
             }
           ]
         },
@@ -16587,22 +16646,20 @@
           "condition": null,
           "items": [
             {
-              "type": "n_from",
+              "type": "open_pool",
               "n": 2.5,
-              "items": [
-                {
-                  "type": "course",
-                  "code": "DTS201H5"
-                },
-                {
-                  "type": "course",
-                  "code": "DTS202H5"
-                },
-                {
-                  "type": "course",
-                  "code": "DTS401H5"
-                }
-              ]
+              "constraint": "at_least",
+              "description": "2. DTS201H5 and DTS202H5 3. 2.5 credits from the list of electives below; 1.0 credits must be at the 300+level 4. DTS401H5 (should be taken in the fourth year of study)",
+              "subject": "BE",
+              "min_level": 300,
+              "max_level": 399,
+              "specific_courses": [
+                "DTS201H5",
+                "DTS202H5",
+                "DTS401H5"
+              ],
+              "excluding": [],
+              "sub_constraints": []
             },
             {
               "type": "all_of",
@@ -17600,6 +17657,11 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including 1.0 credit at the 300/400 level.",
+              "courses": []
             }
           ]
         },
@@ -18081,6 +18143,11 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 1.0 credit at the 300/400 level, of which 0.5 credit must be PHL.",
+              "courses": []
             }
           ]
         }
@@ -18107,7 +18174,19 @@
         "max": null
       },
       "total_credits_note": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
-      "groups": [],
+      "groups": [
+        {
+          "label": "",
+          "condition": null,
+          "items": [
+            {
+              "type": "text",
+              "text": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
+              "courses": []
+            }
+          ]
+        }
+      ],
       "notes": []
     }
   },
@@ -18300,6 +18379,11 @@
                   "code": "JGE378H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "of which 1.0 credit must be at the 300/400 level:",
+              "courses": []
             }
           ]
         }
@@ -18650,6 +18734,11 @@
                   "code": "MAT157Y5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including at least 1.5 credits at the 300/400 level. Please note that a number of these courses have MAT pre-requisites",
+              "courses": []
             }
           ]
         },
@@ -18792,7 +18881,24 @@
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300 or 400 level and no more than 1.0 credit at the 100 level.",
-      "groups": [],
+      "groups": [
+        {
+          "label": "",
+          "condition": null,
+          "items": [
+            {
+              "type": "text",
+              "text": "including at least 1.0 credit at the 300 or 400 level",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "no more than 1.0 credit at the 100 level.",
+              "courses": []
+            }
+          ]
+        }
+      ],
       "notes": []
     }
   },
@@ -19080,6 +19186,11 @@
             {
               "type": "text",
               "text": "1.0 additional credit from the ENG and CCT courses listed above",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "including 1.0 credit at the 300/ 400 level)",
               "courses": []
             }
           ]
@@ -19523,24 +19634,24 @@
           "condition": null,
           "items": [
             {
-              "type": "n_from",
+              "type": "open_pool",
               "n": 1.0,
-              "items": [
-                {
-                  "type": "course",
-                  "code": "CSC363H5"
-                },
-                {
-                  "type": "course",
-                  "code": "MAT498H5"
-                }
+              "constraint": "at_least",
+              "description": "1.0 credit from the following: MAT at the 300/400 level or CSC363H5 (except for MAT397H5 , MAT398H5 , MAT492H5 , MAT497H5 or MAT498H5 )",
+              "subject": "MAT",
+              "min_level": 300,
+              "max_level": 400,
+              "specific_courses": [
+                "CSC363H5"
               ],
               "excluding": [
                 "MAT397H5",
                 "MAT398H5",
                 "MAT492H5",
-                "MAT497H5"
-              ]
+                "MAT497H5",
+                "MAT498H5"
+              ],
+              "sub_constraints": []
             }
           ]
         }
@@ -19874,7 +19985,7 @@
               "description": "ECO Requirements (6.0 credits) ECO206Y5 and ECO208Y5 and [ ECO227Y5 or ( STA258H5 and STA260H5 )] ECO375H5 1.0 credit in Economic History from: ECO302H5 or ECO303H5 or ECO322Y5 or ECO323Y5 ECO325H5 and ECO326H5 0.5 credit in ECO at the 300+ level",
               "subject": "ECO",
               "min_level": 300,
-              "max_level": 499,
+              "max_level": 399,
               "specific_courses": [
                 "ECO206Y5",
                 "ECO208Y5",
@@ -20254,6 +20365,16 @@
               "type": "text",
               "text": "3.5 additional credits in PHL",
               "courses": []
+            },
+            {
+              "type": "text",
+              "text": "10.0 credits in PHL are required, including at least 3.0 credits at the 300 level",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "at least 1.0 credits at the 400 level.",
+              "courses": []
             }
           ]
         }
@@ -20414,6 +20535,11 @@
                   "code": "MAT134H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including at least 5.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+              "courses": []
             }
           ]
         },
@@ -20920,9 +21046,9 @@
               "n": 3.0,
               "constraint": "at_least",
               "description": "Third Year: 3.0 credits in FAH at the 300/ 400 level, of which at least 1.5 must be at the 300 level.",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "BE",
+              "min_level": 300,
+              "max_level": 399,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -20938,9 +21064,9 @@
               "n": 2.5,
               "constraint": "at_least",
               "description": "Fourth Year: 2.5 credits in FAH or VCC or VST at the 300/400 level, of which 1.0 must be at the 400 level in FAH or VCC.",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "VST",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -21688,8 +21814,8 @@
               "constraint": "at_least",
               "description": "Second Year: 1. VCC101H5 2. 1.0 credit of FAH at the 200 level 3. Remaining uncompleted credit(s) from the FAS course list identified in ‘First Year’ (above).",
               "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 200,
+              "max_level": 299,
               "specific_courses": [
                 "VCC101H5"
               ],
@@ -21707,9 +21833,9 @@
               "n": 1.0,
               "constraint": "at_least",
               "description": "Third Year: 1. 1.0 credit of FAH or VCC at the 300/400 level 2. 2.0 credits of FAS at the 300/400 level",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "VCC",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -21725,9 +21851,9 @@
               "n": 1.0,
               "constraint": "at_least",
               "description": "Fourth Year: 1. 1.0 credit of FAH or VCC or VST at the 300/400 level 2. 2.0 credits of FAS at the 300/400 level",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "VST",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -21737,9 +21863,9 @@
               "n": 12.5,
               "constraint": "at_least",
               "description": "NOTES: 1. Completion of the Art & Art History Specialist Program must include : FAH101H5 and VCC101H5 and ISP100H5 and FAS143H5 and FAS145H5 and FAS147H5 and FAS232H5 and FAS236H5 and FAS248H5 . Of the total 12.0-12.5 credits in the program, 4.0 credits of FAH or VCC or VST or FAS must be at the 300/400 level with 1.0 credit in FAH or VCC at the 400 level and 1.0 credit of FAS at the 400 level.",
-              "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "subject": "BE",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [
                 "FAH101H5",
                 "VCC101H5",
@@ -21765,8 +21891,8 @@
               "constraint": "at_least",
               "description": "3. At least 0.5 credit of FAH at the 200-level must be completed in each of the following three areas : Ancient & Medieval; 15th-18th Centuries; and 19th-21st Centuries. See the departmental website ( www.utm.utoronto.ca/dvs ) for the distribution of courses by area.",
               "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 200,
+              "max_level": 299,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": [
@@ -21784,8 +21910,8 @@
               "constraint": "at_least",
               "description": "4. 0.5 credit of FAH at the 200 level may be taken at St. George in an area not covered by current UTM offerings (i.e. one of the following courses – FAH248H1 or FAH260H1 or FAH262H1 or FAH270H1 or FAH272H1 ).",
               "subject": "FAH",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 200,
+              "max_level": 299,
               "specific_courses": [
                 "FAH248H1",
                 "FAH260H1",
@@ -21920,6 +22046,11 @@
             {
               "type": "course",
               "code": "ISP100H5"
+            },
+            {
+              "type": "text",
+              "text": "including 5.0 credits at the 300/400 level",
+              "courses": []
             }
           ]
         },
@@ -22221,8 +22352,8 @@
               "constraint": "at_least",
               "description": "1.0 credit of ECO at the 300/400-level",
               "subject": "ECO",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -22635,6 +22766,11 @@
               "excluding": [
                 "ITA100Y5"
               ]
+            },
+            {
+              "type": "text",
+              "text": "1.0 credit at the 400 level (either in French or in Italian).",
+              "courses": []
             }
           ]
         }
@@ -23007,9 +23143,9 @@
               "n": 5.0,
               "constraint": "at_least",
               "description": "5.0 credits of SOC, of which 3.0 credits must be at the 300/400-level",
-              "subject": "SOC",
-              "min_level": null,
-              "max_level": null,
+              "subject": "BE",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -23288,6 +23424,11 @@
                   "code": "WRI307H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including at least 6.0 credits at the 300/400 level, of which 1.0 credits must be at the 400 level.",
+              "courses": []
             }
           ]
         }
@@ -24559,8 +24700,8 @@
               "constraint": "at_least",
               "description": "1.0 credits of HIS at the 400-level",
               "subject": "HIS",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 400,
+              "max_level": 499,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -24714,6 +24855,11 @@
             {
               "type": "text",
               "text": "Be sure to look ahead and plan to complete the prerequisites for any upper-level courses that are of interest to you.",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "of which at least 4.0 credits must be at the 300-400 level, including at least 1.0 credit at the 400 level.",
               "courses": []
             }
           ]
@@ -25256,6 +25402,11 @@
               "type": "text",
               "text": "French 7.0 credits are required.",
               "courses": []
+            },
+            {
+              "type": "text",
+              "text": "2.0 in Italian), 1.0 credit at the 400 level (either in French or Italian).",
+              "courses": []
             }
           ]
         },
@@ -25471,6 +25622,11 @@
                   "code": "MAT134H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including at least 7.0 credits at the 300/400 level, of which 1.5 must be at the 400 level.",
+              "courses": []
             }
           ]
         },
@@ -26330,6 +26486,11 @@
               "type": "text",
               "text": "Specialists in VCC are strongly urged to structure their studies as follows:",
               "courses": []
+            },
+            {
+              "type": "text",
+              "text": "including at least 1.0 credit of VCC at the 400 level.",
+              "courses": []
             }
           ]
         },
@@ -26426,8 +26587,8 @@
               "constraint": "at_least",
               "description": "Third Year: 1. 2.0 credits from CCT310H5 or CCT311H5 or CCT353H5 or VCC394H5 or VCC397H5 2. 1.5 credits of VCC at the 300/400 level 3. 1.0 credit from VST410H5 or any CIN or FAH course at the 300/400 level",
               "subject": "VCC",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [
                 "CCT310H5",
                 "CCT311H5",
@@ -27532,11 +27693,12 @@
               "max_level": 299,
               "specific_courses": [
                 "CCT219H5",
-                "ECO100Y5",
                 "ECO101H5",
                 "ECO102H5"
               ],
-              "excluding": [],
+              "excluding": [
+                "ECO100Y5"
+              ],
               "sub_constraints": []
             }
           ]
@@ -29733,6 +29895,11 @@
                   "code": "ENV100Y5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including at least 5.0 at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+              "courses": []
             }
           ]
         },
@@ -30478,8 +30645,8 @@
               "constraint": "at_least",
               "description": "2.0 credits of STA at the 300/400 level",
               "subject": "STA",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -31031,6 +31198,21 @@
                   "code": "ENG436H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "At least 10.0 ENG credits, including at least 3.0 credits at the 300 level",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "1.0 credit at the 400 level. Only 1.0 credit at the 100 level may be counted towards program requirements,",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The specialist also requires the following courses:",
+              "courses": []
             }
           ]
         }
@@ -32409,68 +32591,41 @@
               "code": "MAT332H5"
             },
             {
-              "type": "n_from",
+              "type": "open_pool",
               "n": 1.0,
-              "items": [
+              "constraint": "at_least",
+              "description": "At least 1.0 credit from the following list of recommended courses, of which at least 0.5 credit must be at the 400-level: BIO315H5 or BIO341H5 or BIO370Y5 or BIO371H5 or BIO380H5 or BIO443H5 or BIO481Y5 or CBJ481Y5 or CHM361H5 or CSC310H5 or CSC338H5 or CSC363H5 or JCP410H5 or STA302H5 or STA348H5",
+              "subject": "BE",
+              "min_level": 400,
+              "max_level": 499,
+              "specific_courses": [
+                "BIO315H5",
+                "BIO341H5",
+                "BIO370Y5",
+                "BIO371H5",
+                "BIO380H5",
+                "BIO443H5",
+                "BIO481Y5",
+                "CBJ481Y5",
+                "CHM361H5",
+                "CSC310H5",
+                "CSC338H5",
+                "CSC363H5",
+                "JCP410H5",
+                "STA302H5",
+                "STA348H5"
+              ],
+              "excluding": [],
+              "sub_constraints": [
                 {
-                  "type": "course",
-                  "code": "BIO315H5"
+                  "constraint": "at_least",
+                  "n": 1.0,
+                  "description": "the following list of recommended courses, of which"
                 },
                 {
-                  "type": "course",
-                  "code": "BIO341H5"
-                },
-                {
-                  "type": "course",
-                  "code": "BIO370Y5"
-                },
-                {
-                  "type": "course",
-                  "code": "BIO371H5"
-                },
-                {
-                  "type": "course",
-                  "code": "BIO380H5"
-                },
-                {
-                  "type": "course",
-                  "code": "BIO443H5"
-                },
-                {
-                  "type": "course",
-                  "code": "BIO481Y5"
-                },
-                {
-                  "type": "course",
-                  "code": "CBJ481Y5"
-                },
-                {
-                  "type": "course",
-                  "code": "CHM361H5"
-                },
-                {
-                  "type": "course",
-                  "code": "CSC310H5"
-                },
-                {
-                  "type": "course",
-                  "code": "CSC338H5"
-                },
-                {
-                  "type": "course",
-                  "code": "CSC363H5"
-                },
-                {
-                  "type": "course",
-                  "code": "JCP410H5"
-                },
-                {
-                  "type": "course",
-                  "code": "STA302H5"
-                },
-                {
-                  "type": "course",
-                  "code": "STA348H5"
+                  "constraint": "at_least",
+                  "n": 0.5,
+                  "description": ""
                 }
               ]
             }
@@ -34544,6 +34699,11 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
+            },
+            {
+              "type": "text",
+              "text": "4.0 credits at the 300/400 level, of which 2.0 credits must be at the 400 level.",
+              "courses": []
             }
           ]
         }
@@ -35010,8 +35170,8 @@
               "constraint": "at_least",
               "description": "0.5 credit in ECO at the 300/400-level (cannot double count courses)",
               "subject": "ECO",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -35936,6 +36096,11 @@
                   "code": "MAT134H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "including at least 6.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+              "courses": []
             }
           ]
         },
@@ -36740,9 +36905,9 @@
               "n": 1.0,
               "constraint": "at_least",
               "description": "1.0 credit in MGT or MGM at the 300/400-level (cannot double count courses)",
-              "subject": "MGT",
-              "min_level": null,
-              "max_level": null,
+              "subject": "MGM",
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -36752,9 +36917,9 @@
               "n": 0.5,
               "constraint": "at_least",
               "description": "0.5 credit in MGT or MGM at the 400 level (cannot double count courses)",
-              "subject": "MGT",
-              "min_level": null,
-              "max_level": null,
+              "subject": "MGM",
+              "min_level": 400,
+              "max_level": 499,
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
@@ -37788,6 +37953,11 @@
                   "code": "MAT136H5"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "text": "13.0 credits, including at least 1.0 credit at the 400 level.",
+              "courses": []
             }
           ]
         },
@@ -37861,8 +38031,8 @@
               "constraint": "at_least",
               "description": "5.0 credits of ECO at the 300/400-level of which at least 1.5 credits must be chosen from ECO348H5 , ECO349H5 , ECO356H1 , ECO434H5 , ECO440H5 , ECO456H5 , ECO460H5 , ECO461H5 , ECO462H1 , ECO463H5 , ECO475H5 . Not more than 1.0 credit in Economic History.",
               "subject": "ECO",
-              "min_level": null,
-              "max_level": null,
+              "min_level": 300,
+              "max_level": 400,
               "specific_courses": [
                 "ECO348H5",
                 "ECO349H5",
