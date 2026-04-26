@@ -1,9 +1,73 @@
 import React, { useState } from 'react'
-import type { Plan, Course, Semester, ProgramStructure } from '../types'
+import type { Plan, Course, Semester, ProgramStructure, PrereqNode, Season } from '../types'
 import { getCourseStatus } from '../utils/prereq'
 import { evaluateGeneralRequirements, evaluateProgram, NodeEvalResult } from '../utils/evaluator'
 import { usePrograms } from '../hooks/usePrograms'
 import { usePlanStore } from '../store/planStore'
+import { semesterSortKey } from '../utils/semester'
+
+// ─── Smart semester placement ─────────────────────────────────────────────────
+
+function getDirectPrereqCodes(node: PrereqNode | never[]): string[] {
+  if (!node || Array.isArray(node)) return []
+  switch (node.type) {
+    case 'COURSE': return [node.code]
+    case 'AND': case 'OR': return node.operands.flatMap(getDirectPrereqCodes)
+    case 'RAW': return node.codes
+    default: return []
+  }
+}
+
+function findBestSemester(code: string, plan: Plan, courseMap: Map<string, Course>): string | null {
+  const course = courseMap.get(code)
+  const sorted = [...plan.semesters].sort(
+    (a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season)
+  )
+
+  // Lower bound from direct prerequisites already placed in the plan
+  let minKey = 0
+  const prereqCodes = course ? getDirectPrereqCodes(course.prerequisites as PrereqNode) : []
+  for (const prereq of prereqCodes) {
+    for (const sem of plan.semesters) {
+      if (sem.courses.includes(prereq)) {
+        const key = semesterSortKey(sem.year, sem.season)
+        if (key > minKey) minKey = key
+      }
+    }
+  }
+
+  // Fallback: use course level (100→Y1, 200→Y2, …) when no prereqs are placed
+  if (minKey === 0) {
+    const levelMatch = code.match(/\d{3}/)
+    if (levelMatch && sorted.length > 0) {
+      const level = parseInt(levelMatch[0])
+      const yearOffset = Math.floor(level / 100) - 1   // 0-based
+      const targetYear = sorted[0].year + yearOffset
+      // Set minKey to just before Fall of that year so Fall is included
+      minKey = semesterSortKey(targetYear, 'Fall') - 1
+    }
+  }
+
+  const offerings: Season[] = (course?.offerings && course.offerings.length > 0)
+    ? course.offerings
+    : ['Fall', 'Winter']
+
+  // Earliest valid semester: after minKey, correct season, has space, not already added
+  for (const sem of sorted) {
+    if (semesterSortKey(sem.year, sem.season) <= minKey) continue
+    if (sem.courses.length >= 8) continue
+    if (sem.courses.includes(code)) continue
+    if (!offerings.includes(sem.season)) continue
+    return sem.id
+  }
+
+  // Last resort: any semester with space
+  for (const sem of sorted) {
+    if (sem.courses.length < 8 && !sem.courses.includes(code)) return sem.id
+  }
+
+  return null
+}
 
 interface Props {
   plan: Plan
@@ -87,15 +151,19 @@ function fmtN(n: number) {
   return Number.isInteger(n) ? String(n) : n.toFixed(1)
 }
 
+const COURSE_CODE_RE = /^[A-Z]{3}\d{3}[HY]\d$/
+
 interface NodeRendererProps {
   node: NodeEvalResult
   forceExpand?: boolean
   defaultOpen?: boolean
   depth?: number
+  onAddCourse?: (code: string) => void
 }
 
-function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0 }: NodeRendererProps) {
+function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0, onAddCourse }: NodeRendererProps) {
   const isLeaf = !node.children || node.children.length === 0
+  const isCourseLeaf = isLeaf && !!node.label && COURSE_CODE_RE.test(node.label)
   const [open, setOpen] = useState(forceExpand || defaultOpen)
   const isExpanded = open || forceExpand
 
@@ -107,16 +175,15 @@ function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0 }: Nod
       ? 'bg-red-50/20 hover:bg-red-50/50'
       : 'hover:bg-gray-50'
 
-  // Show credits on group nodes and on unmet leaf nodes
   const showCredits = node.max > 0 && (!isLeaf || !node.met)
 
   return (
     <div className="text-[11px]">
       <div
-        className={`flex items-start gap-1.5 px-1.5 py-1 rounded transition-colors ${textColor} ${bgColor} ${!isLeaf ? 'cursor-pointer' : ''}`}
+        className={`flex items-center gap-1.5 px-1.5 py-1 rounded transition-colors ${textColor} ${bgColor} ${!isLeaf ? 'cursor-pointer' : ''}`}
         onClick={() => { if (!isLeaf) setOpen(o => !o) }}
       >
-        <span className={`shrink-0 text-[10px] font-bold mt-[2px] w-3 text-center leading-none select-none ${iconColor}`}>
+        <span className={`shrink-0 text-[10px] font-bold w-3 text-center leading-none select-none ${iconColor}`}>
           {node.met ? '✓' : '✗'}
         </span>
         <div className="flex-1 leading-snug min-w-0">
@@ -127,9 +194,21 @@ function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0 }: Nod
             </span>
           )}
         </div>
+
+        {/* + button: only on unmet course leaves not yet in plan */}
+        {isCourseLeaf && !node.met && onAddCourse && (
+          <button
+            onClick={e => { e.stopPropagation(); onAddCourse(node.label!) }}
+            title={`Add ${node.label} to plan`}
+            className="shrink-0 w-4 h-4 rounded-full border border-utm-blue/40 text-utm-blue hover:bg-utm-blue hover:text-white transition-colors flex items-center justify-center text-[10px] leading-none select-none"
+          >
+            +
+          </button>
+        )}
+
         {!isLeaf && (
           <span
-            className="text-[8px] text-gray-300 mt-1 shrink-0 transition-transform select-none"
+            className="text-[8px] text-gray-300 shrink-0 transition-transform select-none"
             style={{ transform: isExpanded ? 'rotate(180deg)' : 'none' }}
           >
             ▼
@@ -140,7 +219,7 @@ function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0 }: Nod
       {isExpanded && !isLeaf && node.children && (
         <div className="pl-3 mt-0.5 border-l border-gray-100 space-y-0.5 ml-1.5">
           {node.children.map((child, i) => (
-            <NodeRenderer key={i} node={child} forceExpand={forceExpand} depth={depth + 1} />
+            <NodeRenderer key={i} node={child} forceExpand={forceExpand} depth={depth + 1} onAddCourse={onAddCourse} />
           ))}
         </div>
       )}
@@ -154,6 +233,12 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
   const { programsMap, loading } = usePrograms()
   const addProgram    = usePlanStore(s => s.addProgram)
   const removeProgram = usePlanStore(s => s.removeProgram)
+  const addCourse     = usePlanStore(s => s.addCourse)
+
+  function handleAddCourse(code: string) {
+    const semId = findBestSemester(code, plan, courseMap)
+    if (semId) addCourse(plan.id, semId, code)
+  }
 
   const [summaryExpanded, setSummaryExpanded] = useState(false)
   const [showProgramPicker, setShowProgramPicker] = useState(false)
@@ -175,10 +260,13 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
 
   const searchResults = Array.from(programsMap.values())
     .filter(p => !plan.programs?.includes(p.code))
-    .filter(p =>
-      p.name.toLowerCase().includes(search.toLowerCase()) ||
-      p.code.toLowerCase().includes(search.toLowerCase())
-    )
+    .filter(p => {
+      const q = search.toLowerCase()
+      return (
+        `${p.name} ${p.type}`.toLowerCase().includes(q) ||
+        p.code.toLowerCase().includes(q)
+      )
+    })
     .slice(0, 50)
 
   return (
@@ -282,6 +370,7 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
                         node={g}
                         defaultOpen={!g.met}
                         depth={0}
+                        onAddCourse={handleAddCourse}
                       />
                     ))}
                   </div>
