@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import type { Plan, Course } from '../types'
 import { usePlanStore } from '../store/planStore'
 import { semesterSortKey } from '../utils/semester'
 import SemesterRow from './SemesterRow'
 import RequirementsPanel from './RequirementsPanel'
+
+const MIN_PANEL_W = 200
+const MAX_PANEL_W = 520
+const DEFAULT_PANEL_W = 256
 
 interface Props {
   plan: Plan
@@ -11,17 +15,44 @@ interface Props {
 }
 
 export default function PlannerGrid({ plan, courseMap }: Props) {
-  const hideSummers = usePlanStore(s => s.hideSummers)
-  const addSemester = usePlanStore(s => s.addSemester)
+  const hideSummers  = usePlanStore(s => s.hideSummers)
+  const addSemester  = usePlanStore(s => s.addSemester)
+  const setStartYear = usePlanStore(s => s.setStartYear)
+
+  const [panelWidth, setPanelWidth] = useState(DEFAULT_PANEL_W)
+  const dragRef = useRef<{ startX: number; startW: number } | null>(null)
+
+  const onDividerMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault()
+    dragRef.current = { startX: e.clientX, startW: panelWidth }
+
+    function onMove(ev: MouseEvent) {
+      if (!dragRef.current) return
+      const delta = dragRef.current.startX - ev.clientX   // dragging left = wider
+      const next = Math.min(MAX_PANEL_W, Math.max(MIN_PANEL_W, dragRef.current.startW + delta))
+      setPanelWidth(next)
+    }
+
+    function onUp() {
+      dragRef.current = null
+      document.removeEventListener('mousemove', onMove)
+      document.removeEventListener('mouseup', onUp)
+    }
+
+    document.addEventListener('mousemove', onMove)
+    document.addEventListener('mouseup', onUp)
+  }, [panelWidth])
 
   const visibleSemesters = hideSummers
     ? plan.semesters.filter(s => s.season !== 'Summer')
     : plan.semesters
 
-  // Newest at top, oldest at bottom — matches how a timeline reads when scrolling down into history
   const sorted = [...visibleSemesters].sort(
     (a, b) => semesterSortKey(b.year, b.season) - semesterSortKey(a.year, a.season),
   )
+
+  const startYear = plan.startYear ?? new Date().getFullYear()
+  const yearOptions = Array.from({ length: 10 }, (_, i) => startYear - 4 + i)
 
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
@@ -30,12 +61,26 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
         {/* Plan title bar */}
         <div className="flex items-center justify-between mb-3">
           <h1 className="text-lg font-semibold text-utm-navy">{plan.name}</h1>
-          <span className="text-xs text-gray-400">
-            {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses across {plan.semesters.length} semesters
-          </span>
+          <div className="flex items-center gap-3">
+            <label className="flex items-center gap-1.5 text-xs text-gray-400">
+              <span>First Year</span>
+              <select
+                value={startYear}
+                onChange={e => setStartYear(plan.id, Number(e.target.value))}
+                className="text-xs text-gray-600 border border-gray-200 rounded px-1 py-0.5 bg-white focus:outline-none focus:border-utm-blue"
+              >
+                {yearOptions.map(y => (
+                  <option key={y} value={y}>Fall {y}</option>
+                ))}
+              </select>
+            </label>
+            <span className="text-xs text-gray-400">
+              {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses · {plan.semesters.length} semesters
+            </span>
+          </div>
         </div>
 
-        {/* Add Year at top — new semesters appear above since grid is newest-first */}
+        {/* Add Year at top */}
         <div className="flex justify-center mb-1">
           <button
             onClick={() => {
@@ -71,8 +116,15 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
         )}
       </div>
 
+      {/* Drag divider */}
+      <div
+        className="w-1 shrink-0 cursor-col-resize bg-gray-200 hover:bg-utm-blue/40 active:bg-utm-blue/60 transition-colors select-none"
+        onMouseDown={onDividerMouseDown}
+        title="Drag to resize"
+      />
+
       {/* Right panel */}
-      <RequirementsPanel plan={plan} courseMap={courseMap} />
+      <RequirementsPanel plan={plan} courseMap={courseMap} width={panelWidth} />
     </div>
   )
 }

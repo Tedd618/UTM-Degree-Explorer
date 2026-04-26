@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { supabase } from '../utils/supabase'
 import type { Plan, Semester, Season } from '../types'
-import { buildDefaultSemesters, semesterSortKey, currentSemesterKey } from '../utils/semester'
+import { buildDefaultSemesters, semesterSortKey, currentSemesterKey, currentAcademicStartYear } from '../utils/semester'
 
 function newId(): string {
   if (typeof crypto !== 'undefined' && crypto.randomUUID) {
@@ -14,12 +14,14 @@ function newId(): string {
   })
 }
 
-function createDefaultPlan(): Plan {
+function createDefaultPlan(startYear?: number): Plan {
+  const y = startYear ?? currentAcademicStartYear()
   return {
     id: newId(),
     name: 'My Plan',
-    semesters: buildDefaultSemesters(),
+    semesters: buildDefaultSemesters(y),
     programs: [],
+    startYear: y,
   }
 }
 
@@ -44,6 +46,8 @@ interface PlanStore {
   // program management
   addProgram: (planId: string, code: string) => void
   removeProgram: (planId: string, code: string) => void
+
+  setStartYear: (planId: string, year: number) => void
 
   // semester management
   addSemester: (planId: string, year: number, season: Season) => void
@@ -134,6 +138,11 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
             if (p.id !== planId) return p
             return { ...p, programs: (p.programs || []).filter(c => c !== code) }
           })
+        })),
+
+      setStartYear: (planId, year) =>
+        set(state => ({
+          plans: state.plans.map(p => p.id === planId ? { ...p, startYear: year } : p),
         })),
 
       addSemester: (planId, year, season) =>

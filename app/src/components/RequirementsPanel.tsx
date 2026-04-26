@@ -42,7 +42,8 @@ function findBestSemester(code: string, plan: Plan, courseMap: Map<string, Cours
     if (levelMatch && sorted.length > 0) {
       const level = parseInt(levelMatch[0])
       const yearOffset = Math.floor(level / 100) - 1   // 0-based
-      const targetYear = sorted[0].year + yearOffset
+      const baseYear = plan.startYear ?? sorted[0].year
+      const targetYear = baseYear + yearOffset
       // Set minKey to just before Fall of that year so Fall is included
       minKey = semesterSortKey(targetYear, 'Fall') - 1
     }
@@ -72,6 +73,7 @@ function findBestSemester(code: string, plan: Plan, courseMap: Map<string, Cours
 interface Props {
   plan: Plan
   courseMap: Map<string, Course>
+  width?: number
 }
 
 function computeSummary(semesters: Semester[], courseMap: Map<string, Course>) {
@@ -229,7 +231,7 @@ function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0, onAdd
 
 // ─── Main Panel ───────────────────────────────────────────────────────────────
 
-export default function RequirementsPanel({ plan, courseMap }: Props) {
+export default function RequirementsPanel({ plan, courseMap, width }: Props) {
   const { programsMap, loading } = usePrograms()
   const addProgram    = usePlanStore(s => s.addProgram)
   const removeProgram = usePlanStore(s => s.removeProgram)
@@ -270,7 +272,10 @@ export default function RequirementsPanel({ plan, courseMap }: Props) {
     .slice(0, 50)
 
   return (
-    <aside className="w-64 shrink-0 bg-white border-l border-gray-200 flex flex-col h-full">
+    <aside
+      className="shrink-0 bg-white border-l border-gray-200 flex flex-col h-full overflow-hidden"
+      style={{ width: width ?? 256 }}
+    >
       <div className="flex-1 overflow-y-auto">
 
         {/* Credit Summary */}
