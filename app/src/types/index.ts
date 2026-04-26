@@ -37,6 +37,7 @@ export interface Plan {
   name: string
   semesters: Semester[]
   programs: string[]
+  startYear?: number   // Fall year of first year (e.g. 2024 → Fall 2024 = Year 1)
 }
 
 export type RequirementNode =

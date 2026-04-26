@@ -53,24 +53,23 @@ export function nextSem(year: number, season: Season): { year: number; season: S
   return                          { year: year + 1, season: 'Fall'   }
 }
 
-/** Build the default semester list: Fall 2024 → Winter 2029. */
-export function buildDefaultSemesters(): Semester[] {
-  const entries: Array<{ year: number; season: Season }> = [
-    { year: 2024, season: 'Fall'   },
-    { year: 2025, season: 'Winter' },
-    { year: 2025, season: 'Summer' },
-    { year: 2025, season: 'Fall'   },
-    { year: 2026, season: 'Winter' },
-    { year: 2026, season: 'Summer' },
-    { year: 2026, season: 'Fall'   },
-    { year: 2027, season: 'Winter' },
-    { year: 2027, season: 'Summer' },
-    { year: 2027, season: 'Fall'   },
-    { year: 2028, season: 'Winter' },
-    { year: 2028, season: 'Summer' },
-    { year: 2028, season: 'Fall'   },
-    { year: 2029, season: 'Winter' },
-  ]
+/** Fall year of the current academic year (Sept = new year begins). */
+export function currentAcademicStartYear(): number {
+  const now = new Date()
+  return now.getMonth() >= 8 ? now.getFullYear() : now.getFullYear() - 1
+}
+
+/** Build the default semester list: 4 academic years starting from the given fall year. */
+export function buildDefaultSemesters(startYear?: number): Semester[] {
+  const y = startYear ?? currentAcademicStartYear()
+  const entries: Array<{ year: number; season: Season }> = []
+  for (let i = 0; i < 4; i++) {
+    entries.push({ year: y + i,     season: 'Fall'   })
+    entries.push({ year: y + i + 1, season: 'Winter' })
+    entries.push({ year: y + i + 1, season: 'Summer' })
+  }
+  // drop last Summer to match standard 4-year plan (ends Winter of Y4+1)
+  entries.pop()
   return entries.map((e, i) => ({
     id: `sem-default-${i}`,
     year: e.year,
