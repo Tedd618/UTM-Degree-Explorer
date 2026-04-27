@@ -5,6 +5,7 @@ import { getCourseStatus, getIssueReasons } from '../utils/prereq'
 import { semLabel, isSemPast, isSemCurrent } from '../utils/semester'
 import CourseCard from './CourseCard'
 import { RADAR_DRAG_PREFIX } from './PrereqRadarPanel'
+import { REQ_DRAG_PREFIX } from './RequirementsPanel'
 
 const MAX_COURSES = 8
 const CELL_W = 'w-36'
@@ -180,6 +181,12 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
     const raw = e.dataTransfer.getData('text/plain')
     if (raw.startsWith(RADAR_DRAG_PREFIX)) {
       addCourse(planId, semester.id, raw.slice(RADAR_DRAG_PREFIX.length))
+      setDropIndex(null)
+      setIsDragOver(false)
+      return
+    }
+    if (raw.startsWith(REQ_DRAG_PREFIX)) {
+      addCourse(planId, semester.id, raw.slice(REQ_DRAG_PREFIX.length))
       setDropIndex(null)
       setIsDragOver(false)
       return

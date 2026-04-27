@@ -61,6 +61,15 @@ export interface NodeEvalResult {
   max: number
   label?: string
   children?: NodeEvalResult[]
+  /** For open_pool nodes: sorted list of all course codes that satisfy the pool constraints */
+  poolCourses?: string[]
+  /** For open_pool nodes: subset of poolCourses the user has already taken */
+  takenFromPool?: string[]
+}
+
+/** Normalize a raw course-level number to its century (367→300, 490→400, 215→200). */
+function centuryLevel(n: number): number {
+  return Math.floor(n / 100) * 100
 }
 
 function getUniqueCourses(semesters: Semester[]): Set<string> {
@@ -112,40 +121,75 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
     }
     case 'open_pool': {
       const targetCredits = node.n || 0
-      let collected = 0
 
-      for (const code of userCodes) {
-        if (node.excluding && node.excluding.includes(code)) continue
-        if (node.specific_courses && node.specific_courses.length > 0) {
-          if (node.specific_courses.includes(code)) {
-            const c = courseMap.get(code)
-            collected += c?.credits ?? 0.5
-          }
-          continue
-        }
+      // ── Determine every course code that counts toward this pool ──────────────
+      // Strategy: a course is valid if it matches EITHER the subject+level pool
+      // OR appears in specific_courses (additional named options).
+      // This fixes programs like CS Major where subject=CSC 300/400 AND specific_courses
+      // lists extra GGR courses — both should count, not only specific_courses.
+      //
+      // Level comparison uses the *century* (490 → 400) so "max_level:400" correctly
+      // includes all 400-series courses (CSC400–CSC499).
+      const poolCodes = new Set<string>()
 
-        const matchLevel = node.min_level || node.max_level
-        if (matchLevel) {
-          const numLevelMatch = code.match(/\d{3}/)
-          if (numLevelMatch) {
-            const numLevel = parseInt(numLevelMatch[0], 10)
-            if (node.min_level && numLevel < node.min_level) continue
-            if (node.max_level && numLevel > node.max_level) continue
+      for (const [code] of courseMap) {
+        if (node.excluding?.includes(code)) continue
+
+        let valid = false
+
+        // Primary pool: subject + level range
+        if (node.subject && code.startsWith(node.subject)) {
+          if (node.min_level || node.max_level) {
+            const m = code.match(/\d{3}/)
+            if (m) {
+              const c = centuryLevel(parseInt(m[0], 10))
+              if ((!node.min_level || c >= node.min_level) && (!node.max_level || c <= node.max_level)) {
+                valid = true
+              }
+            }
           } else {
-            continue
+            valid = true // subject matches, no level constraint
           }
         }
 
-        if (node.subject) {
-          if (!code.startsWith(node.subject)) continue
+        // Named additions: specific courses that may not match the subject filter
+        if (!valid && node.specific_courses?.includes(code)) valid = true
+
+        // No subject AND no specific list → level-only pool (or unrestricted)
+        if (!valid && !node.subject && (!node.specific_courses || node.specific_courses.length === 0)) {
+          if (node.min_level || node.max_level) {
+            const m = code.match(/\d{3}/)
+            if (m) {
+              const c = centuryLevel(parseInt(m[0], 10))
+              if ((!node.min_level || c >= node.min_level) && (!node.max_level || c <= node.max_level)) {
+                valid = true
+              }
+            }
+          } else {
+            valid = true
+          }
         }
 
-        const c = courseMap.get(code)
-        collected += c?.credits ?? 0.5
+        if (valid) poolCodes.add(code)
       }
 
+      // ── Count user credits that fall in the pool ───────────────────────────────
+      let collected = 0
+      for (const code of userCodes) {
+        if (poolCodes.has(code)) collected += courseMap.get(code)?.credits ?? 0.5
+      }
+
+      const poolCourses = [...poolCodes].sort()
+      const takenFromPool = poolCourses.filter(c => userCodes.has(c))
       const met = collected >= targetCredits
-      return { met, value: Math.min(collected, targetCredits), max: targetCredits, label: node.description || `Pool: ${targetCredits} credits` }
+      return {
+        met,
+        value: Math.min(collected, targetCredits),
+        max: targetCredits,
+        label: node.description || `Pool: ${targetCredits} credits`,
+        poolCourses,
+        takenFromPool,
+      }
     }
     case 'text': {
       return { met: false, value: 0, max: 0, label: node.text || 'Requirement notation (Check manually)' }
@@ -308,14 +352,15 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
           const { n, subjects, minLevel, maxLevel } = spec
 
           // Sum user credits that match subject + level filter
+          // Use century-level comparison so max_level:400 correctly includes CSC490H5, etc.
           let userSubjectCredits = 0
           for (const code of userCodes) {
             if (!subjects.some(s => code.startsWith(s))) continue
             const levelMatch = code.match(/\d{3}/)
             if (levelMatch) {
-              const level = parseInt(levelMatch[0])
-              if (minLevel !== null && level < minLevel) continue
-              if (maxLevel !== null && level > maxLevel) continue
+              const c = centuryLevel(parseInt(levelMatch[0], 10))
+              if (minLevel !== null && c < minLevel) continue
+              if (maxLevel !== null && c > maxLevel) continue
             }
             userSubjectCredits += courseMap.get(code)?.credits ?? 0.5
           }
