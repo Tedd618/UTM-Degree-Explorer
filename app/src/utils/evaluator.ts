@@ -122,14 +122,28 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
     case 'open_pool': {
       const targetCredits = node.n || 0
 
-      // ── Determine every course code that counts toward this pool ──────────────
-      // Strategy: a course is valid if it matches EITHER the subject+level pool
-      // OR appears in specific_courses (additional named options).
-      // This fixes programs like CS Major where subject=CSC 300/400 AND specific_courses
-      // lists extra GGR courses — both should count, not only specific_courses.
+      // ── Determine evaluation mode based on specific_courses content ───────────
       //
-      // Level comparison uses the *century* (490 → 400) so "max_level:400" correctly
-      // includes all 400-series courses (CSC400–CSC499).
+      // RESTRICTION mode: specific_courses is non-empty and every entry shares the
+      // same subject prefix as node.subject.  This means the parser captured a
+      // hand-picked list (e.g. French FRE180H5/FRE181H5, Financial Economics ECO
+      // sublist, Economics MGT sublist).  The pool is *exactly* those courses —
+      // the broader subject+level filter would include too many extras.
+      //
+      // ADDITION mode: specific_courses includes at least one course whose subject
+      // differs from node.subject (e.g. CS Major has GGR courses alongside CSC).
+      // Pool = subject+level filter UNION non-subject specific_courses.
+      //
+      // PURE_POOL mode: no specific_courses — ordinary subject+level or unrestricted.
+      //
+      // Level comparison always uses the *century* (490→400) so "max_level:400"
+      // correctly includes all 400-series courses (e.g. CSC490H5).
+
+      const sc = node.specific_courses ?? []
+      const hasNonSubjectSC = sc.some(c => !node.subject || !c.startsWith(node.subject))
+      // RESTRICTION: sc non-empty AND all entries share the same subject → exact list only
+      const isRestriction = sc.length > 0 && !hasNonSubjectSC
+
       const poolCodes = new Set<string>()
 
       for (const [code] of courseMap) {
@@ -137,36 +151,45 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
 
         let valid = false
 
-        // Primary pool: subject + level range
-        if (node.subject && code.startsWith(node.subject)) {
-          if (node.min_level || node.max_level) {
-            const m = code.match(/\d{3}/)
-            if (m) {
-              const c = centuryLevel(parseInt(m[0], 10))
-              if ((!node.min_level || c >= node.min_level) && (!node.max_level || c <= node.max_level)) {
-                valid = true
+        if (isRestriction) {
+          // Pool is exactly the listed specific_courses — no subject/level broadening
+          if (sc.includes(code)) valid = true
+        } else {
+          // Primary pool: subject + level range
+          if (node.subject && code.startsWith(node.subject)) {
+            if (node.min_level || node.max_level) {
+              const m = code.match(/\d{3}/)
+              if (m) {
+                const c = centuryLevel(parseInt(m[0], 10))
+                if ((!node.min_level || c >= node.min_level) && (!node.max_level || c <= node.max_level)) {
+                  valid = true
+                }
               }
+            } else {
+              valid = true // subject matches, no level constraint
             }
-          } else {
-            valid = true // subject matches, no level constraint
           }
-        }
 
-        // Named additions: specific courses that may not match the subject filter
-        if (!valid && node.specific_courses?.includes(code)) valid = true
+          // ADDITION: add specific_courses that come from a *different* subject.
+          // Same-subject entries are either already in the pool (level passed) or
+          // are parser artifacts below the level threshold — don't force-include them.
+          if (!valid && sc.includes(code)) {
+            if (!node.subject || !code.startsWith(node.subject)) valid = true
+          }
 
-        // No subject AND no specific list → level-only pool (or unrestricted)
-        if (!valid && !node.subject && (!node.specific_courses || node.specific_courses.length === 0)) {
-          if (node.min_level || node.max_level) {
-            const m = code.match(/\d{3}/)
-            if (m) {
-              const c = centuryLevel(parseInt(m[0], 10))
-              if ((!node.min_level || c >= node.min_level) && (!node.max_level || c <= node.max_level)) {
-                valid = true
+          // No subject AND no specific list → level-only pool (or unrestricted)
+          if (!valid && !node.subject && sc.length === 0) {
+            if (node.min_level || node.max_level) {
+              const m = code.match(/\d{3}/)
+              if (m) {
+                const c = centuryLevel(parseInt(m[0], 10))
+                if ((!node.min_level || c >= node.min_level) && (!node.max_level || c <= node.max_level)) {
+                  valid = true
+                }
               }
+            } else {
+              valid = true
             }
-          } else {
-            valid = true
           }
         }
 
