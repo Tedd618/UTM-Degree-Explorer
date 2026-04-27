@@ -239,12 +239,23 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
             )}
           </div>
         )}
-        <button
-          className="w-6 h-6 flex items-center justify-center text-gray-300 hover:text-gray-500 transition-colors shrink-0 ml-auto cursor-pointer"
-          title={collapsed ? 'Expand radar' : 'Collapse radar'}
-        >
-          {collapsed ? '◀' : '▶'}
-        </button>
+        <div className="relative shrink-0 ml-auto">
+          <button
+            className="w-6 h-6 flex items-center justify-center text-gray-300 hover:text-gray-500 transition-colors cursor-pointer"
+            title={collapsed ? 'Expand radar' : 'Collapse radar'}
+          >
+            {collapsed ? '◀' : '▶'}
+          </button>
+          {/* Pulsing badge when collapsed and there are issues */}
+          {collapsed && count > 0 && (
+            <span className="absolute -top-1 -right-1 flex items-center justify-center">
+              <span className="absolute inline-flex w-3.5 h-3.5 rounded-full bg-red-400 opacity-75 animate-ping" />
+              <span className="relative inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-red-500 text-white text-[7px] font-bold leading-none">
+                {count > 9 ? '9+' : count}
+              </span>
+            </span>
+          )}
+        </div>
       </div>
 
       {!collapsed && (

@@ -1,74 +1,14 @@
 import React, { useState } from 'react'
-import type { Plan, Course, Semester, ProgramStructure, PrereqNode, Season } from '../types'
+import type { Plan, Course, Semester, ProgramStructure } from '../types'
 import { getCourseStatus } from '../utils/prereq'
 import { evaluateGeneralRequirements, evaluateProgram, NodeEvalResult } from '../utils/evaluator'
 import { usePrograms } from '../hooks/usePrograms'
 import { usePlanStore } from '../store/planStore'
-import { semesterSortKey } from '../utils/semester'
 
-// ─── Smart semester placement ─────────────────────────────────────────────────
+// Drag prefix — SemesterRow checks for this and copies the course into the dropped semester
+export const REQ_DRAG_PREFIX = '__req__'
 
-function getDirectPrereqCodes(node: PrereqNode | never[]): string[] {
-  if (!node || Array.isArray(node)) return []
-  switch (node.type) {
-    case 'COURSE': return [node.code]
-    case 'AND': case 'OR': return node.operands.flatMap(getDirectPrereqCodes)
-    case 'RAW': return node.codes
-    default: return []
-  }
-}
-
-function findBestSemester(code: string, plan: Plan, courseMap: Map<string, Course>): string | null {
-  const course = courseMap.get(code)
-  const sorted = [...plan.semesters].sort(
-    (a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season)
-  )
-
-  // Lower bound from direct prerequisites already placed in the plan
-  let minKey = 0
-  const prereqCodes = course ? getDirectPrereqCodes(course.prerequisites as PrereqNode) : []
-  for (const prereq of prereqCodes) {
-    for (const sem of plan.semesters) {
-      if (sem.courses.includes(prereq)) {
-        const key = semesterSortKey(sem.year, sem.season)
-        if (key > minKey) minKey = key
-      }
-    }
-  }
-
-  // Fallback: use course level (100→Y1, 200→Y2, …) when no prereqs are placed
-  if (minKey === 0) {
-    const levelMatch = code.match(/\d{3}/)
-    if (levelMatch && sorted.length > 0) {
-      const level = parseInt(levelMatch[0])
-      const yearOffset = Math.floor(level / 100) - 1   // 0-based
-      const baseYear = plan.startYear ?? sorted[0].year
-      const targetYear = baseYear + yearOffset
-      // Set minKey to just before Fall of that year so Fall is included
-      minKey = semesterSortKey(targetYear, 'Fall') - 1
-    }
-  }
-
-  const offerings: Season[] = (course?.offerings && course.offerings.length > 0)
-    ? course.offerings
-    : ['Fall', 'Winter']
-
-  // Earliest valid semester: after minKey, correct season, has space, not already added
-  for (const sem of sorted) {
-    if (semesterSortKey(sem.year, sem.season) <= minKey) continue
-    if (sem.courses.length >= 8) continue
-    if (sem.courses.includes(code)) continue
-    if (!offerings.includes(sem.season)) continue
-    return sem.id
-  }
-
-  // Last resort: any semester with space
-  for (const sem of sorted) {
-    if (sem.courses.length < 8 && !sem.courses.includes(code)) return sem.id
-  }
-
-  return null
-}
+// ─── Credit summary helpers ───────────────────────────────────────────────────
 
 interface Props {
   plan: Plan
@@ -147,7 +87,8 @@ function ProgramComboStat({ spec, maj, min }: { spec: number; maj: number; min: 
   )
 }
 
-// ─── Recursive AST Node Renderer ─────────────────────────────────────────────
+// ─── Course Pill ──────────────────────────────────────────────────────────────
+// Draggable, colored by met-status, shows tooltip on hover
 
 function fmtN(n: number) {
   return Number.isInteger(n) ? String(n) : n.toFixed(1)
@@ -155,74 +96,376 @@ function fmtN(n: number) {
 
 const COURSE_CODE_RE = /^[A-Z]{3}\d{3}[HY]\d$/
 
-interface NodeRendererProps {
-  node: NodeEvalResult
-  forceExpand?: boolean
-  defaultOpen?: boolean
-  depth?: number
-  onAddCourse?: (code: string) => void
+interface CoursePillProps {
+  code: string
+  met: boolean
+  courseMap: Map<string, Course>
 }
 
-function NodeRenderer({ node, forceExpand, defaultOpen = false, depth = 0, onAddCourse }: NodeRendererProps) {
-  const isLeaf = !node.children || node.children.length === 0
-  const isCourseLeaf = isLeaf && !!node.label && COURSE_CODE_RE.test(node.label)
-  const [open, setOpen] = useState(forceExpand || defaultOpen)
-  const isExpanded = open || forceExpand
-
-  const iconColor = node.met ? 'text-emerald-500' : 'text-red-400'
-  const textColor = node.met ? 'text-emerald-800' : 'text-gray-700'
-  const bgColor   = node.met
-    ? 'hover:bg-emerald-50/60'
-    : depth === 0
-      ? 'bg-red-50/20 hover:bg-red-50/50'
-      : 'hover:bg-gray-50'
-
-  const showCredits = node.max > 0 && (!isLeaf || !node.met)
+function CoursePill({ code, met, courseMap }: CoursePillProps) {
+  const course = courseMap.get(code)
+  const [dragging, setDragging] = useState(false)
+  const [showTip, setShowTip] = useState(false)
 
   return (
-    <div className="text-[11px]">
-      <div
-        className={`flex items-center gap-1.5 px-1.5 py-1 rounded transition-colors ${textColor} ${bgColor} ${!isLeaf ? 'cursor-pointer' : ''}`}
-        onClick={() => { if (!isLeaf) setOpen(o => !o) }}
+    <span className="relative inline-block leading-none">
+      <span
+        draggable
+        onDragStart={e => {
+          e.dataTransfer.effectAllowed = 'copy'
+          e.dataTransfer.setData('text/plain', `${REQ_DRAG_PREFIX}${code}`)
+          setDragging(true)
+          setShowTip(false)
+        }}
+        onDragEnd={() => setDragging(false)}
+        onMouseEnter={() => setShowTip(true)}
+        onMouseLeave={() => setShowTip(false)}
+        className={`
+          inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold
+          cursor-grab active:cursor-grabbing select-none transition-all
+          ${met
+            ? 'bg-emerald-100 text-emerald-800 border border-emerald-200 hover:bg-emerald-200'
+            : 'bg-red-50 text-red-700 border border-red-200 hover:bg-red-100'
+          }
+          ${dragging ? 'opacity-40' : 'hover:shadow-sm'}
+        `}
       >
-        <span className={`shrink-0 text-[10px] font-bold w-3 text-center leading-none select-none ${iconColor}`}>
-          {node.met ? '✓' : '✗'}
-        </span>
-        <div className="flex-1 leading-snug min-w-0">
-          <span className="break-words">{node.label}</span>
-          {showCredits && (
-            <span className="ml-1 text-[10px] text-gray-400 whitespace-nowrap">
-              ({fmtN(node.value)}&thinsp;/&thinsp;{fmtN(node.max)}&thinsp;cr)
-            </span>
+        {met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        {code}
+      </span>
+
+      {showTip && (
+        <span
+          className="absolute bottom-full left-0 mb-1.5 z-[9999] w-52 bg-gray-900 text-white rounded-lg p-2.5 shadow-2xl text-[10px] leading-snug pointer-events-none block"
+          style={{ whiteSpace: 'normal' }}
+        >
+          <span className="font-semibold text-[11px] block mb-1">
+            {code}
+            {course && ` — ${course.title}`}
+          </span>
+          {course?.credits && (
+            <span className="text-gray-300 block mb-0.5">{course.credits} credit{course.credits !== 1 ? 's' : ''}</span>
           )}
-        </div>
+          {course?.description && (
+            <span className="text-gray-400 block leading-relaxed line-clamp-4">{course.description}</span>
+          )}
+          {!course && <span className="text-gray-400 italic">Course info unavailable</span>}
+        </span>
+      )}
+    </span>
+  )
+}
 
-        {/* + button: only on unmet course leaves not yet in plan */}
-        {isCourseLeaf && !node.met && onAddCourse && (
-          <button
-            onClick={e => { e.stopPropagation(); onAddCourse(node.label!) }}
-            title={`Add ${node.label} to plan`}
-            className="shrink-0 w-4 h-4 rounded-full border border-utm-blue/40 text-utm-blue hover:bg-utm-blue hover:text-white transition-colors flex items-center justify-center text-[10px] leading-none select-none"
-          >
-            +
-          </button>
-        )}
+// ─── Pool Node ────────────────────────────────────────────────────────────────
+// Expandable "Choose N from …" / "Up to N from …" node (for n_from / limit)
 
-        {!isLeaf && (
-          <span
-            className="text-[8px] text-gray-300 shrink-0 transition-transform select-none"
-            style={{ transform: isExpanded ? 'rotate(180deg)' : 'none' }}
-          >
-            ▼
+interface PoolNodeProps {
+  node: NodeEvalResult
+  courseMap: Map<string, Course>
+  depth: number
+}
+
+function PoolNode({ node, courseMap, depth }: PoolNodeProps) {
+  const [poolOpen, setPoolOpen] = useState(false)
+  const label = node.label ?? ''
+  const children = node.children ?? []
+  const credStr = node.max > 0 ? ` · ${fmtN(node.value)}/${fmtN(node.max)} cr` : ''
+
+  return (
+    <span className="inline-flex flex-col gap-1">
+      <span
+        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px] cursor-pointer select-none
+          ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-blue-50 border-blue-200 text-blue-700'}
+        `}
+        onClick={() => setPoolOpen(o => !o)}
+      >
+        {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        <span>{label}{credStr}</span>
+        <span
+          className="text-[8px] opacity-60 transition-transform"
+          style={{ transform: poolOpen ? 'rotate(180deg)' : 'none' }}
+        >
+          ▼
+        </span>
+      </span>
+      {poolOpen && (
+        <span className="flex flex-wrap gap-1 pl-1">
+          {children.map((child, i) => (
+            <InlineNode key={i} node={child} courseMap={courseMap} depth={depth + 1} />
+          ))}
+        </span>
+      )}
+    </span>
+  )
+}
+
+// ─── Open Pool Node ───────────────────────────────────────────────────────────
+// Expandable pool for open_pool nodes — shows all valid courses from courseMap
+
+interface OpenPoolNodeProps {
+  node: NodeEvalResult
+  courseMap: Map<string, Course>
+}
+
+function OpenPoolNode({ node, courseMap }: OpenPoolNodeProps) {
+  const [open, setOpen] = useState(false)
+  const label = node.label ?? ''
+  const credStr = node.max > 0 ? ` · ${fmtN(node.value)}/${fmtN(node.max)} cr` : ''
+  const courses = node.poolCourses ?? []
+
+  const sorted = [...courses].sort()
+  const taken = new Set(node.takenFromPool ?? [])
+
+  return (
+    <span className="inline-flex flex-col gap-1 w-full">
+      <span
+        className={`inline-flex items-center gap-1 px-2 py-1 rounded border text-[10px] cursor-pointer select-none leading-snug
+          ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-amber-50 border-amber-200 text-amber-700'}
+        `}
+        onClick={() => setOpen(o => !o)}
+      >
+        {node.met && <span className="text-emerald-500 text-[9px] shrink-0">✓</span>}
+        <span className="flex-1">{label}{credStr}</span>
+        {sorted.length > 0 && (
+          <span className="text-[8px] opacity-60 shrink-0 transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'none' }}>
+            ▼ {sorted.length} courses
           </span>
         )}
+      </span>
+      {open && sorted.length > 0 && (
+        <span className="flex flex-wrap gap-1 pl-1 pt-0.5">
+          {sorted.map(code => (
+            <CoursePill
+              key={code}
+              code={code}
+              met={taken.has(code)}
+              courseMap={courseMap}
+            />
+          ))}
+        </span>
+      )}
+    </span>
+  )
+}
+
+// ─── Collapsible One-Of Node ──────────────────────────────────────────────────
+// For one_of with many options (> ONE_OF_COLLAPSE_THRESHOLD), render as a
+// collapsed badge instead of an always-expanded inline list.
+
+const ONE_OF_COLLAPSE_THRESHOLD = 5
+
+interface CollapsibleOneOfProps {
+  node: NodeEvalResult
+  courseMap: Map<string, Course>
+  depth: number
+}
+
+function CollapsibleOneOfNode({ node, courseMap, depth }: CollapsibleOneOfProps) {
+  const [open, setOpen] = useState(false)
+  const children = node.children ?? []
+  const metCount = children.filter(c => c.met).length
+  const credStr = node.max > 0 ? ` · ${fmtN(node.value)}/${fmtN(node.max)} cr` : ''
+
+  return (
+    <span className="inline-flex flex-col gap-1">
+      <span
+        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px] cursor-pointer select-none
+          ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-blue-50 border-blue-200 text-blue-700'}
+        `}
+        onClick={() => setOpen(o => !o)}
+      >
+        {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        <span>
+          {node.met
+            ? `1 of ${children.length} options met`
+            : `Choose 1 from ${children.length} options`}
+          {credStr}
+        </span>
+        {metCount > 0 && !node.met && (
+          <span className="text-[9px] text-emerald-600 font-medium">({metCount} taken)</span>
+        )}
+        <span className="text-[8px] opacity-60 transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'none' }}>▼</span>
+      </span>
+      {open && (
+        <span className="flex flex-wrap gap-1 pl-1">
+          {children.map((child, i) => (
+            <InlineNode key={i} node={child} courseMap={courseMap} depth={depth + 1} />
+          ))}
+        </span>
+      )}
+    </span>
+  )
+}
+
+// ─── Inline Node Renderer ─────────────────────────────────────────────────────
+// Renders a NodeEvalResult tree inline (horizontally) rather than as a deep tree
+
+interface InlineNodeProps {
+  node: NodeEvalResult
+  courseMap: Map<string, Course>
+  depth?: number
+}
+
+function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
+  const label = node.label ?? ''
+  const children = node.children ?? []
+
+  // ── Course leaf ──
+  if (COURSE_CODE_RE.test(label)) {
+    return <CoursePill code={label} met={node.met} courseMap={courseMap} />
+  }
+
+  // ── open_pool: expandable course list (check before childless-text so poolCourses wins) ──
+  if (node.poolCourses !== undefined) {
+    return <OpenPoolNode node={node} courseMap={courseMap} />
+  }
+
+  // ── Childless text node (section header / plain note) ──
+  if (children.length === 0) {
+    if (!label) return null
+    const credStr = node.max > 0 ? ` (${fmtN(node.value)}/${fmtN(node.max)} cr)` : ''
+    return (
+      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md border text-[10px] leading-snug
+        ${node.met
+          ? 'bg-emerald-50 border-emerald-200 text-emerald-700'
+          : node.max > 0
+            ? 'bg-amber-50 border-amber-200 text-amber-700'
+            : 'bg-gray-50 border-gray-200 text-gray-500 italic'
+        }`}>
+        {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        {label}{credStr}
+      </span>
+    )
+  }
+
+  // ── All of: join children with "and" ──
+  if (label === 'All of:') {
+    return (
+      <span className="inline-flex flex-wrap items-center gap-1">
+        {children.map((child, i) => (
+          <React.Fragment key={i}>
+            {i > 0 && <span className="text-[9px] text-gray-400 font-medium">and</span>}
+            <InlineNode node={child} courseMap={courseMap} depth={depth + 1} />
+          </React.Fragment>
+        ))}
+      </span>
+    )
+  }
+
+  // ── One of: show bracketed alternatives (collapse when large) ──
+  if (label === 'One of:') {
+    if (children.length > ONE_OF_COLLAPSE_THRESHOLD) {
+      return <CollapsibleOneOfNode node={node} courseMap={courseMap} depth={depth} />
+    }
+    return (
+      <span className={`inline-flex flex-wrap items-center gap-1 rounded-md px-1.5 py-0.5 border border-dashed
+        ${node.met ? 'border-emerald-300 bg-emerald-50/40' : 'border-gray-300 bg-gray-50/40'}
+      `}>
+        {children.map((child, i) => (
+          <React.Fragment key={i}>
+            {i > 0 && <span className="text-[9px] text-gray-400 font-medium px-0.5">or</span>}
+            <InlineNode node={child} courseMap={courseMap} depth={depth + 1} />
+          </React.Fragment>
+        ))}
+      </span>
+    )
+  }
+
+  // ── N from / Choose: credit pool — delegate to separate component to satisfy hooks rules ──
+  if (label.startsWith('Choose') || label.startsWith('Up to')) {
+    return <PoolNode node={node} courseMap={courseMap} depth={depth} />
+  }
+
+  // ── Everything else (unrecognised) ──
+  const credStr = node.max > 0 ? ` (${fmtN(node.value)}/${fmtN(node.max)} cr)` : ''
+  return (
+    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px]
+      ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-amber-50 border-amber-200 text-amber-700'}
+    `}>
+      {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+      {label}{credStr}
+    </span>
+  )
+}
+
+// ─── Group Row ────────────────────────────────────────────────────────────────
+// One numbered requirement group, rendered flat
+
+interface GroupRowProps {
+  index: number
+  group: NodeEvalResult & { label: string }
+  courseMap: Map<string, Course>
+}
+
+function GroupRow({ index, group, courseMap }: GroupRowProps) {
+  const [open, setOpen] = useState(!group.met)
+  const children = group.children ?? []
+  const credStr = group.max > 0 ? `${fmtN(group.value)}/${fmtN(group.max)} cr` : null
+
+  return (
+    <div className={`rounded-lg border text-[11px] overflow-hidden ${group.met ? 'border-gray-100' : 'border-red-100 bg-red-50/20'}`}>
+      {/* Group header — click to expand/collapse */}
+      <div
+        className={`flex items-center gap-2 px-3 py-2 cursor-pointer select-none
+          ${group.met ? 'bg-emerald-50/30 hover:bg-emerald-50/60' : 'bg-red-50/30 hover:bg-red-50/60'}
+        `}
+        onClick={() => setOpen(o => !o)}
+      >
+        <span className="text-[9px] text-gray-400 shrink-0 font-medium">{index}.</span>
+        <span className={`shrink-0 font-bold text-[10px] ${group.met ? 'text-emerald-500' : 'text-red-400'}`}>
+          {group.met ? '✓' : '✗'}
+        </span>
+        <span className={`flex-1 font-medium leading-snug ${group.met ? 'text-emerald-800' : 'text-gray-700'}`}>
+          {group.label || 'Requirements'}
+        </span>
+        {credStr && (
+          <span className={`text-[10px] shrink-0 tabular-nums ${group.met ? 'text-emerald-600' : 'text-gray-400'}`}>
+            {credStr}
+          </span>
+        )}
+        <span
+          className="text-[8px] text-gray-300 shrink-0 transition-transform"
+          style={{ transform: open ? 'rotate(180deg)' : 'none' }}
+        >
+          ▼
+        </span>
       </div>
 
-      {isExpanded && !isLeaf && node.children && (
-        <div className="pl-3 mt-0.5 border-l border-gray-100 space-y-0.5 ml-1.5">
-          {node.children.map((child, i) => (
-            <NodeRenderer key={i} node={child} forceExpand={forceExpand} depth={depth + 1} onAddCourse={onAddCourse} />
-          ))}
+      {/* Inline requirement content */}
+      {open && children.length > 0 && (
+        <div className="px-3 py-2 space-y-1.5 border-t border-gray-100/80">
+          {children.map((child, i) => {
+            const isHeader = child.max === 0 && (child.children?.length ?? 0) === 0
+
+            if (isHeader) {
+              // Section divider label
+              return (
+                <div key={i} className="text-[9px] text-gray-400 uppercase tracking-wider pt-1">
+                  {child.label}
+                </div>
+              )
+            }
+
+            const childCredStr = child.max > 0 ? `${fmtN(child.value)}/${fmtN(child.max)} cr` : null
+
+            return (
+              <div key={i} className="flex flex-wrap items-start gap-1.5">
+                <InlineNode node={child} courseMap={courseMap} />
+                {/* Show credits for one_of (small) and plain text nodes; suppress for all others that self-display credits */}
+                {childCredStr &&
+                  child.label !== 'All of:' &&
+                  child.label !== 'One of:' &&
+                  !(child.label ?? '').startsWith('Choose') &&
+                  !(child.label ?? '').startsWith('Up to') &&
+                  child.poolCourses === undefined &&
+                  !COURSE_CODE_RE.test(child.label ?? '') && (
+                  <span className="text-[9px] text-gray-400 self-center whitespace-nowrap">
+                    {childCredStr}
+                  </span>
+                )}
+              </div>
+            )
+          })}
         </div>
       )}
     </div>
@@ -235,12 +478,6 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
   const { programsMap, loading } = usePrograms()
   const addProgram    = usePlanStore(s => s.addProgram)
   const removeProgram = usePlanStore(s => s.removeProgram)
-  const addCourse     = usePlanStore(s => s.addCourse)
-
-  function handleAddCourse(code: string) {
-    const semId = findBestSemester(code, plan, courseMap)
-    if (semId) addCourse(plan.id, semId, code)
-  }
 
   const [summaryExpanded, setSummaryExpanded] = useState(false)
   const [showProgramPicker, setShowProgramPicker] = useState(false)
@@ -328,7 +565,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
         </div>
 
         {/* Enrolled Programs */}
-        <div className="p-4">
+        <div className="p-3">
           <h2 className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">
             Enrolled Programs
           </h2>
@@ -367,17 +604,21 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
                     </div>
                   </div>
 
-                  {/* Requirement tree */}
-                  <div className="px-2 py-2 space-y-0.5">
+                  {/* Flat requirement groups */}
+                  <div className="p-2 space-y-1">
                     {res.groups.map((g, i) => (
-                      <NodeRenderer
+                      <GroupRow
                         key={i}
-                        node={g}
-                        defaultOpen={!g.met}
-                        depth={0}
-                        onAddCourse={handleAddCourse}
+                        index={i + 1}
+                        group={g as NodeEvalResult & { label: string }}
+                        courseMap={courseMap}
                       />
                     ))}
+                  </div>
+
+                  {/* Drag hint */}
+                  <div className="px-3 pb-2 text-[9px] text-gray-300 text-center">
+                    drag a course chip into any semester
                   </div>
                 </div>
               )
