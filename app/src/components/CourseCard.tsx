@@ -19,13 +19,13 @@ const STATUS_CLASS: Record<CourseStatus, string> = {
   unknown:       'status-unknown',
 }
 
-// Left-border indicator on card
-const STATUS_BORDER: Record<CourseStatus, string> = {
-  completed:     'status-border-completed',
-  'in-progress': 'status-border-in-progress',
-  'no-issues':   'status-border-no-issues',
-  issues:        'status-border-issues',
-  unknown:       'status-border-unknown',
+// Left-border colour — applied via inline style so it overrides border-gray-200
+const STATUS_BORDER_COLOR: Record<CourseStatus, string> = {
+  completed:     '#10b981',  // emerald-500
+  'in-progress': '#0ea5e9',  // sky-500
+  'no-issues':   '#8b5cf6',  // violet-500
+  issues:        '#f43f5e',  // rose-500
+  unknown:       '#9ca3af',  // gray-400
 }
 
 interface Props {
@@ -74,7 +74,8 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
   return (
     <div
       ref={cardRef}
-      className={`relative group flex flex-col rounded-md overflow-visible border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-grab active:cursor-grabbing select-none ${STATUS_BORDER[status]}`}
+      className="relative group flex flex-col rounded-md overflow-visible border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-grab active:cursor-grabbing select-none"
+      style={{ borderLeftColor: STATUS_BORDER_COLOR[status], borderLeftWidth: '3px' }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={() => setShowTip(false)}
     >
