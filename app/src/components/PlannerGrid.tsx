@@ -15,9 +15,10 @@ interface Props {
 }
 
 export default function PlannerGrid({ plan, courseMap }: Props) {
-  const hideSummers  = usePlanStore(s => s.hideSummers)
-  const addSemester  = usePlanStore(s => s.addSemester)
-  const setStartYear = usePlanStore(s => s.setStartYear)
+  const hideSummers    = usePlanStore(s => s.hideSummers)
+  const addSemester    = usePlanStore(s => s.addSemester)
+  const removeSemester = usePlanStore(s => s.removeSemester)
+  const setStartYear   = usePlanStore(s => s.setStartYear)
 
   const [panelWidth, setPanelWidth] = useState(DEFAULT_PANEL_W)
   const dragRef = useRef<{ startX: number; startW: number } | null>(null)
@@ -80,8 +81,8 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
           </div>
         </div>
 
-        {/* Add Year at top */}
-        <div className="flex justify-center mb-1">
+        {/* Add / Remove Year at top */}
+        <div className="flex justify-center gap-2 mb-1">
           <button
             onClick={() => {
               const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
@@ -100,6 +101,29 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
           >
             <span className="text-base leading-none">+</span> Add Academic Year
           </button>
+
+          {plan.semesters.some(s => s.season === 'Fall') && (
+            <button
+              onClick={() => {
+                const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
+                const maxFall = Math.max(...fallYears)
+                // The last academic year = Fall maxFall + Winter maxFall+1 + Summer maxFall+1
+                const toRemove = plan.semesters.filter(s =>
+                  (s.season === 'Fall'   && s.year === maxFall) ||
+                  (s.season === 'Winter' && s.year === maxFall + 1) ||
+                  (s.season === 'Summer' && s.year === maxFall + 1)
+                )
+                const hasCourses = toRemove.some(s => s.courses.length > 0)
+                if (hasCourses && !window.confirm(
+                  `Fall ${maxFall} – Summer ${maxFall + 1} has courses. Remove anyway?`
+                )) return
+                toRemove.forEach(s => removeSemester(plan.id, s.id))
+              }}
+              className="px-4 py-1 text-sm font-medium rounded-full border border-dashed border-gray-300 text-gray-400 hover:text-red-500 hover:border-red-400 hover:bg-red-50/40 transition-all flex items-center gap-1.5"
+            >
+              <span className="text-base leading-none">−</span> Remove Academic Year
+            </button>
+          )}
         </div>
 
         {sorted.length === 0 ? (
