@@ -269,16 +269,27 @@ usePlanStore.subscribe((state, prevState) => {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session?.user) return
 
-    const rows = state.plans.map(p => ({
-      id: p.id,
-      user_id: session.user.id,
-      name: p.name,
-      semesters: p.semesters,
-      programs: p.programs || [],
-      ignored_prereqs: state.ignoredPrereqs[p.id] || []
-    }))
+    // Delete plans that were removed
+    const removedIds = prevState.plans
+      .map(p => p.id)
+      .filter(id => !state.plans.some(p => p.id === id))
+    if (removedIds.length > 0) {
+      const { error } = await supabase.from('plans').delete().in('id', removedIds)
+      if (error) console.error('Failed to delete plans:', error)
+    }
 
-    const { error } = await supabase.from('plans').upsert(rows)
-    if (error) console.error('Failed to sync plans:', error)
+    // Upsert remaining plans
+    if (state.plans.length > 0) {
+      const rows = state.plans.map(p => ({
+        id: p.id,
+        user_id: session.user.id,
+        name: p.name,
+        semesters: p.semesters,
+        programs: p.programs || [],
+        ignored_prereqs: state.ignoredPrereqs[p.id] || []
+      }))
+      const { error } = await supabase.from('plans').upsert(rows)
+      if (error) console.error('Failed to sync plans:', error)
+    }
   }, 1000)
 })
