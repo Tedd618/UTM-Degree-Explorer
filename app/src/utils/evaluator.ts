@@ -202,16 +202,23 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
         if (poolCodes.has(code)) collected += courseMap.get(code)?.credits ?? 0.5
       }
 
-      const poolCourses = [...poolCodes].sort()
-      const takenFromPool = poolCourses.filter(c => userCodes.has(c))
       const met = collected >= targetCredits
+
+      // Only expose poolCourses for display when the pool is meaningfully enumerable:
+      // - RESTRICTION: pool is exactly the specific_courses list
+      // - subject known: pool is bounded by subject prefix (+ optional level)
+      // When neither applies (no subject, no sc), the pool would include hundreds or
+      // thousands of courses — skip poolCourses so the node renders as a plain badge.
+      const canEnumerate = isRestriction || Boolean(node.subject)
+      const poolCourses    = canEnumerate ? [...poolCodes].sort() : undefined
+      const takenFromPool  = canEnumerate ? [...poolCodes].filter(c => userCodes.has(c)).sort() : undefined
+
       return {
         met,
         value: Math.min(collected, targetCredits),
         max: targetCredits,
         label: node.description || `Pool: ${targetCredits} credits`,
-        poolCourses,
-        takenFromPool,
+        ...(canEnumerate ? { poolCourses, takenFromPool } : {}),
       }
     }
     case 'text': {

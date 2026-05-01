@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react'
-import type { Plan, Course } from '../types'
+import type { Plan, Course, Season } from '../types'
 import { usePlanStore } from '../store/planStore'
 import { semesterSortKey } from '../utils/semester'
 import SemesterRow from './SemesterRow'
@@ -87,6 +87,11 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
               const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
               const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : new Date().getFullYear()
               const nextYear = maxFall + 1
+              // Academic year: Fall N → Winter N+1 → Summer N+1
+              // Also fill the bridging Summer N that the previous year left out
+              const hasSem = (yr: number, season: Season) =>
+                plan.semesters.some(s => s.year === yr && s.season === season)
+              if (!hasSem(nextYear, 'Summer')) addSemester(plan.id, nextYear, 'Summer')
               addSemester(plan.id, nextYear, 'Fall')
               addSemester(plan.id, nextYear + 1, 'Winter')
               addSemester(plan.id, nextYear + 1, 'Summer')
