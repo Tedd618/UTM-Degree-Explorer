@@ -75,7 +75,7 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
     <div
       ref={cardRef}
       className="relative group flex flex-col rounded-md overflow-visible border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-grab active:cursor-grabbing select-none"
-      style={{ borderLeftColor: STATUS_BORDER_COLOR[status], borderLeftWidth: '3px' }}
+      style={{ borderLeftColor: STATUS_BORDER_COLOR[status], borderLeftWidth: '4px' }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={() => setShowTip(false)}
     >
