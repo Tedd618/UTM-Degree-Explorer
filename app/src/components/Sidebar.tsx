@@ -8,6 +8,7 @@ export default function Sidebar() {
   const hideSummers  = usePlanStore(s => s.hideSummers)
   const addPlan           = usePlanStore(s => s.addPlan)
   const removePlan        = usePlanStore(s => s.removePlan)
+  const duplicatePlan     = usePlanStore(s => s.duplicatePlan)
   const renamePlan        = usePlanStore(s => s.renamePlan)
   const setActivePlan     = usePlanStore(s => s.setActivePlan)
   const toggleHideSummers = usePlanStore(s => s.toggleHideSummers)
@@ -15,6 +16,7 @@ export default function Sidebar() {
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editValue, setEditValue]  = useState('')
   const [showImport, setShowImport] = useState(false)
+  const [collapsed, setCollapsed]  = useState(false)
 
   function startRename(id: string, current: string) {
     setEditingId(id)
@@ -27,19 +29,42 @@ export default function Sidebar() {
     setEditingId(null)
   }
 
+  if (collapsed) {
+    return (
+      <aside className="w-10 shrink-0 flex flex-col items-center bg-white border-r border-gray-200">
+        <button
+          onClick={() => setCollapsed(false)}
+          title="Expand sidebar"
+          className="w-full flex items-center justify-center py-2 text-gray-300 hover:text-gray-500 transition-colors cursor-pointer border-b border-gray-100"
+        >
+          ▶
+        </button>
+      </aside>
+    )
+  }
+
   return (
     <aside className="w-56 shrink-0 flex flex-col bg-white border-r border-gray-200 overflow-y-auto">
       {/* My Plans */}
         <section className="p-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">My Plans</span>
-          <button
-            onClick={addPlan}
-            title="New plan"
-            className="w-6 h-6 rounded flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors text-lg leading-none"
-          >
-            +
-          </button>
+          <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-300">My Plans</span>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={addPlan}
+              title="New plan"
+              className="w-7 h-7 rounded flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors text-lg leading-none"
+            >
+              +
+            </button>
+            <button
+              onClick={() => setCollapsed(true)}
+              title="Collapse sidebar"
+              className="w-6 h-6 rounded flex items-center justify-center text-gray-300 hover:bg-gray-100 hover:text-gray-500 transition-colors text-xs leading-none"
+            >
+              ◀
+            </button>
+          </div>
         </div>
         <ul className="space-y-0.5">
           {plans.map(plan => (
@@ -72,6 +97,13 @@ export default function Sidebar() {
                     >
                       ✎
                     </button>
+                    <button
+                      title="Duplicate"
+                      className="text-gray-400 hover:text-gray-700 text-xs px-1"
+                      onClick={e => { e.stopPropagation(); duplicatePlan(plan.id) }}
+                    >
+                      ⎘
+                    </button>
                     {plans.length > 1 && (
                       <button
                         title="Delete"
@@ -91,7 +123,7 @@ export default function Sidebar() {
 
       {/* Display options */}
       <section className="p-3 border-b border-gray-100">
-        <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 block mb-2">Display</span>
+        <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-300 block mb-2">Display</span>
         <label className="flex items-center gap-2 text-sm text-gray-600 cursor-pointer select-none">
           <input
             type="checkbox"
@@ -105,13 +137,13 @@ export default function Sidebar() {
 
       {/* Status legend */}
       <section className="p-3 border-b border-gray-100">
-        <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 block mb-2">Legend</span>
+        <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-300 block mb-2">Legend</span>
         <div className="space-y-1.5">
           {[
-            { color: 'bg-emerald-600', label: 'Completed' },
-            { color: 'bg-blue-600',    label: 'In Progress' },
-            { color: 'bg-violet-600',  label: 'No Issues' },
-            { color: 'bg-red-500',     label: 'Issues Found' },
+            { color: 'bg-emerald-500', label: 'Completed' },
+            { color: 'bg-sky-500',     label: 'In Progress' },
+            { color: 'bg-violet-500',  label: 'No Issues' },
+            { color: 'bg-rose-500',    label: 'Issues Found' },
           ].map(({ color, label }) => (
             <div key={label} className="flex items-center gap-2">
               <span className={`w-3 h-3 rounded-sm shrink-0 ${color}`} />
@@ -125,7 +157,7 @@ export default function Sidebar() {
         <div className="p-3">
           <button
             onClick={() => setShowImport(true)}
-            className="w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-blue text-white hover:bg-utm-navy transition-colors"
+            className="w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-navy text-white hover:bg-utm-blue transition-colors"
           >
             Import
           </button>

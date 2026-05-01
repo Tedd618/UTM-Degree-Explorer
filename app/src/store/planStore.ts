@@ -39,6 +39,7 @@ interface PlanStore {
   // plan CRUD
   addPlan: () => void
   removePlan: (id: string) => void
+  duplicatePlan: (id: string) => void
   renamePlan: (id: string, name: string) => void
   setActivePlan: (id: string) => void
   toggleHideSummers: () => void
@@ -84,12 +85,14 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
 
   setStoreData: (plans, ignored, activeId) => {
     set(state => {
+      // If no plans provided, create a fresh default plan
+      const finalPlans = plans.length > 0 ? plans : [createDefaultPlan()]
       // Preserve the current selection if it still exists in the incoming plans
       const preferredId = activeId ?? state.activePlanId
-      const validId = plans.find(p => p.id === preferredId)
+      const validId = finalPlans.find(p => p.id === preferredId)
         ? preferredId
-        : (plans.length > 0 ? plans[0].id : defaultPlan.id)
-      return { plans, ignoredPrereqs: ignored, activePlanId: validId }
+        : finalPlans[0].id
+      return { plans: finalPlans, ignoredPrereqs: ignored, activePlanId: validId }
     })
   },
 
@@ -111,6 +114,23 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
           }
           const activeId = state.activePlanId === id ? remaining[0].id : state.activePlanId
           return { plans: remaining, activePlanId: activeId }
+        }),
+
+      duplicatePlan: (id) =>
+        set(state => {
+          const source = state.plans.find(p => p.id === id)
+          if (!source) return state
+          const copy: Plan = {
+            ...source,
+            id: newId(),
+            name: `${source.name} (copy)`,
+            semesters: source.semesters.map(s => ({ ...s, id: newId(), courses: [...s.courses] })),
+            programs: [...(source.programs || [])],
+          }
+          const idx = state.plans.findIndex(p => p.id === id)
+          const plans = [...state.plans]
+          plans.splice(idx + 1, 0, copy)
+          return { plans, activePlanId: copy.id }
         }),
 
       renamePlan: (id, name) =>
@@ -269,16 +289,27 @@ usePlanStore.subscribe((state, prevState) => {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session?.user) return
 
-    const rows = state.plans.map(p => ({
-      id: p.id,
-      user_id: session.user.id,
-      name: p.name,
-      semesters: p.semesters,
-      programs: p.programs || [],
-      ignored_prereqs: state.ignoredPrereqs[p.id] || []
-    }))
+    // Delete plans that were removed
+    const removedIds = prevState.plans
+      .map(p => p.id)
+      .filter(id => !state.plans.some(p => p.id === id))
+    if (removedIds.length > 0) {
+      const { error } = await supabase.from('plans').delete().in('id', removedIds).eq('user_id', session.user.id)
+      if (error) console.error('Failed to delete plans:', error)
+    }
 
-    const { error } = await supabase.from('plans').upsert(rows)
-    if (error) console.error('Failed to sync plans:', error)
+    // Upsert remaining plans
+    if (state.plans.length > 0) {
+      const rows = state.plans.map(p => ({
+        id: p.id,
+        user_id: session.user.id,
+        name: p.name,
+        semesters: p.semesters,
+        programs: p.programs || [],
+        ignored_prereqs: state.ignoredPrereqs[p.id] || []
+      }))
+      const { error } = await supabase.from('plans').upsert(rows)
+      if (error) console.error('Failed to sync plans:', error)
+    }
   }, 1000)
 })

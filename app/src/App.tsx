@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar'
 import PlannerGrid from './components/PlannerGrid'
 import PrereqRadarPanel from './components/PrereqRadarPanel'
 import AuthScreen from './components/AuthScreen'
+import FeedbackWidget from './components/FeedbackWidget'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
@@ -30,6 +31,7 @@ export default function App() {
           name: row.name,
           semesters: row.semesters,
           programs: row.programs || [],
+          startYear: row.start_year ?? undefined,
         }))
         const ignored: Record<string, string[]> = {}
         for (const row of data) {
@@ -58,6 +60,9 @@ export default function App() {
       // Only re-fetch on actual sign-in; token refreshes should not reset plan state
       if (session && (event === 'SIGNED_IN' || event === 'USER_UPDATED')) {
         fetchData(session.user.id)
+      }
+      if (event === 'SIGNED_OUT') {
+        usePlanStore.getState().setStoreData([], {})
       }
     })
 
@@ -120,6 +125,7 @@ export default function App() {
           )}
         </main>
       </div>
+      <FeedbackWidget session={session} />
     </div>
   )
 }

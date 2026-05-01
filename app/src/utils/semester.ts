@@ -55,7 +55,8 @@ export function nextSem(year: number, season: Season): { year: number; season: S
 
 /** Fall year of the current academic year (Sept = new year begins). */
 export function currentAcademicStartYear(): number {
-  return 2024
+  const now = new Date()
+  return now.getMonth() >= 8 ? now.getFullYear() : now.getFullYear() - 1
 }
 
 /** Build the default semester list: 4 academic years starting from the given fall year. */

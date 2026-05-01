@@ -119,14 +119,14 @@ function ProgramComboStat({ spec, maj, min }: { spec: number; maj: number; min: 
         <span className={`shrink-0 inline-block w-1.5 h-1.5 rounded-full ${dotColor} mt-1`} />
         <div>
           Program Combination
-          <div className="text-[9px] text-gray-400 mt-0.5 leading-snug">
+          <div className="text-[11px] text-gray-400 mt-0.5 leading-snug">
             Requires 1 Specialist,<br />or 2 Majors, or 1 Maj + 2 Min
           </div>
         </div>
       </div>
       <div className={`font-medium text-right leading-tight ${met ? 'text-emerald-700' : 'text-gray-500'}`}>
         {met ? 'Valid' : 'Incomplete'}
-        <div className="text-[9px] font-normal opacity-60 mt-0.5 uppercase tracking-wider text-gray-400">
+        <div className="text-[11px] font-normal opacity-60 mt-0.5 uppercase tracking-wider text-gray-400">
           S:{spec} M:{maj} m:{min}
         </div>
       </div>
@@ -203,7 +203,7 @@ function CoursePill({ code, met, courseMap }: CoursePillProps) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setTipPos(null)}
         className={`
-          inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold
+          inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[11px] font-mono font-semibold
           cursor-grab active:cursor-grabbing select-none transition-all
           ${met
             ? 'bg-emerald-100 text-emerald-800 border border-emerald-200 hover:bg-emerald-200'
@@ -212,7 +212,7 @@ function CoursePill({ code, met, courseMap }: CoursePillProps) {
           ${dragging ? 'opacity-40' : 'hover:shadow-sm'}
         `}
       >
-        {met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        {met && <span className="text-emerald-500 text-[11px]">✓</span>}
         {code}
       </span>
       {tooltip}
@@ -238,15 +238,15 @@ function PoolNode({ node, courseMap, depth }: PoolNodeProps) {
   return (
     <span className="inline-flex flex-col gap-1">
       <span
-        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px] cursor-pointer select-none
+        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[11px] cursor-pointer select-none
           ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-blue-50 border-blue-200 text-blue-700'}
         `}
         onClick={() => setPoolOpen(o => !o)}
       >
-        {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        {node.met && <span className="text-emerald-500 text-[11px]">✓</span>}
         <span>{label}{credStr}</span>
         <span
-          className="text-[8px] opacity-60 transition-transform"
+          className="text-[9px] opacity-60 transition-transform"
           style={{ transform: poolOpen ? 'rotate(180deg)' : 'none' }}
         >
           ▼
@@ -283,15 +283,15 @@ function OpenPoolNode({ node, courseMap }: OpenPoolNodeProps) {
   return (
     <span className="inline-flex flex-col gap-1 w-full">
       <span
-        className={`inline-flex items-center gap-1 px-2 py-1 rounded border text-[10px] cursor-pointer select-none leading-snug
+        className={`inline-flex items-center gap-1 px-2 py-1 rounded border text-[11px] cursor-pointer select-none leading-snug
           ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-amber-50 border-amber-200 text-amber-700'}
         `}
         onClick={() => setOpen(o => !o)}
       >
-        {node.met && <span className="text-emerald-500 text-[9px] shrink-0">✓</span>}
+        {node.met && <span className="text-emerald-500 text-[11px] shrink-0">✓</span>}
         <span className="flex-1">{label}{credStr}</span>
         {sorted.length > 0 && (
-          <span className="text-[8px] opacity-60 shrink-0 transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'none' }}>
+          <span className="text-[9px] opacity-60 shrink-0 transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'none' }}>
             ▼ {sorted.length} courses
           </span>
         )}
@@ -333,12 +333,12 @@ function CollapsibleOneOfNode({ node, courseMap, depth }: CollapsibleOneOfProps)
   return (
     <span className="inline-flex flex-col gap-1">
       <span
-        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px] cursor-pointer select-none
+        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[11px] cursor-pointer select-none
           ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-blue-50 border-blue-200 text-blue-700'}
         `}
         onClick={() => setOpen(o => !o)}
       >
-        {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        {node.met && <span className="text-emerald-500 text-[11px]">✓</span>}
         <span>
           {node.met
             ? `1 of ${children.length} options met`
@@ -346,9 +346,9 @@ function CollapsibleOneOfNode({ node, courseMap, depth }: CollapsibleOneOfProps)
           {credStr}
         </span>
         {metCount > 0 && !node.met && (
-          <span className="text-[9px] text-emerald-600 font-medium">({metCount} taken)</span>
+          <span className="text-[11px] text-emerald-600 font-medium">({metCount} taken)</span>
         )}
-        <span className="text-[8px] opacity-60 transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'none' }}>▼</span>
+        <span className="text-[9px] opacity-60 transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'none' }}>▼</span>
       </span>
       {open && (
         <span className="flex flex-wrap gap-1 pl-1">
@@ -389,14 +389,14 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
     if (!label) return null
     const credStr = node.max > 0 ? ` (${fmtN(node.value)}/${fmtN(node.max)} cr)` : ''
     return (
-      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md border text-[10px] leading-snug
+      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md border text-[11px] leading-snug
         ${node.met
           ? 'bg-emerald-50 border-emerald-200 text-emerald-700'
           : node.max > 0
             ? 'bg-amber-50 border-amber-200 text-amber-700'
             : 'bg-gray-50 border-gray-200 text-gray-500 italic'
         }`}>
-        {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+        {node.met && <span className="text-emerald-500 text-[11px]">✓</span>}
         {label}{credStr}
       </span>
     )
@@ -408,7 +408,7 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
       <span className="inline-flex flex-wrap items-center gap-1">
         {children.map((child, i) => (
           <React.Fragment key={i}>
-            {i > 0 && <span className="text-[9px] text-gray-400 font-medium">and</span>}
+            {i > 0 && <span className="text-[11px] text-gray-400 font-medium">and</span>}
             <InlineNode node={child} courseMap={courseMap} depth={depth + 1} />
           </React.Fragment>
         ))}
@@ -427,7 +427,7 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
       `}>
         {children.map((child, i) => (
           <React.Fragment key={i}>
-            {i > 0 && <span className="text-[9px] text-gray-400 font-medium px-0.5">or</span>}
+            {i > 0 && <span className="text-[11px] text-gray-400 font-medium px-0.5">or</span>}
             <InlineNode node={child} courseMap={courseMap} depth={depth + 1} />
           </React.Fragment>
         ))}
@@ -443,10 +443,10 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
   // ── Everything else (unrecognised) ──
   const credStr = node.max > 0 ? ` (${fmtN(node.value)}/${fmtN(node.max)} cr)` : ''
   return (
-    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px]
+    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[11px]
       ${node.met ? 'bg-emerald-50 border-emerald-200 text-emerald-700' : 'bg-amber-50 border-amber-200 text-amber-700'}
     `}>
-      {node.met && <span className="text-emerald-500 text-[9px]">✓</span>}
+      {node.met && <span className="text-emerald-500 text-[11px]">✓</span>}
       {label}{credStr}
     </span>
   )
@@ -464,6 +464,10 @@ interface GroupRowProps {
 function GroupRow({ index, group, courseMap }: GroupRowProps) {
   const [open, setOpen] = useState(!group.met)
   const children = group.children ?? []
+
+  useEffect(() => {
+    if (group.met) setOpen(false)
+  }, [group.met])
   const credStr = group.max > 0 ? `${fmtN(group.value)}/${fmtN(group.max)} cr` : null
 
   return (
@@ -475,20 +479,20 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
         `}
         onClick={() => setOpen(o => !o)}
       >
-        <span className="text-[9px] text-gray-400 shrink-0 font-medium">{index}.</span>
-        <span className={`shrink-0 font-bold text-[10px] ${group.met ? 'text-emerald-500' : 'text-red-400'}`}>
+        <span className="text-[11px] text-gray-400 shrink-0 font-medium">{index}.</span>
+        <span className={`shrink-0 font-bold text-[11px] ${group.met ? 'text-emerald-500' : 'text-red-400'}`}>
           {group.met ? '✓' : '✗'}
         </span>
-        <span className={`flex-1 font-medium leading-snug ${group.met ? 'text-emerald-800' : 'text-gray-700'}`}>
+        <span className={`flex-1 text-xs font-medium leading-snug ${group.met ? 'text-emerald-800' : 'text-gray-700'}`}>
           {group.label || 'Requirements'}
         </span>
         {credStr && (
-          <span className={`text-[10px] shrink-0 tabular-nums ${group.met ? 'text-emerald-600' : 'text-gray-400'}`}>
+          <span className={`text-[11px] shrink-0 tabular-nums ${group.met ? 'text-emerald-600' : 'text-gray-400'}`}>
             {credStr}
           </span>
         )}
         <span
-          className="text-[8px] text-gray-300 shrink-0 transition-transform"
+          className="text-[9px] text-gray-300 shrink-0 transition-transform"
           style={{ transform: open ? 'rotate(180deg)' : 'none' }}
         >
           ▼
@@ -504,7 +508,7 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
             if (isHeader) {
               // Section divider label
               return (
-                <div key={i} className="text-[9px] text-gray-400 uppercase tracking-wider pt-1">
+                <div key={i} className="text-[11px] text-gray-400 uppercase tracking-wider pt-1">
                   {child.label}
                 </div>
               )
@@ -523,7 +527,7 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
                   !(child.label ?? '').startsWith('Up to') &&
                   child.poolCourses === undefined &&
                   !COURSE_CODE_RE.test(child.label ?? '') && (
-                  <span className="text-[9px] text-gray-400 self-center whitespace-nowrap">
+                  <span className="text-[11px] text-gray-400 self-center whitespace-nowrap">
                     {childCredStr}
                   </span>
                 )}
@@ -600,7 +604,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
           </div>
 
           <div className="flex items-center gap-2 mt-3 mb-2">
-            <div className="flex h-3 flex-1 rounded-full bg-gray-100 overflow-hidden">
+            <div className="flex h-2 flex-1 rounded-full bg-gray-100 overflow-hidden">
               <BarSegment value={s.completed}  max={20} color="bg-emerald-500" title="Completed" />
               <BarSegment value={s.inProgress} max={20} color="bg-blue-500"    title="In Progress" />
               <BarSegment value={s.planned}    max={20} color="bg-violet-400"  title="Planned" />
@@ -608,7 +612,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
             </div>
           </div>
 
-          <div className="flex justify-between text-[10px] text-gray-400 mb-1">
+          <div className="flex justify-between text-[11px] text-gray-400 mb-1">
             <span>{s.total.toFixed(1)} / 20.0 cr</span>
             <span>{remaining > 0 ? `${remaining.toFixed(1)} left` : 'Target met!'}</span>
           </div>
@@ -635,7 +639,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
                           <span className={`shrink-0 inline-block w-1.5 h-1.5 rounded-full mt-1 ${met ? 'bg-emerald-500' : 'bg-red-400'}`} />
                           <div>
                             Distinct Program Credits
-                            <div className="text-[9px] text-gray-400 mt-0.5 leading-snug">
+                            <div className="text-[11px] text-gray-400 mt-0.5 leading-snug">
                               Combined programs must have<br />≥ 12 credits not shared between them
                             </div>
                           </div>
@@ -643,7 +647,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
                         <div className={`font-medium text-right leading-tight ${met ? 'text-emerald-700' : 'text-gray-500'}`}>
                           {distinct.toFixed(1)} / 12.0
                           {overlap > 0 && (
-                            <div className="text-[9px] font-normal text-gray-400 mt-0.5">
+                            <div className="text-[11px] font-normal text-gray-400 mt-0.5">
                               −{overlap.toFixed(1)} shared
                             </div>
                           )}
@@ -659,7 +663,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
 
         {/* Enrolled Programs */}
         <div className="p-3">
-          <h2 className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">
+          <h2 className="text-[11px] font-semibold uppercase tracking-widest text-gray-300 mb-3">
             Enrolled Programs
           </h2>
 
@@ -684,12 +688,12 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
                     </button>
                     <h3 className="font-semibold text-xs text-utm-navy pr-5 leading-snug">{prog.name}</h3>
                     <div className="flex items-center justify-between mt-1">
-                      <span className="text-[9px] text-gray-400 uppercase tracking-widest">{prog.type}</span>
-                      <span className={`text-[10px] font-semibold ${allMet ? 'text-emerald-600' : 'text-gray-400'}`}>
+                      <span className="text-[11px] text-gray-400 uppercase tracking-widest">{prog.type}</span>
+                      <span className={`text-[11px] font-semibold ${allMet ? 'text-emerald-600' : 'text-gray-400'}`}>
                         {metGroups}/{totalGroups} · {pct}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden mt-2">
+                    <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden mt-2">
                       <div
                         className={`h-full transition-all ${allMet ? 'bg-emerald-500' : 'bg-utm-blue'}`}
                         style={{ width: `${pct}%` }}
@@ -710,7 +714,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
                   </div>
 
                   {/* Drag hint */}
-                  <div className="px-3 pb-2 text-[9px] text-gray-300 text-center">
+                  <div className="px-3 pb-2 text-[11px] text-gray-300 text-center">
                     drag a course chip into any semester
                   </div>
                 </div>
@@ -729,7 +733,7 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
             <button
               onClick={() => setShowProgramPicker(true)}
               disabled={loading}
-              className="mt-4 w-full py-1.5 border border-dashed border-gray-300 rounded text-xs font-medium text-gray-500 hover:text-utm-blue hover:border-utm-blue transition-colors disabled:opacity-50"
+              className="mt-4 w-full py-1.5 border border-dashed border-gray-300 rounded text-sm font-medium text-gray-500 hover:text-utm-blue hover:border-utm-blue transition-colors disabled:opacity-50"
             >
               + Add Program
             </button>
