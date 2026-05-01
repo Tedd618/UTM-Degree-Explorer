@@ -48,12 +48,12 @@ export default function Sidebar() {
       {/* My Plans */}
         <section className="p-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-300">My Plans</span>
+          <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">My Plans</span>
           <div className="flex items-center gap-1">
             <button
               onClick={addPlan}
               title="New plan"
-              className="w-7 h-7 rounded flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors text-lg leading-none"
+              className="w-6 h-6 rounded flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors text-lg leading-none"
             >
               +
             </button>
@@ -123,7 +123,7 @@ export default function Sidebar() {
 
       {/* Display options */}
       <section className="p-3 border-b border-gray-100">
-        <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-300 block mb-2">Display</span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 block mb-2">Display</span>
         <label className="flex items-center gap-2 text-sm text-gray-600 cursor-pointer select-none">
           <input
             type="checkbox"
@@ -137,7 +137,7 @@ export default function Sidebar() {
 
       {/* Status legend */}
       <section className="p-3 border-b border-gray-100">
-        <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-300 block mb-2">Legend</span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 block mb-2">Legend</span>
         <div className="space-y-1.5">
           {[
             { color: 'bg-emerald-500', label: 'Completed' },
@@ -157,7 +157,7 @@ export default function Sidebar() {
         <div className="p-3">
           <button
             onClick={() => setShowImport(true)}
-            className="w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-navy text-white hover:bg-utm-blue transition-colors"
+            className="w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-blue text-white hover:bg-utm-navy transition-colors"
           >
             Import
           </button>
