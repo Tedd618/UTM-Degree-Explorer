@@ -18,7 +18,6 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
   const hideSummers    = usePlanStore(s => s.hideSummers)
   const addSemester    = usePlanStore(s => s.addSemester)
   const removeSemester = usePlanStore(s => s.removeSemester)
-  const setStartYear   = usePlanStore(s => s.setStartYear)
 
   const [panelWidth, setPanelWidth] = useState(DEFAULT_PANEL_W)
   const dragRef = useRef<{ startX: number; startW: number } | null>(null)
@@ -52,9 +51,6 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
     (a, b) => semesterSortKey(b.year, b.season) - semesterSortKey(a.year, a.season),
   )
 
-  const startYear = plan.startYear ?? new Date().getFullYear()
-  const yearOptions = Array.from({ length: 10 }, (_, i) => startYear - 4 + i)
-
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
       {/* Main grid area */}
@@ -62,23 +58,9 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
         {/* Plan title bar */}
         <div className="flex items-center justify-between mb-3">
           <h1 className="text-lg font-semibold text-utm-navy">{plan.name}</h1>
-          <div className="flex items-center gap-3">
-            <label className="flex items-center gap-1.5 text-xs text-gray-400">
-              <span>First Year</span>
-              <select
-                value={startYear}
-                onChange={e => setStartYear(plan.id, Number(e.target.value))}
-                className="text-xs text-gray-600 border border-gray-200 rounded px-1 py-0.5 bg-white focus:outline-none focus:border-utm-blue"
-              >
-                {yearOptions.map(y => (
-                  <option key={y} value={y}>Fall {y}</option>
-                ))}
-              </select>
-            </label>
-            <span className="text-xs text-gray-400">
-              {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses · {plan.semesters.length} semesters
-            </span>
-          </div>
+          <span className="text-xs text-gray-400">
+            {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses · {plan.semesters.length} semesters
+          </span>
         </div>
 
         {/* Academic year controls — single paired control */}

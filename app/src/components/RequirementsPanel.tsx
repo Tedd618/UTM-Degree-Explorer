@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import type { Plan, Course, Semester, ProgramStructure } from '../types'
 import { getCourseStatus } from '../utils/prereq'
 import { evaluateGeneralRequirements, evaluateProgram, NodeEvalResult } from '../utils/evaluator'
@@ -103,23 +104,58 @@ interface CoursePillProps {
 }
 
 function CoursePill({ code, met, courseMap }: CoursePillProps) {
-  const course = courseMap.get(code)
+  const course   = courseMap.get(code)
   const [dragging, setDragging] = useState(false)
-  const [showTip, setShowTip] = useState(false)
+  const [tipPos,   setTipPos]   = useState<{ x: number; y: number } | null>(null)
+  const pillRef = useRef<HTMLSpanElement>(null)
+
+  // Close tooltip on scroll so it doesn't drift
+  useEffect(() => {
+    if (!tipPos) return
+    const hide = () => setTipPos(null)
+    window.addEventListener('scroll', hide, true)
+    return () => window.removeEventListener('scroll', hide, true)
+  }, [tipPos])
+
+  function handleMouseEnter() {
+    if (!pillRef.current) return
+    const r = pillRef.current.getBoundingClientRect()
+    setTipPos({ x: r.left, y: r.top })
+  }
+
+  const tooltip = tipPos && createPortal(
+    <span
+      className="fixed z-[99999] w-64 bg-gray-900 text-white rounded-xl p-3 shadow-2xl text-[10px] leading-snug pointer-events-none block"
+      style={{ left: tipPos.x, top: tipPos.y - 8, transform: 'translateY(-100%)' }}
+    >
+      <span className="font-semibold text-[11px] block mb-1">
+        {code}{course && ` — ${course.title}`}
+      </span>
+      {course?.credits && (
+        <span className="text-gray-300 block mb-1">{course.credits} credit{course.credits !== 1 ? 's' : ''}</span>
+      )}
+      {course?.description && (
+        <span className="text-gray-400 block leading-relaxed line-clamp-5">{course.description}</span>
+      )}
+      {!course && <span className="text-gray-400 italic">Course info unavailable</span>}
+    </span>,
+    document.body
+  )
 
   return (
     <span className="relative inline-block leading-none">
       <span
+        ref={pillRef}
         draggable
         onDragStart={e => {
           e.dataTransfer.effectAllowed = 'copy'
           e.dataTransfer.setData('text/plain', `${REQ_DRAG_PREFIX}${code}`)
           setDragging(true)
-          setShowTip(false)
+          setTipPos(null)
         }}
         onDragEnd={() => setDragging(false)}
-        onMouseEnter={() => setShowTip(true)}
-        onMouseLeave={() => setShowTip(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={() => setTipPos(null)}
         className={`
           inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold
           cursor-grab active:cursor-grabbing select-none transition-all
@@ -133,25 +169,7 @@ function CoursePill({ code, met, courseMap }: CoursePillProps) {
         {met && <span className="text-emerald-500 text-[9px]">✓</span>}
         {code}
       </span>
-
-      {showTip && (
-        <span
-          className="absolute bottom-full left-0 mb-1.5 z-[9999] w-52 bg-gray-900 text-white rounded-lg p-2.5 shadow-2xl text-[10px] leading-snug pointer-events-none block"
-          style={{ whiteSpace: 'normal' }}
-        >
-          <span className="font-semibold text-[11px] block mb-1">
-            {code}
-            {course && ` — ${course.title}`}
-          </span>
-          {course?.credits && (
-            <span className="text-gray-300 block mb-0.5">{course.credits} credit{course.credits !== 1 ? 's' : ''}</span>
-          )}
-          {course?.description && (
-            <span className="text-gray-400 block leading-relaxed line-clamp-4">{course.description}</span>
-          )}
-          {!course && <span className="text-gray-400 italic">Course info unavailable</span>}
-        </span>
-      )}
+      {tooltip}
     </span>
   )
 }
