@@ -142,6 +142,35 @@ function nodeToGroup(
 }
 
 /**
+ * Build the set of course codes that satisfy prerequisites for `code` in `semester`.
+ *
+ * Normal rule: only courses from strictly earlier semesters count.
+ * Summer exception: Summer has two back-to-back sessions (Summer 1 & 2) but we
+ * store them as a single "Summer" semester.  Any other course in the same Summer
+ * semester is treated as potentially completable before `code`, so it is included
+ * in codesBefore (minus `code` itself to avoid self-satisfaction).
+ */
+export function buildCodesBefore(
+  code: string,
+  semester: Semester,
+  allSemesters: Semester[],
+): Set<string> {
+  const semKey = semesterSortKey(semester.year, semester.season)
+  const isSummer = semester.season === 'Summer'
+  const result = new Set<string>()
+  for (const s of allSemesters) {
+    const key = semesterSortKey(s.year, s.season)
+    if (key < semKey) {
+      for (const c of s.courses) result.add(c)
+    } else if (isSummer && key === semKey) {
+      // Same Summer semester — include co-enrolled courses except this one
+      for (const c of s.courses) { if (c !== code) result.add(c) }
+    }
+  }
+  return result
+}
+
+/**
  * Compute the display status for a course placed in a given semester.
  */
 export function getCourseStatus(
@@ -156,14 +185,7 @@ export function getCourseStatus(
   const course = courseMap.get(code)
   if (!course) return 'unknown'
 
-  const semKey = semesterSortKey(semester.year, semester.season)
-
-  const codesBefore = new Set<string>(
-    allSemesters
-      .filter(s => semesterSortKey(s.year, s.season) < semKey)
-      .flatMap(s => s.courses),
-  )
-
+  const codesBefore  = buildCodesBefore(code, semester, allSemesters)
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
   if (!evaluatePrereq(course.prerequisites, codesBefore, courseMap)) {
@@ -191,12 +213,7 @@ export function getIssueReasons(
   const course = courseMap.get(code)
   if (!course) return ['Course not found in catalogue']
 
-  const semKey = semesterSortKey(semester.year, semester.season)
-  const codesBefore = new Set<string>(
-    allSemesters
-      .filter(s => semesterSortKey(s.year, s.season) < semKey)
-      .flatMap(s => s.courses),
-  )
+  const codesBefore   = buildCodesBefore(code, semester, allSemesters)
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
   const reasons: string[] = []
