@@ -54,10 +54,10 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
       {/* Main grid area */}
-      <div className="flex-1 overflow-auto px-5 py-4 space-y-1.5">
+      <div className="flex-1 overflow-auto p-5 space-y-2">
         {/* Plan title bar */}
         <div className="flex items-center justify-between mb-3">
-          <h1 className="text-base font-semibold text-utm-navy">{plan.name}</h1>
+          <h1 className="text-lg font-semibold text-utm-navy">{plan.name}</h1>
           <span className="text-xs text-gray-400">
             {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses · {plan.semesters.length} semesters
           </span>
@@ -105,7 +105,7 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
                   −
                 </button>
                 {/* Label */}
-                <span className="px-3 py-1 text-xs font-medium text-gray-500 uppercase tracking-wide select-none">
+                <span className="px-3 py-1 text-[11px] font-medium text-gray-400 tracking-wide select-none">
                   Academic Year
                 </span>
                 {/* Add */}
@@ -128,27 +128,15 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
             <p className="text-xs mt-1">Uncheck "Hide summer semesters" to see all.</p>
           </div>
         ) : (
-          sorted.map((sem, idx) => {
-            const showYearHeader = sem.season === 'Fall'
-            return (
-              <React.Fragment key={sem.id}>
-                {showYearHeader && (
-                  <div className="flex items-center gap-3 pt-2 pb-1">
-                    <span className="text-xs font-semibold text-gray-400 tracking-wide">
-                      {sem.year}–{sem.year + 1}
-                    </span>
-                    <div className="flex-1 h-px bg-gray-100" />
-                  </div>
-                )}
-                <SemesterRow
-                  planId={plan.id}
-                  semester={sem}
-                  allSemesters={plan.semesters}
-                  courseMap={courseMap}
-                />
-              </React.Fragment>
-            )
-          })
+          sorted.map(sem => (
+            <SemesterRow
+              key={sem.id}
+              planId={plan.id}
+              semester={sem}
+              allSemesters={plan.semesters}
+              courseMap={courseMap}
+            />
+          ))
         )}
       </div>
 

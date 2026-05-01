@@ -78,16 +78,16 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
       onMouseEnter={onMouseEnter}
       onMouseLeave={() => setShowTip(false)}
     >
-      <div className="px-2.5 py-2 flex items-start justify-between gap-1 min-w-0">
+      <div className="px-2 py-1.5 flex items-start justify-between gap-1 min-w-0">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1 min-w-0">
-            <p className="text-[13px] font-semibold text-gray-800 leading-tight truncate">{code}</p>
+            <p className="text-xs font-semibold text-gray-800 leading-tight truncate">{code}</p>
             {issueReasons.length > 0 && (
-              <span className="shrink-0 text-[10px] text-red-500 font-bold leading-none" title="Issues found">⚠</span>
+              <span className="shrink-0 text-[9px] text-red-500 font-bold leading-none" title="Issues found">⚠</span>
             )}
           </div>
           {course && (
-            <p className="text-[11px] text-gray-500 leading-tight truncate mt-0.5">{course.title}</p>
+            <p className="text-[10px] text-gray-400 leading-tight truncate mt-0.5">{course.title}</p>
           )}
         </div>
 
@@ -95,7 +95,7 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
         <button
           onClick={e => { e.stopPropagation(); onRemove() }}
           title="Remove"
-          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-5 h-5 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5 cursor-pointer"
+          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5 cursor-pointer"
         >
           ×
         </button>

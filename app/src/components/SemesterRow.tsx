@@ -8,6 +8,7 @@ import { RADAR_DRAG_PREFIX } from './PrereqRadarPanel'
 import { REQ_DRAG_PREFIX } from './RequirementsPanel'
 
 const MAX_COURSES = 8
+const CELL_W = 'w-36'
 
 let dragState: { planId: string; fromSemId: string; code: string } | null = null
 
@@ -213,16 +214,17 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
   return (
     <div className="flex gap-2 items-start group/row">
       {/* Semester label */}
-      <div className={`shrink-0 w-24 min-h-[52px] rounded-md px-2 py-1.5 ${semHeaderClass()}`}>
-        <p className="text-sm font-semibold leading-tight">{semLabel(semester)}</p>
-        <p className="text-[11px] opacity-50 mt-1">
+      <div className={`shrink-0 w-28 rounded-md px-2 py-1.5 ${semHeaderClass()}`}>
+        <p className="text-xs font-semibold leading-tight">{semLabel(semester)}</p>
+        <p className="text-[10px] opacity-60 mt-0.5">
           {semester.courses.length}/{MAX_COURSES}
         </p>
       </div>
 
-      {/* Flex-wrap container — no ghost slots */}
+      {/* Fixed grid of slots */}
       <div
-        className={`flex flex-wrap gap-2 flex-1 rounded-lg p-2 transition-colors ${isDragOver ? 'bg-utm-blue/5 ring-1 ring-utm-blue/20' : ''}`}
+        className={`grid gap-2 flex-1 rounded-md p-1 transition-colors ${isDragOver ? 'bg-utm-blue/5 ring-1 ring-utm-blue/20' : ''}`}
+        style={{ gridTemplateColumns: `repeat(${MAX_COURSES}, ${9}rem)` }}
         onDragOver={e => handleDragOver(e, semester.courses.length)}
         onDrop={e => handleDrop(e, semester.courses.length)}
         onDragLeave={handleDragLeave}
@@ -235,7 +237,7 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
           return (
             <div
               key={code}
-              className={`w-36 shrink-0 transition-opacity relative ${dragState?.code === code ? 'opacity-30' : ''}`}
+              className={`${CELL_W} shrink-0 transition-opacity relative ${dragState?.code === code ? 'opacity-30' : ''}`}
               draggable
               onDragStart={e => {
                 dragState = { planId, fromSemId: semester.id, code }
@@ -270,9 +272,8 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
         {/* Add button or input */}
         {canAdd && !adding && (
           <button
-            key="__add__"
             onClick={() => setAdding(true)}
-            className="w-36 shrink-0 h-[60px] rounded-md border-2 border-dashed border-gray-200 text-gray-300 text-xs hover:border-utm-blue hover:text-utm-blue transition-colors flex items-center justify-center gap-1"
+            className={`${CELL_W} shrink-0 h-[52px] rounded-md border-2 border-dashed border-gray-200 text-gray-300 text-xs hover:border-utm-blue hover:text-utm-blue transition-colors flex items-center justify-center gap-1`}
           >
             <span className="text-lg leading-none">+</span>
             <span>Add</span>
@@ -280,13 +281,20 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
         )}
         {adding && (
           <AddInput
-            key="__add__"
             planId={planId}
             semId={semester.id}
             courseMap={courseMap}
             onDone={() => setAdding(false)}
           />
         )}
+
+        {/* Empty placeholder slots */}
+        {Array.from({ length: MAX_COURSES - semester.courses.length - (canAdd ? 1 : 0) - (adding ? 1 : 0) }).map((_, i) => (
+          <div
+            key={`__empty_${i}`}
+            className={`${CELL_W} shrink-0 h-[52px] rounded-md border border-dashed border-gray-100`}
+          />
+        ))}
       </div>
     </div>
   )
