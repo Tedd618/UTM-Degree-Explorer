@@ -81,50 +81,63 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
           </div>
         </div>
 
-        {/* Add / Remove Year at top */}
-        <div className="flex justify-center gap-2 mb-1">
-          <button
-            onClick={() => {
-              const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
-              const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : new Date().getFullYear()
-              const nextYear = maxFall + 1
-              // Academic year: Fall N → Winter N+1 → Summer N+1
-              // Also fill the bridging Summer N that the previous year left out
-              const hasSem = (yr: number, season: Season) =>
-                plan.semesters.some(s => s.year === yr && s.season === season)
-              if (!hasSem(nextYear, 'Summer')) addSemester(plan.id, nextYear, 'Summer')
-              addSemester(plan.id, nextYear, 'Fall')
-              addSemester(plan.id, nextYear + 1, 'Winter')
-              addSemester(plan.id, nextYear + 1, 'Summer')
-            }}
-            className="px-4 py-1 text-sm font-medium rounded-full border border-dashed border-gray-300 text-gray-400 hover:text-utm-blue hover:border-utm-blue hover:bg-utm-blue/5 transition-all flex items-center gap-1.5"
-          >
-            <span className="text-base leading-none">+</span> Add Academic Year
-          </button>
+        {/* Academic year controls — single paired control */}
+        {(() => {
+          const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
+          const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : null
+          const canRemove = maxFall !== null
 
-          {plan.semesters.some(s => s.season === 'Fall') && (
-            <button
-              onClick={() => {
-                const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
-                const maxFall = Math.max(...fallYears)
-                // The last academic year = Fall maxFall + Winter maxFall+1 + Summer maxFall+1
-                const toRemove = plan.semesters.filter(s =>
-                  (s.season === 'Fall'   && s.year === maxFall) ||
-                  (s.season === 'Winter' && s.year === maxFall + 1) ||
-                  (s.season === 'Summer' && s.year === maxFall + 1)
-                )
-                const hasCourses = toRemove.some(s => s.courses.length > 0)
-                if (hasCourses && !window.confirm(
-                  `Fall ${maxFall} – Summer ${maxFall + 1} has courses. Remove anyway?`
-                )) return
-                toRemove.forEach(s => removeSemester(plan.id, s.id))
-              }}
-              className="px-4 py-1 text-sm font-medium rounded-full border border-dashed border-gray-300 text-gray-400 hover:text-red-500 hover:border-red-400 hover:bg-red-50/40 transition-all flex items-center gap-1.5"
-            >
-              <span className="text-base leading-none">−</span> Remove Academic Year
-            </button>
-          )}
-        </div>
+          function handleAdd() {
+            const base = maxFall ?? new Date().getFullYear()
+            const nextYear = base + 1
+            const hasSem = (yr: number, season: Season) =>
+              plan.semesters.some(s => s.year === yr && s.season === season)
+            if (!hasSem(nextYear, 'Summer')) addSemester(plan.id, nextYear, 'Summer')
+            addSemester(plan.id, nextYear, 'Fall')
+            addSemester(plan.id, nextYear + 1, 'Winter')
+            addSemester(plan.id, nextYear + 1, 'Summer')
+          }
+
+          function handleRemove() {
+            if (!maxFall) return
+            const toRemove = plan.semesters.filter(s =>
+              (s.season === 'Fall'   && s.year === maxFall) ||
+              (s.season === 'Winter' && s.year === maxFall + 1) ||
+              (s.season === 'Summer' && s.year === maxFall + 1)
+            )
+            if (toRemove.some(s => s.courses.length > 0) &&
+                !window.confirm(`Fall ${maxFall} – Summer ${maxFall + 1} has courses. Remove anyway?`)) return
+            toRemove.forEach(s => removeSemester(plan.id, s.id))
+          }
+
+          return (
+            <div className="flex justify-center mb-1">
+              <div className="inline-flex items-center rounded-full border border-gray-200 bg-white shadow-sm overflow-hidden">
+                {/* Remove */}
+                <button
+                  onClick={handleRemove}
+                  disabled={!canRemove}
+                  title="Remove last academic year"
+                  className="px-3 py-1 text-gray-400 hover:text-red-500 hover:bg-red-50 disabled:opacity-25 disabled:pointer-events-none transition-colors text-sm font-medium border-r border-gray-200"
+                >
+                  −
+                </button>
+                {/* Label */}
+                <span className="px-3 py-1 text-[11px] font-medium text-gray-400 tracking-wide select-none">
+                  Academic Year
+                </span>
+                {/* Add */}
+                <button
+                  onClick={handleAdd}
+                  title="Add academic year"
+                  className="px-3 py-1 text-gray-400 hover:text-utm-blue hover:bg-utm-blue/5 transition-colors text-sm font-medium border-l border-gray-200"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          )
+        })()}
 
         {sorted.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-64 text-gray-300">
