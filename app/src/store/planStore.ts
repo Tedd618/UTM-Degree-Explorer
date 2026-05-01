@@ -39,6 +39,7 @@ interface PlanStore {
   // plan CRUD
   addPlan: () => void
   removePlan: (id: string) => void
+  duplicatePlan: (id: string) => void
   renamePlan: (id: string, name: string) => void
   setActivePlan: (id: string) => void
   toggleHideSummers: () => void
@@ -111,6 +112,23 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
           }
           const activeId = state.activePlanId === id ? remaining[0].id : state.activePlanId
           return { plans: remaining, activePlanId: activeId }
+        }),
+
+      duplicatePlan: (id) =>
+        set(state => {
+          const source = state.plans.find(p => p.id === id)
+          if (!source) return state
+          const copy: Plan = {
+            ...source,
+            id: newId(),
+            name: `${source.name} (copy)`,
+            semesters: source.semesters.map(s => ({ ...s, id: newId(), courses: [...s.courses] })),
+            programs: [...(source.programs || [])],
+          }
+          const idx = state.plans.findIndex(p => p.id === id)
+          const plans = [...state.plans]
+          plans.splice(idx + 1, 0, copy)
+          return { plans, activePlanId: copy.id }
         }),
 
       renamePlan: (id, name) =>

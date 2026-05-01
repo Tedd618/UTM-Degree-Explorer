@@ -8,6 +8,7 @@ export default function Sidebar() {
   const hideSummers  = usePlanStore(s => s.hideSummers)
   const addPlan           = usePlanStore(s => s.addPlan)
   const removePlan        = usePlanStore(s => s.removePlan)
+  const duplicatePlan     = usePlanStore(s => s.duplicatePlan)
   const renamePlan        = usePlanStore(s => s.renamePlan)
   const setActivePlan     = usePlanStore(s => s.setActivePlan)
   const toggleHideSummers = usePlanStore(s => s.toggleHideSummers)
@@ -71,6 +72,13 @@ export default function Sidebar() {
                       onClick={e => { e.stopPropagation(); startRename(plan.id, plan.name) }}
                     >
                       ✎
+                    </button>
+                    <button
+                      title="Duplicate"
+                      className="text-gray-400 hover:text-gray-700 text-xs px-1"
+                      onClick={e => { e.stopPropagation(); duplicatePlan(plan.id) }}
+                    >
+                      ⎘
                     </button>
                     {plans.length > 1 && (
                       <button
