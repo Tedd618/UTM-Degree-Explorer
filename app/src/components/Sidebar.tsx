@@ -16,6 +16,7 @@ export default function Sidebar() {
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editValue, setEditValue]  = useState('')
   const [showImport, setShowImport] = useState(false)
+  const [collapsed, setCollapsed]  = useState(false)
 
   function startRename(id: string, current: string) {
     setEditingId(id)
@@ -28,19 +29,42 @@ export default function Sidebar() {
     setEditingId(null)
   }
 
+  if (collapsed) {
+    return (
+      <aside className="w-10 shrink-0 flex flex-col items-center bg-white border-r border-gray-200">
+        <button
+          onClick={() => setCollapsed(false)}
+          title="Expand sidebar"
+          className="w-full flex items-center justify-center py-2 text-gray-300 hover:text-gray-500 transition-colors cursor-pointer border-b border-gray-100"
+        >
+          ▶
+        </button>
+      </aside>
+    )
+  }
+
   return (
     <aside className="w-56 shrink-0 flex flex-col bg-white border-r border-gray-200 overflow-y-auto">
       {/* My Plans */}
         <section className="p-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">My Plans</span>
-          <button
-            onClick={addPlan}
-            title="New plan"
-            className="w-6 h-6 rounded flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors text-lg leading-none"
-          >
-            +
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={addPlan}
+              title="New plan"
+              className="w-6 h-6 rounded flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors text-lg leading-none"
+            >
+              +
+            </button>
+            <button
+              onClick={() => setCollapsed(true)}
+              title="Collapse sidebar"
+              className="w-6 h-6 rounded flex items-center justify-center text-gray-300 hover:bg-gray-100 hover:text-gray-500 transition-colors text-xs leading-none"
+            >
+              ◀
+            </button>
+          </div>
         </div>
         <ul className="space-y-0.5">
           {plans.map(plan => (
