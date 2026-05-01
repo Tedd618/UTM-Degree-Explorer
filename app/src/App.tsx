@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar'
 import PlannerGrid from './components/PlannerGrid'
 import PrereqRadarPanel from './components/PrereqRadarPanel'
 import AuthScreen from './components/AuthScreen'
+import FeedbackWidget from './components/FeedbackWidget'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
@@ -120,6 +121,7 @@ export default function App() {
           )}
         </main>
       </div>
+      <FeedbackWidget session={session} />
     </div>
   )
 }
