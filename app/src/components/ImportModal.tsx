@@ -7,140 +7,235 @@ interface Props {
   onClose: () => void
 }
 
-// ── Constants & types ────────────────────────────────────────────────────────
+// ── Constants ─────────────────────────────────────────────────────────────────
 
 const SEASONS: Season[] = ['Fall', 'Winter', 'Summer']
 const COURSE_CODE_RE = /^[A-Z]{2,4}\d{3}[HY]\d$/
-
 const currentYear = new Date().getFullYear()
-const YEARS = Array.from({ length: 8 }, (_, i) => currentYear - 2 + i)
+const YEARS = Array.from({ length: 10 }, (_, i) => currentYear - 3 + i)
+
+const API_KEY = import.meta.env.VITE_GOOGLE_VISION_API_KEY as string | undefined
 
 interface ExtractedRow {
   id: number
   season: Season
   year: number
   courses: string[]
+  autoDetected: boolean   // true when season+year came from the image
 }
 
-// ── Spatial word extraction from Tesseract blocks ────────────────────────────
+// ── Vision API types ──────────────────────────────────────────────────────────
 
-interface WordPos { text: string; cy: number }
+interface VisionWord {
+  text: string
+  cx: number   // horizontal centre in image pixels
+  cy: number   // vertical centre in image pixels
+}
 
-function extractWords(blocks: any[] | null): WordPos[] {
-  const words: WordPos[] = []
-  if (!blocks) return words
-  for (const block of blocks) {
-    for (const para of block.paragraphs ?? []) {
-      for (const line of para.lines ?? []) {
-        for (const word of line.words ?? []) {
-          const text = word.text?.trim()
-          if (text) {
-            words.push({ text, cy: (word.bbox.y0 + word.bbox.y1) / 2 })
-          }
+// ── Parse Cloud Vision DOCUMENT_TEXT_DETECTION response ───────────────────────
+
+/**
+ * Flatten the block→paragraph→word tree into (text, cx, cy) triples.
+ * Each word's position is the centre of its bounding-box vertices.
+ */
+function extractVisionWords(response: any): VisionWord[] {
+  const out: VisionWord[] = []
+  for (const page of response.fullTextAnnotation?.pages ?? []) {
+    for (const block of page.blocks ?? []) {
+      for (const para of block.paragraphs ?? []) {
+        for (const word of para.words ?? []) {
+          const text = (word.symbols ?? [])
+            .map((s: any) => s.text ?? '')
+            .join('')
+            .trim()
+          if (!text) continue
+
+          const verts: { x?: number; y?: number }[] =
+            word.boundingBox?.vertices ?? []
+          if (verts.length < 4) continue
+
+          const xs = verts.map(v => v.x ?? 0)
+          const ys = verts.map(v => v.y ?? 0)
+          out.push({
+            text,
+            cx: (Math.min(...xs) + Math.max(...xs)) / 2,
+            cy: (Math.min(...ys) + Math.max(...ys)) / 2,
+          })
         }
       }
     }
   }
-  return words
+  return out
 }
 
-/** Group course codes into rows by their Y position in the image. */
-function groupCoursesByRow(words: WordPos[]): ExtractedRow[] {
-  const courseCodes: { code: string; cy: number }[] = []
-  for (const w of words) {
-    if (COURSE_CODE_RE.test(w.text)) {
-      courseCodes.push({ code: w.text, cy: w.cy })
+/**
+ * Given a flat word list, detect semester labels and assign course codes to them.
+ *
+ * Semester labels: a Season word ("Fall"/"Winter"/"Summer") whose nearest
+ * 4-digit-year word is within ~60 px vertically and ~350 px horizontally.
+ *
+ * Course codes are assigned to the semester whose label has the closest Y centre.
+ * Bands are split at the midpoint between consecutive label Y positions.
+ */
+function buildRows(words: VisionWord[]): ExtractedRow[] {
+  // ── 1. Detect semester labels ──────────────────────────────────────────────
+  const semLabels: { season: Season; year: number; cy: number }[] = []
+
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i]
+    const season = SEASONS.find(
+      s => s.toLowerCase() === w.text.toLowerCase(),
+    )
+    if (!season) continue
+
+    // Find nearest 4-digit year word
+    let best: VisionWord | null = null
+    let bestDist = Infinity
+    for (const w2 of words) {
+      if (w2 === w) continue
+      if (!/^\d{4}$/.test(w2.text)) continue
+      const year = parseInt(w2.text, 10)
+      if (year < 2000 || year > 2050) continue
+      const dy = Math.abs(w2.cy - w.cy)
+      const dx = Math.abs(w2.cx - w.cx)
+      if (dy > 60 || dx > 350) continue
+      const dist = Math.hypot(dx, dy)
+      if (dist < bestDist) { bestDist = dist; best = w2 }
+    }
+
+    if (!best) continue
+    const year = parseInt(best.text, 10)
+    const cy = (w.cy + best.cy) / 2
+
+    // De-duplicate (keep first occurrence of each season+year pair)
+    if (!semLabels.some(s => s.season === season && s.year === year)) {
+      semLabels.push({ season, year, cy })
     }
   }
 
+  // ── 2. Fall back: cluster by Y if no labels found ─────────────────────────
+  const courseCodes = words.filter(w => COURSE_CODE_RE.test(w.text))
   if (courseCodes.length === 0) return []
 
-  courseCodes.sort((a, b) => a.cy - b.cy)
+  if (semLabels.length === 0) {
+    // Plain Y-clustering — user must fill semester manually
+    const sorted = [...courseCodes].sort((a, b) => a.cy - b.cy)
+    const gaps = sorted.slice(1).map((w, i) => w.cy - sorted[i].cy)
+    const median = [...gaps].sort((a, b) => a - b)[Math.floor(gaps.length / 2)] ?? 0
+    const threshold = Math.max(median * 2, 30)
 
-  // Cluster: consecutive codes with a Y gap < threshold stay in the same group.
-  const gaps: number[] = []
-  for (let i = 1; i < courseCodes.length; i++) {
-    gaps.push(courseCodes[i].cy - courseCodes[i - 1].cy)
-  }
-  let threshold = 40
-  if (gaps.length > 0) {
-    const sorted = [...gaps].sort((a, b) => a - b)
-    const median = sorted[Math.floor(sorted.length / 2)]
-    threshold = Math.max(median * 2, 30)
-  }
-
-  const clusters: { codes: string[]; minY: number; maxY: number }[] = []
-  for (const item of courseCodes) {
-    const last = clusters[clusters.length - 1]
-    if (last && item.cy - last.maxY < threshold) {
-      if (!last.codes.includes(item.code)) last.codes.push(item.code)
-      last.maxY = Math.max(last.maxY, item.cy)
-    } else {
-      clusters.push({ codes: [item.code], minY: item.cy, maxY: item.cy })
+    const clusters: { codes: string[]; maxY: number }[] = []
+    for (const item of sorted) {
+      const last = clusters[clusters.length - 1]
+      if (last && item.cy - last.maxY < threshold) {
+        if (!last.codes.includes(item.text)) last.codes.push(item.text)
+        last.maxY = item.cy
+      } else {
+        clusters.push({ codes: [item.text], maxY: item.cy })
+      }
     }
+
+    return clusters.map((c, i) => ({
+      id: i,
+      season: 'Fall',
+      year: currentYear,
+      courses: c.codes,
+      autoDetected: false,
+    }))
   }
 
-  return clusters.map((cluster, i) => ({
-    id: i,
-    season: 'Fall' as Season,
-    year: currentYear,
-    courses: cluster.codes,
-  }))
+  // ── 3. Sort labels top→bottom and compute band boundaries ─────────────────
+  semLabels.sort((a, b) => a.cy - b.cy)
+
+  const boundaries: number[] = [-Infinity]
+  for (let i = 1; i < semLabels.length; i++) {
+    boundaries.push((semLabels[i - 1].cy + semLabels[i].cy) / 2)
+  }
+  boundaries.push(Infinity)
+
+  // ── 4. Assign course codes to the matching band ────────────────────────────
+  const rows = new Map<string, ExtractedRow>(
+    semLabels.map((s, i) => [
+      `${s.season}-${s.year}`,
+      { id: i, season: s.season, year: s.year, courses: [], autoDetected: true },
+    ]),
+  )
+
+  for (const code of courseCodes) {
+    let bandIdx = 0
+    for (let i = 1; i < boundaries.length; i++) {
+      if (code.cy >= boundaries[i - 1] && code.cy < boundaries[i]) {
+        bandIdx = i - 1
+        break
+      }
+    }
+    const sem = semLabels[bandIdx]
+    if (!sem) continue
+    const row = rows.get(`${sem.season}-${sem.year}`)
+    if (row && !row.courses.includes(code.text)) row.courses.push(code.text)
+  }
+
+  return [...rows.values()].filter(r => r.courses.length > 0)
 }
 
-// ── Image preprocessing ──────────────────────────────────────────────────────
+// ── Call the Cloud Vision API ─────────────────────────────────────────────────
 
-function preprocessImage(imageUrl: string): Promise<HTMLCanvasElement> {
+async function callVisionApi(imageBase64: string): Promise<any> {
+  const res = await fetch(
+    `https://vision.googleapis.com/v1/images:annotate?key=${API_KEY}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        requests: [{
+          image: { content: imageBase64 },
+          features: [{ type: 'DOCUMENT_TEXT_DETECTION', maxResults: 1 }],
+        }],
+      }),
+    },
+  )
+  if (!res.ok) throw new Error(`Vision API error ${res.status}: ${await res.text()}`)
+  const json = await res.json()
+  const resp = json.responses?.[0]
+  if (resp?.error) throw new Error(resp.error.message ?? 'Vision API error')
+  return resp
+}
+
+function fileToBase64(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
-    const img = new Image()
-    img.onload = () => {
-      const minDim = Math.min(img.width, img.height)
-      const scale = Math.max(2, Math.ceil(2000 / minDim))
-      const canvas = document.createElement('canvas')
-      canvas.width = img.width * scale
-      canvas.height = img.height * scale
-      const ctx = canvas.getContext('2d')!
-      ctx.imageSmoothingEnabled = true
-      ctx.imageSmoothingQuality = 'high'
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
-
-      // Grayscale
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
-      const d = imageData.data
-      for (let i = 0; i < d.length; i += 4) {
-        const g = Math.round(0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2])
-        d[i] = g; d[i + 1] = g; d[i + 2] = g
-      }
-      ctx.putImageData(imageData, 0, 0)
-      resolve(canvas)
+    const reader = new FileReader()
+    reader.onload = () => {
+      const result = reader.result as string
+      // Strip "data:image/...;base64," prefix
+      resolve(result.split(',')[1])
     }
-    img.onerror = () => reject(new Error('Failed to load image'))
-    img.src = imageUrl
+    reader.onerror = reject
+    reader.readAsDataURL(file)
   })
 }
 
 // ── Main modal ────────────────────────────────────────────────────────────────
 
-type OcrStatus = 'idle' | 'loading' | 'done' | 'error'
+type Status = 'idle' | 'loading' | 'done' | 'error'
 
 export default function ImportModal({ planId, onClose }: Props) {
   const importCourses = usePlanStore(s => s.importCourses)
 
-  const [image, setImage] = useState<string | null>(null)
-  const [status, setStatus] = useState<OcrStatus>('idle')
-  const [progress, setProgress] = useState(0)
+  const [image, setImage]       = useState<string | null>(null)
+  const [file, setFile]         = useState<File | null>(null)
+  const [status, setStatus]     = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const [dragging, setDragging] = useState(false)
-  const [rows, setRows] = useState<ExtractedRow[]>([])
+  const [rows, setRows]         = useState<ExtractedRow[]>([])
   const [imported, setImported] = useState(false)
 
   const fileRef = useRef<HTMLInputElement>(null)
 
-  function loadFile(file: File) {
-    if (!file.type.startsWith('image/')) return
-    setImage(URL.createObjectURL(file))
+  function loadFile(f: File) {
+    if (!f.type.startsWith('image/')) return
+    setImage(URL.createObjectURL(f))
+    setFile(f)
     setStatus('idle')
-    setProgress(0)
     setRows([])
     setErrorMsg('')
     setImported(false)
@@ -148,29 +243,25 @@ export default function ImportModal({ planId, onClose }: Props) {
 
   const onDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault(); setDragging(false)
-    const file = e.dataTransfer.files[0]
-    if (file) loadFile(file)
+    const f = e.dataTransfer.files[0]
+    if (f) loadFile(f)
   }, [])
 
   async function runOcr() {
-    if (!image) return
-    setStatus('loading'); setProgress(0); setErrorMsg(''); setRows([])
+    if (!file) return
+    if (!API_KEY) {
+      setErrorMsg('VITE_GOOGLE_VISION_API_KEY is not set. See .env.local.example.')
+      setStatus('error')
+      return
+    }
+
+    setStatus('loading'); setErrorMsg(''); setRows([])
     try {
-      setProgress(5)
-      const canvas = await preprocessImage(image)
+      const b64 = await fileToBase64(file)
+      const response = await callVisionApi(b64)
+      const words = extractVisionWords(response)
+      const found = buildRows(words)
 
-      const { createWorker } = await import('tesseract.js')
-      const worker = await createWorker('eng', 1, {
-        logger: (m: any) => {
-          if (m.status === 'recognizing text') setProgress(10 + Math.round(m.progress * 85))
-        },
-      })
-      await worker.setParameters({ tessedit_pageseg_mode: '6' as any })
-      const { data: { blocks } } = await worker.recognize(canvas, undefined, { blocks: true })
-      await worker.terminate()
-
-      const words = extractWords(blocks)
-      const found = groupCoursesByRow(words)
       if (found.length === 0) {
         setErrorMsg('No course codes found. Try a clearer screenshot.')
         setStatus('error')
@@ -178,8 +269,8 @@ export default function ImportModal({ planId, onClose }: Props) {
       }
       setRows(found)
       setStatus('done')
-    } catch (err) {
-      setErrorMsg(String(err))
+    } catch (err: any) {
+      setErrorMsg(err?.message ?? String(err))
       setStatus('error')
     }
   }
@@ -187,12 +278,12 @@ export default function ImportModal({ planId, onClose }: Props) {
   // ── Row editing ─────────────────────────────────────────────────────────────
 
   function updateRowSeason(id: number, season: Season) {
-    setRows(prev => prev.map(r => r.id === id ? { ...r, season } : r))
+    setRows(prev => prev.map(r => r.id === id ? { ...r, season, autoDetected: false } : r))
     setImported(false)
   }
 
   function updateRowYear(id: number, year: number) {
-    setRows(prev => prev.map(r => r.id === id ? { ...r, year } : r))
+    setRows(prev => prev.map(r => r.id === id ? { ...r, year, autoDetected: false } : r))
     setImported(false)
   }
 
@@ -208,11 +299,9 @@ export default function ImportModal({ planId, onClose }: Props) {
     const merged = new Map<string, { year: number; season: Season; courses: string[] }>()
     for (const row of rows) {
       const key = `${row.season}-${row.year}`
-      const existing = merged.get(key)
-      if (existing) {
-        for (const c of row.courses) {
-          if (!existing.courses.includes(c)) existing.courses.push(c)
-        }
+      const ex = merged.get(key)
+      if (ex) {
+        for (const c of row.courses) if (!ex.courses.includes(c)) ex.courses.push(c)
       } else {
         merged.set(key, { year: row.year, season: row.season, courses: [...row.courses] })
       }
@@ -223,11 +312,12 @@ export default function ImportModal({ planId, onClose }: Props) {
   }
 
   const totalCourses = rows.reduce((n, r) => n + r.courses.length, 0)
+  const autoCount    = rows.filter(r => r.autoDetected).length
 
   const semCounts = new Map<string, number>()
   for (const r of rows) {
     const key = `${r.season}-${r.year}`
-    semCounts.set(key, (semCounts.get(key) || 0) + 1)
+    semCounts.set(key, (semCounts.get(key) ?? 0) + 1)
   }
 
   return (
@@ -236,7 +326,7 @@ export default function ImportModal({ planId, onClose }: Props) {
 
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
-          <h2 className="text-base font-semibold text-utm-navy">Import Plan from Image</h2>
+          <h2 className="text-base font-semibold text-utm-navy">Import Plan from Screenshot</h2>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-xl leading-none">×</button>
         </div>
 
@@ -271,16 +361,14 @@ export default function ImportModal({ planId, onClose }: Props) {
             )}
           </div>
 
-          {/* Progress bar */}
+          {/* Loading */}
           {status === 'loading' && (
-            <div className="space-y-1">
-              <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-utm-blue rounded-full transition-all"
-                  style={{ width: `${progress}%` }}
-                />
-              </div>
-              <p className="text-[11px] text-gray-400">Reading text… {progress}%</p>
+            <div className="flex items-center gap-3 py-1">
+              <svg className="animate-spin w-4 h-4 text-utm-blue shrink-0" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/>
+              </svg>
+              <p className="text-[11px] text-gray-400">Sending to Google Cloud Vision…</p>
             </div>
           )}
 
@@ -296,33 +384,39 @@ export default function ImportModal({ planId, onClose }: Props) {
 
           {/* Error */}
           {status === 'error' && (
-            <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-3">
+            <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-3 space-y-1">
               <p className="text-xs text-red-600">{errorMsg}</p>
-              <button
-                onClick={runOcr}
-                className="mt-2 text-xs text-red-500 underline hover:text-red-700"
-              >
+              <button onClick={runOcr} className="text-xs text-red-400 underline hover:text-red-600">
                 Try again
               </button>
             </div>
           )}
 
-          {/* Extracted rows with editable semester dropdowns */}
+          {/* Extracted rows */}
           {rows.length > 0 && (
             <div className="space-y-2">
-              <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
-                {totalCourses} course{totalCourses !== 1 ? 's' : ''} found — assign each row to a semester
-              </p>
+              <div className="flex items-center justify-between">
+                <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wide">
+                  {totalCourses} course{totalCourses !== 1 ? 's' : ''} in {rows.length} semester{rows.length !== 1 ? 's' : ''}
+                </p>
+                {autoCount > 0 && (
+                  <span className="text-[10px] text-emerald-600 font-medium flex items-center gap-1">
+                    <span>✓</span> {autoCount} semester{autoCount !== 1 ? 's' : ''} auto-detected
+                  </span>
+                )}
+              </div>
 
               {rows.map(row => {
                 const key = `${row.season}-${row.year}`
-                const isDuplicate = (semCounts.get(key) || 0) > 1
+                const isDuplicate = (semCounts.get(key) ?? 0) > 1
 
                 return (
                   <div
                     key={row.id}
                     className={`rounded-lg border p-3 space-y-2 ${
-                      isDuplicate ? 'border-amber-300 bg-amber-50/50' : 'border-gray-200 bg-gray-50'
+                      isDuplicate ? 'border-amber-300 bg-amber-50/50'
+                      : row.autoDetected ? 'border-emerald-200 bg-emerald-50/30'
+                      : 'border-gray-200 bg-gray-50'
                     }`}
                   >
                     <div className="flex items-center gap-2">
@@ -341,6 +435,10 @@ export default function ImportModal({ planId, onClose }: Props) {
                       >
                         {YEARS.map(y => <option key={y} value={y}>{y}</option>)}
                       </select>
+
+                      {row.autoDetected && (
+                        <span className="text-[10px] text-emerald-600 font-medium">auto</span>
+                      )}
 
                       <span className="flex-1" />
 
@@ -374,7 +472,7 @@ export default function ImportModal({ planId, onClose }: Props) {
           )}
 
           <p className="text-[10px] text-gray-400">
-            Uses Tesseract OCR — runs entirely in your browser, nothing is uploaded.
+            Powered by Google Cloud Vision API · your image is sent to Google for text recognition.
           </p>
         </div>
 
@@ -382,7 +480,9 @@ export default function ImportModal({ planId, onClose }: Props) {
         <div className="flex items-center justify-between px-6 py-4 border-t border-gray-100 bg-gray-50">
           <p className="text-[11px] text-gray-400">Matched semesters will have their courses replaced.</p>
           <div className="flex gap-2">
-            <button onClick={onClose} className="px-4 py-1.5 text-sm text-gray-500 hover:text-gray-700">Cancel</button>
+            <button onClick={onClose} className="px-4 py-1.5 text-sm text-gray-500 hover:text-gray-700">
+              Cancel
+            </button>
             <button
               onClick={handleImport}
               disabled={rows.length === 0 || imported}
@@ -394,9 +494,11 @@ export default function ImportModal({ planId, onClose }: Props) {
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
               }`}
             >
-              {imported ? 'Imported!' : rows.length > 0
-                ? `Import ${totalCourses} course${totalCourses !== 1 ? 's' : ''}`
-                : 'Import'}
+              {imported
+                ? 'Imported!'
+                : rows.length > 0
+                  ? `Import ${totalCourses} course${totalCourses !== 1 ? 's' : ''}`
+                  : 'Import'}
             </button>
           </div>
         </div>
