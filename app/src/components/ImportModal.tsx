@@ -233,6 +233,7 @@ export default function ImportModal({ planId, onClose }: Props) {
 
   function loadFile(f: File) {
     if (!f.type.startsWith('image/')) return
+    if (image) URL.revokeObjectURL(image)
     setImage(URL.createObjectURL(f))
     setFile(f)
     setStatus('idle')

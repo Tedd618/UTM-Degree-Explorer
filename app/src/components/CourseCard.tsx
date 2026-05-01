@@ -10,12 +10,22 @@ const STATUS_LABEL: Record<CourseStatus, string> = {
   unknown:       'Unknown',
 }
 
+// Used for tooltip header background
 const STATUS_CLASS: Record<CourseStatus, string> = {
   completed:     'status-completed',
   'in-progress': 'status-in-progress',
   'no-issues':   'status-no-issues',
   issues:        'status-issues',
   unknown:       'status-unknown',
+}
+
+// Left-border indicator on card
+const STATUS_BORDER: Record<CourseStatus, string> = {
+  completed:     'status-border-completed',
+  'in-progress': 'status-border-in-progress',
+  'no-issues':   'status-border-no-issues',
+  issues:        'status-border-issues',
+  unknown:       'status-border-unknown',
 }
 
 interface Props {
@@ -41,9 +51,10 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
   const cardRef = useRef<HTMLDivElement>(null)
 
   // Decide whether to flip the tooltip above or below based on card position
-  const [flipUp, setFlipUp] = useState(true)
+  const [flipUp, setFlipUp]     = useState(true)
+  const [flipLeft, setFlipLeft] = useState(false)
 
-  // Hide tooltip whenever any drag begins (covers the card being dragged)
+  // Hide tooltip whenever any drag begins
   useEffect(() => {
     const hide = () => setShowTip(false)
     document.addEventListener('dragstart', hide)
@@ -51,12 +62,11 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
   }, [])
 
   function onMouseEnter() {
-    // During an active drag the browser suppresses mouseenter,
-    // but guard just in case
     if (document.querySelector('[data-dragging]')) return
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect()
       setFlipUp(rect.top > 260)
+      setFlipLeft(rect.right > window.innerWidth - 300)
     }
     setShowTip(true)
   }
@@ -64,23 +74,20 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
   return (
     <div
       ref={cardRef}
-      className="relative group flex flex-col rounded-md overflow-visible border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-grab active:cursor-grabbing select-none"
+      className={`relative group flex flex-col rounded-md overflow-visible border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-grab active:cursor-grabbing select-none ${STATUS_BORDER[status]}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={() => setShowTip(false)}
     >
-      {/* Colored status band at top */}
-      <div className={`h-1.5 w-full rounded-t-md ${STATUS_CLASS[status]}`} />
-
-      <div className="px-2 py-1.5 flex items-start justify-between gap-1 min-w-0">
+      <div className="px-2.5 py-2 flex items-start justify-between gap-1 min-w-0">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1 min-w-0">
-            <p className="text-xs font-semibold text-gray-800 leading-tight truncate">{code}</p>
+            <p className="text-[13px] font-semibold text-gray-800 leading-tight truncate">{code}</p>
             {issueReasons.length > 0 && (
-              <span className="shrink-0 text-[9px] text-red-500 font-bold leading-none" title="Issues found">⚠</span>
+              <span className="shrink-0 text-[10px] text-red-500 font-bold leading-none" title="Issues found">⚠</span>
             )}
           </div>
           {course && (
-            <p className="text-[10px] text-gray-400 leading-tight truncate mt-0.5">{course.title}</p>
+            <p className="text-[11px] text-gray-500 leading-tight truncate mt-0.5">{course.title}</p>
           )}
         </div>
 
@@ -88,7 +95,7 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
         <button
           onClick={e => { e.stopPropagation(); onRemove() }}
           title="Remove"
-          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5 cursor-pointer"
+          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-5 h-5 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5 cursor-pointer"
         >
           ×
         </button>
@@ -97,7 +104,7 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
       {/* Rich tooltip */}
       {showTip && (
         <div
-          className={`absolute ${flipUp ? 'bottom-full mb-2' : 'top-full mt-2'} left-0 z-[200] w-72 bg-gray-900 text-white rounded-xl shadow-2xl overflow-hidden pointer-events-none`}
+          className={`absolute ${flipUp ? 'bottom-full mb-2' : 'top-full mt-2'} ${flipLeft ? 'right-0' : 'left-0'} z-[200] w-72 bg-gray-900 text-white rounded-xl shadow-2xl overflow-hidden pointer-events-none`}
           style={{ minWidth: '17rem' }}
         >
           {/* Header */}

@@ -11,7 +11,8 @@ type Status = 'idle' | 'sending' | 'sent' | 'error'
 export default function FeedbackWidget({ session }: Props) {
   const [open, setOpen]       = useState(false)
   const [message, setMessage] = useState('')
-  const [email, setEmail]     = useState(session?.user?.email ?? '')
+  const userEmail = session?.user?.email ?? ''
+  const [email, setEmail]     = useState(userEmail.endsWith('@utm.com') ? '' : userEmail)
   const [status, setStatus]   = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const panelRef = useRef<HTMLDivElement>(null)
@@ -30,7 +31,8 @@ export default function FeedbackWidget({ session }: Props) {
 
   // Keep email in sync if user signs in after widget mounts
   useEffect(() => {
-    if (session?.user?.email) setEmail(session.user.email)
+    const e = session?.user?.email ?? ''
+    setEmail(e.endsWith('@utm.com') ? '' : e)
   }, [session?.user?.email])
 
   function handleOpen() {

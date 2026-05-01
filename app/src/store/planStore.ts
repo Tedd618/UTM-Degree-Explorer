@@ -85,12 +85,14 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
 
   setStoreData: (plans, ignored, activeId) => {
     set(state => {
+      // If no plans provided, create a fresh default plan
+      const finalPlans = plans.length > 0 ? plans : [createDefaultPlan()]
       // Preserve the current selection if it still exists in the incoming plans
       const preferredId = activeId ?? state.activePlanId
-      const validId = plans.find(p => p.id === preferredId)
+      const validId = finalPlans.find(p => p.id === preferredId)
         ? preferredId
-        : (plans.length > 0 ? plans[0].id : defaultPlan.id)
-      return { plans, ignoredPrereqs: ignored, activePlanId: validId }
+        : finalPlans[0].id
+      return { plans: finalPlans, ignoredPrereqs: ignored, activePlanId: validId }
     })
   },
 
@@ -292,7 +294,7 @@ usePlanStore.subscribe((state, prevState) => {
       .map(p => p.id)
       .filter(id => !state.plans.some(p => p.id === id))
     if (removedIds.length > 0) {
-      const { error } = await supabase.from('plans').delete().in('id', removedIds)
+      const { error } = await supabase.from('plans').delete().in('id', removedIds).eq('user_id', session.user.id)
       if (error) console.error('Failed to delete plans:', error)
     }
 

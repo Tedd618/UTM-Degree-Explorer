@@ -54,7 +54,7 @@ function CourseChip({ code, courseMap }: ChipProps) {
     >
       <span className="text-[11px] font-mono font-semibold text-utm-navy leading-tight">{code}</span>
       {course && (
-        <span className="text-[9px] text-gray-400 leading-tight truncate max-w-[120px]">{course.title}</span>
+        <span className="text-[11px] text-gray-400 leading-tight truncate max-w-[120px]">{course.title}</span>
       )}
     </div>
   )
@@ -64,7 +64,7 @@ function CourseChip({ code, courseMap }: ChipProps) {
 function CreditBadge({ minimum }: { minimum: number }) {
   return (
     <div className="inline-flex items-center gap-1 px-2 py-1 rounded-md border border-amber-200 bg-amber-50 select-none">
-      <span className="text-[10px] text-amber-700 font-semibold leading-tight">≥{minimum} credits completed</span>
+      <span className="text-[11px] text-amber-700 font-semibold leading-tight">≥{minimum} credits completed</span>
     </div>
   )
 }
@@ -92,7 +92,7 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
           })()
       return (
         <div className="inline-flex items-center gap-1 px-2 py-1 rounded-md border border-purple-200 bg-purple-50 select-none">
-          <span className="text-[10px] text-purple-700 font-semibold leading-tight">{label}</span>
+          <span className="text-[11px] text-purple-700 font-semibold leading-tight">{label}</span>
         </div>
       )
     }
@@ -143,7 +143,7 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
   return (
     <div className="rounded-lg border border-gray-100 bg-gray-50 p-2.5 space-y-2">
       <div className="flex items-center justify-between gap-1">
-        <span className="text-[10px] text-gray-400 font-medium">
+        <span className="text-[11px] text-gray-400 font-medium">
           needed by <span className="font-mono text-gray-600">{neededBy}</span>
         </span>
         <button
@@ -158,7 +158,7 @@ function RadarItem({ neededBy, group, planId, courseMap }: ItemProps) {
       {renderGroup(group)}
 
       {hasDraggable && (
-        <p className="text-[9px] text-gray-300 leading-tight">drag into any semester</p>
+        <p className="text-[11px] text-gray-300 leading-tight">drag into any semester</p>
       )}
     </div>
   )
@@ -227,7 +227,7 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
       >
         {!collapsed && (
           <div className="flex items-center gap-1.5 min-w-0">
-            <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">Prereq Radar</span>
+            <span className="text-[11px] font-semibold uppercase tracking-widest text-gray-400">Prereq Radar</span>
             {count > 0 && (
               <span className="text-[10px] font-bold bg-red-100 text-red-600 rounded-full px-1.5 py-0.5 leading-none">
                 {count}

@@ -18,12 +18,19 @@
 }
 
 @layer components {
-  /* Status band colours — used as inline style or via data attribute */
-  .status-completed  { @apply bg-emerald-600 text-white; }
-  .status-in-progress { @apply bg-blue-600 text-white; }
-  .status-no-issues  { @apply bg-violet-600 text-white; }
-  .status-issues     { @apply bg-red-600 text-white; }
-  .status-unknown    { @apply bg-gray-400 text-white; }
+  /* Status colours — used for tooltip headers and legend swatches */
+  .status-completed   { @apply bg-emerald-500 text-white; }
+  .status-in-progress { @apply bg-sky-500 text-white; }
+  .status-no-issues   { @apply bg-violet-500 text-white; }
+  .status-issues      { @apply bg-rose-500 text-white; }
+  .status-unknown     { @apply bg-gray-400 text-white; }
+
+  /* Left-border variants for course cards */
+  .status-border-completed   { @apply border-l-[3px] border-l-emerald-500; }
+  .status-border-in-progress { @apply border-l-[3px] border-l-sky-500; }
+  .status-border-no-issues   { @apply border-l-[3px] border-l-violet-500; }
+  .status-border-issues      { @apply border-l-[3px] border-l-rose-500; }
+  .status-border-unknown     { @apply border-l-[3px] border-l-gray-300; }
 
   /* Sidebar nav item */
   .sidebar-plan-item {
