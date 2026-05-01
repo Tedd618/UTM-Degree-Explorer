@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment — never commit API keys
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store

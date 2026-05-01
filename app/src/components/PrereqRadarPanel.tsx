@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import type { Course, MissingGroup } from '../types'
 import { usePlanStore } from '../store/planStore'
-import { collectMissingPrereqGroups, evaluatePrereq } from '../utils/prereq'
+import { collectMissingPrereqGroups, evaluatePrereq, buildCodesBefore } from '../utils/prereq'
 import { semesterSortKey, isSemPast } from '../utils/semester'
 
 export const RADAR_DRAG_PREFIX = '__radar__'
@@ -193,16 +193,12 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
 
     for (const sem of sorted) {
       if (isSemPast(sem)) continue
-      const semKey = semesterSortKey(sem.year, sem.season)
-      const codesBefore = new Set<string>(
-        sorted
-          .filter(s => semesterSortKey(s.year, s.season) < semKey)
-          .flatMap(s => s.courses)
-      )
 
       for (const code of sem.courses) {
         const course = courseMap.get(code)
         if (!course) continue
+        // Use per-course codesBefore so Summer co-enrollments satisfy prereqs
+        const codesBefore = buildCodesBefore(code, sem, plan.semesters)
         if (evaluatePrereq(course.prerequisites, codesBefore, courseMap)) continue
 
         const groups = collectMissingPrereqGroups(course.prerequisites, codesBefore, courseMap)

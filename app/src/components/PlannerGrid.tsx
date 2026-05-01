@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react'
-import type { Plan, Course } from '../types'
+import type { Plan, Course, Season } from '../types'
 import { usePlanStore } from '../store/planStore'
 import { semesterSortKey } from '../utils/semester'
 import SemesterRow from './SemesterRow'
@@ -15,9 +15,9 @@ interface Props {
 }
 
 export default function PlannerGrid({ plan, courseMap }: Props) {
-  const hideSummers  = usePlanStore(s => s.hideSummers)
-  const addSemester  = usePlanStore(s => s.addSemester)
-  const setStartYear = usePlanStore(s => s.setStartYear)
+  const hideSummers    = usePlanStore(s => s.hideSummers)
+  const addSemester    = usePlanStore(s => s.addSemester)
+  const removeSemester = usePlanStore(s => s.removeSemester)
 
   const [panelWidth, setPanelWidth] = useState(DEFAULT_PANEL_W)
   const dragRef = useRef<{ startX: number; startW: number } | null>(null)
@@ -51,9 +51,6 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
     (a, b) => semesterSortKey(b.year, b.season) - semesterSortKey(a.year, a.season),
   )
 
-  const startYear = plan.startYear ?? new Date().getFullYear()
-  const yearOptions = Array.from({ length: 10 }, (_, i) => startYear - 4 + i)
-
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
       {/* Main grid area */}
@@ -61,41 +58,68 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
         {/* Plan title bar */}
         <div className="flex items-center justify-between mb-3">
           <h1 className="text-lg font-semibold text-utm-navy">{plan.name}</h1>
-          <div className="flex items-center gap-3">
-            <label className="flex items-center gap-1.5 text-xs text-gray-400">
-              <span>First Year</span>
-              <select
-                value={startYear}
-                onChange={e => setStartYear(plan.id, Number(e.target.value))}
-                className="text-xs text-gray-600 border border-gray-200 rounded px-1 py-0.5 bg-white focus:outline-none focus:border-utm-blue"
-              >
-                {yearOptions.map(y => (
-                  <option key={y} value={y}>Fall {y}</option>
-                ))}
-              </select>
-            </label>
-            <span className="text-xs text-gray-400">
-              {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses · {plan.semesters.length} semesters
-            </span>
-          </div>
+          <span className="text-xs text-gray-400">
+            {plan.semesters.reduce((n, s) => n + s.courses.length, 0)} courses · {plan.semesters.length} semesters
+          </span>
         </div>
 
-        {/* Add Year at top */}
-        <div className="flex justify-center mb-1">
-          <button
-            onClick={() => {
-              const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
-              const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : new Date().getFullYear()
-              const nextYear = maxFall + 1
-              addSemester(plan.id, nextYear, 'Fall')
-              addSemester(plan.id, nextYear + 1, 'Winter')
-              addSemester(plan.id, nextYear + 1, 'Summer')
-            }}
-            className="px-4 py-1 text-sm font-medium rounded-full border border-dashed border-gray-300 text-gray-400 hover:text-utm-blue hover:border-utm-blue hover:bg-utm-blue/5 transition-all flex items-center gap-1.5"
-          >
-            <span className="text-base leading-none">+</span> Add Academic Year
-          </button>
-        </div>
+        {/* Academic year controls — single paired control */}
+        {(() => {
+          const fallYears = plan.semesters.filter(s => s.season === 'Fall').map(s => s.year)
+          const maxFall = fallYears.length > 0 ? Math.max(...fallYears) : null
+          const canRemove = maxFall !== null
+
+          function handleAdd() {
+            const base = maxFall ?? new Date().getFullYear()
+            const nextYear = base + 1
+            const hasSem = (yr: number, season: Season) =>
+              plan.semesters.some(s => s.year === yr && s.season === season)
+            if (!hasSem(nextYear, 'Summer')) addSemester(plan.id, nextYear, 'Summer')
+            addSemester(plan.id, nextYear, 'Fall')
+            addSemester(plan.id, nextYear + 1, 'Winter')
+            addSemester(plan.id, nextYear + 1, 'Summer')
+          }
+
+          function handleRemove() {
+            if (!maxFall) return
+            const toRemove = plan.semesters.filter(s =>
+              (s.season === 'Fall'   && s.year === maxFall) ||
+              (s.season === 'Winter' && s.year === maxFall + 1) ||
+              (s.season === 'Summer' && s.year === maxFall + 1)
+            )
+            if (toRemove.some(s => s.courses.length > 0) &&
+                !window.confirm(`Fall ${maxFall} – Summer ${maxFall + 1} has courses. Remove anyway?`)) return
+            toRemove.forEach(s => removeSemester(plan.id, s.id))
+          }
+
+          return (
+            <div className="flex justify-center mb-1">
+              <div className="inline-flex items-center rounded-full border border-gray-200 bg-white shadow-sm overflow-hidden">
+                {/* Remove */}
+                <button
+                  onClick={handleRemove}
+                  disabled={!canRemove}
+                  title="Remove last academic year"
+                  className="px-3 py-1 text-gray-400 hover:text-red-500 hover:bg-red-50 disabled:opacity-25 disabled:pointer-events-none transition-colors text-sm font-medium border-r border-gray-200"
+                >
+                  −
+                </button>
+                {/* Label */}
+                <span className="px-3 py-1 text-[11px] font-medium text-gray-400 tracking-wide select-none">
+                  Academic Year
+                </span>
+                {/* Add */}
+                <button
+                  onClick={handleAdd}
+                  title="Add academic year"
+                  className="px-3 py-1 text-gray-400 hover:text-utm-blue hover:bg-utm-blue/5 transition-colors text-sm font-medium border-l border-gray-200"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          )
+        })()}
 
         {sorted.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-64 text-gray-300">

@@ -1,9 +1,56 @@
-import React, { useState } from 'react'
-import type { Plan, Course, Semester, ProgramStructure } from '../types'
+import React, { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
+import type { Plan, Course, Semester, ProgramStructure, RequirementNode } from '../types'
 import { getCourseStatus } from '../utils/prereq'
 import { evaluateGeneralRequirements, evaluateProgram, NodeEvalResult } from '../utils/evaluator'
 import { usePrograms } from '../hooks/usePrograms'
 import { usePlanStore } from '../store/planStore'
+
+/** Collect every explicit course code mentioned anywhere in a program's requirement tree. */
+function collectProgramCourseCodes(program: ProgramStructure): Set<string> {
+  const codes = new Set<string>()
+  function walk(node: RequirementNode) {
+    if (node.type === 'course' && node.code) { codes.add(node.code); return }
+    if ('items' in node && Array.isArray(node.items)) node.items.forEach(walk)
+  }
+  for (const group of program.completion.groups) group.items.forEach(walk)
+  return codes
+}
+
+/**
+ * Compute the approximate number of distinct credits across all enrolled programs.
+ * Logic: sum all program total-required credits, then subtract credits for any course
+ * code that appears in 2+ programs (those would be double-counted shared courses).
+ */
+function computeDistinctCredits(
+  programs: ProgramStructure[],
+  courseMap: Map<string, Course>,
+  semesters: Semester[],
+): { distinct: number; combined: number; overlap: number } {
+  if (programs.length === 0) return { distinct: 0, combined: 0, overlap: 0 }
+
+  // Total required credits per program (from evaluateProgram)
+  const combined = programs.reduce((sum, prog) => {
+    const res = evaluateProgram(prog, semesters, courseMap)
+    return sum + res.groups.reduce((s, g) => s + g.max, 0)
+  }, 0)
+
+  // Count how many programs each course code appears in
+  const codeFreq = new Map<string, number>()
+  for (const prog of programs) {
+    for (const code of collectProgramCourseCodes(prog)) {
+      codeFreq.set(code, (codeFreq.get(code) ?? 0) + 1)
+    }
+  }
+
+  // Overlap = credits of courses shared by 2+ programs
+  let overlap = 0
+  for (const [code, freq] of codeFreq) {
+    if (freq > 1) overlap += courseMap.get(code)?.credits ?? 0.5
+  }
+
+  return { distinct: combined - overlap, combined, overlap }
+}
 
 // Drag prefix — SemesterRow checks for this and copies the course into the dropped semester
 export const REQ_DRAG_PREFIX = '__req__'
@@ -103,23 +150,58 @@ interface CoursePillProps {
 }
 
 function CoursePill({ code, met, courseMap }: CoursePillProps) {
-  const course = courseMap.get(code)
+  const course   = courseMap.get(code)
   const [dragging, setDragging] = useState(false)
-  const [showTip, setShowTip] = useState(false)
+  const [tipPos,   setTipPos]   = useState<{ x: number; y: number } | null>(null)
+  const pillRef = useRef<HTMLSpanElement>(null)
+
+  // Close tooltip on scroll so it doesn't drift
+  useEffect(() => {
+    if (!tipPos) return
+    const hide = () => setTipPos(null)
+    window.addEventListener('scroll', hide, true)
+    return () => window.removeEventListener('scroll', hide, true)
+  }, [tipPos])
+
+  function handleMouseEnter() {
+    if (!pillRef.current) return
+    const r = pillRef.current.getBoundingClientRect()
+    setTipPos({ x: r.left, y: r.top })
+  }
+
+  const tooltip = tipPos && createPortal(
+    <span
+      className="fixed z-[99999] w-64 bg-gray-900 text-white rounded-xl p-3 shadow-2xl text-[10px] leading-snug pointer-events-none block"
+      style={{ left: tipPos.x, top: tipPos.y - 8, transform: 'translateY(-100%)' }}
+    >
+      <span className="font-semibold text-[11px] block mb-1">
+        {code}{course && ` — ${course.title}`}
+      </span>
+      {course?.credits && (
+        <span className="text-gray-300 block mb-1">{course.credits} credit{course.credits !== 1 ? 's' : ''}</span>
+      )}
+      {course?.description && (
+        <span className="text-gray-400 block leading-relaxed line-clamp-5">{course.description}</span>
+      )}
+      {!course && <span className="text-gray-400 italic">Course info unavailable</span>}
+    </span>,
+    document.body
+  )
 
   return (
     <span className="relative inline-block leading-none">
       <span
+        ref={pillRef}
         draggable
         onDragStart={e => {
           e.dataTransfer.effectAllowed = 'copy'
           e.dataTransfer.setData('text/plain', `${REQ_DRAG_PREFIX}${code}`)
           setDragging(true)
-          setShowTip(false)
+          setTipPos(null)
         }}
         onDragEnd={() => setDragging(false)}
-        onMouseEnter={() => setShowTip(true)}
-        onMouseLeave={() => setShowTip(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={() => setTipPos(null)}
         className={`
           inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold
           cursor-grab active:cursor-grabbing select-none transition-all
@@ -133,25 +215,7 @@ function CoursePill({ code, met, courseMap }: CoursePillProps) {
         {met && <span className="text-emerald-500 text-[9px]">✓</span>}
         {code}
       </span>
-
-      {showTip && (
-        <span
-          className="absolute bottom-full left-0 mb-1.5 z-[9999] w-52 bg-gray-900 text-white rounded-lg p-2.5 shadow-2xl text-[10px] leading-snug pointer-events-none block"
-          style={{ whiteSpace: 'normal' }}
-        >
-          <span className="font-semibold text-[11px] block mb-1">
-            {code}
-            {course && ` — ${course.title}`}
-          </span>
-          {course?.credits && (
-            <span className="text-gray-300 block mb-0.5">{course.credits} credit{course.credits !== 1 ? 's' : ''}</span>
-          )}
-          {course?.description && (
-            <span className="text-gray-400 block leading-relaxed line-clamp-4">{course.description}</span>
-          )}
-          {!course && <span className="text-gray-400 italic">Course info unavailable</span>}
-        </span>
-      )}
+      {tooltip}
     </span>
   )
 }
@@ -559,6 +623,35 @@ export default function RequirementsPanel({ plan, courseMap, width }: Props) {
                 <GeneralStatRow label="Social Sci Dist."       stat={gen.socialSciences} />
                 <div className="h-px bg-gray-100 my-1 w-full" />
                 <ProgramComboStat spec={numSpec} maj={numMaj} min={numMin} />
+
+                {activePrograms.length >= 2 && (() => {
+                  const { distinct, overlap } = computeDistinctCredits(activePrograms, courseMap, plan.semesters)
+                  const met = distinct >= 12
+                  return (
+                    <div className="pt-1 space-y-1">
+                      <div className="h-px bg-gray-100 w-full" />
+                      <div className="flex items-start justify-between text-[11px] pt-1">
+                        <div className="flex gap-1.5 text-gray-600">
+                          <span className={`shrink-0 inline-block w-1.5 h-1.5 rounded-full mt-1 ${met ? 'bg-emerald-500' : 'bg-red-400'}`} />
+                          <div>
+                            Distinct Program Credits
+                            <div className="text-[9px] text-gray-400 mt-0.5 leading-snug">
+                              Combined programs must have<br />≥ 12 credits not shared between them
+                            </div>
+                          </div>
+                        </div>
+                        <div className={`font-medium text-right leading-tight ${met ? 'text-emerald-700' : 'text-gray-500'}`}>
+                          {distinct.toFixed(1)} / 12.0
+                          {overlap > 0 && (
+                            <div className="text-[9px] font-normal text-gray-400 mt-0.5">
+                              −{overlap.toFixed(1)} shared
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })()}
               </div>
             </div>
           )}

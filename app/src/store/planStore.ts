@@ -217,12 +217,25 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
         set(state => ({
           plans: state.plans.map(p => {
             if (p.id !== planId) return p
-            const sems = p.semesters.map(s => {
+
+            // Update existing semesters that appear in the import
+            let sems = p.semesters.map(s => {
               const entry = entries.find(e => e.year === s.year && e.season === s.season)
-              // Only update semesters present in the import; leave others untouched
               if (!entry) return s
               return { ...s, courses: entry.courses }
             })
+
+            // Auto-create semesters from the import that don't exist yet
+            for (const entry of entries) {
+              const exists = sems.some(s => s.year === entry.year && s.season === entry.season)
+              if (!exists) {
+                sems = [...sems, { id: newId(), year: entry.year, season: entry.season, courses: entry.courses }]
+              }
+            }
+
+            // Re-sort semesters chronologically
+            sems = [...sems].sort((a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season))
+
             return { ...p, semesters: sems }
           }),
         })),
