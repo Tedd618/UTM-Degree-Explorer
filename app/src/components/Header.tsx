@@ -4,9 +4,10 @@ interface Props {
   session: any
   onSignInClick: () => void
   onLogOutClick: () => void
+  onHelpClick: () => void
 }
 
-export default function Header({ session, onSignInClick, onLogOutClick }: Props) {
+export default function Header({ session, onSignInClick, onLogOutClick, onHelpClick }: Props) {
   return (
     <>
       <header className="flex items-center justify-between h-14 px-6 bg-utm-navy text-white shrink-0 shadow-md z-10 w-full relative">
@@ -19,7 +20,14 @@ export default function Header({ session, onSignInClick, onLogOutClick }: Props)
             <span className="ml-2 text-xs text-white/50 hidden sm:inline">University of Toronto Mississauga</span>
           </div>
         </div>
-        <div>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={onHelpClick}
+            title="How it works"
+            className="w-6 h-6 rounded-full border border-white/30 text-white/60 hover:text-white hover:border-white/60 text-xs font-semibold flex items-center justify-center transition-colors"
+          >
+            ?
+          </button>
           {session ? (
             <button onClick={onLogOutClick} className="text-sm font-medium text-white/80 hover:text-white transition-colors">
               Log out
