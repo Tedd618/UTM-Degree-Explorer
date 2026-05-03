@@ -9,13 +9,11 @@ import PlannerGrid from './components/PlannerGrid'
 import PrereqRadarPanel from './components/PrereqRadarPanel'
 import AuthScreen from './components/AuthScreen'
 import FeedbackWidget from './components/FeedbackWidget'
-import OnboardingModal from './components/OnboardingModal'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
   const [isInitializing, setIsInitializing] = useState(true)
   const [showAuth, setShowAuth] = useState(false)
-  const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('utm_onboarded'))
 
   const activePlan = usePlanStore(s => s.activePlan())
   const activePlanId = usePlanStore(s => s.activePlanId)
@@ -92,7 +90,6 @@ export default function App() {
         session={session}
         onSignInClick={() => setShowAuth(true)}
         onLogOutClick={() => supabase.auth.signOut()}
-        onHelpClick={() => setShowOnboarding(true)}
       />
 
       <div className="flex flex-1 min-h-0">
@@ -129,7 +126,6 @@ export default function App() {
         </main>
       </div>
       <FeedbackWidget session={session} />
-      {showOnboarding && <OnboardingModal onDone={() => setShowOnboarding(false)} />}
     </div>
   )
 }
