@@ -17,6 +17,15 @@ export default function Sidebar() {
   const [editValue, setEditValue]  = useState('')
   const [showImport, setShowImport] = useState(false)
   const [collapsed, setCollapsed]  = useState(false)
+  const [isNewUser, setIsNewUser]  = useState(() => !localStorage.getItem('utm_onboarded'))
+
+  function openImport() {
+    if (isNewUser) {
+      localStorage.setItem('utm_onboarded', '1')
+      setIsNewUser(false)
+    }
+    setShowImport(true)
+  }
 
   function startRename(id: string, current: string) {
     setEditingId(id)
@@ -155,12 +164,22 @@ export default function Sidebar() {
 
       <div className="mt-auto border-t border-gray-100">
         <div className="p-3">
-          <button
-            onClick={() => setShowImport(true)}
-            className="w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-blue text-white hover:bg-utm-navy transition-colors"
-          >
-            Import
-          </button>
+          <div className="relative">
+            {isNewUser && (
+              <>
+                <span className="absolute -inset-0.5 rounded-lg bg-utm-blue opacity-30 animate-ping pointer-events-none" />
+                <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] font-semibold text-utm-blue">
+                  ↓ Start here
+                </span>
+              </>
+            )}
+            <button
+              onClick={openImport}
+              className="relative w-full px-3 py-2 rounded-lg text-sm font-medium bg-utm-blue text-white hover:bg-utm-navy transition-colors"
+            >
+              Import
+            </button>
+          </div>
         </div>
         <div className="px-3 pb-3">
           <p className="text-[10px] text-gray-300 leading-relaxed">
