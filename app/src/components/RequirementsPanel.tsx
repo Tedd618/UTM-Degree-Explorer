@@ -436,7 +436,8 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
   }
 
   // ── N from / Choose: credit pool — delegate to separate component to satisfy hooks rules ──
-  if (label.startsWith('Choose') || label.startsWith('Up to')) {
+  // Also matches labeled n_from nodes like "Group 1: Literary Theory/Methods (0.5 cr)"
+  if (label.startsWith('Choose') || label.startsWith('Up to') || (node.children && node.children.length > 0 && node.max > 0 && node.max <= 2 && !label.startsWith('All') && !label.startsWith('One'))) {
     return <PoolNode node={node} courseMap={courseMap} depth={depth} />
   }
 
@@ -559,6 +560,7 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
                   child.label !== 'One of:' &&
                   !(child.label ?? '').startsWith('Choose') &&
                   !(child.label ?? '').startsWith('Up to') &&
+                  !(child.children && child.children.length > 0 && child.max > 0 && child.max <= 2 && !child.label?.startsWith('All') && !child.label?.startsWith('One')) &&
                   child.poolCourses === undefined &&
                   !COURSE_CODE_RE.test(child.label ?? '') && (
                   <span className="text-[11px] text-gray-400 self-center whitespace-nowrap">

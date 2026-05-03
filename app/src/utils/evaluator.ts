@@ -110,7 +110,8 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const target = node.n || 1
       const earned = children.reduce((sum, c) => sum + c.value, 0)
-      return { met: earned >= target, value: Math.min(earned, target), max: target, label: `Choose ${target} credit(s) from:`, children }
+      const nFromLabel = (node as any).label ? `${(node as any).label} (${target} cr)` : `Choose ${target} credit(s) from:`
+      return { met: earned >= target, value: Math.min(earned, target), max: target, label: nFromLabel, children }
     }
     case 'limit': {
       // "Up to N credits from ..." is a cap, not a requirement — always satisfied; value is capped.
