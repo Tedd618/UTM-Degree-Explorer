@@ -71,6 +71,11 @@ interface PlanStore {
   /** Reset all ignored prereqs for this plan. */
   clearIgnoredPrereqs: (planId: string) => void
 
+  /** Override a course's "issues" status → treat as no-issues. Key: __issue__semId__code */
+  toggleIssueOverride: (planId: string, semId: string, code: string) => void
+  /** Mark a course as an SG (H1) course — no catalogue data, offered year-round. Key: __sg__code */
+  toggleSgCourse: (planId: string, code: string) => void
+
   // derived helpers
   activePlan: () => Plan | undefined
 }
@@ -268,6 +273,32 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
             ignoredPrereqs: {
               ...state.ignoredPrereqs,
               [planId]: [...existing, code],
+            },
+          }
+        }),
+
+      toggleIssueOverride: (planId, semId, code) =>
+        set(state => {
+          const key = `__issue__${semId}__${code}`
+          const existing = state.ignoredPrereqs[planId] ?? []
+          const has = existing.includes(key)
+          return {
+            ignoredPrereqs: {
+              ...state.ignoredPrereqs,
+              [planId]: has ? existing.filter(k => k !== key) : [...existing, key],
+            },
+          }
+        }),
+
+      toggleSgCourse: (planId, code) =>
+        set(state => {
+          const key = `__sg__${code}`
+          const existing = state.ignoredPrereqs[planId] ?? []
+          const has = existing.includes(key)
+          return {
+            ignoredPrereqs: {
+              ...state.ignoredPrereqs,
+              [planId]: has ? existing.filter(k => k !== key) : [...existing, key],
             },
           }
         }),
