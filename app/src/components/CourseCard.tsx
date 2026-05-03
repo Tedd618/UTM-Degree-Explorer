@@ -34,6 +34,10 @@ interface Props {
   issueReasons: string[]
   course: Course | undefined
   onRemove: () => void
+  isSg?: boolean
+  hasIssueOverride?: boolean
+  onToggleSg?: () => void
+  onToggleIssueOverride?: () => void
 }
 
 interface InfoRowProps { label: string; children: React.ReactNode }
@@ -46,7 +50,7 @@ function InfoRow({ label, children }: InfoRowProps) {
   )
 }
 
-export default function CourseCard({ code, status, issueReasons, course, onRemove }: Props) {
+export default function CourseCard({ code, status, issueReasons, course, onRemove, isSg, hasIssueOverride, onToggleSg, onToggleIssueOverride }: Props) {
   const [showTip, setShowTip] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
 
@@ -83,6 +87,12 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1 min-w-0">
             <p className="text-xs font-semibold text-gray-800 leading-tight truncate">{code}</p>
+            {isSg && (
+              <span className="shrink-0 text-[8px] font-bold text-sky-600 bg-sky-50 border border-sky-200 rounded px-0.5 leading-tight">SG</span>
+            )}
+            {hasIssueOverride && !isSg && (
+              <span className="shrink-0 text-[8px] font-bold text-violet-500 leading-none" title="Issues overridden">✓</span>
+            )}
             {issueReasons.length > 0 && (
               <span className="shrink-0 text-[9px] text-red-500 font-bold leading-none" title="Issues found">⚠</span>
             )}
@@ -90,16 +100,44 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
           {course && (
             <p className="text-[10px] text-gray-400 leading-tight truncate mt-0.5">{course.title}</p>
           )}
+          {!course && isSg && (
+            <p className="text-[10px] text-sky-400 leading-tight truncate mt-0.5">St. George course</p>
+          )}
         </div>
 
-        {/* Remove button */}
-        <button
-          onClick={e => { e.stopPropagation(); onRemove() }}
-          title="Remove"
-          className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity w-4 h-4 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none mt-0.5 cursor-pointer"
-        >
-          ×
-        </button>
+        {/* Action buttons — visible on hover */}
+        <div className="shrink-0 flex items-center gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity mt-0.5">
+          {/* Issue override toggle — only when issues exist or override active */}
+          {(status === 'issues' || hasIssueOverride) && onToggleIssueOverride && (
+            <button
+              onClick={e => { e.stopPropagation(); onToggleIssueOverride() }}
+              title={hasIssueOverride ? 'Remove override' : 'Mark as no issue'}
+              className={`w-4 h-4 rounded-full flex items-center justify-center text-[9px] leading-none cursor-pointer transition-colors
+                ${hasIssueOverride ? 'bg-violet-100 text-violet-600 hover:bg-violet-200' : 'text-gray-400 hover:bg-violet-50 hover:text-violet-500'}`}
+            >
+              ✓
+            </button>
+          )}
+          {/* SG toggle */}
+          {onToggleSg && (
+            <button
+              onClick={e => { e.stopPropagation(); onToggleSg() }}
+              title={isSg ? 'Remove SG mark' : 'Mark as SG (H1) course'}
+              className={`w-4 h-4 rounded flex items-center justify-center text-[8px] font-bold leading-none cursor-pointer transition-colors
+                ${isSg ? 'bg-sky-100 text-sky-600 hover:bg-sky-200' : 'text-gray-400 hover:bg-sky-50 hover:text-sky-500'}`}
+            >
+              SG
+            </button>
+          )}
+          {/* Remove */}
+          <button
+            onClick={e => { e.stopPropagation(); onRemove() }}
+            title="Remove"
+            className="w-4 h-4 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-50 hover:text-red-500 text-xs leading-none cursor-pointer"
+          >
+            ×
+          </button>
+        </div>
       </div>
 
       {/* Rich tooltip */}

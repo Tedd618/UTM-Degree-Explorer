@@ -195,6 +195,10 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
       if (isSemPast(sem)) continue
 
       for (const code of sem.courses) {
+        // Skip SG and manually overridden courses
+        if (ignored.has(`__sg__${code}`)) continue
+        if (ignored.has(`__issue__${sem.id}__${code}`)) continue
+
         const course = courseMap.get(code)
         if (!course) continue
         // Use per-course codesBefore so Summer co-enrollments satisfy prereqs

@@ -154,9 +154,13 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
 /* ─── Semester row ─── */
 
 export default function SemesterRow({ planId, semester, allSemesters, courseMap }: Props) {
-  const removeCourse = usePlanStore(s => s.removeCourse)
-  const moveCourse   = usePlanStore(s => s.moveCourse)
-  const addCourse    = usePlanStore(s => s.addCourse)
+  const removeCourse        = usePlanStore(s => s.removeCourse)
+  const moveCourse          = usePlanStore(s => s.moveCourse)
+  const addCourse           = usePlanStore(s => s.addCourse)
+  const toggleIssueOverride = usePlanStore(s => s.toggleIssueOverride)
+  const toggleSgCourse      = usePlanStore(s => s.toggleSgCourse)
+  const ignoredPrereqs      = usePlanStore(s => s.ignoredPrereqs)
+  const overrides           = new Set(ignoredPrereqs[planId] ?? [])
   const [adding, setAdding]         = useState(false)
   const [dropIndex, setDropIndex]   = useState<number | null>(null)
   const [isDragOver, setIsDragOver] = useState(false)
@@ -231,8 +235,8 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
       >
         {semester.courses.map((code) => {
           const idx     = courseIdx++
-          const status  = getCourseStatus(code, semester, allSemesters, courseMap)
-          const reasons = getIssueReasons(code, semester, allSemesters, courseMap)
+          const status  = getCourseStatus(code, semester, allSemesters, courseMap, overrides)
+          const reasons = getIssueReasons(code, semester, allSemesters, courseMap, overrides)
 
           return (
             <div
@@ -264,6 +268,10 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
                 issueReasons={reasons}
                 course={courseMap.get(code)}
                 onRemove={() => removeCourse(planId, semester.id, code)}
+                isSg={overrides.has(`__sg__${code}`)}
+                hasIssueOverride={overrides.has(`__issue__${semester.id}__${code}`)}
+                onToggleSg={() => toggleSgCourse(planId, code)}
+                onToggleIssueOverride={() => toggleIssueOverride(planId, semester.id, code)}
               />
             </div>
           )

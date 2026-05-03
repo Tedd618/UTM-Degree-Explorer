@@ -178,9 +178,13 @@ export function getCourseStatus(
   semester: Semester,
   allSemesters: Semester[],
   courseMap: Map<string, Course>,
+  overrides?: Set<string>,
 ): CourseStatus {
   if (isSemPast(semester))    return 'completed'
   if (isSemCurrent(semester)) return 'in-progress'
+
+  // SG (H1) course — treat as offered everywhere with no prereq data
+  if (overrides?.has(`__sg__${code}`)) return 'no-issues'
 
   const course = courseMap.get(code)
   if (!course) return 'unknown'
@@ -188,16 +192,23 @@ export function getCourseStatus(
   const codesBefore  = buildCodesBefore(code, semester, allSemesters)
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
-  if (!evaluatePrereq(course.prerequisites, codesBefore, courseMap)) {
-    return 'issues'
+  let hasIssues = false
+
+  if (!evaluatePrereq(course.prerequisites, codesBefore, courseMap)) hasIssues = true
+
+  if (!hasIssues) {
+    for (const excl of course.exclusions) {
+      if (codesAnywhere.has(excl) && excl !== code) { hasIssues = true; break }
+    }
   }
 
-  for (const excl of course.exclusions) {
-    if (codesAnywhere.has(excl) && excl !== code) return 'issues'
+  if (!hasIssues && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+    hasIssues = true
   }
 
-  if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
-    return 'issues'
+  if (hasIssues) {
+    // Per-placement issue override
+    return overrides?.has(`__issue__${semester.id}__${code}`) ? 'no-issues' : 'issues'
   }
 
   return 'no-issues'
@@ -209,7 +220,11 @@ export function getIssueReasons(
   semester: Semester,
   allSemesters: Semester[],
   courseMap: Map<string, Course>,
+  overrides?: Set<string>,
 ): string[] {
+  if (overrides?.has(`__sg__${code}`)) return []
+  if (overrides?.has(`__issue__${semester.id}__${code}`)) return []
+
   const course = courseMap.get(code)
   if (!course) return ['Course not found in catalogue']
 
