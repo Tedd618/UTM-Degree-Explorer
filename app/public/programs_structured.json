@@ -1288,7 +1288,8 @@
                   "type": "course",
                   "code": "MGT495H5"
                 }
-              ]
+              ],
+              "label": "400-level course list"
             },
             {
               "type": "text",
@@ -1883,7 +1884,8 @@
                   "type": "course",
                   "code": "ANT220H5"
                 }
-              ]
+              ],
+              "label": "ANT200H5 or ANT201H5 or ANT202H5 or ANT203H5 or ANT220H5"
             },
             {
               "type": "course",
@@ -2154,7 +2156,8 @@
                   "type": "course",
                   "code": "PHL245H5"
                 }
-              ]
+              ],
+              "label": "Logic"
             },
             {
               "type": "n_from",
@@ -2212,7 +2215,8 @@
                   "type": "course",
                   "code": "PHL430H5"
                 }
-              ]
+              ],
+              "label": "Metaphysics and Epistemology from"
             },
             {
               "type": "one_of",
@@ -2745,7 +2749,8 @@
                   "type": "course",
                   "code": "HIS108H5"
                 }
-              ]
+              ],
+              "label": "HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 . It is recommended that one of these courses be completed in the first year."
             },
             {
               "type": "all_of",
@@ -3869,7 +3874,8 @@
                   "type": "course",
                   "code": "ENG393H5"
                 }
-              ]
+              ],
+              "label": "ENG215H5 or ENG252Y5 or ENG255H5 or ENG274H5 or ENG352H5 or ENG353Y5 or ENG354Y5 or ENG357H5 or ENG361H5 or ENG362H5 or ENG392H5 or ENG393H5 ;"
             },
             {
               "type": "course",
@@ -4438,7 +4444,8 @@
                   "type": "course",
                   "code": "CCT260H5"
                 }
-              ]
+              ],
+              "label": "CCT200H5 or CCT206H5 or CCT210H5 or CCT222H5 or CCT260H5"
             },
             {
               "type": "open_pool",
@@ -4938,7 +4945,8 @@
                   "type": "course",
                   "code": "PHY147H5"
                 }
-              ]
+              ],
+              "label": "ANT101H5 or BIO152H5 or BIO153H5 or CHM110H5 or CHM120H5 or ERS101H5 or GGR112H5 or ISP130H5 or ( MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 ) or ( MAT134H5 or MAT136H5 or MAT139H5 or MAT159H5 ) or MAT137Y5 or PHY136H5 or PHY137H5 or PHY146H5 or PHY147H5"
             },
             {
               "type": "text",
@@ -4967,7 +4975,8 @@
                   "type": "course",
                   "code": "GGR227H5"
                 }
-              ]
+              ],
+              "label": "BIO205H5 or GGR227H5"
             },
             {
               "type": "n_from",
@@ -5013,7 +5022,8 @@
                   "type": "course",
                   "code": "JCP221H5"
                 }
-              ]
+              ],
+              "label": "CHM211H5 or CHM231H5 or CHM242H5 or ERS201H5 or ERS202H5 or ERS203H5 or GGR201H5 or GGR214H5 or GGR217H5 or JCP221H5"
             },
             {
               "type": "n_from",
@@ -5047,7 +5057,8 @@
                   "type": "course",
                   "code": "STA221H5"
                 }
-              ]
+              ],
+              "label": "BIO360H5 or BIO361H5 or CHM211H5 or GGR276H5 or GGR278H5 or STA220H5 or STA221H5"
             }
           ]
         },
@@ -5107,7 +5118,8 @@
                   "type": "course",
                   "code": "JEG417Y5"
                 }
-              ]
+              ],
+              "label": "BIO416H5 or CPS401Y5 or ENV299Y5 or ENV399Y5 or ENV496H5 or ENV497H5 or ERS325H5 or GGR335H5 or GGR379H5 or JEG400Y5 or JEG417Y5"
             },
             {
               "type": "n_from",
@@ -5237,7 +5249,8 @@
                   "type": "course",
                   "code": "GGR484H5"
                 }
-              ]
+              ],
+              "label": "BIO311H5 or BIO331H5 or BIO333H5 or ENV495H5 or ENV496H5 or ERS312H5 or ERS315H5 or ERS412H5 or GGR304H5 or GGR305H5 or GGR307H5 or GGR309H5 or GGR311H5 or GGR315H5 or GGR316H5 or GGR317H5 or GGR337H5 or GGR338H5 or GGR372H5 or GGR374H5 or GGR375H5 or GGR376H5 or GGR377H5 or GGR383H5 or GGR384H5 or GGR404H5 or GGR406H5 or GGR407H5 or GGR440H5 or GGR479H5 or GGR484H5"
             },
             {
               "type": "n_from",
@@ -5411,7 +5424,8 @@
                   "type": "course",
                   "code": "WRI375H5"
                 }
-              ]
+              ],
+              "label": "ANT357H5 or ANT368H5 or ANT370H5 or BIO464H5 or ECO373Y5 or ENV305H5 or ENV311H5 or ENV320H5 or ENV393H5 or ENV425H5 or ENV430H5 or ENV435H5 or GGR322H5 or GGR325H5 or GGR329H5 or GGR333H5 or GGR348H5 or GGR349H5 or GGR353H5 or GGR361H5 or GGR362H5 or GGR365H5 or GGR370H5 or GGR415H5 or GGR419H5 or GGR420H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JGE378H5 or JPE251H5 or JPE252H5 or POL343Y5 or POL346Y5 or POL475H5 or SOC349H5 or SOC356H5 or SOC465H5 or WRI375H5"
             }
           ]
         }
@@ -6316,7 +6330,8 @@
                   "type": "course",
                   "code": "ITA450H5"
                 }
-              ]
+              ],
+              "label": "ITA351H5 , ITA352H5 , ITA450H5"
             },
             {
               "type": "course",
@@ -6355,7 +6370,8 @@
                   "type": "course",
                   "code": "LTL488H5"
                 }
-              ]
+              ],
+              "label": "LTL380H5 , LTL456H5 , LTL487H5 , LTL488H5"
             },
             {
               "type": "text",
@@ -7079,7 +7095,8 @@
                   "type": "course",
                   "code": "JCP463H5"
                 }
-              ]
+              ],
+              "label": "lecture courses"
             },
             {
               "type": "n_from",
@@ -8487,7 +8504,8 @@
                   "type": "course",
                   "code": "JEG417Y5"
                 }
-              ]
+              ],
+              "label": ": ENV299Y5 , ENV332H5 , ENV399Y5 , ENV496H5 , ENV497H5 ; GGR335H5 , GGR379H5 , GGR389H5 ; JEG401Y5 , JEG417Y5 ; or another program-relevant Field, Experiential, or Research course, with permission of the Program Advisor"
             }
           ]
         }
@@ -8858,7 +8876,8 @@
                   "type": "course",
                   "code": "GGR278H5"
                 }
-              ]
+              ],
+              "label": "ERS211H5 or ERS225H5 or GGR214H5 or GGR217H5 or GGR227H5 or GGR272H5 or GGR276H5 or GGR278H5"
             }
           ]
         },
@@ -9119,7 +9138,8 @@
                   "type": "course",
                   "code": "STA260H5"
                 }
-              ]
+              ],
+              "label": "STA256H5 , STA258H5 , STA260H5 )"
             }
           ]
         },
@@ -9489,7 +9509,8 @@
                   "type": "course",
                   "code": "ENG464H5"
                 }
-              ]
+              ],
+              "label": "Group 1: Literary Theory/Methods"
             },
             {
               "type": "n_from",
@@ -9591,7 +9612,8 @@
                   "type": "course",
                   "code": "ENG434H5"
                 }
-              ]
+              ],
+              "label": "Group 2: Race, Ethnicity, Diaspora, Indigeneity"
             },
             {
               "type": "n_from",
@@ -9681,7 +9703,8 @@
                   "type": "course",
                   "code": "ENG462H5"
                 }
-              ]
+              ],
+              "label": "Group 3: Literature Pre-1700"
             },
             {
               "type": "n_from",
@@ -9771,7 +9794,8 @@
                   "type": "course",
                   "code": "ENG471H5"
                 }
-              ]
+              ],
+              "label": "Group 4; Literature 1700-1900"
             },
             {
               "type": "n_from",
@@ -9841,7 +9865,8 @@
                   "type": "course",
                   "code": "ENG425H5"
                 }
-              ]
+              ],
+              "label": "Group 5; Canadian Literature"
             },
             {
               "type": "n_from",
@@ -9907,7 +9932,8 @@
                   "type": "course",
                   "code": "ENG436H5"
                 }
-              ]
+              ],
+              "label": "Group 6; American Literature"
             }
           ]
         }
@@ -10006,7 +10032,8 @@
                   "type": "course",
                   "code": "GGR288H5"
                 }
-              ]
+              ],
+              "label": "GGR202H5 or GGR207H5 or GGR208H5 or GGR209H5 or GGR210H5 or GGR252H5 or GGR265H5 or GGR276H5 or GGR278H5 or GGR288H5"
             }
           ]
         },
@@ -10138,7 +10165,8 @@
                   "type": "course",
                   "code": "JGE378H5"
                 }
-              ]
+              ],
+              "label": "ENV311H5 or GGR313H5 or GGR318H5 or GGR319H5 or GGR322H5 or GGR325H5 or GGR329H5 or GGR333H5 or GGR348H5 or GGR349H5 or GGR353H5 or GGR361H5 or GGR362H5 or GGR363H5 or GGR365H5 or GGR370H5 or GGR382H5 or GGR385H5 or GGR387H5 or GGR389H5 or GGR415H5 or GGR418H5 or GGR419H5 or GGR420H5 or GGR426H5 or GGR461H5 or GGR489H5 or JEG401Y5 or JEG417Y5 or JGE378H5 ."
             }
           ]
         },
@@ -10522,7 +10550,8 @@
                   "type": "course",
                   "code": "ANT220H5"
                 }
-              ]
+              ],
+              "label": "ANT202H5 or ANT203H5 or ANT220H5 )"
             }
           ]
         }
@@ -10611,7 +10640,8 @@
                   "type": "course",
                   "code": "LIN288H5"
                 }
-              ]
+              ],
+              "label": "two of the following"
             },
             {
               "type": "n_from",
@@ -10625,7 +10655,8 @@
                   "type": "course",
                   "code": "LIN102H5"
                 }
-              ]
+              ],
+              "label": "a language course. This credit must involve the same language and must be taken either concurrently with LIN101H5 and LIN102H5 or after their completion. The language must be one other than the student's first language; English language courses are excluded."
             },
             {
               "type": "all_of",
@@ -10926,7 +10957,8 @@
                   "type": "course",
                   "code": "MAT244H5"
                 }
-              ]
+              ],
+              "label": "PHY241H5 or PHY245H5 or JCP221H5 or JCP265H5 2. MAT232H5 and MAT244H5"
             }
           ]
         },
@@ -10946,7 +10978,8 @@
                   "type": "course",
                   "code": "PHY343H5"
                 }
-              ]
+              ],
+              "label": "UTM PHY or JCP courses at the 300 or 400-level"
             }
           ]
         }
@@ -11422,7 +11455,8 @@
                   "type": "course",
                   "code": "PHY137H5"
                 }
-              ]
+              ],
+              "label": "BIO152H5 or BIO153H5 or CHM110H5 or CHM120H5 or ERS101H5 or ISP130H5 or ( MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 ) or ( MAT134H5 or MAT136H5 or MAT139H5 or MAT159H5 ) or MAT137Y5 or PHY100H5 or PHY136H5 or PHY137H5"
             }
           ]
         },
@@ -11454,7 +11488,8 @@
                   "type": "course",
                   "code": "GGR227H5"
                 }
-              ]
+              ],
+              "label": "GGR201H5 or GGR214H5 or GGR217H5 or GGR227H5"
             },
             {
               "type": "n_from",
@@ -11484,7 +11519,8 @@
                   "type": "course",
                   "code": "GGR265H5"
                 }
-              ]
+              ],
+              "label": "GGR202H5 or GGR207H5 or GGR208H5 or GGR209H5 or GGR210H5 or GGR265H5"
             }
           ]
         },
@@ -11552,7 +11588,8 @@
                   "type": "course",
                   "code": "JGE378H5"
                 }
-              ]
+              ],
+              "label": "GGR304H5 or GGR305H5 or GGR307H5 or GGR309H5 or GGR315H5 or GGR316H5 or GGR317H5 or GGR338H5 or GGR374H5 or GGR377H5 or GGR379H5 or GGR383H5 or GGR384H5 or JGE378H5"
             },
             {
               "type": "one_of",
@@ -11629,7 +11666,8 @@
                   "type": "course",
                   "code": "JEG400Y5"
                 }
-              ]
+              ],
+              "label": "GGR404H5 or GGR406H5 or GGR407H5 or GGR417Y5 or GGR479H5 or GGR484H5 or JEG400Y5"
             }
           ]
         },
@@ -13398,7 +13436,8 @@
                   "type": "course",
                   "code": "FSC370H5"
                 }
-              ]
+              ],
+              "label": "FSC210H5 , FSC220H5 , FSC307H5 , FSC311H5 , FSC314H5 , FSC315H5 , FSC316H5 , FSC320H5 , FSC330H5 , FSC335H5 , FSC350H5 , FSC351H5 , FSC361H5 , FSC370H5 ,"
             }
           ]
         },
@@ -13442,7 +13481,8 @@
                   "type": "course",
                   "code": "FSC420H5"
                 }
-              ]
+              ],
+              "label": "FSC401H5 , FSC402H5 , FSC403H5 , FSC406H5 , FSC415H5 , FSC416H5 , FSC420H5"
             },
             {
               "type": "text",
@@ -14153,7 +14193,8 @@
                   "type": "course",
                   "code": "EDS101H5"
                 }
-              ]
+              ],
+              "label": "EDS100H5 or EDS101H5 (Note these courses are open to all students. Highly recommended but not required for those applying to the EDS minor.)"
             }
           ]
         },
@@ -14213,7 +14254,8 @@
                   "type": "course",
                   "code": "EDS388H5"
                 }
-              ]
+              ],
+              "label": "experiential learning (for example, EDS325H5 , EDS377H5 , EDS388H5 ) or internship courses in other subject areas as approved by the Education Studies Program Coordinator."
             },
             {
               "type": "one_of",
@@ -14540,7 +14582,8 @@
                   "type": "course",
                   "code": "HIS108H5"
                 }
-              ]
+              ],
+              "label": "HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 . It is recommended that one of these courses be completed in the first year."
             },
             {
               "type": "all_of",
@@ -15088,7 +15131,8 @@
                   "type": "course",
                   "code": "SOC339H5"
                 }
-              ]
+              ],
+              "label": "at least two different subject areas from the following list"
             },
             {
               "type": "text",
@@ -15350,7 +15394,8 @@
                   "type": "course",
                   "code": "PHL246H5"
                 }
-              ]
+              ],
+              "label": "PHL239H5 or PHL245H5 or PHL246H5 ;"
             },
             {
               "type": "n_from",
@@ -15376,7 +15421,8 @@
                   "type": "course",
                   "code": "PHL447H5"
                 }
-              ]
+              ],
+              "label": "PHL345H5 or PHL346H5 or PHL347H5 or PHL445H5 or PHL447H5 ;"
             },
             {
               "type": "n_from",
@@ -15422,7 +15468,8 @@
                   "type": "course",
                   "code": "PHL450H5"
                 }
-              ]
+              ],
+              "label": "PHL103H5 or PHL233H5 or PHL258H5 or PHL325H5 or PHL327H5 or PHL332H5 or PHL350H5 or PHL354H5 or PHL360H5 or PHL450H5 ;"
             },
             {
               "type": "open_pool",
@@ -17231,7 +17278,8 @@
                   "type": "course",
                   "code": "WGS102H5"
                 }
-              ]
+              ],
+              "label": "CLA101H5 or HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 or RLG101H5 or WGS101H5 or WGS102H5 (R ecommended ; only 0.5 credits at the 100-level can be used to fulfill program requirements)"
             }
           ]
         },
@@ -18134,7 +18182,8 @@
                   "type": "course",
                   "code": "PHY351H5"
                 }
-              ]
+              ],
+              "label": "ERS201H5 or ERS202H5 or ERS203H5 or ERS211H5 or ERS225H5 2. 2.0 credits of Earth Science (ERS) from"
             }
           ]
         }
@@ -18363,7 +18412,8 @@
                   "type": "course",
                   "code": "DRE121H5"
                 }
-              ]
+              ],
+              "label": "ENG201Y5 or [( ENG101H5 or ENG204H5 or ENG280H5 or DRE360H5 ) and ( ENG121H5 or ENG202H5 or ENG203H5 or DRE121H5 )]"
             },
             {
               "type": "n_from",
@@ -18401,7 +18451,8 @@
                   "type": "course",
                   "code": "DRE363H5"
                 }
-              ]
+              ],
+              "label": "ENG489Y5 or ENG373H5 or ENG374H5 or ENG376H5 or ENG377H5 or ENG378H5 or DRE362H5 or DRE363H5"
             },
             {
               "type": "text",
@@ -18950,7 +19001,8 @@
                   "type": "course",
                   "code": "JGE378H5"
                 }
-              ]
+              ],
+              "label": "GGR111H5 or GGR202H5 or GGR207H5 or GGR208H5 or GGR209H5 or GGR210H5 or GGR252H5 or GGR265H5 or GGR267H5 or GGR287H5 or GGR288H5 or ENV311H5 or GGR313H5 or GGR318H5 or GGR319H5 or GGR322H5 or GGR325H5 or GGR329H5 or GGR333H5 or GGR348H5 or GGR349H5 or GGR353H5 or GGR361H5 or GGR362H5 or GGR365H5 or GGR370H5 or GGR382H5 or GGR385H5 or GGR387H5 or GGR389H5 or GGR415H5 or GGR417Y5 or GGR418H5 or GGR419H5 or GGR420H5 or GGR426H5 or GGR461H5 or GGR489H5 or JEG401Y5 or JGE378H5 ."
             }
           ]
         }
@@ -19183,7 +19235,8 @@
                   "type": "course",
                   "code": "ANT220H5"
                 }
-              ]
+              ],
+              "label": "ANT200H5 or ANT201H5 or ANT202H5 or ANT203H5 or ANT204H5 or ANT206H5 or ANT207H5 or ANT220H5"
             }
           ]
         }
@@ -19700,7 +19753,8 @@
                   "type": "course",
                   "code": "ENG410H5"
                 }
-              ]
+              ],
+              "label": "ENG218H5 or ENG279H5 or ENG319H5 or ENG321H5 or ENG328H5 or ENG410H5"
             },
             {
               "type": "n_from",
@@ -19726,7 +19780,8 @@
                   "type": "course",
                   "code": "CCT419H5"
                 }
-              ]
+              ],
+              "label": "CCT285H5 or CCT311H5 or CCT334H5 or CCT382H5 or CCT419H5"
             },
             {
               "type": "text",
@@ -20626,7 +20681,8 @@
                   "type": "course",
                   "code": "ECO323Y5"
                 }
-              ]
+              ],
+              "label": "Economic History from"
             },
             {
               "type": "all_of",
@@ -21041,7 +21097,8 @@
                   "type": "course",
                   "code": "PHL430H5"
                 }
-              ]
+              ],
+              "label": "Metaphysics and Epistemology from"
             },
             {
               "type": "one_of",
@@ -21243,7 +21300,8 @@
                   "type": "course",
                   "code": "WRI307H5"
                 }
-              ]
+              ],
+              "label": "CLA201H5 or ENV100Y5 or ERS101H5 or PHY136H5 or PHY137H5 or PSY100Y5 or WRI173H5 or WRI307H5"
             },
             {
               "type": "all_of",
@@ -21597,7 +21655,8 @@
                   "type": "course",
                   "code": "STA221H5"
                 }
-              ]
+              ],
+              "label": "ERS225H5 or GGR217H5 or GGR214H5 or BIO356H5 or ESS261H1 3. 0.5 credit from CHM211H5 or CHM231H5 or ESS211H1 or JCP221H5 4. 1.0 credit from MAT212H5 or MAT223H5 or STA220H5 or STA221H5"
             },
             {
               "type": "n_from",
@@ -21647,7 +21706,8 @@
                   "type": "course",
                   "code": "ESS345H1"
                 }
-              ]
+              ],
+              "label": "ERS301H5 or ERS302H5 or ERS303H5 or ERS304H5 or ERS311H5 or ERS312H5 or ERS315H5 or ESS312H1 /​ or ESS322H1 or ESS345H1"
             },
             {
               "type": "n_from",
@@ -21669,7 +21729,8 @@
                   "type": "course",
                   "code": "CPS400Y5"
                 }
-              ]
+              ],
+              "label": "400 level courses in ERS or ESS (St. George) or ( JCB487Y5 or ERI398H5 or CPS400Y5 )"
             },
             {
               "type": "course",
@@ -21856,7 +21917,8 @@
                   "type": "course",
                   "code": "HIS108H5"
                 }
-              ]
+              ],
+              "label": "HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 . It is recommended that one of these courses be completed in the first year."
             },
             {
               "type": "all_of",
@@ -23085,7 +23147,8 @@
                   "type": "course",
                   "code": "STA260H5"
                 }
-              ]
+              ],
+              "label": "STA256H5 or STA258H5 or STA260H5 )]"
             },
             {
               "type": "one_of",
@@ -23370,7 +23433,8 @@
                   "type": "course",
                   "code": "FRE383H5"
                 }
-              ]
+              ],
+              "label": "French Linguistics 4. 1.0 credit from French Literary and Cultural Studies 5. 1.0 additional credit in French linguistics or literature"
             },
             {
               "type": "all_of",
@@ -23530,6 +23594,7 @@
                   "code": "ITA420Y5"
                 }
               ],
+              "label": "ITA237H5 , 239H5, 354Y5 4. ITA231H5 /​ ITA232H5 , ITA420Y5 5. 2.0 additional credits in ITA, excluding ITA100Y5 /​101H5/ 102H5. Courses not used in #1 above may be used. At least 1.0 credit must be in Italian literature (excluding those in item #2 above).",
               "excluding": [
                 "ITA100Y5"
               ]
@@ -24040,7 +24105,8 @@
                   "type": "course",
                   "code": "SOC499Y5"
                 }
-              ]
+              ],
+              "label": "SOC230H5 or SOC299H5 or SOC299Y5 or SOC382H5 or SOC399H5 or SOC399Y5 or SOC401H5 or SOC403H5 or SOC406H5 or SOC410H5 or SOC411H5 or SOC412H5 or SOC413H5 or SOC414H5 or SOC415H5 or SOC416H5 or SOC417H5 or SOC418H5 or SOC419H5 or SOC420H5 or SOC421H5 or SOC423H5 or SOC440Y5 or SOC450H5 or SOC452H5 or SOC456H5 or SOC467H5 or SOC480Y5 or SOC485H5 or SOC499H5 or SOC499Y5"
             }
           ]
         }
@@ -24523,7 +24589,8 @@
                   "type": "course",
                   "code": "PHY483H1"
                 }
-              ]
+              ],
+              "label": "PHY347H5 or PHY351H5 or PHY451H5 or JCP421H5 or MAT334H5 or MAT224H5 or MAT332H5 or MAT307H5 or STA220H5 or STA256H5 or JPE395H1 or PHY392H1 or PHY483H1 or other upper year course by approval of the faculty advisor"
             }
           ]
         },
@@ -24604,7 +24671,8 @@
                   "type": "course",
                   "code": "PHY483H1"
                 }
-              ]
+              ],
+              "label": "PHY347H5 or PHY351H5 or PHY451H5 or JCP421H5 or MAT334H5 or MAT224H5 or MAT332H5 or MAT307H5 or STA220H5 or STA256H5 or JPE395H1 or PHY392H1 or PHY483H1 or other upper year course by approval of the faculty advisor"
             }
           ]
         }
@@ -25103,7 +25171,8 @@
                   "type": "course",
                   "code": "HIS108H5"
                 }
-              ]
+              ],
+              "label": "HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 . It is recommended that one of these courses be completed in the first year."
             },
             {
               "type": "one_of",
@@ -25598,7 +25667,8 @@
                   "type": "course",
                   "code": "PHY147H5"
                 }
-              ]
+              ],
+              "label": "ANT101H5 or BIO152H5 or BIO153H5 or CHM110H5 or CHM120H5 or CSC108H5 or CSC148H5 or ERS101H5 or GGR112H5 or ISP130H5 or ( MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 ) or ( MAT134H5 or MAT136H5 or MAT139H5 or MAT159H5 ) or MAT137Y5 or PHY136H5 or PHY137H5 or PHY146H5 or PHY147H5"
             },
             {
               "type": "text",
@@ -25627,7 +25697,8 @@
                   "type": "course",
                   "code": "GGR227H5"
                 }
-              ]
+              ],
+              "label": "BIO205H5 and GGR227H5"
             },
             {
               "type": "n_from",
@@ -25673,7 +25744,8 @@
                   "type": "course",
                   "code": "JCP221H5"
                 }
-              ]
+              ],
+              "label": "CHM211H5 or CHM231H5 or CHM242H5 or GGR201H5 or GGR214H5 or GGR217H5 or ERS201H5 or ERS202H5 or ERS203H5 or JCP221H5"
             },
             {
               "type": "n_from",
@@ -25707,7 +25779,8 @@
                   "type": "course",
                   "code": "STA221H5"
                 }
-              ]
+              ],
+              "label": "BIO360H5 or BIO361H5 or CHM211H5 or GGR276H5 or GGR278H5 or STA220H5 or STA221H5"
             }
           ]
         },
@@ -25767,7 +25840,8 @@
                   "type": "course",
                   "code": "JEG417Y5"
                 }
-              ]
+              ],
+              "label": "BIO416H5 or CPS401Y5 or ENV299Y5 or ENV399Y5 or ENV496H5 or ENV497H5 or ERS325H5 or GGR335H5 or GGR379H5 or JEG400Y5 or JEG417Y5"
             },
             {
               "type": "n_from",
@@ -25905,7 +25979,8 @@
                   "type": "course",
                   "code": "GGR484H5"
                 }
-              ]
+              ],
+              "label": "BIO311H5 or BIO331H5 or BIO333H5 or BIO373H5 or BIO406H5 or ENV495H5 or ENV496H5 or ERS312H5 or ERS315H5 or ERS412H5 or GGR304H5 or GGR305H5 or GGR307H5 or GGR309H5 or GGR311H5 or GGR315H5 or GGR316H5 or GGR317H5 or GGR337H5 or GGR338H5 or GGR372H5 or GGR374H5 or GGR375H5 or GGR376H5 or GGR377H5 or GGR383H5 or GGR384H5 or GGR404H5 or GGR406H5 or GGR407H5 or GGR440H5 or GGR479H5 or GGR484H5"
             },
             {
               "type": "n_from",
@@ -25943,7 +26018,8 @@
                   "type": "course",
                   "code": "JEP452H5"
                 }
-              ]
+              ],
+              "label": "BIO464H5 or ENV311H5 or ENV320H5 or ENV393H5 or ENV425H5 or ENV430H5 or ( ENV452H5 or JEP452H5 )"
             },
             {
               "type": "n_from",
@@ -26105,7 +26181,8 @@
                   "type": "course",
                   "code": "WRI375H5"
                 }
-              ]
+              ],
+              "label": "ANT357H5 or ANT368H5 or ANT370H5 or ECO373Y5 or ENV305H5 or ENV311H5 or ENV320H5 or ENV393H5 or ENV425H5 or ENV430H5 or ENV435H5 or GGR322H5 or GGR325H5 or GGR329H5 or GGR333H5 or GGR348H5 or GGR349H5 or GGR353H5 or GGR361H5 or GGR362H5 or GGR365H5 or GGR370H5 or GGR419H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JGE378H5 or JPE251H5 or JPE252H5 or POL343Y5 or POL346Y5 or POL475H5 or SOC349H5 or SOC356H5 or SOC465H5 or WRI375H5"
             }
           ]
         }
@@ -26290,7 +26367,8 @@
                   "type": "course",
                   "code": "ITA450H5"
                 }
-              ]
+              ],
+              "label": "ITA351H5 , ITA352H5 , ITA450H5"
             },
             {
               "type": "course",
@@ -26631,7 +26709,8 @@
                   "type": "course",
                   "code": "PSY100Y5"
                 }
-              ]
+              ],
+              "label": "PSY100Y5"
             },
             {
               "type": "n_from",
@@ -26645,7 +26724,8 @@
                   "type": "course",
                   "code": "PSY202H5"
                 }
-              ]
+              ],
+              "label": "PSY201H5 and PSY202H5 (or equivalent)"
             },
             {
               "type": "n_from",
@@ -26655,7 +26735,8 @@
                   "type": "course",
                   "code": "PSY210H5"
                 }
-              ]
+              ],
+              "label": "PSY210H5"
             },
             {
               "type": "n_from",
@@ -26665,7 +26746,8 @@
                   "type": "course",
                   "code": "PSY290H5"
                 }
-              ]
+              ],
+              "label": "PSY290H5"
             },
             {
               "type": "n_from",
@@ -26683,7 +26765,8 @@
                   "type": "course",
                   "code": "JLP285H5"
                 }
-              ]
+              ],
+              "label": "PSY270H5 , PSY280H5 , JLP285H5"
             },
             {
               "type": "n_from",
@@ -26701,7 +26784,8 @@
                   "type": "course",
                   "code": "PSY240H5"
                 }
-              ]
+              ],
+              "label": "PSY220H5 , PSY230H5 , PSY240H5"
             },
             {
               "type": "n_from",
@@ -26711,7 +26795,8 @@
                   "type": "course",
                   "code": "PSY309H5"
                 }
-              ]
+              ],
+              "label": "PSY309H5"
             },
             {
               "type": "n_from",
@@ -27301,7 +27386,8 @@
                   "type": "course",
                   "code": "VCC290H5"
                 }
-              ]
+              ],
+              "label": "CCT204H5 or CCT250H5 or CCT270H5 2. 1.0 credit from CCT200H5 or CCT206H5 or CCT210H5 3. 1.0 credit from VCC205H5 or VCC236H5 or VCC290H5"
             }
           ]
         },
@@ -27557,7 +27643,8 @@
                   "type": "course",
                   "code": "BIO205H5"
                 }
-              ]
+              ],
+              "label": "BIO202H5 or BIO203H5 or BIO205H5"
             },
             {
               "type": "all_of",
@@ -27688,7 +27775,8 @@
                   "type": "course",
                   "code": "BCH340H1"
                 }
-              ]
+              ],
+              "label": "BIO304H5 or BIO310H5 or BIO324H5 or BIO341H5 or BIO347H5 or BIO362H5 or BIO368H5 or BIO374H5 or BIO375H5 or BIO380H5 or CHM347H5 or PHY332H5 or PHY333H5 or BCH340H1"
             }
           ]
         },
@@ -27845,7 +27933,8 @@
                   "type": "course",
                   "code": "MIJ485H1"
                 }
-              ]
+              ],
+              "label": "BIO377H5 or BIO403H5 or BIO407H5 or BIO408H5 or BIO411H5 or BIO417H5 or BIO419H5 or BIO422H5 or BIO429H5 or BIO436H5 or BIO443H5 or BIO458H5 or BIO476H5 or BIO477H5 or BIO481Y5 or CHM444H5 or CHM462H5 or CPS489Y5 or JBC472H5 or JCB487Y5 or JCP463H5 or CSB435H1 or CSB450H1 or CSB459H1 or CSB472H1 or CSB473H1 or CSB474H1 or CSB475H1 or MGY425H1 or MGY428H1 or MGY440H1 or MGY470H1 or MIJ485H1"
             },
             {
               "type": "all_of",
@@ -28382,7 +28471,8 @@
                   "type": "course",
                   "code": "MGD427H5"
                 }
-              ]
+              ],
+              "label": "CCT401H5 or CCT410H5 or CCT476H5 or MGD415H5 or MGD427H5 ."
             },
             {
               "type": "open_pool",
@@ -30907,7 +30997,8 @@
                   "type": "course",
                   "code": "ECO323Y5"
                 }
-              ]
+              ],
+              "label": "Economic History from: ( ECO302H5 and ECO303H5 ) or ECO322Y5 or ECO323Y5 4. 5.0 additional 300+ level ECO credits, including at least 1.0 at the 400 level"
             },
             {
               "type": "text",
@@ -31505,7 +31596,8 @@
                   "type": "course",
                   "code": "MAT337H5"
                 }
-              ]
+              ],
+              "label": "CSC322H5 or CSC311H5 or MAT302H5 or MAT311H5 or MAT332H5 or MAT334H5 or MAT344H5 or MAT337H5"
             },
             {
               "type": "open_pool",
@@ -31651,7 +31743,8 @@
                   "type": "course",
                   "code": "ENG464H5"
                 }
-              ]
+              ],
+              "label": "Group 1: Literary Theory/Methods"
             },
             {
               "type": "n_from",
@@ -31753,7 +31846,8 @@
                   "type": "course",
                   "code": "ENG434H5"
                 }
-              ]
+              ],
+              "label": "Group 2: Race, Ethnicity, Diaspora, Indigeneity"
             },
             {
               "type": "n_from",
@@ -31843,7 +31937,8 @@
                   "type": "course",
                   "code": "ENG462H5"
                 }
-              ]
+              ],
+              "label": "Group 3: Literature Pre-1700"
             },
             {
               "type": "n_from",
@@ -31933,7 +32028,8 @@
                   "type": "course",
                   "code": "ENG471H5"
                 }
-              ]
+              ],
+              "label": "Group 4: Literature 1700-1900"
             },
             {
               "type": "n_from",
@@ -32003,7 +32099,8 @@
                   "type": "course",
                   "code": "ENG425H5"
                 }
-              ]
+              ],
+              "label": "Group 5: Canadian Literature"
             },
             {
               "type": "n_from",
@@ -32069,7 +32166,8 @@
                   "type": "course",
                   "code": "ENG436H5"
                 }
-              ]
+              ],
+              "label": "Group 6: American Literature"
             }
           ]
         }
@@ -32171,7 +32269,8 @@
                   "type": "course",
                   "code": "GGR288H5"
                 }
-              ]
+              ],
+              "label": "GGR202H5 or GGR207H5 or GGR208H5 or GGR209H5 or GGR210H5 or GGR252H5 or GGR265H5 or GGR276H5 or GGR278H5 or GGR288H5"
             }
           ]
         },
@@ -32267,7 +32366,8 @@
                   "type": "course",
                   "code": "JGE378H5"
                 }
-              ]
+              ],
+              "label": "ENV311H5 or GGR313H5 or GGR318H5 or GGR319H5 or GGR322H5 or GGR325H5 or GGR329H5 or GGR333H5 or GGR348H5 or GGR349H5 or GGR353H5 or GGR361H5 or GGR362H5 or GGR363H5 or GGR365H5 or GGR370H5 or GGR382H5 or GGR385H5 or GGR387H5 or GGR389H5 or JGE378H5"
             }
           ]
         },
@@ -32287,7 +32387,8 @@
                   "type": "course",
                   "code": "JEG401Y5"
                 }
-              ]
+              ],
+              "label": "GGR417Y5 or JEG401Y5"
             },
             {
               "type": "n_from",
@@ -32321,7 +32422,8 @@
                   "type": "course",
                   "code": "GGR489H5"
                 }
-              ]
+              ],
+              "label": "GGR415H5 or GGR418H5 or GGR419H5 or GGR420H5 or GGR426H5 or GGR461H5 or GGR489H5"
             }
           ]
         },
@@ -33146,7 +33248,8 @@
                   "type": "course",
                   "code": "ANT220H5"
                 }
-              ]
+              ],
+              "label": "ANT202H5 or ANT203H5 or ANT220H5 )"
             },
             {
               "type": "all_of",
@@ -34974,7 +35077,8 @@
                   "type": "course",
                   "code": "PHY399Y5"
                 }
-              ]
+              ],
+              "label": "PHY473H5 or JCP410H5 or JCP422H5 or CPS400Y5 or CPS489Y5 or MAT322H5 or JCB487Y5 or PHY399Y5"
             }
           ]
         }
@@ -36204,7 +36308,8 @@
                   "type": "course",
                   "code": "PHY137H5"
                 }
-              ]
+              ],
+              "label": "BIO152H5 or BIO153H5 or CHM110H5 or CHM120H5 or ERS101H5 or ISP130H5 or ( MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 ) or ( MAT134H5 or MAT136H5 or MAT139H5 or MAT159H5 ) or MAT137Y5 or PHY100H5 or PHY136H5 or PHY137H5"
             }
           ]
         },
@@ -36245,7 +36350,8 @@
                   "type": "course",
                   "code": "GGR227H5"
                 }
-              ]
+              ],
+              "label": "GGR201H5 or GGR214H5 or GGR217H5 or GGR227H5"
             },
             {
               "type": "n_from",
@@ -36279,7 +36385,8 @@
                   "type": "course",
                   "code": "GGR288H5"
                 }
-              ]
+              ],
+              "label": "GGR202H5 or GGR207H5 or GGR208H5 or GGR209H5 or GGR210H5 or GGR265H5 or GGR288H5"
             }
           ]
         },
@@ -36347,7 +36454,8 @@
                   "type": "course",
                   "code": "JGE378H5"
                 }
-              ]
+              ],
+              "label": "GGR304H5 or GGR305H5 or GGR307H5 or GGR309H5 or GGR315H5 or GGR316H5 or GGR317H5 or GGR338H5 or GGR374H5 or GGR377H5 or GGR379H5 or GGR383H5 or GGR384H5 or JGE378H5"
             },
             {
               "type": "n_from",
@@ -36434,7 +36542,8 @@
                   "type": "course",
                   "code": "GGR484H5"
                 }
-              ]
+              ],
+              "label": "GGR404H5 or GGR406H5 or GGR407H5 or GGR479H5 or GGR484H5"
             }
           ]
         },
@@ -37869,7 +37978,8 @@
                   "type": "course",
                   "code": "PSY100Y5"
                 }
-              ]
+              ],
+              "label": "PSY100Y5"
             },
             {
               "type": "n_from",
@@ -37883,7 +37993,8 @@
                   "type": "course",
                   "code": "BIO153H5"
                 }
-              ]
+              ],
+              "label": "BIO152H5 and BIO153H5"
             },
             {
               "type": "n_from",
@@ -37897,7 +38008,8 @@
                   "type": "course",
                   "code": "CHM120H5"
                 }
-              ]
+              ],
+              "label": "CHM110H5 and CHM120H5"
             },
             {
               "type": "n_from",
@@ -37971,7 +38083,8 @@
                   "type": "course",
                   "code": "PSY290H5"
                 }
-              ]
+              ],
+              "label": "all of BIO202H5 and BIO206H5 and BIO207H5 and PSY290H5"
             },
             {
               "type": "n_from",

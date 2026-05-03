@@ -412,12 +412,29 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
     if codes and not any_level_m and not subject_m and not subj_level_m and not subj_at_level_m:
         non_excluding = [c for c in codes if c not in excluding]
         if non_excluding:
-            return {
+            # Try to extract a human-readable label from the text, e.g.:
+            # "At least 0.5 credits in Group 1: Literary Theory/Methods: ENG101H5…"
+            # → label = "Group 1: Literary Theory/Methods"
+            label = None
+            label_m = re.search(
+                r'credit[s]?\s+(?:from|in)\s+(.+?)(?=\s*:\s*[A-Z]{2,4}\d{3}|\s*$)',
+                text, re.I
+            )
+            if label_m:
+                candidate = label_m.group(1).strip().rstrip(':').strip()
+                # Only keep if it looks like a real label (not just "the following")
+                if candidate and not re.match(r'^the\b|^following\b|^any\b', candidate, re.I):
+                    label = candidate
+            node: dict = {
                 "type": "n_from",
                 "n": n,
                 "items": [{"type": "course", "code": c} for c in non_excluding],
-                **({"excluding": excluding} if excluding else {})
             }
+            if label:
+                node["label"] = label
+            if excluding:
+                node["excluding"] = excluding
+            return node
 
     # open pool
     pool: dict = {
