@@ -557,6 +557,67 @@ def _is_note_header(p_tag: Tag) -> bool:
     return bool(NOTE_LABELS.match(strong.get_text(strip=True)))
 
 
+def _parse_total_credits(first_p_text: str) -> tuple:
+    """
+    Extract (total_credits_dict, total_credits_note) from the first paragraph.
+
+    Handles many forms:
+      "7.5 credits are required."
+      "7.0-7.5 credits are required."
+      "At least 7.0 ENG credits, including at least 2.0 credits at the 300 level"
+      "A minimum of 16.5 credits..."
+      "4.0 ITA credits are required including at least 1.0 300/400 level credit."
+      "2.0 FSL credits plus 2.0 FRC credits including 1.0 at the 300 level."
+    """
+    if not first_p_text:
+        return None, None
+
+    # Pattern 1: "At least N.N [SUBJ] credit[s]"
+    at_least_m = re.match(
+        r'(?:at\s+least|minimum\s+of)\s+(\d+\.?\d*)(?:\s*[-–]\s*(\d+\.?\d*))?\s+(?:[A-Z]{2,4}\s+)?credit[s]?\b',
+        first_p_text, re.I
+    )
+    # Pattern 2: "N.N [SUBJ] credit[s] are required"
+    required_m = re.search(
+        r'(\d+\.?\d*)(?:\s*[-–]\s*(\d+\.?\d*))?\s+(?:[A-Z]{2,4}\s+)?(?:total\s+)?credit[s]?\s+are\s+required\b',
+        first_p_text, re.I
+    )
+    # Pattern 2b: "This program has a total of N.N credit[s]"
+    total_of_m = re.search(
+        r'(?:total\s+of|a\s+total\s+of)\s+(\d+\.?\d*)(?:\s*[-–]\s*(\d+\.?\d*))?\s+credit[s]?\b',
+        first_p_text, re.I
+    )
+    # Pattern 3: "N.N [SUBJ] credit[s]" standalone at start of string (first occurrence)
+    standalone_m = re.match(
+        r'(\d+\.?\d*)(?:\s*[-–]\s*(\d+\.?\d*))?\s+(?:[A-Z]{2,4}\s+)?credit[s]?\b',
+        first_p_text, re.I
+    )
+
+    m = at_least_m or required_m or total_of_m or standalone_m
+    if not m:
+        return None, None
+
+    lo = float(m.group(1))
+    hi = float(m.group(2)) if m.lastindex >= 2 and m.group(2) else None
+    total_credits = {"min": lo, "max": hi}
+
+    # Extract a note = everything after "credits are required" or after the main credit clause
+    note = None
+    # Try stripping "N.N credits are required." prefix
+    rest = re.sub(
+        r'^.*?(?:[A-Z]{2,4}\s+)?credit[s]?\s+are\s+required[.,]?\s*',
+        '', first_p_text, flags=re.I, count=1
+    ).strip()
+    if rest and rest != first_p_text:
+        note = rest or None
+    elif at_least_m:
+        # The whole line IS the note (e.g. "At least 7.0 ENG credits, including ...")
+        # store the full line as the note
+        note = first_p_text
+
+    return total_credits, note
+
+
 def parse_completion_html(html: str) -> dict:
     """
     Parse the full completion-requirement HTML into a ProgramRequirements dict.
@@ -573,31 +634,35 @@ def parse_completion_html(html: str) -> dict:
     # ── parse total credits line ──────────────────────────────────────────────
     total_credits = None
     total_credits_note = None
-    # Scan first few <p> tags for the total credits line
-    # Handles: "7.5 credits are required.", "A minimum of 16.5 credits...",
-    # "This program has a total of 17.5 credits.", "Within a BCom degree, 15.0 credits..."
     first_p_text = ""
-    CREDIT_SCAN = re.compile(
-        r'(\d+\.?\d*)(?:\s*[-–]\s*(\d+\.?\d*))?\s+credit[s]?\b', re.I
-    )
+
+    # Also accept <div> containers (some programs wrap content in a div)
+    CREDIT_QUICK = re.compile(r'\d+\.?\d*\s+(?:[A-Z]{2,4}\s+)?credit[s]?\b', re.I)
     for child in children:
-        if not (isinstance(child, Tag) and child.name == "p"):
+        if not isinstance(child, Tag):
             continue
+        if child.name not in ("p", "div"):
+            continue
+        # For div, only use if it contains text (not just nested elements)
+        if child.name == "div":
+            direct_text = "".join(
+                str(n) for n in child.children if isinstance(n, NavigableString)
+            ).strip()
+            if not direct_text:
+                # Check for inner <p>
+                inner_p = child.find("p")
+                if inner_p:
+                    t = inner_p.get_text(" ", strip=True)
+                    if CREDIT_QUICK.search(t):
+                        first_p_text = t
+                        break
+                continue
         t = child.get_text(" ", strip=True)
-        if CREDIT_SCAN.search(t):
+        if CREDIT_QUICK.search(t):
             first_p_text = t
             break
 
-    credits_m = CREDIT_SCAN.search(first_p_text)
-    if credits_m:
-        total_credits = {
-            "min": float(credits_m.group(1)),
-            "max": float(credits_m.group(2)) if credits_m.group(2) else None
-        }
-        # anything after the credit count line is a condition note
-        rest = re.sub(r'^.*?credit[s]?\s+are\s+required\.?\s*', '', first_p_text, flags=re.I)
-        if rest.strip():
-            total_credits_note = rest.strip()
+    total_credits, total_credits_note = _parse_total_credits(first_p_text)
 
     # ── walk children and build groups ───────────────────────────────────────
     groups: list[dict] = []
@@ -658,7 +723,7 @@ def parse_completion_html(html: str) -> dict:
                 continue
 
             # skip the very first total-credits line
-            if credits_m and text == first_p_text:
+            if total_credits and text == first_p_text:
                 continue
 
             # otherwise treat as a requirement item in the current group
@@ -674,8 +739,29 @@ def parse_completion_html(html: str) -> dict:
                 if in_notes:
                     notes.append(li_text)
                     continue
-                item = parse_item(li)
-                add_item(item)
+
+                # Check for a nested sub-list inside this <li>.
+                # If the <li> has a direct child <ul>/<ol>, it represents a grouped
+                # structure (e.g. "3.0 credits distributed among groups 1-6: <ul>…</ul>").
+                # Expand the sub-items rather than collapsing all courses into one n_from.
+                sub_list = li.find(["ul", "ol"], recursive=False)
+                if sub_list:
+                    # Parse each sub-list item individually
+                    sub_items_added = 0
+                    for sub_li in sub_list.find_all("li", recursive=False):
+                        sub_text = sub_li.get_text(" ", strip=True)
+                        if not sub_text:
+                            continue
+                        sub_item = parse_item(sub_li)
+                        add_item(sub_item)
+                        sub_items_added += 1
+                    # If no sub-items were produced, fall back to parsing the whole <li>
+                    if sub_items_added == 0:
+                        item = parse_item(li)
+                        add_item(item)
+                else:
+                    item = parse_item(li)
+                    add_item(item)
 
         # ── <div> fallback (some programs use divs) ───────────────────────────
         elif child.name == "div":
@@ -700,24 +786,6 @@ def parse_completion_html(html: str) -> dict:
             merged[-1]["items"].extend(g["items"])
         else:
             merged.append(g)
-
-    # ── surface total_credits_note level constraints as evaluatable text nodes ──
-    # e.g. "including at least 3.0 credits at the 300 level and 0.5 at the 400 level"
-    # These are real requirements hidden in the header line. Add them to the first group
-    # so they appear in the UI and can be evaluated by Pattern 2 (subject pool text).
-    if total_credits_note and re.search(r'at\s+(?:least|the)\s+\d', total_credits_note, re.I):
-        # Split on "and" to surface each sub-constraint as its own text node
-        parts = re.split(r'\band\b', total_credits_note, flags=re.I)
-        constraint_nodes = []
-        for part in parts:
-            part = part.strip().lstrip(',').strip()
-            if re.search(r'\d+\.?\d*\s+credit', part, re.I):
-                constraint_nodes.append({"type": "text", "text": part, "courses": []})
-        if constraint_nodes:
-            if merged:
-                merged[0]["items"].extend(constraint_nodes)
-            else:
-                merged.append({"label": "", "condition": None, "items": constraint_nodes})
 
     return {
         "total_credits": total_credits,

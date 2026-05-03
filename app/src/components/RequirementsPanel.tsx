@@ -452,6 +452,44 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
   )
 }
 
+// ─── Group Notes Footnote ─────────────────────────────────────────────────────
+// Collapsible footnote block shown at the bottom of a group for pure-info text nodes
+
+interface GroupNotesProps {
+  notes: string[]
+}
+
+function GroupNotes({ notes }: GroupNotesProps) {
+  const [open, setOpen] = useState(false)
+  if (notes.length === 0) return null
+
+  return (
+    <div className="border-t border-gray-100/80 px-3 py-1">
+      <button
+        className="flex items-center gap-1 text-[10px] text-gray-400 hover:text-gray-600 transition-colors w-full text-left"
+        onClick={() => setOpen(o => !o)}
+      >
+        <span
+          className="text-[9px] opacity-60 transition-transform"
+          style={{ transform: open ? 'rotate(180deg)' : 'none' }}
+        >
+          ▼
+        </span>
+        {open ? 'Hide notes' : `${notes.length} note${notes.length > 1 ? 's' : ''}`}
+      </button>
+      {open && (
+        <div className="mt-1 space-y-1 pb-1">
+          {notes.map((n, i) => (
+            <p key={i} className="text-[10px] text-gray-400 italic leading-relaxed">
+              {n}
+            </p>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ─── Group Row ────────────────────────────────────────────────────────────────
 // One numbered requirement group, rendered flat
 
@@ -463,7 +501,14 @@ interface GroupRowProps {
 
 function GroupRow({ index, group, courseMap }: GroupRowProps) {
   const [open, setOpen] = useState(!group.met)
-  const children = group.children ?? []
+  const allChildren = group.children ?? []
+
+  // Separate evaluatable requirement nodes from pure-informational footnote nodes.
+  // A "footnote" is a text node with max=0 and no children — it carries no evaluatable
+  // credit value and should not appear as a checkable row.
+  const reqChildren  = allChildren.filter(c => !(c.max === 0 && (c.children?.length ?? 0) === 0))
+  const noteChildren = allChildren.filter(c =>   c.max === 0 && (c.children?.length ?? 0) === 0)
+  const noteTexts    = noteChildren.map(c => c.label ?? '').filter(Boolean)
 
   useEffect(() => {
     if (group.met) setOpen(false)
@@ -499,21 +544,10 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
         </span>
       </div>
 
-      {/* Inline requirement content */}
-      {open && children.length > 0 && (
+      {/* Inline requirement content — only evaluatable nodes */}
+      {open && reqChildren.length > 0 && (
         <div className="px-3 py-2 space-y-1.5 border-t border-gray-100/80">
-          {children.map((child, i) => {
-            const isHeader = child.max === 0 && (child.children?.length ?? 0) === 0
-
-            if (isHeader) {
-              // Section divider label
-              return (
-                <div key={i} className="text-[11px] text-gray-400 uppercase tracking-wider pt-1">
-                  {child.label}
-                </div>
-              )
-            }
-
+          {reqChildren.map((child, i) => {
             const childCredStr = child.max > 0 ? `${fmtN(child.value)}/${fmtN(child.max)} cr` : null
 
             return (
@@ -536,6 +570,9 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
           })}
         </div>
       )}
+
+      {/* Footnotes — pure informational text nodes (collapsed by default) */}
+      {open && <GroupNotes notes={noteTexts} />}
     </div>
   )
 }

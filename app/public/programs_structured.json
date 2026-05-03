@@ -84,7 +84,7 @@
         "min": 2.0,
         "max": null
       },
-      "total_credits_note": "2.0 credits and one 12-16 week full-time work placement.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -183,8 +183,170 @@
               ]
             },
             {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "CCT433H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO302H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO303H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO313H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO315H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO320H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO321H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO324H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO326H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO333H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO335H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO336H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO343H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO362H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO373Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "GGR202H5"
+                },
+                {
+                  "type": "course",
+                  "code": "GGR209H5"
+                },
+                {
+                  "type": "course",
+                  "code": "GGR252H5"
+                }
+              ]
+            },
+            {
               "type": "course",
-              "code": "CCT433H5"
+              "code": "BIO412H5"
+            },
+            {
+              "type": "course",
+              "code": "ENV430H5"
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ANT357H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT368H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT370H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT464H5"
+                },
+                {
+                  "type": "course",
+                  "code": "EDS220H5"
+                },
+                {
+                  "type": "course",
+                  "code": "EDS250H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG259H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENV311H5"
+                },
+                {
+                  "type": "course",
+                  "code": "GGR265H5"
+                },
+                {
+                  "type": "course",
+                  "code": "GGR385H5"
+                },
+                {
+                  "type": "course",
+                  "code": "GGR415H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JBH471H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PHL273H5"
+                },
+                {
+                  "type": "course",
+                  "code": "SOC304H5"
+                },
+                {
+                  "type": "course",
+                  "code": "SOC356H5"
+                },
+                {
+                  "type": "course",
+                  "code": "VCC207H5"
+                },
+                {
+                  "type": "course",
+                  "code": "VCC236H5"
+                },
+                {
+                  "type": "course",
+                  "code": "VCC410H5"
+                },
+                {
+                  "type": "course",
+                  "code": "WRI375H5"
+                }
+              ]
             }
           ]
         }
@@ -210,7 +372,7 @@
         "min": 2.0,
         "max": null
       },
-      "total_credits_note": "2.0 credits with average grade of 65% or higher are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -1764,7 +1926,7 @@
         "min": 7.5,
         "max": null
       },
-      "total_credits_note": "7.5 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -1900,15 +2062,14 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": ", including at least 3.0 credits at the 300 level and 0.5 credit at the 400-level.",
+      "total_credits_note": "including at least 3.0 credits at the 300 level and 0.5 credit at the 400-level.",
       "groups": [
         {
           "label": "",
           "condition": null,
           "items": [
             {
-              "type": "n_from",
-              "n": 2.0,
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -1917,7 +2078,12 @@
                 {
                   "type": "course",
                   "code": "PHL210Y5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "PHL220H5"
@@ -2049,8 +2215,24 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.0,
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "PHL265H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PHL274H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PHL275H5"
+                }
+              ]
+            },
+            {
+              "type": "one_of",
               "items": [
                 {
                   "type": "course",
@@ -2093,16 +2275,6 @@
             {
               "type": "text",
               "text": "2.5 additional credits in PHL",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 3.0 credits at the 300 level",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "0.5 credit at the 400-level.",
               "courses": []
             }
           ]
@@ -2328,7 +2500,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": "7.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -2531,7 +2703,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": "7.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -2576,8 +2748,7 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.5,
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -2654,7 +2825,12 @@
                 {
                   "type": "course",
                   "code": "JBH471H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS201H5"
@@ -2734,6 +2910,19 @@
                 {
                   "type": "course",
                   "code": "HIS484H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
                 },
                 {
                   "type": "course",
@@ -2833,6 +3022,27 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS494H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS212H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS221H5"
                 },
                 {
@@ -2850,6 +3060,10 @@
                 {
                   "type": "course",
                   "code": "HIS242H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS305H5"
                 },
                 {
                   "type": "course",
@@ -2901,17 +3115,29 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS438H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS475H5"
                 },
                 {
                   "type": "course",
                   "code": "HIS495H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JBH471H5"
                 }
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.5,
+              "type": "text",
+              "text": "Ancient History and Culture: All Classical Civilization (CLA) courses.",
+              "courses": []
+            },
+            {
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -2928,71 +3154,16 @@
                 {
                   "type": "course",
                   "code": "HIS420H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS201H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS204H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS214H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS230H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS282H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS290H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS340H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS341H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS357H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS388H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS396H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS397H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS401H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS480H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS484H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS490H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "code": "HIS201H5"
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS308H5"
@@ -3012,7 +3183,12 @@
                 {
                   "type": "course",
                   "code": "HIS454H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS210H5"
@@ -3047,6 +3223,10 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS321H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS323H5"
                 },
                 {
@@ -3075,6 +3255,14 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS340H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS341H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS342H5"
                 },
                 {
@@ -3083,7 +3271,15 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS357H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS366H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS374H5"
                 },
                 {
                   "type": "course",
@@ -3107,11 +3303,23 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS396H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS397H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS398H5"
                 },
                 {
                   "type": "course",
                   "code": "HIS405H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS409H5"
                 },
                 {
                   "type": "course",
@@ -3124,6 +3332,10 @@
                 {
                   "type": "course",
                   "code": "HIS453H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS454H5"
                 },
                 {
                   "type": "course",
@@ -3143,7 +3355,19 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS480H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS483H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS484H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS490H5"
                 },
                 {
                   "type": "course",
@@ -3204,7 +3428,7 @@
         "min": 8.5,
         "max": null
       },
-      "total_credits_note": ", comprised of 0.5 credit of ISP100H5 and 4.0 credits in FAS courses and 4.0 credits in FAH or VCC or VST courses offered at UTM (see detailed notes below). The following program structure is highly recommended:",
+      "total_credits_note": "comprised of 0.5 credit of ISP100H5 and 4.0 credits in FAS courses and 4.0 credits in FAH or VCC or VST courses offered at UTM (see detailed notes below). The following program structure is highly recommended:",
       "groups": [
         {
           "label": "First Year",
@@ -3561,7 +3785,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": ", fulfilling the following requirements:",
+      "total_credits_note": "fulfilling the following requirements:",
       "groups": [
         {
           "label": "",
@@ -3741,7 +3965,7 @@
         "min": 7.5,
         "max": null
       },
-      "total_credits_note": ", including CIN101H5 , CIN102H5 , ISP100H5 , and 6.0 additional credits from CIN and/or cross-listed courses. Within the 6.0 additional credits:",
+      "total_credits_note": "including CIN101H5 , CIN102H5 , ISP100H5 , and 6.0 additional credits from CIN and/or cross-listed courses. Within the 6.0 additional credits:",
       "groups": [
         {
           "label": "",
@@ -4440,7 +4664,7 @@
         "min": 8.0,
         "max": null
       },
-      "total_credits_note": ", of which 0.5 credit must be a 400-level FRE language teaching and learning course.",
+      "total_credits_note": "of which 0.5 credit must be a 400-level FRE language teaching and learning course.",
       "groups": [
         {
           "label": "First Year",
@@ -4616,7 +4840,7 @@
         "min": 8.0,
         "max": null
       },
-      "total_credits_note": ", of which at least 2.0 must be at the 300-400 level.",
+      "total_credits_note": "of which at least 2.0 must be at the 300-400 level.",
       "groups": [
         {
           "label": "First Year: 3.0 credits",
@@ -5229,7 +5453,7 @@
         "min": 7.5,
         "max": null
       },
-      "total_credits_note": "This program has a total of 7.5 credits.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year (3.0 credits)",
@@ -5678,7 +5902,7 @@
         "min": 6.5,
         "max": 7.0
       },
-      "total_credits_note": "6.5-7.0 credits in Psychology are required, including 2.0 at the 300/400 level.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -5687,11 +5911,6 @@
             {
               "type": "course",
               "code": "PSY100Y5"
-            },
-            {
-              "type": "text",
-              "text": "6.5-7.0 credits in Psychology are required, including 2.0 at the 300/400 level.",
-              "courses": []
             }
           ]
         },
@@ -5776,8 +5995,7 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.5,
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -5858,7 +6076,12 @@
                 {
                   "type": "course",
                   "code": "BIO328H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "PSY312H5"
@@ -5869,7 +6092,15 @@
                 },
                 {
                   "type": "course",
+                  "code": "PSY362H5"
+                },
+                {
+                  "type": "course",
                   "code": "PSY371H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY372H5"
                 },
                 {
                   "type": "course",
@@ -5878,6 +6109,14 @@
                 {
                   "type": "course",
                   "code": "PSY387H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY393H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY397H5"
                 },
                 {
                   "type": "course",
@@ -5894,7 +6133,12 @@
                 {
                   "type": "course",
                   "code": "JLP388H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "PSY310H5"
@@ -5902,6 +6146,10 @@
                 {
                   "type": "course",
                   "code": "PSY311H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY312H5"
                 },
                 {
                   "type": "course",
@@ -5913,7 +6161,15 @@
                 },
                 {
                   "type": "course",
+                  "code": "PSY316H5"
+                },
+                {
+                  "type": "course",
                   "code": "PSY317H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY318H5"
                 },
                 {
                   "type": "course",
@@ -5970,6 +6226,18 @@
                 {
                   "type": "course",
                   "code": "PSY345H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY346H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PSY353H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JLP315H5"
                 }
               ]
             },
@@ -6098,11 +6366,6 @@
               "type": "text",
               "text": "1.5 additional credits in any of the other Italian course categories (excluding those listed above).",
               "courses": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 2.0 credits at the 300/400 level. Some written work",
-              "courses": []
             }
           ]
         }
@@ -6131,7 +6394,7 @@
         "min": 8.0,
         "max": null
       },
-      "total_credits_note": ", of which 0.5 credit must be a 400-level FRE linguistics/literature course.",
+      "total_credits_note": "of which 0.5 credit must be a 400-level FRE linguistics/literature course.",
       "groups": [
         {
           "label": "First Year",
@@ -6996,7 +7259,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": "7.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -7618,7 +7881,7 @@
         "min": 8.0,
         "max": null
       },
-      "total_credits_note": ", of which at least 2.0 must be at the 300-400 level.",
+      "total_credits_note": "of which at least 2.0 must be at the 300-400 level.",
       "groups": [
         {
           "label": "First Year: 2.0 credits",
@@ -8256,7 +8519,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": "7.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -8518,7 +8781,7 @@
         "min": 8.0,
         "max": 8.5
       },
-      "total_credits_note": ", including at least 3.0 at the 300/400 level.",
+      "total_credits_note": "including at least 3.0 at the 300/400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -9120,7 +9383,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 7.0,
         "max": null
       },
       "total_credits_note": "At least 7.0 ENG credits, including at least 2.0 credits at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements, and no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The major also requires the following courses:",
@@ -9225,7 +9488,13 @@
                 {
                   "type": "course",
                   "code": "ENG464H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG271H5"
@@ -9321,7 +9590,13 @@
                 {
                   "type": "course",
                   "code": "ENG434H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG223H5"
@@ -9368,6 +9643,10 @@
                 },
                 {
                   "type": "course",
+                  "code": "ENG326H5"
+                },
+                {
+                  "type": "course",
                   "code": "ENG327H5"
                 },
                 {
@@ -9401,7 +9680,13 @@
                 {
                   "type": "course",
                   "code": "ENG462H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG305H5"
@@ -9485,7 +9770,13 @@
                 {
                   "type": "course",
                   "code": "ENG471H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG215H5"
@@ -9497,6 +9788,14 @@
                 {
                   "type": "course",
                   "code": "ENG255H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG271H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG346H5"
                 },
                 {
                   "type": "course",
@@ -9541,7 +9840,13 @@
                 {
                   "type": "course",
                   "code": "ENG425H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG250Y5"
@@ -9553,6 +9858,10 @@
                 {
                   "type": "course",
                   "code": "ENG347H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG351H5"
                 },
                 {
                   "type": "course",
@@ -9576,6 +9885,14 @@
                 },
                 {
                   "type": "course",
+                  "code": "ENG367H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG379H5"
+                },
+                {
+                  "type": "course",
                   "code": "ENG394H5"
                 },
                 {
@@ -9591,16 +9908,6 @@
                   "code": "ENG436H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "At least 7.0 ENG credits, including at least 2.0 credits at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements,",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The major also requires the following courses:",
-              "courses": []
             }
           ]
         }
@@ -9626,7 +9933,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": "7.0 credits and 6 Field Days are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -10281,29 +10588,13 @@
           "condition": null,
           "items": [
             {
+              "type": "course",
+              "code": "LIN228H5"
+            },
+            {
               "type": "n_from",
               "n": 1.0,
               "items": [
-                {
-                  "type": "course",
-                  "code": "LIN228H5"
-                },
-                {
-                  "type": "course",
-                  "code": "LIN229H5"
-                },
-                {
-                  "type": "course",
-                  "code": "LIN232H5"
-                },
-                {
-                  "type": "course",
-                  "code": "LIN231H5"
-                },
-                {
-                  "type": "course",
-                  "code": "LIN237H5"
-                },
                 {
                   "type": "course",
                   "code": "LIN240H5"
@@ -10337,34 +10628,134 @@
               ]
             },
             {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "LIN318H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN374H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN375H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN376H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN411H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN418H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN419H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN475H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN479H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "JLP384H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN327H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN328H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN329H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN421H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "LIN332H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN476H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "LIN337H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN338H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN441H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "JFL389H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN380H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JFL454H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN456H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN486H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN487H5"
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": "Upper Year requirements: 1.5 credits total to be chosen from 3 different categories below: Method and analysis: LIN318H5 , LIN374H5 , LIN375H5 , LIN376H5 , LIN411H5 , LIN418H5 , LIN419H5 , LIN475H5 , LIN479H5 Phonetics/Phonology: JLP384H5 (formerly LIN327H5 ), LIN328H5 , LIN329H5 , LIN421H5 Syntax and Morphology: LIN332H5 , LIN476H5 Semantics/Pragmatics: LIN337H5 , LIN338H5 , LIN441H5 Language teaching, learning, and acquisition: JFL389H5 , LIN380H5 , JFL454H5 , LIN456H5 , LIN486H5 , LIN487H5 Language contact, and change: LIN357H5 , LIN360H5 , LIN366H5 , JFL369H5 (formerly LIN369H5 ), LIN460H5 , LIN466H5 , LIN469H5 Computational Linguistics: LIN340H5 , LIN341H5 , LIN447H5 Language acquisition and psycholinguistics: JLP315H5 (formerly PSY315H5 ), JLP383H5 (formerly PSY374H5 ), LIN385H5 , JLP388H5 (formerly JFL388H5 ), JLP481H5 , JLP483H5 Sociolinguistics and sociocultural linguistics: JAL351H5 , JAL355H5 , JAL453H5 , LIN458H5",
+              "text": "Language contact, and change: LIN357H5 , LIN360H5 , LIN366H5 , JFL369H5 (formerly LIN369H5 ), LIN460H5 , LIN466H5 , LIN469H5",
               "courses": [
-                "LIN318H5",
-                "LIN374H5",
-                "LIN375H5",
-                "LIN376H5",
-                "LIN411H5",
-                "LIN418H5",
-                "LIN419H5",
-                "LIN475H5",
-                "LIN479H5",
-                "JLP384H5",
-                "LIN327H5",
-                "LIN328H5",
-                "LIN329H5",
-                "LIN421H5",
-                "LIN332H5",
-                "LIN476H5",
-                "LIN337H5",
-                "LIN338H5",
-                "LIN441H5",
-                "JFL389H5",
-                "LIN380H5",
-                "JFL454H5",
-                "LIN456H5",
-                "LIN486H5",
-                "LIN487H5",
                 "LIN357H5",
                 "LIN360H5",
                 "LIN366H5",
@@ -10372,10 +10763,30 @@
                 "LIN369H5",
                 "LIN460H5",
                 "LIN466H5",
-                "LIN469H5",
-                "LIN340H5",
-                "LIN341H5",
-                "LIN447H5",
+                "LIN469H5"
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "LIN340H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN341H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN447H5"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Language acquisition and psycholinguistics: JLP315H5 (formerly PSY315H5 ), JLP383H5 (formerly PSY374H5 ), LIN385H5 , JLP388H5 (formerly JFL388H5 ), JLP481H5 , JLP483H5",
+              "courses": [
                 "JLP315H5",
                 "PSY315H5",
                 "JLP383H5",
@@ -10384,11 +10795,28 @@
                 "JLP388H5",
                 "JFL388H5",
                 "JLP481H5",
-                "JLP483H5",
-                "JAL351H5",
-                "JAL355H5",
-                "JAL453H5",
-                "LIN458H5"
+                "JLP483H5"
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "JAL351H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JAL355H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JAL453H5"
+                },
+                {
+                  "type": "course",
+                  "code": "LIN458H5"
+                }
               ]
             },
             {
@@ -10546,7 +10974,7 @@
         "min": 7.5,
         "max": null
       },
-      "total_credits_note": ", including no more than 1.0 POL credit at the 100 level and at least 2.0 credits at the 300 or 400 level.",
+      "total_credits_note": "including no more than 1.0 POL credit at the 100 level and at least 2.0 credits at the 300 or 400 level.",
       "groups": [
         {
           "label": "",
@@ -10596,66 +11024,252 @@
               ]
             },
             {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "POL203Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL218Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL218H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL219H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL300Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL300H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL302Y5"
+                },
+                {
+                  "type": "all_of",
+                  "items": [
+                    {
+                      "type": "course",
+                      "code": "POL313H5"
+                    },
+                    {
+                      "type": "course",
+                      "code": "POL314H5"
+                    }
+                  ]
+                },
+                {
+                  "type": "course",
+                  "code": "POL302H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL303Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL303H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL304Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL304H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL309Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL332Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL354Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL354H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL360H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL361H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL362H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL373H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL390H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL391H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL438Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL438H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL440Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL440H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL441H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL443Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL443H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL444H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL445H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL446H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL447H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL448H5"
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "POL208Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL209H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL210H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL305H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL307H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL310Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL311H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL312H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL327Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL327H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL340Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL343Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL344H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL345H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL370H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL406H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL407H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL486Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL486H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL487H5"
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": "1.0 credit each (totaling 2.0 credits) from two of the following three fields: Comparative Politics - POL203Y5 or POL203H5 or POL218Y5 or POL218H5 or POL219H5 or POL300Y5 or POL300H5 or POL302Y5 or POL313H5 and POL314H5 or POL302H5 or POL303Y5 or POL303H5 or POL304Y5 or POL304H5 or POL309Y5 or POL332Y5 or POL354Y5 or POL354H5 or POL360H5 or POL361H5 or POL362H5 or POL373H5 or POL390H5 or POL391H5 or POL438Y5 or POL438H5 or POL440Y5 or POL440H5 or POL441H5 or POL443Y5 or POL443H5 or POL444H5 or POL445H5 or POL446H5 or POL447H5 or POL448H5 International Relations - POL208Y5 or POL209H5 or POL210H5 or POL305H5 or POL307H5 or POL310Y5 or POL311H5 or POL312H5 or POL327Y5 or POL327H5 or POL340Y5 or POL343Y5 or POL344H5 or POL345H5 or POL370H5 or POL406H5 or POL407H5 or POL486Y5 or POL486H5 or POL487H5 Public Policy and Public Administration - POL316Y5 or POL317Y5 or POL317H5 or POL318H5 or POL336Y5 or POL346Y5 or POL346H5 or POL347H5 or POL353Y5 or POL355Y5 or POL355H5 or POL368H5 or POL368Y5 or POL369Y5 or POL371H5 or POL372H5 or POL493H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JPE250Y5 or JPE251H5 or JPE252H5",
+              "text": "Public Policy and Public Administration - POL316Y5 or POL317Y5 or POL317H5 or POL318H5 or POL336Y5 or POL346Y5 or POL346H5 or POL347H5 or POL353Y5 or POL355Y5 or POL355H5 or POL368H5 or POL368Y5 or POL369Y5 or POL371H5 or POL372H5 or POL493H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JPE250Y5 or JPE251H5 or JPE252H5",
               "courses": [
-                "POL203Y5",
-                "POL203H5",
-                "POL218Y5",
-                "POL218H5",
-                "POL219H5",
-                "POL300Y5",
-                "POL300H5",
-                "POL302Y5",
-                "POL313H5",
-                "POL314H5",
-                "POL302H5",
-                "POL303Y5",
-                "POL303H5",
-                "POL304Y5",
-                "POL304H5",
-                "POL309Y5",
-                "POL332Y5",
-                "POL354Y5",
-                "POL354H5",
-                "POL360H5",
-                "POL361H5",
-                "POL362H5",
-                "POL373H5",
-                "POL390H5",
-                "POL391H5",
-                "POL438Y5",
-                "POL438H5",
-                "POL440Y5",
-                "POL440H5",
-                "POL441H5",
-                "POL443Y5",
-                "POL443H5",
-                "POL444H5",
-                "POL445H5",
-                "POL446H5",
-                "POL447H5",
-                "POL448H5",
-                "POL208Y5",
-                "POL209H5",
-                "POL210H5",
-                "POL305H5",
-                "POL307H5",
-                "POL310Y5",
-                "POL311H5",
-                "POL312H5",
-                "POL327Y5",
-                "POL327H5",
-                "POL340Y5",
-                "POL343Y5",
-                "POL344H5",
-                "POL345H5",
-                "POL370H5",
-                "POL406H5",
-                "POL407H5",
-                "POL486Y5",
-                "POL486H5",
-                "POL487H5",
                 "POL316Y5",
                 "POL317Y5",
                 "POL317H5",
@@ -10688,11 +11302,6 @@
               "type": "text",
               "text": "2.0 additional POL credits",
               "courses": []
-            },
-            {
-              "type": "text",
-              "text": "at least 2.0 credits at the 300 or 400 level.",
-              "courses": []
             }
           ]
         }
@@ -10718,7 +11327,7 @@
         "min": 8.0,
         "max": null
       },
-      "total_credits_note": "8.0 credits and 8 Field Days are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -11419,11 +12028,6 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 2.0 credits at the 300/400 level.",
-              "courses": []
             }
           ]
         }
@@ -11463,7 +12067,7 @@
         "min": 9.5,
         "max": null
       },
-      "total_credits_note": "This program has a total of 9.5 credits.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -11618,7 +12222,7 @@
         "min": 7.0,
         "max": null
       },
-      "total_credits_note": ", as follows:",
+      "total_credits_note": "as follows:",
       "groups": [
         {
           "label": "First and Second Years",
@@ -12354,11 +12958,6 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 2.0 credits at the 300/400 level. Some written work",
-              "courses": []
             }
           ]
         }
@@ -12404,7 +13003,12 @@
             },
             {
               "type": "text",
-              "text": "2.0 credits, as follows: One course (0.5-1.0 credit) from the Communication and Cultural Competencies course list (below); and Remaining credits to total 2.0 credits (1.0-1.5 credits) from Leadership; Global Issues; and/ or Ethics/ Equity, Diversity, and Inclusion course lists (below).",
+              "text": "One course (0.5-1.0 credit) from the Communication and Cultural Competencies course list (below); and",
+              "courses": []
+            },
+            {
+              "type": "text",
+              "text": "Remaining credits to total 2.0 credits (1.0-1.5 credits) from Leadership; Global Issues; and/ or Ethics/ Equity, Diversity, and Inclusion course lists (below).",
               "courses": []
             },
             {
@@ -12635,7 +13239,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -12869,20 +13473,8 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits in PHL are required, including at least 1.0 credits at the 300/400 level.",
-      "groups": [
-        {
-          "label": "",
-          "condition": null,
-          "items": [
-            {
-              "type": "text",
-              "text": "4.0 credits in PHL are required, including at least 1.0 credits at the 300/400 level.",
-              "courses": []
-            }
-          ]
-        }
-      ],
+      "total_credits_note": null,
+      "groups": [],
       "notes": []
     }
   },
@@ -13056,7 +13648,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -13271,7 +13863,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -13809,7 +14401,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits in FAH are required, including:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -13906,7 +14498,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -13951,8 +14543,7 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.0,
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -14029,7 +14620,12 @@
                 {
                   "type": "course",
                   "code": "JBH471H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS201H5"
@@ -14109,6 +14705,19 @@
                 {
                   "type": "course",
                   "code": "HIS484H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
                 },
                 {
                   "type": "course",
@@ -14208,6 +14817,27 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS494H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS212H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS221H5"
                 },
                 {
@@ -14225,6 +14855,10 @@
                 {
                   "type": "course",
                   "code": "HIS242H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS305H5"
                 },
                 {
                   "type": "course",
@@ -14276,11 +14910,19 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS438H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS475H5"
                 },
                 {
                   "type": "course",
                   "code": "HIS495H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JBH471H5"
                 }
               ]
             },
@@ -14332,7 +14974,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", fulfilling the following requirements:",
+      "total_credits_note": "fulfilling the following requirements:",
       "groups": [
         {
           "label": "",
@@ -14473,8 +15115,11 @@
     "enrolment_requirements_courses": [],
     "note": "",
     "completion": {
-      "total_credits": null,
-      "total_credits_note": null,
+      "total_credits": {
+        "min": 4.0,
+        "max": null
+      },
+      "total_credits_note": "including at least 1.0 credit at the 300 level or above.",
       "groups": [
         {
           "label": "",
@@ -14802,11 +15447,6 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 1.0 credit at the 300/400 level.",
-              "courses": []
             }
           ]
         }
@@ -14834,7 +15474,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits in Sociology are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -14903,28 +15543,12 @@
     "enrolment_requirements_courses": [],
     "note": "",
     "completion": {
-      "total_credits": null,
+      "total_credits": {
+        "min": 2.0,
+        "max": null
+      },
       "total_credits_note": null,
-      "groups": [
-        {
-          "label": "",
-          "condition": null,
-          "items": [
-            {
-              "type": "open_pool",
-              "n": 2.0,
-              "constraint": "at_least",
-              "description": "2.0 FSL credits plus 2.0 FRC credits including 1.0 at the 300 level.",
-              "subject": "FSL",
-              "min_level": 300,
-              "max_level": 399,
-              "specific_courses": [],
-              "excluding": [],
-              "sub_constraints": []
-            }
-          ]
-        }
-      ],
+      "groups": [],
       "notes": []
     }
   },
@@ -14948,7 +15572,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", of which at least 1.0 must be at the 300-400 level.",
+      "total_credits_note": "of which at least 1.0 must be at the 300-400 level.",
       "groups": [
         {
           "label": "First Year: 1.0 credit",
@@ -15244,7 +15868,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits of FRE are required, which must include:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -15314,7 +15938,7 @@
         "min": 4.0,
         "max": 4.5
       },
-      "total_credits_note": ", including 1.0 credit at the 300 level or above.",
+      "total_credits_note": "including 1.0 credit at the 300 level or above.",
       "groups": [
         {
           "label": "First Year",
@@ -15323,11 +15947,6 @@
             {
               "type": "course",
               "code": "PSY100Y5"
-            },
-            {
-              "type": "text",
-              "text": "including 1.0 credit at the 300 level or above.",
-              "courses": []
             }
           ]
         },
@@ -15570,10 +16189,10 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 1.0,
+        "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", including at least 1.0 credit at the 300/400 level.",
+      "total_credits_note": "including at least 1.0 credit at the 300/400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -15582,11 +16201,6 @@
             {
               "type": "course",
               "code": "VCC101H5"
-            },
-            {
-              "type": "text",
-              "text": "including at least 1.0 credit at the 300/400 level.",
-              "courses": []
             }
           ]
         },
@@ -15645,7 +16259,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", with at least 1.0 credit at the 300-400 level.",
+      "total_credits_note": "with at least 1.0 credit at the 300-400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -15654,11 +16268,6 @@
             {
               "type": "course",
               "code": "ENV100Y5"
-            },
-            {
-              "type": "text",
-              "text": "with at least 1.0 credit at the 300-400 level.",
-              "courses": []
             }
           ]
         },
@@ -15754,7 +16363,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, including at least 1.0 credits at the 300/400 level. Students wishing to complete a South Asian Humanities Minor Program must successfully complete 4.0 credits from the courses listed below. These must include courses from two of the following disciplines: History (HIS), History of Religions (RLG) or Women, Gender and Sexuality Studies (WGS) within the Department of Historical Studies, Philosophy (PHL), Political Science (POL), Language Studies (LAN), Visual Studies (VCC, FAH), and Anthropology (ANT).",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -16055,11 +16664,6 @@
                   "code": "WGS345H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "4.0 credits, including at least 1.0 credits at the 300/400 level. Students wishing to complete a South Asian Humanities Minor Program must successfully complete 4.0 credits from the courses listed below. These must include courses from two of the following disciplines: History (HIS), History of Religions (RLG) or Women, Gender",
-              "courses": []
             }
           ]
         }
@@ -16085,7 +16689,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", including at least 1.0 credits at the 300/400 level.",
+      "total_credits_note": "including at least 1.0 credits at the 300/400 level.",
       "groups": [
         {
           "label": "",
@@ -16173,11 +16777,6 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 1.0 credits at the 300/400 level.",
-              "courses": []
             }
           ]
         }
@@ -16216,7 +16815,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits in CHM/ JCP are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -16528,7 +17127,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", with at least 1.0 credit at the 300-400 level.",
+      "total_credits_note": "with at least 1.0 credit at the 300-400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -16537,11 +17136,6 @@
             {
               "type": "course",
               "code": "ENV100Y5"
-            },
-            {
-              "type": "text",
-              "text": "with at least 1.0 credit at the 300-400 level.",
-              "courses": []
             }
           ]
         },
@@ -16579,7 +17173,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -17199,7 +17793,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", of which at least 1.0 must be at the 300-400 level.",
+      "total_credits_note": "of which at least 1.0 must be at the 300-400 level.",
       "groups": [
         {
           "label": "First Year: 1.0 credit",
@@ -17371,7 +17965,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": "4.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -17578,7 +18172,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", including 1.0 credit at the 300/400 level.",
+      "total_credits_note": "including 1.0 credit at the 300/400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -17657,11 +18251,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including 1.0 credit at the 300/400 level.",
-              "courses": []
             }
           ]
         },
@@ -18143,11 +18732,6 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 1.0 credit at the 300/400 level, of which 0.5 credit must be PHL.",
-              "courses": []
             }
           ]
         }
@@ -18170,23 +18754,11 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 1.0,
+        "min": 4.0,
         "max": null
       },
       "total_credits_note": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
-      "groups": [
-        {
-          "label": "",
-          "condition": null,
-          "items": [
-            {
-              "type": "text",
-              "text": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
-              "courses": []
-            }
-          ]
-        }
-      ],
+      "groups": [],
       "notes": []
     }
   },
@@ -18208,7 +18780,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", of which 1.0 credit must be at the 300/400 level:",
+      "total_credits_note": "of which 1.0 credit must be at the 300/400 level:",
       "groups": [
         {
           "label": "",
@@ -18379,11 +18951,6 @@
                   "code": "JGE378H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "of which 1.0 credit must be at the 300/400 level:",
-              "courses": []
             }
           ]
         }
@@ -18734,11 +19301,6 @@
                   "code": "MAT157Y5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including at least 1.5 credits at the 300/400 level. Please note that a number of these courses have MAT pre-requisites",
-              "courses": []
             }
           ]
         },
@@ -18877,28 +19439,11 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 1.0,
+        "min": 4.0,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300 or 400 level and no more than 1.0 credit at the 100 level.",
-      "groups": [
-        {
-          "label": "",
-          "condition": null,
-          "items": [
-            {
-              "type": "text",
-              "text": "including at least 1.0 credit at the 300 or 400 level",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "no more than 1.0 credit at the 100 level.",
-              "courses": []
-            }
-          ]
-        }
-      ],
+      "groups": [],
       "notes": []
     }
   },
@@ -19090,7 +19635,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", including 1.0 credit at the 300/ 400 level)",
+      "total_credits_note": "including 1.0 credit at the 300/ 400 level)",
       "groups": [
         {
           "label": "",
@@ -19186,11 +19731,6 @@
             {
               "type": "text",
               "text": "1.0 additional credit from the ENG and CCT courses listed above",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "including 1.0 credit at the 300/ 400 level)",
               "courses": []
             }
           ]
@@ -19445,7 +19985,7 @@
         "min": 4.0,
         "max": null
       },
-      "total_credits_note": ", as follows:",
+      "total_credits_note": "as follows:",
       "groups": [
         {
           "label": "First and Second Years",
@@ -19677,25 +20217,16 @@
     "enrolment_requirements_courses": [],
     "note": "COURSE CATEGORIES: Italian Cinema - ITA242H5 ; ITA247H5 ; ITA307H5 ; ITA309H5 ; ITA311H5 ; ITA313H5 ; ITA342H5 ; ITA343H5 Italian Culture; Literature - ITA218H5 ; ITA221H5 ; ITA222H5 ; ITA231H5 ; ITA232H5 ; ITA233H5 ; ITA235H5 ; ITA255H5 ; ITA256H5 ; ITA237H5 ; ITA238H5 ; ITA307H5 ; ITA315Y5 ; ITA339Y5 ; ITA370H5 ; ITA371H5 ; ITA390H5 ; ITA391H5 ; ITA392H5 ; ITA415Y5 ; ITA420H5 ; ITA421H5 Italian Experiential Learning - ITA388H5 ; ITA315Y5 ; ITA400Y5 ; ITA415Y5 Italian Language Practice - ITA100Y; ITA102H5 ; ITA200Y5 ; ITA201Y5 ; ITA350H5 ; ITA351H5 ; ITA352H5 ; ITA450H5 Italian Linguistics; Teaching and Learning - ITA227H5 ; ITA272H5 ; ITA373H5 ; ITA374H5 ; ITA375H5 ; ITA437H5 ; ITA451H5",
     "completion": {
-      "total_credits": null,
-      "total_credits_note": null,
+      "total_credits": {
+        "min": 4.0,
+        "max": null
+      },
+      "total_credits_note": "including at least 1.0 300/400 level credit.",
       "groups": [
         {
           "label": "",
           "condition": null,
           "items": [
-            {
-              "type": "open_pool",
-              "n": 4.0,
-              "constraint": "at_least",
-              "description": "4.0 ITA credits are required including at least 1.0 300/400 level credit.",
-              "subject": "ITA",
-              "min_level": 300,
-              "max_level": 400,
-              "specific_courses": [],
-              "excluding": [],
-              "sub_constraints": []
-            },
             {
               "type": "course",
               "code": "ITA100Y5"
@@ -19954,27 +20485,73 @@
           "condition": null,
           "items": [
             {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "MGT220H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT223H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT231H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT232H5"
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 1.0,
+              "items": [
+                {
+                  "type": "course",
+                  "code": "MGT252H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT262H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT353H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT363H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT371H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT422H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT374H5"
+                },
+                {
+                  "type": "course",
+                  "code": "MGT393H5"
+                }
+              ]
+            },
+            {
               "type": "open_pool",
               "n": 1.0,
               "constraint": "at_least",
-              "description": "MGT Requirements (5.0 credits) MGT220H5 and MGT223H5 and MGT231H5 and MGT232H5 1.0 credit from: MGT252H5 or MGT262H5 or MGT353H5 or MGT363H5 or ( MGT371H5 or MGT422H5 ) or MGT374H5 or MGT393H5 1.0 credit in MGT at 200+ level 1.0 credit in MGT at 400 level",
+              "description": "1.0 credit in MGT at 200+ level",
               "subject": "MGT",
               "min_level": 200,
               "max_level": 399,
-              "specific_courses": [
-                "MGT220H5",
-                "MGT223H5",
-                "MGT231H5",
-                "MGT232H5",
-                "MGT252H5",
-                "MGT262H5",
-                "MGT353H5",
-                "MGT363H5",
-                "MGT371H5",
-                "MGT422H5",
-                "MGT374H5",
-                "MGT393H5"
-              ],
+              "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
             },
@@ -19982,58 +20559,198 @@
               "type": "open_pool",
               "n": 1.0,
               "constraint": "at_least",
-              "description": "ECO Requirements (6.0 credits) ECO206Y5 and ECO208Y5 and [ ECO227Y5 or ( STA258H5 and STA260H5 )] ECO375H5 1.0 credit in Economic History from: ECO302H5 or ECO303H5 or ECO322Y5 or ECO323Y5 ECO325H5 and ECO326H5 0.5 credit in ECO at the 300+ level",
-              "subject": "ECO",
-              "min_level": 300,
-              "max_level": 399,
-              "specific_courses": [
-                "ECO206Y5",
-                "ECO208Y5",
-                "ECO227Y5",
-                "STA258H5",
-                "STA260H5",
-                "ECO375H5",
-                "ECO302H5",
-                "ECO303H5",
-                "ECO322Y5",
-                "ECO323Y5",
-                "ECO325H5",
-                "ECO326H5"
-              ],
+              "description": "1.0 credit in MGT at 400 level",
+              "subject": "MGT",
+              "min_level": null,
+              "max_level": null,
+              "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
             },
             {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO206Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO208Y5"
+                },
+                {
+                  "type": "one_of",
+                  "items": [
+                    {
+                      "type": "course",
+                      "code": "ECO227Y5"
+                    },
+                    {
+                      "type": "all_of",
+                      "items": [
+                        {
+                          "type": "course",
+                          "code": "STA258H5"
+                        },
+                        {
+                          "type": "course",
+                          "code": "STA260H5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "code": "ECO375H5"
+            },
+            {
+              "type": "n_from",
+              "n": 1.0,
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO302H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO303H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO322Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO323Y5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO325H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO326H5"
+                }
+              ]
+            },
+            {
+              "type": "open_pool",
+              "n": 0.5,
+              "constraint": "at_least",
+              "description": "0.5 credit in ECO at the 300+ level",
+              "subject": "ECO",
+              "min_level": 300,
+              "max_level": 399,
+              "specific_courses": [],
+              "excluding": [],
+              "sub_constraints": []
+            },
+            {
+              "type": "course",
+              "code": "ANT204H5"
+            },
+            {
+              "type": "course",
+              "code": "CLA201H5"
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO302H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO303H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO320H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO320Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO321H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO335H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO336H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO343H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO344H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO373Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO399Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO433H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO435H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO456H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO463H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO475H5"
+                }
+              ]
+            },
+            {
               "type": "text",
-              "text": "Writing Component (1.0 credit). 1.0 credit chosen from the following: ANT204H5 any CLA course(s), (excluding CLA201H5 ) ECO302H5 or ECO303H5 or ECO320H5 or ECO320Y5 or ECO321H5 or ECO335H5 or ECO336H5 or ECO343H5 or ECO344H5 or ECO373Y5 or ECO399Y5 or ECO433H5 or ECO435H5 or ECO456H5 or ECO463H5 or ECO475H5 (only one ECO course from the list may be taken) any PHL course(s), (excluding PHL245H5 or PHL246H5 or PHL247H5 or PHL344H5 or PHL345H5 or PHL346H5 or PHL347H5 ) any SOC course(s), (excluding SOC300Y5 ) any course(s) from ENG or FAH or HIS or HPS or LIN or POL or RLG or WRI",
+              "text": "any PHL course(s), (excluding PHL245H5 or PHL246H5 or PHL247H5 or PHL344H5 or PHL345H5 or PHL346H5 or PHL347H5 )",
               "courses": [
-                "ANT204H5",
-                "CLA201H5",
-                "ECO302H5",
-                "ECO303H5",
-                "ECO320H5",
-                "ECO320Y5",
-                "ECO321H5",
-                "ECO335H5",
-                "ECO336H5",
-                "ECO343H5",
-                "ECO344H5",
-                "ECO373Y5",
-                "ECO399Y5",
-                "ECO433H5",
-                "ECO435H5",
-                "ECO456H5",
-                "ECO463H5",
-                "ECO475H5",
                 "PHL245H5",
                 "PHL246H5",
                 "PHL247H5",
                 "PHL344H5",
                 "PHL345H5",
                 "PHL346H5",
-                "PHL347H5",
-                "SOC300Y5"
+                "PHL347H5"
               ]
+            },
+            {
+              "type": "course",
+              "code": "SOC300Y5"
+            },
+            {
+              "type": "text",
+              "text": "any course(s) from ENG or FAH or HIS or HPS or LIN or POL or RLG or WRI",
+              "courses": []
             }
           ]
         }
@@ -20059,7 +20776,7 @@
         "min": 10.0,
         "max": null
       },
-      "total_credits_note": "10.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -20147,15 +20864,14 @@
         "min": 10.0,
         "max": null
       },
-      "total_credits_note": "10.0 credits in PHL are required, including at least 3.0 credits at the 300 level and at least 1.0 credits at the 400 level.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
           "condition": null,
           "items": [
             {
-              "type": "n_from",
-              "n": 3.0,
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -20164,7 +20880,12 @@
                 {
                   "type": "course",
                   "code": "PHL210Y5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "PHL220H5"
@@ -20228,13 +20949,12 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.0,
+              "type": "course",
+              "code": "PHL245H5"
+            },
+            {
+              "type": "one_of",
               "items": [
-                {
-                  "type": "course",
-                  "code": "PHL245H5"
-                },
                 {
                   "type": "course",
                   "code": "PHL246H5"
@@ -20324,8 +21044,20 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.0,
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "PHL265H5"
+                },
+                {
+                  "type": "course",
+                  "code": "PHL275H5"
+                }
+              ]
+            },
+            {
+              "type": "one_of",
               "items": [
                 {
                   "type": "course",
@@ -20365,16 +21097,6 @@
               "type": "text",
               "text": "3.5 additional credits in PHL",
               "courses": []
-            },
-            {
-              "type": "text",
-              "text": "10.0 credits in PHL are required, including at least 3.0 credits at the 300 level",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "at least 1.0 credits at the 400 level.",
-              "courses": []
             }
           ]
         }
@@ -20405,7 +21127,7 @@
         "min": 14.5,
         "max": null
       },
-      "total_credits_note": ", including at least 5.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+      "total_credits_note": "including at least 5.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -20535,11 +21257,6 @@
                   "code": "MAT134H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including at least 5.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
-              "courses": []
             }
           ]
         },
@@ -21097,7 +21814,7 @@
         "min": 10.0,
         "max": null
       },
-      "total_credits_note": "10.0 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -21142,8 +21859,7 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.5,
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -21220,7 +21936,12 @@
                 {
                   "type": "course",
                   "code": "JBH471H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS201H5"
@@ -21300,6 +22021,19 @@
                 {
                   "type": "course",
                   "code": "HIS484H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
                 },
                 {
                   "type": "course",
@@ -21399,6 +22133,27 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS494H5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS212H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS221H5"
                 },
                 {
@@ -21416,6 +22171,10 @@
                 {
                   "type": "course",
                   "code": "HIS242H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS305H5"
                 },
                 {
                   "type": "course",
@@ -21467,17 +22226,29 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS438H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS475H5"
                 },
                 {
                   "type": "course",
                   "code": "HIS495H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JBH471H5"
                 }
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.5,
+              "type": "text",
+              "text": "Ancient History and Culture: All Classical Civilization (CLA) courses.",
+              "courses": []
+            },
+            {
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -21494,71 +22265,16 @@
                 {
                   "type": "course",
                   "code": "HIS420H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS201H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS204H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS214H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS230H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS282H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS290H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS340H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS341H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS357H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS388H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS396H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS397H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS401H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS480H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS484H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS490H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "code": "HIS201H5"
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS308H5"
@@ -21578,7 +22294,12 @@
                 {
                   "type": "course",
                   "code": "HIS454H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "HIS210H5"
@@ -21613,6 +22334,10 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS321H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS323H5"
                 },
                 {
@@ -21641,6 +22366,14 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS340H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS341H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS342H5"
                 },
                 {
@@ -21649,7 +22382,15 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS357H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS366H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS374H5"
                 },
                 {
                   "type": "course",
@@ -21673,11 +22414,23 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS396H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS397H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS398H5"
                 },
                 {
                   "type": "course",
                   "code": "HIS405H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS409H5"
                 },
                 {
                   "type": "course",
@@ -21690,6 +22443,10 @@
                 {
                   "type": "course",
                   "code": "HIS453H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS454H5"
                 },
                 {
                   "type": "course",
@@ -21709,7 +22466,19 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS480H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS483H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS484H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS490H5"
                 },
                 {
                   "type": "course",
@@ -21775,7 +22544,7 @@
         "min": 12.5,
         "max": null
       },
-      "total_credits_note": ", comprised of 0.5 credit of ISP100H5 and 7.0 credits in FAS and 5.0 credits in FAH or VCC or VST offered at UTM (see detailed notes below). The following program structure is highly recommended:",
+      "total_credits_note": "comprised of 0.5 credit of ISP100H5 and 7.0 credits in FAS and 5.0 credits in FAH or VCC or VST offered at UTM (see detailed notes below). The following program structure is highly recommended:",
       "groups": [
         {
           "label": "First Year",
@@ -22020,7 +22789,7 @@
         "min": 10.5,
         "max": null
       },
-      "total_credits_note": ", including 5.0 credits at the 300/400 level",
+      "total_credits_note": "including 5.0 credits at the 300/400 level",
       "groups": [
         {
           "label": "First Year",
@@ -22046,11 +22815,6 @@
             {
               "type": "course",
               "code": "ISP100H5"
-            },
-            {
-              "type": "text",
-              "text": "including 5.0 credits at the 300/400 level",
-              "courses": []
             }
           ]
         },
@@ -22179,7 +22943,10 @@
     ],
     "note": "",
     "completion": {
-      "total_credits": null,
+      "total_credits": {
+        "min": 14.5,
+        "max": null
+      },
       "total_credits_note": null,
       "groups": [
         {
@@ -22766,11 +23533,6 @@
               "excluding": [
                 "ITA100Y5"
               ]
-            },
-            {
-              "type": "text",
-              "text": "1.0 credit at the 400 level (either in French or in Italian).",
-              "courses": []
             }
           ]
         }
@@ -23307,7 +24069,7 @@
         "min": 14.5,
         "max": null
       },
-      "total_credits_note": ", including at least 6.0 credits at the 300/400 level, of which 1.0 credits must be at the 400 level.",
+      "total_credits_note": "including at least 6.0 credits at the 300/400 level, of which 1.0 credits must be at the 400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -23424,11 +24186,6 @@
                   "code": "WRI307H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including at least 6.0 credits at the 300/400 level, of which 1.0 credits must be at the 400 level.",
-              "courses": []
             }
           ]
         }
@@ -24295,7 +25052,7 @@
         "min": 14.5,
         "max": null
       },
-      "total_credits_note": "14.5 credits, meeting the following requirements:",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "",
@@ -24349,8 +25106,7 @@
               ]
             },
             {
-              "type": "n_from",
-              "n": 1.0,
+              "type": "one_of",
               "items": [
                 {
                   "type": "course",
@@ -24427,86 +25183,45 @@
                 {
                   "type": "course",
                   "code": "JBH471H5"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Asia and the Middle East: HIS201H5 or HIS204H5 or HIS282H5 or HIS284H5 or HIS285H5 or HIS378H5 or HIS382H5 or HIS384H5 or HIS385H5 or HIS386H5 or HIS388H5 or HIS389H5 or HIS396H5 or HIS397H5 or HIS398H5 or HIS431H5 or HIS448H5 or HIS480H5 or HIS483H5 or HIS484H5 .",
+              "courses": [
+                "HIS201H5",
+                "HIS204H5",
+                "HIS282H5",
+                "HIS284H5",
+                "HIS285H5",
+                "HIS378H5",
+                "HIS382H5",
+                "HIS384H5",
+                "HIS385H5",
+                "HIS386H5",
+                "HIS388H5",
+                "HIS389H5",
+                "HIS396H5",
+                "HIS397H5",
+                "HIS398H5",
+                "HIS431H5",
+                "HIS448H5",
+                "HIS480H5",
+                "HIS483H5",
+                "HIS484H5"
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
                 },
                 {
                   "type": "course",
-                  "code": "HIS201H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS204H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS282H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS284H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS285H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS378H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS382H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS384H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS385H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS386H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS388H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS389H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS396H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS397H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS398H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS431H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS448H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS480H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS483H5"
-                },
-                {
-                  "type": "course",
-                  "code": "HIS484H5"
+                  "code": "HIS214H5"
                 },
                 {
                   "type": "course",
@@ -24606,6 +25321,27 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS494H5"
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "HIS203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS212H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS214H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS221H5"
                 },
                 {
@@ -24623,6 +25359,10 @@
                 {
                   "type": "course",
                   "code": "HIS242H5"
+                },
+                {
+                  "type": "course",
+                  "code": "HIS305H5"
                 },
                 {
                   "type": "course",
@@ -24674,11 +25414,19 @@
                 },
                 {
                   "type": "course",
+                  "code": "HIS438H5"
+                },
+                {
+                  "type": "course",
                   "code": "HIS475H5"
                 },
                 {
                   "type": "course",
                   "code": "HIS495H5"
+                },
+                {
+                  "type": "course",
+                  "code": "JBH471H5"
                 }
               ]
             },
@@ -24744,7 +25492,7 @@
         "min": 12.0,
         "max": null
       },
-      "total_credits_note": ", of which at least 4.0 credits must be at the 300-400 level, including at least 1.0 credit at the 400 level.",
+      "total_credits_note": "of which at least 4.0 credits must be at the 300-400 level, including at least 1.0 credit at the 400 level.",
       "groups": [
         {
           "label": "First Year: 4.0 credits",
@@ -24855,11 +25603,6 @@
             {
               "type": "text",
               "text": "Be sure to look ahead and plan to complete the prerequisites for any upper-level courses that are of interest to you.",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "of which at least 4.0 credits must be at the 300-400 level, including at least 1.0 credit at the 400 level.",
               "courses": []
             }
           ]
@@ -25402,11 +26145,6 @@
               "type": "text",
               "text": "French 7.0 credits are required.",
               "courses": []
-            },
-            {
-              "type": "text",
-              "text": "2.0 in Italian), 1.0 credit at the 400 level (either in French or Italian).",
-              "courses": []
             }
           ]
         },
@@ -25600,7 +26338,7 @@
         "min": 15.0,
         "max": null
       },
-      "total_credits_note": ", including at least 7.0 credits at the 300/400 level, of which 1.5 must be at the 400 level.",
+      "total_credits_note": "including at least 7.0 credits at the 300/400 level, of which 1.5 must be at the 400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -25622,11 +26360,6 @@
                   "code": "MAT134H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including at least 7.0 credits at the 300/400 level, of which 1.5 must be at the 400 level.",
-              "courses": []
             }
           ]
         },
@@ -26476,7 +27209,7 @@
         "min": 13.0,
         "max": null
       },
-      "total_credits_note": ", including at least 1.0 credit of VCC at the 400 level.",
+      "total_credits_note": "including at least 1.0 credit of VCC at the 400 level.",
       "groups": [
         {
           "label": "",
@@ -26485,11 +27218,6 @@
             {
               "type": "text",
               "text": "Specialists in VCC are strongly urged to structure their studies as follows:",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "including at least 1.0 credit of VCC at the 400 level.",
               "courses": []
             }
           ]
@@ -27159,7 +27887,7 @@
         "min": 10.0,
         "max": null
       },
-      "total_credits_note": ", including at least 5.0 300/400 level credits in literature/linguistics, 1.0 of which must be a 400 level credit.",
+      "total_credits_note": "including at least 5.0 300/400 level credits in literature/linguistics, 1.0 of which must be a 400 level credit.",
       "groups": [
         {
           "label": "First Year",
@@ -28455,7 +29183,7 @@
         "min": 14.5,
         "max": null
       },
-      "total_credits_note": ", of which at least 1.0 must be at the 400 level.",
+      "total_credits_note": "of which at least 1.0 must be at the 400 level.",
       "groups": [
         {
           "label": "",
@@ -28487,6 +29215,101 @@
                   "code": "ECO100Y5"
                 }
               ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "MAT133Y5"
+                },
+                {
+                  "type": "all_of",
+                  "items": [
+                    {
+                      "type": "course",
+                      "code": "MAT135H5"
+                    },
+                    {
+                      "type": "course",
+                      "code": "MAT136H5"
+                    }
+                  ]
+                },
+                {
+                  "type": "all_of",
+                  "items": [
+                    {
+                      "type": "course",
+                      "code": "MAT132H5"
+                    },
+                    {
+                      "type": "course",
+                      "code": "MAT134H5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO200Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO206Y5"
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO202Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO208Y5"
+                }
+              ]
+            },
+            {
+              "type": "one_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "ECO220Y5"
+                },
+                {
+                  "type": "course",
+                  "code": "ECO227Y5"
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
+                {
+                  "type": "course",
+                  "code": "POL209H5"
+                },
+                {
+                  "type": "course",
+                  "code": "POL210H5"
+                }
+              ]
+            },
+            {
+              "type": "course",
+              "code": "ECO364H5"
+            },
+            {
+              "type": "course",
+              "code": "ECO365H5"
             },
             {
               "type": "text",
@@ -29177,7 +30000,7 @@
         "min": 12.0,
         "max": null
       },
-      "total_credits_note": ", of which at least 4.0 must be at the 300-400 level, including at least 1.0 at the 400 level.",
+      "total_credits_note": "of which at least 4.0 must be at the 300-400 level, including at least 1.0 at the 400 level.",
       "groups": [
         {
           "label": "First Year: 3.0 credits",
@@ -29873,7 +30696,7 @@
         "min": 14.5,
         "max": 15.0
       },
-      "total_credits_note": ", including at least 5.0 at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+      "total_credits_note": "including at least 5.0 at the 300/400 level, of which 1.0 credit must be at the 400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -29895,11 +30718,6 @@
                   "code": "ENV100Y5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including at least 5.0 at the 300/400 level, of which 1.0 credit must be at the 400 level.",
-              "courses": []
             }
           ]
         },
@@ -30731,7 +31549,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 3.0,
+        "min": 10.0,
         "max": null
       },
       "total_credits_note": "At least 10.0 ENG credits, including at least 3.0 credits at the 300 level and 1.0 credit at the 400 level. Only 1.0 credit at the 100 level may be counted towards program requirements, and no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The specialist also requires the following courses:",
@@ -30832,7 +31650,13 @@
                 {
                   "type": "course",
                   "code": "ENG464H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 1.0,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG271H5"
@@ -30928,7 +31752,13 @@
                 {
                   "type": "course",
                   "code": "ENG434H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 1.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG223H5"
@@ -30975,6 +31805,10 @@
                 },
                 {
                   "type": "course",
+                  "code": "ENG326H5"
+                },
+                {
+                  "type": "course",
                   "code": "ENG327H5"
                 },
                 {
@@ -31008,7 +31842,13 @@
                 {
                   "type": "course",
                   "code": "ENG462H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 1.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG305H5"
@@ -31092,7 +31932,13 @@
                 {
                   "type": "course",
                   "code": "ENG471H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG215H5"
@@ -31104,6 +31950,14 @@
                 {
                   "type": "course",
                   "code": "ENG255H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG271H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG346H5"
                 },
                 {
                   "type": "course",
@@ -31148,7 +32002,13 @@
                 {
                   "type": "course",
                   "code": "ENG425H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 0.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "ENG250Y5"
@@ -31160,6 +32020,10 @@
                 {
                   "type": "course",
                   "code": "ENG347H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG351H5"
                 },
                 {
                   "type": "course",
@@ -31183,6 +32047,14 @@
                 },
                 {
                   "type": "course",
+                  "code": "ENG367H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ENG379H5"
+                },
+                {
+                  "type": "course",
                   "code": "ENG394H5"
                 },
                 {
@@ -31198,21 +32070,6 @@
                   "code": "ENG436H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "At least 10.0 ENG credits, including at least 3.0 credits at the 300 level",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "1.0 credit at the 400 level. Only 1.0 credit at the 100 level may be counted towards program requirements,",
-              "courses": []
-            },
-            {
-              "type": "text",
-              "text": "no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The specialist also requires the following courses:",
-              "courses": []
             }
           ]
         }
@@ -31241,7 +32098,7 @@
         "min": 10.0,
         "max": null
       },
-      "total_credits_note": "10.0 credits and 6 Field Days are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -31885,7 +32742,7 @@
         "min": 17.5,
         "max": null
       },
-      "total_credits_note": "This program has a total of 17.5 credits.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year (3.0 credits",
@@ -32858,7 +33715,7 @@
         "min": 15.5,
         "max": null
       },
-      "total_credits_note": "This program has a total of 15.5 credits.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -33086,7 +33943,7 @@
         "min": 13.0,
         "max": 15.0
       },
-      "total_credits_note": ", including at least 5.0 300/400-level credits of which 1.5 must be at the 400-level.",
+      "total_credits_note": "including at least 5.0 300/400-level credits of which 1.5 must be at the 400-level.",
       "groups": [
         {
           "label": "First Year",
@@ -33545,7 +34402,13 @@
                 {
                   "type": "course",
                   "code": "ANT462H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 2.5,
+              "items": [
                 {
                   "type": "course",
                   "code": "SOC205H5"
@@ -33653,7 +34516,13 @@
                 {
                   "type": "course",
                   "code": "SOC457H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "n_from",
+              "n": 2.0,
+              "items": [
                 {
                   "type": "course",
                   "code": "BIO202H5"
@@ -33725,6 +34594,30 @@
                 {
                   "type": "course",
                   "code": "BIO477H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT202H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT203H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT331H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT332H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT333H5"
+                },
+                {
+                  "type": "course",
+                  "code": "ANT334H5"
                 }
               ]
             },
@@ -34699,11 +35592,6 @@
               "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
-            },
-            {
-              "type": "text",
-              "text": "4.0 credits at the 300/400 level, of which 2.0 credits must be at the 400 level.",
-              "courses": []
             }
           ]
         }
@@ -34744,7 +35632,7 @@
         "min": 16.0,
         "max": null
       },
-      "total_credits_note": "This program has a total of 16.0 credits",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year (3.0 credits)",
@@ -35221,7 +36109,7 @@
         "min": 12.0,
         "max": null
       },
-      "total_credits_note": "12.0 credits and 8 Field Days are required.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -35608,7 +36496,7 @@
         "min": 13.0,
         "max": null
       },
-      "total_credits_note": "This program has a total of 13.0 credits.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year (3.0 credits)",
@@ -35962,7 +36850,7 @@
         "min": 13.5,
         "max": null
       },
-      "total_credits_note": ", including at least 6.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+      "total_credits_note": "including at least 6.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
       "groups": [
         {
           "label": "First Year",
@@ -36096,11 +36984,6 @@
                   "code": "MAT134H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "including at least 6.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
-              "courses": []
             }
           ]
         },
@@ -36446,7 +37329,7 @@
         "min": 16.0,
         "max": null
       },
-      "total_credits_note": "This program has a total of 16.0 credits.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year (3.0 credits)",
@@ -36760,7 +37643,7 @@
         "min": 14.0,
         "max": null
       },
-      "total_credits_note": "This program has a total of 14.0 credits",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -37888,7 +38771,7 @@
         "min": 13.0,
         "max": null
       },
-      "total_credits_note": "13.0 credits, including at least 1.0 credit at the 400 level.",
+      "total_credits_note": null,
       "groups": [
         {
           "label": "First Year",
@@ -37917,7 +38800,7 @@
               ]
             },
             {
-              "type": "one_of",
+              "type": "all_of",
               "items": [
                 {
                   "type": "course",
@@ -37926,7 +38809,12 @@
                 {
                   "type": "course",
                   "code": "MAT233H5"
-                },
+                }
+              ]
+            },
+            {
+              "type": "all_of",
+              "items": [
                 {
                   "type": "course",
                   "code": "MAT135H5"
@@ -37953,11 +38841,6 @@
                   "code": "MAT136H5"
                 }
               ]
-            },
-            {
-              "type": "text",
-              "text": "13.0 credits, including at least 1.0 credit at the 400 level.",
-              "courses": []
             }
           ]
         },
