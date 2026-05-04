@@ -130,7 +130,7 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
               />
               {mode === 'signup' && (
                 <p className="text-[11px] text-gray-400 leading-snug">
-                  Doesn't have to be a real email — use anything you like! Just know that if you ever forget your password, we'll send a reset link here. Your call 😊
+                  Doesn't have to be a real email — use anything you like. Just know that if you ever forget your password, we'll send a reset link here.
                 </p>
               )}
             </div>
