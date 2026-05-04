@@ -51,6 +51,8 @@
 
 | Who | What | PR / Commit |
 |-----|------|-------------|
+| Collaborator | BUG-001: exclusion check ignores completed semesters | 0ef5afe |
+| Collaborator | BUG-002: SG override only bypasses offerings check | 0ef5afe |
 | Taehyeon | Duplicate course detection (red card + credit dedup) | 869595e |
 | Taehyeon | Comprehensive program parser audit (164 programs) | e1dabdd |
 | Taehyeon | New-user import button highlight | 9abb8ea |
@@ -61,18 +63,6 @@
 ## Backlog (prioritized)
 
 ### Bugs
-
-**BUG-001 — Exclusion logic flags completed courses** `High`
-- **File:** `app/src/utils/prereq.ts` → `getCourseStatus` (line ~211), `getIssueReasons`
-- **Root cause:** `codesAnywhere` is a flat set of all semesters including past ones. Exclusion check fires even when the conflicting course is in a completed semester.
-- **Fix:** Only flag if the excluded course is in a future or current (non-past) semester.
-- **Reproduce:** Put CHM110H5 in a past semester. Add its exclusion partner in a future semester — card incorrectly shows red.
-
-**BUG-002 — SG override suppresses all issue checks** `High`
-- **File:** `app/src/utils/prereq.ts` → `getCourseStatus` (line 187), `getIssueReasons` (line 236)
-- **Root cause:** `if (overrides?.has(__sg__${code})) return 'no-issues'` short-circuits everything — prereqs, exclusions, offerings all skipped.
-- **Fix:** SG should only bypass the offerings/season check. Prereq and exclusion checks should still apply.
-- **Reproduce:** Mark a course SG, place it in a semester where it has an unmet prereq — card shows green incorrectly.
 
 **BUG-003 — Grade-conditioned prerequisites not parsed** `High`
 - **File:** `scraper/scrape_courses.py` (prereq parser)
