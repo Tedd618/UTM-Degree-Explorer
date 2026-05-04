@@ -39,16 +39,20 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
         setResetSent(true)
 
       } else if (mode === 'login') {
+        const raw = email.trim()
+        const normalized = raw.includes('@') ? raw : `${raw}@utm.local`
         const { error } = await supabase.auth.signInWithPassword({
-          email: email.trim(),
+          email: normalized,
           password,
         })
         if (error) throw error
 
       } else {
-        // signup
+        // signup — normalize to valid email format for Supabase
+        const raw = email.trim()
+        const normalized = raw.includes('@') ? raw : `${raw}@utm.local`
         const { error } = await supabase.auth.signUp({
-          email: email.trim(),
+          email: normalized,
           password,
         })
         if (error) throw error
@@ -162,7 +166,7 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
               />
               {mode === 'signup' && (
                 <p className="text-[11px] text-gray-400 leading-snug">
-                  Doesn't have to be a real email — use anything you like. Just know that if you ever forget your password, we'll send a reset link here.
+                  Use any identifier you like — a real email, a username, anything. If you use a real email, we can send you a password reset link if you ever forget it.
                 </p>
               )}
             </div>
