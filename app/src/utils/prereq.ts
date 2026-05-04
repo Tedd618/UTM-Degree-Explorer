@@ -183,8 +183,7 @@ export function getCourseStatus(
   if (isSemPast(semester))    return 'completed'
   if (isSemCurrent(semester)) return 'in-progress'
 
-  // SG (H1) course — treat as offered everywhere with no prereq data
-  if (overrides?.has(`__sg__${code}`)) return 'no-issues'
+  const isSG = overrides?.has(`__sg__${code}`)
 
   const course = courseMap.get(code)
   if (!course) return 'unknown'
@@ -213,7 +212,8 @@ export function getCourseStatus(
     }
   }
 
-  if (!hasIssues && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+  // SG override: course is treated as offered in any season
+  if (!hasIssues && !isSG && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
     hasIssues = true
   }
 
@@ -233,7 +233,7 @@ export function getIssueReasons(
   courseMap: Map<string, Course>,
   overrides?: Set<string>,
 ): string[] {
-  if (overrides?.has(`__sg__${code}`)) return []
+  const isSG = overrides?.has(`__sg__${code}`)
   if (overrides?.has(`__issue__${semester.id}__${code}`)) return []
 
   const course = courseMap.get(code)
@@ -264,7 +264,8 @@ export function getIssueReasons(
     if (codesNonPast.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
   }
 
-  if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+  // SG override: course is treated as offered in any season
+  if (!isSG && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
     reasons.push(`Not offered in ${semester.season}`)
   }
 
