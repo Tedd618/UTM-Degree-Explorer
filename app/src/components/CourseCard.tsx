@@ -34,9 +34,7 @@ interface Props {
   issueReasons: string[]
   course: Course | undefined
   onRemove: () => void
-  isSg?: boolean
   hasIssueOverride?: boolean
-  onToggleSg?: () => void
   onToggleIssueOverride?: () => void
 }
 
@@ -50,7 +48,7 @@ function InfoRow({ label, children }: InfoRowProps) {
   )
 }
 
-export default function CourseCard({ code, status, issueReasons, course, onRemove, isSg, hasIssueOverride, onToggleSg, onToggleIssueOverride }: Props) {
+export default function CourseCard({ code, status, issueReasons, course, onRemove, hasIssueOverride, onToggleIssueOverride }: Props) {
   const [showTip, setShowTip] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
 
@@ -87,10 +85,7 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1 min-w-0">
             <p className="text-xs font-semibold text-gray-800 leading-tight truncate">{code}</p>
-            {isSg && (
-              <span className="shrink-0 text-[8px] font-bold text-sky-600 bg-sky-50 border border-sky-200 rounded px-0.5 leading-tight">SG</span>
-            )}
-            {hasIssueOverride && !isSg && (
+            {hasIssueOverride && (
               <span className="shrink-0 text-[8px] font-bold text-violet-500 leading-none" title="Issues overridden">✓</span>
             )}
             {issueReasons.length > 0 && (
@@ -99,9 +94,6 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
           </div>
           {course && (
             <p className="text-[10px] text-gray-400 leading-tight truncate mt-0.5">{course.title}</p>
-          )}
-          {!course && isSg && (
-            <p className="text-[10px] text-sky-400 leading-tight truncate mt-0.5">St. George course</p>
           )}
         </div>
 
@@ -116,17 +108,6 @@ export default function CourseCard({ code, status, issueReasons, course, onRemov
                 ${hasIssueOverride ? 'bg-violet-100 text-violet-600 hover:bg-violet-200' : 'text-gray-400 hover:bg-violet-50 hover:text-violet-500'}`}
             >
               ✓
-            </button>
-          )}
-          {/* SG toggle */}
-          {onToggleSg && (
-            <button
-              onClick={e => { e.stopPropagation(); onToggleSg() }}
-              title={isSg ? 'Remove SG mark' : 'Mark as SG (H1) course'}
-              className={`w-4 h-4 rounded flex items-center justify-center text-[8px] font-bold leading-none cursor-pointer transition-colors
-                ${isSg ? 'bg-sky-100 text-sky-600 hover:bg-sky-200' : 'text-gray-400 hover:bg-sky-50 hover:text-sky-500'}`}
-            >
-              SG
             </button>
           )}
           {/* Remove */}

@@ -183,8 +183,6 @@ export function getCourseStatus(
   if (isSemPast(semester))    return 'completed'
   if (isSemCurrent(semester)) return 'in-progress'
 
-  const isSG = overrides?.has(`__sg__${code}`)
-
   const course = courseMap.get(code)
   if (!course) return 'unknown'
 
@@ -212,8 +210,7 @@ export function getCourseStatus(
     }
   }
 
-  // SG override: course is treated as offered in any season
-  if (!hasIssues && !isSG && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+  if (!hasIssues && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
     hasIssues = true
   }
 
@@ -233,7 +230,6 @@ export function getIssueReasons(
   courseMap: Map<string, Course>,
   overrides?: Set<string>,
 ): string[] {
-  const isSG = overrides?.has(`__sg__${code}`)
   if (overrides?.has(`__issue__${semester.id}__${code}`)) return []
 
   const course = courseMap.get(code)
@@ -264,8 +260,7 @@ export function getIssueReasons(
     if (codesNonPast.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
   }
 
-  // SG override: course is treated as offered in any season
-  if (!isSG && course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
+  if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
     reasons.push(`Not offered in ${semester.season}`)
   }
 

@@ -158,7 +158,6 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
   const moveCourse          = usePlanStore(s => s.moveCourse)
   const addCourse           = usePlanStore(s => s.addCourse)
   const toggleIssueOverride = usePlanStore(s => s.toggleIssueOverride)
-  const toggleSgCourse      = usePlanStore(s => s.toggleSgCourse)
   const ignoredPrereqs      = usePlanStore(s => s.ignoredPrereqs)
   const overrides           = new Set(ignoredPrereqs[planId] ?? [])
   const [adding, setAdding]         = useState(false)
@@ -268,9 +267,7 @@ export default function SemesterRow({ planId, semester, allSemesters, courseMap 
                 issueReasons={reasons}
                 course={courseMap.get(code)}
                 onRemove={() => removeCourse(planId, semester.id, code)}
-                isSg={overrides.has(`__sg__${code}`)}
                 hasIssueOverride={overrides.has(`__issue__${semester.id}__${code}`)}
-                onToggleSg={() => toggleSgCourse(planId, code)}
                 onToggleIssueOverride={() => toggleIssueOverride(planId, semester.id, code)}
               />
             </div>

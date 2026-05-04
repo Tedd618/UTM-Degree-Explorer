@@ -195,8 +195,7 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
       if (isSemPast(sem)) continue
 
       for (const code of sem.courses) {
-        // Skip SG and manually overridden courses
-        if (ignored.has(`__sg__${code}`)) continue
+        // Skip manually overridden courses
         if (ignored.has(`__issue__${sem.id}__${code}`)) continue
 
         // Skip duplicates — the card itself is already red; no prereq entry needed
