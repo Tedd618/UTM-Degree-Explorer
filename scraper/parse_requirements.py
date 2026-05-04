@@ -310,11 +310,15 @@ def parse_item(elem: Tag) -> dict:
         r'^(\d+\.?\d*)\s+credit[s]?\s+at\s+the\s+\d', text, re.I
     ) if not n_credit_m and not subj_credit_m else None
 
-    min_n_m  = re.match(r'^(?:minimum\s+of|at\s+least)\s+(\d+\.?\d*)\s+credit', text, re.I)
+    min_n_m  = re.match(r'^(?:minimum\s+of|at\s+least)\s+(\d+\.?\d*)\s+(?:[A-Z]{2,4}\s+)?credit', text, re.I)
+    # "N.0 additional [SUBJ] credit[s]" — e.g. "2.5 additional credits in PHL"
+    additional_m = re.match(
+        r'^(\d+\.?\d*)\s+additional\s+(?:[A-Za-z]+\s+)?credit[s]?\b', text, re.I
+    ) if not n_credit_m and not subj_credit_m and not bare_credit_m and not min_n_m else None
     one_of_m = re.match(r'^one\s+of\b', text, re.I)
 
-    if n_credit_m or min_n_m or subj_credit_m or bare_credit_m:
-        raw_m = n_credit_m or min_n_m or subj_credit_m or bare_credit_m
+    if n_credit_m or min_n_m or subj_credit_m or bare_credit_m or additional_m:
+        raw_m = n_credit_m or min_n_m or subj_credit_m or bare_credit_m or additional_m
         n = float(raw_m.group(1))
         return _parse_n_credit_item(elem, text, codes, n, n_credit_m)
 
@@ -368,13 +372,23 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
     # Detect "any level" or level filter
     # Handles "300/400", "300-400", "300+ level", "200+ level"
     any_level_m  = re.search(r'any\s+(\d{3})[/\-]?(\d{3})?\+?\s*[-–]?\s*level', text, re.I)
+    # Also handle "NNN or NNN level" (e.g. "300 or 400 level")
+    level_or_m   = re.search(r'(\d{3})\s+or\s+(\d{3})\s+level', text, re.I)
     level_filt_m = re.search(r'(\d{3})[/\-]?(\d{3})?\+?\s*[-–]?\s*level', text, re.I)
-    # "N.0 credit[s] in SUBJ" — only match uppercase 2-4 letter subjects
+    # "N.0 [additional] credit[s] in/of SUBJ" — only match uppercase 2-4 letter subjects
     subject_m    = re.search(
-        r'(\d+\.?\d*)\s+credit[s]?\s+(?:in|of)\s+([A-Z]{2,4})\b', text
+        r'(\d+\.?\d*)\s+(?:additional\s+)?credit[s]?\s+(?:in|of)\s+([A-Z]{2,4})\b', text
     )
     # "N.0 SUBJ credit[s]" (e.g. "3.0 RLG credits", "0.5 HIS credit")
     bare_subj_m  = re.match(r'(\d+\.?\d*)\s+([A-Z]{2,4})\s+credit', text)
+    # "at least N.0 SUBJ credit[s]" (e.g. "At least 4.0 ENG credits")
+    at_least_subj_m = re.match(
+        r'(?:at\s+least|minimum\s+of)\s+\d+\.?\d*\s+([A-Z]{2,4})\s+credit', text, re.I
+    )
+    # "N.0 additional SUBJ credit[s]" (e.g. "1.0 additional RLG credits")
+    additional_subj_m = re.match(
+        r'\d+\.?\d*\s+additional\s+([A-Z]{2,4})\s+credit', text, re.I
+    )
     # "in [subject] at the NNN level"
     subj_level_m = re.search(
         r'in\s+([A-Z]{2,4})\s+at\s+the\s+(\d{3})\s+level', text, re.I
@@ -388,11 +402,16 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
     )
     if excl_m:
         excluding = re.findall(r'[A-Z]{2,4}\d{3}[HY]\d', excl_m.group(1))
-    # also catch linked courses preceded by "excluding" / "except" text
+    # also catch linked courses preceded by "excluding" / "except" text,
+    # or followed by "may not be counted" / "cannot be counted" text
+    EXCL_PAT = re.compile(r'exclu|except|may\s+not\s+be\s+counted|cannot\s+be\s+counted', re.I)
     for a in elem.find_all("a", href=True):
         if "/course/" in a["href"]:
             prev = a.find_previous(string=True)
-            if prev and re.search(r'exclu|except', prev, re.I):
+            nxt  = a.next_sibling  # NavigableString immediately after the <a>
+            prev_str = str(prev) if prev else ""
+            nxt_str  = str(nxt)  if nxt  else ""
+            if EXCL_PAT.search(prev_str) or EXCL_PAT.search(nxt_str):
                 code = a["href"].split("/course/")[-1].upper()
                 if code not in excluding:
                     excluding.append(code)
@@ -402,8 +421,10 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
 
     # "SUBJ at the NNN/NNN level" — e.g. "MAT at the 300/400 level or CSC363H5"
     # This is an open pool with subject + level filter; named courses are specific_courses.
+    # Require uppercase-only (no re.I) and at least 2 uppercase letters to avoid matching
+    # common words like "be", "of", etc.
     subj_at_level_m = re.search(
-        r'\b([A-Z]{2,4})\s+at\s+the\s+(\d{3})[/\-]?(\d{3})?\+?\s*[-–]?\s*level', text, re.I
+        r'\b([A-Z]{2,4})\s+at\s+the\s+(\d{3})[/\-]?(\d{3})?\+?\s*[-–]?\s*level', text
     )
 
     # explicit list with no level/subject filter → n_from
@@ -423,7 +444,10 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
             if label_m:
                 candidate = label_m.group(1).strip().rstrip(':').strip()
                 # Only keep if it looks like a real label (not just "the following")
-                if candidate and not re.match(r'^the\b|^following\b|^any\b', candidate, re.I):
+                # AND does not contain course codes (which means it IS the course list)
+                if (candidate and
+                        not re.match(r'^the\b|^following\b|^any\b', candidate, re.I) and
+                        not re.search(r'[A-Z]{2,4}\d{3}[HY]\d', candidate)):
                     label = candidate
             node: dict = {
                 "type": "n_from",
@@ -450,11 +474,15 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
         "sub_constraints": sub_constraints,
     }
 
+    # "NNN or NNN level" takes priority over level_filt_m (which picks the last digit match)
     if any_level_m:
         lo = int(any_level_m.group(1))
         hi = int(any_level_m.group(2)) if any_level_m.group(2) else lo + 99
         pool.update({"min_level": lo, "max_level": hi})
-
+    elif level_or_m:
+        lo = int(level_or_m.group(1))
+        hi = int(level_or_m.group(2)) + 99
+        pool.update({"min_level": lo, "max_level": hi})
     elif level_filt_m and not subject_m:
         lo = int(level_filt_m.group(1))
         hi = int(level_filt_m.group(2)) if level_filt_m.group(2) else lo + 99
@@ -472,6 +500,10 @@ def _parse_n_credit_item(elem: Tag, text: str, codes: list[str], n: float, m) ->
         pool["subject"] = subject_m.group(2).upper()
     elif bare_subj_m:
         pool["subject"] = bare_subj_m.group(2).upper()
+    elif at_least_subj_m:
+        pool["subject"] = at_least_subj_m.group(1).upper()
+    elif additional_subj_m:
+        pool["subject"] = additional_subj_m.group(1).upper()
 
     # Extract subject from "any 300/400 level CSC course" — overrides above if found
     subj_any_m = re.search(r'any\s+\d+[/\-]?\d*\+?\s*[-–]?\s*level\s+([A-Z]{2,4})\b', text, re.I)
@@ -709,12 +741,20 @@ def parse_completion_html(html: str) -> dict:
             if not text:
                 continue
 
-            # note section
-            if in_notes or _is_note_header(child):
-                in_notes = True
+            # note section — only set in_notes=True if we already have group content,
+            # otherwise a "Note:" at the top would swallow all subsequent year headers.
+            if in_notes:
                 t = re.sub(r'^note[s]?[:\s]*', '', text, flags=re.I).strip()
                 if t:
                     notes.append(t)
+                continue
+            if _is_note_header(child):
+                t = re.sub(r'^note[s]?[:\s]*', '', text, flags=re.I).strip()
+                if t:
+                    notes.append(t)
+                # Only lock into notes mode if groups have already started
+                if groups or current_group["items"]:
+                    in_notes = True
                 continue
 
             # year header
@@ -795,6 +835,26 @@ def parse_completion_html(html: str) -> dict:
                 add_item(item)
 
     flush_group()
+
+    # ── if no groups were produced but first_p described requirements (open pool
+    #    with subject / level constraints), add it as a group item so the UI has
+    #    something to display.  This covers single-paragraph programs like
+    #    "4.0 PHL credits including at least 1.0 at the 300/400 level."
+    if not groups and first_p_text and total_credits:
+        # Re-find the paragraph element to get a proper Tag for parse_item
+        first_p_elem = None
+        for child in children:
+            if isinstance(child, Tag) and child.name in ("p", "div"):
+                t = child.get_text(" ", strip=True)
+                if t == first_p_text:
+                    first_p_elem = child
+                    break
+        if first_p_elem is not None:
+            item = parse_item(first_p_elem)
+            # Only add if it produced something useful (not just a bare course node
+            # that would mis-represent the requirement)
+            if item and item.get("type") in ("open_pool", "n_from", "text"):
+                groups = [{"label": "", "condition": None, "items": [item]}]
 
     # ── merge groups with same label (can happen with conditional tracks) ────
     merged: list[dict] = []
