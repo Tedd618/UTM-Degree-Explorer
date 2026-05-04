@@ -201,7 +201,7 @@ export function getCourseStatus(
   }
 
   const codesBefore  = buildCodesBefore(code, semester, allSemesters)
-  const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
+  const codesNonPast = new Set<string>(allSemesters.filter(s => !isSemPast(s)).flatMap(s => s.courses))
 
   let hasIssues = false
 
@@ -209,7 +209,7 @@ export function getCourseStatus(
 
   if (!hasIssues) {
     for (const excl of course.exclusions) {
-      if (codesAnywhere.has(excl) && excl !== code) { hasIssues = true; break }
+      if (codesNonPast.has(excl) && excl !== code) { hasIssues = true; break }
     }
   }
 
@@ -251,7 +251,7 @@ export function getIssueReasons(
   }
 
   const codesBefore   = buildCodesBefore(code, semester, allSemesters)
-  const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
+  const codesNonPast  = new Set<string>(allSemesters.filter(s => !isSemPast(s)).flatMap(s => s.courses))
 
   const reasons: string[] = []
 
@@ -261,7 +261,7 @@ export function getIssueReasons(
   }
 
   for (const e of course.exclusions) {
-    if (codesAnywhere.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
+    if (codesNonPast.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
   }
 
   if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {
