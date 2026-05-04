@@ -441,6 +441,16 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
         }
       }
 
+      // open_pool: subtract courses already consumed by required siblings (all_of / course nodes)
+      // so they don't double-count toward the pool.
+      if (child.type === 'open_pool') {
+        const adjustedCodes = new Set(userCodes)
+        for (const code of requiredCodesInGroup) {
+          adjustedCodes.delete(code)
+        }
+        return evaluateNode(child, adjustedCodes, courseMap)
+      }
+
       return evaluateNode(child, userCodes, courseMap)
     })
 

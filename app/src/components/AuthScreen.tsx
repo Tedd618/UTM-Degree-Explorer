@@ -208,6 +208,9 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
                     </button>
                   </div>
                 )}
+                <p className="text-[11px] text-amber-600 leading-snug">
+                  Do not use your school or university password.
+                </p>
               </div>
             )}
 
