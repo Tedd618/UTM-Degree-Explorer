@@ -8,12 +8,14 @@ import Sidebar from './components/Sidebar'
 import PlannerGrid from './components/PlannerGrid'
 import PrereqRadarPanel from './components/PrereqRadarPanel'
 import AuthScreen from './components/AuthScreen'
+import ResetPasswordScreen from './components/ResetPasswordScreen'
 import FeedbackWidget from './components/FeedbackWidget'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
   const [isInitializing, setIsInitializing] = useState(true)
   const [showAuth, setShowAuth] = useState(false)
+  const [showResetPassword, setShowResetPassword] = useState(false)
 
   const activePlan = usePlanStore(s => s.activePlan())
   const activePlanId = usePlanStore(s => s.activePlanId)
@@ -57,8 +59,9 @@ export default function App() {
     } = supabase.auth.onAuthStateChange((event, session) => {
       if (!mounted) return
       setSession(session)
-      // Only re-fetch on actual sign-in; token refreshes should not reset plan state
-      if (session && (event === 'SIGNED_IN' || event === 'USER_UPDATED')) {
+      if (event === 'PASSWORD_RECOVERY') {
+        setShowResetPassword(true)
+      } else if (session && (event === 'SIGNED_IN' || event === 'USER_UPDATED')) {
         fetchData(session.user.id)
       }
       if (event === 'SIGNED_OUT') {
@@ -78,6 +81,10 @@ export default function App() {
         <div className="w-8 h-8 border-2 border-utm-blue border-t-transparent rounded-full animate-spin" />
       </div>
     )
+  }
+
+  if (showResetPassword) {
+    return <ResetPasswordScreen onDone={() => setShowResetPassword(false)} />
   }
 
   if (!session && showAuth) {
