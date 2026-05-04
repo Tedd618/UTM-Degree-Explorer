@@ -121,13 +121,18 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
             <div className="space-y-1.5">
               <label className={labelClass}>Email</label>
               <input
-                type="email"
+                type={mode === 'signup' ? 'text' : 'email'}
                 required
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 placeholder="you@mail.utoronto.ca"
                 className={inputClass}
               />
+              {mode === 'signup' && (
+                <p className="text-[11px] text-gray-400 leading-snug">
+                  Doesn't have to be a real email — use anything you like! Just know that if you ever forget your password, we'll send a reset link here. Your call 😊
+                </p>
+              )}
             </div>
 
             {/* Password — not shown on forgot */}
