@@ -19,7 +19,6 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
   const addSemester    = usePlanStore(s => s.addSemester)
   const removeSemester = usePlanStore(s => s.removeSemester)
   const setStartYear   = usePlanStore(s => s.setStartYear)
-  const importCourses  = usePlanStore(s => s.importCourses)
 
   const [panelWidth, setPanelWidth] = useState(DEFAULT_PANEL_W)
   const dragRef = useRef<{ startX: number; startW: number } | null>(null)
@@ -45,9 +44,13 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
     document.addEventListener('mouseup', onUp)
   }, [panelWidth])
 
-  const visibleSemesters = hideSummers
-    ? plan.semesters.filter(s => s.season !== 'Summer')
-    : plan.semesters
+  const startKey = semesterSortKey(plan.startYear ?? 2022, 'Fall')
+
+  const visibleSemesters = plan.semesters.filter(s => {
+    if (semesterSortKey(s.year, s.season) < startKey) return false
+    if (hideSummers && s.season === 'Summer') return false
+    return true
+  })
 
   const sorted = [...visibleSemesters].sort(
     (a, b) => semesterSortKey(b.year, b.season) - semesterSortKey(a.year, a.season),
@@ -146,19 +149,7 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
           <span className="text-[11px] text-gray-400">Starting year</span>
           <select
             value={plan.startYear ?? new Date().getFullYear()}
-            onChange={e => {
-              const newYear = parseInt(e.target.value)
-              setStartYear(plan.id, newYear)
-              // Rebuild semesters preserving courses, shifted by year delta
-              const delta = newYear - (plan.startYear ?? new Date().getFullYear())
-              if (delta === 0) return
-              const entries = plan.semesters.map(s => ({
-                year: s.year + delta,
-                season: s.season,
-                courses: s.courses,
-              }))
-              importCourses(plan.id, entries)
-            }}
+            onChange={e => setStartYear(plan.id, parseInt(e.target.value))}
             className="text-[11px] text-gray-600 border border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none focus:border-utm-blue cursor-pointer"
           >
             {Array.from({ length: Math.max(new Date().getFullYear(), plan.startYear ?? 0) + 8 - 2022 + 1 }, (_, i) => 2022 + i).map(yr => (
