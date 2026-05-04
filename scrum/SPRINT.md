@@ -51,6 +51,11 @@
 |-----|------|-------------|
 | Collaborator | BUG-001: exclusion check ignores completed semesters | 0ef5afe |
 | Collaborator | BUG-002: SG override only bypasses offerings check | 0ef5afe |
+| Collaborator | BUG-003: grade-conditioned prereqs preserved in parser | 8b3bb84 |
+| Collaborator | BUG-004: Summer auto-inserted on import | 8b3bb84 |
+| Collaborator | Exclusion logic: ordering + level upgrade rule | 8b3bb84 |
+| Collaborator | BUG-001: exclusion check ignores completed semesters | 0ef5afe |
+| Collaborator | BUG-002: SG override only bypasses offerings check | 0ef5afe |
 | Taehyeon | Duplicate course detection (red card + credit dedup) | 869595e |
 | Taehyeon | Comprehensive program parser audit (164 programs) | e1dabdd |
 | Taehyeon | New-user import button highlight | 9abb8ea |
@@ -61,18 +66,6 @@
 ## Backlog (prioritized)
 
 ### Bugs
-
-**BUG-003 — Grade-conditioned prerequisites not parsed** `High`
-- **File:** `scraper/scrape_courses.py` (prereq parser)
-- **Root cause:** Raw prereq like `CHM110H5 and a minimum grade of 60% in CHM120H5 and [...]` — the scraper strips the grade condition and loses CHM120H5 entirely. Confirmed: parsed AST for CHM242H5 has CHM110H5 and the MAT pool but not CHM120H5.
-- **Fix:** Treat `minimum grade of X% in CODEX` as a standard `COURSE` prerequisite (drop the grade threshold — the planner doesn't track grades).
-- **Reproduce:** Add CHM242H5 to a plan with only CHM110H5 — shows green but CHM120H5 should also be required.
-
-**BUG-004 — Summer not auto-inserted by importCourses** `Medium`
-- **File:** `app/src/store/planStore.ts` → `importCourses` (line ~254)
-- **Root cause:** `importCourses` only creates semesters that appear in the import entries. If a one-click import assigns courses to Fall Y + Winter Y+1 + Fall Y+1, no Summer Y+1 is created between them. The `+year` button (`handleAdd`) does create Summers correctly, but import bypasses that logic.
-- **Fix:** After building the semester list from import entries, auto-insert a Summer semester between any Winter Y and Fall Y that have no Summer Y in between.
-- **Reproduce:** Import a degree with courses spanning multiple years — check if Summer semesters appear between each Fall/Winter group.
 
 **BUG-005 — Mutually receptive courses create confusing prereq state** `Low`
 - **File:** `app/src/utils/prereq.ts` → `evaluatePrereq`, `collectMissingPrereqGroups`
