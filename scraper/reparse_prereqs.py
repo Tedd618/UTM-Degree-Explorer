@@ -67,6 +67,9 @@ class Parser:
         return None
     def parse(self):
         if not self.tokens: return None
+        # Skip any leading AND/OR operators (can appear when credit/level-pool text is removed)
+        while self.peek() and self.peek().type in (TokenType.AND, TokenType.OR):
+            self.pos += 1
         return self.parse_expr()
     def parse_expr(self):
         nodes = [self.parse_term()]
@@ -235,11 +238,11 @@ def extract_credits_node(text):
 
 def extract_including_courses(text):
     """
-    For 'N credits including X and Y' patterns, return the required course nodes
-    that come after 'including'. These must be AND-ed with the CREDITS node.
+    For 'N credits including X and Y' or 'N credits, which must include X and Y' patterns,
+    return the required course nodes that come after 'including'. AND-ed with the CREDITS node.
     """
     m = re.search(
-        r'(?:credits?)\s*,?\s*including\s+([^.;]+)',
+        r'(?:credits?)\s*[,;]?\s*(?:including|which\s+must\s+include)\s+([^.;]+)',
         text, re.IGNORECASE
     )
     if not m:
@@ -255,13 +258,14 @@ def extract_including_courses(text):
 
 def extract_embedded_pools(text):
     """
-    Find '(N.N credit from X, Y, Z)' or 'N.N credit from X or Y or Z' patterns
-    embedded mid-expression. Returns (pool_nodes, cleaned_text).
+    Find '(N.N credit from X, Y, Z)' or 'N.N credit from X or Y or Z' or
+    'N.N credit from X and Y and Z' patterns embedded mid-expression.
+    Returns (pool_nodes, cleaned_text).
     """
     pools = []
-    # Match "N.N credit[s] from X , Y , Z" or "N.N credit[s] from X or Y or Z"
+    # Match "N.N credit[s] from X , Y , Z" or "N.N credit[s] from X or Y or Z" or "from X and Y"
     pat = re.compile(
-        r'(\d+\.?\d*)\s+credits?\s+from\s+((?:[A-Z]{3}\d{3}[HY]\d[\s,or]*)+)',
+        r'(\d+\.?\d*)\s+credits?\s+from\s+((?:[A-Z]{3}\d{3}[HY]\d[\s,]*(?:and|or)?[\s,]*)+)',
         re.IGNORECASE
     )
     remaining = text
@@ -297,19 +301,46 @@ def preprocess(raw):
     if re.search(r'\bno prerequisites?\b', raw, re.IGNORECASE):
         return '', []
 
+    # 1a. Normalize cross-listed slash notation: "DRE/ ENG121H5" → "(DRE121H5 or ENG121H5)"
+    # Only when followed by a course code (not subject-only slashes like CHM/JCP/FSC)
+    raw = re.sub(
+        r'([A-Z]{2,4})/\s*([A-Z]{3})(\d{3}[HY]\d)',
+        r'(\1\3 or \2\3)',
+        raw
+    )
+    # Strip "COURSE / (or equivalent)" — the "/" before "(or equivalent)" becomes a phantom OR token
+    raw = re.sub(r'/\s*\(\s*or\s+equivalent\s*\)', ' ', raw, flags=re.IGNORECASE)
+    # Strip remaining subject-only slashes like CHM/JCP/JBC that produce phantom OR tokens
+    # Pattern: consecutive subject codes (2-4 caps) separated by "/" with no following digit
+    raw = re.sub(r'(?:[A-Z]{2,4}/)+[A-Z]{2,4}(?=\s|$)', ' ', raw)
+
     # 1b. Normalize grade conditions: drop the threshold, keep the course code.
     # "a minimum grade of 60% in CHM120H5" → "CHM120H5"
     raw = re.sub(
         r'(?:a\s+)?minimum\s+grade\s+of\s+[\d.]+%?\s+in\s+(?=[A-Z]{3}\d{3}[HY]\d)',
         '', raw, flags=re.IGNORECASE
     )
+    # Also handle "COURSE with a minimum grade of X%" → keep just COURSE
+    raw = re.sub(
+        r'(\b[A-Z]{3}\d{3}[HY]\d)\s+with\s+a\s+minimum\s+grade\s+of\s+[\d.]+%?',
+        r'\1', raw, flags=re.IGNORECASE
+    )
 
-    # 2. Extract credit threshold + any "including X and Y" required courses
+    # 1c. Strip "Open to students who have successfully completed" preamble ONLY
+    # (keep what follows — the actual prereqs)
+    raw = re.sub(
+        r'Open\s+to\s+students?\s+who\s+have\s+successfully\s+completed\s*',
+        '', raw, flags=re.IGNORECASE
+    )
+
+    # 2. Extract credit threshold + any "including X and Y" or "which must include X" required courses
     credits_node = extract_credits_node(raw)
     if credits_node:
         extra_nodes.append(credits_node)
-        including_nodes = extract_including_courses(raw)
-        extra_nodes.extend(including_nodes)
+    # Extract "including X" courses regardless of whether there's a credits threshold
+    # (handles "9.0 credits including GGR276H5 or STA256H5" where the threshold pattern doesn't match)
+    including_nodes = extract_including_courses(raw)
+    extra_nodes.extend(including_nodes)
 
     # 3a. Extract embedded "(N.N credit from X, Y, Z)" pools before level-pool extraction
     embedded_pools, raw = extract_embedded_pools(raw)
@@ -319,13 +350,19 @@ def preprocess(raw):
     pools, raw = extract_level_pools(raw)
     extra_nodes.extend(pools)
 
-    # 4. Strip petition/exception sentences (e.g. ENG "Students who do not meet the prerequisite...")
+    # 4. Strip petition/exception sentences
     raw = re.sub(
         r'[Ss]tudents?\s+who\s+do\s+not\s+meet[^.]*\.?',
         ' ', raw, flags=re.IGNORECASE
     )
+    # Strip "Students seeking ... must (also) have completed COURSE" sentences
     raw = re.sub(
-        r'[Oo]pen\s+to\s+students?\s+who\s+have\s+successfully\s+completed[^.]*\.',
+        r'[Ss]tudents?\s+seeking[^.]*\.',
+        ' ', raw, flags=re.IGNORECASE
+    )
+    # Strip "Enrolment in ... Program" administrative notes
+    raw = re.sub(
+        r'[Ee]nrolment\s+in[^.]*\.',
         ' ', raw, flags=re.IGNORECASE
     )
 
@@ -333,31 +370,50 @@ def preprocess(raw):
     raw = re.sub(r'\bexcluding\b[^.;()]*', ' ', raw, flags=re.IGNORECASE)
 
     # 5. Strip advisory/noise phrases
+    # Fix: strip "(or equivalent)" WITH the surrounding parens first, so no dangling "(" is left
+    raw = re.sub(r'\(\s*or\s+equivalent\s*\)', ' ', raw, flags=re.IGNORECASE)
     noise = [
         r'\bor\s+permission\s+of\s+(?:the\s+)?(?:instructor|department|program)[^,;.()]*',
+        r'\bpermission\s+of\s+(?:the\s+)?(?:instructor|department|program|[Uu]niversity)[^,;.()]*',
         r'\bwith\s+permission\s+of[^,;.()]*',
         r'\b\(?or\s+equivalent\)?',
         r'\bminimum\s+grade\s+of\s+\d+%[^,;.()]*',
         r'\bwith\s+a\s+minimum\s+grade\s+of[^,;.()]*',
-        r'\bminimum\s+of\s+[\d.]+\s+(?:full\s+)?credits?(?:\s*,?\s*including[^.;()]*)?',
-        r'\bat\s+least\s+[\d.]+(?:\s+and\s+not\s+more\s+than\s+[\d.]+)?\s+(?:full\s+)?credits?(?:\s*,?\s*including[^.;()]*)?',
+        r'\bminimum\s+of\s+[\d.]+\s+(?:full\s+)?credits?(?:\s*[,;]?\s*(?:including|which\s+must\s+include)[^.;()]*)?',
+        r'\bat\s+least\s+[\d.]+(?:\s+and\s+not\s+more\s+than\s+[\d.]+)?\s+(?:full\s+)?credits?(?:\s*[,;]?\s*(?:including|which\s+must\s+include)[^.;()]*)?',
         r'\bcompletion\s+of\s+(?:at\s+least\s+)?[\d.]+(?:\s+and\s+not\s+more\s+than\s+[\d.]+)?\s+(?:full\s+)?credits?[^,;.()\[\]]*',
         r'\bsuccessfully\s+completed\s+(?:at\s+least\s+)?[\d.]+\s+(?:full\s+)?credits?[^,;.()\[\]]*',
         r'\bany\s+[\d.]+\s+(?:full\s+)?credits?[^,;.()\[\]]*',
-        r'^[\d.]+\s+(?:full\s+)?credits?(?:\s*,?\s*including[^.;()]*)?',
-        r'\b[\d.]+\s+(?:full\s+)?credits?(?:\s*,?\s*including[^.;()]*)?',  # remaining credit phrases
+        r'^[\d.]+\s+(?:full\s+)?credits?(?:\s*[,;]?\s*(?:including|which\s+must\s+include)[^.;()]*)?',
+        r'\b[\d.]+\s+(?:full\s+)?credits?(?:\s*[,;]?\s*(?:including|which\s+must\s+include)[^.;()]*)?',  # remaining
         r'\bor\s+equivalent\b[^,;.()]*',
         r'\bdepartmental\s+approval\b[^,;.()]*',
         r'\bco-?requisite[^.;]*',
+        r'\bCourse\s+application\s+is\s+required[^.]*\.',
+        r'\bSee\s+the\s+[^.]*website[^.]*\.',
     ]
     for pat in noise:
         raw = re.sub(pat, ' ', raw, flags=re.IGNORECASE)
+
+    # 5b. Strip "from any ... level courses" text left after level-pool extraction
+    # e.g. "from any 300 or 400 level PHY/JCP courses" generates spurious OR tokens
+    raw = re.sub(r'\bfrom\s+any\b[^.;()\[\]]*', ' ', raw, flags=re.IGNORECASE)
+
+    # 5c. Strip all remaining "/" that are not between digit characters
+    # (level ranges "300/400" are already extracted; leftover slashes in "Science/Geology" etc.
+    #  generate spurious OR tokens in the tokenizer)
+    raw = re.sub(r'(?<!\d)/(?!\d)', ' ', raw)
 
     # 6. Clean up leftover punctuation artifacts
     raw = re.sub(r'\band\s*[,;]\s*', 'and ', raw)
     raw = re.sub(r'[,;]\s*and\b', ' and', raw)
     raw = re.sub(r'\s+', ' ', raw).strip()
     raw = raw.strip('., ;')
+
+    # 7. Strip leading/trailing "and" or "or" operators left after credit extraction
+    # These cause the parser to misassociate subsequent tokens
+    raw = re.sub(r'^(?:and|or)\s+', '', raw, flags=re.IGNORECASE)
+    raw = re.sub(r'\s+(?:and|or)$', '', raw, flags=re.IGNORECASE)
 
     return raw, extra_nodes
 
