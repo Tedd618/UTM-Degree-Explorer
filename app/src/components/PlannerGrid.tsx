@@ -152,17 +152,15 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
             onChange={e => {
               const newYear = parseInt(e.target.value)
               setStartYear(plan.id, newYear)
-              // Auto-create missing semesters from newYear up to the first existing Fall
+              // Auto-create missing semesters from newYear up to (but not including) the first existing Fall
               const firstFall = Math.min(...plan.semesters.filter(s => s.season === 'Fall').map(s => s.year).filter(y => y >= newYear))
-              const limit = isFinite(firstFall) ? firstFall : newYear
+              const upper = isFinite(firstFall) ? firstFall - 1 : newYear
               const hasSem = (yr: number, season: Season) => plan.semesters.some(s => s.year === yr && s.season === season)
-              for (let y = newYear; y < limit; y++) {
+              for (let y = newYear; y <= upper; y++) {
                 if (!hasSem(y, 'Fall'))        addSemester(plan.id, y, 'Fall')
                 if (!hasSem(y + 1, 'Winter'))  addSemester(plan.id, y + 1, 'Winter')
                 if (!hasSem(y + 1, 'Summer'))  addSemester(plan.id, y + 1, 'Summer')
               }
-              // Also add Fall for newYear itself if missing
-              if (!hasSem(newYear, 'Fall')) addSemester(plan.id, newYear, 'Fall')
             }}
             className="text-[11px] text-gray-600 border border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none focus:border-utm-blue cursor-pointer"
           >
