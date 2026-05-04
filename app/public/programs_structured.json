@@ -81,7 +81,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 2,
         "max": null
       },
       "total_credits_note": null,
@@ -160,7 +160,7 @@
     "note": "Additional courses with sufficient sustainability content may be appropriate for the Certificate in Sustainability. Students must receive permission from the Academic Counsellor prior to course enrolment.",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 2,
         "max": null
       },
       "total_credits_note": null,
@@ -369,7 +369,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 2,
         "max": null
       },
       "total_credits_note": null,
@@ -415,7 +415,7 @@
     "note": "Additional courses may be required to fulfill prequisites for electives. Additional courses, including special topics courses in POL, may have sufficient related content to be eligible for the certificate. Students must receive permission from the Academic Advisor prior to course enrolment.",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 2,
         "max": null
       },
       "total_credits_note": null,
@@ -518,7 +518,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 2,
         "max": null
       },
       "total_credits_note": null,
@@ -1424,7 +1424,7 @@
     "note": "Required credits also contribute to fulfilling part of the Anthropology - Specialist (Arts) requirements.",
     "completion": {
       "total_credits": {
-        "min": 3.0,
+        "min": 3,
         "max": null
       },
       "total_credits_note": null,
@@ -1453,7 +1453,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Additional 2.0 credits from ANT social science courses listed below:",
               "subject": null,
@@ -1624,7 +1624,7 @@
     "note": "Required credits also contribute to fulfilling part of the Anthropology - Major (Arts) requirements.",
     "completion": {
       "total_credits": {
-        "min": 3.0,
+        "min": 3,
         "max": null
       },
       "total_credits_note": null,
@@ -1653,7 +1653,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Additional 2.0 credits from ANT social science courses listed below:",
               "subject": null,
@@ -1828,7 +1828,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": null,
@@ -1862,7 +1862,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -1955,7 +1955,7 @@
             },
             {
               "type": "open_pool",
-              "n": 3.0,
+              "n": 3,
               "constraint": "at_least",
               "description": "3.0 RLG credits at the 300+level",
               "subject": "RLG",
@@ -1967,7 +1967,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 RLG credits at the 400-level",
               "subject": "RLG",
@@ -1979,7 +1979,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional RLG credits at any level",
               "subject": "RLG",
@@ -2295,7 +2295,7 @@
     "note": "Students cannot use more than 1.0 credits from 100-level PHL courses for program completion credit. Students also cannot use PHL204H5 or PHL277Y5 (or in combination with either PHL275H5 or PHL265H5 ) for program completion credit. Where courses exclude each other, at most one of them may be counted for credit toward philosophy program completion. It is recommended: that students begin their study of Philosophy with PHL103H5 or PHL113H5 ; and that students planning to enrol in the Major Program in Philosophy complete at least 2.0 credits of PHL200H5 or PHL210Y5 or PHL245H5 or PHL265H5 or PHL275H5 by the end of their second year. All 200-level courses , with the exception of PHL204H5 , PHL245H5 and PHL247H5 , have the prerequisite that the student has completed at least 4.0 credits at the university. This prerequisite is waived for students who are taking (or have taken) a 100-level course in Philosophy. There are no other prerequisites for any 200-level courses. All 300-level courses , with the exception of PHL344H5 , 347H5, have a prerequisite of 1.5 credits in Philosophy. It is strongly recommended that students prepare for 300-level courses by taking two of the following: PHL103H5 or PHL113H5 or PHL200H5 or PHL210Y5 or PHL245H5 or PHL265H5 or PHL275H5 . Some 300-level courses have specific prerequisites or recommended preparation, as described in the course descriptions. Students who do not meet the prerequisite for a particular course but believe that they have adequate preparation should consult the Undergraduate Advisor concerning entry to the course. The prerequisite for 400-level courses , except PHL451H5 , is 4.5 credits in Philosophy. When choosing your courses, keep in mind that not all courses listed are offered every year. Some courses required to complete a program might be offered only every other year. For courses offered during the current year, consult the UTM Timetable website.",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": "including at least 3.0 credits at the 300 level and 0.5 credit at the 400-level.",
@@ -2396,7 +2396,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -2556,7 +2556,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit at the 100-level",
               "subject": null,
@@ -2596,7 +2596,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from any other 200-level GGR or ENV courses",
               "subject": null,
@@ -2744,7 +2744,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": null,
@@ -2755,7 +2755,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -2837,7 +2837,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: 1. FAH101H5 and VCC101H5 2. ISP100H5 3. 0.5-1.0 credit in FAH at the 200 level",
               "subject": "FAH",
@@ -2877,7 +2877,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Third Year: 2.0 credits in FAH or VCC at the 300/ 400 level.",
               "subject": "FAH",
@@ -2895,7 +2895,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Fourth Year: 1.0 credits in FAH or VCC or VST at the 400 level.",
               "subject": "VST",
@@ -2907,7 +2907,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_most",
               "description": "NOTES: 1. Completion of the Art History Major Program must include : FAH101H5 and VCC101H5 and ISP100H5 plus 2.0 credits of FAH at the 200 level and 3.0 credits of FAH or VCC or VST at the 300/400 level, of which 0.5 credit must be at the 400 level. 2. A minimum of 1.0 credit from each of the following four areas are required : Ancient & Medieval; 15th-18th Centuries; 19th-21st Centuries; and Visual Culture & Theory. It is highly recommended that students take at least one 300/400 level course in at least three of the four areas. Some courses may satisfy more than one of the distribution requirements. See the departmental website ( www.utm.utoronto.ca/dvs ) for the distribution of courses by area. 3. For the complete list of VCC courses that satisfy Art History program requirements, please see the departmental website ( www.utm.utoronto.ca/dvs ). 4. No St. George courses may be substituted for the required 100 or 200 level courses (see Note 5 below for exceptions). 5. VCC 200 level courses do not satisfy FAH 200 level requirements. 0.5 credit of FAH at the 200 level may be taken at St. George in an area not covered by current UTM offerings (i.e. one of the following courses – FAH248H1 or FAH260H1 or FAH262H1 or FAH270H1 or FAH272H1 ). 6. Courses in other programs which have a significant Art History or Visual Culture content, such as offerings in CCIT, Cinema Studies, Philosophy, Drama, English History, East Asian Studies, and Near & Middle Eastern Civilizations, may be substituted for up to 1.0 credit of FAH or VCC credit. Permission of the Art History Program Director prior to enrolment is required. For possible courses options with appropriate course content, please consult the DVS Undergraduate Counsellor. 7. No more than a total of 10.0 credits of FAH may be completed. 8. Recommended Language Study: Students wishing to pursue graduate studies in Art History must acquire a basic reading knowledge of at least two languages. A minimum of 2.0 credits in one language, or 1.0 credit each in two languages (for a total of 2.0 credits) is recommended. German, French, and Italian are recommended.",
               "subject": "FAH",
@@ -2947,7 +2947,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": null,
@@ -3624,7 +3624,7 @@
             },
             {
               "type": "open_pool",
-              "n": 3.0,
+              "n": 3,
               "constraint": "at_least",
               "description": "3.0 HIS credits at the 300+level",
               "subject": "HIS",
@@ -3683,7 +3683,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "First Year: 1. FAH101H5 and ISP100H5 2. 0.5 additional credit in FAH at the 200 level 2. 2.0 credits from FAS143H5 or FAS145H5 or FAS147H5 or FAS232H5 or FAS236H5 or FAS248H5 (All of these courses are open to first-year students.)",
               "subject": "FAH",
@@ -3710,7 +3710,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Second Year: 1. Remaining uncompleted credit(s) from the FAS course list identified in ‘First Year’ (above). 2. 2.0 credit of FAH at the 200 level",
               "subject": "FAH",
@@ -3728,7 +3728,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Third & Fourth Years: 1. 1.0 credit of FAH or VCC or VST at the 300/400 level 2. 1.0 credit of FAS at the 300/400 level",
               "subject": "VST",
@@ -3867,7 +3867,7 @@
             },
             {
               "type": "open_pool",
-              "n": 13.0,
+              "n": 13,
               "constraint": "at_most",
               "description": "No more than 13.0 credits of FAH and FAS may be completed.",
               "subject": "FAH",
@@ -3878,7 +3878,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_most",
-                  "n": 13.0,
+                  "n": 13,
                   "description": "FAH and FAS may be completed"
                 }
               ]
@@ -3969,7 +3969,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from Group A or B or C (below) at the 400-level",
               "subject": null,
@@ -3981,7 +3981,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from Group A or B or C (below) at the 300-level",
               "subject": null,
@@ -3993,7 +3993,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from Group A or B or C (below) at the 300-/400-level",
               "subject": null,
@@ -4046,7 +4046,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": "fulfilling the following requirements:",
@@ -4083,7 +4083,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -4141,7 +4141,7 @@
             },
             {
               "type": "n_from",
-              "n": 4.0,
+              "n": 4,
               "items": [
                 {
                   "type": "course",
@@ -4420,7 +4420,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "At least 5.0 credits must be CIN courses. Students must take a minimum of 1.0 credits in courses dedicated to “Auteurs,” a minimum of 1.0 credits in courses dedicated to “Cinemas in Context,” and a minimum of 1.0 credits in courses dedicated to “Genres.” A list of courses that count in each area is available on the Department website. Non-CIN courses may also count for credit in these areas with permission of the Undergraduate Counsellor.",
               "subject": null,
@@ -4431,7 +4431,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 5.0,
+                  "n": 5,
                   "description": ""
                 }
               ]
@@ -4477,7 +4477,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Second Year: 1.5-2.0 credits of CIN (or cross-listed courses) at the 200- and/or 300-level",
               "subject": "CIN",
@@ -4495,7 +4495,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Third Year: 2.0 credits of CIN (or cross-listed courses) at the 200-level or above",
               "subject": "CIN",
@@ -4513,7 +4513,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Fourth Year: 2.0 credits of CIN (or cross-listed courses) at the 300-level or above, including at least 0.5 credit at the 400-level",
               "subject": "CIN",
@@ -4556,7 +4556,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 9.0,
+        "min": 9,
         "max": 9.5
       },
       "total_credits_note": null,
@@ -4688,7 +4688,7 @@
     "note": "Students are not permitted to take any of the following courses elsewhere: SOC100H5 SOC109H5 SOC205H5 SOC221H5 SOC222H5 SOC231H5 SOC350H5 SOC387H5 SOC440Y5 If any of the above credits are completed outside of UTM, students will be required to complete the UTM version of the course and it will be designated as an EXT course. Special consideration may be given to new students assessed for transfer credit at UTM.",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": 7.5
       },
       "total_credits_note": null,
@@ -4730,7 +4730,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit of SOC at the 300 level",
               "subject": "SOC",
@@ -4742,7 +4742,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit of SOC at the 400 level",
               "subject": "SOC",
@@ -4754,7 +4754,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit of SOC at the 300/400 level",
               "subject": "SOC",
@@ -4766,7 +4766,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 credits of SOC",
               "subject": "SOC",
@@ -4801,7 +4801,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "including at least 4.0 at the 300/400 level. Program must be taken in combination with another major or two minors.",
@@ -4848,7 +4848,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -4892,7 +4892,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 4.0,
+              "n": 4,
               "constraint": "at_least",
               "description": "Minimum of 4.0 credits from any 300/400 level CCT/VCC courses, of which 1.0 credit must be at the 400 level.",
               "subject": "CCT",
@@ -4932,7 +4932,7 @@
     "note": "1. 300/400-level CCT courses are restricted to students in ICCIT programs only. 2. It is your responsibility to ensure that the prerequisites for courses listed in the calendar have been met. Students without the prerequisites can be removed at any time. No waivers will be granted.",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "including at least 3.5 at the 300/400 level. Program must be taken in combination with another major or two minors.",
@@ -4987,7 +4987,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -5093,7 +5093,7 @@
     "note": "FRE227H5 MUST be completed in the second year OR prior to enrolling in 300/400 level courses in Language Teaching and Learning. Students cannot be enrolled simultaneously in more than one French program (French Studies - Specialist, French Studies - Major, Language Teaching and Learning: French - Major, French Studies - Minor, Functional French - Minor). Courses with an FSL designator cannot be counted towards this Major program.",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "of which 0.5 credit must be a 400-level FRE language teaching and learning course.",
@@ -5104,7 +5104,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempted from these courses must replace them with a higher level 1.0 credit in FRE.",
               "subject": "FRE",
@@ -5269,7 +5269,7 @@
     "note": "This is intended to be an interdisciplinary program. At least four different disciplines must be represented among the courses that are counted as program requirements. For example, a course list selected from ENV + GGR + CHM + ERS is acceptable, but a course list selected only from ENV + GGR + ERS is not. Please contact the Program Advisors or Academic Counsellor if you have any questions about the validity of your course selections.",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "of which at least 2.0 must be at the 300-400 level.",
@@ -5284,7 +5284,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -5403,7 +5403,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -5543,7 +5543,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -6058,7 +6058,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT at the 300/400-level",
               "subject": "MGT",
@@ -6148,7 +6148,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -6332,7 +6332,7 @@
     "completion": {
       "total_credits": {
         "min": 6.5,
-        "max": 7.0
+        "max": 7
       },
       "total_credits_note": null,
       "groups": [
@@ -6709,7 +6709,7 @@
     "note": "COURSE CATEGORIES: Italian Cinema - ITA242H5 ; ITA247H5 ; ITA307H5 ; ITA309H5 ; ITA311H5 ; ITA313H5 ; ITA342H5 ; ITA343H5 Italian Culture; Literature - ITA218H5 ; ITA221H5 ; ITA222H5 ; ITA231H5 ; ITA232H5 ; ITA233H5 ; ITA235H5 ; ITA255H5 ; ITA256H5 ; ITA237H5 ; ITA238H5 ; ITA307H5 ; ITA315Y5 ; ITA339Y5 ; ITA370H5 ; ITA371H5 ; ITA390H5 ; ITA391H5 ; ITA392H5 ; ITA415Y5 ; ITA420H5 ; ITA421H5 Italian Experiential Learning - ITA388H5 ; ITA315Y5 ; ITA400Y5 ; ITA415Y5 Italian Language Practice - ITA100Y5 ; ITA101Y5 ; ITA102H5 ; ITA200Y5 ; ITA201Y5 ; ITA350H5 ; ITA351H5 ; ITA352H5 ; ITA450H5 Italian Linguistics; Teaching and Learning - ITA227H5 ; ITA272H5 ; ITA373H5 ; ITA374H5 ; ITA375H5 ; ITA437H5 ; ITA451H5",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "including at least 2.0 credits at the 300/400 level. Some written work and readings will be done in Italian in all courses.",
@@ -6844,7 +6844,7 @@
     "note": "Students cannot be enrolled simultaneously in more than one French program (French Studies - Specialist, French Studies - Major, Language Teaching and Learning: French - Major, French Studies - Minor, Functional French - Minor) Courses with an FSL designator cannot be counted towards a Major or Specialist program in French Studies. No more than 1.0 credit in FRE/JFL/JLP taught in English [ FRE342H5 , JFL369H5 , JFL389H5 , JFL454H5 , JLP388H5 (formerly JFL388H5 )] can be counted towards a Major program in French.",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "of which 0.5 credit must be a 400-level FRE linguistics/literature course.",
@@ -6855,7 +6855,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempted from these courses must replace them with a higher level 1.0 credit in FRE.",
               "subject": "FRE",
@@ -7151,7 +7151,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": null,
@@ -7536,7 +7536,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -7709,7 +7709,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": null,
@@ -7793,7 +7793,7 @@
             },
             {
               "type": "open_pool",
-              "n": 5.0,
+              "n": 5,
               "constraint": "at_least",
               "description": "5.0 credits from the list of electives below; 1.0 credits must be at the 300+level",
               "subject": null,
@@ -8331,7 +8331,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "of which at least 2.0 must be at the 300-400 level.",
@@ -8346,7 +8346,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -8540,7 +8540,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -8574,7 +8574,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -8969,7 +8969,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": null,
@@ -9231,7 +9231,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": 8.5
       },
       "total_credits_note": "including at least 3.0 at the 300/400 level.",
@@ -9435,7 +9435,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": null,
@@ -9526,7 +9526,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -9582,7 +9582,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Higher Years: 2.0 credits in 300/400 level ECO courses",
               "subject": null,
@@ -9629,7 +9629,7 @@
     "completion": {
       "total_credits": {
         "min": 7.5,
-        "max": 8.0
+        "max": 8
       },
       "total_credits_note": null,
       "groups": [
@@ -9787,7 +9787,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from any 300/400 level STA course or CSC322H5 or CSC311H5 or MAT302H5 or MAT311H5 or MAT332H5 or MAT334H5 or MAT344H5 or MAT337H5",
               "subject": "STA",
@@ -9836,7 +9836,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": "At least 7.0 ENG credits, including at least 2.0 credits at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements, and no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The major also requires the following courses:",
@@ -10389,7 +10389,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": null,
@@ -10423,7 +10423,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -10781,7 +10781,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -10835,7 +10835,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_most",
               "description": "2.0 credits from any 300/400 level CSC course or GGR335H5 or GGR337H5 or GGR437H5 . At least 0.5 credit must come from 400-level courses and at least 0.5 credit must come from CSC369H5 or CSC311H5 or CSC338H5 or CSC347H5 or CSC376H5 . No more than 0.5 credit of GGR courses may count to this requirement.",
               "subject": "CSC",
@@ -10959,7 +10959,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -11018,7 +11018,7 @@
     "note": "No more than 1.0 credits outside of LIN/JAL/JFL/JLP offerings (excluding language courses in requirement #2) can be used towards program requirements. No more than 1.5 credits can be double counted towards two programs of study in Linguistics. No more than 1.0 ROP course credit may count toward requirement #4.",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": null,
@@ -11052,7 +11052,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -11075,7 +11075,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -11395,7 +11395,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -11760,7 +11760,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional POL credits",
               "subject": "POL",
@@ -11791,7 +11791,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": null,
@@ -11815,7 +11815,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -12443,7 +12443,7 @@
     "note": "Completion of this program with the Biology for Health Sciences - Major or Biology - Minor programs will not satisfy the 12.0 distinct credit requirement for degree completion. Students should be aware of the distinct credit requirement for their degree (see section 8.6 - HBSc Degree Requirements for full details). Please choose programs accordingly. PSL201Y1 , offered on the St. George campus, will not meet the Physiology requirements for the Biology - Major program and cannot be used for this program. Students may take no more than 2.0 credits combined in ROP, Internship Program, or Individual Project / Thesis courses at the 300/400-level for credit toward their Biology program. Students must consult with the Undergraduate Administrator before enrolling in any St. George course that they wish to use for credit toward any Biology program.",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "including at least 2.0 credits at the 300/400 level.",
@@ -12487,7 +12487,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 credits in UTM Biology courses at the 300 or 400 level.",
               "subject": "UTM",
@@ -12687,7 +12687,7 @@
     "note": "Additional DRE courses and the following drama-related courses can be used to fulfill the requirements for any Theatre, Drama and Performance Studies program: CIN308H5 or CIN317H5 or CIN403H5 or CIN410H5 or CIN430H5 or CLA300H5 or CLA390H5 (when drama-related) or CLA395H5 (when drama related) or CLA404H5 (when drama related) or ENG218H5 or ENG223H5 or ENG261H5 or ENG263H5 or ENG279H5 or ENG309H5 or ENG312H5 (when drama related) or ENG313H5 (when drama related) or ENG314H5 (when drama related) or ENG315H5 (when drama related) or ENG316H5 (when drama related) or ENG317H5 or ENG330H5 or ENG331H5 or ENG335H5 or ENG336H5 or ENG337H5 or ENG340H5 or ENG341H5 or ENG342H5 or ENG343H5 or ENG348H5 (when drama related) or ENG352H5 or ENG358H5 (when drama related) or ENG366H5 (when drama related) or ENG371H5 (when drama related) or ENG372H5 (when drama related) or ENG377H5 (when drama related) or ENG378H5 or ENG400H5 (when drama related) or ENG414H5 (when drama related) or ENG415H5 (when drama related) or ENG416H5 (when drama related) or ENG424H5 or ENG425H5 or ENG426H5 or ENG434H5 (when drama related) or ENG435H5 or ENG436H5 (when drama related) or ENG460H5 or ENG461H5 or ENG462H5 or ENG463H5 or ENG470H5 or ENG471H5 or ENG472H5 or ENG473H5 (when drama related) or FAH290H5 (when drama related) or FAH295H5 (when drama related) or FAH390H5 (when drama related) or FAH392H5 (when drama related) or FAH395H5 (when drama related) or FAH475H5 or FAH488H5 (when drama related) or FAH489H5 (when drama related) or FAH492H5 (when drama related) or FAH494H5 (when drama related) or FAH495H5 (when drama related) or FAH496H5 (when drama related) or FRE316H5 or FRE343H5 (when drama related) or FRE445H5 (when drama related) or FRE446H5 (when drama related) or GER320H5 (when drama related) or GER330H5 (when drama related) or GER355H5 (when drama related) or GER450H5 (when drama related) or GER475H5 (when drama related) or ITA256H5 or ITA315H5 or ITA395H5 (when drama related) or ITA415Y5 or ITA494H5 or VCC427H5 . Many of these courses have departmental prerequisites. You should consult the academic calendar before enrolling or contact the Undergraduate Advisor for assistance. Students enrolled in Specialist and Major programs in Drama who have completed 2.0 DRE credits may enrol in ENG317H5 or ENG330H5 or EBG331H5 or ENG335H5 or ENG336H5 or ENG340H5 or ENG341H5 or ENG342H5 or ENG343H5 .",
     "completion": {
       "total_credits": {
-        "min": 7.0,
+        "min": 7,
         "max": null
       },
       "total_credits_note": "as follows:",
@@ -12716,7 +12716,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 4.0,
+              "n": 4,
               "constraint": "at_least",
               "description": "Higher Years: 1.0 DRE at the 300 level and 4.0 credits from the drama-related courses, at least 1.0 at the 300+ level.",
               "subject": "DRE",
@@ -13342,7 +13342,7 @@
     "note": "COURSE CATEGORIES: Italian Cinema - ITA242H5 ; ITA247H5 ; ITA307H5 ; ITA309H5 ; ITA311H5 ; ITA313H5 ; ITA342H5 ; ITA343H5 Italian Culture; Literature - ITA218H5 ; ITA221H5 ; ITA222H5 ; ITA231H5 ; ITA232H5 ; ITA233H5 ; ITA235H5 ; ITA255H5 ; ITA256H5 ; ITA237H5 ; ITA238H5 ; ITA307H5 ; ITA315Y5 ; ITA339Y5 ; ITA370H5 ; ITA371H5 ; ITA390H5 ; ITA391H5 ; ITA392H5 ; ITA415Y5 ; ITA420H5 ; ITA421H5 Italian Experiential Learning - ITA315Y5 ; ITA388H5 ; ITA400Y5 ; ITA415Y5 Italian Language Practice - ITA100Y5 ; ITA102H5 ; ITA200Y5 ; ITA201Y5 ; ITA350H5 ; ITA351H5 ; ITA352H5 ; ITA450H5 Italian Linguistics; Teaching and Learning - ITA227H5 ; ITA272H5 ; ITA373H5 ; ITA374H5 ; ITA375H5 ; ITA437H5 ; ITA451H5",
     "completion": {
       "total_credits": {
-        "min": 8.0,
+        "min": 8,
         "max": null
       },
       "total_credits_note": "including at least 2.0 credits at the 300/400 level. Some written work and readings will be done in Italian in all courses",
@@ -13407,7 +13407,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in Italian Cinema",
               "subject": null,
@@ -13419,7 +13419,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in Italian Culture; Literature (excluding those listed above).",
               "subject": null,
@@ -13431,7 +13431,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in any of the Italian course categories (excluding those listed above).",
               "subject": null,
@@ -13462,7 +13462,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -13718,7 +13718,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -13745,7 +13745,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 RLG credits at the 300+level",
               "subject": "RLG",
@@ -13757,7 +13757,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional RLG credits at any level",
               "subject": "RLG",
@@ -13790,7 +13790,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -13959,7 +13959,7 @@
     "note": "Students cannot use more than 1.0 credits from 100-level PHL courses for program completion credit. Students also cannot use PHL204H5 or PHL277Y5 (or in combination with either PHL265H5 or PHL275H5 ) for program completion credit. Where courses exclude each other, at most one of them may be counted for credit toward philosophy program completion. All 200-level courses , with the exception of PHL204H5 , PHL245H5 and PHL247H5 , have the prerequisite that the student has completed at least 4.0 credits at the university. This prerequisite is waived for students who are taking (or have taken) a 100-level course in Philosophy. There are no other prerequisites for any 200-level courses. All 300-level courses , with the exception of PHL344H5 , 347H5, have a prerequisite of 1.5 credits in Philosophy. It is strongly recommended that students prepare for 300-level courses by taking two of the following: PHL103H5 or 113H5 or 200H5 or 210Y5 or 245H5 or PHL265H5 or PHL275H5 . Some 300-level courses have specific prerequisites or recommended preparation, as described in the course descriptions. Students who do not meet the prerequisite for a particular course but believe that they have adequate preparation should consult the Undergraduate Advisor concerning entry to the course. The prerequisite for 400-level courses , except PHL451H5 , is 4.5 credits in Philosophy. When choosing your courses, keep in mind that not all courses listed are offered every year. Some courses required to complete a program might be offered only every other year. For courses offered during the current year, consult the UTM Timetable website.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -13970,7 +13970,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 4.0,
+              "n": 4,
               "constraint": "at_least",
               "description": "4.0 credits in PHL are required, including at least 1.0 credits at the 300/400 level.",
               "subject": "PHL",
@@ -13981,7 +13981,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -14007,7 +14007,7 @@
     "note": "Students may take no more than 2.0 credits combined in ROP, individual project courses, or thesis courses at the 300/400 level for credit toward their Minor program. Students must receive permission from Faculty Program Advisor and Academic Counsellor prior to taking GGR courses on other U of T campuses toward their program requirement. No more than 1.0 non-U of T Mississauga credit is accepted in the Geography Specialist programs; and no more than 0.5 non-U of T Mississauga credit in the Geography and GeoSpatial Data Science Major programs. No substitution is allowed for GGR276H5 , GGR278H5 , GGR321H5 , GGR337H5 , GGR382H5 .",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -14159,7 +14159,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -14170,7 +14170,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -14240,7 +14240,7 @@
     "note": "No more than 1.5 credits can be double counted towards two programs of study in Linguistics. No more than 1.0 ROP course credit may count toward the Linguistic Studies Minor program.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -14270,7 +14270,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -14312,7 +14312,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Minimum 1.0 credit from the following list: any 300 and 400 level LIN, JAL, JFL, or JLP courses (unless otherwise noted).",
               "subject": null,
@@ -14324,7 +14324,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -14374,7 +14374,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -14646,7 +14646,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -14713,7 +14713,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -14912,7 +14912,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -14927,7 +14927,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 FAH credits at the 200 level, of which at least 0.5 credit must be in Ancient & Medieval, 0.5 credit must be in 15th-18th centuries, and 0.5 credit must be in 19th-21st centuries",
               "subject": "FAH",
@@ -14968,9 +14968,7 @@
               "subject": "FAH",
               "min_level": 200,
               "max_level": null,
-              "specific_courses": [
-                "FAH101H5"
-              ],
+              "specific_courses": [],
               "excluding": [],
               "sub_constraints": []
             },
@@ -15009,7 +15007,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -15454,7 +15452,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 HIS credits at the 300+level",
               "subject": "HIS",
@@ -15485,7 +15483,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "fulfilling the following requirements:",
@@ -15496,7 +15494,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -15607,7 +15605,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional credits (at least 1.0 of which must be at the 300/400 level) from courses listed above that have not already been applied towards the requirements for the Minor Program in Canadian Studies or approved by the program advisor.",
               "subject": null,
@@ -15638,7 +15636,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300 level or above.",
@@ -15669,7 +15667,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -15791,7 +15789,7 @@
     "note": "Students exempted from any of the above courses due to placement test results must consult with the Department for other suitable FRE/FSL course recommendations. Courses offered in English are excluded. Students cannot be enrolled simultaneously in more than one French program (French Studies - Specialist, French Studies - Major, Language Teaching and Learning: French - Major, French Studies - Minor, Functional French - Minor).",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -15864,7 +15862,7 @@
     "note": "Students cannot use more than 1.0 credit from 100-level PHL courses for program completion credit. Alternate elective options for either PHL or CSC/MAT/STA courses may be taken with the approval of the Department. Contact the PHL Academic Advisor for more information. Where courses exclude each other, at most, one of them may be counted for credit toward philosophy program completion. Be sure to look ahead and plan to complete the prerequisites for any upper-level courses that are of interest to you. For questions, please contact the PHL Academic Advisor. When choosing your courses, keep in mind that not all courses listed are offered every year. Some courses required to complete a program might be offered only every other year. For courses offered during the current year, consult the Timetable Builder.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300/400 level.",
@@ -15875,7 +15873,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -15893,7 +15891,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -15965,7 +15963,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Elective: 1.0 credit from CSC or MAT or STA;",
               "subject": null,
@@ -16010,7 +16008,7 @@
     "note": "Students are not permitted to take any of the following courses elsewhere: SOC100H5 SOC109H5 If any of the above credits are completed outside of UTM, students will be required to complete the UTM version of the course and it will be designated as an EXT course. Special consideration may be given to new students assessed for transfer credit at UTM.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -16052,7 +16050,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 SOC credit at the 300 level",
               "subject": "SOC",
@@ -16083,7 +16081,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 2.0,
+        "min": 2,
         "max": null
       },
       "total_credits_note": null,
@@ -16094,7 +16092,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 FSL credits plus 2.0 FRC credits including 1.0 at the 300 level.",
               "subject": "FSL",
@@ -16127,7 +16125,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "of which at least 1.0 must be at the 300-400 level.",
@@ -16423,7 +16421,7 @@
     "note": "Students cannot be enrolled simultaneously in more than one French program (French Studies - Specialist, French Studies - Major, Language Teaching and Learning: French - Major, French Studies - Minor, Functional French - Minor). Courses offered in English are excluded unless permission is granted by the Department prior to students taking the course.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -16434,7 +16432,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "A minimum of 2.0 credits of FRE language from the following: FRE180H5 /​ FRE181H5 /​ FRE282H5 /​ FRE283H5 /​ FRE382H5 /​ FRE383H5 /​ FRE442H5 /​ FRE482H5",
               "subject": "FRE",
@@ -16455,7 +16453,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit of FRE at the 300/400 level.",
               "subject": "FRE",
@@ -16493,7 +16491,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": 4.5
       },
       "total_credits_note": "including 1.0 credit at the 300 level or above.",
@@ -16585,7 +16583,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in PSY at the 300 level or above, excluding PSY399H5 and PSY399Y5",
               "subject": "PSY",
@@ -16626,7 +16624,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -16677,7 +16675,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -16747,7 +16745,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300/400 level.",
@@ -16814,7 +16812,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "with at least 1.0 credit at the 300-400 level.",
@@ -16879,7 +16877,7 @@
     "note": "Students are encouraged to review 300 and 400-level WRI courses in advance, and take necessary 200-level WRI courses to meet prerequisites in higher years.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -16918,7 +16916,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -16933,7 +16931,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -17244,7 +17242,7 @@
     "note": "Students cannot use more than 1.0 credits from 100-level PHL courses for program completion credit. Students also cannot use PHL204H5 or PHL277Y5 (or in combination with either PHL275H5 or PHL265H5 ) for program completion credit. Where courses exclude each other, at most one of them may be counted for credit toward philosophy program completion. All 200-level courses , with the exception of PHL204H5 , PHL245H5 and PHL247H5 , have the prerequisite that the student has completed at least 4.0 credits at the university. This prerequisite is waived for students who are taking (or have taken) a 100-level course in Philosophy. There are no other prerequisites for any 200-level courses. All 300-level courses , with the exception of PHL344H5 , 347H5, have a prerequisite of 1.5 credits in Philosophy. It is strongly recommended that students prepare for 300-level courses by taking two of the following: PHL103H5 or PHL113H5 or PHL200H5 or PHL210Y5 or PHL245H5 or PHL265H5 or PHL275H5 . Some 300-level courses have specific prerequisites or recommended preparation, as described in the course descriptions. Students who do not meet the prerequisite for a particular course but believe that they have adequate preparation should consult the Undergraduate Advisor concerning entry to the course. The prerequisite for 400-level courses , except PHL451H5 , is 4.5 credits in Philosophy. When choosing your courses, keep in mind that not all courses listed are offered every year. Some courses required to complete a program might be offered only every other year. For courses offered during the current year, consult the UTM Timetable website.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credits at the 300/400 level.",
@@ -17326,7 +17324,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credits in any other PHL course.",
               "subject": null,
@@ -17370,7 +17368,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -17400,7 +17398,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -17682,7 +17680,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "with at least 1.0 credit at the 300-400 level.",
@@ -17728,7 +17726,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -18350,7 +18348,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "of which at least 1.0 must be at the 300-400 level.",
@@ -18522,7 +18520,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -18570,7 +18568,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": 4.5
       },
       "total_credits_note": null,
@@ -18729,7 +18727,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including 1.0 credit at the 300/400 level.",
@@ -18866,7 +18864,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -18885,7 +18883,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -18927,7 +18925,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -18965,7 +18963,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional credit of ENG or DRE.",
               "subject": "ENG",
@@ -18998,7 +18996,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": 4.5
       },
       "total_credits_note": null,
@@ -19121,7 +19119,7 @@
     "note": "Students cannot use more than 1.0 credits from 100-level PHL courses for program completion credit. Students also cannot use PHL204H5 or PHL277Y5 (or in combination with either PHL265H5 or PHL275H5 ) for program completion credit. Where courses exclude each other, at most one of them may be counted for credit toward philosophy program completion. PHL courses completed in requirements 2, 3 and 5 may not be double counted to fulfill other program requirements in this minor. All 200-level courses , with the exception of PHL204H5 , PHL245H5 and PHL247H5 , have the prerequisite that the student has completed at least 4.0 credits at the university. This prerequisite is waived for students who are taking (or have taken) a 100-level course in Philosophy. There are no other prerequisites for any 200-level courses. All 300-level courses , with the exception of PHL344H5 , 347H5, have a prerequisite of 1.5 credits in Philosophy. It is strongly recommended that students prepare for 300-level courses by taking two of the following: PHL103H5 or PHL113H5 or PHL200H5 or PHL210Y5 or PHL245H5 or PHL265H5 or PHL275H5 . Some 300-level courses have specific prerequisites or recommended preparation, as described in the course descriptions. Students who do not meet the prerequisite for a particular course but believe that they have adequate preparation should consult the Undergraduate Advisor concerning entry to the course. The prerequisite for 400-level courses , except PHL451H5 , is 4.5 credits in Philosophy. When choosing your courses, keep in mind that not all courses listed are offered every year. Some courses required to complete a program might be offered only every other year. For courses offered during the current year, consult the UTM Timetable website.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300/400 level, of which 0.5 credit must be PHL.",
@@ -19132,7 +19130,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -19216,7 +19214,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -19278,7 +19276,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from: ANT or ECO or POL or SOC",
               "subject": null,
@@ -19321,7 +19319,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
@@ -19332,7 +19330,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 4.0,
+              "n": 4,
               "constraint": "at_least",
               "description": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
               "subject": "ENG",
@@ -19345,7 +19343,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -19371,7 +19369,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "of which 1.0 credit must be at the 300/400 level:",
@@ -19382,7 +19380,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 4.0,
+              "n": 4,
               "items": [
                 {
                   "type": "course",
@@ -19575,7 +19573,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -19663,7 +19661,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_most",
               "description": "Third and Fourth Years: 1.0 credit from any 300/400 level CSC course (except for CSC392H5 and CSC393H5 and CSC492H5 and CSC493H5 and any CSC ROP courses) or GGR335H5 or GGR337H5 or GGR437H5 . No more than 0.5 credit of GGR courses may count to this requirement.",
               "subject": "CSC",
@@ -19713,7 +19711,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -19813,7 +19811,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 5.0,
+        "min": 5,
         "max": null
       },
       "total_credits_note": "including at least 1.5 credits at the 300/400 level. Please note that a number of these courses have MAT pre-requisites and/ or co-requisites.",
@@ -20033,7 +20031,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit at the 300 or 400 level and no more than 1.0 credit at the 100 level.",
@@ -20044,7 +20042,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 4.0,
+              "n": 4,
               "constraint": "at_most",
               "description": "4.0 POL credits are required including at least 1.0 credit at the 300 or 400 level and no more than 1.0 credit at the 100 level.",
               "subject": "POL",
@@ -20055,12 +20053,12 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 },
                 {
                   "constraint": "at_most",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -20161,7 +20159,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -20256,7 +20254,7 @@
     "note": "Students must complete 1.5 credit of ENG courses and 1.5 credit of CCT courses as part of the Game Studies Minor. As an additional course option, CSC389H5 may be used toward program completion, depending on the course topic. Students interested in completing CSC389H5 for the Minor must obtain permission from the Department of English & Drama in advance.",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including 1.0 credit at the 300/ 400 level)",
@@ -20354,7 +20352,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional credit from the ENG and CCT courses listed above",
               "subject": null,
@@ -20385,7 +20383,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": ":",
@@ -20396,7 +20394,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -20418,7 +20416,7 @@
             },
             {
               "type": "n_from",
-              "n": 3.0,
+              "n": 3,
               "items": [
                 {
                   "type": "course",
@@ -20555,7 +20553,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -20589,7 +20587,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional Biology credits, at least 1.0 credit at the 300/400 level.",
               "subject": null,
@@ -20600,7 +20598,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -20626,7 +20624,7 @@
     "note": "Additional DRE courses and the following drama-related courses can be used to fulfill the requirements for any Theatre, Drama and Performance Studies program: CIN308H5 or CIN317H5 or CIN403H5 or CIN410H5 or CIN430H5 or CLA300H5 or CLA390H5 (when drama related) or CLA395H5 (when drama related) or CLA404H5 (when drama related) or ENG218H5 or ENG223H5 or ENG261H5 or ENG263H5 or ENG279H5 or ENG309H5 or ENG312H5 (when drama related) or ENG313H5 (when drama related) or ENG314H5 (when drama related) or ENG315H5 (when drama related) or ENG316H5 (when drama related) or ENG317H5 or ENG330H5 or ENG331H5 or ENG335H5 or ENG336H5 or ENG337H5 or ENG340H5 or ENG341H5 or ENG342H5 or ENG343H5 or ENG348H5 (when drama related) or ENG352H5 or ENG358H5 (when drama related) or ENG366H5 (when drama related) or ENG371H5 (when drama related) or ENG372H5 (when drama related) or ENG377H5 (when drama related) or ENG378H5 or ENG400H5 (when drama related) or ENG414H5 (when drama related) or ENG415H5 (when drama related) or ENG416H5 (when drama related) or ENG424H5 or ENG425H5 or ENG426H5 or ENG434H5 (when drama related) or ENG435H5 or ENG436H5 (when drama related) or ENG460H5 or ENG461H5 or ENG462H5 or ENG463H5 or ENG470H5 or ENG471H5 or ENG472H5 or ENG473H5 (when drama related) or FAH290H5 (when drama related) or FAH295H5 (when drama related) or FAH390H5 (when drama related) or FAH392H5 (when drama related) or FAH395H5 (when drama related) or FAH475H5 or FAH488H5 (when drama related) or FAH489H5 (when drama related) or FAH492H5 (when drama related) or FAH494H5 (when drama related) or FAH495H5 (when drama related) or FAH496H5 (when drama related) or FRE316H5 or FRE343H5 (when drama related) or FRE445H5 (when drama related) or FRE446H5 (when drama related) or GER320H5 (when drama related) or GER330H5 (when drama related) or GER355H5 (when drama related) or GER450H5 (when drama related) or GER475H5 (when drama related) or ITA256H5 or ITA315H5 or ITA395H5 (when drama related) or ITA415Y5 or ITA494H5 or VCC427H5 . Many of these courses have departmental prerequisites. You should consult the academic calendar before enrolling or contact the Undergraduate Advisor for assistance. Students enrolled in Specialist and Major programs in Drama who have completed 2.0 DRE credits may enrol in ENG317H5 or ENG330H5 or EBG331H5 or ENG335H5 or ENG336H5 or ENG340H5 or ENG341H5 or ENG342H5 or ENG343H5 .",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "as follows:",
@@ -20668,7 +20666,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": null,
@@ -20819,7 +20817,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from the following: MAT at the 300/400 level or CSC363H5 (except for MAT397H5 , MAT398H5 , MAT492H5 , MAT497H5 or MAT498H5 )",
               "subject": "MAT",
@@ -20861,7 +20859,7 @@
     "note": "COURSE CATEGORIES: Italian Cinema - ITA242H5 ; ITA247H5 ; ITA307H5 ; ITA309H5 ; ITA311H5 ; ITA313H5 ; ITA342H5 ; ITA343H5 Italian Culture; Literature - ITA218H5 ; ITA221H5 ; ITA222H5 ; ITA231H5 ; ITA232H5 ; ITA233H5 ; ITA235H5 ; ITA255H5 ; ITA256H5 ; ITA237H5 ; ITA238H5 ; ITA307H5 ; ITA315Y5 ; ITA339Y5 ; ITA370H5 ; ITA371H5 ; ITA390H5 ; ITA391H5 ; ITA392H5 ; ITA415Y5 ; ITA420H5 ; ITA421H5 Italian Experiential Learning - ITA388H5 ; ITA315Y5 ; ITA400Y5 ; ITA415Y5 Italian Language Practice - ITA100Y; ITA102H5 ; ITA200Y5 ; ITA201Y5 ; ITA350H5 ; ITA351H5 ; ITA352H5 ; ITA450H5 Italian Linguistics; Teaching and Learning - ITA227H5 ; ITA272H5 ; ITA373H5 ; ITA374H5 ; ITA375H5 ; ITA437H5 ; ITA451H5",
     "completion": {
       "total_credits": {
-        "min": 4.0,
+        "min": 4,
         "max": null
       },
       "total_credits_note": "including at least 1.0 300/400 level credit.",
@@ -20889,7 +20887,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional credits in any of the Italian course categories",
               "subject": null,
@@ -20924,7 +20922,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 11.0,
+        "min": 11,
         "max": null
       },
       "total_credits_note": null,
@@ -21032,7 +21030,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 15.0,
+        "min": 15,
         "max": null
       },
       "total_credits_note": null,
@@ -21157,7 +21155,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -21195,7 +21193,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT at 200+ level",
               "subject": "MGT",
@@ -21207,7 +21205,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT at 400 level",
               "subject": "MGT",
@@ -21258,7 +21256,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -21424,7 +21422,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": null,
@@ -21439,7 +21437,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 RLG credits at the 200-level",
               "subject": "RLG",
@@ -21467,7 +21465,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 RLG credits at the 400-level",
               "subject": "RLG",
@@ -21484,7 +21482,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional RLG credits at any level",
               "subject": "RLG",
@@ -21519,7 +21517,7 @@
     "note": "Students cannot use more than 1.0 credits from 100-level PHL courses for program completion credit. Students also cannot use PHL204H5 or PHL277Y5 (or in combination with either PHL265H5 or PHL275H5 ) for program completion credit. Where courses exclude each other, at most one of them may be counted for credit toward philosophy program completion. It is recommended that all students discuss their course selection requirements with the Undergraduate Advisor. All 200-level courses , with the exception of PHL204H5 , PHL245H5 and PHL247H5 , have the prerequisite that the student has completed at least 4.0 credits at the university. This prerequisite is waived for students who are taking (or have taken) a 100-level course in Philosophy. There are no other prerequisites for any 200-level courses. All 300-level courses , with the exception of PHL344H5 , 347H5, have a prerequisite of 1.5 credits in Philosophy. It is strongly recommended that students prepare for 300-level courses by taking two of the following: PHL103H5 or PHL113H5 or PHL200H5 or PHL210Y5 or PHL245H5 or PHL265H5 or PHL275H5 . Some 300-level courses have specific prerequisites or recommended preparation, as described in the course descriptions. Students who do not meet the prerequisite for a particular course but believe that they have adequate preparation should consult the Undergraduate Advisor concerning entry to the course. The prerequisite for 400-level courses , except PHL451H5 , is 4.5 credits in Philosophy. When choosing your courses, keep in mind that not all courses listed are offered every year. Some courses required to complete a program might be offered only every other year. For courses offered during the current year, consult the UTM Timetable website.",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": null,
@@ -21878,7 +21876,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -22016,7 +22014,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -22126,7 +22124,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional BIO credit taken at U of T Mississauga campus",
               "subject": "BIO",
@@ -22170,7 +22168,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": null,
@@ -22396,7 +22394,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: 1. FAH101H5 and VCC101H5 2. ISP100H5 3. 1.0 credit in FAH at the 200 level",
               "subject": "FAH",
@@ -22418,7 +22416,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Second Year: 1. 2.0 credits in FAH at the 200 level 2. 0.5 credit in FAH or VCC at the 300 level",
               "subject": "FAH",
@@ -22436,7 +22434,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 3.0,
+              "n": 3,
               "constraint": "at_least",
               "description": "Third Year: 3.0 credits in FAH at the 300/ 400 level, of which at least 1.5 must be at the 300 level.",
               "subject": "FAH",
@@ -22487,7 +22485,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": null,
@@ -23164,7 +23162,7 @@
             },
             {
               "type": "open_pool",
-              "n": 3.0,
+              "n": 3,
               "constraint": "at_least",
               "description": "3.0 HIS credits at the 300+level",
               "subject": "HIS",
@@ -23176,7 +23174,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 HIS credits at the 400-level",
               "subject": "HIS",
@@ -23235,7 +23233,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "First Year: 1. FAH101H5 and ISP100H5 2. 1.0 additional credit in FAH at the 200 level 3. 2.0 credits from FAS143H5 or FAS145H5 or FAS147H5 or FAS232H5 or FAS236H5 or FAS248H5 (All of these courses are open to first-year students.)",
               "subject": "FAH",
@@ -23262,7 +23260,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Second Year: 1. VCC101H5 2. 1.0 credit of FAH at the 200 level 3. Remaining uncompleted credit(s) from the FAS course list identified in ‘First Year’ (above).",
               "subject": "FAH",
@@ -23282,7 +23280,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Third Year: 1. 1.0 credit of FAH or VCC at the 300/400 level 2. 2.0 credits of FAS at the 300/400 level",
               "subject": "VCC",
@@ -23300,7 +23298,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Fourth Year: 1. 1.0 credit of FAH or VCC or VST at the 300/400 level 2. 2.0 credits of FAS at the 300/400 level",
               "subject": "VST",
@@ -23419,7 +23417,7 @@
             },
             {
               "type": "open_pool",
-              "n": 17.0,
+              "n": 17,
               "constraint": "at_most",
               "description": "9. No more than 17.0 credits of FAH and FAS may be completed.",
               "subject": "FAH",
@@ -23430,7 +23428,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_most",
-                  "n": 17.0,
+                  "n": 17,
                   "description": "FAH and FAS may be completed"
                 }
               ]
@@ -23569,7 +23567,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from courses listed in Group C below",
               "subject": null,
@@ -23722,7 +23720,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -23798,7 +23796,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit of ECO at the 300/400-level",
               "subject": "ECO",
@@ -23810,7 +23808,7 @@
             },
             {
               "type": "open_pool",
-              "n": 7.0,
+              "n": 7,
               "constraint": "at_most",
               "description": "Political Science: 7.0 credits in POL, including at least 1.0 credit at the 400 level and no more than 1.0 credit at the 100 level.",
               "subject": "POL",
@@ -23821,12 +23819,12 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 },
                 {
                   "constraint": "at_most",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -23961,7 +23959,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credits of POL",
               "subject": "POL",
@@ -23996,7 +23994,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": "The program must include a minimum of 4.0 300/400 level credits (2.0 in French and 2.0 in Italian) and 1.0 credit at the 400 level (either in French or in Italian).",
@@ -24012,7 +24010,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: FRE180H5 and FRE181H5 (minimum grade of 63% is required) or equivalent. Students exempted from these courses may replace them with a higher level 1.0 credit in FRE.",
               "subject": "FRE",
@@ -24027,7 +24025,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -24187,7 +24185,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "Italian 7.0 credits are required. Written work will be done in Italian in all courses. 1. ITA200Y5 2. ITA350Y5 3. 1.0 credit from ITA237H5 , 239H5, 354Y5 4. ITA231H5 /​ ITA232H5 , ITA420Y5 5. 2.0 additional credits in ITA, excluding ITA100Y5 /​101H5/ 102H5. Courses not used in #1 above may be used. At least 1.0 credit must be in Italian literature (excluding those in item #2 above).",
               "subject": "ITA",
@@ -24207,7 +24205,7 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": ""
                 }
               ]
@@ -24580,7 +24578,7 @@
             },
             {
               "type": "open_pool",
-              "n": 5.0,
+              "n": 5,
               "constraint": "at_least",
               "description": "5.0 credits of SOC, of which 3.0 credits must be at the 300/400-level",
               "subject": "SOC",
@@ -24592,7 +24590,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -24829,7 +24827,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -24913,7 +24911,7 @@
     "note": "Students who have completed PHY136H5 and PHY137H5 should speak with the Department of Chemical & Physical Sciences Academic Counsellor.",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": null,
@@ -25322,7 +25320,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 12.0,
+        "min": 12,
         "max": 13.5
       },
       "total_credits_note": null,
@@ -25670,7 +25668,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -26110,7 +26108,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 credits at the 300+level",
               "subject": null,
@@ -26122,7 +26120,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credits of HIS at the 400-level",
               "subject": "HIS",
@@ -26174,7 +26172,7 @@
     "note": "This is intended to be an interdisciplinary program. At least four different disciplines must be represented among the courses that are counted as program requirements. For example, a course list selected from ENV + GGR + CHM + ERS is acceptable, but a course list selected only from ENV + GGR + ERS is not. Please contact the Program Advisors or Academic Counsellor if you have any questions about the validity of your course selections.",
     "completion": {
       "total_credits": {
-        "min": 12.0,
+        "min": 12,
         "max": null
       },
       "total_credits_note": "of which at least 4.0 credits must be at the 300-400 level, including at least 1.0 credit at the 400 level.",
@@ -26189,7 +26187,7 @@
             },
             {
               "type": "n_from",
-              "n": 3.0,
+              "n": 3,
               "items": [
                 {
                   "type": "course",
@@ -26302,7 +26300,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -26362,7 +26360,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -26456,7 +26454,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -26817,7 +26815,7 @@
     "note": "COURSE CATEGORIES IN ITA : Italian Cinema - ITA242H5 ; ITA246H5 ; ITA247H5 ; ITA307H5 ; ITA309H5 ; ITA311H5 ; ITA313H5 ; ITA342H5 ; ITA343H5 Italian Culture; Literature - ITA103H5 ; ITA219Y5 ; ITA221H5 ; ITA222H5 ; ITA231H5 ; ITA232H5 ; ITA235H5 ; ITA255Y5 ; ITA237H5 ; ITA238H5 ; ITA307H5 ; ITA315Y5 ; ITA370Y5 ; ITA390H5 ; ITA391H5 ; ITA392H5 ; ITA413Y5 ; ITA420Y5 ; ITA436Y5 Italian Experiential Learning - ITA388H5 ; ITA315Y5 ; ITA400Y5 ; ITA413Y5 Italian Language Practice - ITA100Y5 ; ITA101Y5 ; ITA102H5 ; ITA200Y5 ; ITA201Y5 ; ITA350Y5 ; ITA351H5 ; ITA352H5 ; ITA450H5 Italian Linguistics; Teaching and Learning - ITA227H5 ; ITA272H5 ; ITA373H5 ; ITA374H5 ; ITA375H5 ; ITA376H5 ; ITA451H5 ; ITA437Y5",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": "The program must include a minimum of 4.0 300/400 level credits (2.0 in French and 2.0 in Italian), 1.0 credit at the 400 level (either in French or Italian).",
@@ -26839,7 +26837,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempt from these courses must replace them with a higher level 1.0 credit in FRE.",
               "subject": "FRE",
@@ -26987,7 +26985,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional credits in Italian Language; Linguistics; Teaching and Learning.",
               "subject": null,
@@ -27034,7 +27032,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 15.0,
+        "min": 15,
         "max": null
       },
       "total_credits_note": "including at least 7.0 credits at the 300/400 level, of which 1.5 must be at the 400 level.",
@@ -27156,7 +27154,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -27250,7 +27248,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit from UTM CHM/BIO courses at the 400 level.",
               "subject": null,
@@ -27313,7 +27311,7 @@
     "note": "A single course can be used to satisfy only one Psychology program requirement. Students can apply a maximum of 1.5 credits from Cluster D - Research and Applications, towards program requirements. Students intending to continue in Graduate Studies should consider including courses from Cluster D - Research and Applications.",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": null,
@@ -27324,7 +27322,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -27334,7 +27332,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -27471,7 +27469,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional credit at any level from Clusters A, B, C, D",
               "subject": null,
@@ -27483,7 +27481,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -27919,7 +27917,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 13.0,
+        "min": 13,
         "max": null
       },
       "total_credits_note": "including at least 1.0 credit of VCC at the 400 level.",
@@ -27976,7 +27974,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -28024,7 +28022,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "Third Year: 1. 2.0 credits from CCT310H5 or CCT311H5 or CCT353H5 or VCC394H5 or VCC397H5 2. 1.5 credits of VCC at the 300/400 level 3. 1.0 credit from VST410H5 or any CIN or FAH course at the 300/400 level",
               "subject": "VCC",
@@ -28093,7 +28091,7 @@
     "note": "Students intending to continue into Graduate Studies should consider including a course in independent research in Year 4. Students may take no more than 2.0 credits combined in ROP, Internship Program, Individual Project/ Thesis courses at the 300/400-level for credit toward their Biology program. No substitute statistics course will be allowed for BIO360H5 .",
     "completion": {
       "total_credits": {
-        "min": 15.0,
+        "min": 15,
         "max": null
       },
       "total_credits_note": null,
@@ -28178,7 +28176,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -28256,7 +28254,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -28424,7 +28422,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -28597,7 +28595,7 @@
     "note": "Students cannot be enrolled simultaneously in more than one French program (French Studies - Specialist, French Studies - Major, Language Teaching and Learning: French - Major, French Studies - Minor, Functional French - Minor) Courses with an FSL designator cannot be counted towards a Major or Specialist program in French Studies. No more than 1.0 FRE/JFL/JLP credits taught in English [ FRE342H5 , JFL369H5 , JFL389H5 , JFL454H5 , JLP388H5 (formerly JFL388H5 )] can be counted towards a Specialist program in French.",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": "including at least 5.0 300/400 level credits in literature/linguistics, 1.0 of which must be a 400 level credit.",
@@ -28608,7 +28606,7 @@
           "items": [
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempted from these courses must replace them with a higher level 1.0 credit in FRE.",
               "subject": "FRE",
@@ -29073,7 +29071,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -29099,7 +29097,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 credits of CCT or MGD at the 300- or 400-level. Cannot include any courses already used above.",
               "subject": "CCT",
@@ -29453,7 +29451,7 @@
     "note": "For MAT157H5 , permission is required from the CHM Program Advisor ( MAT132H5 and MAT134H5 ) or ( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 ) or ( MAT157H5 and MAT159H5 ) or MAT137Y5 is required for all 200-level CHM courses. Students cannot take more than 2.0 credits total in ROP, Internship or Research Project/ Thesis courses at the 300/ 400 level for credit toward this Chemistry program. PHY146H5 and PHY147H5 are recommended preparation for all Joint Chemistry-Physics (JCP) courses",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": null,
@@ -29761,7 +29759,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -30205,7 +30203,7 @@
             },
             {
               "type": "n_from",
-              "n": 3.0,
+              "n": 3,
               "items": [
                 {
                   "type": "course",
@@ -30287,7 +30285,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -30383,7 +30381,7 @@
     "completion": {
       "total_credits": {
         "min": 15.5,
-        "max": 16.0
+        "max": 16
       },
       "total_credits_note": null,
       "groups": [
@@ -30711,7 +30709,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 12.0,
+        "min": 12,
         "max": null
       },
       "total_credits_note": "of which at least 4.0 must be at the 300-400 level, including at least 1.0 at the 400 level.",
@@ -30748,7 +30746,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -30802,7 +30800,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -30860,7 +30858,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -30910,7 +30908,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -30942,7 +30940,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -30976,7 +30974,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -31312,7 +31310,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -31408,7 +31406,7 @@
     "completion": {
       "total_credits": {
         "min": 14.5,
-        "max": 15.0
+        "max": 15
       },
       "total_credits_note": "including at least 5.0 at the 300/400 level, of which 1.0 credit must be at the 400 level.",
       "groups": [
@@ -31532,7 +31530,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 13.0,
+        "min": 13,
         "max": null
       },
       "total_credits_note": null,
@@ -31571,7 +31569,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -31682,7 +31680,7 @@
     "note": "The program requirements in effect at the time the student is admitted to the program must be met in order to fulfill the degree requirements. Prospective students already holding a degree in Psychology may not complete a Forensic Psychology Specialist Program due to the overlap of course content for courses already completed in their first specialty . Students without pre- and co-requisites or written permission of the instructor can be de-registered from courses at any time. Once a student has been admitted into a FSC program stream, written authorization from the Forensic Science program advisor MUST be obtained for any request of change in a student's area of study within the Forensic Science program.",
     "completion": {
       "total_credits": {
-        "min": 15.0,
+        "min": 15,
         "max": null
       },
       "total_credits_note": null,
@@ -32007,7 +32005,7 @@
     "completion": {
       "total_credits": {
         "min": 12.5,
-        "max": 13.0
+        "max": 13
       },
       "total_credits_note": null,
       "groups": [
@@ -32173,7 +32171,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 credits of STA at the 300/400 level",
               "subject": "STA",
@@ -32185,7 +32183,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -32223,7 +32221,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit of STA",
               "subject": "STA",
@@ -32263,7 +32261,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": "At least 10.0 ENG credits, including at least 3.0 credits at the 300 level and 1.0 credit at the 400 level. Only 1.0 credit at the 100 level may be counted towards program requirements, and no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The specialist also requires the following courses:",
@@ -32291,7 +32289,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -32370,7 +32368,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -32815,7 +32813,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": null,
@@ -32997,7 +32995,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -33092,8 +33090,8 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 12.0,
-        "max": 13.0
+        "min": 12,
+        "max": 13
       },
       "total_credits_note": null,
       "groups": [
@@ -33391,7 +33389,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_most",
               "description": "2.0 credits from any 300/400 level CSC course or GGR335H5 or GGR337H5 or GGR437H5 . At least 1.0 credit must come from 400-level courses, and no more than 1.0 credit of GGR courses may count to this requirement.",
               "subject": "CSC",
@@ -33406,13 +33404,13 @@
               "sub_constraints": [
                 {
                   "constraint": "at_least",
-                  "n": 1.0,
+                  "n": 1,
                   "description": "400-level courses, and",
                   "min_level": 400
                 },
                 {
                   "constraint": "at_most",
-                  "n": 1.0,
+                  "n": 1,
                   "description": "GGR courses may count to this requirement",
                   "subject": "GGR"
                 }
@@ -33844,7 +33842,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -33911,7 +33909,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": null,
@@ -34169,7 +34167,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -34257,7 +34255,7 @@
     "note": "Additional DRE courses and the following drama-related courses can be used to fulfill the requirements for any Theatre, Drama and Performance Studies program: CIN308H5 or CIN315H5 or CIN317H5 or CIN403H5 or CIN410H5 or CIN430H5 or CLA300H5 or CLA390H5 (when drama-related) or CLA395H5 (when drama related) or CLA404H5 (when drama related), ENG218H5 or ENG223H5 or ENG261H5 or ENG263H5 or ENG279H5 or ENG309H5 or ENG312H5 (when drama related) or ENG313H5 (when drama related) or ENG314H5 (when drama related) or ENG315H5 (when drama related) or ENG316H5 (when drama related) or ENG317H5 or ENG330H5 or ENG331H5 or ENG335H5 or ENG336H5 or ENG337H5 or ENG340H5 or ENG341H5 or ENG342H5 or ENG343H5 or ENG348H5 (when drama related) or ENG352H5 or ENG358H5 (when drama related) or ENG366H5 (when drama related) or ENG371H5 (when drama related) or ENG372H5 (when drama related) or ENG377H5 (when drama related) or ENG378H5 or ENG400H5 (when drama related) or ENG414H5 (when drama related) or ENG415H5 (when drama related) or ENG416H5 (when drama related) or ENG424H5 or ENG425H5 or ENG426H5 or ENG434H5 (when drama related) or ENG435H5 or ENG436H5 (when drama related) or ENG460H5 or ENG461H5 or ENG462H5 or ENG463H5 or ENG470H5 or ENG471H5 or ENG472H5 or ENG473H5 (when drama related) or FAH290H5 (when drama related) or FAH295H5 (when drama related) or FAH390H5 (when drama related) or FAH392H5 (when drama related) or FAH395H5 (when drama related) or FAH475H5 or FAH488H5 (when drama related) or FAH489H5 (when drama related) or FAH492H5 (when drama related) or FAH494H5 (when drama related) or FAH495H5 (when drama related) or FAH496H5 (when drama related) or FRE316H5 or FRE343H5 (when drama related) or FRE445H5 (when drama related) or FRE446H5 (when drama related) or GER320H5 (when drama related) or GER330H5 (when drama related) or GER355H5 (when drama related) or GER450H5 (when drama related) or GER475H5 (when drama related) or ITA256H5 or ITA315H5 or ITA395H5 (when drama related) or ITA415Y5 or ITA494H5 or VCC427H5 . Many of these courses have departmental prerequisites. You should consult the academic calendar before enrolling or contact the Undergraduate Advisor for assistance. Students enrolled in Specialist and Major programs in Drama who have completed 2.0 DRE credits may enrol in ENG317H5 or ENG330H5 or EBG331H5 or ENG335H5 or ENG336H5 or ENG340H5 or ENG341H5 or ENG342H5 or ENG343H5 . ENG100H5 does not count toward the TDS Specialist program. DRE201H5 is not intended for Specialists and does not count towards program requirements. \"Taking a year off\" from this program is possible, if difficult, after the first and second year, problematic and nearly impossible after the third year. Returning at any point requires consultation with the Director of Drama Studies at UTM and the Program Coordinator at Sheridan College and also depends on the availability of space in the class you wish to join. Likewise, students considering time away should also consult the Director of Drama Studies at UTM and the Program Coordinator at Sheridan College.",
     "completion": {
       "total_credits": {
-        "min": 12.0,
+        "min": 12,
         "max": null
       },
       "total_credits_note": null,
@@ -34421,7 +34419,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 additional credits of drama-related courses (see course list below)",
               "subject": null,
@@ -34656,7 +34654,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT or MGM at the 200/300/400 level (cannot double count courses)",
               "subject": "MGT",
@@ -34694,8 +34692,8 @@
     "note": "Students intending to complete Biology courses to satisfy Exceptionality in Human Learning - Specialist requirements, should thoroughly review Biology prerequisite requirements prior to enrolment to determine eligibility.",
     "completion": {
       "total_credits": {
-        "min": 13.0,
-        "max": 15.0
+        "min": 13,
+        "max": 15
       },
       "total_credits_note": "including at least 5.0 300/400-level credits of which 1.5 must be at the 400-level.",
       "groups": [
@@ -34705,7 +34703,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -34831,7 +34829,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 3.0,
+              "n": 3,
               "items": [
                 {
                   "type": "course",
@@ -35019,7 +35017,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -35275,7 +35273,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -35377,7 +35375,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -35682,7 +35680,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -36098,7 +36096,7 @@
     "note": "Students are not permitted to take any of the following courses elsewhere: 1. POL200Y5 2. POL209H5 3. POL210H5 4. POL215H5 5. POL216H5 6. POL218H5 7. POL219H5 8. POL243H5 9. POL244H5 10. POL320Y5 If any of the above credits are completed outside of UTM, students will be required to complete the UTM version of the course and it will be designated as an EXT course. Special consideration may be given to new students assessed for transfer credit at UTM.",
     "completion": {
       "total_credits": {
-        "min": 11.0,
+        "min": 11,
         "max": null
       },
       "total_credits_note": "; including no more than 1.0 POL credit at the 100 level and 4.0 credits at the 300/400 level, of which 2.0 credits must be at the 400 level.",
@@ -36227,7 +36225,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -36337,7 +36335,7 @@
             },
             {
               "type": "open_pool",
-              "n": 3.0,
+              "n": 3,
               "constraint": "at_least",
               "description": "3.0 credits of additional POL courses where 2.0 credits must be at 400 level",
               "subject": null,
@@ -36383,7 +36381,7 @@
     "note": "The prerequisite for ECO375H5 is a minimum of 70% obtained within ECO220Y5 . Management and Commerce students can only use 1.0 ROP credit towards program completion. Please note the following list of acceptable equivalents for application to the POST: MGT120H5 UTSC: MGAB01H3 and MGAB02H3 UTSG: RSM219H1 MGM101H5 UTSC: MGTA05H3 or ( MGTA01H3 and MGTA02H3 ) UTSG: RSM100H1 ECO101H5 and ECO102H5 UTSC: MGEA02H3 and MGEA06H3 UTSG: ECO100Y1 or ( ECO101H1 and ECO102H1 ) UTM: ECO100Y5 MAT133Y5 UTSC: MATA32H3 and MATA33H3 UTSG: MAT133Y1 or ( MAT135H1 and MAT136H1 ) UTM: MAT135Y5 or ( MAT135H5 and MAT136H5 ) or ( MAT132H5 and MAT134H5 ) or MAT137Y5 or MAT157Y5",
     "completion": {
       "total_credits": {
-        "min": 16.0,
+        "min": 16,
         "max": null
       },
       "total_credits_note": null,
@@ -36585,7 +36583,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -36754,7 +36752,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -36860,7 +36858,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 12.0,
+        "min": 12,
         "max": null
       },
       "total_credits_note": null,
@@ -36884,7 +36882,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -37105,7 +37103,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -37247,7 +37245,7 @@
     "note": "Note that Management and Commerce students can only use 1.0 ROP credit towards program completion. Please note the following list of acceptable equivalents for application to the POST: MGT120H5 UTSC: MGAB01H3 and MGAB02H3 UTSG: RSM219H1 MGM101H5 UTSC: MGTA05H3 or ( MGTA01H3 and MGTA02H3 ) UTSG: RSM100H1 ECO101H5 and ECO102H5 UTSG: ECO100Y1 or ( ECO101H1 and ECO102H1 ) UTSC: MGEA02H3 and MGEA06H3 UTM: ECO100Y5 MAT133Y5 UTSC: MATA32H3 and MATA33H3 UTSG: MAT133Y1 or ( MAT135H1 and MAT136H1 ) UTM: MAT135Y5 or ( MAT135H5 and MAT136H5 ) or ( MAT132H5 and MAT134H5 ) or MAT137Y5 or MAT157Y5",
     "completion": {
       "total_credits": {
-        "min": 13.0,
+        "min": 13,
         "max": null
       },
       "total_credits_note": null,
@@ -37385,7 +37383,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -37439,7 +37437,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT at the 200/300/400 level (cannot double count courses)",
               "subject": "MGT",
@@ -37451,7 +37449,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT at the 400 level (cannot double count courses)",
               "subject": "MGT",
@@ -37541,7 +37539,7 @@
             },
             {
               "type": "open_pool",
-              "n": 2.0,
+              "n": 2,
               "constraint": "at_least",
               "description": "2.0 credits in ECO at 300/400 level.",
               "subject": "ECO",
@@ -37686,7 +37684,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -38080,7 +38078,7 @@
     "note": "Note that Management and Commerce students can only use 1.0 ROP credit towards program completion. Please note the following list of acceptable equivalents for application to the POST: MGT120H5 UTSC: MGAB01H3 and MGAB02H3 UTSG: RSM219H1 MGM101H5 UTSC: MGTA05H3 or ( MGTA01H3 and MGTA02H3 ) UTSG: RSM100H1 ECO101H5 and ECO102H5 UTSC: MGEA02H3 and MGEA06H3 UTSG: ECO100Y1 or ( ECO101H1 and ECO102H1 ) UTM: ECO100Y5 MAT133Y5 UTSC: MATA32H3 and MATA33H3 UTSG: MAT133Y1 or ( MAT135H1 and MAT136H1 ) UTM: MAT135Y5 or ( MAT135H5 and MAT136H5 ) or ( MAT132H5 and MAT134H5 ) or MAT137Y5 or MAT157Y5",
     "completion": {
       "total_credits": {
-        "min": 16.0,
+        "min": 16,
         "max": null
       },
       "total_credits_note": null,
@@ -38292,7 +38290,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -38394,7 +38392,7 @@
     "note": "It is strongly recommended that MGT120H5 is taken in first year or the Fall term of the second year. Students in the Management Specialist with the required prerequisites should consider complementing their studies with an Economics Minor program. Management and Commerce students can only use 1.0 ROP credit towards program completion. During the Fall-Winter session, Management students must take ECO204Y5 . They will not have access to ECO200Y5 in the academic year. Please note the following list of acceptable equivalents for application to the POST: MGT120H5 UTSC: MGAB01H3 and MGAB02H3 UTSG: RSM219H1 MGM101H5 UTSC: MGTA05H3 or ( MGTA01H3 and MGTA02H3 ) UTSG: RSM100H1 ECO101H5 and ECO102H5 UTSC: MGEA02H3 and MGEA06H3 UTSG: ECO100Y1 or ( ECO101H1 and ECO102H1 ) UTM: ECO100Y5 MAT133Y5 UTSC: MATA32H3 and MATA33H3 UTSG: MAT133Y1 or ( MAT135H1 and MAT136H1 ) UTM: MAT135Y5 or ( MAT135H5 and MAT136H5 ) or ( MAT132H5 and MAT134H5 ) or MAT137Y5 or MAT157Y5",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": null,
@@ -38539,7 +38537,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in MGT or MGM at the 300/400-level (cannot double count courses)",
               "subject": "MGM",
@@ -38617,7 +38615,7 @@
           "items": [
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -38627,7 +38625,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -38641,7 +38639,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -38655,7 +38653,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -38677,7 +38675,7 @@
             },
             {
               "type": "n_from",
-              "n": 1.0,
+              "n": 1,
               "items": [
                 {
                   "type": "course",
@@ -38707,7 +38705,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -39107,7 +39105,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 14.0,
+        "min": 14,
         "max": null
       },
       "total_credits_note": null,
@@ -39290,7 +39288,7 @@
             },
             {
               "type": "n_from",
-              "n": 2.0,
+              "n": 2,
               "items": [
                 {
                   "type": "course",
@@ -39324,7 +39322,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional credits in MAT at the 400 level ( MAT401H5 is recommended)",
               "subject": "MAT",
@@ -39338,7 +39336,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 additional credits at the 300/400 level in CSC or STA or MAT, except MAT322H5",
               "subject": null,
@@ -39392,7 +39390,7 @@
     "note": "COURSE CATEGORIES: Italian Cinema - ITA242H5 ; ITA247H5 ; ITA307H5 ; ITA309H5 ; ITA311H5 ; ITA313H5 ; ITA342H5 ; ITA343H5 Italian Culture; Literature - ITA218H5 ; ITA221H5 ; ITA222H5 ; ITA231H5 ; ITA232H5 ; ITA233H5 ; ITA235H5 ; ITA255H5 ; ITA256H5 ; ITA237H5 ; ITA238H5 ; ITA307H5 ; ITA315Y5 ; ITA339Y5 ; ITA370H5 ; ITA371H5 ; ITA390H5 ; ITA391H5 ; ITA392H5 ; ITA415Y5 ; ITA420H5 ; ITA421H5 Italian Experiential Learning - ITA388H5 ; ITA315Y5 ; ITA400Y5 ; ITA415Y5 Italian Language Practice - ITA100Y5 ; ITA102H5 ; ITA200Y5 ; ITA201Y5 ; ITA350H5 ; ITA351H5 ; ITA352H5 ; ITA450H5 Italian Linguistics; Teaching and Learning - ITA227H5 ; ITA272H5 ; ITA373H5 ; ITA374H5 ; ITA375H5 ; ITA451H5 ; ITA437H5",
     "completion": {
       "total_credits": {
-        "min": 10.0,
+        "min": 10,
         "max": null
       },
       "total_credits_note": "including at least 3.0 300/400 level full courses and 1.0 400 level credit.",
@@ -39469,7 +39467,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in Italian Culture; Literature (excluding those listed above).",
               "subject": null,
@@ -39481,7 +39479,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in Italian Experiential Learning; Directed Research.",
               "subject": null,
@@ -39505,7 +39503,7 @@
             },
             {
               "type": "open_pool",
-              "n": 1.0,
+              "n": 1,
               "constraint": "at_least",
               "description": "1.0 credit in any of the Italian course categories (excluding those listed above).",
               "subject": null,
@@ -39555,7 +39553,7 @@
     "note": "",
     "completion": {
       "total_credits": {
-        "min": 13.0,
+        "min": 13,
         "max": null
       },
       "total_credits_note": null,
@@ -39697,7 +39695,7 @@
             },
             {
               "type": "open_pool",
-              "n": 5.0,
+              "n": 5,
               "constraint": "at_least",
               "description": "5.0 credits of ECO at the 300/400-level of which at least 1.5 credits must be chosen from ECO348H5 , ECO349H5 , ECO356H1 , ECO434H5 , ECO440H5 , ECO456H5 , ECO460H5 , ECO461H5 , ECO462H1 , ECO463H5 , ECO475H5 . Not more than 1.0 credit in Economic History.",
               "subject": "ECO",

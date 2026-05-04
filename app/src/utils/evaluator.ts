@@ -441,13 +441,47 @@ export function evaluateProgram(program: ProgramStructure, semesters: Semester[]
         }
       }
 
-      // open_pool: subtract courses already consumed by required siblings (all_of / course nodes)
-      // so they don't double-count toward the pool.
+      // open_pool: subtract courses already consumed by sibling required nodes so they
+      // don't double-count toward the pool.
       if (child.type === 'open_pool') {
         const adjustedCodes = new Set(userCodes)
+
+        // 1. Always remove courses required by all_of / course siblings.
         for (const code of requiredCodesInGroup) {
           adjustedCodes.delete(code)
         }
+
+        // 2. For pools that explicitly say "additional" or "cannot double count",
+        //    also remove courses consumed by n_from / one_of siblings.
+        //    (These pools are additive — required-choice courses should not also
+        //     satisfy the elective pool.)
+        const poolDesc: string = (child as any).description || ''
+        const isAdditivePool = /additional|cannot double count|cannot include any courses already used/i.test(poolDesc)
+
+        if (isAdditivePool) {
+          for (const sibling of group.items) {
+            if (sibling.type === 'one_of') {
+              // Exclude every option course the user has taken from this one_of.
+              for (const opt of (sibling.items || [])) {
+                if (opt.type === 'course' && opt.code && userCodes.has(opt.code)) {
+                  adjustedCodes.delete(opt.code)
+                }
+              }
+            } else if (sibling.type === 'n_from') {
+              // Exclude up to n credits worth of n_from option courses the user has taken.
+              const limit: number = (sibling as any).n || 0
+              let consumed = 0
+              for (const opt of (sibling.items || [])) {
+                if (consumed >= limit - 0.001) break
+                if (opt.type === 'course' && opt.code && userCodes.has(opt.code)) {
+                  adjustedCodes.delete(opt.code)
+                  consumed += courseMap.get(opt.code)?.credits ?? 0.5
+                }
+              }
+            }
+          }
+        }
+
         return evaluateNode(child, adjustedCodes, courseMap)
       }
 
