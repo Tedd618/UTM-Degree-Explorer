@@ -97,8 +97,11 @@ cd scraper && python scrape_courses.py       # regenerate courses.json
 - `data/*.json` files are generated — if you regenerate them, commit both
   `data/` and `app/public/` copies together
 
-## Bug Triage (Claude's responsibility)
-- Users write raw bug reports in `scrum/bug.md` — plain text, no formatting needed
-- At the start of each session, Claude should check `bug.md` for untriaged entries
-- For each new entry: elaborate it (affected file, severity, reproduction steps),
-  add it to the Backlog in `scrum/SPRINT.md` with a priority, then remove it from `bug.md`
+## Session Start Checklist (do this before any other work)
+1. `git pull origin main`
+2. Read `scrum/bug.md` — if there are any entries, triage them immediately:
+   - Investigate the affected code
+   - Add a structured entry to the Backlog in `scrum/SPRINT.md` (priority, affected files, reproduction steps)
+   - Remove the triaged line from `scrum/bug.md`
+   - Commit: `git add scrum/ && git commit -m "chore: triage bug reports"`
+3. Check `scrum/SPRINT.md` In Progress table — make sure no one else is already working on your intended task
