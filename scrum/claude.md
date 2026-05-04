@@ -94,6 +94,11 @@ cd scraper && python scrape_courses.py       # regenerate courses.json
 
 ## Collaboration Notes
 - Check `scrum/SPRINT.md` before starting — claim your task so there's no overlap
-- Log new bugs in `scrum/bug.md` with enough detail to reproduce
 - `data/*.json` files are generated — if you regenerate them, commit both
   `data/` and `app/public/` copies together
+
+## Bug Triage (Claude's responsibility)
+- Users write raw bug reports in `scrum/bug.md` — plain text, no formatting needed
+- At the start of each session, Claude should check `bug.md` for untriaged entries
+- For each new entry: elaborate it (affected file, severity, reproduction steps),
+  add it to the Backlog in `scrum/SPRINT.md` with a priority, then remove it from `bug.md`

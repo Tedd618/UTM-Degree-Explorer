@@ -20,10 +20,15 @@
 - Squash-merge preferred to keep main history clean
 - If the other person is unreachable for 24h, you may self-merge with a comment
 
+### Bug Triage (Claude's job)
+- Users drop raw reports into `scrum/bug.md` as plain text — no formatting required
+- When Claude sees new entries in `bug.md`, it elaborates them and moves them here into the Backlog with a priority, affected file(s), and reproduction steps
+- Entries stay in `bug.md` until triaged; once added to Backlog below, they can be removed from `bug.md`
+
 ### Before Opening a PR
 - [ ] `cd app && npx tsc --noEmit` passes (no type errors)
 - [ ] Manually tested the affected feature in the browser
-- [ ] `scrum/bug.md` updated if you fixed or found a bug
+- [ ] If you fixed a bug, remove it from the Backlog below and add to Done
 - [ ] `scrum/SPRINT.md` updated (move task to Done)
 
 ### Conflict Prevention
