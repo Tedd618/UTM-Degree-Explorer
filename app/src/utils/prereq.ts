@@ -14,12 +14,14 @@ export function evaluatePrereq(
   node: PrereqNode | never[] | undefined,
   codesBefore: Set<string>,
   courseMap?: Map<string, Course>,
+  selfCode?: string,
 ): boolean {
   if (!node) return true
   if (Array.isArray(node)) return node.length === 0
-  if (node.type === 'COURSE') return codesBefore.has(node.code)
-  if (node.type === 'AND') return (node.operands || []).every((op: any) => evaluatePrereq(op, codesBefore, courseMap))
-  if (node.type === 'OR')  return (node.operands || []).some((op: any) => evaluatePrereq(op, codesBefore, courseMap))
+  // A course cannot be its own prerequisite — skip self-referencing nodes
+  if (node.type === 'COURSE') return node.code === selfCode ? true : codesBefore.has(node.code)
+  if (node.type === 'AND') return (node.operands || []).every((op: any) => evaluatePrereq(op, codesBefore, courseMap, selfCode))
+  if (node.type === 'OR')  return (node.operands || []).some((op: any) => evaluatePrereq(op, codesBefore, courseMap, selfCode))
   if (node.type === 'RAW') return (node.codes || []).every((c: string) => codesBefore.has(c))
   if (node.type === 'CREDITS') {
     if (!courseMap) return true
@@ -70,13 +72,14 @@ export function getMissingPrereqsStrings(
   node: PrereqNode | never[] | undefined,
   codesBefore: Set<string>,
   courseMap?: Map<string, Course>,
+  selfCode?: string,
 ): string[] {
   if (!node || (Array.isArray(node) && node.length === 0)) return []
-  if (evaluatePrereq(node, codesBefore, courseMap)) return []
+  if (evaluatePrereq(node, codesBefore, courseMap, selfCode)) return []
 
   if (!Array.isArray(node) && node.type === 'AND') {
     return (node.operands || [])
-      .filter((op: any) => !evaluatePrereq(op, codesBefore, courseMap))
+      .filter((op: any) => !evaluatePrereq(op, codesBefore, courseMap, selfCode))
       .map((op: any) => formatPrereq(op))
   }
 
@@ -90,20 +93,22 @@ export function collectMissingPrereqGroups(
   node: PrereqNode | never[] | undefined,
   codesBefore: Set<string>,
   courseMap?: Map<string, Course>,
+  selfCode?: string,
 ): MissingGroup[] {
   if (!node || (Array.isArray(node) && node.length === 0)) return []
-  if (evaluatePrereq(node, codesBefore, courseMap)) return []
+  if (evaluatePrereq(node, codesBefore, courseMap, selfCode)) return []
   if (Array.isArray(node)) return []
 
-  return [nodeToGroup(node, codesBefore, courseMap)].filter(Boolean) as MissingGroup[]
+  return [nodeToGroup(node, codesBefore, courseMap, selfCode)].filter(Boolean) as MissingGroup[]
 }
 
 function nodeToGroup(
   node: PrereqNode,
   codesBefore: Set<string>,
   courseMap?: Map<string, Course>,
+  selfCode?: string,
 ): MissingGroup | null {
-  if (evaluatePrereq(node, codesBefore, courseMap)) return null
+  if (evaluatePrereq(node, codesBefore, courseMap, selfCode)) return null
 
   if (node.type === 'COURSE') return { kind: 'single', code: node.code }
 
@@ -114,7 +119,7 @@ function nodeToGroup(
   }
 
   if (node.type === 'RAW') {
-    const missing = node.codes.filter(c => !codesBefore.has(c))
+    const missing = node.codes.filter(c => !codesBefore.has(c) && c !== selfCode)
     if (missing.length === 0) return null
     if (missing.length === 1) return { kind: 'single', code: missing[0] }
     return { kind: 'and', parts: missing.map(c => ({ kind: 'single', code: c } as MissingGroup)) }
@@ -122,7 +127,7 @@ function nodeToGroup(
 
   if (node.type === 'OR') {
     const options = (node.operands || [])
-      .map(op => nodeToGroup(op, codesBefore, courseMap))
+      .map(op => nodeToGroup(op, codesBefore, courseMap, selfCode))
       .filter(Boolean) as MissingGroup[]
     if (options.length === 0) return null
     if (options.length === 1) return options[0]
@@ -131,7 +136,7 @@ function nodeToGroup(
 
   if (node.type === 'AND') {
     const parts = (node.operands || [])
-      .map(op => nodeToGroup(op, codesBefore, courseMap))
+      .map(op => nodeToGroup(op, codesBefore, courseMap, selfCode))
       .filter(Boolean) as MissingGroup[]
     if (parts.length === 0) return null
     if (parts.length === 1) return parts[0]
@@ -203,7 +208,7 @@ export function getCourseStatus(
 
   let hasIssues = false
 
-  if (!evaluatePrereq(course.prerequisites, codesBefore, courseMap)) hasIssues = true
+  if (!evaluatePrereq(course.prerequisites, codesBefore, courseMap, code)) hasIssues = true
 
   if (!hasIssues) {
     for (const excl of course.exclusions) {
@@ -263,7 +268,7 @@ export function getIssueReasons(
 
   const reasons: string[] = []
 
-  const missing = getMissingPrereqsStrings(course.prerequisites, codesBefore, courseMap)
+  const missing = getMissingPrereqsStrings(course.prerequisites, codesBefore, courseMap, code)
   for (const req of missing) {
     reasons.push(`Missing prerequisite: ${req}`)
   }
