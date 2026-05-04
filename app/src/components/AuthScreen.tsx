@@ -153,7 +153,7 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
             <div className="space-y-1.5">
               <label className={labelClass}>Email</label>
               <input
-                type={mode === 'signup' ? 'text' : 'email'}
+                type="text"
                 required
                 value={email}
                 onChange={e => setEmail(e.target.value)}
