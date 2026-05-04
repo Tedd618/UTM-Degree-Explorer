@@ -18,6 +18,8 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
   const hideSummers    = usePlanStore(s => s.hideSummers)
   const addSemester    = usePlanStore(s => s.addSemester)
   const removeSemester = usePlanStore(s => s.removeSemester)
+  const setStartYear   = usePlanStore(s => s.setStartYear)
+  const importCourses  = usePlanStore(s => s.importCourses)
 
   const [panelWidth, setPanelWidth] = useState(DEFAULT_PANEL_W)
   const dragRef = useRef<{ startX: number; startW: number } | null>(null)
@@ -138,6 +140,32 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
             />
           ))
         )}
+
+        {/* Starting year picker */}
+        <div className="flex items-center justify-center gap-2 py-3 border-t border-gray-100 mt-2">
+          <span className="text-[11px] text-gray-400">Starting year</span>
+          <select
+            value={plan.startYear ?? new Date().getFullYear()}
+            onChange={e => {
+              const newYear = parseInt(e.target.value)
+              setStartYear(plan.id, newYear)
+              // Rebuild semesters preserving courses, shifted by year delta
+              const delta = newYear - (plan.startYear ?? new Date().getFullYear())
+              if (delta === 0) return
+              const entries = plan.semesters.map(s => ({
+                year: s.year + delta,
+                season: s.season,
+                courses: s.courses,
+              }))
+              importCourses(plan.id, entries)
+            }}
+            className="text-[11px] text-gray-600 border border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none focus:border-utm-blue cursor-pointer"
+          >
+            {Array.from({ length: 10 }, (_, i) => new Date().getFullYear() - 2 + i).map(yr => (
+              <option key={yr} value={yr}>{yr}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Drag divider */}
