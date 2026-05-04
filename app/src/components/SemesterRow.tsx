@@ -93,7 +93,7 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
     } else if (e.key === 'Enter') {
       e.preventDefault()
       if (highlighted >= 0) selectSuggestion(suggestions[highlighted])
-      else submit()
+      else selectSuggestion(suggestions[0])
     }
   }
 
