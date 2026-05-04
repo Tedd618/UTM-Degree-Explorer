@@ -33,7 +33,7 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
     try {
       if (mode === 'forgot') {
         const raw = email.trim()
-        const normalized = raw.includes('@') ? raw : `${raw}@utm.local`
+        const normalized = raw.includes('@') ? raw : `${raw}@utm.com`
         const { error } = await supabase.auth.resetPasswordForEmail(normalized, {
           redirectTo: window.location.origin,
         })
@@ -42,7 +42,7 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
 
       } else if (mode === 'login') {
         const raw = email.trim()
-        const normalized = raw.includes('@') ? raw : `${raw}@utm.local`
+        const normalized = raw.includes('@') ? raw : `${raw}@utm.com`
         const { error } = await supabase.auth.signInWithPassword({
           email: normalized,
           password,
@@ -52,7 +52,7 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
       } else {
         // signup — normalize to valid email format for Supabase
         const raw = email.trim()
-        const normalized = raw.includes('@') ? raw : `${raw}@utm.local`
+        const normalized = raw.includes('@') ? raw : `${raw}@utm.com`
         const { error } = await supabase.auth.signUp({
           email: normalized,
           password,
