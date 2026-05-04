@@ -207,7 +207,7 @@ export function getCourseStatus(
     for (const excl of course.exclusions) {
       if (excl === code) continue
       const exclSem = allSemesters
-        .filter(s => !isSemPast(s) && s.courses.includes(excl))
+        .filter(s => s.courses.includes(excl))
         .sort((a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season))[0]
       if (!exclSem) continue
       // Only flag if the exclusion partner is in the same or earlier semester
@@ -267,7 +267,7 @@ export function getIssueReasons(
   for (const excl of course.exclusions) {
     if (excl === code) continue
     const exclSem = allSemesters
-      .filter(s => !isSemPast(s) && s.courses.includes(excl))
+      .filter(s => s.courses.includes(excl))
       .sort((a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season))[0]
     if (!exclSem) continue
     if (semesterSortKey(exclSem.year, exclSem.season) > semKey) continue
