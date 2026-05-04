@@ -14,11 +14,9 @@
 - Never commit directly to `main`
 
 ### Pull Request Rules
-- Open a PR when your branch is ready
-- The **other person** reviews and merges (not yourself)
-- PR description should say: what changed, how to test it
+- When your branch is ready, merge it into main yourself — no review required
 - Squash-merge preferred to keep main history clean
-- If the other person is unreachable for 24h, you may self-merge with a comment
+- Always pull main first before merging to avoid conflicts
 
 ### Bug Triage (Claude's job)
 - Users drop raw reports into `scrum/bug.md` as plain text — no formatting required

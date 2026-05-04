@@ -89,8 +89,8 @@ cd scraper && python scrape_courses.py       # regenerate courses.json
 1. `git pull origin main` before starting any work
 2. Work on a feature branch: `git checkout -b feat/your-feature`
 3. Type-check before committing: `cd app && npx tsc --noEmit`
-4. Open a PR → the other person reviews and merges
-5. Never push directly to `main`
+4. When done, merge your own branch into main — no review needed
+5. Never push directly to `main` (always branch first)
 
 ## Collaboration Notes
 - Check `scrum/SPRINT.md` before starting — claim your task so there's no overlap
