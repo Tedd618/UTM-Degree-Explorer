@@ -149,7 +149,21 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
           <span className="text-[11px] text-gray-400">Starting year</span>
           <select
             value={plan.startYear ?? new Date().getFullYear()}
-            onChange={e => setStartYear(plan.id, parseInt(e.target.value))}
+            onChange={e => {
+              const newYear = parseInt(e.target.value)
+              setStartYear(plan.id, newYear)
+              // Auto-create missing semesters from newYear up to the first existing Fall
+              const firstFall = Math.min(...plan.semesters.filter(s => s.season === 'Fall').map(s => s.year).filter(y => y >= newYear))
+              const limit = isFinite(firstFall) ? firstFall : newYear
+              const hasSem = (yr: number, season: Season) => plan.semesters.some(s => s.year === yr && s.season === season)
+              for (let y = newYear; y < limit; y++) {
+                if (!hasSem(y, 'Fall'))        addSemester(plan.id, y, 'Fall')
+                if (!hasSem(y + 1, 'Winter'))  addSemester(plan.id, y + 1, 'Winter')
+                if (!hasSem(y + 1, 'Summer'))  addSemester(plan.id, y + 1, 'Summer')
+              }
+              // Also add Fall for newYear itself if missing
+              if (!hasSem(newYear, 'Fall')) addSemester(plan.id, newYear, 'Fall')
+            }}
             className="text-[11px] text-gray-600 border border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none focus:border-utm-blue cursor-pointer"
           >
             {Array.from({ length: Math.max(new Date().getFullYear(), plan.startYear ?? 0) + 8 - 2022 + 1 }, (_, i) => 2022 + i).map(yr => (
