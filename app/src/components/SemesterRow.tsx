@@ -60,7 +60,7 @@ function AddInput({ planId, semId, courseMap, onDone }: AddInputProps) {
 
     const results = [...exact, ...startsWith, ...contains].slice(0, 20)
     setSuggestions(results)
-    setHighlighted(-1)
+    setHighlighted(0)
   }
 
   function selectSuggestion(c: Course) {
