@@ -199,6 +199,15 @@ export default function PrereqRadarPanel({ planId, courseMap }: Props) {
         if (ignored.has(`__sg__${code}`)) continue
         if (ignored.has(`__issue__${sem.id}__${code}`)) continue
 
+        // Skip duplicates — the card itself is already red; no prereq entry needed
+        const semKey = semesterSortKey(sem.year, sem.season)
+        const isDuplicate = plan.semesters.some(s =>
+          s.id !== sem.id &&
+          s.courses.includes(code) &&
+          semesterSortKey(s.year, s.season) <= semKey
+        )
+        if (isDuplicate) continue
+
         const course = courseMap.get(code)
         if (!course) continue
         // Use per-course codesBefore so Summer co-enrollments satisfy prereqs
