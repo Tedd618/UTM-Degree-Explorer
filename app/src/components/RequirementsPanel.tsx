@@ -65,17 +65,22 @@ interface Props {
 
 function computeSummary(semesters: Semester[], courseMap: Map<string, Course>) {
   let total = 0, completed = 0, inProgress = 0, planned = 0, issues = 0
+  const seenCodes = new Set<string>()
 
   for (const sem of semesters) {
     for (const code of sem.courses) {
       const course = courseMap.get(code)
       const credits = course?.credits ?? 0.5
       const status = getCourseStatus(code, sem, semesters, courseMap)
-      total += credits
-      if (status === 'completed')        completed  += credits
-      else if (status === 'in-progress') inProgress += credits
-      else if (status === 'issues')      issues     += credits
-      else                               planned    += credits
+      // Only count credits once even if a course appears in multiple semesters
+      if (!seenCodes.has(code)) {
+        seenCodes.add(code)
+        total += credits
+        if (status === 'completed')        completed  += credits
+        else if (status === 'in-progress') inProgress += credits
+        else if (status === 'issues')      issues     += credits
+        else                               planned    += credits
+      }
     }
   }
 

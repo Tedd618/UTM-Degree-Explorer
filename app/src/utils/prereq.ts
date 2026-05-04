@@ -189,6 +189,17 @@ export function getCourseStatus(
   const course = courseMap.get(code)
   if (!course) return 'unknown'
 
+  // Duplicate: same course code in an earlier or concurrent semester
+  const semKey = semesterSortKey(semester.year, semester.season)
+  const isDuplicate = allSemesters.some(s =>
+    s.id !== semester.id &&
+    s.courses.includes(code) &&
+    semesterSortKey(s.year, s.season) <= semKey
+  )
+  if (isDuplicate) {
+    return overrides?.has(`__issue__${semester.id}__${code}`) ? 'no-issues' : 'issues'
+  }
+
   const codesBefore  = buildCodesBefore(code, semester, allSemesters)
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
 
@@ -227,6 +238,17 @@ export function getIssueReasons(
 
   const course = courseMap.get(code)
   if (!course) return ['Course not found in catalogue']
+
+  // Duplicate check
+  const semKey = semesterSortKey(semester.year, semester.season)
+  const dupSem = allSemesters.find(s =>
+    s.id !== semester.id &&
+    s.courses.includes(code) &&
+    semesterSortKey(s.year, s.season) <= semKey
+  )
+  if (dupSem) {
+    return [`Duplicate: already in ${dupSem.season} ${dupSem.year}`]
+  }
 
   const codesBefore   = buildCodesBefore(code, semester, allSemesters)
   const codesAnywhere = new Set<string>(allSemesters.flatMap(s => s.courses))
