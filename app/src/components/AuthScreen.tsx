@@ -32,7 +32,9 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
 
     try {
       if (mode === 'forgot') {
-        const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+        const raw = email.trim()
+        const normalized = raw.includes('@') ? raw : `${raw}@utm.local`
+        const { error } = await supabase.auth.resetPasswordForEmail(normalized, {
           redirectTo: window.location.origin,
         })
         if (error) throw error
