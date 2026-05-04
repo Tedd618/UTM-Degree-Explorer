@@ -4,10 +4,9 @@ import { supabase } from '../utils/supabase'
 type Mode = 'login' | 'signup' | 'forgot'
 
 export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
-  const [mode, setMode]               = useState<Mode>('login')
-  const [email, setEmail]             = useState('')
-  const [username, setUsername]       = useState('')
-  const [password, setPassword]       = useState('')
+  const [mode, setMode] = useState<Mode>('login')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [loading, setLoading]         = useState(false)
   const [errorMsg, setErrorMsg]       = useState('')
@@ -44,7 +43,6 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
         const { error } = await supabase.auth.signUp({
           email: email.trim(),
           password,
-          options: { data: { username: username.trim() } },
         })
         if (error) throw error
       }
@@ -116,21 +114,6 @@ export default function AuthScreen({ onCancel }: { onCancel: () => void }) {
             {errorMsg && (
               <div className="bg-red-50 text-red-600 text-xs px-3 py-2.5 rounded-lg border border-red-100">
                 {errorMsg}
-              </div>
-            )}
-
-            {/* Username — signup only */}
-            {mode === 'signup' && (
-              <div className="space-y-1.5">
-                <label className={labelClass}>Username</label>
-                <input
-                  type="text"
-                  required
-                  value={username}
-                  onChange={e => setUsername(e.target.value)}
-                  placeholder="e.g. Tyler"
-                  className={inputClass}
-                />
               </div>
             )}
 
