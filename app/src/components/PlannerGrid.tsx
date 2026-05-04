@@ -161,7 +161,7 @@ export default function PlannerGrid({ plan, courseMap }: Props) {
             }}
             className="text-[11px] text-gray-600 border border-gray-200 rounded-md px-2 py-1 bg-white focus:outline-none focus:border-utm-blue cursor-pointer"
           >
-            {Array.from({ length: new Date().getFullYear() + 8 - 2023 + 1 }, (_, i) => 2023 + i).map(yr => (
+            {Array.from({ length: Math.max(new Date().getFullYear(), plan.startYear ?? 0) + 8 - 2022 + 1 }, (_, i) => 2022 + i).map(yr => (
               <option key={yr} value={yr}>{yr}</option>
             ))}
           </select>
