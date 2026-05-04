@@ -197,8 +197,7 @@ export function getCourseStatus(
     return overrides?.has(`__issue__${semester.id}__${code}`) ? 'no-issues' : 'issues'
   }
 
-  const codesBefore  = buildCodesBefore(code, semester, allSemesters)
-  const codesNonPast = new Set<string>(allSemesters.filter(s => !isSemPast(s)).flatMap(s => s.courses))
+  const codesBefore = buildCodesBefore(code, semester, allSemesters)
 
   let hasIssues = false
 
@@ -206,7 +205,17 @@ export function getCourseStatus(
 
   if (!hasIssues) {
     for (const excl of course.exclusions) {
-      if (codesNonPast.has(excl) && excl !== code) { hasIssues = true; break }
+      if (excl === code) continue
+      const exclSem = allSemesters
+        .filter(s => !isSemPast(s) && s.courses.includes(excl))
+        .sort((a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season))[0]
+      if (!exclSem) continue
+      // Only flag if the exclusion partner is in the same or earlier semester
+      if (semesterSortKey(exclSem.year, exclSem.season) > semKey) continue
+      // Upgrade: later course with a higher level digit supersedes the earlier — don't flag
+      if (parseInt(code[3], 10) > parseInt(excl[3], 10)) continue
+      hasIssues = true
+      break
     }
   }
 
@@ -246,8 +255,7 @@ export function getIssueReasons(
     return [`Duplicate: already in ${dupSem.season} ${dupSem.year}`]
   }
 
-  const codesBefore   = buildCodesBefore(code, semester, allSemesters)
-  const codesNonPast  = new Set<string>(allSemesters.filter(s => !isSemPast(s)).flatMap(s => s.courses))
+  const codesBefore = buildCodesBefore(code, semester, allSemesters)
 
   const reasons: string[] = []
 
@@ -256,8 +264,15 @@ export function getIssueReasons(
     reasons.push(`Missing prerequisite: ${req}`)
   }
 
-  for (const e of course.exclusions) {
-    if (codesNonPast.has(e) && e !== code) reasons.push(`Conflicts with: ${e}`)
+  for (const excl of course.exclusions) {
+    if (excl === code) continue
+    const exclSem = allSemesters
+      .filter(s => !isSemPast(s) && s.courses.includes(excl))
+      .sort((a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season))[0]
+    if (!exclSem) continue
+    if (semesterSortKey(exclSem.year, exclSem.season) > semKey) continue
+    if (parseInt(code[3], 10) > parseInt(excl[3], 10)) continue
+    reasons.push(`Conflicts with: ${excl}`)
   }
 
   if (course.offerings && course.offerings.length > 0 && !course.offerings.includes(semester.season)) {

@@ -259,6 +259,21 @@ export const usePlanStore = create<PlanStore>()((set, get) => ({
             // Re-sort semesters chronologically
             sems = [...sems].sort((a, b) => semesterSortKey(a.year, a.season) - semesterSortKey(b.year, b.season))
 
+            // Insert missing Summer semesters between Winter Y and Fall Y of the same year
+            const filled: Semester[] = []
+            for (let i = 0; i < sems.length; i++) {
+              filled.push(sems[i])
+              const next = sems[i + 1]
+              if (
+                sems[i].season === 'Winter' &&
+                next?.season === 'Fall' &&
+                next.year === sems[i].year
+              ) {
+                filled.push({ id: newId(), year: sems[i].year, season: 'Summer', courses: [] })
+              }
+            }
+            sems = filled
+
             return { ...p, semesters: sems }
           }),
         })),

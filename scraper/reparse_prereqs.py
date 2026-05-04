@@ -297,6 +297,13 @@ def preprocess(raw):
     if re.search(r'\bno prerequisites?\b', raw, re.IGNORECASE):
         return '', []
 
+    # 1b. Normalize grade conditions: drop the threshold, keep the course code.
+    # "a minimum grade of 60% in CHM120H5" → "CHM120H5"
+    raw = re.sub(
+        r'(?:a\s+)?minimum\s+grade\s+of\s+[\d.]+%?\s+in\s+(?=[A-Z]{3}\d{3}[HY]\d)',
+        '', raw, flags=re.IGNORECASE
+    )
+
     # 2. Extract credit threshold + any "including X and Y" required courses
     credits_node = extract_credits_node(raw)
     if credits_node:
