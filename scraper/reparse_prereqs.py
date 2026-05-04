@@ -109,6 +109,50 @@ class Parser:
             return node  # may be None if empty parens — that's fine, caller filters
         self.pos += 1; return None
 
+# ── Phantom code pruning ─────────────────────────────────────────────────────
+
+def prune_phantom_codes(node, valid_codes):
+    """
+    Recursively remove COURSE nodes whose code is not in valid_codes.
+    - In an OR node: drop phantom operands (if all are phantom, return None)
+    - In an AND node: drop phantom operands (they were retired alternatives;
+      if all are phantom, return None)
+    - In LEVEL_POOL specific_courses: remove phantom entries
+    Returns the pruned node, or None if the entire node should be removed.
+    """
+    if node is None or node == []:
+        return node
+    if isinstance(node, list):
+        pruned = [prune_phantom_codes(n, valid_codes) for n in node]
+        pruned = [n for n in pruned if n is not None]
+        return pruned if pruned else []
+    if not isinstance(node, dict):
+        return node
+
+    t = node.get('type')
+    if t == 'COURSE':
+        return node if node['code'] in valid_codes else None
+
+    if t in ('AND', 'OR'):
+        pruned_ops = []
+        for op in node.get('operands', []):
+            pruned = prune_phantom_codes(op, valid_codes)
+            if pruned is not None:
+                pruned_ops.append(pruned)
+        if not pruned_ops:
+            return None
+        if len(pruned_ops) == 1:
+            return pruned_ops[0]
+        return {**node, 'operands': pruned_ops}
+
+    if t == 'LEVEL_POOL':
+        sc = node.get('specific_courses') or []
+        pruned_sc = [c for c in sc if c in valid_codes]
+        return {**node, 'specific_courses': pruned_sc}
+
+    return node  # CREDITS, RAW — pass through
+
+
 # ── Level-pool extraction ─────────────────────────────────────────────────────
 
 def parse_level_range(level_str):
@@ -210,6 +254,29 @@ def extract_level_pools(text):
             "type": "LEVEL_POOL",
             "n": n,
             "subjects": subjects if subjects else None,
+            "min_level": None,
+            "max_level": None,
+            "specific_courses": [],
+        })
+        remaining = remaining.replace(m.group(0), ' ')
+
+    # "N.N SUBJ credits" — subject code before the word credits (e.g. "1.5 RLG credits")
+    subj_first_pattern = re.compile(
+        r'(\d+\.?\d*)\s+([A-Z]{2,4})\s+credits?\b',
+        re.IGNORECASE
+    )
+    # Words that are not subject codes but could appear before "credits"
+    _NOT_SUBJECTS = {'AND', 'OR', 'AT', 'IN', 'OF', 'THE', 'ANY', 'FULL', 'ADDITIONAL',
+                     'MORE', 'HALF', 'FAH', 'VCC', 'NEW', 'ALL', 'HIS'}
+    for m in subj_first_pattern.finditer(remaining):
+        subj = m.group(2).upper()
+        if subj in _NOT_SUBJECTS:
+            continue
+        n = float(m.group(1))
+        pools.append({
+            "type": "LEVEL_POOL",
+            "n": n,
+            "subjects": [subj],
             "min_level": None,
             "max_level": None,
             "specific_courses": [],
@@ -333,6 +400,28 @@ def preprocess(raw):
         '', raw, flags=re.IGNORECASE
     )
 
+    # 1d. Strip asterisk note lines: "* COURSE will no longer be accepted..." advisory notes
+    # These appear inline or on new lines and contain course codes that pollute the AST.
+    # Pattern: "* TEXT" until end of line or end of string
+    raw = re.sub(r'\*[^\n]*', ' ', raw)
+    # Also strip newlines (they sometimes separate the note from the prereq)
+    raw = raw.replace('\n', ' ')
+
+    # 1f. Handle "Completion of X" clauses at the start of a sentence/clause.
+    # Only strip "Completion of" when it precedes a paren group (course list) or single course,
+    # but NOT when it's "Completion of N credits" (that's a credit threshold, handled above).
+    # Insert "and" between consecutive "Completion of (...)" clauses.
+    raw = re.sub(
+        r'(\([^)]*\)|\b[A-Z]{3}\d{3}[HY]\d)\s+([Cc]ompletion\s+of\s+\()',
+        r'\1 and \2',
+        raw
+    )
+    # Strip "Completion of " only before "(" (paren group), not before credit numbers
+    raw = re.sub(r'[Cc]ompletion\s+of\s+(?=\()', '', raw)
+
+    # 1e. Normalize ", and" (comma-and) → " and" at sentence boundaries to help
+    # patterns like "A or B, and C or D" → "A or B and C or D" (handled by parse_term)
+
     # 2. Extract credit threshold + any "including X and Y" or "which must include X" required courses
     credits_node = extract_credits_node(raw)
     if credits_node:
@@ -349,6 +438,25 @@ def preprocess(raw):
     # 3b. Extract level-pool requirements
     pools, raw = extract_level_pools(raw)
     extra_nodes.extend(pools)
+
+    # 3c. Rewrite "and one of the following [courses]: A or B or C" →
+    # "and ( A or B or C )" so the parser correctly groups the OR under AND.
+    # The "one of" is a disambiguating phrase that the parser doesn't see.
+    def wrap_one_of(m):
+        # m.group(1) is everything after the colon/phrase until end or next AND
+        # We wrap it in parens so the parser sees "and ( A or B or C )"
+        rest = m.group(1).strip().rstrip('.')
+        return f' and ( {rest} )'
+    raw = re.sub(
+        r'\band\s+one\s+of\s+the\s+following(?:\s+courses?)?:\s*([^.]+)',
+        wrap_one_of, raw, flags=re.IGNORECASE
+    )
+    raw = re.sub(
+        r'\band\s+any\s+one\s+of(?:\s+the\s+following(?:\s+courses?)?)?\s*:?\s*([^.]+)',
+        wrap_one_of, raw, flags=re.IGNORECASE
+    )
+    # Also handle standalone "one of the following:" without leading "and"
+    raw = re.sub(r'\bone\s+of\s+the\s+following(?:\s+courses?)?:\s*', ' ', raw, flags=re.IGNORECASE)
 
     # 4. Strip petition/exception sentences
     raw = re.sub(
@@ -417,7 +525,7 @@ def preprocess(raw):
 
     return raw, extra_nodes
 
-def build_ast(raw_text, extra_nodes):
+def build_ast(raw_text, extra_nodes, valid_codes=None):
     cleaned, extra = preprocess(raw_text)
     extra_nodes = extra  # replace with what preprocess found
 
@@ -433,20 +541,30 @@ def build_ast(raw_text, extra_nodes):
     if not all_nodes:
         return []
     if len(all_nodes) == 1:
-        return all_nodes[0]
-    # Flatten nested ANDs
-    flat = []
-    for n in all_nodes:
-        if isinstance(n, dict) and n.get('type') == 'AND':
-            flat.extend(n['operands'])
-        else:
-            flat.append(n)
-    return {"type": "AND", "operands": flat}
+        result = all_nodes[0]
+    else:
+        # Flatten nested ANDs
+        flat = []
+        for n in all_nodes:
+            if isinstance(n, dict) and n.get('type') == 'AND':
+                flat.extend(n['operands'])
+            else:
+                flat.append(n)
+        result = {"type": "AND", "operands": flat}
+
+    # Prune phantom codes (retired/UTSG courses not in our DB)
+    if valid_codes is not None:
+        result = prune_phantom_codes(result, valid_codes)
+        if result is None:
+            return []
+
+    return result
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     courses = json.load(open(DATA_DIR / 'courses.json'))
+    valid_codes = {c['code'] for c in courses}
 
     changed = 0
     unfixable = []  # codes where result still seems wrong
@@ -456,7 +574,7 @@ def main():
         if not raw:
             continue
 
-        new_ast = build_ast(raw, [])
+        new_ast = build_ast(raw, [], valid_codes=valid_codes)
         old_ast = c.get('prerequisites')
 
         # Detect if anything changed
