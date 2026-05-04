@@ -60,13 +60,45 @@
 
 ## Backlog (prioritized)
 
-| Priority | Type | Task |
-|----------|------|------|
-| High | Bug | SG override suppresses all issues instead of only unsupported seasons |
-| High | Bug | Exclusion logic: only flag future placements, not past |
-| High | Bug | CHM242H5 prereq parsing broken (+ others) |
-| High | Bug | "Receptive course" issue — needs investigation |
-| Medium | Feature | Prerequisite graph visualizer (DAG view) |
-| Medium | Feature | Course search + filter panel |
-| Low | Feature | PDF / image export |
-| Low | Feature | GPA estimator |
+### Bugs
+
+**BUG-001 — Exclusion logic flags completed courses** `High`
+- **File:** `app/src/utils/prereq.ts` → `getCourseStatus` (line ~211), `getIssueReasons`
+- **Root cause:** `codesAnywhere` is a flat set of all semesters including past ones. Exclusion check fires even when the conflicting course is in a completed semester.
+- **Fix:** Only flag if the excluded course is in a future or current (non-past) semester.
+- **Reproduce:** Put CHM110H5 in a past semester. Add its exclusion partner in a future semester — card incorrectly shows red.
+
+**BUG-002 — SG override suppresses all issue checks** `High`
+- **File:** `app/src/utils/prereq.ts` → `getCourseStatus` (line 187), `getIssueReasons` (line 236)
+- **Root cause:** `if (overrides?.has(__sg__${code})) return 'no-issues'` short-circuits everything — prereqs, exclusions, offerings all skipped.
+- **Fix:** SG should only bypass the offerings/season check. Prereq and exclusion checks should still apply.
+- **Reproduce:** Mark a course SG, place it in a semester where it has an unmet prereq — card shows green incorrectly.
+
+**BUG-003 — Grade-conditioned prerequisites not parsed** `High`
+- **File:** `scraper/scrape_courses.py` (prereq parser)
+- **Root cause:** Raw prereq like `CHM110H5 and a minimum grade of 60% in CHM120H5 and [...]` — the scraper strips the grade condition and loses CHM120H5 entirely. Confirmed: parsed AST for CHM242H5 has CHM110H5 and the MAT pool but not CHM120H5.
+- **Fix:** Treat `minimum grade of X% in CODEX` as a standard `COURSE` prerequisite (drop the grade threshold — the planner doesn't track grades).
+- **Reproduce:** Add CHM242H5 to a plan with only CHM110H5 — shows green but CHM120H5 should also be required.
+
+**BUG-004 — Summer not auto-inserted by importCourses** `Medium`
+- **File:** `app/src/store/planStore.ts` → `importCourses` (line ~254)
+- **Root cause:** `importCourses` only creates semesters that appear in the import entries. If a one-click import assigns courses to Fall Y + Winter Y+1 + Fall Y+1, no Summer Y+1 is created between them. The `+year` button (`handleAdd`) does create Summers correctly, but import bypasses that logic.
+- **Fix:** After building the semester list from import entries, auto-insert a Summer semester between any Winter Y and Fall Y that have no Summer Y in between.
+- **Reproduce:** Import a degree with courses spanning multiple years — check if Summer semesters appear between each Fall/Winter group.
+
+**BUG-005 — Mutually receptive courses create confusing prereq state** `Low`
+- **File:** `app/src/utils/prereq.ts` → `evaluatePrereq`, `collectMissingPrereqGroups`
+- **Root cause:** LIN411H5 and LIN476H5 each list the other in their 0.5-credit pool requirement. If both are in the plan and one comes before the other, the later one shows green (correct), but the earlier one flags the later one as "missing" even though the intent is they're alternatives, not a sequence. FSC407H5 self-references itself.
+- **Fix:** Self-referencing codes in `LEVEL_POOL` or `OR` nodes should be excluded from the pool evaluation (a course can't satisfy its own prerequisite).
+- **Reproduce:** Add LIN411H5 and LIN476H5 to the same plan in different semesters — check which one flags incorrectly.
+
+---
+
+### Features
+
+| Priority | Task |
+|----------|------|
+| Medium | Prerequisite graph visualizer (DAG view) |
+| Medium | Course search + filter panel |
+| Low | PDF / image export |
+| Low | GPA estimator |
