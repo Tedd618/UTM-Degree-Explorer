@@ -67,10 +67,25 @@ class Parser:
         return None
     def parse(self):
         if not self.tokens: return None
-        # Skip any leading AND/OR operators (can appear when credit/level-pool text is removed)
-        while self.peek() and self.peek().type in (TokenType.AND, TokenType.OR):
-            self.pos += 1
-        return self.parse_expr()
+        # Skip leading AND/OR/orphan-RP operators (can appear when credit/level-pool
+        # text is removed, or when the raw text has mismatched brackets like
+        # "[ A and B ) and [ C and D ]" — common in user-authored prereq strings).
+        nodes = []
+        while self.peek():
+            # Skip orphan operators / unmatched RPAREN at top level
+            while self.peek() and self.peek().type in (TokenType.AND, TokenType.OR, TokenType.RPAREN):
+                self.pos += 1
+            if not self.peek(): break
+            n = self.parse_expr()
+            if n: nodes.append(n)
+        if not nodes: return None
+        if len(nodes) == 1: return nodes[0]
+        # Multiple top-level expressions — AND them together
+        ops = []
+        for n in nodes:
+            if isinstance(n, dict) and n.get('type') == 'AND': ops.extend(n['operands'])
+            else: ops.append(n)
+        return {"type": "AND", "operands": ops}
     def parse_expr(self):
         nodes = [self.parse_term()]
         while self.peek() and self.peek().type == TokenType.OR:
