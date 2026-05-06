@@ -1,0 +1,37 @@
+{
+  "code": "ENG410H5",
+  "title": "Seminar: Critical Game Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credits in ENG and 3.0 additional credits, which must include 1.5 credits in Game Studies courses or permission from the director of Game Studies",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "ENG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "Game"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

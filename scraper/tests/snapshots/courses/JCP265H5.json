@@ -1,0 +1,70 @@
+{
+  "code": "JCP265H5",
+  "title": "Introduction to Scientific Computing",
+  "credits": 0.5,
+  "prerequisites_raw": "[ PHY146H5 or PHY136H5 (minimum grade of 80%)] and [ PHY147H5 or PHY137H5 (minimum grade of 80%)] and [( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 ) or ( MAT135Y5 or MAT137Y5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PHY146H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY136H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PHY147H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY137H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CSC108H5 or CSC108H1 or CSC120H1 or CSC148H1 or CSCA08H3",
+  "corequisites_raw": null
+}

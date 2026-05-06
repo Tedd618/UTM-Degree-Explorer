@@ -1,0 +1,21 @@
+{
+  "code": "CSC363H5",
+  "title": "Computational Complexity and Computability",
+  "credits": 0.5,
+  "prerequisites_raw": "( CSC236H5 or CSC238H5 ) or MAT202H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC236H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT202H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSCC63H3 or CSC463H1",
+  "corequisites_raw": null
+}

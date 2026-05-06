@@ -1,0 +1,12 @@
+{
+  "code": "LAT221H5",
+  "title": "Intermediate Latin",
+  "credits": 0.5,
+  "prerequisites_raw": "LAT213H5 or LAT201H1 or Grade 12 Latin (with permission of instructor)",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LAT213H5"
+  },
+  "exclusions_raw": "LAT202H1",
+  "corequisites_raw": null
+}

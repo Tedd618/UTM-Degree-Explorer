@@ -1,0 +1,119 @@
+{
+  "code": "CHM299Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "Completion of at least 4.0 credits and no more than 10.0 credits, which must include CHM110H5 and CHM120H5 with a minimum grade of 60% and [( MAT132H5 and MAT134H5 ) or ( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 ) or ( MAT157H5 and MAT159H5 ) or ( MAT134Y5 or MAT135Y5 or MAT137Y5 or MAT157Y5 )].",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 4.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CHM110H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CHM120H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT132H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT134H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT135H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT137H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT157H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT134H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT157H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT159H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

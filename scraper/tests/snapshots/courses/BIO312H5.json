@@ -1,0 +1,12 @@
+{
+  "code": "BIO312H5",
+  "title": "Plant Physiology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO203H5 or BIO204H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO203H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

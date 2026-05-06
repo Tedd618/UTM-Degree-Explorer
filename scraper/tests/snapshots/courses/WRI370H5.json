@@ -1,0 +1,33 @@
+{
+  "code": "WRI370H5",
+  "title": "Writing about Place",
+  "credits": 0.5,
+  "prerequisites_raw": "WRI227H5 or WRI273H5 or WRI291H5 or WRI292H5 or WRI293H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "WRI227H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI273H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI291H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI292H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI293H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

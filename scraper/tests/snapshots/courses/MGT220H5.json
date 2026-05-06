@@ -1,0 +1,12 @@
+{
+  "code": "MGT220H5",
+  "title": "Intermediate Accounting I",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum 63% in MGT120H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT120H5"
+  },
+  "exclusions_raw": "RSM220H1 or MGAB02H3",
+  "corequisites_raw": null
+}

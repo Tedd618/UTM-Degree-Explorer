@@ -1,0 +1,9 @@
+{
+  "code": "MAT135H5",
+  "title": "Differential Calculus",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum 70% in Grade 12 Advanced Functions (MHF4U)",
+  "prerequisites": [],
+  "exclusions_raw": "MAT132H5 or MAT133Y5 or MAT137Y5 or MAT137H5 or MAT157Y5 or MAT157H5 or MAT133Y1 or MAT135H1 or MAT137Y1 or MAT157Y1 or MATA29H3 or MATA30H3 or MATA31H3 or MATA32H3",
+  "corequisites_raw": null
+}

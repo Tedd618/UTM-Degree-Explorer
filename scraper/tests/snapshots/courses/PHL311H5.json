@@ -1,0 +1,27 @@
+{
+  "code": "PHL311H5",
+  "title": "South Asian Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "1.5 credits in PHL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "PHL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "PHL293H5 (Fall 2020) and PHL390H5 (Fall 2019) and PHL339H1",
+  "corequisites_raw": null
+}

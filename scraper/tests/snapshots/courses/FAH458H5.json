@@ -1,0 +1,34 @@
+{
+  "code": "FAH458H5",
+  "title": "Materials of Modern Art",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and ( FAH287H5 or FAH288H5 or FAH289H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH287H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH288H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH289H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "FAH492H5 (Winter 2023)",
+  "corequisites_raw": null
+}

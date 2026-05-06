@@ -1,0 +1,12 @@
+{
+  "code": "CIN102H5",
+  "title": "Modernity and the Moving Image",
+  "credits": 0.5,
+  "prerequisites_raw": "CIN101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CIN101H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

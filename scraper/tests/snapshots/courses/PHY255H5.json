@@ -1,0 +1,39 @@
+{
+  "code": "PHY255H5",
+  "title": "Introduction to Biomedical Physics",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHY136H5 and PHY137H5 ) or ( PHY146H5 and PHY147H5 ) or Permission of Instructor",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PHY136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY137H5"
+          }
+        ]
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PHY146H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY147H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PHY231H1",
+  "corequisites_raw": null
+}

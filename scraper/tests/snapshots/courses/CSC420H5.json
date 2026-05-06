@@ -1,0 +1,21 @@
+{
+  "code": "CSC420H5",
+  "title": "Introduction to Image Understanding",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC263H5 and ( CSC338H5 or CGPA 3.5)",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC338H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC420H1",
+  "corequisites_raw": null
+}

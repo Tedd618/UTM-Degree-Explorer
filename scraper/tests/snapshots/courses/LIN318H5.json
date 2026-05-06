@@ -1,0 +1,47 @@
+{
+  "code": "LIN318H5",
+  "title": "Talking Numbers: Interpretation and Presentation of Quantitative Linguistic Data",
+  "credits": 0.5,
+  "prerequisites_raw": "[ LIN256H5 or JLP285H5 (formerly LIN288H5 )] and [ LIN229H5 or LIN231H5 or LIN232H5 or LIN237H5 ].",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN229H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN231H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN232H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN237H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "LIN305H1",
+  "corequisites_raw": null
+}

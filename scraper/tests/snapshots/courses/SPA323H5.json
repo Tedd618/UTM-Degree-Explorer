@@ -1,0 +1,9 @@
+{
+  "code": "SPA323H5",
+  "title": "Business Spanish",
+  "credits": 0.5,
+  "prerequisites_raw": "SPA220Y5",
+  "prerequisites": [],
+  "exclusions_raw": "SPA323Y1 , SPA323H1",
+  "corequisites_raw": null
+}

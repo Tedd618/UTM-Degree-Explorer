@@ -1,0 +1,12 @@
+{
+  "code": "ITA222H5",
+  "title": "Italian Authors (Late 20th to 21st Century Italy)",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA100Y5 or permission of department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA220Y5 and ITA221Y5",
+  "corequisites_raw": null
+}

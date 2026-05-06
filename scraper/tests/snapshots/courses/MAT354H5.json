@@ -1,0 +1,65 @@
+{
+  "code": "MAT354H5",
+  "title": "Complex Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT257Y5 or [( MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 ) and ( MAT202H5 or MAT240H5 or MAT337H5 ) and ( MAT232H5 or MAT233H5 )]",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT159H5"
+              }
+            ]
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT202H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT337H5"
+              }
+            ]
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT233H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT334H5 or MAT334H1 or MAT354H1 or MATC34H3 or MATD34H3",
+  "corequisites_raw": null
+}

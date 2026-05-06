@@ -1,0 +1,31 @@
+{
+  "code": "FAS450Y5",
+  "title": "Advanced Project",
+  "credits": 1.0,
+  "prerequisites_raw": "1.0 FAS 400-level course and FAS451H5 and FAS452H5 and 1.5 credits in FAH/VCC and permission of the Department.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "and"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS451H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS452H5"
+      }
+    ]
+  },
+  "exclusions_raw": "VIS311H1 or VIS401H1 or VIS402H1 or VIS403H1 or VIS404H1",
+  "corequisites_raw": null
+}

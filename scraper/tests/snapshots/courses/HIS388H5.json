@@ -1,0 +1,21 @@
+{
+  "code": "HIS388H5",
+  "title": "Histories of Modern Hinduism, Power and Politics in South Asia",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS282H5 or RLG205H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "HIS282H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "RLG205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

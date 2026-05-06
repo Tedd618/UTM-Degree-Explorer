@@ -1,0 +1,12 @@
+{
+  "code": "MGT354H5",
+  "title": "Consumer Behaviour",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT252H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT252H5"
+  },
+  "exclusions_raw": "RSM353H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,338 @@
+{
+  "code": "ERSPE1704",
+  "name": "Accounting",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 17.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year (3.0 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM101H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Management requirements: (10.0 credits)",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT220H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT225H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT231H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT270H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT300H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT321H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT323H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT325H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT326H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT393H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT420H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT421H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT422H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT423H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT428H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT429H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT437H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit in MGT at 200/300/400 level (cannot double count courses)",
+            "subject": "MGT",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "Economics requirements: (4.5 credits)",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO204Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO206Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO202Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO208Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO209Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO220Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "STA256H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA258H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "STA256H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA260H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 credits in ECO at 300/400 level.",
+            "subject": "ECO",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_most",
+            "description": "No more than 0.5 credits in Economic History",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_most",
+                "n": 0.5,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

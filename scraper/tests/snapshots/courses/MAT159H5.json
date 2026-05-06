@@ -1,0 +1,12 @@
+{
+  "code": "MAT159H5",
+  "title": "Analysis II",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT157H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MAT157H5"
+  },
+  "exclusions_raw": "MAT157Y5 or MAT157Y1",
+  "corequisites_raw": null
+}

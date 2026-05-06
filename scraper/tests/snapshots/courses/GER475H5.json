@@ -1,0 +1,12 @@
+{
+  "code": "GER475H5",
+  "title": "Advanced Seminar in German Cultural Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "GER205H5 and GER305H5 , and 0.5 of 300/400 level literature or culture course.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GER205H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

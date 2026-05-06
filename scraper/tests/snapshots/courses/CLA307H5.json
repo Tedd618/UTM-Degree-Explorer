@@ -1,0 +1,12 @@
+{
+  "code": "CLA307H5",
+  "title": "Greek and Roman Lyric Poetry",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA207H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CLA207H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

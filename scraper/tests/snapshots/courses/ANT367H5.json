@@ -1,0 +1,21 @@
+{
+  "code": "ANT367H5",
+  "title": "Sister Species: Lessons from the chimpanzee",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT202H5 and ANT203H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

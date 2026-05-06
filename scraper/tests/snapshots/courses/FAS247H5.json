@@ -1,0 +1,12 @@
+{
+  "code": "FAS247H5",
+  "title": "Photography II",
+  "credits": 0.5,
+  "prerequisites_raw": "FAS147H5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FAS147H5"
+  },
+  "exclusions_raw": "VIS318H1 or VPSB75",
+  "corequisites_raw": null
+}

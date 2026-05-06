@@ -1,0 +1,33 @@
+{
+  "code": "PSY321H5",
+  "title": "Cross-cultural Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY210H5 or PSY220H5 or PSY230H5 or PSY240H5 or PSY270H5 or PSY274H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY210H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY220H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY230H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY240H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY270H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY321H1 or PSYC14H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "AST320H5",
+  "title": "Astrophysics III \u2013 Unsolved Problems in Astrophysics",
+  "credits": 0.5,
+  "prerequisites_raw": "AST222H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "AST222H5"
+  },
+  "exclusions_raw": "AST320H1",
+  "corequisites_raw": null
+}

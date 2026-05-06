@@ -1,0 +1,55 @@
+{
+  "code": "GGR407H5",
+  "title": "Ecohydrology",
+  "credits": 0.5,
+  "prerequisites_raw": "GGR315H5 or a combination of GGR217H5 plus one of ( GGR305H5 or GGR307H5 or GGR309H5 or GGR374H5 or BIO311H5 or BIO330H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "GGR315H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR217H5"
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "GGR374H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "BIO311H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "BIO330H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

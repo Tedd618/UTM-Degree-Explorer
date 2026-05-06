@@ -1,0 +1,12 @@
+{
+  "code": "ITA231H5",
+  "title": "Italian Authors (Medieval to Renaissance Italy)",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA100Y5 or permission of department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA229Y5 or ITA230Y5",
+  "corequisites_raw": null
+}

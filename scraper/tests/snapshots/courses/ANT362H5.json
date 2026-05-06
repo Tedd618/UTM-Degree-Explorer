@@ -1,0 +1,30 @@
+{
+  "code": "ANT362H5",
+  "title": "Language in Culture and Society",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT207H5 and ANT206H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT207H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT206H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

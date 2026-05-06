@@ -1,0 +1,12 @@
+{
+  "code": "ECO475H5",
+  "title": "Applied Econometrics II",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO375H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ECO375H5"
+  },
+  "exclusions_raw": "ECO475H1",
+  "corequisites_raw": null
+}

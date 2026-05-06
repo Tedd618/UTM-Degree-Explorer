@@ -1,0 +1,12 @@
+{
+  "code": "ARA312Y5",
+  "title": "Intermediate Arabic",
+  "credits": 1.0,
+  "prerequisites_raw": "ARA212Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ARA212Y5"
+  },
+  "exclusions_raw": "Native users or NMC310Y1 or NML310Y1 or LGGC42H3 or LGGC43H3 or ARA211H5 or ARA311H5",
+  "corequisites_raw": null
+}

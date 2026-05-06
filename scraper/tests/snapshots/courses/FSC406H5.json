@@ -1,0 +1,21 @@
+{
+  "code": "FSC406H5",
+  "title": "Introduction To 3D Crime Scene Mapping And Reconstruction",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC300H5 or FSC303H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC300H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC303H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

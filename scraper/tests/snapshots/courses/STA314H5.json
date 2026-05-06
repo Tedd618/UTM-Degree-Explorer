@@ -1,0 +1,43 @@
+{
+  "code": "STA314H5",
+  "title": "Introduction to Statistical Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "( MAT223H5 or MAT240H5 ) and ( STA258H5 or ECO375H5 ) and STA260H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA258H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO375H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "STA260H5"
+      }
+    ]
+  },
+  "exclusions_raw": "STA314H1",
+  "corequisites_raw": null
+}

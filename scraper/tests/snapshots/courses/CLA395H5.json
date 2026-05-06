@@ -1,0 +1,25 @@
+{
+  "code": "CLA395H5",
+  "title": "Topics in Classics",
+  "credits": 0.5,
+  "prerequisites_raw": "At least 0.5 credits in 200-level Classics",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 0.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

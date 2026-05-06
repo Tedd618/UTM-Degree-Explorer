@@ -1,0 +1,21 @@
+{
+  "code": "BIO330H5",
+  "title": "Plant Ecology",
+  "credits": 0.5,
+  "prerequisites_raw": "( BIO203H5 or BIO204H5 ) and BIO205H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO203H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

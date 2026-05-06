@@ -1,0 +1,9 @@
+{
+  "code": "FAS451H5",
+  "title": "Advanced Project",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "VIS311H1 or VIS401H1 or VIS402H1 or VIS403H1 or VIS404H1",
+  "corequisites_raw": null
+}

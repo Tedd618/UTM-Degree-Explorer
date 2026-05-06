@@ -1,0 +1,12 @@
+{
+  "code": "CSC318H5",
+  "title": "The Design of Interactive Computational Media",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC207H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC207H5"
+  },
+  "exclusions_raw": "CSC318H1 or CSCC10H3",
+  "corequisites_raw": null
+}

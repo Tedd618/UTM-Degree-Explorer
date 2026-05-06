@@ -1,0 +1,83 @@
+{
+  "code": "ERCER2021",
+  "name": "Certificate in Computational Linguistics",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": {
+      "min": 1.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN340H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN341H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JLP383H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP384H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN318H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN328H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN441H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN447H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN458H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC311H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC363H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC384H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC428H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

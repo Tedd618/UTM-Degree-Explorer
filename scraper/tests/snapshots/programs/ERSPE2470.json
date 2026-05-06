@@ -1,0 +1,485 @@
+{
+  "code": "ERSPE2470",
+  "name": "Neuroscience",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 11.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY100Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY201H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY202H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              },
+              {
+                "type": "course",
+                "code": "STA221H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO259H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO360H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY290H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY210H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY270H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY280H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "0.5 credits at 300-level from Cluster A",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "0.5 credits at 300-level from Cluster B",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "0.5 credits at 300-level from Cluster C",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 additional credits at any level from Clusters A, B, C, D ( see notes below )",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "1.0 credit at 400-level from Cluster D, E",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Neuroscience Specialist Clusters",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO318Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO320H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO328H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY316H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY318H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY346H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY352H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY353H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY354H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY355H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY368H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY369H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY385H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY389H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY391H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY392H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY393H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY394H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY395H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY397H5'>PSY397H5</A>"
+              },
+              {
+                "type": "course",
+                "code": "PSY397H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY398H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Cluster B - Molecular/Cellular Biology area:",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO314H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO315H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO341H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO347H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO372H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO476H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY355H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY392H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Cluster C - Neurobiology area:",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO304H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO310H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO380H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO404H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO409H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY318H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY346H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY369H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY393H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY394H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY397H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Cluster D - Research and Applications:",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO481Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY399H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY399Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY400Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY401H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY403H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY404H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY405H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY406H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY499H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY499Y5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Cluster E - Seminar:",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO403H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO404H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO406H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO408H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY471H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY480H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY490H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY495H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

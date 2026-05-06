@@ -1,0 +1,12 @@
+{
+  "code": "ANT201H5",
+  "title": "World Archaeology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT200H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT200H5"
+  },
+  "exclusions_raw": "ANT200Y5 or ANT200Y1",
+  "corequisites_raw": null
+}

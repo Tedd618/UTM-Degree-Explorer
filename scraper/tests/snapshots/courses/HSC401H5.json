@@ -1,0 +1,42 @@
+{
+  "code": "HSC401H5",
+  "title": "Health and Science Communication Design",
+  "credits": 0.5,
+  "prerequisites_raw": "HSC200H5 and one of the following courses: HSC300H5 or HSC301H5 or HSC302H5 or HSC307H5 or HSC308H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "HSC200H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "HSC300H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HSC301H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HSC302H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HSC307H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HSC308H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

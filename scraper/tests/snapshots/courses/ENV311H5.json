@@ -1,0 +1,12 @@
+{
+  "code": "ENV311H5",
+  "title": "Environmental Issues in the Developing World",
+  "credits": 0.5,
+  "prerequisites_raw": "Any 9.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 9.0
+  },
+  "exclusions_raw": "ENV345H5",
+  "corequisites_raw": null
+}

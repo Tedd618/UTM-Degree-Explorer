@@ -1,0 +1,25 @@
+{
+  "code": "SOC352H5",
+  "title": "Gender and Care",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and 1.0 SOC/WGS credit at the 200 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

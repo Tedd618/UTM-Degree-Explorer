@@ -1,0 +1,12 @@
+{
+  "code": "PSY345H5",
+  "title": "Exceptionality: Disability and Giftedness",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY210H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY210H5"
+  },
+  "exclusions_raw": "PSY442Y5",
+  "corequisites_raw": null
+}

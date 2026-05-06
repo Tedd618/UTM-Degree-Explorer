@@ -1,0 +1,12 @@
+{
+  "code": "PHL420H5",
+  "title": "Seminar in 19th and 20th Century Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "3.5 credits of PHL or by permission of the Instructor or Department.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 3.5
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,18 @@
+{
+  "code": "POL219H5",
+  "title": "Introduction to Comparative Politics: Processes and Identities",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 POL credit or 4.0 credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL218Y5 or POL218H1",
+  "corequisites_raw": null
+}

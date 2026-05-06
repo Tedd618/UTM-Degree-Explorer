@@ -1,0 +1,25 @@
+{
+  "code": "ECO370H5",
+  "title": "The Economics of Organizations",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO200Y5 or ECO204Y5 or ECO206Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO204Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO206Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ECO370Y5",
+  "corequisites_raw": null
+}

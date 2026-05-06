@@ -1,0 +1,21 @@
+{
+  "code": "VCC407H5",
+  "title": "Architectures of Vision",
+  "credits": 0.5,
+  "prerequisites_raw": "13.0 credits including a minimum of 1.0 VCCcredit and ( VCC101H5 or VCC201H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 13.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

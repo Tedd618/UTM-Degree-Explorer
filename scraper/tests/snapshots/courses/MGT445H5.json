@@ -1,0 +1,25 @@
+{
+  "code": "MGT445H5",
+  "title": "Enterprise Risk Management and Analytics",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO220Y5 and STA218H5 and MGT231H5 and MGT232H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO220Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT416H5 (Winter 2019 and Winter 2020 and Winter 2021 and Winter 2022)",
+  "corequisites_raw": null
+}

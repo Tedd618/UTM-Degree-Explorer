@@ -1,0 +1,12 @@
+{
+  "code": "ECO461H5",
+  "title": "The Economics of Financial Risk Management",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO460H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ECO460H5"
+  },
+  "exclusions_raw": "ECO461H1",
+  "corequisites_raw": null
+}

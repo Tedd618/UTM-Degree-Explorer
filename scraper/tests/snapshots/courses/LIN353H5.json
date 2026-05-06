@@ -1,0 +1,29 @@
+{
+  "code": "LIN353H5",
+  "title": "Discourse Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN256H5 or JAL253H5 or ANT206H5 or LIN237H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JAL253H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN237H5"
+      }
+    ]
+  },
+  "exclusions_raw": "JAL353H5 or JAL353H1",
+  "corequisites_raw": null
+}

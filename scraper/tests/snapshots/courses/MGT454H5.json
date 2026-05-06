@@ -1,0 +1,12 @@
+{
+  "code": "MGT454H5",
+  "title": "Special Topics in Marketing",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT353H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT353H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

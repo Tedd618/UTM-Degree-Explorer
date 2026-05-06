@@ -1,0 +1,18 @@
+{
+  "code": "SOC228H5",
+  "title": "Introduction to Indigenous Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "0.5 SSC credit",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 0.5,
+    "subjects": [
+      "SSC"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

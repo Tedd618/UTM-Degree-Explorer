@@ -1,0 +1,21 @@
+{
+  "code": "CIN400H5",
+  "title": "Topics in Cinema Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "CIN101H5 or at least 2.0 credits in courses that count towards Cinema Studies programs.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "COURSE",
+        "code": "CIN101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

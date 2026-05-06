@@ -1,0 +1,27 @@
+{
+  "code": "PSY404H5",
+  "title": "Individual Project",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and 1.0 credit of PSY at the 300-level and minimum last AGPA of 3.0",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "PSY"
+        ],
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

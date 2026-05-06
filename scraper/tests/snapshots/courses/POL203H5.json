@@ -1,0 +1,18 @@
+{
+  "code": "POL203H5",
+  "title": "Politics and Government of the United States",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 POL credit or 4.0 credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL203Y5 or POL203Y1 or POL347H1 or POLC92H3 or POLC93H3",
+  "corequisites_raw": null
+}

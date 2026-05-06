@@ -1,0 +1,12 @@
+{
+  "code": "CCT354H5",
+  "title": "Digital Marketing II",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT221H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT221H5"
+  },
+  "exclusions_raw": "CCT356H5 or MGT414H5 (Winter 2022) or MGT450H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "ERS404H5",
+  "title": "Volcanology",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS201H5 and ERS203H5 and 0.5 credits from any other ERS course at the 200- or 300-level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,67 @@
+{
+  "code": "GGR442H5",
+  "title": "GIS Capstone Project",
+  "credits": 0.5,
+  "prerequisites_raw": "12.0 credits including ( GGR276H5 or STA256H5 ) and GGR278H5 and (1.0 credit from GGR321H5 or GGR335H5 or GGR337H5 or GGR376H5 or GGR381H5 or GGR382H5 or GGR463H5 ) or permission of instructor.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 12.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR276H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR278H5"
+          }
+        ]
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "GGR321H5",
+          "GGR335H5",
+          "GGR337H5",
+          "GGR376H5",
+          "GGR381H5",
+          "GGR382H5",
+          "GGR463H5"
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR276H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR278H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

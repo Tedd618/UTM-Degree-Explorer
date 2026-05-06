@@ -1,0 +1,21 @@
+{
+  "code": "FSC360H5",
+  "title": "Evidence, Law and Forensic Science in Canada",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5 and FSC271H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC239Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC271H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,25 @@
+{
+  "code": "CSC476H5",
+  "title": "Introduction to Continuum Robotics",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC338H5 and CSC376H5 and MAT224H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC338H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC376H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT224H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

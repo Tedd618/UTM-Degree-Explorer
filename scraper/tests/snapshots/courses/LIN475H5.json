@@ -1,0 +1,12 @@
+{
+  "code": "LIN475H5",
+  "title": "Topics in Chinese Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN375H5 or permission of the instructor.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN375H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

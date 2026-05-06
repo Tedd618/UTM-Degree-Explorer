@@ -1,0 +1,193 @@
+{
+  "code": "ERSPE0509",
+  "name": "Geology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ERS101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ERS111H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS201H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS202H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS203H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS211H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS225H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO356H5"
+              },
+              {
+                "type": "course",
+                "code": "ESS261H1"
+              },
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM231H5"
+              },
+              {
+                "type": "course",
+                "code": "ESS211H1"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT212H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              },
+              {
+                "type": "course",
+                "code": "STA221H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS325H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS301H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS302H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS303H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS304H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS311H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS312H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS315H5"
+              },
+              {
+                "type": "course",
+                "code": "ESS312H1"
+              },
+              {
+                "type": "course",
+                "code": "ESS322H1"
+              },
+              {
+                "type": "course",
+                "code": "ESS345H1"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ESS420H1"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERI398H5"
+              },
+              {
+                "type": "course",
+                "code": "CPS400Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT212H5"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

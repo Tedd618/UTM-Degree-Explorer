@@ -1,0 +1,21 @@
+{
+  "code": "BIO476H5",
+  "title": "Molecular Basis of Disease",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO310H5 and BIO315H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO310H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO315H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

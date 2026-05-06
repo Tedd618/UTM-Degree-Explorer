@@ -1,0 +1,12 @@
+{
+  "code": "CCT110H5",
+  "title": "Rhetoric and Media",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT109H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

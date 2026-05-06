@@ -1,0 +1,12 @@
+{
+  "code": "STA258H5",
+  "title": "Statistics with Applied Probability",
+  "credits": 0.5,
+  "prerequisites_raw": "STA256H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA256H5"
+  },
+  "exclusions_raw": "ECO227Y5 or ECO227Y1 or STA248H1 or STA255H1",
+  "corequisites_raw": null
+}

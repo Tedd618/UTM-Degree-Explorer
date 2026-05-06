@@ -1,0 +1,21 @@
+{
+  "code": "CCT331H5",
+  "title": "Social Media and Society",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT218H5 or CCT222H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT218H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

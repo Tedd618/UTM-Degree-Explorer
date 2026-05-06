@@ -1,0 +1,18 @@
+{
+  "code": "POL200Y5",
+  "title": "Justice and Power in Political Life",
+  "credits": 1.0,
+  "prerequisites_raw": "1.0 POL credit or 4.0 credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL200Y1 or POLB72H3 or POLC70H3 or POLC71H3",
+  "corequisites_raw": null
+}

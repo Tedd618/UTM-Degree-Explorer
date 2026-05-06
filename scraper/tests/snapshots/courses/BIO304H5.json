@@ -1,0 +1,34 @@
+{
+  "code": "BIO304H5",
+  "title": "Molecular Physiology of Excitable Cells",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO202H5 or BIO204H5 or BIO206H5 or ( BIO208H5 and BIO209H5 ) or BIO210Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO208H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO209H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CJH332H1 or CSB332H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "HSC406H5",
+  "title": "Advanced Written Communication for Health Care",
+  "credits": 0.5,
+  "prerequisites_raw": "HSC300H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HSC300H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

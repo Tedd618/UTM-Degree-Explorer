@@ -1,0 +1,12 @@
+{
+  "code": "CHM323H5",
+  "title": "Introduction to Computational Chemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM243H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM243H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

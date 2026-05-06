@@ -1,0 +1,12 @@
+{
+  "code": "FAS246H5",
+  "title": "Design II",
+  "credits": 0.5,
+  "prerequisites_raw": "FAS146H5 or FAS236H5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FAS236H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

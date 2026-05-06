@@ -1,0 +1,21 @@
+{
+  "code": "CIN405H5",
+  "title": "Cinema and Emotion",
+  "credits": 0.5,
+  "prerequisites_raw": "CIN101H5 or at least 2.0 credits in courses that count towards Cinema Studies programs.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "COURSE",
+        "code": "CIN101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CIN401H5 (Winter 2013)",
+  "corequisites_raw": null
+}

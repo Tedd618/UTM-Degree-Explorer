@@ -1,0 +1,492 @@
+{
+  "code": "ERSPE1237",
+  "name": "Molecular Biology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 15,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLA201H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS120H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY137H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY100Y5"
+              },
+              {
+                "type": "course",
+                "code": "WRI173H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI307H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO259H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO203H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM243H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO314H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO315H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO342H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO360H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO370Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO372H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM362H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM372H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM373H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO304H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO310H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO324H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO341H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO347H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO362H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO368H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO374H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO375H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO380H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM347H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY332H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY333H5"
+              },
+              {
+                "type": "course",
+                "code": "BCH340H1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO477H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO419H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO377H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO403H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO408H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO411H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO417H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO419H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO422H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO429H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO436H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO443H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO458H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO476H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO477H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO481Y5"
+              },
+              {
+                "type": "course",
+                "code": "CHM444H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM462H5"
+              },
+              {
+                "type": "course",
+                "code": "CPS489Y5"
+              },
+              {
+                "type": "course",
+                "code": "JBC472H5"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              },
+              {
+                "type": "course",
+                "code": "JCP463H5"
+              },
+              {
+                "type": "course",
+                "code": "CSB435H1"
+              },
+              {
+                "type": "course",
+                "code": "CSB450H1"
+              },
+              {
+                "type": "course",
+                "code": "CSB459H1"
+              },
+              {
+                "type": "course",
+                "code": "CSB472H1"
+              },
+              {
+                "type": "course",
+                "code": "CSB473H1"
+              },
+              {
+                "type": "course",
+                "code": "CSB474H1"
+              },
+              {
+                "type": "course",
+                "code": "CSB475H1"
+              },
+              {
+                "type": "course",
+                "code": "MGY425H1"
+              },
+              {
+                "type": "course",
+                "code": "MGY428H1"
+              },
+              {
+                "type": "course",
+                "code": "MGY440H1"
+              },
+              {
+                "type": "course",
+                "code": "MGY470H1"
+              },
+              {
+                "type": "course",
+                "code": "MIJ485H1"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO477H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO419H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

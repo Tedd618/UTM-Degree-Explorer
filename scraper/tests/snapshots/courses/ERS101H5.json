@@ -1,0 +1,9 @@
+{
+  "code": "ERS101H5",
+  "title": "Planet Earth",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "ERS120H5 or ESS102H1 or ESS105H1 or EESA07H3 or EESB15H3",
+  "corequisites_raw": null
+}

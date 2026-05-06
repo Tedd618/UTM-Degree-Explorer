@@ -1,0 +1,393 @@
+{
+  "code": "ERSPE1038",
+  "name": "Information Security",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 12,
+      "max": 13.5
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC108H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC148H5"
+              },
+              {
+                "type": "course",
+                "code": "ISP100H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT102H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT132H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT135H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT134H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT136H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT233H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC110Y5"
+              },
+              {
+                "type": "course",
+                "code": "CSC111H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT132H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT135H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT134H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT136H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT134Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT233H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": "All students have the same upper year requirements:",
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC207H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC209H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC236H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC258H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC263H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT257Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "STA246H5"
+              },
+              {
+                "type": "course",
+                "code": "STA256H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC343H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC347H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC363H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC369H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC373H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT301H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT302H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC358H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC458H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC409H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC422H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC423H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC427H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC490H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC495H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "1. In addition to the course requirements above, students must complete an integrative learning experience. This requirement may be met by participating in the UTM Co-op Internship Program (UTMCIP)* or by completing one of the following half-courses: CSC318H5 , CSC367H5 , CSC375H5 , CSC376H5 , CSC409H5 , CSC420H5 , CSC427H5 , CSC477H5 , CSC490H5 .",
+      "*Please be advised that the UTMCIP only applies to UTM Computer Science students entering Year of Study 2. For more information about the UTMCIP, please visit the Experiential and International Opportunities page of the UTM Academic Calendar.",
+      "2. Students are strongly encouraged to familiarize themselves with the 100-level calculus pre-requisites to select the correct courses.",
+      "3. Students who were admitted to UTM in the Fall/Winter 2025-2026 session or earlier and did not gain admission to the Information Security Specialist during the Spring/Summer 2026 POSt request periods should consult an academic advisor about applying to the Computer Science Major."
+    ]
+  }
+}

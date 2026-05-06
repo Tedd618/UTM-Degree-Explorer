@@ -1,0 +1,12 @@
+{
+  "code": "FRE487H5",
+  "title": "Advanced Topics in Experimental French Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "0.5 credit from the French Linguistics category plus 0.5 FRE 300-level credit determined annually contingent on course content.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 0.5
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

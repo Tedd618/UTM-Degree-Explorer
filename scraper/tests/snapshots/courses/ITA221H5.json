@@ -1,0 +1,12 @@
+{
+  "code": "ITA221H5",
+  "title": "Italian Authors (20th Century Italy)",
+  "credits": 0.5,
+  "prerequisites_raw": "Open to all students. If enrolled in an Italian Minor, Major or Specialist program: ITA100Y5 or permission of department",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA221Y5 or ITA220Y5 .",
+  "corequisites_raw": null
+}

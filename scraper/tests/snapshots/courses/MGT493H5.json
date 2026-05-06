@@ -1,0 +1,29 @@
+{
+  "code": "MGT493H5",
+  "title": "Small Business Management",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5 and MGT232H5 and 1.0 credit of MGT/MGM at the 300/400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "RSM493H1",
+  "corequisites_raw": null
+}

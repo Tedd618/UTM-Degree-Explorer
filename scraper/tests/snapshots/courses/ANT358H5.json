@@ -1,0 +1,21 @@
+{
+  "code": "ANT358H5",
+  "title": "Field Methods in Sociocultural Anthropology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT207H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT369H1 and ANTC60H3",
+  "corequisites_raw": null
+}

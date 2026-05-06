@@ -1,0 +1,12 @@
+{
+  "code": "FAH356H5",
+  "title": "Colonial Latin American Art and Architecture",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FAH101H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "VCC399Y5",
+  "title": "Research Opportunity Program (ROP)",
+  "credits": 1.0,
+  "prerequisites_raw": "( VCC101H5 or VCC201H5 ) and a minimum of 10.0 credits.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 10.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CCT299Y5 or CCT399Y5",
+  "corequisites_raw": null
+}

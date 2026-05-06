@@ -1,0 +1,21 @@
+{
+  "code": "CSC369H5",
+  "title": "Operating Systems",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC258H5 and CSC209H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC258H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC209H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC369H1 or CSCC69H3",
+  "corequisites_raw": null
+}

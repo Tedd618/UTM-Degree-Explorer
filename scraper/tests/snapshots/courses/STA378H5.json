@@ -1,0 +1,12 @@
+{
+  "code": "STA378H5",
+  "title": "Statistics Research Project",
+  "credits": 0.5,
+  "prerequisites_raw": "( STA260H5 or STA261H1 or STAB57H3 ) and (permission of instructor and department) and a minimum CGPA of 3.0.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA260H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

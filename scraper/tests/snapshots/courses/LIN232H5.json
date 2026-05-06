@@ -1,0 +1,12 @@
+{
+  "code": "LIN232H5",
+  "title": "Syntactic Patterns in Language",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN102H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN102H5"
+  },
+  "exclusions_raw": "LIN232H1 or LINB06H3",
+  "corequisites_raw": null
+}

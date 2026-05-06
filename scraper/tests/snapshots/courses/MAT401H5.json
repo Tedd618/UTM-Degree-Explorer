@@ -1,0 +1,43 @@
+{
+  "code": "MAT401H5",
+  "title": "Polynomial Equations and Fields",
+  "credits": 0.5,
+  "prerequisites_raw": "( MAT224H5 or MAT240H5 ) and ( MAT236H5 or MAT257Y5 ) and MAT301H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT224H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT257Y5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT301H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MAT347Y1 or MAT401H1 or MATD01H3",
+  "corequisites_raw": null
+}

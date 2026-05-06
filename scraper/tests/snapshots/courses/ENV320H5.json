@@ -1,0 +1,42 @@
+{
+  "code": "ENV320H5",
+  "title": "Managing Our Waste",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including ENV100Y5 or ( GGR111H5 and GGR112H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ENV100Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR111H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR112H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR111H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR112H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

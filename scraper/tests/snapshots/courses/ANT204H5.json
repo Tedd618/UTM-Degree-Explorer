@@ -1,0 +1,12 @@
+{
+  "code": "ANT204H5",
+  "title": "Sociocultural Anthropology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT102H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT102H5"
+  },
+  "exclusions_raw": "ANT207H1 or ANTB19H3",
+  "corequisites_raw": null
+}

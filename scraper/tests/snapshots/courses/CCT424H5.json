@@ -1,0 +1,38 @@
+{
+  "code": "CCT424H5",
+  "title": "Organizational Studies III",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT112H5 and ( CCT219H5 or CCT319H5 or CCT321H5 ) and ( CCT221H5 or CCT322H5 ) and CCT324H5 .",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT219H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CCT321H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT324H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT400H5 or MGM400H5",
+  "corequisites_raw": null
+}

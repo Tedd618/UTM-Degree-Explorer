@@ -1,0 +1,12 @@
+{
+  "code": "CCT478H5",
+  "title": "UX Design - Prototyping and Evaluation",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT380H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT380H5"
+  },
+  "exclusions_raw": "CCT480H5",
+  "corequisites_raw": null
+}

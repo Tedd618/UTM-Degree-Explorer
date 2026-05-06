@@ -1,0 +1,12 @@
+{
+  "code": "CSC111H5",
+  "title": "Foundations of Computer Science 2",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC110Y5 (70% or higher)",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC110Y5"
+  },
+  "exclusions_raw": "CSC148H5 or CSC111H1 or CSC148H1 or CSCA48H3",
+  "corequisites_raw": null
+}

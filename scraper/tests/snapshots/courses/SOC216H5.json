@@ -1,0 +1,21 @@
+{
+  "code": "SOC216H5",
+  "title": "Sociology of Law",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and ( SOC109H5 or SOC209H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC109H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CRI215H1",
+  "corequisites_raw": null
+}

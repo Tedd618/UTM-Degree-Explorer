@@ -1,0 +1,12 @@
+{
+  "code": "GGR209H5",
+  "title": "Economic Geography",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 4.0
+  },
+  "exclusions_raw": "GGR220H1 or GGR221H1 or GGRA02H3 or GGRC27H3",
+  "corequisites_raw": null
+}

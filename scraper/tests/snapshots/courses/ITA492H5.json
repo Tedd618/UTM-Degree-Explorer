@@ -1,0 +1,20 @@
+{
+  "code": "ITA492H5",
+  "title": "Senior Project",
+  "credits": 0.5,
+  "prerequisites_raw": "(1.0 credit from ITA350H5 or ITA351H5 or ITA352H5 ) or permission from the program coordinator of Italian.",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": null,
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": [
+      "ITA350H5",
+      "ITA351H5",
+      "ITA352H5"
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,37 @@
+{
+  "code": "POL484H5",
+  "title": "Topics in Political Thought",
+  "credits": 0.5,
+  "prerequisites_raw": "3.0 credits in POL, including 1.0 POL credit at the 300-level.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 3.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 3.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

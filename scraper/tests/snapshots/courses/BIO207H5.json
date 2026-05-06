@@ -1,0 +1,25 @@
+{
+  "code": "BIO207H5",
+  "title": "Introductory Genetics",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5 and BIO206H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO260H1 or HMB265H1 or BIOC15H3",
+  "corequisites_raw": null
+}

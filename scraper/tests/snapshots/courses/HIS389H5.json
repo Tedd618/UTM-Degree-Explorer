@@ -1,0 +1,12 @@
+{
+  "code": "HIS389H5",
+  "title": "Localities, Regions and Nations in South Asia",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS282H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIS282H5"
+  },
+  "exclusions_raw": "HIS382H5",
+  "corequisites_raw": null
+}

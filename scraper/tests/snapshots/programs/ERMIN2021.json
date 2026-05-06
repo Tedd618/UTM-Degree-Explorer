@@ -1,0 +1,83 @@
+{
+  "code": "ERMIN2021",
+  "name": "Chinese Language & Culture",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHI211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI212H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHI308H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI310H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI311H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI312H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI313H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI314H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI408H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI409H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI410H5"
+              },
+              {
+                "type": "course",
+                "code": "CHI411H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS431H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "code": "BIO477H5",
+  "title": "The Human Genome and Cancer Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "( BIO370Y5 or BIO372H5 ) and permission of instructor",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO370Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO372H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGY470H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "WRI292H5",
+  "title": "Research and Storytelling",
+  "credits": 0.5,
+  "prerequisites_raw": "WRI173H5 or WRI203H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WRI173H5"
+  },
+  "exclusions_raw": "WRI392H5",
+  "corequisites_raw": null
+}

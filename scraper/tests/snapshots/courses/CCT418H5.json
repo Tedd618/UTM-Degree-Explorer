@@ -1,0 +1,21 @@
+{
+  "code": "CCT418H5",
+  "title": "Work, Media and Technology",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT219H5 or CCT222H5 or CCT319H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT219H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

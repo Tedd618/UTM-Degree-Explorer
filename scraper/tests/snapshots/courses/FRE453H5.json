@@ -1,0 +1,25 @@
+{
+  "code": "FRE453H5",
+  "title": "Teaching French Culture",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE354H5 and 0.5 credit at the 300-level from among the FRE Language Teaching and Learning courses.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE354H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FRE353H5",
+  "corequisites_raw": null
+}

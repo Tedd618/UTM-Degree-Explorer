@@ -1,0 +1,30 @@
+{
+  "code": "CSC375H5",
+  "title": "Algorithmic Intelligence in Robotics",
+  "credits": 0.5,
+  "prerequisites_raw": "( STA246H5 or STA256H5 ) and CSC376H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC376H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

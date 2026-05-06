@@ -1,0 +1,25 @@
+{
+  "code": "ITA437H5",
+  "title": "History of the Italian Language (Medieval Period to the 1700s)",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA350H5 or ITA351H5 or ITA352H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA350H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA351H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA352H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA437Y5",
+  "corequisites_raw": null
+}

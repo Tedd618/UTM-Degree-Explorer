@@ -1,0 +1,30 @@
+{
+  "code": "CCT470H5",
+  "title": "Information Visualization",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT210H5 and ( CCT286H5 or CCT304H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT210H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT286H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CCT304H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

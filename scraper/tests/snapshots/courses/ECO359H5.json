@@ -1,0 +1,55 @@
+{
+  "code": "ECO359H5",
+  "title": "Financial Economics II",
+  "credits": 0.5,
+  "prerequisites_raw": "( ECO200Y5 or ECO204Y5 or ECO206Y5 ) and [( ECO220Y5 or ECO227Y5 ) or (1.0 credit from STA256H5 or STA258H5 or STA260H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "STA256H5",
+          "STA258H5",
+          "STA260H5"
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ECO200Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO204Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO206Y5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ECO220Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ECO359H1 or MGT231H5 or MGT232H5 or MGT339H5 or ACT349H1 or RSM333H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "HIS382H5",
+  "title": "Nations, Borders and Citizenship in South Asia",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS282H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIS282H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,9 @@
+{
+  "code": "CSC300H5",
+  "title": "Computers and Society",
+  "credits": 0.5,
+  "prerequisites_raw": "Any CSC half-course and CGPA 2.0",
+  "prerequisites": [],
+  "exclusions_raw": "CSC300H1 or CSCD03H3",
+  "corequisites_raw": null
+}

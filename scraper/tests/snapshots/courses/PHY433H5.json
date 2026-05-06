@@ -1,0 +1,21 @@
+{
+  "code": "PHY433H5",
+  "title": "Medical Physics",
+  "credits": 0.5,
+  "prerequisites_raw": "PHY332H5 or PHY333H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHY332H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY333H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

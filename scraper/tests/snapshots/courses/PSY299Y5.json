@@ -1,0 +1,12 @@
+{
+  "code": "PSY299Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "Completion of 4.0 FCE including PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY299Y1",
+  "corequisites_raw": null
+}

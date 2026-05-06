@@ -1,0 +1,21 @@
+{
+  "code": "ANT405H5",
+  "title": "Behind Bars: Anthropology of Institutions and Confinement",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT200H5 and ANT220H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT220H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

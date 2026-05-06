@@ -1,0 +1,18 @@
+{
+  "code": "POL303H5",
+  "title": "The Politics of Islam",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 POL credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 2.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL303Y5 or POLC96H3 or POLC97H3",
+  "corequisites_raw": null
+}

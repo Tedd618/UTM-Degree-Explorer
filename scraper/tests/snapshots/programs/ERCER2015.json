@@ -1,0 +1,94 @@
+{
+  "code": "ERCER2015",
+  "name": "Certificate in Politics, Law and Social Justice",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": {
+      "min": 2,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "POL116H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL309Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL318H5"
+              },
+              {
+                "type": "course",
+                "code": "POL322H5"
+              },
+              {
+                "type": "course",
+                "code": "POL323H5"
+              },
+              {
+                "type": "course",
+                "code": "POL340Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL362H5"
+              },
+              {
+                "type": "course",
+                "code": "POL367H5"
+              },
+              {
+                "type": "course",
+                "code": "POL368H5"
+              },
+              {
+                "type": "course",
+                "code": "POL373H5"
+              },
+              {
+                "type": "course",
+                "code": "POL407H5"
+              },
+              {
+                "type": "course",
+                "code": "POL414H5"
+              },
+              {
+                "type": "course",
+                "code": "POL444H5"
+              },
+              {
+                "type": "course",
+                "code": "POL445H5"
+              },
+              {
+                "type": "course",
+                "code": "POL447H5"
+              },
+              {
+                "type": "course",
+                "code": "POL448H5"
+              },
+              {
+                "type": "course",
+                "code": "POL475H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

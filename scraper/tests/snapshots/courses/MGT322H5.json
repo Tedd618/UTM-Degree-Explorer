@@ -1,0 +1,9 @@
+{
+  "code": "MGT322H5",
+  "title": "Financial Accounting Theory and Policy II",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT224H5",
+  "prerequisites": [],
+  "exclusions_raw": "RSM320H1 or MGAC02H3 or MGT225H5",
+  "corequisites_raw": null
+}

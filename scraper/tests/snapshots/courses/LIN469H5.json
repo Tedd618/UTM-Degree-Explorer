@@ -1,0 +1,98 @@
+{
+  "code": "LIN469H5",
+  "title": "Topics in Romance Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN229H5 and LIN232H5 and LIN256H5 and 0.5 credit from [ JFL454H5 or JLP384H5 or LIN310H5 or LIN318H5 or LIN328H5 or LIN329H5 or LIN332H5 or LIN337H5 or LIN338H5 or LIN357H5 or LIN360H5 or LIN366H5 or JFL369H5 (formerly LIN369H5 ) or LIN375H5 or LIN411H5 or LIN419H5 or LIN458H5 or LIN476H5 or LIN479H5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN229H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN232H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JFL454H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP384H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN310H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN318H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN328H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN329H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN332H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN337H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN338H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN357H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN360H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JFL369H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN375H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN411H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN458H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN476H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN479H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

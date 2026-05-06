@@ -1,0 +1,27 @@
+{
+  "code": "ENG363Y5",
+  "title": "Nineteenth-Century American Literature",
+  "credits": 1.0,
+  "prerequisites_raw": "1.0 credit in ENG and 3.0 additional credits.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "ENG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "ENG394H5",
+  "corequisites_raw": null
+}

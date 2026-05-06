@@ -1,0 +1,47 @@
+{
+  "code": "JCP410H5",
+  "title": "Modelling of Biochemical Systems",
+  "credits": 0.5,
+  "prerequisites_raw": "( JCP221H5 or PHY241H5 ) and PHY245H5 and ( MAT212H5 or MAT223H5 or MAT232H5 or MAT242H5 or MAT244H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JCP221H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY241H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY245H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT232H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT244H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

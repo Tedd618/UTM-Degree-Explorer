@@ -1,0 +1,12 @@
+{
+  "code": "MGT225H5",
+  "title": "Intermediate Accounting II",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT220H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT220H5"
+  },
+  "exclusions_raw": "MGT224H5 or MGT322H5 or RSM221H1 or RSM320H1 or MGAC01H3 or MGAC02H3",
+  "corequisites_raw": null
+}

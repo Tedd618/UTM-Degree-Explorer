@@ -1,0 +1,47 @@
+{
+  "code": "JFL369H5",
+  "title": "Romance Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "( LIN228H5 or LIN229H5 or FRE376H5 or FRE377H5 ) and ( LIN232H5 or FRE378H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN228H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN229H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE376H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE377H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN232H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE378H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "LIN369H5",
+  "corequisites_raw": null
+}

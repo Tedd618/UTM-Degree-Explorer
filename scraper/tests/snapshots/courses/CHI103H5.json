@@ -1,0 +1,9 @@
+{
+  "code": "CHI103H5",
+  "title": "Introductory Chinese I",
+  "credits": 0.5,
+  "prerequisites_raw": "All students are REQUIRED to complete the Chinese Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires ) before enrolling in this course.",
+  "prerequisites": [],
+  "exclusions_raw": "CHI100Y5 or EAS100Y1 or EAS101Y1 or LGGA60H3 or LGGA61H3",
+  "corequisites_raw": null
+}

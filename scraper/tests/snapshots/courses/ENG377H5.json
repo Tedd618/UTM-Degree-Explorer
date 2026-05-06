@@ -1,0 +1,40 @@
+{
+  "code": "ENG377H5",
+  "title": "Special Topic in Creative Writing",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credit in ENG (including ENG289H5 or ENG291H5 ) and 3.0 other credits",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "ENG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ENG289H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG291H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

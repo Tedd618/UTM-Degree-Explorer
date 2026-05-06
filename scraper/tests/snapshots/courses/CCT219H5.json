@@ -1,0 +1,25 @@
+{
+  "code": "CCT219H5",
+  "title": "Media Economics I",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and CCT110H5 and CCT112H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CCT319H5 or ECO100Y5 or ( ECO101H5 or ECO102H5 )",
+  "corequisites_raw": null
+}

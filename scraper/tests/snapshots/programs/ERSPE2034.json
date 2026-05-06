@@ -1,0 +1,465 @@
+{
+  "code": "ERSPE2034",
+  "name": "Finance",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 16,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year (3.0 credits)",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM101H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Management (8.0 credits):",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT201H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT220H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT252H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT262H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT336H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT353H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT363H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT341H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT371H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT373H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT374H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT231H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT232H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT301H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT330H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT430H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT431H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT433H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT434H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT435H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT438H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT439H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT440H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT442H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT443H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT444H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT495H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit in MGT at 300/400 level (cannot double count courses)",
+            "subject": "MGT",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit in MGT at 400 level (cannot double count courses)",
+            "subject": "MGT",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "Economics (5.0 credits):",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO204Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO206Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO202Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO208Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO209Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO220Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "STA256H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA258H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "STA256H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA260H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO372H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO375H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO313H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO324H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO325H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO326H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO348H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO349H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO365H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO375H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO456H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO460H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO461H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO475H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit in ECO at the 300/400-level (cannot double count courses)",
+            "subject": "ECO",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_most",
+            "description": "No more than 0.5 credit in Economic History.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_most",
+                "n": 0.5,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

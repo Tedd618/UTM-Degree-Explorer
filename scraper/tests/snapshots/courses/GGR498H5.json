@@ -1,0 +1,12 @@
+{
+  "code": "GGR498H5",
+  "title": "Physical  Geography Independent Research Project",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits and permission of instructor",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 14.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

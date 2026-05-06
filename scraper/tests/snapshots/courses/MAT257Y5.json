@@ -1,0 +1,21 @@
+{
+  "code": "MAT257Y5",
+  "title": "Analysis III",
+  "credits": 1.0,
+  "prerequisites_raw": "( MAT157Y5 or MAT159H5 ) and MAT240H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT159H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT240H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MAT237Y1 or MAT257Y1",
+  "corequisites_raw": null
+}

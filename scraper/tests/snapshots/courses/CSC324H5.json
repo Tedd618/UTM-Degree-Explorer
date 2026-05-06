@@ -1,0 +1,21 @@
+{
+  "code": "CSC324H5",
+  "title": "Principles of Programming Languages",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC207H5 and CSC236H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC236H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC324H1 or CSCC24H3",
+  "corequisites_raw": null
+}

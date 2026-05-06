@@ -1,0 +1,21 @@
+{
+  "code": "WGS347H5",
+  "title": "Indigenous Feminisms and Decolonization",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS101H5 or WGS200Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "WGS101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WGS200Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

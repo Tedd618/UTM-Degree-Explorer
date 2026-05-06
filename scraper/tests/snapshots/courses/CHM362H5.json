@@ -1,0 +1,12 @@
+{
+  "code": "CHM362H5",
+  "title": "Metabolism and Bioenergetics",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM361H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM361H5"
+  },
+  "exclusions_raw": "BCH210H1 or BCH242Y1 or BIOC13H3 or CHMB62H3",
+  "corequisites_raw": null
+}

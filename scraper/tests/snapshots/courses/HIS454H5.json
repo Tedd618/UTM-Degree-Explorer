@@ -1,0 +1,54 @@
+{
+  "code": "HIS454H5",
+  "title": "Race, Gender and Nation in Modern Latin America",
+  "credits": 0.5,
+  "prerequisites_raw": "( HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 ) and HIS290H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "HIS101H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS102H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS103H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS104H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS105H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS106H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS107H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS108H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS290H5"
+      }
+    ]
+  },
+  "exclusions_raw": "HIS441H1",
+  "corequisites_raw": null
+}

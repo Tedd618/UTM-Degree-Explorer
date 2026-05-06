@@ -1,0 +1,590 @@
+{
+  "code": "ERMAJ1061",
+  "name": "Environmental Science",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": "of which at least 2.0 must be at the 300-400 level.",
+    "groups": [
+      {
+        "label": "First Year: 3.0 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV100Y5"
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT101H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR112H5"
+              },
+              {
+                "type": "course",
+                "code": "ISP130H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT136H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT139H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT159H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY137H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY146H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY147H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Be sure to look ahead and plan to complete the prerequisites for any upper-level courses that are of interest to you.",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year: 2.5 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV201H5"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM231H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS201H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS202H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS203H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO360H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR276H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR278H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              },
+              {
+                "type": "course",
+                "code": "STA221H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Upper Years: 2.5 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV330H5"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO416H5"
+              },
+              {
+                "type": "course",
+                "code": "CPS401Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV299Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV399Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV496H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV497H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS325H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR335H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR379H5"
+              },
+              {
+                "type": "course",
+                "code": "JEG400Y5"
+              },
+              {
+                "type": "course",
+                "code": "JEG417Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO311H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO331H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO333H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV495H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV496H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS312H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS315H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS412H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR304H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR315H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR316H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR317H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR337H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR338H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR372H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR374H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR375H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR376H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR377H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR383H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR384H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR404H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR406H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR407H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR440H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR479H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR484H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT357H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT368H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT370H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO464H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO373Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV305H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV311H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV320H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV393H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV425H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV430H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV435H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR322H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR325H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR329H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR333H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR348H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR349H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR353H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR361H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR362H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR365H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR370H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR415H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR419H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR420H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV351H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP351H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV356H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP356H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV452H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP452H5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE251H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE252H5"
+              },
+              {
+                "type": "course",
+                "code": "POL343Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL346Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL475H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC349H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC356H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC465H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI375H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "ENV490H5 , ENV491H5 can substitute for #1, #2, #3, or #4 as course requirements, where appropriate, and with permission of the Program Advisor or Academic Counsellor."
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "code": "ERMIN0231",
+  "name": "Philosophy",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 4,
+            "constraint": "at_least",
+            "description": "4.0 credits in PHL are required, including at least 1.0 credits at the 300/400 level.",
+            "subject": "PHL",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

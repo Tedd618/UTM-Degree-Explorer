@@ -1,0 +1,18 @@
+{
+  "code": "POL392H5",
+  "title": "Topics in Political Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "3.0 POL credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 3.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

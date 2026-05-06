@@ -1,0 +1,12 @@
+{
+  "code": "DRS426H5",
+  "title": "Production 4",
+  "credits": 0.5,
+  "prerequisites_raw": "DRS425H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "DRS425H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

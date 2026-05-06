@@ -1,0 +1,44 @@
+{
+  "code": "FAS443Y5",
+  "title": "Individual Investigations in Drawing",
+  "credits": 1.0,
+  "prerequisites_raw": "( FAS343Y5 or FAS349Y5 or FAS359Y5 or FAS369Y5 ) and 1.5 credits in FAH/VCC and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "and"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAS343Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAS349Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAS359Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAS369Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "VIS305H1",
+  "corequisites_raw": null
+}

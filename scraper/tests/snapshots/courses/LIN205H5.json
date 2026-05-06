@@ -1,0 +1,12 @@
+{
+  "code": "LIN205H5",
+  "title": "English Grammar II",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN204H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN204H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,51 @@
+{
+  "code": "MAT244H5",
+  "title": "Differential Equations I",
+  "credits": 0.5,
+  "prerequisites_raw": "( MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5 ) and ( MAT223H5 or MAT240H5 ).",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT134H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT233H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT322H5 or MAT244H1 or MAT267H1 or MATB44H3",
+  "corequisites_raw": null
+}

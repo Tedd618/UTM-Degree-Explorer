@@ -1,0 +1,21 @@
+{
+  "code": "BIO419H5",
+  "title": "Molecular Aspects of Gene Regulation",
+  "credits": 0.5,
+  "prerequisites_raw": "( BIO207H5 and BIO372H5 ) or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO372H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO484H5 (Fall 2018) or MGY420H1",
+  "corequisites_raw": null
+}

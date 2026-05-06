@@ -1,0 +1,47 @@
+{
+  "code": "MGT374H5",
+  "title": "Operations Management",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO220Y5 or ECO227Y5 or ( STA256H5 and STA260H5 ) or ( STA256H5 and STA258H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO220Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO227Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA260H5"
+          }
+        ]
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA258H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "RSM270H1 or MGOC20H3",
+  "corequisites_raw": null
+}

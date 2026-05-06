@@ -1,0 +1,42 @@
+{
+  "code": "ECO466H5",
+  "title": "Empirical Macroeconomics and Policy",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO325H5 and [ ECO220Y5 or ECO227Y5 or (1.0 credit from STA256H5 , STA258H5 , STA260H5 )] or Permission of Instructor/Department.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "STA256H5",
+          "STA258H5",
+          "STA260H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO325H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ECO220Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ECO402H5 Special Topics: Empirical Macroeconomics and Policy (20199), ECO466H1",
+  "corequisites_raw": null
+}

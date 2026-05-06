@@ -1,0 +1,12 @@
+{
+  "code": "MGT232H5",
+  "title": "Business Finance II",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT231H5"
+  },
+  "exclusions_raw": "MGT339H5 or CCT321H5 or ECO359H5 or ECO359H1 or RSM333H1 or MGFC10H3",
+  "corequisites_raw": null
+}

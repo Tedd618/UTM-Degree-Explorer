@@ -1,0 +1,60 @@
+{
+  "code": "MGT453H5",
+  "title": "Marketing Research",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT353H5 and [ MGT218H5 or ECO220Y5 or ECO227Y5 or STA218H5 or ( STA256H5 and STA260H5 ) or ( STA256H5 and STA258H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT353H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MGT218H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO220Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "STA256H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "STA260H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "STA256H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "STA258H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MGMC01H3",
+  "corequisites_raw": null
+}

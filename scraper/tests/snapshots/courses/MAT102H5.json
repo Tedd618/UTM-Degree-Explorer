@@ -1,0 +1,9 @@
+{
+  "code": "MAT102H5",
+  "title": "Introduction to Mathematical Proofs",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum 70% in Grade 12 Advanced Functions (MHF4U)",
+  "prerequisites": [],
+  "exclusions_raw": "MAT138H1 or MAT246H1 or CSC165H1 or CSCA67H3",
+  "corequisites_raw": null
+}

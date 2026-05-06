@@ -1,0 +1,34 @@
+{
+  "code": "CCT411H5",
+  "title": "CCIT Internship II",
+  "credits": 0.5,
+  "prerequisites_raw": "(Completion of 13.0 credits including CCT409H5 or CCT410H5 or WRI410H5 ) and minimum CGPA of 2.5 and permission of Internship Coordinator.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 13.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT409H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CCT410H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "WRI410H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "WRI411H5",
+  "corequisites_raw": null
+}

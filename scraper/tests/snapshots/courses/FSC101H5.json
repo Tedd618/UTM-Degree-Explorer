@@ -1,0 +1,12 @@
+{
+  "code": "FSC101H5",
+  "title": "The Real Law & Order",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

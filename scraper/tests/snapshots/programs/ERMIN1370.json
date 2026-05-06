@@ -1,0 +1,104 @@
+{
+  "code": "ERMIN1370",
+  "name": "Philosophy of Science",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "including at least 1.0 credits at the 300/400 level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL101H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL102H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL103H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL113H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL105Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHL233H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL255H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL355H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL350H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL357H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL358H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 credits in AST or BIO or ERS or CHM or PSY or PHY;",
+            "subject": "AST",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credits in any other PHL course.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

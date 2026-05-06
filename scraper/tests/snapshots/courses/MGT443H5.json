@@ -1,0 +1,21 @@
+{
+  "code": "MGT443H5",
+  "title": "Quantitative Finance",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO220Y5 or STA256H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO220Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "STA256H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT412H5 Special Topics in Management: Computational Finance (Winter 2020 & Winter 2021)",
+  "corequisites_raw": null
+}

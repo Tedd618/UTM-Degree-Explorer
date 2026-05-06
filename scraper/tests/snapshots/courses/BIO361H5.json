@@ -1,0 +1,12 @@
+{
+  "code": "BIO361H5",
+  "title": "Biometrics II",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO360H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO360H5"
+  },
+  "exclusions_raw": "ECO220Y5",
+  "corequisites_raw": null
+}

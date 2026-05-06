@@ -1,0 +1,21 @@
+{
+  "code": "PSY397H5",
+  "title": "Neuroplasticity and Behaviour",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and PSY290H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY290H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

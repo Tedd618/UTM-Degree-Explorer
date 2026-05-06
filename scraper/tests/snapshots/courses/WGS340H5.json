@@ -1,0 +1,21 @@
+{
+  "code": "WGS340H5",
+  "title": "Black Feminisms: Diasporic Conversations on Theory and Practice",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS101H5 or WGS200Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "WGS101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WGS200Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

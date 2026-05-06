@@ -1,0 +1,21 @@
+{
+  "code": "ANT202H5",
+  "title": "Biological Anthropology: Human Variation and Adaptation",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT101H5 or BIO152H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT203Y5 or ANT203Y1 or ANTB15H3",
+  "corequisites_raw": null
+}

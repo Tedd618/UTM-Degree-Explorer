@@ -1,0 +1,39 @@
+{
+  "code": "MAT305H5",
+  "title": "Elementary Lie Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "[( MAT224H5 or MAT240H5 ) and MAT236H5 ] or MAT257Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

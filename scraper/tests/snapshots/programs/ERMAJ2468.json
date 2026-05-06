@@ -1,0 +1,51 @@
+{
+  "code": "ERMAJ2468",
+  "name": "Dramaturgy and Drama Studies",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": null
+    },
+    "total_credits_note": "as follows:",
+    "groups": [
+      {
+        "label": "First and Second Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "First and Second Years: ( DRE121H5 or ENG121H5 ) and ( DRE122H5 or ENG122H5 ) and DRE200H5 and DRE222H5",
+            "courses": [
+              "DRE121H5",
+              "ENG121H5",
+              "DRE122H5",
+              "ENG122H5",
+              "DRE200H5",
+              "DRE222H5"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 4,
+            "constraint": "at_least",
+            "description": "Higher Years: 1.0 DRE at the 300 level and 4.0 credits from the drama-related courses, at least 1.0 at the 300+ level.",
+            "subject": "DRE",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

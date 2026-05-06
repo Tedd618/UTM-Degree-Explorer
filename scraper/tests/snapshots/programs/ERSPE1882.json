@@ -1,0 +1,214 @@
+{
+  "code": "ERSPE1882",
+  "name": "Human Resource Management",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 15.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM101H5"
+              },
+              {
+                "type": "course",
+                "code": "MGM102H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "SOC100H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Core courses (1.5 credits): MGT262H5 and MGT270H5 and MGT492H5",
+            "courses": [
+              "MGT262H5",
+              "MGT270H5",
+              "MGT492H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Management Disciplines (9.5 credits): ( MGT120H5 or MGM221H5 ) and MGT223H5 and MGT231H5 and MGT252H5 and MGT260H5 and MGT363H5 and MGT371H5 and MGT480H5 and MGM360H5 and MGM364H5 and MGM365H5 and MGM390H5 and MGM464H5 and MGM465H5 and MGM466H5 and ( ECO200Y5 or ECO204Y5 or ECO205Y5 or ECO206Y5 ) and ECO220Y5",
+            "courses": [
+              "MGT120H5",
+              "MGM221H5",
+              "MGT223H5",
+              "MGT231H5",
+              "MGT252H5",
+              "MGT260H5",
+              "MGT363H5",
+              "MGT371H5",
+              "MGT480H5",
+              "MGM360H5",
+              "MGM364H5",
+              "MGM365H5",
+              "MGM390H5",
+              "MGM464H5",
+              "MGM465H5",
+              "MGM466H5",
+              "ECO200Y5",
+              "ECO204Y5",
+              "ECO205Y5",
+              "ECO206Y5",
+              "ECO220Y5"
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT350H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC227H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC236H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC263H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC361H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS210H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT461H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT463H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit in MGT or MGM at the 200/300/400 level (cannot double count courses)",
+            "subject": "MGT",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "enough space is reserved each year in MGT480H5 to accommodate the full HRM cohort."
+    ]
+  }
+}

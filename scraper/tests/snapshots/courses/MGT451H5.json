@@ -1,0 +1,34 @@
+{
+  "code": "MGT451H5",
+  "title": "Business Strategy for the Digital Economy",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT120H5 and ( ECO200Y5 or ECO204Y5 or ECO206Y5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT120H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ECO200Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO204Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO206Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MGT412H5 (Fall 2021 or Winter 2022 or Winter 2023)",
+  "corequisites_raw": null
+}

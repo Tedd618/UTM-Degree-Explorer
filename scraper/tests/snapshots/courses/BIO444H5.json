@@ -1,0 +1,38 @@
+{
+  "code": "BIO444H5",
+  "title": "Urban Field Ecology and Evolution",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5 and ( BIO205H5 or BIO342H5 ) and ( BIO259H5 or STA215H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO205H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO342H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO259H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "BIO324H5",
+  "title": "Plant Biochemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and CHM120H5 or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM120H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSB475H1",
+  "corequisites_raw": null
+}

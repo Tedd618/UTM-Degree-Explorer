@@ -1,0 +1,36 @@
+{
+  "code": "RLG450H5",
+  "title": "Advanced Topics in Islam",
+  "credits": 0.5,
+  "prerequisites_raw": "( RLG204H5 or RLG350H5 ) and 1.5 RLG credits",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "RLG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "RLG204H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "RLG350H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

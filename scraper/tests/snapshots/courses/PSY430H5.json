@@ -1,0 +1,63 @@
+{
+  "code": "PSY430H5",
+  "title": "Special Topics in Personality",
+  "credits": 0.5,
+  "prerequisites_raw": "( PSY220H5 or PSY230H5 ) and 1.0 credit from ( PSY311H5 or PSY320H5 or PSY321H5 or PSY324H5 or PSY325H5 or PSY327H5 or PSY331H5 or PSY333H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY220H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY230H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY311H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY320H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY321H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY324H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY325H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY327H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY331H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY333H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY430H1 or ( PSYD30H3 or PSYD32H3 )",
+  "corequisites_raw": null
+}

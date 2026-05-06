@@ -1,0 +1,39 @@
+{
+  "code": "FRE397H5",
+  "title": "Francophone African and Caribbean Cinema",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE240H5 and [ FRE280Y5 or ( FRE282H5 and FRE283H5 ) or (a min. grade of 77% in FSL406H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE240H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "FRE282H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "FRE283H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "FSL406H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

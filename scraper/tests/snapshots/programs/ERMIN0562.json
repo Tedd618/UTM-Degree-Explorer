@@ -1,0 +1,263 @@
+{
+  "code": "ERMIN0562",
+  "name": "Latin American and Caribbean Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "While study of a relevant language is encouraged, the program does not have a language requirement.",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "HIS290H5"
+          },
+          {
+            "type": "open_pool",
+            "n": 3.5,
+            "constraint": "at_least",
+            "description": "3.5 credits in at least two distinct disciplines selected from the list below; 1.0 credits must be at the 300+level.",
+            "subject": null,
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "Courses that can be counted toward this program are drawn from a range of offerings in the Humanities and Social Sciences at UTM:",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "FAH356H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS290H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS330H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS390H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS391H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS490H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE282H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE283H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL205H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL206H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA100Y5"
+              },
+              {
+                "type": "course",
+                "code": "SPA219H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA220Y5"
+              },
+              {
+                "type": "course",
+                "code": "SPA221H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA222H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA235H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA259H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA275H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA305H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA319H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA320Y5"
+              },
+              {
+                "type": "course",
+                "code": "SPA321H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA322H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN366H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN466H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL360H5"
+              },
+              {
+                "type": "course",
+                "code": "POL361H5"
+              },
+              {
+                "type": "course",
+                "code": "POL448H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC253H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC427H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "In consultation with the Historical Studies Academic Advisor, and depending on the focus of the course, the following courses may qualify on a year-to-year basis:",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT310H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT320H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "DTS201H5"
+          },
+          {
+            "type": "course",
+            "code": "HIS494H5"
+          },
+          {
+            "type": "course",
+            "code": "FRE391H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL114H5"
+              },
+              {
+                "type": "course",
+                "code": "POL487H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "VCC306H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC406H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Women, Gender and Sexuality Studies: WGS200Y5 or WGS350H5 or WGS368H5 or WGS369Y5 or WGS370H5",
+            "courses": [
+              "WGS200Y5",
+              "WGS350H5",
+              "WGS368H5",
+              "WGS369Y5",
+              "WGS370H5"
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

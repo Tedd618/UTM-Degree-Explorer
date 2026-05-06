@@ -1,0 +1,21 @@
+{
+  "code": "CLA369H5",
+  "title": "The High Roman Empire, 68-305 CE",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA231H5 or CLA233H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA233H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA369H1",
+  "corequisites_raw": null
+}

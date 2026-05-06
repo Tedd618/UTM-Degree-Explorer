@@ -1,0 +1,21 @@
+{
+  "code": "MGT341H5",
+  "title": "Financial Modeling and Data Analytics",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5 and MGT232H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT441H5",
+  "corequisites_raw": null
+}

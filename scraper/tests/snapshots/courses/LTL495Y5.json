@@ -1,0 +1,12 @@
+{
+  "code": "LTL495Y5",
+  "title": "Individual Project",
+  "credits": 1.0,
+  "prerequisites_raw": "0.5 credit at the 300 or 400 level in LTL",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 0.5
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

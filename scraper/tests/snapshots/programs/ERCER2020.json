@@ -1,0 +1,126 @@
+{
+  "code": "ERCER2020",
+  "name": "Certificate in Effective Business Practices & Leadership Skills",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": null,
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT231H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT262H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT300H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT010H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM464H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT430H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT433H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT434H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT437H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT442H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT450H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT455H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT461H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT463H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT491H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT492H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT493H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT494H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT495H5"
+              }
+            ],
+            "label": "400-level course list"
+          },
+          {
+            "type": "text",
+            "text": "15 Professional Skills Development Program points (must include Resume Critique or Mock Interview and Career Investment Planning Session)",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Workplace Preparation Workshops",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Work-Integrated Learning Experience (minimum 10-week internship in the Summer term)",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "To earn the Certificate students must concurrently be enrolled in a Commerce or Management program .",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

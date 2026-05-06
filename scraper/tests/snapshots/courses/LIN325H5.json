@@ -1,0 +1,21 @@
+{
+  "code": "LIN325H5",
+  "title": "Topics in the Phonetics and Phonology of English",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN208H5 or LIN228H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN208H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN228H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

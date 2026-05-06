@@ -1,0 +1,39 @@
+{
+  "code": "STA348H5",
+  "title": "Introduction to Stochastic Processes",
+  "credits": 0.5,
+  "prerequisites_raw": "( STA260H5 or STA238H1 or ECO227Y5 ) and ( MAT223H5 or MAT240H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA260H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "STA347H1 or STA447H1 or STAC63H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,30 @@
+{
+  "code": "FAH496H5",
+  "title": "Topics in Modern Art and Architecture",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) and ( FAH287H5 or FAH288H5 ) and at least 1.0 in FAH/VCC at the 300/400 level, or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH287H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH288H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "ENV210H5",
+  "title": "Sustainability",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 9.0
+  },
+  "exclusions_raw": "ENV310H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "MGD429H5",
+  "title": "Data Analysis II",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT226H5 and CCT221H5 or CCT322H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT226H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT221H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

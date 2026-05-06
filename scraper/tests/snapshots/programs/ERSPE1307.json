@@ -1,0 +1,226 @@
+{
+  "code": "ERSPE1307",
+  "name": "Digital Enterprise Management",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 13.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT109H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT110H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT112H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT203H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT206H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT219H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT221H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT224H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT225H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT260H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT321H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT324H5"
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CCT328H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGD428H5"
+                  }
+                ]
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CCT325H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MGD425H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CCT354H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT355H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT360H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT424H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT460H5"
+              },
+              {
+                "type": "course",
+                "code": "MGD421H5"
+              },
+              {
+                "type": "course",
+                "code": "MGD426H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT401H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT410H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT476H5"
+              },
+              {
+                "type": "course",
+                "code": "MGD415H5"
+              },
+              {
+                "type": "course",
+                "code": "MGD427H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 credits of CCT or MGD at the 300- or 400-level. Cannot include any courses already used above.",
+            "subject": "CCT",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "Notes:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Students cannot combine the Digital Enterprise Management Program with the CCIT Major program, or the Management Major Program or the Commerce Major program or Technology, Coding and Society major program.",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Students are encouraged to review CCT 300 and 400 level elective courses in advance, and take necessary 200 level CCT courses to meet prerequisites in higher years.",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "Student who cannot complete CCT219H5 , due to exclusion with ECO100Y5 or ECO101H5 or ECO102H5 , will need to take 0.5 credit from any 200-level or higher CCT or MGD course in its place.",
+            "subject": "OR",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [
+              "ECO101H5",
+              "ECO102H5"
+            ],
+            "excluding": [
+              "CCT219H5",
+              "ECO100Y5"
+            ],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

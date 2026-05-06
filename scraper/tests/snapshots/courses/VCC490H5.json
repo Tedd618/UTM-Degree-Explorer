@@ -1,0 +1,25 @@
+{
+  "code": "VCC490H5",
+  "title": "Topics in Visual Culture and Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "13.0 credits including ( VCC101H5 or VCC201H5 ) and a minimum of 1.0 VCC credit.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 13.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

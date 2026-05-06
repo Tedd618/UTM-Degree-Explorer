@@ -1,0 +1,25 @@
+{
+  "code": "CLA301H5",
+  "title": "Greek Epic",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA204H5 or CLA230H5 or CLA237H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA230H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA237H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA236H1 or CLAC11H3",
+  "corequisites_raw": null
+}

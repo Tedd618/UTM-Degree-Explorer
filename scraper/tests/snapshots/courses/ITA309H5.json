@@ -1,0 +1,12 @@
+{
+  "code": "ITA309H5",
+  "title": "Mafia Movies",
+  "credits": 0.5,
+  "prerequisites_raw": "None; ITA100Y5 or ITA101Y5 will be required for students enrolled in an ITA Major or Specialist program only, as some of their written work will be submitted in Italian.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA310H5",
+  "corequisites_raw": null
+}

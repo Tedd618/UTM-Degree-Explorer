@@ -1,0 +1,31 @@
+{
+  "code": "FRE445H5",
+  "title": "Special Topics in French & Francophone Literary and Cultural Studies I",
+  "credits": 0.5,
+  "prerequisites_raw": "(0.5 credit at the 300-level from the French & Francophone Literary and Cultural Studies category) and (0.5 credit of FRE at the 300-level, determined annually contingent on course content)",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": [
+          "FRE"
+        ],
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

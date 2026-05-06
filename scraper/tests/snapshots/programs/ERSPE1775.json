@@ -1,0 +1,89 @@
+{
+  "code": "ERSPE1775",
+  "name": "Anthropology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 10.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT101H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT102H5"
+              },
+              {
+                "type": "course",
+                "code": "ISP100H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT200H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT201H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT202H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT203H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT220H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT204H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT206H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT207H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "JAL253H5 and JAL351H5 and JAL353H5 and JAL355H5 and JAL453H5 are social science credits and can be used to fulfill ANT program requirements."
+    ]
+  }
+}

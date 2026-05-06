@@ -1,0 +1,40 @@
+{
+  "code": "ANT403H5",
+  "title": "Social Learning and Cultural Patterns",
+  "credits": 0.5,
+  "prerequisites_raw": "At least 1.5 credits from ( ANT200H5 or ANT201H5 or ANT202H5 or ANT204H5 or ANT206H5 or ANT218H5 ) and 2.0 credits at the 300-400 level in Anthropology or Psychology or Biology courses",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "ANT200H5",
+          "ANT201H5",
+          "ANT202H5",
+          "ANT204H5",
+          "ANT206H5",
+          "ANT218H5"
+        ]
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

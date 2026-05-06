@@ -1,0 +1,12 @@
+{
+  "code": "PSY290H5",
+  "title": "Introduction to Neuroscience",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY290H1 or PSYB64H3 or HMB200H1",
+  "corequisites_raw": null
+}

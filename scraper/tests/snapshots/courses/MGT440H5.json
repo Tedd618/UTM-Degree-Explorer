@@ -1,0 +1,25 @@
+{
+  "code": "MGT440H5",
+  "title": "Fixed Income Markets",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5 and MGT232H5 and MGT330H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT330H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

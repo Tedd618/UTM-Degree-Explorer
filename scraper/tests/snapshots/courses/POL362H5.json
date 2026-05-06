@@ -1,0 +1,34 @@
+{
+  "code": "POL362H5",
+  "title": "Borders, Migrants and Refugees",
+  "credits": 0.5,
+  "prerequisites_raw": "POL114H5 or POL218Y5 or ( POL218H5 and POL219H5 ) or POL209H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL114H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "POL218H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "POL219H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "POL209H5"
+      }
+    ]
+  },
+  "exclusions_raw": "POL390H5 (Summer 2020) or POL377H1 (Summer 2021)",
+  "corequisites_raw": null
+}

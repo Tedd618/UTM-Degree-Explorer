@@ -1,0 +1,9 @@
+{
+  "code": "STA220H5",
+  "title": "The Practice of Statistics I",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "STA215H5 or STA218H5 or STA246H5 or STA256H5 or STA257H1 or PSY201H5 or STA220H1 or STA237H1 or STA247H1 or PSY201H1 or STAB22H3 or STAB52H3",
+  "corequisites_raw": null
+}

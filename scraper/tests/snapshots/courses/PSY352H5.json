@@ -1,0 +1,21 @@
+{
+  "code": "PSY352H5",
+  "title": "Animal Behaviour",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and PSY290H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY290H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO318Y5 or BIO328H5 or PSY252H5",
+  "corequisites_raw": null
+}

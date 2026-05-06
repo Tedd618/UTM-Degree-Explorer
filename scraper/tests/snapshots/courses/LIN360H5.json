@@ -1,0 +1,34 @@
+{
+  "code": "LIN360H5",
+  "title": "Historical Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN229H5 and (one of LIN231H5 or LIN232H5 or LIN237H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN229H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN231H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN232H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN237H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "LIN362H1",
+  "corequisites_raw": null
+}

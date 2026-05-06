@@ -1,0 +1,9 @@
+{
+  "code": "MAT157H5",
+  "title": "Analysis I",
+  "credits": 0.5,
+  "prerequisites_raw": "[Minimum 70% in Grade 12 Advanced Functions (MHF4U)] and [Minimum 70% in Grade 12 Calculus and Vectors (MCV4U)]",
+  "prerequisites": [],
+  "exclusions_raw": "MAT157Y5 or MAT157Y1",
+  "corequisites_raw": null
+}

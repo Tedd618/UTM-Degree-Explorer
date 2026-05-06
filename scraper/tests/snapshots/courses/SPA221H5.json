@@ -1,0 +1,12 @@
+{
+  "code": "SPA221H5",
+  "title": "Intermediate Spanish I",
+  "credits": 0.5,
+  "prerequisites_raw": "SPA100Y5 or SPA100Y1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SPA100Y5"
+  },
+  "exclusions_raw": "SPA219H5 or SPA220Y5",
+  "corequisites_raw": null
+}

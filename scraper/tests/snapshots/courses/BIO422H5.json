@@ -1,0 +1,21 @@
+{
+  "code": "BIO422H5",
+  "title": "Environmental Epigenetics",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO312H5 and BIO347H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO312H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO347H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIOD19H3",
+  "corequisites_raw": null
+}

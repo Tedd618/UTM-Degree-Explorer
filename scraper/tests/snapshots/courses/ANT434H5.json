@@ -1,0 +1,12 @@
+{
+  "code": "ANT434H5",
+  "title": "Palaeopathology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT334H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT334H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "MGT300H5",
+  "title": "Presentation Skills and Workplace Preparation",
+  "credits": 0.5,
+  "prerequisites_raw": "MGM101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGM101H5"
+  },
+  "exclusions_raw": "MGT200H5",
+  "corequisites_raw": null
+}

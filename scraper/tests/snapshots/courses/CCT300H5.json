@@ -1,0 +1,21 @@
+{
+  "code": "CCT300H5",
+  "title": "Critical Analysis of Media",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT210H5 or CCT218H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT210H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT218H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

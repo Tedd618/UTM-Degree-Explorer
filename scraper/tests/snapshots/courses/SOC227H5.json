@@ -1,0 +1,12 @@
+{
+  "code": "SOC227H5",
+  "title": "Sociology of Work and Occupations",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC207H1 or SOCB54H3",
+  "corequisites_raw": null
+}

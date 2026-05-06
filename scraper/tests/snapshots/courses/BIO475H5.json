@@ -1,0 +1,12 @@
+{
+  "code": "BIO475H5",
+  "title": "Virology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO206H5"
+  },
+  "exclusions_raw": "CSB351Y1",
+  "corequisites_raw": null
+}

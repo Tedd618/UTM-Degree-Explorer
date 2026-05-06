@@ -1,0 +1,12 @@
+{
+  "code": "ITA299Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "ITA100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

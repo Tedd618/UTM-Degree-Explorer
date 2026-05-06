@@ -1,0 +1,12 @@
+{
+  "code": "POL477H5",
+  "title": "Moral Reason and Economic History II",
+  "credits": 0.5,
+  "prerequisites_raw": "POL476H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL476H5"
+  },
+  "exclusions_raw": "POL478Y5",
+  "corequisites_raw": null
+}

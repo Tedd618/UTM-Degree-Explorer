@@ -1,0 +1,12 @@
+{
+  "code": "CCT499Y5",
+  "title": "Research Opportunity",
+  "credits": 1.0,
+  "prerequisites_raw": "A minimum of 13.0 credits or permission of instructor",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

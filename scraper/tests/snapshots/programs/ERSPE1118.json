@@ -1,0 +1,267 @@
+{
+  "code": "ERSPE1118",
+  "name": "Biotechnology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 15,
+      "max": null
+    },
+    "total_credits_note": "including at least 7.0 credits at the 300/400 level, of which 1.5 must be at the 400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "BIO152H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO200H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO203H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO259H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM243H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO314H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO315H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO360H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO370Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO372H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO374H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM311H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "JBC472H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO304H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO310H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO312H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO324H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO341H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO342H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO347H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO362H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO368H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO375H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO377H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO380H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO409H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO429H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM333H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM231H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM341H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM345H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM347H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM362H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM372H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM373H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit from UTM CHM/BIO courses at the 400 level.",
+            "subject": null,
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "course",
+            "code": "BIO360H5"
+          },
+          {
+            "type": "text",
+            "text": "It is recommended that students in this program consider taking a research project or internship course in either Biology ( BIO400Y5 /\u200b BIO481Y5 ) or Chemistry ( CPS489Y5 ) or JCB487Y5 . Other 4th-year courses directly relevant to this program are BIO443H5 , BIO476H5 , BIO477H5 , CHM414H5 and CHM462H5 .",
+            "courses": [
+              "BIO400Y5",
+              "BIO481Y5",
+              "CPS489Y5",
+              "JCB487Y5",
+              "BIO443H5",
+              "BIO476H5",
+              "BIO477H5",
+              "CHM414H5",
+              "CHM462H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Students may take no more than 2.0 credits combined in ROP, Internship Program, or Individual Project/Thesis courses at the 300/400-level for credit toward their Biology program.",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Students must consult with the Undergraduate Administrator before enrolling in any St. George course that they wish to use for credit toward any Biology program.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

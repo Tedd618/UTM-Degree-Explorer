@@ -1,0 +1,21 @@
+{
+  "code": "BIO311H5",
+  "title": "Landscape Ecology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO205H5 and ( BIO259H5 or STA215H5 ) and permission of instructor\n* STA215H5 will no longer be accepted as an appropriate prerequisite course AFTER 2022-2023 Academic year. Beginning 2023-2024 Academic year all students will be required to complete BIO259H5 as the statistics prerequisite course.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO259H5"
+      }
+    ]
+  },
+  "exclusions_raw": "GGR311H5",
+  "corequisites_raw": null
+}

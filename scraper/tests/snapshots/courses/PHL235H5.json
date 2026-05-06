@@ -1,0 +1,25 @@
+{
+  "code": "PHL235H5",
+  "title": "Philosophy of Religion",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL101H5 or PHL102H5 or PHL103H5 or PHL105Y5 or PHL113H5 or 4.0 credits.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHL103H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL105Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL113H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

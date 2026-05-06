@@ -1,0 +1,21 @@
+{
+  "code": "BIO329H5",
+  "title": "Conservation Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO205H5 and BIO259H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO259H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIOC63H3 or EEB215H1 or EEB255H1 or EEB365H1",
+  "corequisites_raw": null
+}

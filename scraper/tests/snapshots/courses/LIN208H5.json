@@ -1,0 +1,12 @@
+{
+  "code": "LIN208H5",
+  "title": "English Sounds",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN101H5"
+  },
+  "exclusions_raw": "LIN228H5",
+  "corequisites_raw": null
+}

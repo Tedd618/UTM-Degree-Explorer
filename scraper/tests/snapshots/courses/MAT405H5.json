@@ -1,0 +1,39 @@
+{
+  "code": "MAT405H5",
+  "title": "Introduction to Topology",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT257Y5 or [( MAT224H5 or MAT240H5 ) and MAT236H5 and at least 0.5 additional credit of MAT at the 300+ level with a mark of at least 65%]",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT327H1 or MATC27H3",
+  "corequisites_raw": null
+}

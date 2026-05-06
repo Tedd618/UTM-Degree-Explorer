@@ -1,0 +1,12 @@
+{
+  "code": "ANT200H5",
+  "title": "Introduction to the Practice of Archaeology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT101H5"
+  },
+  "exclusions_raw": "ANT200Y5 or ANT200Y1",
+  "corequisites_raw": null
+}

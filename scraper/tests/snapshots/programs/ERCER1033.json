@@ -1,0 +1,68 @@
+{
+  "code": "ERCER1033",
+  "name": "Professional Experience Certificate in Digital Media, Communication and Technology",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": {
+      "min": 2,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT110H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI173H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI203H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT273H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT373H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT409H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT410H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI410H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

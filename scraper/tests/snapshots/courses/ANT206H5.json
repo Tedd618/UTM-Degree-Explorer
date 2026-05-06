@@ -1,0 +1,12 @@
+{
+  "code": "ANT206H5",
+  "title": "Culture and Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT102H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT102H5"
+  },
+  "exclusions_raw": "ANT206Y5 or ANT253H1 or ANTB21H3",
+  "corequisites_raw": null
+}

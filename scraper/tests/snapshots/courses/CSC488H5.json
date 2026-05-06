@@ -1,0 +1,25 @@
+{
+  "code": "CSC488H5",
+  "title": "Compilers and Interpreters",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC258H5 and CSC263H5 and CSC324H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC258H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC324H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC488H1",
+  "corequisites_raw": null
+}

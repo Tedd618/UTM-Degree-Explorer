@@ -1,0 +1,21 @@
+{
+  "code": "PSY340H5",
+  "title": "Abnormal Psychology:  Adult Disorders",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and PSY240H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY240H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY342H1 or PSYB32H3",
+  "corequisites_raw": null
+}

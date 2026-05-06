@@ -1,0 +1,12 @@
+{
+  "code": "SOC206H5",
+  "title": "Introduction to the Sociology of Genocide",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,27 @@
+{
+  "code": "PHL367H5",
+  "title": "Issues in Philosophy and Feminism",
+  "credits": 0.5,
+  "prerequisites_raw": "1.5 credits in PHL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "PHL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

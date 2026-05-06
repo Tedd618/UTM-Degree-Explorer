@@ -1,0 +1,27 @@
+{
+  "code": "VST410H5",
+  "title": "Internship in Visual Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum completion of 5.5 credits in DVS Programs and 8.0 additional credits and minimum CGPA 2.5 and and permission of internship coordinator.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 5.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 5.5,
+        "subjects": [
+          "DVS"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

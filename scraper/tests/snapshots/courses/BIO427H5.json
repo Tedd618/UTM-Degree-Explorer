@@ -1,0 +1,12 @@
+{
+  "code": "BIO427H5",
+  "title": "Data Science in Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO360H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO360H5"
+  },
+  "exclusions_raw": "BIO429H5 or CSC311H1 or CSC311H5 or CSC413H1 or CSC413H5 or CSCC11H3 or STA314H1 or STA314H5",
+  "corequisites_raw": null
+}

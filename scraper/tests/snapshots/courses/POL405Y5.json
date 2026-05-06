@@ -1,0 +1,27 @@
+{
+  "code": "POL405Y5",
+  "title": "Political Science Internship",
+  "credits": 1.0,
+  "prerequisites_raw": "6.0 credits in POL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 6.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 6.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "Other department's internship courses, including HIS498Y5 or ECO400Y5 or SOC480Y5 or JEG401Y5",
+  "corequisites_raw": null
+}

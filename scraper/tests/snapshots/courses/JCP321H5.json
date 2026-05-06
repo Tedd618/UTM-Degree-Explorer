@@ -1,0 +1,69 @@
+{
+  "code": "JCP321H5",
+  "title": "Quantum Mechanics I: Foundations",
+  "credits": 0.5,
+  "prerequisites_raw": "( MAT212H5 or MAT223H5 or MAT232H5 or MAT242H5 or MAT244H5 ) and ( PHY136H5 and PHY137H5 ) or ( PHY146H5 and PHY147H5 ) and ( JCP221H5 or PHY245H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT244H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY137H5"
+          }
+        ]
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PHY146H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY147H5"
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "JCP221H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "PHY245H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CHM326Y1 or PHY256H1 or PHY356H1 or PHYB56H3 or PHYC56H3",
+  "corequisites_raw": null
+}

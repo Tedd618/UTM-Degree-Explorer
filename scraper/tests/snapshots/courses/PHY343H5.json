@@ -1,0 +1,21 @@
+{
+  "code": "PHY343H5",
+  "title": "Classical Mechanics",
+  "credits": 0.5,
+  "prerequisites_raw": "PHY146H5 and MAT244H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHY146H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT244H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHY354H1",
+  "corequisites_raw": null
+}

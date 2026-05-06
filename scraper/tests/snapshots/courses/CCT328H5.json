@@ -1,0 +1,12 @@
+{
+  "code": "CCT328H5",
+  "title": "Project Management",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 8.0 credits.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "MGD428H5",
+  "corequisites_raw": null
+}

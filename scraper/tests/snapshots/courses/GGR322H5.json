@@ -1,0 +1,12 @@
+{
+  "code": "GGR322H5",
+  "title": "GIS and Population Health",
+  "credits": 0.5,
+  "prerequisites_raw": "(8.5 credits and GGR278H5 ) or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GGR278H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

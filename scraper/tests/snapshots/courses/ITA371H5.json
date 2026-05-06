@@ -1,0 +1,21 @@
+{
+  "code": "ITA371H5",
+  "title": "Writings on Love and Sex; Politics, Power, and Success",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA200Y5 or ITA201Y5 or permission of the department.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA370Y5 and ITA370H1 and ITA400H1",
+  "corequisites_raw": null
+}

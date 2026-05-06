@@ -1,0 +1,21 @@
+{
+  "code": "GGR437H5",
+  "title": "Cloud-based Image Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits including GGR337H5 or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR337H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

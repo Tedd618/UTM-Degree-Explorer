@@ -1,0 +1,49 @@
+{
+  "code": "CPS489Y5",
+  "title": "Introduction to Research in the Chemical and Physical Sciences",
+  "credits": 1.0,
+  "prerequisites_raw": "(2.0 credits at the 300 level from BIO or CHM or JBC or JCP or ERS or ESS or PHY) and (1.0 credit from BIO206H5 or BIO314H5 or CHM372H5 or CHM373H5 or CHM394H5 or CHM395H5 or CHM396H5 or CHM397H5 or ERS201H5 or ERS202H5 or PHY324H5 or PHY347H5 or JCP321H5 or JCP322H5 or PHY325H5 or PHY332H5 or PHY333H5 or PHY343H5 or PHY351H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "BIO206H5",
+          "BIO314H5",
+          "CHM372H5",
+          "CHM373H5",
+          "CHM394H5",
+          "CHM395H5",
+          "CHM396H5",
+          "CHM397H5",
+          "ERS201H5",
+          "ERS202H5",
+          "PHY324H5",
+          "PHY347H5",
+          "JCP321H5",
+          "JCP322H5",
+          "PHY325H5",
+          "PHY332H5",
+          "PHY333H5",
+          "PHY343H5",
+          "PHY351H5"
+        ]
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "BIO400Y5 or BIO481Y5 or CBJ481Y5 or CHM489Y5 or ERS470Y5 or ERS471H5 or ERS472H5 or PHY489Y5 or BCH472Y1 or BCH473Y1 or CHM499Y1 or CSB497H1 or CSB498Y1 or CSB499Y1 or ESS491H1 or ESS492Y1 or MGY480Y1 or PHY478H1 or PHY479Y1 or BIOD98Y3 or CHMD90Y3 or CHMD91H3 or ESSD09H3 or ESSD10H3 or PSCD10H3",
+  "corequisites_raw": null
+}

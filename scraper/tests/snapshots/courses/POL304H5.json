@@ -1,0 +1,27 @@
+{
+  "code": "POL304H5",
+  "title": "Politics of South Asia",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 credits in POL or permission of the instructor.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "POL304Y5 or POL328H1",
+  "corequisites_raw": null
+}

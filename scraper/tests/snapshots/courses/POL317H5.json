@@ -1,0 +1,18 @@
+{
+  "code": "POL317H5",
+  "title": "Comparative Public Policy and Administration",
+  "credits": 0.5,
+  "prerequisites_raw": "3.0 POL credits, including 1.0 credit in comparative politics or public policy",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 3.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL317Y5 or POL317H1",
+  "corequisites_raw": null
+}

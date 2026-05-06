@@ -1,0 +1,21 @@
+{
+  "code": "CSC347H5",
+  "title": "Introduction to Information Security",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5 and CSC236H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC236H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

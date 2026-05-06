@@ -1,0 +1,30 @@
+{
+  "code": "FSC402H5",
+  "title": "Forensic Toxicology",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5 and [( CHM110H5 and CHM120H5 ) or CHM140Y5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC239Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CHM110H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CHM120H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

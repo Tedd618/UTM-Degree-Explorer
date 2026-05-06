@@ -1,0 +1,64 @@
+{
+  "code": "MGD426H5",
+  "title": "Enterprise Risk Management",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT112H5 and [ CCT219H5 or CCT319H5 or EC0100Y5 or ( ECO101H5 or ECO102H5 )] and ( CCT321H5 or MGM230H5 ) and ( CCT221H5 or CCT322H5 or MGT252H5 ) and ( CCT324H5 or MGT262H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT219H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO101H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO102H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT321H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT221H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT252H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT324H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT262H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

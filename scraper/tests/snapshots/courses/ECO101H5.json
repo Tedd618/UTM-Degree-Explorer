@@ -1,0 +1,9 @@
+{
+  "code": "ECO101H5",
+  "title": "Principles of Microeconomics",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "ECO100Y5 or ECO101H1 or ECO100Y1 or ECO105Y1 or MGEA01H3 or MGEA02H3",
+  "corequisites_raw": null
+}

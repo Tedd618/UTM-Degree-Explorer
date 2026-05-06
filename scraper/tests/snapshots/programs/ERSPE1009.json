@@ -1,0 +1,263 @@
+{
+  "code": "ERSPE1009",
+  "name": "Forensic Chemistry",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 16.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BIO152H5"
+          },
+          {
+            "type": "course",
+            "code": "FSC239Y5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY137H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO259H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC341H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM231H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM243H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "FSC271H5"
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FSC300H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM311H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM331H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM333H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM396H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM397H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC311H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC330H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC335H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC340H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC360H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC402H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC403H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM414H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM416H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC481Y5"
+              },
+              {
+                "type": "course",
+                "code": "FSC482H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC483H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC484H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC485H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC407H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC302H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO200H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC370H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC371H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

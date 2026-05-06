@@ -1,0 +1,165 @@
+{
+  "code": "ERMAJ1056",
+  "name": "French",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": "of which 0.5 credit must be a 400-level FRE language teaching and learning course.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempted from these courses must replace them with a higher level 1.0 credit in FRE.",
+            "subject": "FRE",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [
+              "FRE180H5",
+              "FRE181H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE227H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE240H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE272H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE282H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE283H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third & Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE382H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE380H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE383H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE442H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "2.0 credits to be chosen among the FRE Language Teaching and Learning courses: FRE325H5 , FRE352H5 , FRE354H5 , FRE355H5 , FRE384H5 , FRE389H5 , FRE399H5 , FRE399Y5 , FRE453H5 , FRE490Y5 , FRE491H5 , FRE492H5 ; JFL389H5 , JFL454H5 ; JLP388H5 (formerly JFL388H5 );",
+            "courses": [
+              "FRE325H5",
+              "FRE352H5",
+              "FRE354H5",
+              "FRE355H5",
+              "FRE384H5",
+              "FRE389H5",
+              "FRE399H5",
+              "FRE399Y5",
+              "FRE453H5",
+              "FRE490Y5",
+              "FRE491H5",
+              "FRE492H5",
+              "JFL389H5",
+              "JFL454H5",
+              "JLP388H5",
+              "JFL388H5"
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LTL380H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL382H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL383H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL387H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL399H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL456H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL486H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL487H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL488H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL495Y5"
+              },
+              {
+                "type": "course",
+                "code": "LTL496H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

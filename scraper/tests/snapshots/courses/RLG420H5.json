@@ -1,0 +1,27 @@
+{
+  "code": "RLG420H5",
+  "title": "Women and Gender in Early and Medieval Christianity",
+  "credits": 0.5,
+  "prerequisites_raw": "RLG203H5 and 1.5 RLG credits",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "RLG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "RLG203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

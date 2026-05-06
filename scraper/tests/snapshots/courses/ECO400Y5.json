@@ -1,0 +1,9 @@
+{
+  "code": "ECO400Y5",
+  "title": "Economics Internship",
+  "credits": 1.0,
+  "prerequisites_raw": "Fourth year standing in an Economics Program and recommended CGPA to be determined annually. Acceptance will be based on a combination of CGPA, experience, qualifications and interview performance.",
+  "prerequisites": [],
+  "exclusions_raw": "BIO400Y5 or CCT409H5 or CTE388H5 or ENV400Y5 or FSC481Y5 or HIS498Y5 or ITA400Y5 or JEG400Y5 or JEG401Y5 or MGT480H5 or ( CCT410H5 or CCT411H5 ) or POL405Y5 or PSY442Y5 or SOC480Y5 or WGS435Y5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CSC343H5",
+  "title": "Introduction to Databases",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC263H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC263H5"
+  },
+  "exclusions_raw": "CSC343H1 or CSCC43H3",
+  "corequisites_raw": null
+}

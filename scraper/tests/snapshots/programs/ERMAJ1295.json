@@ -1,0 +1,293 @@
+{
+  "code": "ERMAJ1295",
+  "name": "French Studies",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": "of which 0.5 credit must be a 400-level FRE linguistics/literature course.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempted from these courses must replace them with a higher level 1.0 credit in FRE.",
+            "subject": "FRE",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [
+              "FRE180H5",
+              "FRE181H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE240H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE272H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE282H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE283H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE382H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE442H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE380H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE383H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "4.0 credits to be completed in ONE area of concentration (French Linguistics or French & Francophone Literary and Cultural Studies) Course Categories",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE325H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE355H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE376H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE377H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE378H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE384H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE385H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE386H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE387H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE389H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE399H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE399Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE487H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE488H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE489H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE490Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE491H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE492H5"
+              },
+              {
+                "type": "course",
+                "code": "JFL369H5"
+              },
+              {
+                "type": "course",
+                "code": "JFL389H5"
+              },
+              {
+                "type": "course",
+                "code": "JFL454H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP388H5"
+              },
+              {
+                "type": "course",
+                "code": "JFL388H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE312H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE316H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE342H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE343H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE356H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE363H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE364H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE367H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE369H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE370H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE391H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE393H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE395H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE397H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE398H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE399H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE399Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE440H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE445H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE446H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE482H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE490Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE491H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE492H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

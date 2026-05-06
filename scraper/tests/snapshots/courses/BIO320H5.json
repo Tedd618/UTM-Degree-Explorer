@@ -1,0 +1,21 @@
+{
+  "code": "BIO320H5",
+  "title": "Sensory and Cognitive Ecology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO202H5 and BIO205H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY362H5",
+  "corequisites_raw": null
+}

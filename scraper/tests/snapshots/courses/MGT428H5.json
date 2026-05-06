@@ -1,0 +1,12 @@
+{
+  "code": "MGT428H5",
+  "title": "Management Control",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT323H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT323H5"
+  },
+  "exclusions_raw": "MGAD40H3 or RSM422H1",
+  "corequisites_raw": null
+}

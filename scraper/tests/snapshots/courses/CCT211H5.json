@@ -1,0 +1,25 @@
+{
+  "code": "CCT211H5",
+  "title": "Fundamentals of User Interface Programming",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and CCT110H5 and CCT111H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT111H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

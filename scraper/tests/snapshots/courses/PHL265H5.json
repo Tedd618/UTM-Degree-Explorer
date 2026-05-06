@@ -1,0 +1,25 @@
+{
+  "code": "PHL265H5",
+  "title": "Social and Political Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL101H5 or PHL102H5 or PHL103H5 or PHL105Y5 or PHL113H5 or 4.0 credits.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHL103H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL105Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL113H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHL277Y5 or PHLB16H3 or PHLB17H3",
+  "corequisites_raw": null
+}

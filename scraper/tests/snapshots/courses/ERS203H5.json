@@ -1,0 +1,12 @@
+{
+  "code": "ERS203H5",
+  "title": "Magmatic Systems and Igneous Petrology",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ERS201H5"
+  },
+  "exclusions_raw": "ESS322H1 and ERS222H1",
+  "corequisites_raw": null
+}

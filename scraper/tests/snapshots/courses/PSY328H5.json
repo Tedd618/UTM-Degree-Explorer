@@ -1,0 +1,30 @@
+{
+  "code": "PSY328H5",
+  "title": "Psychology and the Law",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and ( PSY220H5 or PSY240H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY220H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY240H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY328H1 or PSYC39H3",
+  "corequisites_raw": null
+}

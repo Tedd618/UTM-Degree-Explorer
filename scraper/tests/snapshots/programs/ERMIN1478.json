@@ -1,0 +1,128 @@
+{
+  "code": "ERMIN1478",
+  "name": "Economics",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "including 1.0 credit at the 300/400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO204Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO206Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ECO205Y5"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

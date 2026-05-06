@@ -1,0 +1,12 @@
+{
+  "code": "MGM464H5",
+  "title": "Recruitment and Selection",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT260H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT260H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

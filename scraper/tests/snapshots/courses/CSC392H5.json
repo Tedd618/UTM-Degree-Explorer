@@ -1,0 +1,12 @@
+{
+  "code": "CSC392H5",
+  "title": "Computer Science Implementation Project",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 8.0 credits and Permission of Instructor",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

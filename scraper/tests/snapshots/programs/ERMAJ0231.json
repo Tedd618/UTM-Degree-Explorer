@@ -1,0 +1,241 @@
+{
+  "code": "ERMAJ0231",
+  "name": "Philosophy",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": null
+    },
+    "total_credits_note": "including at least 3.0 credits at the 300 level and 0.5 credit at the 400-level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL200H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL210Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL220H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL300H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL301H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL302H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL307H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL310H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL311H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL314H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL315H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL324H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL325H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL327H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL400H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL410H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL420H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL245H5"
+              }
+            ],
+            "label": "Logic"
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL240H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL258H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL332H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL333H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL340H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL341H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL342H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL350H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL355H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL358H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL360H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL366H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL430H5"
+              }
+            ],
+            "label": "Metaphysics and Epistemology from"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL265H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL274H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL275H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL265H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL274H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL275H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL365H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL366H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL370H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL374H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL376H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL475H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 2.5,
+            "constraint": "at_least",
+            "description": "2.5 additional credits in PHL",
+            "subject": "PHL",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

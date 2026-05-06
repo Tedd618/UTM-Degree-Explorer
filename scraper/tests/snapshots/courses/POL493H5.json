@@ -1,0 +1,21 @@
+{
+  "code": "POL493H5",
+  "title": "Social Risk and Social Protection",
+  "credits": 0.5,
+  "prerequisites_raw": "POL215H5 and POL216H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL215H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL216H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "GGR418H5",
+  "title": "Geopolitics",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 14.0
+  },
+  "exclusions_raw": "GGR439H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "SPA321H5",
+  "title": "Advanced Spanish I",
+  "credits": 0.5,
+  "prerequisites_raw": "SPA220Y5 or SPA222H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SPA222H5"
+  },
+  "exclusions_raw": "SPA319H5 or SPA320Y5",
+  "corequisites_raw": null
+}

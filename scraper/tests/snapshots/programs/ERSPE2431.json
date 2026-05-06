@@ -1,0 +1,179 @@
+{
+  "code": "ERSPE2431",
+  "name": "Management",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM101H5"
+              },
+              {
+                "type": "course",
+                "code": "MGM102H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years (11.0 credits)",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Core courses (2.0 credits): MGT260H5 and MGT262H5 and MGT270H5 and MGT492H5",
+            "courses": [
+              "MGT260H5",
+              "MGT262H5",
+              "MGT270H5",
+              "MGT492H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Management Disciplines (7.5 credits): ( MGT120H5 or MGM221H5 ) and ( ECO200Y5 or ECO204Y5 or ECO205Y5 or ECO206Y5 ) and ECO220Y5 and MGT223H5 and MGT231H5 and MGT232H5 and MGT252H5 and MGM320H5 and MGT353H5 and MGT363H5 and MGT371H5 and MGT374H5 and MGM390H5",
+            "courses": [
+              "MGT120H5",
+              "MGM221H5",
+              "ECO200Y5",
+              "ECO204Y5",
+              "ECO205Y5",
+              "ECO206Y5",
+              "ECO220Y5",
+              "MGT223H5",
+              "MGT231H5",
+              "MGT232H5",
+              "MGT252H5",
+              "MGM320H5",
+              "MGT353H5",
+              "MGT363H5",
+              "MGT371H5",
+              "MGT374H5",
+              "MGM390H5"
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit in MGT or MGM at the 300/400-level (cannot double count courses)",
+            "subject": "MGM",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit in MGT or MGM at the 400 level (cannot double count courses)",
+            "subject": "MGM",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

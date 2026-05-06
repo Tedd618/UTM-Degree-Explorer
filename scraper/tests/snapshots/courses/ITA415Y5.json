@@ -1,0 +1,25 @@
+{
+  "code": "ITA415Y5",
+  "title": "Italian Theatre (15th to 18th Century Italy)",
+  "credits": 1.0,
+  "prerequisites_raw": "Open to all students. If enrolled in an Italian Minor, Major or Specialist program: ITA350H5 or ITA351H5 or ITA352H5 or permission of department.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA350H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA351H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA352H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA413Y5 or ITA412Y5 .",
+  "corequisites_raw": null
+}

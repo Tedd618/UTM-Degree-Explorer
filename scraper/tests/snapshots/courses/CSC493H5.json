@@ -1,0 +1,9 @@
+{
+  "code": "CSC493H5",
+  "title": "Computer Science Expository Work",
+  "credits": 0.5,
+  "prerequisites_raw": "At least three 300-level CSC half-courses and permission of the department.",
+  "prerequisites": [],
+  "exclusions_raw": "CSC494H1 or CSC495H1 or CSCD94H3 or CSCD95H3",
+  "corequisites_raw": null
+}

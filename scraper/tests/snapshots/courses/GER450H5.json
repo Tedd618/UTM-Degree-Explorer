@@ -1,0 +1,21 @@
+{
+  "code": "GER450H5",
+  "title": "Advanced Seminar in German Literature",
+  "credits": 0.5,
+  "prerequisites_raw": "GER204H5 and GER205H5 , and 0.5 of 300/400 level literature or culture course",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "GER204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GER205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

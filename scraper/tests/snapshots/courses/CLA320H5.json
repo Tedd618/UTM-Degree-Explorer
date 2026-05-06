@@ -1,0 +1,29 @@
+{
+  "code": "CLA320H5",
+  "title": "The Etruscans",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA230H5 or CLA231H5 or CLA233H5 or CLA237H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA230H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA233H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA237H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA391H5 (Fall 2022)",
+  "corequisites_raw": null
+}

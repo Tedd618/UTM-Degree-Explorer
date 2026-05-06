@@ -1,0 +1,12 @@
+{
+  "code": "POL345H5",
+  "title": "Global Governance in Practice",
+  "credits": 0.5,
+  "prerequisites_raw": "POL344H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL344H5"
+  },
+  "exclusions_raw": "POL343Y5 or POL343Y1 or POLC87H3",
+  "corequisites_raw": null
+}

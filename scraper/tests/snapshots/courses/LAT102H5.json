@@ -1,0 +1,12 @@
+{
+  "code": "LAT102H5",
+  "title": "Introductory Latin II",
+  "credits": 0.5,
+  "prerequisites_raw": "LAT101H5 or LAT211H5 or LAT101H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LAT101H5"
+  },
+  "exclusions_raw": "LAT100Y5 or LAT212H5 or LAT102H1",
+  "corequisites_raw": null
+}

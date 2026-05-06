@@ -1,0 +1,12 @@
+{
+  "code": "ITA238H5",
+  "title": "Italian Civilization (1960 to Present)",
+  "credits": 0.5,
+  "prerequisites_raw": "None; ITA100Y5 or ITA101Y5 required for students enrolled in an ITA Major or Specialist program only, as some written work will be submitted in Italian.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA234Y5 or ITA235Y5 or ITA239H5",
+  "corequisites_raw": null
+}

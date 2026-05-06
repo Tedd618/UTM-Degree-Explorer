@@ -1,0 +1,43 @@
+{
+  "code": "ENV351H5",
+  "title": "Comparative Environmental Policy",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including ( JPE251H5 and JPE252H5 ) or JPE250Y5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JPE251H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JPE252H5"
+          }
+        ]
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JPE251H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JPE252H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "JEP351H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "FSC330H5",
+  "title": "Best Practices in Forensic Science",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC271H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC271H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

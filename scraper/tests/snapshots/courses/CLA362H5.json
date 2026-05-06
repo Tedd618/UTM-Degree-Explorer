@@ -1,0 +1,21 @@
+{
+  "code": "CLA362H5",
+  "title": "Alexander the Great and the Hellenistic World",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA230H5 or CLA237H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA230H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA237H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA347H5 , CLA64H1",
+  "corequisites_raw": null
+}

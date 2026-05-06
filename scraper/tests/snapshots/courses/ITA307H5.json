@@ -1,0 +1,21 @@
+{
+  "code": "ITA307H5",
+  "title": "Italian Novels on the Big Screen",
+  "credits": 0.5,
+  "prerequisites_raw": "None; ITA200Y5 or ITA201Y5 required for students enrolled in an ITA Major or Specialist program only, as some of their written work will be submitted in Italian.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA306H5",
+  "corequisites_raw": null
+}

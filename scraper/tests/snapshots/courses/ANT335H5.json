@@ -1,0 +1,25 @@
+{
+  "code": "ANT335H5",
+  "title": "Anthropology of Gender",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT206H5 or ANT207H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT343Y1 or ANT343H1 or ANTC15H3",
+  "corequisites_raw": null
+}

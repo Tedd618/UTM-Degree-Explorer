@@ -1,0 +1,21 @@
+{
+  "code": "MGT495H5",
+  "title": "Entrepreneurial Finance and Venture Capital",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5 and MGT232H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

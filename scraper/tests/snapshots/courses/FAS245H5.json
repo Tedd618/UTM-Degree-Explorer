@@ -1,0 +1,12 @@
+{
+  "code": "FAS245H5",
+  "title": "Painting II",
+  "credits": 0.5,
+  "prerequisites_raw": "FAS145H5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FAS145H5"
+  },
+  "exclusions_raw": "FAS230Y1 or VIS201H1 or VIS301H1 or VPSB62",
+  "corequisites_raw": null
+}

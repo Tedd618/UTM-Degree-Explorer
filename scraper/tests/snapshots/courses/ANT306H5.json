@@ -1,0 +1,12 @@
+{
+  "code": "ANT306H5",
+  "title": "Forensic Anthropology Field School",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT205H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT205H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

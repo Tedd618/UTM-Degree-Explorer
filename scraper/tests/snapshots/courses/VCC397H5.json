@@ -1,0 +1,12 @@
+{
+  "code": "VCC397H5",
+  "title": "History of Communication Design",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "VCC101H5"
+  },
+  "exclusions_raw": "CCT352H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,9 @@
+{
+  "code": "HIN211H5",
+  "title": "Introductory Hindi I",
+  "credits": 0.5,
+  "prerequisites_raw": "All students who are enrolling in an HIN language course for the first time are required to complete the Hindi Language Assessment Questionnaire. Students who have not completed an assessment cannot be approved for course enrolment. Please visit https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires",
+  "prerequisites": [],
+  "exclusions_raw": "HIN212Y5 or LGGA70H3 or LGGA71H3",
+  "corequisites_raw": null
+}

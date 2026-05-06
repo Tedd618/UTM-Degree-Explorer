@@ -1,0 +1,33 @@
+{
+  "code": "PHY325H5",
+  "title": "Mathematical and Computational Physics",
+  "credits": 0.5,
+  "prerequisites_raw": "PHY241H5 and PHY245H5 and MAT232H5 and MAT236H5 and MAT244H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHY241H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY245H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT232H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT236H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT244H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

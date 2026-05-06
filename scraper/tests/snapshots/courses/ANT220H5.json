@@ -1,0 +1,21 @@
+{
+  "code": "ANT220H5",
+  "title": "Introduction to the Anthropology of Health",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT101H5 and ANT102H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT102H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT208H1",
+  "corequisites_raw": null
+}

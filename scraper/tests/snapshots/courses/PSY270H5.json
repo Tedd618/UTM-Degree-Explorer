@@ -1,0 +1,12 @@
+{
+  "code": "PSY270H5",
+  "title": "Cognition: The Machinery of the Mind",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY270H1 or PSYB57H3",
+  "corequisites_raw": null
+}

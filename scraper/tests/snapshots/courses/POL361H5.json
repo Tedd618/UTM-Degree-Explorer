@@ -1,0 +1,18 @@
+{
+  "code": "POL361H5",
+  "title": "Democracy and its interruptions in Latin America",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 POL credits or 8.0 credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 2.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POLC91H3",
+  "corequisites_raw": null
+}

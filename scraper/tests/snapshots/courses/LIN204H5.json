@@ -1,0 +1,9 @@
+{
+  "code": "LIN204H5",
+  "title": "English Grammar I",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "LIN204H1 or LINB18H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "SAN392Y5",
+  "title": "Intermediate Sanskrit",
+  "credits": 1.0,
+  "prerequisites_raw": "( SAN291Y5 or RLG260Y1 ) and RLG260H1 and RLG263H1 .",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SAN291Y5"
+  },
+  "exclusions_raw": "( SAN390H5 and SAN391H5 ) or ( RLG359H1 and RLG360H1 )",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CHM397H5",
+  "title": "Analytical and Physical Chemistry Instrumentation Laboratory II",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM396H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM396H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

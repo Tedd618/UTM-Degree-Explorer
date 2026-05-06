@@ -1,0 +1,29 @@
+{
+  "code": "ANT438H5",
+  "title": "Rethinking Anthropology from a Community Perspective",
+  "credits": 0.5,
+  "prerequisites_raw": "( ANT202H5 and ANT203H5 ) and 1.0 credit in a 300 level Anthropology course",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

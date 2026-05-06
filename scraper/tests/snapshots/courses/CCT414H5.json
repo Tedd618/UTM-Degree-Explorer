@@ -1,0 +1,12 @@
+{
+  "code": "CCT414H5",
+  "title": "Special Topics in Knowledge, Media and Design",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 13.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

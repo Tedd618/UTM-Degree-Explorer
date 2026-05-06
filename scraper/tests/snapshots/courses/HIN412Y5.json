@@ -1,0 +1,9 @@
+{
+  "code": "HIN412Y5",
+  "title": "Advanced Hindi",
+  "credits": 1.0,
+  "prerequisites_raw": "HIN312Y5",
+  "prerequisites": [],
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,34 @@
+{
+  "code": "MAT311H5",
+  "title": "Partial Differential Equations",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT257Y5 or ( MAT102H5 and MAT236H5 and MAT244H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT102H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT244H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "APM346H1 or APM351Y1 or MAT351Y1 or MATC46H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "HIN313H5",
+  "title": "Intermediate Hindi II",
+  "credits": 0.5,
+  "prerequisites_raw": "HIN312H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIN312H5"
+  },
+  "exclusions_raw": "HIN312Y5",
+  "corequisites_raw": null
+}

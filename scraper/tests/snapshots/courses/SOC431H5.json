@@ -1,0 +1,31 @@
+{
+  "code": "SOC431H5",
+  "title": "Museums & Indigenous Peoples",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 SSC credit, including 0.5 credit at the 300-level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "SSC"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

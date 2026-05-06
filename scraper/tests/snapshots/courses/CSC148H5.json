@@ -1,0 +1,12 @@
+{
+  "code": "CSC148H5",
+  "title": "Introduction to Computer Science",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC108H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC108H5"
+  },
+  "exclusions_raw": "CSC111H5 or CSC111H1 or CSC148H1 or CSCA48H3",
+  "corequisites_raw": null
+}

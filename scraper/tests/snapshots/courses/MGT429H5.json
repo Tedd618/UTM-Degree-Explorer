@@ -1,0 +1,12 @@
+{
+  "code": "MGT429H5",
+  "title": "Canadian Income Taxation II",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT423H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT423H5"
+  },
+  "exclusions_raw": "MGAC60H3 or RSM424H1",
+  "corequisites_raw": null
+}

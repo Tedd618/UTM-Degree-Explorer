@@ -1,0 +1,12 @@
+{
+  "code": "IMI499H5",
+  "title": "Research Opportunity Program",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits and permission of instructor",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 14.0
+  },
+  "exclusions_raw": "Concurrent enrolment in IMI299H5 or IMI399H5",
+  "corequisites_raw": null
+}

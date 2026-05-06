@@ -1,0 +1,144 @@
+{
+  "code": "ERMIN0728",
+  "name": "Canadian Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "fulfilling the following requirements:",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "DRE305H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG215H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG252Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG255H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG274H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG309H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG352H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG353Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG354Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG357H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG361H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG362H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG392H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG393H5"
+              },
+              {
+                "type": "course",
+                "code": "FAH275H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE342H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR202H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS261H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS262H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS342H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS358H5"
+              },
+              {
+                "type": "course",
+                "code": "POL214Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL215H5"
+              },
+              {
+                "type": "course",
+                "code": "POL216H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC210H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC339H5"
+              }
+            ],
+            "label": "at least two different subject areas from the following list"
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 additional credits (at least 1.0 of which must be at the 300/400 level) from courses listed above that have not already been applied towards the requirements for the Minor Program in Canadian Studies or approved by the program advisor.",
+            "subject": null,
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

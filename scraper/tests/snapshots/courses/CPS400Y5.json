@@ -1,0 +1,62 @@
+{
+  "code": "CPS400Y5",
+  "title": "Chemical and Physical Sciences Internship",
+  "credits": 1.0,
+  "prerequisites_raw": "For Chemistry Internships ( CHM372H5 or CHM394H5 or CHM396H5 ) and an additional 1.0 credit from any 300/400 level CHM/JCP/JBC/BCH/FSC courses.  \nFor Earth Science/Geology Internships: ( ERS301H5 and ERS303H5 ) and an additional 1.0 credit from any 300/400 level courses.   \nFor Physics Internships: ( PHY324H5 and PHY347H5 ) and an additional 1.0 credit from any 300 or 400 level PHY/JCP courses.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CHM372H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CHM394H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CHM396H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS301H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS303H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY324H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY347H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

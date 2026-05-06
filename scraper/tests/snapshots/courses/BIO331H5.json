@@ -1,0 +1,30 @@
+{
+  "code": "BIO331H5",
+  "title": "Ecology of Communities",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO205H5 and ( BIO259H5 or BIO360H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO259H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO360H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

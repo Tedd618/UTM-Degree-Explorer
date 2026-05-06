@@ -1,0 +1,33 @@
+{
+  "code": "LIN479H5",
+  "title": "The Structure of a Specific Language",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN228H5 and LIN229H5 and LIN232H5 , plus 0.5 credit in a 300-level LIN course.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN228H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN229H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LIN409H1 or LINC61H3 if the same language was analyzed.",
+  "corequisites_raw": null
+}

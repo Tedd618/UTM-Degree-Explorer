@@ -1,0 +1,12 @@
+{
+  "code": "SPA259H5",
+  "title": "Introduction to Hispanic Culture",
+  "credits": 0.5,
+  "prerequisites_raw": "SPA100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SPA100Y5"
+  },
+  "exclusions_raw": "SPA323Y1 or SPA323H1",
+  "corequisites_raw": null
+}

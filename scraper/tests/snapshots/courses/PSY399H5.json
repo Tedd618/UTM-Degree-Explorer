@@ -1,0 +1,27 @@
+{
+  "code": "PSY399H5",
+  "title": "Research Opportunity Program",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 8.0 credits and 1.0 credit of PSY at 200-level and last AGPA of 3.0 or above.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "PSY"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "PSY399Y1",
+  "corequisites_raw": null
+}

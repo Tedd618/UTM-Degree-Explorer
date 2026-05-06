@@ -1,0 +1,21 @@
+{
+  "code": "CHM394H5",
+  "title": "Chemical Synthesis Laboratory I",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM231H5 and CHM243H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM243H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CHM393H5 Y",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "STA315H5",
+  "title": "Advanced Statistical Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "STA314H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA314H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "GER355H5",
+  "title": "The Theatre of Bertolt Brecht",
+  "credits": 0.5,
+  "prerequisites_raw": "GER205H5 and GER305H5 .",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GER205H5"
+  },
+  "exclusions_raw": "GER355Y5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "SOC244H5",
+  "title": "Sociology of Families",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC214H1 or SOCB49H3",
+  "corequisites_raw": null
+}

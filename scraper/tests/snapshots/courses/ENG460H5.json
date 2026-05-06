@@ -1,0 +1,27 @@
+{
+  "code": "ENG460H5",
+  "title": "Seminar: Literature Pre-1700",
+  "credits": 0.5,
+  "prerequisites_raw": "5.0 credits in ENG and 4.0 additional credits",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 5.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 5.0,
+        "subjects": [
+          "ENG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "VCC394H5",
+  "title": "Comics and Visual Culture",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "VCC101H5"
+  },
+  "exclusions_raw": "CCT336H5",
+  "corequisites_raw": null
+}

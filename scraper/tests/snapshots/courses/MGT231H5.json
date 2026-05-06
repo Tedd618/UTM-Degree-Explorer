@@ -1,0 +1,9 @@
+{
+  "code": "MGT231H5",
+  "title": "Business Finance I",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "MGT338H5 or CCT321H5 or ECO358H5 or ECO358H1 or RSM332H1 or MGFB10H3",
+  "corequisites_raw": null
+}

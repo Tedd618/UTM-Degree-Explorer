@@ -1,0 +1,33 @@
+{
+  "code": "FAS454H5",
+  "title": "Professional Practice",
+  "credits": 0.5,
+  "prerequisites_raw": "For Art and Art History Majors/Specialists: 4.0 FAS credits and 1.5 FAH/VCC credits and permission of the department. For Art History Majors/Specialists: 1.0 credits in FAH at the 300/400 level and permission of the department.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "FAH"
+        ],
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 4.0,
+        "subjects": [
+          "FAS"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

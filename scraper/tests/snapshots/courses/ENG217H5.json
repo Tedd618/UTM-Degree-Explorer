@@ -1,0 +1,29 @@
+{
+  "code": "ENG217H5",
+  "title": "Writing about the Visual Arts",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 credits Students who do not meet the prerequisite but are enrolled in any 100-level ENG or DRE course (except ENG100H5 ) may petition the department in writing for approval to take the course. See the guidelines for written petitions on the department website.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 4.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 4.0,
+        "subjects": null,
+        "min_level": 100,
+        "max_level": 199,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "ENG100H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

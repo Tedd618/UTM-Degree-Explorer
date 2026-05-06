@@ -1,0 +1,25 @@
+{
+  "code": "PHY332H5",
+  "title": "Molecular Biophysics",
+  "credits": 0.5,
+  "prerequisites_raw": "JCP221H5 and MAT244H5 and PHY241H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "JCP221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT244H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY241H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHY331H1",
+  "corequisites_raw": null
+}

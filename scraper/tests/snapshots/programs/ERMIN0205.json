@@ -1,0 +1,160 @@
+{
+  "code": "ERMIN0205",
+  "name": "Forensic Science",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FSC239Y5"
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FSC271H5"
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC303H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC360H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC210H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC220H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC307H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC311H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC314H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC315H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC316H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC320H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC330H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC335H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC350H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC351H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC361H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC370H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FSC430H5"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC401H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC402H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC403H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC406H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC415H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC416H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC420H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Some third-year and fourth-year courses listed above have additional pre-requisites. Students interested in these courses should plan their courses appropriately to ensure that the stated pre-requisites are met. Students without pre- and co-requisites or written permission of the instructor can be de-registered from courses at any time.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

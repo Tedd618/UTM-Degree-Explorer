@@ -1,0 +1,21 @@
+{
+  "code": "CSC479H5",
+  "title": "Advanced Algorithms for Robotics",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC311H5 and CSC375H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC311H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC375H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

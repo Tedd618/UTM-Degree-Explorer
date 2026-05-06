@@ -1,0 +1,12 @@
+{
+  "code": "CHM347H5",
+  "title": "Organic Chemistry of Biological Compounds",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM243H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM243H5"
+  },
+  "exclusions_raw": "CHM347H1 or CHMC47H3",
+  "corequisites_raw": null
+}

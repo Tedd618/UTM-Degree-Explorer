@@ -1,0 +1,21 @@
+{
+  "code": "ENV490H5",
+  "title": "Special Topics in Environmental Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits including ENV100Y5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "COURSE",
+        "code": "ENV100Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

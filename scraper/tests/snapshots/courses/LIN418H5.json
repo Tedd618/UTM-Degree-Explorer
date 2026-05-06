@@ -1,0 +1,34 @@
+{
+  "code": "LIN418H5",
+  "title": "Research Methods in Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "[ LIN256H5 or JLP285H5 (formerly LIN288H5 )] and 0.5 credit in a 300-level LIN course",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

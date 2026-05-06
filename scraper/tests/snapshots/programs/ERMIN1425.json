@@ -1,0 +1,163 @@
+{
+  "code": "ERMIN1425",
+  "name": "Environmental Management",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "of which at least 1.0 must be at the 300-400 level.",
+    "groups": [
+      {
+        "label": "First Year: 1.0 credit",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV100Y5"
+          },
+          {
+            "type": "text",
+            "text": "Be sure to look ahead and plan to complete the prerequisites for any upper-level courses that are of interest to you.",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year: 1.5 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV201H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG259H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV210H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR202H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR207H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR208H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR209H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR210H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR252H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR265H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR288H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE251H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE252H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT214H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO201H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO211H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year: 1.5 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ANT357H5"
+          },
+          {
+            "type": "text",
+            "text": "Field, Project-based, Experiential, and Research Perspectives : 0.5 credit chosen from this list: ENV299Y5 , ENV332H5 , ENV399Y5 , ENV496H5 , ENV497H5 ; GGR335H5 , GGR376H5 , GGR379H5 , GGR389H5 ; JEG401Y5 , JEG417Y5 ; or another program-relevant Field, Project-Based, or Research course, with permission of the Program Advisor",
+            "courses": [
+              "ENV299Y5",
+              "ENV332H5",
+              "ENV399Y5",
+              "ENV496H5",
+              "ENV497H5",
+              "GGR335H5",
+              "GGR376H5",
+              "GGR379H5",
+              "GGR389H5",
+              "JEG401Y5",
+              "JEG417Y5"
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "This is intended to be an interdisciplinary program. At least three different disciplines must be represented among the courses that are counted as program requirements. For example, a course list selected from ENV + GGR + ANT is acceptable, but a course list selected only from ENV + GGR is not. Please contact the Program Advisors or Academic Counsellor if you have any questions about the validity of your course selections."
+    ]
+  }
+}

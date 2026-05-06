@@ -1,0 +1,21 @@
+{
+  "code": "ANT310H5",
+  "title": "Political Anthropology of Ancient States",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT200H5 and ANT201H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT201H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

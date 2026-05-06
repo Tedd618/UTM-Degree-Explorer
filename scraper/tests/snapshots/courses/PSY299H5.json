@@ -1,0 +1,21 @@
+{
+  "code": "PSY299H5",
+  "title": "Research Opportunity Program",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 credits including PSY100Y5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 4.0
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY100Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY299Y1",
+  "corequisites_raw": null
+}

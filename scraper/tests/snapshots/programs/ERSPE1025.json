@@ -1,0 +1,383 @@
+{
+  "code": "ERSPE1025",
+  "name": "Astronomical Sciences",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "MAT102H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT157H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT159H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHY146H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY147H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "PHY136H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "PHY137H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "AST221H5"
+              },
+              {
+                "type": "course",
+                "code": "AST222H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT233H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT236H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT244H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY241H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY245H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY242H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "AST320H5"
+          },
+          {
+            "type": "course",
+            "code": "AST325H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JCP265H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC108H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JCP321H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP322H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT311H5"
+          },
+          {
+            "type": "course",
+            "code": "PHY343H5"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY347H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY351H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY451H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP421H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT334H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT332H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT307H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              },
+              {
+                "type": "course",
+                "code": "STA256H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE395H1"
+              },
+              {
+                "type": "course",
+                "code": "PHY392H1"
+              },
+              {
+                "type": "course",
+                "code": "PHY483H1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "AST399Y5"
+              },
+              {
+                "type": "course",
+                "code": "CPS489Y5"
+              },
+              {
+                "type": "course",
+                "code": "AST425Y1"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY347H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY351H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY451H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP421H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT334H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT332H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT307H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              },
+              {
+                "type": "course",
+                "code": "STA256H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE395H1"
+              },
+              {
+                "type": "course",
+                "code": "PHY392H1"
+              },
+              {
+                "type": "course",
+                "code": "PHY483H1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

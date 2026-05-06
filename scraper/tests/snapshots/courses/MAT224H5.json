@@ -1,0 +1,21 @@
+{
+  "code": "MAT224H5",
+  "title": "Linear Algebra II",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT102H5 and MAT223H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT102H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT223H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MAT240H5 or MAT224H1 or MATB24H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CHI310H5",
+  "title": "Chinese for Career Development",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI211H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHI211H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

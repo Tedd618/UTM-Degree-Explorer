@@ -1,0 +1,18 @@
+{
+  "code": "WRI420H5",
+  "title": "Making a Book",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 3.0 WRI credits and permission of instructor",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 3.0,
+    "subjects": [
+      "WRI"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

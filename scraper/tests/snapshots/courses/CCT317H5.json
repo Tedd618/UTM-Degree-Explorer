@@ -1,0 +1,12 @@
+{
+  "code": "CCT317H5",
+  "title": "Creative and Experimental Coding",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT211H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT211H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

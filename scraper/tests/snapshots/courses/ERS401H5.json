@@ -1,0 +1,25 @@
+{
+  "code": "ERS401H5",
+  "title": "Earth Resources",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS201H5 and ERS202H5 and ERS203H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ERS419H5",
+  "corequisites_raw": null
+}

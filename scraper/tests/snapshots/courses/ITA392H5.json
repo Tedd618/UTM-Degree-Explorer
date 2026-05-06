@@ -1,0 +1,21 @@
+{
+  "code": "ITA392H5",
+  "title": "Queer Italy: Literature and Cinema",
+  "credits": 0.5,
+  "prerequisites_raw": "Open to all students. If enrolled in an Italian Minor, Major or Specialist program: ITA200Y5 or ITA201Y5 or permission of department.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

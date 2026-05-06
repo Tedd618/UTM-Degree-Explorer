@@ -1,0 +1,211 @@
+{
+  "code": "ERSPE1013",
+  "name": "Sociology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 10.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "SOC100H5"
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC221H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC222H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC231H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC350H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC387H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC439Y5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 5,
+            "constraint": "at_least",
+            "description": "5.0 credits of SOC, of which 3.0 credits must be at the 300/400-level",
+            "subject": "SOC",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC230H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC299H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC299Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC382H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC399H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC399Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC401H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC403H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC406H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC410H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC411H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC412H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC413H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC414H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC415H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC416H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC417H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC418H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC419H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC420H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC421H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC423H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC440Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC450H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC452H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC456H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC467H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC480Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC485H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC499H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC499Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

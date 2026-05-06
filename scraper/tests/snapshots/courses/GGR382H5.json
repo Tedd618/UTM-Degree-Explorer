@@ -1,0 +1,21 @@
+{
+  "code": "GGR382H5",
+  "title": "Digital Mapping and Principles of Cartography",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including GGR278H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR278H5"
+      }
+    ]
+  },
+  "exclusions_raw": "GGR272H5",
+  "corequisites_raw": null
+}

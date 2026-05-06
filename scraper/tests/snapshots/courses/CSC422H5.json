@@ -1,0 +1,12 @@
+{
+  "code": "CSC422H5",
+  "title": "Cryptography and Computational Complexity",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC363H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC363H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

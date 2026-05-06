@@ -1,0 +1,18 @@
+{
+  "code": "PHL346H5",
+  "title": "Choice and Chance",
+  "credits": 0.5,
+  "prerequisites_raw": "1.5 PHL credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.5,
+    "subjects": [
+      "PHL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,9 @@
+{
+  "code": "PHY146H5",
+  "title": "Principles of Physics I",
+  "credits": 0.5,
+  "prerequisites_raw": "Grade 12 Physics (SPH4U) and Grade 12 Advanced Functions (MHF4U) and Grade 12 Calculus & Vectors (MCV4U)",
+  "prerequisites": [],
+  "exclusions_raw": "PHY131H1 or PHY151H1 or PHYA10H3 or PHYA11H3",
+  "corequisites_raw": null
+}

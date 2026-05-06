@@ -1,0 +1,30 @@
+{
+  "code": "DRS122H5",
+  "title": "Acting 2",
+  "credits": 0.5,
+  "prerequisites_raw": "DRS121H5 and ( DRE121H5 or ENG121H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "DRS121H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "DRE121H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG121H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

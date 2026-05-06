@@ -1,0 +1,12 @@
+{
+  "code": "WGS430H5",
+  "title": "Diasporic Sexualities",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5 and 1.0 WGS300+ level credits",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "WGS430H1",
+  "corequisites_raw": null
+}

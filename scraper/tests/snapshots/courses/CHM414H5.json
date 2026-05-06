@@ -1,0 +1,12 @@
+{
+  "code": "CHM414H5",
+  "title": "Advanced Topics in Analytical Chemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM311H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM311H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

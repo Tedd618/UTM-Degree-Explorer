@@ -1,0 +1,12 @@
+{
+  "code": "MAT398H5",
+  "title": "Further Studies in Mathematics",
+  "credits": 0.5,
+  "prerequisites_raw": "Permission of instructor and department, a minimum CGPA of 3.5 and completion of at least 4.0 credits of MAT courses.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 4.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

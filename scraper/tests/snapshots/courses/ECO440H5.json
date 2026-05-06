@@ -1,0 +1,29 @@
+{
+  "code": "ECO440H5",
+  "title": "Advanced Topics in Financial Economics",
+  "credits": 0.5,
+  "prerequisites_raw": "[ ECO200Y5 (70%) or ECO204Y5 (70%) or ECO206Y5 ] and ECO358H5 or by permission of instructor.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO204Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO206Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO358H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

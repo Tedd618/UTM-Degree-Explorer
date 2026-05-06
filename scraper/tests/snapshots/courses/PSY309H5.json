@@ -1,0 +1,27 @@
+{
+  "code": "PSY309H5",
+  "title": "Experimental Design and Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY202H5 (or equivalent) and 1.0 credit in PSY at the 200 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "PSY"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY202H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY309H1",
+  "corequisites_raw": null
+}

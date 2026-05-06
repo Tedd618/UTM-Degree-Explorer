@@ -1,0 +1,19 @@
+{
+  "code": "ERS425H5",
+  "title": "Geology of North America",
+  "credits": 0.5,
+  "prerequisites_raw": "Enrolment in ERS Major or ERS Specialist or Geology Specialist Program and 1.5 credits at ERS or ESS 300 level",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.5,
+    "subjects": [
+      "ERS",
+      "ESS"
+    ],
+    "min_level": 300,
+    "max_level": 399,
+    "specific_courses": []
+  },
+  "exclusions_raw": "ESS420H1",
+  "corequisites_raw": null
+}

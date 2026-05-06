@@ -1,0 +1,12 @@
+{
+  "code": "STA413H5",
+  "title": "Estimation and Testing",
+  "credits": 0.5,
+  "prerequisites_raw": "STA260H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA260H5"
+  },
+  "exclusions_raw": "STA452H1 or STA442H1 or STAC58C3",
+  "corequisites_raw": null
+}

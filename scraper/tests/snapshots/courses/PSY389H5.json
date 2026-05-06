@@ -1,0 +1,30 @@
+{
+  "code": "PSY389H5",
+  "title": "Perception Laboratory",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY202H5 (or equivalent) and ( PSY280H5 or PSY290H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY202H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY280H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY290H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY389H1",
+  "corequisites_raw": null
+}

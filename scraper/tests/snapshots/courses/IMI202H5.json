@@ -1,0 +1,12 @@
+{
+  "code": "IMI202H5",
+  "title": "Principles of Human Resource Management",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO101H5 or ECO105Y1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ECO101H5"
+  },
+  "exclusions_raw": "MGT260H5",
+  "corequisites_raw": null
+}

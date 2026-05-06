@@ -1,0 +1,21 @@
+{
+  "code": "CLA367H5",
+  "title": "The Roman Republic",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA231H5 or CLA233H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA233H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA367H1",
+  "corequisites_raw": null
+}

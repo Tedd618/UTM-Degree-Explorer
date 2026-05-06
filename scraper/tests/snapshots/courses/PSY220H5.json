@@ -1,0 +1,12 @@
+{
+  "code": "PSY220H5",
+  "title": "Introduction to Social Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY220H1 or PSYB10H3",
+  "corequisites_raw": null
+}

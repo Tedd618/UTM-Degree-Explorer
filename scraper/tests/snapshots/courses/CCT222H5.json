@@ -1,0 +1,21 @@
+{
+  "code": "CCT222H5",
+  "title": "Political Economy of Communication, Culture, and Technology",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and CCT110H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

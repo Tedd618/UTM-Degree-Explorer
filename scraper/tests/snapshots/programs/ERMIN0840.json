@@ -1,0 +1,81 @@
+{
+  "code": "ERMIN0840",
+  "name": "Biomedical Communications",
+  "type": "Minor",
+  "completion": {
+    "total_credits": null,
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC200H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "HSC300H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC301H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC302H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC307H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC308H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC401H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC402H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC404H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC405H5"
+              },
+              {
+                "type": "course",
+                "code": "HSC406H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

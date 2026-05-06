@@ -1,0 +1,30 @@
+{
+  "code": "LIN328H5",
+  "title": "Acoustic Phonetics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN228H5 and 0.5 credit from ( JLP384H5 or LIN229H5 or LIN318H5 or PSY270H5 or PSY274H5 ).",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "JLP384H5",
+          "LIN229H5",
+          "LIN318H5",
+          "PSY270H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN228H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LIN323H1",
+  "corequisites_raw": null
+}

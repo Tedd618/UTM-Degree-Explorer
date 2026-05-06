@@ -1,0 +1,12 @@
+{
+  "code": "PHY333H5",
+  "title": "Physics of the Cell",
+  "credits": 0.5,
+  "prerequisites_raw": "JCP221H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "JCP221H5"
+  },
+  "exclusions_raw": "PHY431H1",
+  "corequisites_raw": null
+}

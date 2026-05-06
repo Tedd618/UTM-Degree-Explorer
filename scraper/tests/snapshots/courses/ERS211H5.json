@@ -1,0 +1,21 @@
+{
+  "code": "ERS211H5",
+  "title": "Sedimentology and Stratigraphy",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS101H5 or ERS120H5 or ERS111H5 or ERS103H5 or ENV100H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS111H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ESS331H1 or ESS332H1 or ERS313H5",
+  "corequisites_raw": null
+}

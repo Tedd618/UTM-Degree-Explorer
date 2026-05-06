@@ -1,0 +1,30 @@
+{
+  "code": "CCT285H5",
+  "title": "Immersive Environment Design",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and ( CCT110H5 or ENG110H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT110H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG110H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

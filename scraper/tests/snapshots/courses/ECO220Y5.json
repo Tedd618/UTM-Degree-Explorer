@@ -1,0 +1,56 @@
+{
+  "code": "ECO220Y5",
+  "title": "Introduction to Data Analysis and Applied Econometrics",
+  "credits": 1.0,
+  "prerequisites_raw": "[( ECO101H5 (63%) and ECO102H5 (63%)) or ECO100Y5 (63%)] and [ MAT133Y5 (63%) or ( MAT135H5 and MAT136H5 ) or MAT135Y5 or ( MAT137H5 and MAT139H5 ) or MAT137Y5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO102H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT133Y5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ECO220Y1 or BIO360H5 or BIO361H5 or ( MAT123H1 and MAT124H1 ) or ( PSY201H5 and PSY202H5 ) or [1.0 credit from ( STA218H5 or MGT218H5 ) or STA220H5 or STA221H5 or STA256H5 or STA258H5 or STA260H5 ]",
+  "corequisites_raw": null
+}

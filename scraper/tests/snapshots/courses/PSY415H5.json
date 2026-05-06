@@ -1,0 +1,38 @@
+{
+  "code": "PSY415H5",
+  "title": "Special Topics in Adult Development and Aging",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY313H5 and 1.0 credit from ( PSY311H5 or PSY312H5 or PSY316H5 or PSY319H5 or PSY320H5 or PSY321H5 or PSY325H5 or PSY343H5 or PSY333H5 or PSY340H5 or PSY345H5 or PSY374H5 or PSY442Y5 or JLP383H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "PSY311H5",
+          "PSY316H5",
+          "PSY319H5",
+          "PSY320H5",
+          "PSY321H5",
+          "PSY325H5",
+          "PSY343H5",
+          "PSY333H5",
+          "PSY340H5",
+          "PSY345H5",
+          "PSY442Y5",
+          "JLP383H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY313H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY417H1",
+  "corequisites_raw": null
+}

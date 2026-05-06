@@ -1,0 +1,12 @@
+{
+  "code": "LIN452H5",
+  "title": "Communicating English Language Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN352H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN352H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

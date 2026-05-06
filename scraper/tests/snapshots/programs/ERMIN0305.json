@@ -1,0 +1,143 @@
+{
+  "code": "ERMIN0305",
+  "name": "GeoSpatial Data Science",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "GGR276H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA256H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "GGR278H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third/Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "GGR382H5"
+          },
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC311H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC343H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC413H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC477H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS304H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR321H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR322H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR335H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR337H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR338H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR370H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR372H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR376H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR381H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR437H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR440H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR442H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR444H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR463H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR494H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

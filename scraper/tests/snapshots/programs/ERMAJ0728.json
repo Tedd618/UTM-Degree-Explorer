@@ -1,0 +1,335 @@
+{
+  "code": "ERMAJ0728",
+  "name": "Canadian Studies",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": null
+    },
+    "total_credits_note": "fulfilling the following requirements:",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "HIS262H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POL215H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POL216H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POL214Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG215H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG252Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG255H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG274H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG352H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG353Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG354Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG357H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG361H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG362H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG392H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG393H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "GGR202H5"
+          },
+          {
+            "type": "n_from",
+            "n": 4,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT241H5"
+              },
+              {
+                "type": "course",
+                "code": "CIN205H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE200H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE305H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE405H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO323Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG271H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG309H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG357H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG358H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG424H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG425H5"
+              },
+              {
+                "type": "course",
+                "code": "FAH275H5"
+              },
+              {
+                "type": "course",
+                "code": "FAH292H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE312H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE316H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE342H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE417H5"
+              },
+              {
+                "type": "course",
+                "code": "JFL454H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR348H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR384H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR415H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS261H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS315H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS318H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS319H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS342H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS358H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS367H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS369H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS402H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS462H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA255H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA256H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE251H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE252H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN454H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT423H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT429H5"
+              },
+              {
+                "type": "course",
+                "code": "POL111H5"
+              },
+              {
+                "type": "course",
+                "code": "POL316Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL336Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL353Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL490H5"
+              },
+              {
+                "type": "course",
+                "code": "POL494Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC210H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC301H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC302H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC332H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC339H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC415H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS210H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS215H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS335H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS343H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS347H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

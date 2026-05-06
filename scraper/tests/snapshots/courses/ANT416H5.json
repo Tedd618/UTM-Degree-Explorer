@@ -1,0 +1,12 @@
+{
+  "code": "ANT416H5",
+  "title": "Advanced Archaeological Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT312H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT312H5"
+  },
+  "exclusions_raw": "ANT312Y1",
+  "corequisites_raw": null
+}

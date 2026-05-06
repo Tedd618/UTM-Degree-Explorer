@@ -1,0 +1,30 @@
+{
+  "code": "ERMIN1302",
+  "name": "Professional Writing and Communication",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First & Second Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "WRI173H5"
+          },
+          {
+            "type": "text",
+            "text": "Second Year: A minimum of 0.5 WRI credit at the 200-level",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

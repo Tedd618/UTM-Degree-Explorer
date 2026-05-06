@@ -1,0 +1,317 @@
+{
+  "code": "ERMIN1333",
+  "name": "South Asian Humanities",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "SAH200H5"
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CIN215H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS282H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG205H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG207H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG210H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG303H5"
+              },
+              {
+                "type": "course",
+                "code": "POL304Y5"
+              },
+              {
+                "type": "course",
+                "code": "HIN211H5"
+              },
+              {
+                "type": "course",
+                "code": "HIN212H5"
+              },
+              {
+                "type": "course",
+                "code": "URD212Y5"
+              },
+              {
+                "type": "course",
+                "code": "PUN212Y5"
+              },
+              {
+                "type": "course",
+                "code": "SAN291Y5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 2.5,
+            "constraint": "at_least",
+            "description": "2.5 credits from the list of electives below",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "ELECTIVES:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Students are responsible for checking the co- and prerequisites for all courses.",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "ANT316H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FAH383H5"
+              },
+              {
+                "type": "course",
+                "code": "FAH385H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIN311H5"
+              },
+              {
+                "type": "course",
+                "code": "HIN312H5"
+              },
+              {
+                "type": "course",
+                "code": "HIN313H5"
+              },
+              {
+                "type": "course",
+                "code": "HIN411H5"
+              },
+              {
+                "type": "course",
+                "code": "HIN412Y5"
+              },
+              {
+                "type": "course",
+                "code": "PRS210H5"
+              },
+              {
+                "type": "course",
+                "code": "PRS211H5"
+              },
+              {
+                "type": "course",
+                "code": "PRS310H5"
+              },
+              {
+                "type": "course",
+                "code": "PRS311H5"
+              },
+              {
+                "type": "course",
+                "code": "SAN392Y5"
+              },
+              {
+                "type": "course",
+                "code": "URD312Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS382H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS386H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS388H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS389H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS394H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS448H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS484H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "RLG307H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG308H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG310H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG360H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG361H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG362H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG365H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG366H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG421H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG422H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG460H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG463H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG464H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG465H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL235H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL311H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL304H5"
+              },
+              {
+                "type": "course",
+                "code": "POL304Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL305H5"
+              },
+              {
+                "type": "course",
+                "code": "POL305Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL446H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "VCC406H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "WGS345H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

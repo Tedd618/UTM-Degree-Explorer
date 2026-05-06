@@ -1,0 +1,12 @@
+{
+  "code": "PHL400H5",
+  "title": "Seminar in Ancient and Medieval Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHL200H5 and 3.0 credits of PHL) or by permission of the Instructor or Department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL200H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

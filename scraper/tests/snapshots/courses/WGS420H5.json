@@ -1,0 +1,30 @@
+{
+  "code": "WGS420H5",
+  "title": "Engendering Human Rights",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5 and 1.0 WGS 300+ level credits or ( HIS338H5 or HIS438H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "WGS200Y5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "HIS338H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS438H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "WSTD04H3",
+  "corequisites_raw": null
+}

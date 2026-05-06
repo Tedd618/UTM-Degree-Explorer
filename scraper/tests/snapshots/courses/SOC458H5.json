@@ -1,0 +1,44 @@
+{
+  "code": "SOC458H5",
+  "title": "Sociology of Environmental Health",
+  "credits": 0.5,
+  "prerequisites_raw": "( SOC205H5 or SOC231H5 ) and SOC221H5 and SOC222H5 and 1.0 SOC credit at the 300 level; 4th Year Standing; and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "SOC"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "SOC205H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "SOC231H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "SOC418H5 (Winter 2023)",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "FSC271H5",
+  "title": "Ethics and Professionalism in Forensic Science",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC239Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

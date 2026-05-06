@@ -1,0 +1,21 @@
+{
+  "code": "PHY426H5",
+  "title": "Computational Modeling in Physics",
+  "credits": 0.5,
+  "prerequisites_raw": "JCP265H5 and PHY325H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "JCP265H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY325H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHY407H1",
+  "corequisites_raw": null
+}

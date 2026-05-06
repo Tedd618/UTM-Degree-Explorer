@@ -1,0 +1,21 @@
+{
+  "code": "FSC315H5",
+  "title": "Forensic Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and BIO207H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

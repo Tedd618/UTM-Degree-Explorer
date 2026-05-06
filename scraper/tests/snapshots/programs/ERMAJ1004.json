@@ -1,0 +1,120 @@
+{
+  "code": "ERMAJ1004",
+  "name": "Paleontology",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 9,
+      "max": 9.5
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS120H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS111H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "MAT132H5 and MAT134H5 - Calculus for Life Sciences is highly recommended.",
+      "Second Year: BIO208H5 and BIO209H5 and BIO259H5 and ERS201H5 and ERS202H5 and ERS203H5 and ESS261H1",
+      "Third and Fourth Years: BIO354H5 and BIO356H5 and ERS325H5 and ( ERS411H5 or ESS331H1 )"
+    ]
+  }
+}

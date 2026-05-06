@@ -1,0 +1,42 @@
+{
+  "code": "CSC263H5",
+  "title": "Data Structures and Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC207H5 and CSC236H5 and ( STA107H5 or STA246H5 or STA256H5 or STA237H1 or STA238H1 or ECO227Y5 or ECE286H1 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC236H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA107H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CSC263H1 or CSC265H1 or CSCB63H3",
+  "corequisites_raw": null
+}

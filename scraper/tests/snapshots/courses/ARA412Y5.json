@@ -1,0 +1,21 @@
+{
+  "code": "ARA412Y5",
+  "title": "Advanced Arabic",
+  "credits": 1.0,
+  "prerequisites_raw": "( ARA312Y5 or ARA311H5 ). Students who have not completed ARA312Y5 or ARA311H5 must obtain permission from the department before enrolling.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ARA312Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ARA312Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "NML410Y1 or ARA400Y5",
+  "corequisites_raw": null
+}

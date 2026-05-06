@@ -1,0 +1,27 @@
+{
+  "code": "PHL347H5",
+  "title": "Modality in Logic and Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL245H5 and 1.0 credit in PHL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "PHL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL245H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHL347H1",
+  "corequisites_raw": null
+}

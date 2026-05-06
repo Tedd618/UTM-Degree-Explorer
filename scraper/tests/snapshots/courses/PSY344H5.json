@@ -1,0 +1,12 @@
+{
+  "code": "PSY344H5",
+  "title": "Forensic Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY240H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY240H5"
+  },
+  "exclusions_raw": "PSYC39H3",
+  "corequisites_raw": null
+}

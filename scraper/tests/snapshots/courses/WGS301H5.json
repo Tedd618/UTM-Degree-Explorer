@@ -1,0 +1,12 @@
+{
+  "code": "WGS301H5",
+  "title": "Representing Islam",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "NEW368H1 or WSTC13H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "FRE272H5",
+  "title": "A Linguistic Introduction to the French Language",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE181H5 or FSL306H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE181H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL306H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FRE272Y5",
+  "corequisites_raw": null
+}

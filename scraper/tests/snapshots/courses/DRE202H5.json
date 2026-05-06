@@ -1,0 +1,12 @@
+{
+  "code": "DRE202H5",
+  "title": "Intermediate Acting",
+  "credits": 0.5,
+  "prerequisites_raw": "DRE201H5 or permission of the instructor.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "DRE201H5"
+  },
+  "exclusions_raw": "DRS121H5 or DRS122H5",
+  "corequisites_raw": null
+}

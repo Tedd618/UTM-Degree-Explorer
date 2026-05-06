@@ -1,0 +1,12 @@
+{
+  "code": "FRE354H5",
+  "title": "Teaching French in a Plurilingual Context",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE227H5 or FRE272Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FRE227H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

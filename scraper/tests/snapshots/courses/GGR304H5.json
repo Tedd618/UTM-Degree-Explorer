@@ -1,0 +1,47 @@
+{
+  "code": "GGR304H5",
+  "title": "Dendrochronology",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including [ GGR276H5 and ( GGR214H5 or GGR227H5 ) or permission of instructor]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR276H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR214H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR227H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR214H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR227H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

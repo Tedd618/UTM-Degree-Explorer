@@ -1,0 +1,25 @@
+{
+  "code": "JCP463H5",
+  "title": "Techniques in Structural Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM361H5 or ( PHY332H5 or PHY333H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM361H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY332H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY333H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

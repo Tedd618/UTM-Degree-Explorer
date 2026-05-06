@@ -1,0 +1,12 @@
+{
+  "code": "CSC290H5",
+  "title": "Communication Skills for Computer Scientists",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC148H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC148H5"
+  },
+  "exclusions_raw": "CSC290H1",
+  "corequisites_raw": null
+}

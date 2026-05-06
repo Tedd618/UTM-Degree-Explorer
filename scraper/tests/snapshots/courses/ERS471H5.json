@@ -1,0 +1,12 @@
+{
+  "code": "ERS471H5",
+  "title": "Research Project",
+  "credits": 0.5,
+  "prerequisites_raw": "Any 2.0 credits from ERS or ESS(St. George Campus) at the 300-level and a minimum grade average of 75% in the last 5 courses",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 2.0
+  },
+  "exclusions_raw": "ERS470Y5 or ESS491H1 or ESS492Y1 or EESD09H3 or EESD10Y3",
+  "corequisites_raw": null
+}

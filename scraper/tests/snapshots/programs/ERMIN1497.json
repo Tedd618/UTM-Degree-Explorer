@@ -1,0 +1,123 @@
+{
+  "code": "ERMIN1497",
+  "name": "Creative Writing",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENG289H5"
+          },
+          {
+            "type": "course",
+            "code": "ENG291H5"
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG201Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG101H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG204H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG280H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE360H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG121H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG202H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG203H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE121H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG489Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG373H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG374H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG376H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG377H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG378H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE362H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE363H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 additional credit of ENG or DRE.",
+            "subject": "ENG",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Students are strongly encouraged to take courses whose descriptions indicate that instructors set/ allow assessed creative assignments. These are specially indicated on the departmental website each year."
+    ]
+  }
+}

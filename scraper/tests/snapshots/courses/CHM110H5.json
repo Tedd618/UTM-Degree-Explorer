@@ -1,0 +1,9 @@
+{
+  "code": "CHM110H5",
+  "title": "Chemical Principles 1",
+  "credits": 0.5,
+  "prerequisites_raw": "Grade 12 Chemistry (SCH4U) (minimum grade of 70) and Grade 12 Advanced Functions (MHF4U0) (minimum grade of 70) and Grade 12 Calculus and Vectors (MCV4U) highly recommended",
+  "prerequisites": [],
+  "exclusions_raw": "CHM135H1 or CHM151Y1 or CHM140Y5 or CHMA11H3",
+  "corequisites_raw": null
+}

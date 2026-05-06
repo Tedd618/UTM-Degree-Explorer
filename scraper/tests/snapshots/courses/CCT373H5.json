@@ -1,0 +1,12 @@
+{
+  "code": "CCT373H5",
+  "title": "Career Planning and Development",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT273H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT273H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

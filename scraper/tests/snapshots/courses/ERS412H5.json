@@ -1,0 +1,29 @@
+{
+  "code": "ERS412H5",
+  "title": "Climate Through Time",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credits from ENV or ERS or GGR at the 200-level or higher",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "ENV",
+          "ERS",
+          "GGR"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "ERS321H5 or ESS205H1 or ESS461H1 or EESB03H3",
+  "corequisites_raw": null
+}

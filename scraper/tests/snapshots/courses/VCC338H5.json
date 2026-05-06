@@ -1,0 +1,12 @@
+{
+  "code": "VCC338H5",
+  "title": "Picturing the Suburbs",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5 or VCC201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "VCC101H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

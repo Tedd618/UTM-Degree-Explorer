@@ -1,0 +1,27 @@
+{
+  "code": "FAS434Y5",
+  "title": "Individual Investigations in Print Media",
+  "credits": 1.0,
+  "prerequisites_raw": "FAS334Y5 and 1.5 credits in FAH/VCC and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "and"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS334Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "VIS311H1 or VIS401H1 or VIS402H1 or VIS403H1 or VIS404H1",
+  "corequisites_raw": null
+}

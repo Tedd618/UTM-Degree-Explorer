@@ -1,0 +1,197 @@
+{
+  "code": "ERSPE1200",
+  "name": "Visual Culture and Communication",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 13,
+      "max": null
+    },
+    "total_credits_note": "including at least 1.0 credit of VCC at the 400 level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Specialists in VCC are strongly urged to structure their studies as follows:",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT109H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT110H5"
+              },
+              {
+                "type": "course",
+                "code": "FAH101H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC101H5"
+              },
+              {
+                "type": "course",
+                "code": "CIN101H5"
+              },
+              {
+                "type": "course",
+                "code": "ISP100H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT204H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT250H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT270H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT200H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT206H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT210H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC205H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC236H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC290H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "Third Year: 1. 2.0 credits from CCT310H5 or CCT311H5 or CCT353H5 or VCC394H5 or VCC397H5 2. 1.5 credits of VCC at the 300/400 level 3. 1.0 credit from VST410H5 or any CIN or FAH course at the 300/400 level",
+            "subject": "VCC",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [
+              "CCT310H5",
+              "CCT311H5",
+              "CCT353H5",
+              "VCC394H5",
+              "VCC397H5",
+              "VST410H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "VCC400H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT417H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT434H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT453H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT417H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT434H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT453H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS246H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS346Y5"
+              },
+              {
+                "type": "course",
+                "code": "FAS347Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

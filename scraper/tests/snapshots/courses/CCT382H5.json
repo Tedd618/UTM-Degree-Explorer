@@ -1,0 +1,30 @@
+{
+  "code": "CCT382H5",
+  "title": "Prototyping Digital Games",
+  "credits": 0.5,
+  "prerequisites_raw": "( CCT211H5 or CCT285H5 ) and CCT270H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT211H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CCT285H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT270H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

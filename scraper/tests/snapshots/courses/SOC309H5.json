@@ -1,0 +1,34 @@
+{
+  "code": "SOC309H5",
+  "title": "Sociology of Mass Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "( SOC205H5 or SOC231H5 ) and SOC221H5 and SOC222H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "SOC205H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "SOC231H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,53 @@
+{
+  "code": "ERCER0714",
+  "name": "Certificate in Curatorial Studies",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": {
+      "min": 2.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FAH289H5"
+          },
+          {
+            "type": "course",
+            "code": "FAH310H5"
+          },
+          {
+            "type": "course",
+            "code": "FAH451H5"
+          },
+          {
+            "type": "course",
+            "code": "VST410H5"
+          },
+          {
+            "type": "course",
+            "code": "FAH498H5"
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 credits of these courses may be counted toward both the Certificate and the Art History or Art and Art History Major or Specialist.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

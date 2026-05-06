@@ -1,0 +1,9 @@
+{
+  "code": "ERS111H5",
+  "title": "Earth, Climate & Life",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "ERS103H5 or ESS103H1 or ESS102H1 or EESA05H3 or EESA06H3 or EESB15H3",
+  "corequisites_raw": null
+}

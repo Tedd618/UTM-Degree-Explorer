@@ -1,0 +1,12 @@
+{
+  "code": "BIO357H5",
+  "title": "Invertebrate Biology and Evolution",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO207H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO207H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

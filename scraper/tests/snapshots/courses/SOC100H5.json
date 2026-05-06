@@ -1,0 +1,9 @@
+{
+  "code": "SOC100H5",
+  "title": "Introduction to Sociology",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "SOC100H1 or SOC101Y1 or SOC102H1 or SOC103H1 or SOCA01H3 or SOCA02H3 or SOCA03Y3",
+  "corequisites_raw": null
+}

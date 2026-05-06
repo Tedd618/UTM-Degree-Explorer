@@ -1,0 +1,30 @@
+{
+  "code": "FAH392H5",
+  "title": "Topics in Modern Art/Architecture",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) and (FAH287 or FAH288H5 or FAH289H5 ) or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH288H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH289H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

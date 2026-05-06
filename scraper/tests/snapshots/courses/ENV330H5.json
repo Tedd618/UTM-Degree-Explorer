@@ -1,0 +1,12 @@
+{
+  "code": "ENV330H5",
+  "title": "Experimental Design in Environmental Science",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits, including the completion of a 100-level quantitative and basic scientific credit, and completion of a 200/300-levek quantitative methods course and enrolment in an Environmental Science program.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 9.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "BIO429H5",
+  "title": "Data analysis in Neurobiology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO360H5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO360H5"
+  },
+  "exclusions_raw": "BIO427H5 or CSC311H1 or CSC311H5 or CSC413H1 or CSC413H5 or CSCC11H3 or STA314H1 or STA314H5",
+  "corequisites_raw": null
+}

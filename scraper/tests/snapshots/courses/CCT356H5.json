@@ -1,0 +1,12 @@
+{
+  "code": "CCT356H5",
+  "title": "Online Advertising and Marketing",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT260H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT260H5"
+  },
+  "exclusions_raw": "CCT354H5",
+  "corequisites_raw": null
+}

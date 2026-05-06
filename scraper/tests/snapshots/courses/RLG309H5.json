@@ -1,0 +1,12 @@
+{
+  "code": "RLG309H5",
+  "title": "Muslim Lives, Ritual Practices",
+  "credits": 0.5,
+  "prerequisites_raw": "RLG204H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "RLG204H5"
+  },
+  "exclusions_raw": "RLG205H5 and RLG303H5",
+  "corequisites_raw": null
+}

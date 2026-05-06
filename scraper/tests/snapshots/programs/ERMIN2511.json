@@ -1,0 +1,184 @@
+{
+  "code": "ERMIN2511",
+  "name": "Mathematical Sciences",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "MAT102H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT132H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT135H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT134H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT136H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT232H5"
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT202H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT224H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT236H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT240H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT244H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT247H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "CSC236H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT257Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit from the following: MAT at the 300/400 level or CSC363H5 (except for MAT397H5 , MAT398H5 , MAT492H5 , MAT497H5 or MAT498H5 )",
+            "subject": "MAT",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [
+              "MAT397H5",
+              "MAT398H5",
+              "MAT492H5",
+              "MAT497H5",
+              "MAT498H5",
+              "CSC363H5"
+            ],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "MAT223H5 or MAT240H5 may be taken in the first year.",
+      "Students may replace the combination [( MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 ) and ( MAT134H5 or MAT136H5 or MAT139H5 or MAT159H5 )] or MAT137Y5 or MAT157Y5 and MAT232H5 with the combination ( MAT133Y5 and MAT233H5 )",
+      "Students are strongly encouraged to familiarize themselves with the 100-level calculus pre-requisites to select the correct courses."
+    ]
+  }
+}

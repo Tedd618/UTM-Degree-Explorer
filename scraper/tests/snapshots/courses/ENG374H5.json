@@ -1,0 +1,21 @@
+{
+  "code": "ENG374H5",
+  "title": "Creative Writing: Prose",
+  "credits": 0.5,
+  "prerequisites_raw": "ENG289H5 or ENG291H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ENG289H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ENG291H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

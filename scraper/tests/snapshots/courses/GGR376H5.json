@@ -1,0 +1,21 @@
+{
+  "code": "GGR376H5",
+  "title": "Spatial Data Science II",
+  "credits": 0.5,
+  "prerequisites_raw": "(9.0 credits including GGR276H5 or STA256H5 ) or permission of instructor",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "GGR276H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "STA256H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

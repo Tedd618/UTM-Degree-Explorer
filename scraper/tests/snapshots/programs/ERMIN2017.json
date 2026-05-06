@@ -1,0 +1,61 @@
+{
+  "code": "ERMIN2017",
+  "name": "Business, Science and Entrepreneurship",
+  "type": "Minor",
+  "completion": {
+    "total_credits": null,
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO101H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO105Y1"
+              },
+              {
+                "type": "course",
+                "code": "IMI201H5"
+              },
+              {
+                "type": "course",
+                "code": "IMI202H5"
+              },
+              {
+                "type": "course",
+                "code": "IMI203H5"
+              },
+              {
+                "type": "course",
+                "code": "IMI301H5"
+              },
+              {
+                "type": "course",
+                "code": "IMI302H5"
+              },
+              {
+                "type": "course",
+                "code": "IMI303H5"
+              },
+              {
+                "type": "course",
+                "code": "IMI400H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Students are required to remain enrolled in a Science Specialist or Major program in order to complete this Minor in Business, Science, and Entrepreneurship program."
+    ]
+  }
+}

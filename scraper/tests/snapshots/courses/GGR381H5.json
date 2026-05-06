@@ -1,0 +1,21 @@
+{
+  "code": "GGR381H5",
+  "title": "Spatial Database",
+  "credits": 0.5,
+  "prerequisites_raw": "GGR278H5 or CSC263H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "GGR278H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CCT311H5",
+  "title": "Game Design and Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT270H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT270H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

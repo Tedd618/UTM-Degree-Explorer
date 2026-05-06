@@ -1,0 +1,38 @@
+{
+  "code": "ANT410H5",
+  "title": "Seminar on the History of Archaeological Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT200H5 and ANT201H5 and 1.0 credits from ( ANT300H5 or ANT310H5 or ANT312H5 or ANT313H5 or ANT316H5 or ANT317H5 or ANT318H5 or ANT320H5 or ANT327H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "ANT310H5",
+          "ANT312H5",
+          "ANT313H5",
+          "ANT316H5",
+          "ANT317H5",
+          "ANT318H5",
+          "ANT320H5",
+          "ANT327H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT201H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

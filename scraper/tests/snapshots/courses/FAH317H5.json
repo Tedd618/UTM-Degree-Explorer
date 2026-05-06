@@ -1,0 +1,30 @@
+{
+  "code": "FAH317H5",
+  "title": "Spirit Photography",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or VCC101H5 ) and FAH291H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH101H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "VCC101H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH291H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FAH492H5 (Fall 2017)",
+  "corequisites_raw": null
+}

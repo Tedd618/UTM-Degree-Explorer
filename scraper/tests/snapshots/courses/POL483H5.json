@@ -1,0 +1,21 @@
+{
+  "code": "POL483H5",
+  "title": "Comparative Political Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "POL200Y5 and POL320Y5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL320Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "POL480H1",
+  "corequisites_raw": null
+}

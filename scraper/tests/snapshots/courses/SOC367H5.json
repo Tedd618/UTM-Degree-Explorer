@@ -1,0 +1,27 @@
+{
+  "code": "SOC367H5",
+  "title": "Sociology of Emotions",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and 1.0 SOC credit at the 200 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "SOC"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      }
+    ]
+  },
+  "exclusions_raw": "SOC445H5 (Winter 2025)",
+  "corequisites_raw": null
+}

@@ -1,0 +1,181 @@
+{
+  "code": "ERMAJ1465",
+  "name": "Earth Science",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": 8.5
+    },
+    "total_credits_note": "including at least 3.0 at the 300/400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS111H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS201H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS202H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS203H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS211H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS225H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR272H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR276H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR278H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS301H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS302H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS303H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS304H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS311H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS312H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS315H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS325H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS381H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS401H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS402H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS403H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS404H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS411H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS412H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS425H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY351H5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              },
+              {
+                "type": "course",
+                "code": "CPS400Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

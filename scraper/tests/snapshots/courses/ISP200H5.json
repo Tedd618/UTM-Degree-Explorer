@@ -1,0 +1,21 @@
+{
+  "code": "ISP200H5",
+  "title": "Writing and Researching across the University",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 credits, including ISP100H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 4.0
+      },
+      {
+        "type": "COURSE",
+        "code": "ISP100H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

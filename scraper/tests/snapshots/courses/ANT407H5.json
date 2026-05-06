@@ -1,0 +1,39 @@
+{
+  "code": "ANT407H5",
+  "title": "Quantitative Methods in Archaeology and Biological Anthropology",
+  "credits": 0.5,
+  "prerequisites_raw": "( ANT200H5 and ANT201H5 ) or ( ANT202H5 and ANT203H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT200H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT201H5"
+          }
+        ]
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT202H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT203H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ANTC35H3 and BIO360H5 and BIO361H5 and ECO220Y5 and ECO227Y5 and PSY201H5 and PSY202H5 and SOC300Y5 and ( SOC350H5 and SOC351H5 ) and STA218H5 and STA220H5 and STA221H5 and STA256H5 and STA258H5 and STA260H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "BIO208H5",
+  "title": "Biomechanics of Human Movement",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO210H5 or BIO210Y5 or BIOB33H3 or BIOB35H3",
+  "corequisites_raw": null
+}

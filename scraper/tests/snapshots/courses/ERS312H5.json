@@ -1,0 +1,12 @@
+{
+  "code": "ERS312H5",
+  "title": "Oceanography",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of a minimum of 8.0 credits or permission of the instructor",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "ESS362H1",
+  "corequisites_raw": null
+}

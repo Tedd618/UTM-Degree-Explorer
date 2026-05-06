@@ -1,0 +1,21 @@
+{
+  "code": "VCC400H5",
+  "title": "Advanced Project",
+  "credits": 0.5,
+  "prerequisites_raw": "( VCC101H5 or VCC201H5 ) and completion of 13.0 credits. Open only to VCC specialists.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 13.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CCT400H5 or HSC400H5",
+  "corequisites_raw": null
+}

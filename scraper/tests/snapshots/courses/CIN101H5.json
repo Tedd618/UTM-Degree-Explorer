@@ -1,0 +1,9 @@
+{
+  "code": "CIN101H5",
+  "title": "An Introduction to Cinema Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "CIN202H5 or CIN205H5 or ERI201H5 or ERI202H5 or CIN105Y1 or INI115Y1 or NEW115Y1 or VIC115Y1 or ENGB70H3",
+  "corequisites_raw": null
+}

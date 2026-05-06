@@ -1,0 +1,211 @@
+{
+  "code": "ERMIN1944",
+  "name": "Physics",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 5,
+      "max": null
+    },
+    "total_credits_note": "including at least 1.5 credits at the 300/400 level. Please note that a number of these courses have MAT pre-requisites and/ or co-requisites.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "all_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "PHY146H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "PHY147H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "all_of",
+                    "items": [
+                      {
+                        "type": "one_of",
+                        "items": [
+                          {
+                            "type": "course",
+                            "code": "MAT132H5"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT135H5"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT137H5"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT157H5"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "one_of",
+                        "items": [
+                          {
+                            "type": "course",
+                            "code": "MAT136H5"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT139H5"
+                          },
+                          {
+                            "type": "course",
+                            "code": "MAT159H5"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY241H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY245H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY299Y5"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP265H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "JCP321H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP322H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP410H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP421H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP422H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP463H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY324H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY325H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY332H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY333H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY343H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY347H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY351H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY399Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHY426H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY451H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY473H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Not all 300 and 400 level courses are offered every year. Please check the course timetable carefully each academic year.",
+      "Check all prerequisites and corequisites when registering for 200+ level courses.",
+      "Students who have completed PHY136H5 and PHY137H5 should speak with the Department of Chemical & Physical Sciences Academic Counsellor."
+    ]
+  }
+}

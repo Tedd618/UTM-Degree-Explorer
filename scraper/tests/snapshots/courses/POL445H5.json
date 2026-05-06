@@ -1,0 +1,21 @@
+{
+  "code": "POL445H5",
+  "title": "The Politics of Queer and Trans Migrations",
+  "credits": 0.5,
+  "prerequisites_raw": "POL362H5 or POL390H5 (Summer 2020) or POL377H1 (Summer 2021)",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL362H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL390H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

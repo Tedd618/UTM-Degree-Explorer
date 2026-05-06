@@ -1,0 +1,12 @@
+{
+  "code": "PSY202H5",
+  "title": "Introduction to Quantitative Research in Psychology II",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY201H5"
+  },
+  "exclusions_raw": "ECO220Y5 or ECO227Y5 or STA221H5 or STA256H5 or STA258H5 or BIO360H5 or PSY202H1 or PSYC08H3 or STAB27H3",
+  "corequisites_raw": null
+}

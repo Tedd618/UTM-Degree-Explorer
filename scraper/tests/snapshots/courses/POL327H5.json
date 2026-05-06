@@ -1,0 +1,29 @@
+{
+  "code": "POL327H5",
+  "title": "Comparative Foreign Policy",
+  "credits": 0.5,
+  "prerequisites_raw": "POL208Y5 or POL209H5 or POL210H5 or POL218Y5 or POL208Y1 or POL218H5 or POL219H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL210H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL218H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL219H5"
+      }
+    ]
+  },
+  "exclusions_raw": "POL327Y5 or POL327H1 or POL326Y1 or POLC82H3 or POLC83H3",
+  "corequisites_raw": null
+}

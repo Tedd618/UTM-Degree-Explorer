@@ -1,0 +1,12 @@
+{
+  "code": "CHM311H5",
+  "title": "Instrumental Analytical Chemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM211H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM211H5"
+  },
+  "exclusions_raw": "CHM317Y1 or ( CHMC16H3 and CHMC11H3 )",
+  "corequisites_raw": null
+}

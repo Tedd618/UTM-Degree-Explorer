@@ -1,0 +1,12 @@
+{
+  "code": "CCT307H5",
+  "title": "Critical Infrastructure Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT218H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT218H5"
+  },
+  "exclusions_raw": "CCT207H5",
+  "corequisites_raw": null
+}

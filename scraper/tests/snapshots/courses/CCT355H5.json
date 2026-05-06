@@ -1,0 +1,12 @@
+{
+  "code": "CCT355H5",
+  "title": "Critical Approaches to Innovation",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT224H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT224H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,31 @@
+{
+  "code": "VCC415H5",
+  "title": "Theory and Criticism of New Media",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5 and a minimum of 1.0 credit in VCC at 300/400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "VCC"
+        ],
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

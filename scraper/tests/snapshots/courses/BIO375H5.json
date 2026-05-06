@@ -1,0 +1,38 @@
+{
+  "code": "BIO375H5",
+  "title": "Medical Biotechnology",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 2.0 credits in Biology, plus ( BIO259H5 or BIO360H5 or STA215H5 or STA220H5 or PSY201H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO259H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO360H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA220H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY201H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

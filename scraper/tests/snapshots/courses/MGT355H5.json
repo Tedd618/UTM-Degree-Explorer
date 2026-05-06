@@ -1,0 +1,12 @@
+{
+  "code": "MGT355H5",
+  "title": "Pricing",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT252H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT252H5"
+  },
+  "exclusions_raw": "CCT327H5 or RSM455H1",
+  "corequisites_raw": null
+}

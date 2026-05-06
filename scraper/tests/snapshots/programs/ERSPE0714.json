@@ -1,0 +1,228 @@
+{
+  "code": "ERSPE0714",
+  "name": "Art and Art History",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 12.5,
+      "max": null
+    },
+    "total_credits_note": "comprised of 0.5 credit of ISP100H5 and 7.0 credits in FAS and 5.0 credits in FAH or VCC or VST offered at UTM (see detailed notes below). The following program structure is highly recommended:",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "First Year: 1. FAH101H5 and ISP100H5 2. 1.0 additional credit in FAH at the 200 level 3. 2.0 credits from FAS143H5 or FAS145H5 or FAS147H5 or FAS232H5 or FAS236H5 or FAS248H5 (All of these courses are open to first-year students.)",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": null,
+            "specific_courses": [
+              "FAH101H5",
+              "ISP100H5",
+              "FAS143H5",
+              "FAS145H5",
+              "FAS147H5",
+              "FAS232H5",
+              "FAS236H5",
+              "FAS248H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "Second Year: 1. VCC101H5 2. 1.0 credit of FAH at the 200 level 3. Remaining uncompleted credit(s) from the FAS course list identified in \u2018First Year\u2019 (above).",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [
+              "VCC101H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "Third Year: 1. 1.0 credit of FAH or VCC at the 300/400 level 2. 2.0 credits of FAS at the 300/400 level",
+            "subject": "VCC",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "Fourth Year: 1. 1.0 credit of FAH or VCC or VST at the 300/400 level 2. 2.0 credits of FAS at the 300/400 level",
+            "subject": "VST",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 12.5,
+            "constraint": "at_least",
+            "description": "NOTES: 1. Completion of the Art & Art History Specialist Program must include : FAH101H5 and VCC101H5 and ISP100H5 and FAS143H5 and FAS145H5 and FAS147H5 and FAS232H5 and FAS236H5 and FAS248H5 . Of the total 12.0-12.5 credits in the program, 4.0 credits of FAH or VCC or VST or FAS must be at the 300/400 level with 1.0 credit in FAH or VCC at the 400 level and 1.0 credit of FAS at the 400 level.",
+            "subject": "VCC",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [
+              "FAH101H5",
+              "VCC101H5",
+              "ISP100H5",
+              "FAS143H5",
+              "FAS145H5",
+              "FAS147H5",
+              "FAS232H5",
+              "FAS236H5",
+              "FAS248H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "2. Students must take at least 2.0 credits, but no more than 2.5 credits, of FAH at the 200 level. Of these 2.0-2.5 credits, at least 1.5 credits must be completed at UTM (see Note 3 below for the required area distribution and Note 4 below for the St. George exceptions allowed). VCC 200 level courses do not satisfy FAH 200 level requirements.",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "3. At least 0.5 credit of FAH at the 200-level must be completed in each of the following three areas : Ancient & Medieval; 15th-18th Centuries; and 19th-21st Centuries. See the departmental website ( www.utm.utoronto.ca/dvs ) for the distribution of courses by area.",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 0.5,
+                "description": "FAH at the 200-level must be completed in each of the following three areas : Ancient & Medieval; 15th-18th Centuries; and 19th-21st Centuries",
+                "min_level": 200
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "4. 0.5 credit of FAH at the 200 level may be taken at St. George in an area not covered by current UTM offerings (i.e. one of the following courses \u2013 FAH248H1 or FAH260H1 or FAH262H1 or FAH270H1 or FAH272H1 ).",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [
+              "FAH248H1",
+              "FAH260H1",
+              "FAH262H1",
+              "FAH270H1",
+              "FAH272H1"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "5. For the complete list of VCC courses that satisfy Art & Art History program requirements, please see the departmental website ( www.utm.utoronto.ca/dvs ).",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "6. As studio space is limited in the 100-level and 200-level FAS courses, priority will be given during the first registration period to students enrolled in the Art & Art History Major or Specialist, Art History Major or Specialist, CCIT Major, VCC Specialist, and to newly admitted students who indicated the Art & Art History code on their application. Students committed to the program should make sure that they are officially registered in the program as soon as possible.",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "7. All 300 and 400 level FAS courses are to be enrolled in on ACORN. Students are required to have completed 1.5 credits in FAH or VCC before beginning their 300/400 level FAS courses.",
+            "subject": "FAH",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FAH451H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS453H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS454H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS455H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 17,
+            "constraint": "at_most",
+            "description": "9. No more than 17.0 credits of FAH and FAS may be completed.",
+            "subject": "FAH",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_most",
+                "n": 17,
+                "description": "FAH and FAS may be completed"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "10. Students enrolling in any FAS course will be required to pay a fee of $101-$187 per half-credit course ($202-$374 per full-credit course) in ancillary fees to cover consumable materials used in studio as well as take-away materials. These charges will be automatically added to UofT student account upon enrolment in the course on ACORN. For details on ancillary fees, please see the Student Accounts website ( www.fees.utoronto.ca ).",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

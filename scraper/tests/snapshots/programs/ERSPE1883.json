@@ -1,0 +1,867 @@
+{
+  "code": "ERSPE1883",
+  "name": "Exceptionality in Human Learning",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 13,
+      "max": 15
+    },
+    "total_credits_note": "including at least 5.0 300/400-level credits of which 1.5 must be at the 400-level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ANT101H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT102H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC100H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY201H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO220Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC350H5"
+              },
+              {
+                "type": "course",
+                "code": "STA218H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY210H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY240H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY202H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY270H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY280H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY290H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY310H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY311H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY312H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY313H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY314H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY316H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY317H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY318H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY319H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY321H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY325H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY330H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY331H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY333H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY340H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY341H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY343H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY344H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY346H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY353H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY385H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY391H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY392H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY393H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP315H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP383H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP384H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP388H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY442Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY400Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY401H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY403H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY404H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY405H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY406H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY410H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY415H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY440H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY474H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY495H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY499H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY499Y5"
+              },
+              {
+                "type": "course",
+                "code": "JLP481H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP483H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT202H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT203H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT204H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT205H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT206H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT207H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT211H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT212H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT214H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT215H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT220H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT241H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT306H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT322H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT331H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT332H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT333H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT334H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT335H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT337H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT338H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT341H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT350H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT352H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT362H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT364H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT365H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT401H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT403H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT434H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT437H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT460H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT461H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT462H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC205H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC209H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC211H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC216H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC219H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC224H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC227H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC240H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC244H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC263H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC275H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC304H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC307H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC310H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC316H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC323H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC332H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC333H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC341H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC352H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC356H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC359H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC371H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC375H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC380H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC456H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC457H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO210Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO315H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO341H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO370Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO371H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO372H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO375H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO380H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO403H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO434H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO443H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO476H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO477H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT202H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT203H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT331H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT332H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT333H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT334H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM243H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM341H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM345H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM347H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM362H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG234H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG384H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE225Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE355H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS310H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS326Y5"
+              },
+              {
+                "type": "course",
+                "code": "HIS338H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN101H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN102H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN256H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN358H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN380H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              },
+              {
+                "type": "course",
+                "code": "JAL253H5"
+              },
+              {
+                "type": "course",
+                "code": "JAL355H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL243H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL244H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL255H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL267H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL271H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL272H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL274H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL277Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHL282H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL283H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL290H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL350H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL355H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL357H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL358H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL367H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL370H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL374H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL376H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG314H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

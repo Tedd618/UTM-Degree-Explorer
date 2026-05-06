@@ -1,0 +1,12 @@
+{
+  "code": "PHY136H5",
+  "title": "Physics for Life and Environmental Sciences I",
+  "credits": 0.5,
+  "prerequisites_raw": "[Grade 12 Advanced Functions (MHF4U) or Grade 12 Calculus & Vectors (MCV4U)] or a minimum grade of 70% in PHY100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHY100H5"
+  },
+  "exclusions_raw": "PHY131H1 or PHY151H1 or PHYA10H3 or PHYA11H3",
+  "corequisites_raw": null
+}

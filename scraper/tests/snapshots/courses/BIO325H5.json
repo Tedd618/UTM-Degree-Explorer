@@ -1,0 +1,21 @@
+{
+  "code": "BIO325H5",
+  "title": "Biomechanics",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

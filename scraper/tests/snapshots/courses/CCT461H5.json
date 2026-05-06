@@ -1,0 +1,12 @@
+{
+  "code": "CCT461H5",
+  "title": "Speculative Design III",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT361H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT361H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,47 @@
+{
+  "code": "MAT402H5",
+  "title": "Classical Geometries",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT102H5 and ( MAT232H5 or MAT233H5 or MAT257Y5 ) and ( MAT224H5 or MAT240H5 ) and 0.5 additional credit of MAT at the 300+ level.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT102H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT232H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT233H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT257Y5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT224H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT402H1 or MATD02H3",
+  "corequisites_raw": null
+}

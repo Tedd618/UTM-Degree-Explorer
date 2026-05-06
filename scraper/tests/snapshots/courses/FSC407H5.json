@@ -1,0 +1,21 @@
+{
+  "code": "FSC407H5",
+  "title": "Forensic Identification Field School",
+  "credits": 0.5,
+  "prerequisites_raw": "( FSC239Y5 and FSC302H5 ) or Permission of Instructor. Students seeking to use FSC407H5 as their capstone placement must have: Completion of FSC302H5 Completion of ( ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5 ) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Course Application is required. See the Forensic Science Program website for details.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC239Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC302H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

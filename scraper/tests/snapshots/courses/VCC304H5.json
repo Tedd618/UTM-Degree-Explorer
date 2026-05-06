@@ -1,0 +1,21 @@
+{
+  "code": "VCC304H5",
+  "title": "Visual Culture and the Politics of Identity",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT200H5 or VCC101H5 or VCC201H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

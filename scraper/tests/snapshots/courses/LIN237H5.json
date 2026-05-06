@@ -1,0 +1,12 @@
+{
+  "code": "LIN237H5",
+  "title": "Semantics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN102H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN102H5"
+  },
+  "exclusions_raw": "LIN247H5 or LIN241H1 or LINC12H3",
+  "corequisites_raw": null
+}

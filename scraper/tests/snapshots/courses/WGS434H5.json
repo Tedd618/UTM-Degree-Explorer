@@ -1,0 +1,12 @@
+{
+  "code": "WGS434H5",
+  "title": "Special Topics in Women & Gender Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5 and 1.0 WGS 300+ level credits",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

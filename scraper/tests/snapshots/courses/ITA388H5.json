@@ -1,0 +1,21 @@
+{
+  "code": "ITA388H5",
+  "title": "Education Internship in Italian Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA200Y5 or ITA201Y5 or permission of department.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "CTE388H5 or CTE388Y5 or EDS388H5",
+  "corequisites_raw": null
+}

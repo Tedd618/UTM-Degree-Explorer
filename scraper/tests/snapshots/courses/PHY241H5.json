@@ -1,0 +1,65 @@
+{
+  "code": "PHY241H5",
+  "title": "Electromagnetism",
+  "credits": 0.5,
+  "prerequisites_raw": "[( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 ) or ( MAT157H5 and MAT159H5 ) or MAT137Y5 or MAT157Y5 ] and MAT232H5 and PHY147H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT157H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT159H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT232H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY147H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHY250H1 or PHY350H1 or PHYB21H3 or PHYC50H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,39 @@
+{
+  "code": "CHM489Y5",
+  "title": "Introduction to Research in Chemistry",
+  "credits": 1.0,
+  "prerequisites_raw": "2.0 300 level credits in CHM/JCP and 1.0 credit from BIO206H5 and BIO314H5 and CHM372H5 and CHM373H5 and CHM394H5 and CHM395H5 and CHM396H5 and CHM397H5 and PHY324H5 , with 0.5 credits from the 300-level CHM laboratory courses listed.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "BIO206H5",
+          "BIO314H5",
+          "CHM372H5",
+          "CHM373H5",
+          "CHM394H5",
+          "CHM395H5",
+          "CHM396H5",
+          "CHM397H5",
+          "PHY324H5"
+        ]
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "CHM499Y1 or JCB487Y5 or CHMD90Y3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "POL344H5",
+  "title": "Concepts, Actors, & Challenges in Global Governance",
+  "credits": 0.5,
+  "prerequisites_raw": "POL208Y5 or POL209H5 or POL210H5 or POL208Y1 or POL218H1 or POL219H1",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL210H5"
+      }
+    ]
+  },
+  "exclusions_raw": "POL343Y5 or POL343Y1 or POLC87H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "SOC221H5",
+  "title": "The Logic of Social Inquiry",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC150H1 or SOC200H1 or SOC204H1 or SOCB05H3",
+  "corequisites_raw": null
+}

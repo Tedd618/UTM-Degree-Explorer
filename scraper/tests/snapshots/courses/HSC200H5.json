@@ -1,0 +1,21 @@
+{
+  "code": "HSC200H5",
+  "title": "Imaging Technologies for Scientific Visual Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      }
+    ]
+  },
+  "exclusions_raw": "HSC302H5",
+  "corequisites_raw": null
+}

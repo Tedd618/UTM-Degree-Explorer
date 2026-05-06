@@ -1,0 +1,21 @@
+{
+  "code": "CCT203H5",
+  "title": "Business Research Methods",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and CCT110H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CCT208H5",
+  "corequisites_raw": null
+}

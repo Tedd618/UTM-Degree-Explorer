@@ -1,0 +1,25 @@
+{
+  "code": "BIO333H5",
+  "title": "Freshwater Ecology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO205H5 and CHM110H5 and CHM120H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM120H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO332Y5 or BIO337H5",
+  "corequisites_raw": null
+}

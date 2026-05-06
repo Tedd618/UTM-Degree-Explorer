@@ -1,0 +1,12 @@
+{
+  "code": "BIO360H5",
+  "title": "Biometrics I",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO259H5 or STA215H5 * STA215H5 will no longer be accepted as an appropriate prerequisite course AFTER 2022-2023 Academic year. Beginning 2023-2024 Academic year all students will be required to complete BIO259H5 as the statistics prerequisite course.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO259H5"
+  },
+  "exclusions_raw": "ECO220Y5 or PSY202H5 or STA221H5",
+  "corequisites_raw": null
+}

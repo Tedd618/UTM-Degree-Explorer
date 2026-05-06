@@ -1,0 +1,12 @@
+{
+  "code": "GGR362H5",
+  "title": "Exploring Urban Neighbourhoods",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 9.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

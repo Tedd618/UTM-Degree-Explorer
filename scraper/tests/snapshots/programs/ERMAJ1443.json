@@ -1,0 +1,248 @@
+{
+  "code": "ERMAJ1443",
+  "name": "Women, Gender and Sexuality Studies",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "WGS101H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "WGS200Y5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Electives : Students are responsible for checking the co- and prerequisites for all courses.",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT211H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT331H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT335H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CLA319H5"
+          },
+          {
+            "type": "course",
+            "code": "CCT340H5"
+          },
+          {
+            "type": "course",
+            "code": "DRE366H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG269H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG275H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG318H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG319H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG339H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG368H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG369H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "FAH435H5"
+          },
+          {
+            "type": "course",
+            "code": "FRE391H5"
+          },
+          {
+            "type": "course",
+            "code": "GGR313H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS308H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS310H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS326H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS355H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS374H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS386H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "RLG314H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG449H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG462H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ITA392H5"
+          },
+          {
+            "type": "course",
+            "code": "JAL355H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL243H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL267H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL367H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY317H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY354H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC219H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC275H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC347H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC352H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC359H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC362H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC380H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC413H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC425H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

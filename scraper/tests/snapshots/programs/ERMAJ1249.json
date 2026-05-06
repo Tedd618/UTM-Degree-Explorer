@@ -1,0 +1,123 @@
+{
+  "code": "ERMAJ1249",
+  "name": "Italian",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": "including at least 2.0 credits at the 300/400 level. Some written work and readings will be done in Italian in all courses.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ITA100Y5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA201Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ITA350H5"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA351H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA352H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA450H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ITA388H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA437H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA451H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "LTL380H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL456H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL487H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL488H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 additional credits in Italian Language; Linguistics; Language Teaching.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 additional credits in any of the other Italian course categories (excluding those listed above).",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

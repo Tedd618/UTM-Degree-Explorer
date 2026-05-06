@@ -1,0 +1,12 @@
+{
+  "code": "EDS210H5",
+  "title": "Communication and Conflict Resolution",
+  "credits": 0.5,
+  "prerequisites_raw": "EDS100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "EDS100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

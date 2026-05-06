@@ -1,0 +1,25 @@
+{
+  "code": "LIN486H5",
+  "title": "Teaching and Learning Cross-cultural Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "JAL253H5 or JLP285H5 (formerly LIN288H5 ) or LIN256H5 or LIN258H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "JAL253H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JLP285H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LTL486H5",
+  "corequisites_raw": null
+}

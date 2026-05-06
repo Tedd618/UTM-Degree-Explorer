@@ -1,0 +1,21 @@
+{
+  "code": "PHY421H5",
+  "title": "Quantum Mechanics II",
+  "credits": 0.5,
+  "prerequisites_raw": "JCP321H5 and PHY325H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "JCP321H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY325H5"
+      }
+    ]
+  },
+  "exclusions_raw": "JCP421H5 or PHYC56H3 or PHY456H1",
+  "corequisites_raw": null
+}

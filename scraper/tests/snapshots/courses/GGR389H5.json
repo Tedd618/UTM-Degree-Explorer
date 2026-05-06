@@ -1,0 +1,33 @@
+{
+  "code": "GGR389H5",
+  "title": "Field Studies in Human Geography",
+  "credits": 0.5,
+  "prerequisites_raw": "8.0 credits including GGR111H5 and GGR207H5 and GGR210H5 and GGR277H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR111H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR210H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR277H5"
+      }
+    ]
+  },
+  "exclusions_raw": "GGR382H1",
+  "corequisites_raw": null
+}

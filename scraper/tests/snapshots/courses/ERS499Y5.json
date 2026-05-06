@@ -1,0 +1,12 @@
+{
+  "code": "ERS499Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "Any 2.0 credits from the ERS300 level or ESS300(G) level and a 75% average in the last five courses taken.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 2.0
+  },
+  "exclusions_raw": "ERS471H5 or ERS472H5 or ESS491H1 or ESS492Y1 or EESDO9H3 or EESD10Y3",
+  "corequisites_raw": null
+}

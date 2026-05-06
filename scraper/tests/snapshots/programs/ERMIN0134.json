@@ -1,0 +1,247 @@
+{
+  "code": "ERMIN0134",
+  "name": "Global Leadership \u2013 Minor (Arts)",
+  "type": "Program",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "GLB201H5"
+          },
+          {
+            "type": "course",
+            "code": "GLBC01H3"
+          },
+          {
+            "type": "course",
+            "code": "GLB401Y1"
+          },
+          {
+            "type": "text",
+            "text": "One course (0.5-1.0 credit) from the Communication and Cultural Competencies course list (below); and",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Remaining credits to total 2.0 credits (1.0-1.5 credits) from Leadership; Global Issues; and/ or Ethics/ Equity, Diversity, and Inclusion course lists (below).",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT215H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT300H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT352H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS210H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV201H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS311H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT260H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT463H5"
+              },
+              {
+                "type": "course",
+                "code": "POL322H5"
+              },
+              {
+                "type": "course",
+                "code": "POL344H5"
+              },
+              {
+                "type": "course",
+                "code": "POL345H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS310H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG259H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG271H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG273H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV210H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR329H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR363H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR387H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS330H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS323H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS364H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS425H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA255H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA256H5"
+              },
+              {
+                "type": "course",
+                "code": "JAL351H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN357H5"
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ENV356H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "JEP356H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POL362H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC304H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC354H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC382H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG314H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "E thics/Equity, Diversity, and Inclusion : EDS220H5 or EDS250H5 or EDS291H5 or ENG274H5 or FRE343H5 or FRE391H5 or GGR313H5 or HIS386H5 or HIS454H5 or ITA392H5 or JAL355H5 or POL355H5 or POL368H5 or PSY320H5 or RLG314H5 or SOC358H5 or SOC388H5 or WGS335H5 or WGS367H5 or WGS419H5 or WGS420H5",
+            "courses": [
+              "EDS220H5",
+              "EDS250H5",
+              "EDS291H5",
+              "ENG274H5",
+              "FRE343H5",
+              "FRE391H5",
+              "GGR313H5",
+              "HIS386H5",
+              "HIS454H5",
+              "ITA392H5",
+              "JAL355H5",
+              "POL355H5",
+              "POL368H5",
+              "PSY320H5",
+              "RLG314H5",
+              "SOC358H5",
+              "SOC388H5",
+              "WGS335H5",
+              "WGS367H5",
+              "WGS419H5",
+              "WGS420H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Communication and Cultural Competencies : ARA212Y5 or CHI103H5 or CHI104H5 or FSL105H5 or FSL106H5 or FRE180H5 or FRE181H5 or GER100Y5 or HIN211H5 or HIN212H5 or ITA100Y5 or PRS210H5 or PRS211H5 or PUN212Y5 or SPA100Y5 or URD212Y5 ** The Communication & Cultural Competencies requirement must be fulfilled in a language that is not the student\u2019s first/ native language.",
+            "courses": [
+              "ARA212Y5",
+              "CHI103H5",
+              "CHI104H5",
+              "FSL105H5",
+              "FSL106H5",
+              "FRE180H5",
+              "FRE181H5",
+              "GER100Y5",
+              "HIN211H5",
+              "HIN212H5",
+              "ITA100Y5",
+              "PRS210H5",
+              "PRS211H5",
+              "PUN212Y5",
+              "SPA100Y5",
+              "URD212Y5"
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "code": "MAT492H5",
+  "title": "Senior Thesis",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT392H5 and 2.0 additional credits in MAT at the 300 level and a minimum CGPA of 2.5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MAT392H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

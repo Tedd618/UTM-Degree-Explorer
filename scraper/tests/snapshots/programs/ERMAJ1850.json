@@ -1,0 +1,291 @@
+{
+  "code": "ERMAJ1850",
+  "name": "Linguistic Studies",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN101H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN102H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Upper Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "LIN228H5"
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN240H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN256H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN288H5"
+              }
+            ],
+            "label": "two of the following"
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN101H5"
+              }
+            ],
+            "excluding": [
+              "LIN102H5"
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN318H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN374H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN375H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN376H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN411H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN418H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN419H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN475H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN479H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JLP384H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN327H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN328H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN329H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN421H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN332H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN476H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN337H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN338H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN441H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JFL389H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN380H5"
+              },
+              {
+                "type": "course",
+                "code": "JFL454H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN456H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN486H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN487H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Language contact, and change: LIN357H5 , LIN360H5 , LIN366H5 , JFL369H5 (formerly LIN369H5 ), LIN460H5 , LIN466H5 , LIN469H5",
+            "courses": [
+              "LIN357H5",
+              "LIN360H5",
+              "LIN366H5",
+              "JFL369H5",
+              "LIN369H5",
+              "LIN460H5",
+              "LIN466H5",
+              "LIN469H5"
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN340H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN341H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN447H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Language acquisition and psycholinguistics: JLP315H5 (formerly PSY315H5 ), JLP383H5 (formerly PSY374H5 ), LIN385H5 , JLP388H5 (formerly JFL388H5 ), JLP481H5 , JLP483H5",
+            "courses": [
+              "JLP315H5",
+              "PSY315H5",
+              "JLP383H5",
+              "PSY374H5",
+              "LIN385H5",
+              "JLP388H5",
+              "JFL388H5",
+              "JLP481H5",
+              "JLP483H5"
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "JAL351H5"
+              },
+              {
+                "type": "course",
+                "code": "JAL355H5"
+              },
+              {
+                "type": "course",
+                "code": "JAL453H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN458H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "The remaining 1.5 credits to be chosen from those courses not yet taken from the list above, or from the following: LIN299H5 or LIN299Y5 , any 300/400 level LIN/JAL/JFL/JLP course (unless otherwise noted), FRE489H5 , ITA437H5 , ITA451H5 , ITA373H5 , LTL488H5 , SAN392Y5 .",
+            "courses": [
+              "LIN299H5",
+              "LIN299Y5",
+              "FRE489H5",
+              "ITA437H5",
+              "ITA451H5",
+              "ITA373H5",
+              "LTL488H5",
+              "SAN392Y5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Students must have a minimum of 0.5 credits at the 400-level.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "code": "MGT270H5",
+  "title": "Data Analytics for Management",
+  "credits": 0.5,
+  "prerequisites_raw": "MGM101H5 and ( MGM102H5 or MGT120H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGM101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MGM102H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT120H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MGM200H5 or MGOC10H3 or MGM301H5",
+  "corequisites_raw": null
+}

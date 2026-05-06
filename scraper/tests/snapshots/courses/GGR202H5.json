@@ -1,0 +1,12 @@
+{
+  "code": "GGR202H5",
+  "title": "Geography of Canada",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 4.0
+  },
+  "exclusions_raw": "GGR228Y5 or GGR246H1",
+  "corequisites_raw": null
+}

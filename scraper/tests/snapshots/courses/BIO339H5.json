@@ -1,0 +1,29 @@
+{
+  "code": "BIO339H5",
+  "title": "Plant Identification and Systematics",
+  "credits": 0.5,
+  "prerequisites_raw": "( BIO203H5 or BIO204H5 ) plus 0.5 credit from BIO205H5 and BIO206H5 and BIO207H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "BIO205H5",
+          "BIO206H5",
+          "BIO207H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "EEB337H1",
+  "corequisites_raw": null
+}

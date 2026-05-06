@@ -1,0 +1,12 @@
+{
+  "code": "ENG320H5",
+  "title": "Transforming Literature in the Sixteenth Century",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credit in English and 3.0 additional credits.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 1.0
+  },
+  "exclusions_raw": "ENG302Y5",
+  "corequisites_raw": null
+}

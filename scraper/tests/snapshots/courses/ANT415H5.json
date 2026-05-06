@@ -1,0 +1,38 @@
+{
+  "code": "ANT415H5",
+  "title": "Faunal Archaeo-Osteology",
+  "credits": 0.5,
+  "prerequisites_raw": "( ANT200H5 and ANT201H5 ) and ( ANT306H5 or ANT308H5 or ANT312H5 or ANT318H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT306H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT312H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT318H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ANT415Y5 and ANT415Y1",
+  "corequisites_raw": null
+}

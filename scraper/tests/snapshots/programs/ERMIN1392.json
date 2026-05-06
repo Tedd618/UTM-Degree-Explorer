@@ -1,0 +1,133 @@
+{
+  "code": "ERMIN1392",
+  "name": "Environmental Law and Policy",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "with at least 1.0 credit at the 300-400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV100Y5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV201H5"
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO373Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV210H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV311H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV393H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV430H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV435H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV422H1"
+              },
+              {
+                "type": "course",
+                "code": "GGR318H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR329H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR426H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS318H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS319H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV351H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP351H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV356H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP356H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV452H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP452H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL247H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL271H5"
+              },
+              {
+                "type": "course",
+                "code": "POL346Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Be sure to look ahead and plan to complete the prerequisites for any upper-level elective courses that are of interest to you. The ENV upper-level course electives typically rely only on the program\u2019s core courses as prerequisites, but upper-level electives from other departments could have different prerequisites, so be sure to check the Calendar listings for these courses and their prerequisites."
+    ]
+  }
+}

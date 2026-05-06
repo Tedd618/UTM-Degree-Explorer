@@ -1,0 +1,44 @@
+{
+  "code": "ERMIN2015",
+  "name": "Political Science",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "including at least 1.0 credit at the 300 or 400 level and no more than 1.0 credit at the 100 level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 4,
+            "constraint": "at_most",
+            "description": "4.0 POL credits are required including at least 1.0 credit at the 300 or 400 level and no more than 1.0 credit at the 100 level.",
+            "subject": "POL",
+            "min_level": 300,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1,
+                "description": ""
+              },
+              {
+                "constraint": "at_most",
+                "n": 1,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

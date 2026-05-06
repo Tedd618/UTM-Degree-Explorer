@@ -1,0 +1,42 @@
+{
+  "code": "MGT420H5",
+  "title": "Critical Thinking, Analysis and Decision Making II",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT321H5 and ( MGT322H5 or MGT225H5 ) and MGT323H5 and MGT325H5 and MGT423H5 . Open only to 4th year Commerce students.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT321H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MGT322H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT225H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT323H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT325H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT423H5"
+      }
+    ]
+  },
+  "exclusions_raw": "RSM426H1 or MGAD70H3",
+  "corequisites_raw": null
+}

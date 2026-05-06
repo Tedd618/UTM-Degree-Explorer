@@ -1,0 +1,21 @@
+{
+  "code": "FAH475H5",
+  "title": "Topics in Contemporary Indigenous Art",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and FAH275H5 and FAH375H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH275H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

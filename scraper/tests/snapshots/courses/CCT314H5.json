@@ -1,0 +1,25 @@
+{
+  "code": "CCT314H5",
+  "title": "Mind, Media and Representation",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 8.0 credits including CCT109H5 and CCT110H5 .",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.0
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

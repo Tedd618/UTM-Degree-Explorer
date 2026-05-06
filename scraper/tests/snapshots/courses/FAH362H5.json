@@ -1,0 +1,30 @@
+{
+  "code": "FAH362H5",
+  "title": "Modern Craft",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and ( FAH287H5 or FAH288H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH287H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH288H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "FAH392H5 (Craft - 20209)",
+  "corequisites_raw": null
+}

@@ -1,0 +1,30 @@
+{
+  "code": "PSY400Y5",
+  "title": "Thesis",
+  "credits": 1.0,
+  "prerequisites_raw": "PSY202H5 (or equivalent) and at least 0.5 credits in advanced laboratory or research courses in Psychology at the 300 or 400 level (e.g., PSY courses ending in \"9\" at the 300 or 400 level, and PSY403H5 ) and last AGPA of 3.2 (varies from year to year and is rarely below 3.4).",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 0.5
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY202H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY403H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY400Y1 or PSYD98Y3",
+  "corequisites_raw": null
+}

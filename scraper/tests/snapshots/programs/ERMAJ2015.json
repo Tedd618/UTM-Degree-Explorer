@@ -1,0 +1,351 @@
+{
+  "code": "ERMAJ2015",
+  "name": "Political Science",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7.5,
+      "max": null
+    },
+    "total_credits_note": "including no more than 1.0 POL credit at the 100 level and at least 2.0 credits at the 300 or 400 level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL200Y5"
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "all_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "POL215H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "POL216H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "POL214Y5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POL243H5"
+              },
+              {
+                "type": "course",
+                "code": "POL244H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL203Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL203H5"
+              },
+              {
+                "type": "course",
+                "code": "POL218Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL218H5"
+              },
+              {
+                "type": "course",
+                "code": "POL219H5"
+              },
+              {
+                "type": "course",
+                "code": "POL300Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL300H5"
+              },
+              {
+                "type": "course",
+                "code": "POL302Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POL313H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POL314H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POL302H5"
+              },
+              {
+                "type": "course",
+                "code": "POL303Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL303H5"
+              },
+              {
+                "type": "course",
+                "code": "POL304Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL304H5"
+              },
+              {
+                "type": "course",
+                "code": "POL309Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL332Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL354Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL354H5"
+              },
+              {
+                "type": "course",
+                "code": "POL360H5"
+              },
+              {
+                "type": "course",
+                "code": "POL361H5"
+              },
+              {
+                "type": "course",
+                "code": "POL362H5"
+              },
+              {
+                "type": "course",
+                "code": "POL373H5"
+              },
+              {
+                "type": "course",
+                "code": "POL390H5"
+              },
+              {
+                "type": "course",
+                "code": "POL391H5"
+              },
+              {
+                "type": "course",
+                "code": "POL438Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL438H5"
+              },
+              {
+                "type": "course",
+                "code": "POL440Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL440H5"
+              },
+              {
+                "type": "course",
+                "code": "POL441H5"
+              },
+              {
+                "type": "course",
+                "code": "POL443Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL443H5"
+              },
+              {
+                "type": "course",
+                "code": "POL444H5"
+              },
+              {
+                "type": "course",
+                "code": "POL445H5"
+              },
+              {
+                "type": "course",
+                "code": "POL446H5"
+              },
+              {
+                "type": "course",
+                "code": "POL447H5"
+              },
+              {
+                "type": "course",
+                "code": "POL448H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL208Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL209H5"
+              },
+              {
+                "type": "course",
+                "code": "POL210H5"
+              },
+              {
+                "type": "course",
+                "code": "POL305H5"
+              },
+              {
+                "type": "course",
+                "code": "POL307H5"
+              },
+              {
+                "type": "course",
+                "code": "POL310Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL311H5"
+              },
+              {
+                "type": "course",
+                "code": "POL312H5"
+              },
+              {
+                "type": "course",
+                "code": "POL327Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL327H5"
+              },
+              {
+                "type": "course",
+                "code": "POL340Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL343Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL344H5"
+              },
+              {
+                "type": "course",
+                "code": "POL345H5"
+              },
+              {
+                "type": "course",
+                "code": "POL370H5"
+              },
+              {
+                "type": "course",
+                "code": "POL406H5"
+              },
+              {
+                "type": "course",
+                "code": "POL407H5"
+              },
+              {
+                "type": "course",
+                "code": "POL486Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL486H5"
+              },
+              {
+                "type": "course",
+                "code": "POL487H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Public Policy and Public Administration - POL316Y5 or POL317Y5 or POL317H5 or POL318H5 or POL336Y5 or POL346Y5 or POL346H5 or POL347H5 or POL353Y5 or POL355Y5 or POL355H5 or POL368H5 or POL368Y5 or POL369Y5 or POL371H5 or POL372H5 or POL493H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JPE250Y5 or JPE251H5 or JPE252H5",
+            "courses": [
+              "POL316Y5",
+              "POL317Y5",
+              "POL317H5",
+              "POL318H5",
+              "POL336Y5",
+              "POL346Y5",
+              "POL346H5",
+              "POL347H5",
+              "POL353Y5",
+              "POL355Y5",
+              "POL355H5",
+              "POL368H5",
+              "POL368Y5",
+              "POL369Y5",
+              "POL371H5",
+              "POL372H5",
+              "POL493H5",
+              "ENV351H5",
+              "JEP351H5",
+              "ENV356H5",
+              "JEP356H5",
+              "ENV452H5",
+              "JEP452H5",
+              "JPE250Y5",
+              "JPE251H5",
+              "JPE252H5"
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 additional POL credits",
+            "subject": "POL",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

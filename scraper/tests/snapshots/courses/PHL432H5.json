@@ -1,0 +1,12 @@
+{
+  "code": "PHL432H5",
+  "title": "Seminar in Metaphysics",
+  "credits": 0.5,
+  "prerequisites_raw": "3.5 credits of PHL or by permission of the Instructor or Department.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 3.5
+  },
+  "exclusions_raw": "PHL430H5",
+  "corequisites_raw": null
+}

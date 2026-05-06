@@ -1,0 +1,12 @@
+{
+  "code": "FSC341H5",
+  "title": "Applied Forensic Statistics",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC239Y5"
+  },
+  "exclusions_raw": "STA246H5 or STA258H5 or STA260H5 or STA238H1 or STA255H1",
+  "corequisites_raw": null
+}

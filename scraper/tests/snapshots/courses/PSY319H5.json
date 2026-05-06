@@ -1,0 +1,29 @@
+{
+  "code": "PSY319H5",
+  "title": "Developmental Psychology Laboratory",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 and PSY202H5 (or equivalent) and PSY210H5 and PSY309H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY210H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY309H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY319H1 or PSYC26H3",
+  "corequisites_raw": null
+}

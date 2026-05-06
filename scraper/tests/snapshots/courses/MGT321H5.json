@@ -1,0 +1,12 @@
+{
+  "code": "MGT321H5",
+  "title": "Audit & Assurance",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT224H5 or MGT225H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT225H5"
+  },
+  "exclusions_raw": "RSM323H1",
+  "corequisites_raw": null
+}

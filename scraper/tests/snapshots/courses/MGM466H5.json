@@ -1,0 +1,12 @@
+{
+  "code": "MGM466H5",
+  "title": "Training & Development",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT260H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT260H5"
+  },
+  "exclusions_raw": "IRE347H1 or MGHD26H3",
+  "corequisites_raw": null
+}

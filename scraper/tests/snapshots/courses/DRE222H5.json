@@ -1,0 +1,39 @@
+{
+  "code": "DRE222H5",
+  "title": "The Performance Text",
+  "credits": 0.5,
+  "prerequisites_raw": "( DRE121H5 or ENG121H5 ) and ( DRE122H5 or ENG122H5 ) or permission of U of T Mississauga program director",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "DRE121H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG121H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "DRE122H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG122H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "DRE240H5 or DRE242H5 or DRE244H5 or DRE246H5",
+  "corequisites_raw": null
+}

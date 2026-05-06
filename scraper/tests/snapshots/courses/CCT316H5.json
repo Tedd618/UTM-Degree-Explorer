@@ -1,0 +1,12 @@
+{
+  "code": "CCT316H5",
+  "title": "Communication and Advertising",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT210H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT210H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

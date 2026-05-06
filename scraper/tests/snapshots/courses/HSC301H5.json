@@ -1,0 +1,12 @@
+{
+  "code": "HSC301H5",
+  "title": "Data and Information Visualization",
+  "credits": 0.5,
+  "prerequisites_raw": "HSC200H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HSC200H5"
+  },
+  "exclusions_raw": "CCT470H5",
+  "corequisites_raw": null
+}

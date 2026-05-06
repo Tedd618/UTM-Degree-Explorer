@@ -1,0 +1,21 @@
+{
+  "code": "CSC427H5",
+  "title": "Computer Security",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC347H5 and CSC369H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC347H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC369H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,25 @@
+{
+  "code": "PSY401Y5",
+  "title": "Knowledge Translation: Delivering Scientific Discovery to the Real-World",
+  "credits": 1.0,
+  "prerequisites_raw": "1.0 credits in 300-level psychology courses. Commitment from a faculty supervisor via application process.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "PSY401H5",
+  "corequisites_raw": null
+}

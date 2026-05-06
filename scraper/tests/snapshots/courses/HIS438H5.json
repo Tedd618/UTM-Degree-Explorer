@@ -1,0 +1,67 @@
+{
+  "code": "HIS438H5",
+  "title": "Remembering Atrocity: The Holocaust and Historical Memory in Europe and North America",
+  "credits": 0.5,
+  "prerequisites_raw": "( HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5 ) and ( HIS242H5 or HIS338H5 or HIS339H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "HIS101H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS102H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS103H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS104H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS105H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS106H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS107H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS108H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "HIS242H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS338H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "HIS339H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

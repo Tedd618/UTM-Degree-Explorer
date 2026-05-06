@@ -1,0 +1,34 @@
+{
+  "code": "CCT221H5",
+  "title": "Digital Marketing I",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and CCT110H5 and ( CCT111H5 or CCT112H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT111H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CCT112H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CCT322H5 or MGT252H5 or MGT352H5",
+  "corequisites_raw": null
+}

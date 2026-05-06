@@ -1,0 +1,25 @@
+{
+  "code": "ANT355H5",
+  "title": "Disabled Cyborgs and Racist Robots: Bodies, Technologies, and Social Justice",
+  "credits": 0.5,
+  "prerequisites_raw": "8.0 credits of which 0.5 credits must be a social sciences or humanities course at the 200-level or higher",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

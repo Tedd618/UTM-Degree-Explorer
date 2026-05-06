@@ -1,0 +1,12 @@
+{
+  "code": "PSY313H5",
+  "title": "Adult Development and Aging",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and one additional second year course in PSY",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY201H5"
+  },
+  "exclusions_raw": "PSY213H5 or PSY313H1",
+  "corequisites_raw": null
+}

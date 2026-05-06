@@ -1,0 +1,21 @@
+{
+  "code": "LTL487H5",
+  "title": "Second Language Pedagogy",
+  "credits": 0.5,
+  "prerequisites_raw": "[ FRE225Y5 or FRE227H5 ] and [ FRE280Y5 or FRE282H5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE227H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE282H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LIN417H5",
+  "corequisites_raw": null
+}

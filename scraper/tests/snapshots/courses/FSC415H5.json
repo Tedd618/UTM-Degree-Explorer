@@ -1,0 +1,12 @@
+{
+  "code": "FSC415H5",
+  "title": "Advanced Methods in Forensic Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC315H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC315H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

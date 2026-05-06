@@ -1,0 +1,12 @@
+{
+  "code": "PRS310H5",
+  "title": "Intermediate Persian I",
+  "credits": 0.5,
+  "prerequisites_raw": "PRS211H5 or permission of the instructor.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PRS211H5"
+  },
+  "exclusions_raw": "PRS310Y5",
+  "corequisites_raw": null
+}

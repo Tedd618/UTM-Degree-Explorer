@@ -1,0 +1,21 @@
+{
+  "code": "ANT203H5",
+  "title": "Biological Anthropology: Primatology and Palaeoanthropology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT101H5 or BIO153H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT203Y5 or ANT203Y1 or ANTB14H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,40 @@
+{
+  "code": "FAH491H5",
+  "title": "Topics in Medieval Art and Architecture",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and ( FAH215H5 or FAH216H5 ) and 1.0 credit in FAH or VCC at the 300 or 400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "FAH"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH215H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH216H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

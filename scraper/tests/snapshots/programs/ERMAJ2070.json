@@ -1,0 +1,341 @@
+{
+  "code": "ERMAJ2070",
+  "name": "Geography",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR111H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR112H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "ISP130H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT136H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT139H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT159H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHY100H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY137H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "GGR276H5"
+          },
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR202H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR207H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR208H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR209H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR210H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR265H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR304H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR315H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR316H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR317H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR338H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR374H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR377H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR379H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR383H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR384H5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR321H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR322H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR335H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR337H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR372H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR375H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR376H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR404H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR406H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR407H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR417Y5"
+              },
+              {
+                "type": "course",
+                "code": "GGR479H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR484H5"
+              },
+              {
+                "type": "course",
+                "code": "JEG400Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Field Days",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Eight days accumulated either through a geography field course and/or through geography courses with field day components as indicated in course descriptions.",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "ROP/Project courses: Maximum 2.0 credits:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Students may take no more than 2.0 credits combined in ROP, individual project courses, or thesis courses at the 300/400 level for credit toward a Geography Major program.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

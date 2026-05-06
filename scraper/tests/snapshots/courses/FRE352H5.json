@@ -1,0 +1,38 @@
+{
+  "code": "FRE352H5",
+  "title": "Teaching French Grammar",
+  "credits": 0.5,
+  "prerequisites_raw": "( FRE227H5 and ( FRE272H5 or FRE272Y5 ) and [FRE280Y or ( FRE282H5 and FRE283H5 )]) or a minimum grade of 77% in FSL406H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FRE227H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE272H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE282H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE283H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL406H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

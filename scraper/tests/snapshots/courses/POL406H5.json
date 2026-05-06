@@ -1,0 +1,12 @@
+{
+  "code": "POL406H5",
+  "title": "Insurgents, Criminals, and Warlords",
+  "credits": 0.5,
+  "prerequisites_raw": "POL209H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL209H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

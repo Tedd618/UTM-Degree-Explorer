@@ -1,0 +1,21 @@
+{
+  "code": "PSY369H5",
+  "title": "Behavioural Neuroscience Laboratory",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY202H5 (or equivalent) and PSY290H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY290H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY369H1 and PSYC06H3",
+  "corequisites_raw": null
+}

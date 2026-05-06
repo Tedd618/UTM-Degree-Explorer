@@ -1,0 +1,30 @@
+{
+  "code": "BIO310H5",
+  "title": "Physiology of Regulatory Systems",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO202H5 or BIO204H5 or ( BIO208H5 and BIO209H5 ) or BIO210Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO202H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO208H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO209H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSL300H1 and PSL301H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "MAT223H5",
+  "title": "Linear Algebra I",
+  "credits": 0.5,
+  "prerequisites_raw": "Grade 12 Advanced Functions (MHF4U) and Grade 12 Calculus and Vectors (MCV4U or MAT102H5 ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MAT102H5"
+  },
+  "exclusions_raw": "MAT240H5 or MAT223H1 or MAT240H1 or MATA22H3 or MATA23H3",
+  "corequisites_raw": null
+}

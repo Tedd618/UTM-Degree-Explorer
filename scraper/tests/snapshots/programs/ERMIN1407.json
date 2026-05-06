@@ -1,0 +1,613 @@
+{
+  "code": "ERMIN1407",
+  "name": "Diaspora and Transnational Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLA101H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS101H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS102H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS103H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS104H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS105H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS106H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS107H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS108H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG101H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS101H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS102H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "DTS201H5"
+              },
+              {
+                "type": "course",
+                "code": "DTS202H5"
+              },
+              {
+                "type": "course",
+                "code": "DTS401H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "DTS301H5"
+              },
+              {
+                "type": "course",
+                "code": "DTS401H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Electives:",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT209H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT350H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT352H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "CIN303H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT200H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT218H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT300H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT320H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT430H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG140Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG203H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG250Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG252Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG271H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG274H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG370H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG371H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR207H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR208H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR210H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR313H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR318H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR325H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR329H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR333H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR349H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR353H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR365H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR381H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR418H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR420H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS306H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS318H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS330H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS338H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS364H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS366H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS367H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS369H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS371H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS384H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS385H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS388H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS389H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS390H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS391H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS393H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS396H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS479H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "RLG207H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG208H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG209H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG352H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG356H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG357H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG361H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG374H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG445H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE391H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE397H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA238H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA255H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL113H5"
+              },
+              {
+                "type": "course",
+                "code": "POL114H5"
+              },
+              {
+                "type": "course",
+                "code": "POL209H5"
+              },
+              {
+                "type": "course",
+                "code": "POL210H5"
+              },
+              {
+                "type": "course",
+                "code": "POL218H5"
+              },
+              {
+                "type": "course",
+                "code": "POL219H5"
+              },
+              {
+                "type": "course",
+                "code": "POL303H5"
+              },
+              {
+                "type": "course",
+                "code": "POL312H5"
+              },
+              {
+                "type": "course",
+                "code": "POL317H5"
+              },
+              {
+                "type": "course",
+                "code": "POL320Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL340Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL344H5"
+              },
+              {
+                "type": "course",
+                "code": "POL345H5"
+              },
+              {
+                "type": "course",
+                "code": "POL346Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL355H5"
+              },
+              {
+                "type": "course",
+                "code": "POL371H5"
+              },
+              {
+                "type": "course",
+                "code": "POL372H5"
+              },
+              {
+                "type": "course",
+                "code": "POL446H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC236H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC253H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC263H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC330H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC332H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC341H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC349H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC354H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC375H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC380H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC417H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC425H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC432H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC433H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC457H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC460H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "WGS200Y5"
+              },
+              {
+                "type": "course",
+                "code": "WGS215H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS250H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS301H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS335H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS340H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS355H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS368H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS369H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS420H5"
+              },
+              {
+                "type": "course",
+                "code": "WGS430H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Arts and Science courses that can be applied to the program: Please refer to https://cdts.utoronto.ca/index.php/courses/",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Other substitutions will be considered on a case-by-case basis after the submission of the relevant syllabus. Students are invited to contact the Historical Studies Academic Advisor for further information.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "code": "MAT406H5",
+  "title": "Mathematical Introduction to Game Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT102H5 and ( MAT223H5 or MAT240H5 ) and ( STA246H5 or STA256H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT102H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ECO316H1 or MATD50H3",
+  "corequisites_raw": null
+}

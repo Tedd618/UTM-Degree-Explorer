@@ -1,0 +1,21 @@
+{
+  "code": "MGD427H5",
+  "title": "Advanced Legal Issues",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT112H5 and CCT206H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT206H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGM390H5 or MGT393H5 or MGT394H5 or MGT423H5 or MGT429H5",
+  "corequisites_raw": null
+}

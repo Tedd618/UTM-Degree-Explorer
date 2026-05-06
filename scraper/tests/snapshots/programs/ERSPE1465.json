@@ -1,0 +1,219 @@
+{
+  "code": "ERSPE1465",
+  "name": "Earth Science",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14.5,
+      "max": 15
+    },
+    "total_credits_note": "including at least 5.0 at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS111H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ERS201H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS202H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS203H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS211H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS225H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Third and Fourth Years: 1. ERS301H5 and ERS303H5 and ERS311H5 and ERS315H5 and ERS325H5 . 2. 4.0 additional credits from GGR201H5 or GGR217H5 or JGE378H5 or PHY351H5 or JCB487Y5 or any ERS course at the 300/400 level. Of these 4.0 credits, 1.0 credit must be at the 400 level.",
+            "courses": [
+              "ERS301H5",
+              "ERS303H5",
+              "ERS311H5",
+              "ERS315H5",
+              "ERS325H5",
+              "GGR201H5",
+              "GGR217H5",
+              "JGE378H5",
+              "PHY351H5",
+              "JCB487Y5"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "CPS489Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS399Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS499Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS470Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS471H5"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS302H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS304H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS402H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS403H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS404H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS425H5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CPS489Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS399Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS470Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS471H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS472H5"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS304H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS312H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS411H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS412H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS425H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "1. No more than 1.0 credit from CPS489Y5 or ERS399Y5 or ERS499Y5 or ERS470Y5 or ERS471H5 or JCB487Y5 can be counted toward the Earth Science Specialist program. 2. Students interested in future certification by the Association of Professional Geologists of Ontario in their Geology and Environmental Geoscience oriented streams may benefit from taking courses in one of the following two pathways: Resources, Hazards & Tectonics Pathway: ERS302H5 , ERS304H5 , ERS402H5 , ERS403H5 , ERS404H5 , ERS425H5 , JGE378H5 , and 0.5 credit from CPS489Y5 /\u200b ERS399Y5 /\u200b ERS470Y5 /\u200b ERS471H5 /\u200b ERS472H5 /\u200b JCB487Y5 . Earth, Climate, & Life Pathway: ERS304H5 , ERS312H5 , ERS411H5 , ERS412H5 , ERS425H5 , GGR201H5 , GGR217H5 , and 0.5 credit from CPS489Y5 /\u200b ERS399Y5 /\u200b ERS470Y5 /\u200b ERS471H5 /\u200b ERS472H5 /\u200b JCB487Y5 ."
+    ]
+  }
+}

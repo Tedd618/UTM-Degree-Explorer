@@ -1,0 +1,21 @@
+{
+  "code": "STA260H5",
+  "title": "Probability and Statistics II",
+  "credits": 0.5,
+  "prerequisites_raw": "STA256H5 or ECO227Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "STA256H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO227Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "STA261H5 or STA238H1 or STA261H1 or STAB57H3 or STAC58H3",
+  "corequisites_raw": null
+}

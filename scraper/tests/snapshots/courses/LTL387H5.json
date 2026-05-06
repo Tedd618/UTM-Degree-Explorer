@@ -1,0 +1,49 @@
+{
+  "code": "LTL387H5",
+  "title": "Theoretical Issues in Teaching and Learning Second Language Vocabulary",
+  "credits": 0.5,
+  "prerequisites_raw": "( FRE282H5 and FRE283H5 and FRE227H5 ) or ( ITA200Y5 and an additional 0.5 credit in ITA at the 200-level or higher)",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": [
+          "ITA"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "FRE282H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "FRE283H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "FRE227H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "ITA200Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "LIN387H5",
+  "corequisites_raw": null
+}

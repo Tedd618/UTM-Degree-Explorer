@@ -1,0 +1,12 @@
+{
+  "code": "SOC263H5",
+  "title": "Social Inequality",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC363H5 or SOC220H1 or SOCB47H3",
+  "corequisites_raw": null
+}

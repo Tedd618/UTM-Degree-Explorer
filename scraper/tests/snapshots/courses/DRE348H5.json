@@ -1,0 +1,47 @@
+{
+  "code": "DRE348H5",
+  "title": "Production Dramaturgy",
+  "credits": 0.5,
+  "prerequisites_raw": "( DRE121H5 or ENG121H5 ) and ( DRE122H5 or ENG122H5 ) and ( DRE200H5 or DRE220H5 ) and DRE222H5 or permission of the U of T Mississauga program director.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "DRE121H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG121H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "DRE122H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG122H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "DRE200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "DRE222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

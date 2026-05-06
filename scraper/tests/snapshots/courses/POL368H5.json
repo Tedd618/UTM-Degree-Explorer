@@ -1,0 +1,27 @@
+{
+  "code": "POL368H5",
+  "title": "Gender and Politics",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 credits in POL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "POL351H1 or POL351Y1 or POL368Y5 or POL450H1",
+  "corequisites_raw": null
+}

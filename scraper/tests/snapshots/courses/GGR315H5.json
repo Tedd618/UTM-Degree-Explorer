@@ -1,0 +1,30 @@
+{
+  "code": "GGR315H5",
+  "title": "Physical Hydrology",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including GGR214H5 or GGR217H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR214H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR217H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

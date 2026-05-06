@@ -1,0 +1,12 @@
+{
+  "code": "HSC302H5",
+  "title": "Biocommunication Visualization",
+  "credits": 0.5,
+  "prerequisites_raw": "HSC200H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HSC200H5"
+  },
+  "exclusions_raw": "HMB304H1",
+  "corequisites_raw": null
+}

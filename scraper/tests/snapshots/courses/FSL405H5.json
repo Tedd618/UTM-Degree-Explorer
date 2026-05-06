@@ -1,0 +1,12 @@
+{
+  "code": "FSL405H5",
+  "title": "Functional French-Advanced I",
+  "credits": 0.5,
+  "prerequisites_raw": "FSL306H5 or as determined by the department's Placement Test. All students are REQUIRED to complete the French Placement Test ( https://frenchpt.utm.utoronto.ca/ ) before enrolling in ANY FSL or FRE language course for the FIRST time.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSL306H5"
+  },
+  "exclusions_raw": "FRE280Y5 or FRE282H5 or FRE283H5 or FRE382H5 or FRE383H5 or FSL321Y1 or FSL320H1 or FSL322H1 . Not open to francophones and/or holders of the French baccalaur\u00e9at but contingent on the results of the French Placement Test.",
+  "corequisites_raw": null
+}

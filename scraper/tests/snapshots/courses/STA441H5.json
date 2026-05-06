@@ -1,0 +1,41 @@
+{
+  "code": "STA441H5",
+  "title": "Data Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "STA221H5 or STA302H5 or BIO360H5 or ECO375H5 or GGR376H5 or PSY202H5 or SOC350H5 or STA302H1 or STAC67H3",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "STA221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "STA302H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO360H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO375H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR376H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC350H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

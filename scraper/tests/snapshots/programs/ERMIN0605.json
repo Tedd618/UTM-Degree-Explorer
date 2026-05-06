@@ -1,0 +1,257 @@
+{
+  "code": "ERMIN0605",
+  "name": "Education Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS100H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS101H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS200H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS210H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS220H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS300H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS310H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "EDS325H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS377H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS388H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC389H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS250H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS275H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS285H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS291H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS345H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS399H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS453H5"
+              },
+              {
+                "type": "course",
+                "code": "FAS455H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE227H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE325H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE352H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE355H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE382H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE383H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE453H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP388H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN456H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN487H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL227H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL380H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL456H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL486H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL487H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL488H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT382H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT392H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL272H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY310H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY311H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY312H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY313H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY315H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY341H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY345H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY410H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC224H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC480Y5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Note : Students must check prerequisites and exclusions for the courses listed above to ensure they meet the requirements for entry.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

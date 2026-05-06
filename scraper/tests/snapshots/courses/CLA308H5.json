@@ -1,0 +1,25 @@
+{
+  "code": "CLA308H5",
+  "title": "Religion in the Ancient Greek World",
+  "credits": 0.5,
+  "prerequisites_raw": "Prerequisite for CLA students: ( CLA204H5 or CLA230H5 or CLA237H5 ) and for RLG students: any pertinent RLG course at the 200+ level.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA230H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA237H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA308H1",
+  "corequisites_raw": null
+}

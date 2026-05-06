@@ -1,0 +1,12 @@
+{
+  "code": "CHM345H5",
+  "title": "Organic Synthesis",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM243H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM243H5"
+  },
+  "exclusions_raw": "CHM342H1 or CHMC42H3",
+  "corequisites_raw": null
+}

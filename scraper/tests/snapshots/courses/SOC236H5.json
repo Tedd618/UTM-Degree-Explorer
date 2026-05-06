@@ -1,0 +1,12 @@
+{
+  "code": "SOC236H5",
+  "title": "Globalization",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

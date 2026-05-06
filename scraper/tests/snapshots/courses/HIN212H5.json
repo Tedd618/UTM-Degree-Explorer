@@ -1,0 +1,12 @@
+{
+  "code": "HIN212H5",
+  "title": "Introductory Hindi II",
+  "credits": 0.5,
+  "prerequisites_raw": "HIN211H5 or appropriate language level as indicated by the Hindi Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIN211H5"
+  },
+  "exclusions_raw": "HIN212Y5 or LGGA70H3 or LGGA71H3",
+  "corequisites_raw": null
+}

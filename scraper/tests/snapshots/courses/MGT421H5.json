@@ -1,0 +1,12 @@
+{
+  "code": "MGT421H5",
+  "title": "Advanced Audit & Assurance",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT321H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT321H5"
+  },
+  "exclusions_raw": "RSM423H1",
+  "corequisites_raw": null
+}

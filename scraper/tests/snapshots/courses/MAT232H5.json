@@ -1,0 +1,29 @@
+{
+  "code": "MAT232H5",
+  "title": "Calculus of Several Variables",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT134H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT136H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT139H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT159H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MAT233H5 or MAT257Y5 or MAT235Y1 or MAT237Y1 or MAT257Y1 or MATB41H3",
+  "corequisites_raw": null
+}

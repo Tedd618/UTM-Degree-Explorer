@@ -1,0 +1,12 @@
+{
+  "code": "LIN332H5",
+  "title": "Syntactic Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN232H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN232H5"
+  },
+  "exclusions_raw": "LIN331H5 or LIN331H1 or LINC11H3",
+  "corequisites_raw": null
+}

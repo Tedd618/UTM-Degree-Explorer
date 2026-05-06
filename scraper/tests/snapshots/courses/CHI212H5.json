@@ -1,0 +1,12 @@
+{
+  "code": "CHI212H5",
+  "title": "Chinese for Academic Purposes II",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI211H5 or appropriate language level as indicated by the Chinese Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires ) or interview.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHI211H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

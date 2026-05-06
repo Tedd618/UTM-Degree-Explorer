@@ -1,0 +1,30 @@
+{
+  "code": "FAH332H5",
+  "title": "Studies in Baroque Painting",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) and ( FAH274H5 or FAH279H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH274H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH279H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

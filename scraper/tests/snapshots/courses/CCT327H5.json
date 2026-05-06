@@ -1,0 +1,25 @@
+{
+  "code": "CCT327H5",
+  "title": "Price Management",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT219H5 or CCT221H5 or MGT252H5 .",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT219H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT252H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT355H5",
+  "corequisites_raw": null
+}

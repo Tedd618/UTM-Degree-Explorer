@@ -1,0 +1,50 @@
+{
+  "code": "ERMIN0797",
+  "name": "Cinema Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "including at least 1.0 credit at the 300 level or above.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "4.0 credits are required, including at least 1.0 credit at the 300 level or above. First Year: CIN101H5 and a further 0.5 credit in CIN at the 200 level. Higher Years: 3.0 credits from any remaining CIN courses at the 200 level or above, VCC205H5 , VCC334H5 , VCC427H5 , VST410H5 , GER353H5 , GER354H5 , PHL221H5 .",
+            "subject": "CIN",
+            "min_level": 200,
+            "max_level": null,
+            "specific_courses": [
+              "CIN101H5",
+              "VCC205H5",
+              "VCC334H5",
+              "VCC427H5",
+              "VST410H5",
+              "GER353H5",
+              "GER354H5",
+              "PHL221H5"
+            ],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "A maximum of 1.0 credit may be taken from: DRE350H5 , DRE352H5 , FRE393H5 , FRE397H5 , ITA242H5 , ITA243H5 , ITA247H5 , ITA307H5 , ITA309H5 , ITA313H5 , ITA342H5 , ITA343H5 , RLG331H5 , SPA275H5 , WGS341H5 . Some of the choices listed above are only available to students who are enrolled in a program sponsored by the Department or Unit offering the course, and/or who have completed the specified prerequisites."
+    ]
+  }
+}

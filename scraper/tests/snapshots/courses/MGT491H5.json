@@ -1,0 +1,25 @@
+{
+  "code": "MGT491H5",
+  "title": "Introduction to International Business",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credit in MGT/MGM at the 300/400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "RSM490H1",
+  "corequisites_raw": null
+}

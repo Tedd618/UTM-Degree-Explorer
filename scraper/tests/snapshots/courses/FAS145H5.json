@@ -1,0 +1,9 @@
+{
+  "code": "FAS145H5",
+  "title": "Painting I",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "FAS230Y1 or VIS201H1 or VPSA61H3",
+  "corequisites_raw": null
+}

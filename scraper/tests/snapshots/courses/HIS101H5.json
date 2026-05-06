@@ -1,0 +1,9 @@
+{
+  "code": "HIS101H5",
+  "title": "Topics in History",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,287 @@
+{
+  "code": "ERMIN1061",
+  "name": "Environmental Science",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "of which at least 1.0 must be at the 300-400 level.",
+    "groups": [
+      {
+        "label": "First Year: 1.0 credit",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV100Y5"
+          },
+          {
+            "type": "text",
+            "text": "Be sure to look ahead and plan to complete the prerequisites for any upper-level courses that are of interest to you.",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year: 2.0 credits",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENV201H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO201H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO211H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS201H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS202H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS203H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Upper Years: 1.0 credit",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO416H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV299Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV399Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENV496H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV497H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS325H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR335H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR379H5"
+              },
+              {
+                "type": "course",
+                "code": "JEG400Y5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO311H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO331H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO333H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO373H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV495H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV496H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS312H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS315H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS412H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR304H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR315H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR316H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR317H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR337H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR338H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR372H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR374H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR375H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR376H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR377H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR383H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR384H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR404H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR406H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR407H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR440H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR484H5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "This is intended to be an interdisciplinary program. At least three different disciplines must be represented among the courses that are counted as program requirements. For example, a course list selected from ENV + BIO + ERS is acceptable, but a course list selected only from ENV + BIO is not. Please contact the Program Advisors or Academic Counsellor if you have any questions about the validity of your course selections.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "code": "MGT438H5",
+  "title": "Futures and Options Markets",
+  "credits": 0.5,
+  "prerequisites_raw": "a minimum of 63% in both MGT231H5 and MGT232H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGFC30H3 or RSM435H1",
+  "corequisites_raw": null
+}

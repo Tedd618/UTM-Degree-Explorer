@@ -1,0 +1,27 @@
+{
+  "code": "WGS425H5",
+  "title": "Decolonial Feminist Archival Practices",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5 and 1.0 WGS credit at the 300/400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "WGS"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "WGS200Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

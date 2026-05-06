@@ -1,0 +1,27 @@
+{
+  "code": "FAS446Y5",
+  "title": "Individual Investigations in Design",
+  "credits": 1.0,
+  "prerequisites_raw": "FAS346Y5 and 1.5 credits in FAH/VCC and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "and"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS346Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

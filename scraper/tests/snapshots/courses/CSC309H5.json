@@ -1,0 +1,21 @@
+{
+  "code": "CSC309H5",
+  "title": "Programming on the Web",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5 and CSC263H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC309H1 or CSCC09H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CCT324H5",
+  "title": "Organizational Studies II",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT224H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT224H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

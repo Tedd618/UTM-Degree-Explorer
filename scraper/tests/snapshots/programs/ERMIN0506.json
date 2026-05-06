@@ -1,0 +1,125 @@
+{
+  "code": "ERMIN0506",
+  "name": "Linguistic Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN101H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN102H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Upper Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "LIN228H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN229H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN231H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN232H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN237H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN240H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN256H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              },
+              {
+                "type": "course",
+                "code": "LIN288H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "Minimum 1.0 credit from the following list: any 300 and 400 level LIN, JAL, JFL, or JLP courses (unless otherwise noted).",
+            "subject": null,
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE489H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA373H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA437H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA451H5"
+              },
+              {
+                "type": "course",
+                "code": "SAN392Y5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Some of the courses listed above have prerequisites which would not count towards this program.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

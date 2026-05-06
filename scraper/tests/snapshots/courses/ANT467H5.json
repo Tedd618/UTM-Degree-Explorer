@@ -1,0 +1,21 @@
+{
+  "code": "ANT467H5",
+  "title": "Are Media Turning Humans into Cyborgs?",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT207H5 or permission of the department",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

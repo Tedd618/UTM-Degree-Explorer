@@ -1,0 +1,52 @@
+{
+  "code": "JLP315H5",
+  "title": "Language Development",
+  "credits": 0.5,
+  "prerequisites_raw": "[ PSY201H5 /equivalent or JLP285H5 /equivalent] and [ PSY210H5 or PSY270H5 or ( LIN101H5 and LIN102H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY201H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY210H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY270H5"
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "LIN101H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "LIN102H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY315H5 or JLP315H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,35 @@
+{
+  "code": "PSY410H5",
+  "title": "Special Topics in Developmental Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY210H5 and 1.0 credit from ( PSY311H5 or PSY312H5 or PSY315H5 or PSY316H5 or PSY317H5 or PSY318H5 or PSY319H5 or PSY341H5 or PSY345H5 or PSY442Y5 or JLP315H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "PSY311H5",
+          "PSY316H5",
+          "PSY317H5",
+          "PSY318H5",
+          "PSY319H5",
+          "PSY341H5",
+          "PSY345H5",
+          "PSY442Y5",
+          "JLP315H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY210H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY410H1 or PSYD22H3",
+  "corequisites_raw": null
+}

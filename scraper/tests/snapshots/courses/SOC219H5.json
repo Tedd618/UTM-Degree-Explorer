@@ -1,0 +1,21 @@
+{
+  "code": "SOC219H5",
+  "title": "Gender and Crime",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and ( SOC109H5 or SOC209H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC109H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CRI380H1 or SOC365H5 Special Topics in Criminology: Gender, Violence and Offending (Fall 2019 and Winter 2020)",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CSC301H5",
+  "title": "Introduction to Software Engineering",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC209H5"
+  },
+  "exclusions_raw": "CSC301H1 or CSCC01H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "MGT330H5",
+  "title": "Investments",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5 and MGT232H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "RSM330H1 or MGFD10H3",
+  "corequisites_raw": null
+}

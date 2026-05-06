@@ -1,0 +1,12 @@
+{
+  "code": "BIO332H5",
+  "title": "Biology Field Research",
+  "credits": 0.5,
+  "prerequisites_raw": "6.0 credits and current registration in a Biology, Ecology, Environment/Geography or Earth Science program and permission of the instructor. Appropriate upper level BIO prerequisite core course requirements will be posted on the Biology department website. Any additional unique prerequisites for the course will be posted one year in advance of the move to a new location or with a change of instructor.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 6.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

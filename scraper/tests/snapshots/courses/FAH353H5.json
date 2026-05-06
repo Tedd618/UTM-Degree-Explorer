@@ -1,0 +1,30 @@
+{
+  "code": "FAH353H5",
+  "title": "The sculptor-architect GianLorenzo Bernini",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and ( FAH274H5 or FAH279H5 ).",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH274H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH279H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "FAH352H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CHM372H5",
+  "title": "Techniques in Biological Chemistry I",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM243H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM243H5"
+  },
+  "exclusions_raw": "CHM371H5 or BCH370H1 or BCH371H1",
+  "corequisites_raw": null
+}

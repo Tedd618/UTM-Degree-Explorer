@@ -1,0 +1,49 @@
+{
+  "code": "FRE489H5",
+  "title": "The Structure of the Syllable in Romance Languages",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE376H5 and FRE377H5 and ( FRE385H5 or LIN229H5 ) and any 0.5 credit of FRE Linguistics or LIN at the 300-level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 0.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": [
+          "FRE",
+          "LIN"
+        ],
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE376H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE377H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FRE385H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN229H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

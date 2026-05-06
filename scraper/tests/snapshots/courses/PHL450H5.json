@@ -1,0 +1,12 @@
+{
+  "code": "PHL450H5",
+  "title": "Seminar in Philosophy of Language",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHL245H5 and 3.0 credits of PHL) or by permission of the Instructor or Department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL245H5"
+  },
+  "exclusions_raw": "PHL451H5",
+  "corequisites_raw": null
+}

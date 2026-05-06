@@ -1,0 +1,38 @@
+{
+  "code": "PSY385H5",
+  "title": "Human Factors: Applying Perceptual and Cognitive Research to the World",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 and ( PSY270H5 or PSY274H5 or PSY280H5 or PSY290H5 or JLP285H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY270H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY280H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY290H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

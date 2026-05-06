@@ -1,0 +1,21 @@
+{
+  "code": "LIN421H5",
+  "title": "Speaking and Hearing with an Accent",
+  "credits": 0.5,
+  "prerequisites_raw": "JLP384H5 or LIN328H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "JLP384H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN328H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

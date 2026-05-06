@@ -1,0 +1,34 @@
+{
+  "code": "GGR335H5",
+  "title": "Remote Sensing Applications",
+  "credits": 0.5,
+  "prerequisites_raw": "7.5 credits and GGR337H5 and ( GGR276H5 or GGR278H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 7.5
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR337H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR276H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR278H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

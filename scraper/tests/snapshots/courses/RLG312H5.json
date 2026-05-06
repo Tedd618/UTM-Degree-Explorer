@@ -1,0 +1,12 @@
+{
+  "code": "RLG312H5",
+  "title": "How to Study Religion",
+  "credits": 0.5,
+  "prerequisites_raw": "RLG101H5 and 1.0 additional RLG credits",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "RLG101H5"
+  },
+  "exclusions_raw": "RLG312Y5",
+  "corequisites_raw": null
+}

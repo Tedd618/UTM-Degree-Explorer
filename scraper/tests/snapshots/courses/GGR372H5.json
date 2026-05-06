@@ -1,0 +1,21 @@
+{
+  "code": "GGR372H5",
+  "title": "Geographical Analysis of Land Resources",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including GGR278H5 or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR278H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

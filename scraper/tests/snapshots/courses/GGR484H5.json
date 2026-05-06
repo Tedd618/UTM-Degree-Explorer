@@ -1,0 +1,30 @@
+{
+  "code": "GGR484H5",
+  "title": "The Climate of the Arctic",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits including GGR214H5 or GGR317H5 or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR214H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR317H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

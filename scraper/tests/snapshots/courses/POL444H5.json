@@ -1,0 +1,43 @@
+{
+  "code": "POL444H5",
+  "title": "Protest and Revolution in the Middle East and North Africa",
+  "credits": 0.5,
+  "prerequisites_raw": "POL218Y5 or ( POL218H5 and POL219H5 ) or POL390H5 or POL391H5 and POL373H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "POL218H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "POL219H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "POL390H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "POL391H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "POL373H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "POL438H5 (Winter 2021 and Winter 2022)",
+  "corequisites_raw": null
+}

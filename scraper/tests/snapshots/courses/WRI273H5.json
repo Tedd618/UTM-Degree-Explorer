@@ -1,0 +1,12 @@
+{
+  "code": "WRI273H5",
+  "title": "Specialized Prose",
+  "credits": 0.5,
+  "prerequisites_raw": "WRI173H5 or WRI203H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WRI173H5"
+  },
+  "exclusions_raw": "WRI303H5",
+  "corequisites_raw": null
+}

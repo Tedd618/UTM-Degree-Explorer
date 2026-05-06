@@ -1,0 +1,21 @@
+{
+  "code": "CCT440H5",
+  "title": "Power, Privilege and Technology",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT200H5 and CCT222H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CCT395H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,30 @@
+{
+  "code": "MAT302H5",
+  "title": "Introduction to Algebraic Cryptography",
+  "credits": 0.5,
+  "prerequisites_raw": "( MAT224H5 or MAT240H5 ) and MAT301H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT224H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT301H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC322H5 or MATD16H3",
+  "corequisites_raw": null
+}

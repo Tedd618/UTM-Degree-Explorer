@@ -1,0 +1,12 @@
+{
+  "code": "PRS211H5",
+  "title": "Introductory Persian II",
+  "credits": 0.5,
+  "prerequisites_raw": "PRS210H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PRS210H5"
+  },
+  "exclusions_raw": "PRS210Y5 or NML260Y1",
+  "corequisites_raw": null
+}

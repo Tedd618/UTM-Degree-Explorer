@@ -1,0 +1,29 @@
+{
+  "code": "LIN487H5",
+  "title": "Second Language Pedagogy",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN101H5 and LIN102H5 and 0.5 credit at the 300-level in a LIN course.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN102H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LIN417H5 or LTL417H5",
+  "corequisites_raw": null
+}

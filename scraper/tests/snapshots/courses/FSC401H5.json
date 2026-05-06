@@ -1,0 +1,21 @@
+{
+  "code": "FSC401H5",
+  "title": "Forensic Pathology",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5 and ( FSC316H5 or BIO210Y5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC239Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC316H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

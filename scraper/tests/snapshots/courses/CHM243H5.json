@@ -1,0 +1,12 @@
+{
+  "code": "CHM243H5",
+  "title": "Introductory Organic Chemistry II",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM242H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM242H5"
+  },
+  "exclusions_raw": "CHM247H1 or CHM249H1 or CHMB42H3",
+  "corequisites_raw": null
+}

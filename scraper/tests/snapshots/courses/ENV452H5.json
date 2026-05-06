@@ -1,0 +1,25 @@
+{
+  "code": "ENV452H5",
+  "title": "Politics and Policy of Wildlife Conservation",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits including ENV100Y5 and JPE251H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "COURSE",
+        "code": "ENV100Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JPE251H5"
+      }
+    ]
+  },
+  "exclusions_raw": "JEP452H5",
+  "corequisites_raw": null
+}

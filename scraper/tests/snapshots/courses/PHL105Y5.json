@@ -1,0 +1,9 @@
+{
+  "code": "PHL105Y5",
+  "title": "Introduction to Philosophy",
+  "credits": 1.0,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "PHL100Y5 or PHL101Y5",
+  "corequisites_raw": null
+}

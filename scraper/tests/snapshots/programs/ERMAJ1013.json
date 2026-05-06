@@ -1,0 +1,100 @@
+{
+  "code": "ERMAJ1013",
+  "name": "Sociology",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": 7.5
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "SOC100H5"
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "SOC221H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC222H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC231H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit of SOC at the 300 level",
+            "subject": "SOC",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit of SOC at the 400 level",
+            "subject": "SOC",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit of SOC at the 300/400 level",
+            "subject": "SOC",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 credits of SOC",
+            "subject": "SOC",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

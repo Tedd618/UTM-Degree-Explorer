@@ -1,0 +1,12 @@
+{
+  "code": "SOC202H5",
+  "title": "Cultural Sociology",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC280H1 or SOCB58H3",
+  "corequisites_raw": null
+}

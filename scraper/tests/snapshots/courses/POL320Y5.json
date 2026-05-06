@@ -1,0 +1,12 @@
+{
+  "code": "POL320Y5",
+  "title": "Modernity and Resistance",
+  "credits": 1.0,
+  "prerequisites_raw": "POL200Y5 or POL200Y1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL200Y5"
+  },
+  "exclusions_raw": "POL320Y1 or POL320H1 or POL321H1 or POLC73H3",
+  "corequisites_raw": null
+}

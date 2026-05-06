@@ -1,0 +1,12 @@
+{
+  "code": "LAT213H5",
+  "title": "Introductory Latin III",
+  "credits": 0.5,
+  "prerequisites_raw": "LAT102H5 or LAT212H5 or LAT102H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LAT102H5"
+  },
+  "exclusions_raw": "LAT200Y5 or LAT201H1",
+  "corequisites_raw": null
+}

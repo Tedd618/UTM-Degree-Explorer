@@ -1,0 +1,51 @@
+{
+  "code": "ECO208Y5",
+  "title": "Macroeconomic Theory",
+  "credits": 1.0,
+  "prerequisites_raw": "[( ECO101H5 (70%) and ECO102H5 (70%)) or ECO100Y5 (70%)] and [ MAT133Y5 (80%) or ( MAT135H5 (63%) and MAT136H5 (63%)) or MAT135Y5 (63%) or MAT137Y5 (60%) or ( MAT137H5 (60%) and MAT139H5 (60%))]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO102H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT133Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT135H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ECO202Y5 or ECO209Y5 or ECO202Y1 or ECO208Y1 or ECO209Y1",
+  "corequisites_raw": null
+}

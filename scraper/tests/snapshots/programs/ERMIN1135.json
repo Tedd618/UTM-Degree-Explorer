@@ -1,0 +1,59 @@
+{
+  "code": "ERMIN1135",
+  "name": "French Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "A minimum of 2.0 credits of FRE language from the following: FRE180H5 /\u200b FRE181H5 /\u200b FRE282H5 /\u200b FRE283H5 /\u200b FRE382H5 /\u200b FRE383H5 /\u200b FRE442H5 /\u200b FRE482H5",
+            "subject": "FRE",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [
+              "FRE180H5",
+              "FRE181H5",
+              "FRE282H5",
+              "FRE283H5",
+              "FRE382H5",
+              "FRE383H5",
+              "FRE442H5",
+              "FRE482H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit of FRE at the 300/400 level.",
+            "subject": "FRE",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "Additional FRE credits to fulfill 4.0 credits.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

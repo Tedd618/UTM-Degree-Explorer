@@ -1,0 +1,86 @@
+{
+  "code": "ERMIN0615",
+  "name": "Art History",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FAH101H5"
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 FAH credits at the 200 level, of which at least 0.5 credit must be in Ancient & Medieval, 0.5 credit must be in 15th-18th centuries, and 0.5 credit must be in 19th-21st centuries",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 0.5,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 credits in FAH/ VCC/ VST at the 300/400 level.",
+            "subject": "VST",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "The following program structure is highly recommended:",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "First Year: 1.0 credits: FAH101H5 and 0.5 credit in FAH at the 200 level",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "Higher Years: 1.5 credits in FAH at the 200 level 1.5 credits in FAH/VCC/VST at the 300/400 level",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "1. Students without pre- and co-requisites or written permission of the instructor can be de-registered from courses at any time. 2. See the departmental website at www.utm.utoronto.ca/dvs for the distribution of courses by area. 3. No St. George courses may be substituted for the required 100-level and 200-level courses. However, 0.5 credit at the 200-level in FAH may be taken at St. George in an area not covered by U of T Mississauga's offerings (i.e. one of the following courses: FAH248H1 , FAH260H1 , FAH262H1 , FAH270H1 , FAH272H1 )."
+    ]
+  }
+}

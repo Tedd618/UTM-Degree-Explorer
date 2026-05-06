@@ -1,0 +1,12 @@
+{
+  "code": "IMI303H5",
+  "title": "Technology Strategy",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO101H5 or ECO105Y1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ECO101H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

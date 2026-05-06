@@ -1,0 +1,21 @@
+{
+  "code": "ITA351H5",
+  "title": "Creative Writing in Italian Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA200Y5 or ITA201Y5 or permission of the department.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA354Y5",
+  "corequisites_raw": null
+}

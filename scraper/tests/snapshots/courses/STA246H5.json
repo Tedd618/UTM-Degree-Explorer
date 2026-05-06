@@ -1,0 +1,42 @@
+{
+  "code": "STA246H5",
+  "title": "Computational Probability and Statistics",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC148H5 and ( MAT134H5 or MAT134Y5 or MAT135Y5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or a minimum 65% in MAT133Y5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC148H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT134H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT133Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "STA256H5 or STA237H1 or STA247H1 or STA257H1 or STAB52H3 or ECO227Y5",
+  "corequisites_raw": null
+}

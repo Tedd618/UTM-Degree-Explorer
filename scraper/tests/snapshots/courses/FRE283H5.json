@@ -1,0 +1,21 @@
+{
+  "code": "FRE283H5",
+  "title": "Intermediate Language Practice: Spoken French",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE181H5 or FSL305Y5 or FSL306H5 or the equivalent as determined by the department's French Placement Test ( https://frenchpt.utm.utoronto.ca/ ).",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE181H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL306H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FSL320H1 or FSL322H1 . Not open to native or near native speakers of French.",
+  "corequisites_raw": null
+}

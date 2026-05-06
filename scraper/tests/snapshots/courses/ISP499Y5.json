@@ -1,0 +1,12 @@
+{
+  "code": "ISP499Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "Minimum 14.0 credit or permission of instructor",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 14.0
+  },
+  "exclusions_raw": "ISP499H5",
+  "corequisites_raw": null
+}

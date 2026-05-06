@@ -1,0 +1,12 @@
+{
+  "code": "CSC415H5",
+  "title": "Introduction to Reinforcement Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC311H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC311H5"
+  },
+  "exclusions_raw": "CSC498H5 (Winter 2021 and Fall 2021)",
+  "corequisites_raw": null
+}

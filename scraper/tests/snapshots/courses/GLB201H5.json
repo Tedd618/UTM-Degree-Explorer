@@ -1,0 +1,12 @@
+{
+  "code": "GLB201H5",
+  "title": "Global Leadership: Past, Present, Futures",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 4.0 credits.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 4.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

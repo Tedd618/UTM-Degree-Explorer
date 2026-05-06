@@ -1,0 +1,30 @@
+{
+  "code": "ANT437H5",
+  "title": "Advanced Seminar in the Anthropology of Health",
+  "credits": 0.5,
+  "prerequisites_raw": "( ANT202H5 or ANT204H5 ) and ANT220H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT202H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT204H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT220H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

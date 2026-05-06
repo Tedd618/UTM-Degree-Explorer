@@ -1,0 +1,12 @@
+{
+  "code": "ITA201Y5",
+  "title": "Beginner - Intermediate Italian (Offered in Italy)",
+  "credits": 1.0,
+  "prerequisites_raw": "ITA100Y5 or permission of the department",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA200Y5 or ITA251Y1 or higher",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "VCC406H5",
+  "title": "Post-Colonialism and the Image",
+  "credits": 0.5,
+  "prerequisites_raw": "( VCC101H5 or VCC201H5 ) and VCC306H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC306H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

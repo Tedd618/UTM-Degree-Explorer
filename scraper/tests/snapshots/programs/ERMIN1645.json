@@ -1,0 +1,41 @@
+{
+  "code": "ERMIN1645",
+  "name": "English",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 4,
+            "constraint": "at_least",
+            "description": "At least 4.0 ENG credits, including at least 1.0 credit at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements. ENG100H5 may not be counted towards program requirements.",
+            "subject": "ENG",
+            "min_level": 300,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [
+              "ENG100H5"
+            ],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

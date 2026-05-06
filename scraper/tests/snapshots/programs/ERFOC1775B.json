@@ -1,0 +1,191 @@
+{
+  "code": "ERFOC1775B",
+  "name": "Focus in the Anthropology of Politics, Policy, and Law (Major) (Arts)",
+  "type": "Program",
+  "completion": {
+    "total_credits": {
+      "min": 3,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ANT223H5"
+          },
+          {
+            "type": "text",
+            "text": "The required gateway course will introduce anthropological approaches to the study of pressing global challenges, providing a strong foundation in political and legal anthropology through key anthropological works on the state, bureaucracy, policy, and law. As a gateway to the Focus in the Anthropology of Politics, Policy, and Law, it is recommended to be completed within the first two years of study.",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "ANT468H5"
+          },
+          {
+            "type": "text",
+            "text": "This required capstone seminar will enable students to survey a range of pressing contemporary concerns from an anthropological perspective, while consolidating skills and knowledge from previous courses in the Focus in the Anthropology of Politics, Policy, and Law.",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "Additional 2.0 credits from ANT social science courses listed below:",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT207H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT209H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT216H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ANT310H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT350H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ANT351H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT352H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT354H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT356H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT357H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ANT358H5"
+          },
+          {
+            "type": "course",
+            "code": "ANT359H5"
+          },
+          {
+            "type": "course",
+            "code": "ANT366H5"
+          },
+          {
+            "type": "course",
+            "code": "ANT368H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT370H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ANT371H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT450H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT455H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT463H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ANT467H5"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

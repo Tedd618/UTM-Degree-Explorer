@@ -1,0 +1,29 @@
+{
+  "code": "JLP388H5",
+  "title": "Bilingualism and Multiple Language Acquisition",
+  "credits": 0.5,
+  "prerequisites_raw": "JLP285H5 /equivalent or JLP315H5 /equivalent or FRE325H5 or FRE355H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "JLP285H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JLP315H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE325H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE355H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FRE388H5 or JFL388H5 or LIN388H5 or PSY376H5",
+  "corequisites_raw": null
+}

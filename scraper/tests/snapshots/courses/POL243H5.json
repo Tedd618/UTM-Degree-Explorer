@@ -1,0 +1,18 @@
+{
+  "code": "POL243H5",
+  "title": "Research Methods for Political Science I",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 POL credit or 4.0 credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL242Y5 or POL222H1",
+  "corequisites_raw": null
+}

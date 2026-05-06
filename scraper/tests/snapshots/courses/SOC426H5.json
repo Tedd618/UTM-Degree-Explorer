@@ -1,0 +1,30 @@
+{
+  "code": "SOC426H5",
+  "title": "Social Theory and Third Cinema",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and ( SOC205H5 or SOC231H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "SOC205H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "SOC231H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CIN400H5 (Fall 2021 only)",
+  "corequisites_raw": null
+}

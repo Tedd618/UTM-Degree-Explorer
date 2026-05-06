@@ -1,0 +1,18 @@
+{
+  "code": "CSC389H5",
+  "title": "Computing Education",
+  "credits": 0.5,
+  "prerequisites_raw": "Permission of the instructor and 1.0 CSC credit at the 200 level",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": [
+      "CSC"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,251 @@
+{
+  "code": "ERSPE1666",
+  "name": "Geography",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 10,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR111H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR112H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "GGR277H5"
+          },
+          {
+            "type": "n_from",
+            "n": 2.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR202H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR207H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR208H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR209H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR210H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR252H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR265H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR276H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR278H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR288H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 4.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENV311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR313H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR318H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR319H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR322H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR325H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR329H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR333H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR348H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR349H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR353H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR361H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR362H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR363H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR365H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR370H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR382H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR385H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR387H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR389H5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR417Y5"
+              },
+              {
+                "type": "course",
+                "code": "JEG401Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR415H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR418H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR419H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR420H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR426H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR461H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR489H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Field Days",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Six days accumulated either through a geography field course and/or through geography courses with field day components as indicated in course descriptions.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

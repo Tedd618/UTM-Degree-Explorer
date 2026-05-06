@@ -1,0 +1,12 @@
+{
+  "code": "PHL314H5",
+  "title": "Kant",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL210Y5 and 1.5 additional credits in PHL",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL210Y5"
+  },
+  "exclusions_raw": "PHL312H5 or PHLC37H3",
+  "corequisites_raw": null
+}

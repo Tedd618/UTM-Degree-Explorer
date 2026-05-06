@@ -1,0 +1,714 @@
+{
+  "code": "ERMAJ0652",
+  "name": "History",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS101H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS102H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS103H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS104H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS105H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS106H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS107H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS108H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS212H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS214H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS290H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS295H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS301H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS305H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS323H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS324H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS325H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS330H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS390H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS391H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS463H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS464H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS490H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS494H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS201H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS204H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS282H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS284H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS285H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS378H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS382H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS384H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS385H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS386H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS388H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS389H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS396H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS397H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS398H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS431H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS448H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS480H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS483H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS484H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS214H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS255H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS261H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS262H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS271H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS272H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS315H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS318H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS319H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS326H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS336H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS342H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS358H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS367H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS369H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS371H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS372H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS374H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS393H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS401H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS402H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS438H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS453H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS462H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS479H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS494H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS212H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS214H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS221H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS230H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS236H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS241H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS242H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS305H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS306H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS307H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS321H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS327H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS338H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS339H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS340H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS341H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS357H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS407H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS409H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS435H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS438H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS475H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS495H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Ancient History and Culture: All Classical Civilization (CLA) courses.",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS221H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS321H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS409H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS420H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "HIS201H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS308H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS310H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS374H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS386H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS210H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS241H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS262H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS284H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS295H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS307H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS315H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS319H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS321H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS323H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS326H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS327H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS330H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS336H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS337H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS338H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS340H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS341H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS342H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS355H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS357H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS366H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS374H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS378H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS382H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS385H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS390H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS393H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS396H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS397H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS398H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS405H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS409H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS410H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS438H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS453H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS462H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS463H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS464H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS475H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS480H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS483H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS484H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS490H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 3,
+            "constraint": "at_least",
+            "description": "3.0 HIS credits at the 300+level",
+            "subject": "HIS",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 HIS credit at the 400-level",
+            "subject": "HIS",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Majors are permitted to substitute non-HIS courses for up to 1.0 HIS credits. All Classical Civilization and History of Religions courses in the Department of Historical Studies are suitable substitutions. Other substitutions will be considered on a case-by-case basis after the submission of the relevant syllabus. Students are invited to contact the Historical Studies Academic Advisor for further information.",
+      "In the Major program, language courses offered by the Department of Language Studies at U of T Mississauga, and by the various departments teaching languages on the U of T St. George, may be substituted for up to 1.0 History credits. These courses must be relevant for the student\u2019s coursework in History, and will be substituted at the same level as they are offered (e.g., a language credit at the 200-level will be substituted for a History credit at the 200-level, and a language credit at the 300-level will be substituted for a History credit at the 300-level). Students are invited to contact the Historical Studies Academic Advisor for further information."
+    ]
+  }
+}

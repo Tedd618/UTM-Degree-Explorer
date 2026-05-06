@@ -1,0 +1,34 @@
+{
+  "code": "PSY316H5",
+  "title": "Infant Perception and Cognition",
+  "credits": 0.5,
+  "prerequisites_raw": "( PSY201H5 or equivalent) and ( PSY210H5 or PSY270H5 or PSY280H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY210H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY270H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY280H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY316H1",
+  "corequisites_raw": null
+}

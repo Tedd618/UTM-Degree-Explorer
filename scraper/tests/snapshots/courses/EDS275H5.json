@@ -1,0 +1,12 @@
+{
+  "code": "EDS275H5",
+  "title": "Mass Media and Debunking the Myths of Education",
+  "credits": 0.5,
+  "prerequisites_raw": "EDS100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "EDS100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

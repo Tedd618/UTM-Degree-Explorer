@@ -1,0 +1,12 @@
+{
+  "code": "GGR207H5",
+  "title": "Cities, Urbanization and Development",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 4.0
+  },
+  "exclusions_raw": "GGR124H1 or a combination of any two of: GGRA03H3 or GGRB05H3 or GGRC10H3",
+  "corequisites_raw": null
+}

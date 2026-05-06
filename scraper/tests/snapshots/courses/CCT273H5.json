@@ -1,0 +1,21 @@
+{
+  "code": "CCT273H5",
+  "title": "Professional Practice and Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "70% in CCT110H5 or ( WRI173H5 or WRI203H5 ).",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI173H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

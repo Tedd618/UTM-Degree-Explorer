@@ -1,0 +1,21 @@
+{
+  "code": "GGR363H5",
+  "title": "Global Migration and Health",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including GGR353H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR353H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

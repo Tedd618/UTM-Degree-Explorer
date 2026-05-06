@@ -1,0 +1,21 @@
+{
+  "code": "PSY355H5",
+  "title": "Animal Behaviour Genetics",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and PSY290H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY290H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PSY390H1",
+  "corequisites_raw": null
+}

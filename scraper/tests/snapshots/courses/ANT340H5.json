@@ -1,0 +1,12 @@
+{
+  "code": "ANT340H5",
+  "title": "Osteological Theory and Methods",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT334H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT334H5"
+  },
+  "exclusions_raw": "ANT334Y5 or ANTC48H3",
+  "corequisites_raw": null
+}

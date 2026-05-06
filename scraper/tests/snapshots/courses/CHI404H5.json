@@ -1,0 +1,12 @@
+{
+  "code": "CHI404H5",
+  "title": "Advanced Chinese II",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI403H5 or as indicated by the Chinese Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment\u2026 ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHI403H5"
+  },
+  "exclusions_raw": "EAS402H1",
+  "corequisites_raw": null
+}

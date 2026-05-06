@@ -1,0 +1,12 @@
+{
+  "code": "CCT499H5",
+  "title": "Research Opportunity Program (ROP)",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 13.0 credits or permission of instructor.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "CCT499Y5",
+  "corequisites_raw": null
+}

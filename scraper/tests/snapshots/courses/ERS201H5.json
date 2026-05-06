@@ -1,0 +1,25 @@
+{
+  "code": "ERS201H5",
+  "title": "Earth Materials",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS101H5 or ERS111H5 or ERS103H5 or ERS120H5 or ENV100Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS111H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ENV100Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ESS321H1 or ESS221H1 or EESC35H3",
+  "corequisites_raw": null
+}

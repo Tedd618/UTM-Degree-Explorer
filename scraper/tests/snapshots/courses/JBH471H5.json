@@ -1,0 +1,18 @@
+{
+  "code": "JBH471H5",
+  "title": "Worlds Colliding: The History and Ecology of Exploration, Contact, and Exchange",
+  "credits": 0.5,
+  "prerequisites_raw": "(2.0 HIS credits or 1.0 BIO credit at the 300 level) and permission of instructor.",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.0,
+    "subjects": [
+      "BIO"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "UTM290H5 Winter 2018 or Winter 2019",
+  "corequisites_raw": null
+}

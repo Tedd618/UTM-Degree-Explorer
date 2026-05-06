@@ -1,0 +1,21 @@
+{
+  "code": "SOC211H5",
+  "title": "Law and Social Control",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and ( SOC109H5 or SOC209H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC109H5"
+      }
+    ]
+  },
+  "exclusions_raw": "SOC212H1 or SOCB50H3 or SOCB51H3",
+  "corequisites_raw": null
+}

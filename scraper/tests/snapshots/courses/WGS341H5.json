@@ -1,0 +1,21 @@
+{
+  "code": "WGS341H5",
+  "title": "Black Queer Cinema and Visual Culture",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5 or WGS205H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "WGS200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WGS205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

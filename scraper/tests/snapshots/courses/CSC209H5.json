@@ -1,0 +1,12 @@
+{
+  "code": "CSC209H5",
+  "title": "Software Tools and Systems Programming",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC207H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC207H5"
+  },
+  "exclusions_raw": "CSC209H1 or CSCB09H3",
+  "corequisites_raw": null
+}

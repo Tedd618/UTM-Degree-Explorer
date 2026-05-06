@@ -1,0 +1,12 @@
+{
+  "code": "PHL350H5",
+  "title": "Philosophy of Language",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL245H5 and 1.5 additional credits in PHL",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL245H5"
+  },
+  "exclusions_raw": "PHL351H1 or PHLC80H3",
+  "corequisites_raw": null
+}

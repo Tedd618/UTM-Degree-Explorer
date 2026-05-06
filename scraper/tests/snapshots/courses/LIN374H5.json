@@ -1,0 +1,30 @@
+{
+  "code": "LIN374H5",
+  "title": "African Linguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN229H5 and ( LIN231H5 or LIN232H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN229H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN231H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN232H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

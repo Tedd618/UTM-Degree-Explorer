@@ -1,0 +1,12 @@
+{
+  "code": "FAS258H5",
+  "title": "Sculpture II",
+  "credits": 0.5,
+  "prerequisites_raw": "FAS248H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FAS248H5"
+  },
+  "exclusions_raw": "VIS204H1",
+  "corequisites_raw": null
+}

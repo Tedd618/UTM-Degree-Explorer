@@ -1,0 +1,18 @@
+{
+  "code": "POL372H5",
+  "title": "Propaganda and Strategic Political Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 POL credits or (2.0 CCT or VCC credits)",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 2.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "POL369Y5 or POL213Y1",
+  "corequisites_raw": null
+}

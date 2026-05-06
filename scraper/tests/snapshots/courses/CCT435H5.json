@@ -1,0 +1,12 @@
+{
+  "code": "CCT435H5",
+  "title": "Media and Outer Space",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 13.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "CCT495H5",
+  "corequisites_raw": null
+}

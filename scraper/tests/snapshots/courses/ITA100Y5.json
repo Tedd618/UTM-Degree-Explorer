@@ -1,0 +1,9 @@
+{
+  "code": "ITA100Y5",
+  "title": "Beginner Italian",
+  "credits": 1.0,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "ITA101Y1 or Grade 12 Italian or higher.",
+  "corequisites_raw": null
+}

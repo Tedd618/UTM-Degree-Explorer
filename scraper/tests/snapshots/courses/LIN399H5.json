@@ -1,0 +1,38 @@
+{
+  "code": "LIN399H5",
+  "title": "Research Opportunity Program",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN101H5 and LIN102H5 and [1.0 credit from JAL253H5 or LIN228H5 or LIN229H5 or LIN231H5 or LIN232H5 or LIN237H5 or LIN256H5 or JLP285H5 (formerly LIN288H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "JAL253H5",
+          "LIN228H5",
+          "LIN229H5",
+          "LIN231H5",
+          "LIN232H5",
+          "LIN237H5",
+          "LIN256H5",
+          "JLP285H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN102H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "HSC308H5",
+  "title": "Visual Methods: From Atoms to Cells",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and HSC200H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HSC200H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

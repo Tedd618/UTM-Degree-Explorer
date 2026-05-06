@@ -1,0 +1,12 @@
+{
+  "code": "GGR426H5",
+  "title": "The Geographies of Human Rights",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 14.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

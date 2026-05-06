@@ -1,0 +1,12 @@
+{
+  "code": "ENG390Y5",
+  "title": "Individual Studies",
+  "credits": 1.0,
+  "prerequisites_raw": "1.0 credits in English and 3.0 additional credits.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 1.0
+  },
+  "exclusions_raw": "ENG490Y5",
+  "corequisites_raw": null
+}

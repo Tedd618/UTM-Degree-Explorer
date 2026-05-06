@@ -1,0 +1,21 @@
+{
+  "code": "POL373H5",
+  "title": "Politics of the Middle East and North Africa",
+  "credits": 0.5,
+  "prerequisites_raw": "POL218Y5 or ( POL218H5 and POL219H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL218H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL219H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

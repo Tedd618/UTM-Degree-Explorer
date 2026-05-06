@@ -1,0 +1,21 @@
+{
+  "code": "BIO408H5",
+  "title": "Neural Circuit Structure and Function",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO202H5 or BIO304H5 or Permission of Instructor.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO304H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO483H5 Winter 2019",
+  "corequisites_raw": null
+}

@@ -1,0 +1,9 @@
+{
+  "code": "ECO420Y5",
+  "title": "Reading Course, Seminar or Workshop",
+  "credits": 1.0,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "ECO421H5 or ECO422H5",
+  "corequisites_raw": null
+}

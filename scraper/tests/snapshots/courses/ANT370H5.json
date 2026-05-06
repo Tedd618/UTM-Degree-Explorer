@@ -1,0 +1,25 @@
+{
+  "code": "ANT370H5",
+  "title": "Environment, Culture and Film",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT207H5 or ENV100Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ENV100Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

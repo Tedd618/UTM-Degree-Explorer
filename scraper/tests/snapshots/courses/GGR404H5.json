@@ -1,0 +1,38 @@
+{
+  "code": "GGR404H5",
+  "title": "Paleoenvironmental Change",
+  "credits": 0.5,
+  "prerequisites_raw": "14.0 credits including 0.5 credit from: GGR214H5 or GGR304H5 or GGR305H5 or GGR384H5 or ERS321H5 or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR214H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR304H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR305H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR384H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

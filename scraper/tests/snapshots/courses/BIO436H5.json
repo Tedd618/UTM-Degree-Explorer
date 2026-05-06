@@ -1,0 +1,12 @@
+{
+  "code": "BIO436H5",
+  "title": "Labs in Animal Developmental Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO380H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO380H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

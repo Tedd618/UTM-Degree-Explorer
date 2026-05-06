@@ -1,0 +1,21 @@
+{
+  "code": "CSC367H5",
+  "title": "Parallel Programming",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5 and CSC258H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC258H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC367H1",
+  "corequisites_raw": null
+}

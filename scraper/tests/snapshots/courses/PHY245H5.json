@@ -1,0 +1,51 @@
+{
+  "code": "PHY245H5",
+  "title": "Vibrations and Waves",
+  "credits": 0.5,
+  "prerequisites_raw": "PHY147H5 and ( MAT135H5 or MAT137H5 or MAT157H5 ) and ( MAT136H5 or MAT139H5 or MAT159H5 ) or MAT137Y5 or MAT157Y5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHY147H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT135H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT137H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT157H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

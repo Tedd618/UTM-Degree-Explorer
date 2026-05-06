@@ -1,0 +1,25 @@
+{
+  "code": "VCC420H5",
+  "title": "The Visual Culture of Automobility",
+  "credits": 0.5,
+  "prerequisites_raw": "13.0 credits including ( VCC101H5 or VCC201H5 ) and a minimum of 1.0 VCC credit at the 300/400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 13.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "VCC490H5 topics course - The Visual Culture of Automobility.",
+  "corequisites_raw": null
+}

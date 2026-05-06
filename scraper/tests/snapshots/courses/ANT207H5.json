@@ -1,0 +1,12 @@
+{
+  "code": "ANT207H5",
+  "title": "Being Human: Classic Thought on Self and Society",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT102H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT102H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

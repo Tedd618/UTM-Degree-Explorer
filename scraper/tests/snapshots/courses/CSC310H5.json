@@ -1,0 +1,47 @@
+{
+  "code": "CSC310H5",
+  "title": "Information Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "( CSC148H5 or CSC111H5 ) and MAT223H5 and ( STA246H5 or STA256H5 or ECO227Y5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CSC148H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CSC111H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT223H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CSC310H1",
+  "corequisites_raw": null
+}

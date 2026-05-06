@@ -1,0 +1,12 @@
+{
+  "code": "SOC275H5",
+  "title": "Sociology of Gender",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC265H1 or SOCB22H3 or SOCC24H3",
+  "corequisites_raw": null
+}

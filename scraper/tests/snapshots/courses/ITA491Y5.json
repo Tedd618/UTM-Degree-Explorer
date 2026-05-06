@@ -1,0 +1,12 @@
+{
+  "code": "ITA491Y5",
+  "title": "Independent Studies in Italian",
+  "credits": 1.0,
+  "prerequisites_raw": "ITA350H5 (or equivalent) and written permission of the program coordinator of Italian.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA350H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

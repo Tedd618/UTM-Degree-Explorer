@@ -1,0 +1,21 @@
+{
+  "code": "LTL488H5",
+  "title": "Principles and Strategies for Online Second Language Course Design",
+  "credits": 0.5,
+  "prerequisites_raw": "[ FRE225Y5 or FRE227H5 ] and [ FRE280Y5 or FRE282H5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE227H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE282H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "GER200Y5",
+  "title": "Intermediate German",
+  "credits": 1.0,
+  "prerequisites_raw": "GER100Y5 or GER101H1 or permission of department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GER100Y5"
+  },
+  "exclusions_raw": "GER200H1 or GER201H1",
+  "corequisites_raw": null
+}

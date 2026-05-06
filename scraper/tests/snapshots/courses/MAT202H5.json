@@ -1,0 +1,42 @@
+{
+  "code": "MAT202H5",
+  "title": "Introduction to Discrete Mathematics",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT102H5 and ( MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT102H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT134H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT233H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

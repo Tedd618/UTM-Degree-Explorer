@@ -1,0 +1,146 @@
+{
+  "code": "ERMAJ2431",
+  "name": "Management",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 9.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM101H5"
+              },
+              {
+                "type": "course",
+                "code": "MGM102H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years (6.5 credits)",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Core courses (1.5 credits): MGT262H5 and MGT270H5 and MGT492H5",
+            "courses": [
+              "MGT262H5",
+              "MGT270H5",
+              "MGT492H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Management Disciplines (4.0 credits): ( MGT120H5 or MGM221H5 ) and ECO220Y5 and MGT223H5 and MGT231H5 and MGT252H5 and MGT371H5 and MGM390H5",
+            "courses": [
+              "MGT120H5",
+              "MGM221H5",
+              "ECO220Y5",
+              "MGT223H5",
+              "MGT231H5",
+              "MGT252H5",
+              "MGT371H5",
+              "MGM390H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Electives (1.0 credit): Any 300/400-level MGT/MGM courses. Cannot include any courses already used above.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

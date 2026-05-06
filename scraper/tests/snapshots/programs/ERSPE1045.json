@@ -1,0 +1,800 @@
+{
+  "code": "ERSPE1045",
+  "name": "History and Political Science",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          },
+          {
+            "type": "text",
+            "text": "H istory: 7.0 credits",
+            "courses": []
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS101H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS102H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS103H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS104H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS105H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS106H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS107H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS108H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS212H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS214H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS290H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS295H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS301H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS305H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS323H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS324H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS325H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS330H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS390H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS391H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS454H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS463H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS464H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS490H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS494H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Asia and the Middle East: HIS201H5 or HIS204H5 or HIS282H5 or HIS284H5 or HIS285H5 or HIS378H5 or HIS382H5 or HIS384H5 or HIS385H5 or HIS386H5 or HIS388H5 or HIS389H5 or HIS396H5 or HIS397H5 or HIS398H5 or HIS431H5 or HIS448H5 or HIS480H5 or HIS483H5 or HIS484H5 .",
+            "courses": [
+              "HIS201H5",
+              "HIS204H5",
+              "HIS282H5",
+              "HIS284H5",
+              "HIS285H5",
+              "HIS378H5",
+              "HIS382H5",
+              "HIS384H5",
+              "HIS385H5",
+              "HIS386H5",
+              "HIS388H5",
+              "HIS389H5",
+              "HIS396H5",
+              "HIS397H5",
+              "HIS398H5",
+              "HIS431H5",
+              "HIS448H5",
+              "HIS480H5",
+              "HIS483H5",
+              "HIS484H5"
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS214H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS255H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS261H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS262H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS271H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS272H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS315H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS318H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS319H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS326H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS336H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS342H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS358H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS367H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS369H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS371H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS372H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS374H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS393H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS401H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS402H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS438H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS453H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS462H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS479H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS494H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "HIS203H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS212H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS214H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS221H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS230H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS236H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS241H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS242H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS305H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS306H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS307H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS321H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS327H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS338H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS339H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS340H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS341H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS357H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS407H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS409H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS435H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS438H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS475H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS495H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 credits at the 300+level",
+            "subject": null,
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credits of HIS at the 400-level",
+            "subject": "HIS",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 2.5,
+            "constraint": "at_least",
+            "description": "2.5 additional credits of HIS at the 200+level",
+            "subject": "HIS",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 7.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "POL200Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL215H5"
+              },
+              {
+                "type": "course",
+                "code": "POL216H5"
+              },
+              {
+                "type": "course",
+                "code": "POL243H5"
+              },
+              {
+                "type": "course",
+                "code": "POL244H5"
+              },
+              {
+                "type": "course",
+                "code": "POL203Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL203H5"
+              },
+              {
+                "type": "course",
+                "code": "POL218Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL218H5"
+              },
+              {
+                "type": "course",
+                "code": "POL219H5"
+              },
+              {
+                "type": "course",
+                "code": "POL300Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL300H5"
+              },
+              {
+                "type": "course",
+                "code": "POL302Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL313H5"
+              },
+              {
+                "type": "course",
+                "code": "POL314H5"
+              },
+              {
+                "type": "course",
+                "code": "POL302H5"
+              },
+              {
+                "type": "course",
+                "code": "POL303Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL303H5"
+              },
+              {
+                "type": "course",
+                "code": "POL304Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL304H5"
+              },
+              {
+                "type": "course",
+                "code": "POL309Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL332Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL354Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL354H5"
+              },
+              {
+                "type": "course",
+                "code": "POL360H5"
+              },
+              {
+                "type": "course",
+                "code": "POL361H5"
+              },
+              {
+                "type": "course",
+                "code": "POL362H5"
+              },
+              {
+                "type": "course",
+                "code": "POL373H5"
+              },
+              {
+                "type": "course",
+                "code": "POL390H5"
+              },
+              {
+                "type": "course",
+                "code": "POL391H5"
+              },
+              {
+                "type": "course",
+                "code": "POL438Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL438H5"
+              },
+              {
+                "type": "course",
+                "code": "POL440Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL440H5"
+              },
+              {
+                "type": "course",
+                "code": "POL441H5"
+              },
+              {
+                "type": "course",
+                "code": "POL443Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL443H5"
+              },
+              {
+                "type": "course",
+                "code": "POL444H5"
+              },
+              {
+                "type": "course",
+                "code": "POL445H5"
+              },
+              {
+                "type": "course",
+                "code": "POL446H5"
+              },
+              {
+                "type": "course",
+                "code": "POL447H5"
+              },
+              {
+                "type": "course",
+                "code": "POL448H5"
+              },
+              {
+                "type": "course",
+                "code": "POL208Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL209H5"
+              },
+              {
+                "type": "course",
+                "code": "POL210H5"
+              },
+              {
+                "type": "course",
+                "code": "POL305H5"
+              },
+              {
+                "type": "course",
+                "code": "POL307H5"
+              },
+              {
+                "type": "course",
+                "code": "POL310Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL311H5"
+              },
+              {
+                "type": "course",
+                "code": "POL312H5"
+              },
+              {
+                "type": "course",
+                "code": "POL327Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL327H5"
+              },
+              {
+                "type": "course",
+                "code": "POL340Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL343Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL344H5"
+              },
+              {
+                "type": "course",
+                "code": "POL345H5"
+              },
+              {
+                "type": "course",
+                "code": "POL370H5"
+              },
+              {
+                "type": "course",
+                "code": "POL406H5"
+              },
+              {
+                "type": "course",
+                "code": "POL407H5"
+              },
+              {
+                "type": "course",
+                "code": "POL486Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL486H5"
+              },
+              {
+                "type": "course",
+                "code": "POL487H5"
+              },
+              {
+                "type": "course",
+                "code": "POL316Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL317Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL317H5"
+              },
+              {
+                "type": "course",
+                "code": "POL318H5"
+              },
+              {
+                "type": "course",
+                "code": "POL336Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL346Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL346H5"
+              },
+              {
+                "type": "course",
+                "code": "POL347H5"
+              },
+              {
+                "type": "course",
+                "code": "POL353Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL355Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL355H5"
+              },
+              {
+                "type": "course",
+                "code": "POL368H5"
+              },
+              {
+                "type": "course",
+                "code": "POL368Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL369Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL371H5"
+              },
+              {
+                "type": "course",
+                "code": "POL372H5"
+              },
+              {
+                "type": "course",
+                "code": "POL493H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV351H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP351H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV356H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP356H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV452H5"
+              },
+              {
+                "type": "course",
+                "code": "JEP452H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE250Y5"
+              },
+              {
+                "type": "course",
+                "code": "JPE251H5"
+              },
+              {
+                "type": "course",
+                "code": "JPE252H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "2.0 HIS credits must correspond in region or field to the 2.0 POL credits. Students are invited to contact the Historical Studies Academic Advisor for further information.",
+      "Political Science: 7.0 credits",
+      "7.0 credits in POL are required, including at least 1.0 credit at the 300 level and 1.0 credit at the 400 level and no more than 1.0 POL credit at the 100 level.",
+      "POL200Y5 and POL215H5 and POL216H5 and POL243H5 and POL244H5",
+      "1.0 credit each (totaling 2.0 credits) from two of the following three fields: Comparative Politics - POL203Y5 or POL203H5 or POL218Y5 or POL218H5 or POL219H5 or POL300Y5 or POL300H5 or POL302Y5 or POL313H5 and POL314H5 or POL302H5 or POL303Y5 or POL303H5 or POL304Y5 or POL304H5 or POL309Y5 or POL332Y5 or POL354Y5 or POL354H5 or POL360H5 or POL361H5 or POL362H5 or POL373H5 or POL390H5 or POL391H5 or POL438Y5 or POL438H5 or POL440Y5 or POL440H5 or POL441H5 or POL443Y5 or POL443H5 or POL444H5 or POL445H5 or POL446H5 or POL447H5 or POL448H5 International Relations - POL208Y5 or POL209H5 or POL210H5 or POL305H5 or POL307H5 or POL310Y5 or POL311H5 or POL312H5 or POL327Y5 or POL327H5 or POL340Y5 or POL343Y5 or POL344H5 or POL345H5 or POL370H5 or POL406H5 or POL407H5 or POL486Y5 or POL486H5 or POL487H5 Public Policy and Public Administration - POL316Y5 or POL317Y5 or POL317H5 or POL318H5 or POL336Y5 or POL346Y5 or POL346H5 or POL347H5 or POL353Y5 or POL355Y5 or POL355H5 or POL368H5 or POL368Y5 or POL369Y5 or POL371H5 or POL372H5 or POL493H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JPE250Y5 or JPE251H5 or JPE252H5",
+      "2.0 additional credits of POL"
+    ]
+  }
+}

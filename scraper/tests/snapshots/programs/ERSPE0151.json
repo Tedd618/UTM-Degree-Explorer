@@ -1,0 +1,86 @@
+{
+  "code": "ERSPE0151",
+  "name": "History of Religions",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 10,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "RLG101H5"
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 RLG credits at the 200-level",
+            "subject": "RLG",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "course",
+            "code": "RLG312H5"
+          },
+          {
+            "type": "open_pool",
+            "n": 3.5,
+            "constraint": "at_least",
+            "description": "3.5 RLG credits at the 300+level",
+            "subject": "RLG",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 RLG credits at the 400-level",
+            "subject": "RLG",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "0.5 RLG Independent Reading course",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 additional RLG credits at any level",
+            "subject": "RLG",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Specialists are permitted to substitute non-RLG courses for up to 1.0 RLG credits. Please contact the Historical Studies Academic Advisor for further information.",
+      "In the Specialist program, language courses offered by the Department of Language Studies at U of T Mississauga and on the St. George campus, relevant for a student\u2019s coursework in the History of Religions, may be substituted for 300-level RLG credits. In this substitution, a language course of 1.0 credits corresponds to an RLG course of 1.0 credits at the 300-level only for a primary source language related to the student\u2019s coursework (Arabic, Persian, Pahlavi, Latin, Greek, Hebrew, Avestan, Sanskrit, Pali, Hindi, Urdu, Chinese, etc.). Students are invited to contact the Historical Studies Academic Advisor for further information.",
+      "Students intending to pursue graduate studies are strongly encouraged to complete at least 1.0 language courses in consultation with the Historical Studies Academic Advisor."
+    ]
+  }
+}

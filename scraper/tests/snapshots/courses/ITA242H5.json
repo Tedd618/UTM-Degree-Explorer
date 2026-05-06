@@ -1,0 +1,12 @@
+{
+  "code": "ITA242H5",
+  "title": "Italian Award-Winners, Box-Office Hits",
+  "credits": 0.5,
+  "prerequisites_raw": "None; ITA100Y5 or ITA101Y5 required for students enrolled in an ITA Major or Specialist program only, as some written work will be submitted in Italian.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA241H5 or ITA242Y5 or ITA243Y5 or ITA240Y1 or ITA340H1 or ITA341H1 or ITA342H1 or ITA345H1 or ITA347H1 or ITA441H1",
+  "corequisites_raw": null
+}

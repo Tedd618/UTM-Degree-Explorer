@@ -1,0 +1,30 @@
+{
+  "code": "FAH338H5",
+  "title": "Multicultural Middle Ages",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and ( FAH215H5 or FAH216H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH215H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH216H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

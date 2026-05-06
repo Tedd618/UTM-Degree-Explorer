@@ -1,0 +1,12 @@
+{
+  "code": "WGS435Y5",
+  "title": "Women and Gender Studies Practicum",
+  "credits": 1.0,
+  "prerequisites_raw": "WGS200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "WGS470Y1 or WSTC23H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,52 @@
+{
+  "code": "JLP383H5",
+  "title": "Language Processing: Words, Sentences, and Discourse",
+  "credits": 0.5,
+  "prerequisites_raw": "[ PSY201H5 /equivalent or JLP285H5 /equivalent] and [ JLP315H5 /equivalent or JLP 384H5/equivalent or PSY270H5 or ( LIN101H5 and LIN102H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY201H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JLP315H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY270H5"
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "LIN101H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "LIN102H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY374H5",
+  "corequisites_raw": null
+}

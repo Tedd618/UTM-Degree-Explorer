@@ -1,0 +1,30 @@
+{
+  "code": "DRE200H5",
+  "title": "Canadian Theatre History",
+  "credits": 0.5,
+  "prerequisites_raw": "DRE/ ENG121H5 and ENG122H5 , or permission of the U of T Mississauga program director.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "DRE121H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENG121H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ENG122H5"
+      }
+    ]
+  },
+  "exclusions_raw": "DRM268H1",
+  "corequisites_raw": null
+}

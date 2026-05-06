@@ -1,0 +1,31 @@
+{
+  "code": "VCC411H5",
+  "title": "Real Space to Cyberspace",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and VCC101H5 and an additional 1.0 credit in VCC",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "VCC"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

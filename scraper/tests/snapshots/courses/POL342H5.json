@@ -1,0 +1,21 @@
+{
+  "code": "POL342H5",
+  "title": "Data Visualization and Analysis for the Social Sciences",
+  "credits": 0.5,
+  "prerequisites_raw": "POL242Y5 or ( POL243H5 and POL244H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "POL243H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "POL244H5"
+      }
+    ]
+  },
+  "exclusions_raw": "POL419H1",
+  "corequisites_raw": null
+}

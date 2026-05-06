@@ -1,0 +1,12 @@
+{
+  "code": "MGT422H5",
+  "title": "Advanced IT Audit and Data Analytics",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT321H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT321H5"
+  },
+  "exclusions_raw": "RSM427H1",
+  "corequisites_raw": null
+}

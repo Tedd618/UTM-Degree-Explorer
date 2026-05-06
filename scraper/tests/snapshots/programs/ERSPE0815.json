@@ -1,0 +1,228 @@
+{
+  "code": "ERSPE0815",
+  "name": "French and Italian",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14,
+      "max": null
+    },
+    "total_credits_note": "The program must include a minimum of 4.0 300/400 level credits (2.0 in French and 2.0 in Italian) and 1.0 credit at the 400 level (either in French or in Italian).",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "French 7.0 credits are required.",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "First Year: FRE180H5 and FRE181H5 (minimum grade of 63% is required) or equivalent. Students exempted from these courses may replace them with a higher level 1.0 credit in FRE.",
+            "subject": "FRE",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [
+              "FRE180H5",
+              "FRE181H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE240Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE240H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE241H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE280Y5"
+              },
+              {
+                "type": "course",
+                "code": "FRE382H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE383H5"
+              }
+            ],
+            "label": "French Linguistics 4. 1.0 credit from French Literary and Cultural Studies 5. 1.0 additional credit in French linguistics or literature"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE372H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE373H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE312H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE316H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE317H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE319H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE320H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE356H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE357H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE363H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE364H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE365H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE367H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE368H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE369H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE391H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE393H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE397H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE445H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE446H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE474H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE325H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE345H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE352H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE353H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE355H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL380H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL417H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL456H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL486H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL488H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "Italian 7.0 credits are required. Written work will be done in Italian in all courses. 1. ITA200Y5 2. ITA350Y5 3. 1.0 credit from ITA237H5 , 239H5, 354Y5 4. ITA231H5 /\u200b ITA232H5 , ITA420Y5 5. 2.0 additional credits in ITA, excluding ITA100Y5 /\u200b101H5/ 102H5. Courses not used in #1 above may be used. At least 1.0 credit must be in Italian literature (excluding those in item #2 above).",
+            "subject": "ITA",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [
+              "ITA200Y5",
+              "ITA350Y5",
+              "ITA237H5",
+              "ITA231H5",
+              "ITA232H5",
+              "ITA420Y5"
+            ],
+            "excluding": [
+              "ITA100Y5"
+            ],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

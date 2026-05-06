@@ -1,0 +1,30 @@
+{
+  "code": "FSC307H5",
+  "title": "Missing Persons DVI and Unidentified Human Remains",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT202H5 or ( BIO206H5 , BIO207H5 ).",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT202H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO206H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO207H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

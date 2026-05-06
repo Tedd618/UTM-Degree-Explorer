@@ -1,0 +1,9 @@
+{
+  "code": "CHM101H5",
+  "title": "The Science of Human Health",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "CHM201H5 and any CHM/JCP course taken previously or concurrently",
+  "corequisites_raw": null
+}

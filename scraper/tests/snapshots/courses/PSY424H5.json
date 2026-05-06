@@ -1,0 +1,65 @@
+{
+  "code": "PSY424H5",
+  "title": "Special Topics in Well-Being",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY320H5 or PSY321H5 or PSY324H5 or PSY325H or PSY327H5 or PSY331H5 or PSY343H5 or PSY340H5 or PSY333H5 or PSY341H5 or PSY344H5 or PSY345H5 or PSY346H5 or PSY442Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY320H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY321H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY324H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY327H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY331H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY343H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY340H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY333H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY341H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY344H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY345H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY346H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY442Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

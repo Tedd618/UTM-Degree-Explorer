@@ -1,0 +1,12 @@
+{
+  "code": "GRK213H5",
+  "title": "Introductory Ancient Greek III",
+  "credits": 0.5,
+  "prerequisites_raw": "GRK102H5 or GRK212H5 or GRK102H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GRK102H5"
+  },
+  "exclusions_raw": "GRK200Y1 or GRK201H1",
+  "corequisites_raw": null
+}

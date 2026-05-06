@@ -1,0 +1,12 @@
+{
+  "code": "CSC496H5",
+  "title": "Topics in Robotics",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC376H5 . Additional required prerequisite(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC376H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

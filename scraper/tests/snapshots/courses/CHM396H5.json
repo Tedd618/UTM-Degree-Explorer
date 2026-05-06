@@ -1,0 +1,21 @@
+{
+  "code": "CHM396H5",
+  "title": "Analytical and Physical Chemistry Instrumentation Laboratory I",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM211H5 and JCP221H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM211H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JCP221H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CHM391H5 or CHM317H1 or CHM410Y1 or CHMC16H3",
+  "corequisites_raw": null
+}

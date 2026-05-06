@@ -1,0 +1,21 @@
+{
+  "code": "ENV332H5",
+  "title": "Practicum in Environmental Project Management",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits and completion of a Research Methods course (e.g., GGR277H5 ).",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR277H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ENV232H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,30 @@
+{
+  "code": "ENV495H5",
+  "title": "Restoration Ecology I",
+  "credits": 0.5,
+  "prerequisites_raw": "14 credits including ENV100Y5 or BIO205H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ENV100Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO205H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

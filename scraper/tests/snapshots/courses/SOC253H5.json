@@ -1,0 +1,12 @@
+{
+  "code": "SOC253H5",
+  "title": "Social History of Race and Ethnicity",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

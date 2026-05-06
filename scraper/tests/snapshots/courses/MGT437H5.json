@@ -1,0 +1,30 @@
+{
+  "code": "MGT437H5",
+  "title": "Strategy and Governance",
+  "credits": 0.5,
+  "prerequisites_raw": "( MGT322H5 or MGT225H5 ) and MGT231H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MGT322H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT225H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "STA457H5",
+  "title": "Applied Time Series Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "STA302H5 or ECO375H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "STA302H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO375H5"
+      }
+    ]
+  },
+  "exclusions_raw": "STA457H1 or STAD57H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "GGR325H5",
+  "title": "Business and Industrial Geography",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 9.0
+  },
+  "exclusions_raw": "GGR326H1 or GGR378H1",
+  "corequisites_raw": null
+}

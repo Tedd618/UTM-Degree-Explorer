@@ -1,0 +1,21 @@
+{
+  "code": "CLA337H5",
+  "title": "Pompeii and Herculaneum: Everyday Life and Death in Roman Cities",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA231H5 or CLA233H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA233H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CLA391H5 (Winter 2019)",
+  "corequisites_raw": null
+}

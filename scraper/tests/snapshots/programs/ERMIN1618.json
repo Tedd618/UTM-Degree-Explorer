@@ -1,0 +1,191 @@
+{
+  "code": "ERMIN1618",
+  "name": "Ethics, Law and Society",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "including at least 1.0 credit at the 300/400 level, of which 0.5 credit must be PHL.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL101H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL102H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL103H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL113H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL210Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHL235H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL240H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL241H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL244H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL239H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL247H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL255H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL258H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL284H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL285H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL265H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL271H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL275H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHL267H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL273H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL274H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL277Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHL283H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL284H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL365H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL366H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL367H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL370H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL374H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL376H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL388H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL475H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit from: ANT or ECO or POL or SOC",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit from: ANT or ECO or POL or SOC or from courses listed in #2 or #3 above.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

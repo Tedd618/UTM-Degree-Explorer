@@ -1,0 +1,25 @@
+{
+  "code": "PHL358H5",
+  "title": "Philosophical Issues in Cognitive Science",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHL340H5 or PHL345H5 or PHL350H5 ) and 1.5 additional credits in PHL",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHL340H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL345H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL350H5"
+      }
+    ]
+  },
+  "exclusions_raw": "COG250Y1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,97 @@
+{
+  "code": "ERMAJ1302",
+  "name": "Professional Writing and Communication",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "CCT109H5"
+          },
+          {
+            "type": "course",
+            "code": "CCT110H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "WRI173H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI203H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "WRI273H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI292H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI293H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit from any 200-level WRI course",
+            "subject": "WRI",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 5.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT417H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT454H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

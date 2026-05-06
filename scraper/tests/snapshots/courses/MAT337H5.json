@@ -1,0 +1,43 @@
+{
+  "code": "MAT337H5",
+  "title": "Introduction to Real Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT257Y5 or [( MAT224H5 or MAT240H5 ) and MAT236H5 and MAT244H5 ]",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT244H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT337H1 or MAT357H1 or MATB43H3 or MATC37H3",
+  "corequisites_raw": null
+}

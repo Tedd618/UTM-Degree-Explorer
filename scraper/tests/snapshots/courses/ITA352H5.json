@@ -1,0 +1,21 @@
+{
+  "code": "ITA352H5",
+  "title": "Italian Media and Social Media Production",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA200Y5 or ITA201Y5 or permission of department .",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA371Y5",
+  "corequisites_raw": null
+}

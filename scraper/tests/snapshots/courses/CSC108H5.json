@@ -1,0 +1,9 @@
+{
+  "code": "CSC108H5",
+  "title": "Introduction to Computer Programming",
+  "credits": 0.5,
+  "prerequisites_raw": "Grade 12 Advanced Functions (MHF4U).",
+  "prerequisites": [],
+  "exclusions_raw": "CSC108H1 or CSC110Y1 or CSC120H1 or CSCA08H3 or CSCA20H3 or CSC110Y5 or MGT201H5",
+  "corequisites_raw": null
+}

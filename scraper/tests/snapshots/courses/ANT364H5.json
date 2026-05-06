@@ -1,0 +1,21 @@
+{
+  "code": "ANT364H5",
+  "title": "Fieldwork in Language, Culture, and Society",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT206H5 or JAL353H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT206H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

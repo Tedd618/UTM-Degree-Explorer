@@ -1,0 +1,33 @@
+{
+  "code": "FAS453H5",
+  "title": "Art Education Practice",
+  "credits": 0.5,
+  "prerequisites_raw": "For Art and Art History majors/specialists: 4.0 FAS credits and 1.5 FAH/VCC credits, Permission of the Department. For Art History majors/specialists: 1.0 credits in FAH at the 300/400 level and Permission of the Department.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "FAH"
+        ],
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 4.0,
+        "subjects": [
+          "FAS"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

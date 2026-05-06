@@ -1,0 +1,12 @@
+{
+  "code": "WGS411Y5",
+  "title": "Independent Project in Study of Women & Gender",
+  "credits": 1.0,
+  "prerequisites_raw": "WGS200Y5 and 2.0 WGS 300+ level credits.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "ERI411Y5 or WGS410H5",
+  "corequisites_raw": null
+}

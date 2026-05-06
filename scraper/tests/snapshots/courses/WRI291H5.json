@@ -1,0 +1,12 @@
+{
+  "code": "WRI291H5",
+  "title": "Introduction to Journalism",
+  "credits": 0.5,
+  "prerequisites_raw": "WRI173H5 or WRI203H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WRI173H5"
+  },
+  "exclusions_raw": "WRI378H5",
+  "corequisites_raw": null
+}

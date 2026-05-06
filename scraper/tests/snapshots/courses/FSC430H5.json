@@ -1,0 +1,12 @@
+{
+  "code": "FSC430H5",
+  "title": "Seminar in Forensic Science",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC360H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC360H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

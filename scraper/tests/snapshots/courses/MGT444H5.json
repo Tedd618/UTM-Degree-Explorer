@@ -1,0 +1,38 @@
+{
+  "code": "MGT444H5",
+  "title": "FinTech, Blockchain, & Decentralized Finance",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT120H5 and ( ECO200Y5 or ECO204Y5 or ECO206Y5 ) and MGT330H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT120H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ECO200Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO204Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO206Y5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT330H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT411H5 (Fall 2020 or Fall 2021 or Fall 2022) or MGT415H5 (Fall 2017 or Fall 2018 or Fall 2020)",
+  "corequisites_raw": null
+}

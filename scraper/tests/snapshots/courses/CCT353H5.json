@@ -1,0 +1,12 @@
+{
+  "code": "CCT353H5",
+  "title": "Digital Media Production l",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT250H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT250H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

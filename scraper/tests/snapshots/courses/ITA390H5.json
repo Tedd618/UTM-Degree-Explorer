@@ -1,0 +1,21 @@
+{
+  "code": "ITA390H5",
+  "title": "Writings on Self, Gender, Society (19th Century Italy)",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA200Y5 or ITA201Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA201Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA395H5 or ITA397Y5 or ITA398Y5",
+  "corequisites_raw": null
+}

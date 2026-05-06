@@ -1,0 +1,12 @@
+{
+  "code": "POL216H5",
+  "title": "Canadian Politics",
+  "credits": 0.5,
+  "prerequisites_raw": "POL215H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL215H5"
+  },
+  "exclusions_raw": "POL214Y5 or POL214Y1 or POL224Y1 or POLB50Y3",
+  "corequisites_raw": null
+}

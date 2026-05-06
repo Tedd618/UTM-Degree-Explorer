@@ -1,0 +1,12 @@
+{
+  "code": "GER320H5",
+  "title": "Topics in German Literature",
+  "credits": 0.5,
+  "prerequisites_raw": "GER205H5 , GER305H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GER205H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

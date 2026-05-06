@@ -1,0 +1,12 @@
+{
+  "code": "FSC210H5",
+  "title": "Physical Evidence and Microscopy",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC239Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

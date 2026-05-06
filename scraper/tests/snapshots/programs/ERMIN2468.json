@@ -1,0 +1,33 @@
+{
+  "code": "ERMIN2468",
+  "name": "Dramaturgy and Drama Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "as follows:",
+    "groups": [
+      {
+        "label": "First and Second Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "First and Second Years: ( DRE121H5 or ENG121H5 ) and ( DRE122H5 or ENG122H5 ) and DRE200H5 and DRE222H5",
+            "courses": [
+              "DRE121H5",
+              "ENG121H5",
+              "DRE122H5",
+              "ENG122H5",
+              "DRE200H5",
+              "DRE222H5"
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

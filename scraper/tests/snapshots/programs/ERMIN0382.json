@@ -1,0 +1,112 @@
+{
+  "code": "ERMIN0382",
+  "name": "Classical Civilization",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLA101H5"
+              },
+              {
+                "type": "course",
+                "code": "CLA230H5"
+              },
+              {
+                "type": "course",
+                "code": "CLA231H5"
+              },
+              {
+                "type": "course",
+                "code": "CLA233H5"
+              },
+              {
+                "type": "course",
+                "code": "CLA237H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "2. 2.0 additional CLA credits at the 200+level 3. 1.0 credits at the 300+level",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "RLG324H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG326H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG358H5"
+              },
+              {
+                "type": "course",
+                "code": "RLG435H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE356H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE358H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE420H5"
+              },
+              {
+                "type": "course",
+                "code": "DRE422H5"
+              },
+              {
+                "type": "course",
+                "code": "FAH205H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL300H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Up to 1.0 credits in the following areas may be substituted for CLA courses: Courses in Latin (LAT) and Greek (GRK), at the 100- or 200-level, offered at U of T Mississauga may be substituted for 200-level CLA courses. Students are invited to contact the Historical Studies Academic Advisor for further information. History of Religions (RLG) courses may be substituted when those courses focus on religion in the ancient Greek or Roman Mediterranean ( RLG324H5 , RLG326H5 , RLG358H5 , RLG435H5 ). DRE356H5 , DRE358H5 , DRE420H5 and DRE422H5 may be substituted when those courses are taught as ancient drama. Courses in ancient Art (e.g., FAH205H5 ) or ancient Philosophy (e.g., PHL300H5 ) may be substituted for CLA courses."
+    ]
+  }
+}

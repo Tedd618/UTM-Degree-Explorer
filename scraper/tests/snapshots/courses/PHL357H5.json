@@ -1,0 +1,36 @@
+{
+  "code": "PHL357H5",
+  "title": "Philosophy of Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL255H5 or PHL355H5 and 1.5 PHL credits",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "PHL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PHL255H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHL355H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

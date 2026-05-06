@@ -1,0 +1,30 @@
+{
+  "code": "ANT337H5",
+  "title": "Anthropology of Growth and Development",
+  "credits": 0.5,
+  "prerequisites_raw": "( ANT202H5 or ANT203H5 ) and ANT220H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT202H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ANT203H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT220H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

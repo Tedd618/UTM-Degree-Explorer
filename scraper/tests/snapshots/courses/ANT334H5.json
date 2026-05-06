@@ -1,0 +1,21 @@
+{
+  "code": "ANT334H5",
+  "title": "Human Osteology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT202H5 and ANT203H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT203H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT334Y5 or ANT334H1 or ANT334Y1 or ANTC47H3",
+  "corequisites_raw": null
+}

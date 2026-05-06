@@ -1,0 +1,12 @@
+{
+  "code": "AST222H5",
+  "title": "Astrophysics II \u2013 Stellar Systems, Galaxies and the Universe",
+  "credits": 0.5,
+  "prerequisites_raw": "AST221H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "AST221H5"
+  },
+  "exclusions_raw": "AST222H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "GGR300H5",
+  "title": "Special Topics in Human Geography",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits including GGR277H5 and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 9.0
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR277H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

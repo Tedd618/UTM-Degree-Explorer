@@ -1,0 +1,25 @@
+{
+  "code": "LIN456H5",
+  "title": "Sociolinguistics and Second Language Teaching and Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN256H5 (or permission from instructor), plus 0.5 credit in a 300-level LIN course.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      }
+    ]
+  },
+  "exclusions_raw": "( FGI456H5 or LTL456H5 )",
+  "corequisites_raw": null
+}

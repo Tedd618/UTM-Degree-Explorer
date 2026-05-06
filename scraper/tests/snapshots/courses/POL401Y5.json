@@ -1,0 +1,18 @@
+{
+  "code": "POL401Y5",
+  "title": "Senior Major Research Paper",
+  "credits": 1.0,
+  "prerequisites_raw": "a minimum of 6.0 POL credits and 3.3 minimum CGPA and permission of instructor",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 6.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

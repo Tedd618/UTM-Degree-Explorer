@@ -1,0 +1,21 @@
+{
+  "code": "CHM333H5",
+  "title": "Bioinorganic Chemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM231H5 and CHM242H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM242H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CHM437H1 or CHMD69H3",
+  "corequisites_raw": null
+}

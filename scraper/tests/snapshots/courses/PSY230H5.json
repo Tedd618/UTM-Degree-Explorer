@@ -1,0 +1,12 @@
+{
+  "code": "PSY230H5",
+  "title": "Introduction to Personality Science",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY230H1 or PSYB30H3",
+  "corequisites_raw": null
+}

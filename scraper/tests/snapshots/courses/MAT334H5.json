@@ -1,0 +1,48 @@
+{
+  "code": "MAT334H5",
+  "title": "Complex Variables",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT257Y5 or [( MAT232H5 or MAT233H5 ) and ( MAT202H5 or MAT240H5 or 0.5 additional credit of MAT at the 300+ level with a mark of at least 60%)]",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT233H5"
+              }
+            ]
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT202H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT334H1 or MAT354H5 or MAT354H1 or MATC34H3",
+  "corequisites_raw": null
+}

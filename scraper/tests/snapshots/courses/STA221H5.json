@@ -1,0 +1,12 @@
+{
+  "code": "STA221H5",
+  "title": "The Practice of Statistics II",
+  "credits": 0.5,
+  "prerequisites_raw": "STA215H5 or STA220H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA220H5"
+  },
+  "exclusions_raw": "STA221H1 or STA258H5 or STA248H1 or STAB27H3 or STA302H5 or STA302H1 or STAC67H3 or BIO360H5 or ECO220Y5 or ECO220Y1 or ECO227Y5 or ECO227Y1 or PSY202H5 or PSY202H1 or PSYB08H3",
+  "corequisites_raw": null
+}

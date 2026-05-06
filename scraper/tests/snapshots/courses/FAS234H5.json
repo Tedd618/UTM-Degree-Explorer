@@ -1,0 +1,9 @@
+{
+  "code": "FAS234H5",
+  "title": "Print Media II",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "VIS206H1 or VIS207H1 or VIS309H1",
+  "corequisites_raw": null
+}

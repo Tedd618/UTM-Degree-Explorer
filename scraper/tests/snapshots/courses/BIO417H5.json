@@ -1,0 +1,21 @@
+{
+  "code": "BIO417H5",
+  "title": "Molecular and Structural Genomics",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and BIO207H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO484H5 (Winter 2020)",
+  "corequisites_raw": null
+}

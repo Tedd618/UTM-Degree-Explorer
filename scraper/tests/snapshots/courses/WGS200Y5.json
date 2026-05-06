@@ -1,0 +1,12 @@
+{
+  "code": "WGS200Y5",
+  "title": "Theories in Women, Gender, and Sexuality Studies",
+  "credits": 1.0,
+  "prerequisites_raw": "WGS101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS101H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

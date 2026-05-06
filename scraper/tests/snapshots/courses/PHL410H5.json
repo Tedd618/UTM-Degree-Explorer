@@ -1,0 +1,12 @@
+{
+  "code": "PHL410H5",
+  "title": "Seminar in 17th and 18th Century Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHL210Y5 and 2.5 credits of PHL) or by permission of the Instructor or Department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL210Y5"
+  },
+  "exclusions_raw": "PHL416H5 or PHL402H1",
+  "corequisites_raw": null
+}

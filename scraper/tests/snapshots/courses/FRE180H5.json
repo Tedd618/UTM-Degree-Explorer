@@ -1,0 +1,12 @@
+{
+  "code": "FRE180H5",
+  "title": "French Language Skills and Learning Strategies for University Study",
+  "credits": 0.5,
+  "prerequisites_raw": "FSL206H5 or as determined by the department's French Placement Test. All students are REQUIRED to complete the French Placement Test ( https://frenchpt.utm.utoronto.ca/ ) before enrolling in ANY FSL or FRE language course for the FIRST time.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSL206H5"
+  },
+  "exclusions_raw": "FSL305Y5 or FSL305H5 or FSL306H5 or FSL221Y1 or FSL220H1 or FSL222H1 . Not open to native speakers of French and high school graduates of Extended French or French Immersion programs.",
+  "corequisites_raw": null
+}

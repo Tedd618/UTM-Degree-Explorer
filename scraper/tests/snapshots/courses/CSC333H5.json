@@ -1,0 +1,12 @@
+{
+  "code": "CSC333H5",
+  "title": "Forensic Computing",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC209H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

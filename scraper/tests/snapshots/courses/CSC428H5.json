@@ -1,0 +1,34 @@
+{
+  "code": "CSC428H5",
+  "title": "Human-Computer Interaction",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC318H5 and ( STA246H5 or STA256H5 or ECO227Y5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC318H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CSC428H1",
+  "corequisites_raw": null
+}

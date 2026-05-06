@@ -1,0 +1,12 @@
+{
+  "code": "POL210H5",
+  "title": "Contemporary Challenges in International Relations",
+  "credits": 0.5,
+  "prerequisites_raw": "POL209H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL209H5"
+  },
+  "exclusions_raw": "POL208Y5 or POL208Y1 or POLB80H3 or POLB81H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "FSL305H5",
+  "title": "Functional French - High Intermediate I",
+  "credits": 0.5,
+  "prerequisites_raw": "FSL206H5 or the equivalent as determined by the department\u2019s French Placement Test ( https://frenchpt.utm.utoronto.ca/) .",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSL206H5"
+  },
+  "exclusions_raw": "FRE180H5 or FRE181H5 or FSL305Y5 or FSL220H1 or FSL222H1 or FSL22Y1 or higher level FSL course, all high school grade levels in French Immersion, Extended French, and French Secondary Schools.",
+  "corequisites_raw": null
+}

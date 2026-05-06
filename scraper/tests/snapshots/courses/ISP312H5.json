@@ -1,0 +1,12 @@
+{
+  "code": "ISP312H5",
+  "title": "Special Topics at the Intersection of Science and Social Science",
+  "credits": 0.5,
+  "prerequisites_raw": "8.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,142 @@
+{
+  "code": "ERMIN1540",
+  "name": "Applied Statistics",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": 4.5
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT132H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT135H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT134H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT136H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT233H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT257Y5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "STA378H5"
+              },
+              {
+                "type": "course",
+                "code": "STA398H5"
+              },
+              {
+                "type": "course",
+                "code": "STA478H5"
+              },
+              {
+                "type": "course",
+                "code": "STA498H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Students are strongly encouraged to familiarize themselves with the 100-level calculus pre-requisites to select the correct courses.",
+      "ECO220Y5 cannot be substituted for STA256H5 and/or STA258H5 and/or STA260H5 .",
+      "ECO227Y5 can be substituted for STA256H5 and STA258H5 , but not for STA260H5 .",
+      "STA246H5 will not be permitted as a pre-requisite for any other 200+ level STA courses. In addition, STA246H5 cannot be used towards any program(s) in Applied Statistics or Mathematics. The course is intended only for students in Computer Science programs who will not need STA256H5 for other program requirements.",
+      "Note that Statistics Research Project courses ( STA378H5 , STA398H5 , STA478H5 or STA498H5 ) may not count towards the Applied Statistics minor."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "code": "FAH423H5",
+  "title": "Topics in the Art of the Medieval Mediterranean",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) and FAH216H5 and at least 1.0 credit in FAH/VCC at the 300/400 level.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH216H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

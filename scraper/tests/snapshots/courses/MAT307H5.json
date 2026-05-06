@@ -1,0 +1,48 @@
+{
+  "code": "MAT307H5",
+  "title": "Curves and Surfaces",
+  "credits": 0.5,
+  "prerequisites_raw": "[( MAT224H5 or MAT240H5 ) and ( MAT232H5 or MAT233H5 )] or MAT257Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT233H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "MAT363H1 or MAT367H1 or MATC63H3 or MATD26H3 or MATD67H3",
+  "corequisites_raw": null
+}

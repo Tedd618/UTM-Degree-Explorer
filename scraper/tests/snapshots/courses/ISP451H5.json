@@ -1,0 +1,12 @@
+{
+  "code": "ISP451H5",
+  "title": "Special Topics in University Pedagogy",
+  "credits": 0.5,
+  "prerequisites_raw": "ISP100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ISP100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "PSY280H5",
+  "title": "Sensation and Perception: Where the World Meets the Brain",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY280H1 or PSYB51H3",
+  "corequisites_raw": null
+}

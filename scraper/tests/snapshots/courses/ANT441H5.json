@@ -1,0 +1,12 @@
+{
+  "code": "ANT441H5",
+  "title": "Advanced Bioarchaeology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT340H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT340H5"
+  },
+  "exclusions_raw": "ANTD35H3",
+  "corequisites_raw": null
+}

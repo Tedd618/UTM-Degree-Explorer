@@ -1,0 +1,12 @@
+{
+  "code": "HIS301H5",
+  "title": "North Africa and Western Asia Before World War I",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIS201H5"
+  },
+  "exclusions_raw": "HIS392H5 (Winter 2019 and Fall 2020)",
+  "corequisites_raw": null
+}

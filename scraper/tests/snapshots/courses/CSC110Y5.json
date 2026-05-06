@@ -1,0 +1,9 @@
+{
+  "code": "CSC110Y5",
+  "title": "Foundations of Computer Science 1",
+  "credits": 1.0,
+  "prerequisites_raw": "Minimum 70% in Grade 12 Advanced Functions (MHF4U)",
+  "prerequisites": [],
+  "exclusions_raw": "CSC108H5 or MAT102H5 or CSC108H1 or CSC110Y1 or CSC120H1 or CSC165H1 or CSCA08H3 or CSCA20H3 or CSCA67H3",
+  "corequisites_raw": null
+}

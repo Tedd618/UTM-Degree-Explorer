@@ -1,0 +1,21 @@
+{
+  "code": "BIO371H5",
+  "title": "Microbiology Lectures",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and BIO207H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO370Y5",
+  "corequisites_raw": null
+}

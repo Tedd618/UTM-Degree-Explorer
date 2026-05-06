@@ -1,0 +1,12 @@
+{
+  "code": "HIS385H5",
+  "title": "Orientalism and Occidentalism",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIS201H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

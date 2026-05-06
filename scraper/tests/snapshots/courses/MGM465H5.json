@@ -1,0 +1,12 @@
+{
+  "code": "MGM465H5",
+  "title": "Occupational Health & Safety",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT260H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT260H5"
+  },
+  "exclusions_raw": "IRE378H1 or MGHD24H3",
+  "corequisites_raw": null
+}

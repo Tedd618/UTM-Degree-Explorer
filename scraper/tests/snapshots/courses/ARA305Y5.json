@@ -1,0 +1,12 @@
+{
+  "code": "ARA305Y5",
+  "title": "Introductory Egyptian Colloquial Arabic",
+  "credits": 1.0,
+  "prerequisites_raw": "ARA212Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ARA212Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

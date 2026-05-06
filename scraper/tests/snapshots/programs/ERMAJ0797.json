@@ -1,0 +1,150 @@
+{
+  "code": "ERMAJ0797",
+  "name": "Cinema Studies",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7.5,
+      "max": null
+    },
+    "total_credits_note": "including CIN101H5 , CIN102H5 , ISP100H5 , and 6.0 additional credits from CIN and/or cross-listed courses. Within the 6.0 additional credits:",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "2.0 credits must be at the 200-level;",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "2.0 credits must be at the 300-level or above; and",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "0.5 must be at the 400-level.",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "At least 5.0 credits must be CIN courses. Students must take a minimum of 1.0 credits in courses dedicated to \u201cAuteurs,\u201d a minimum of 1.0 credits in courses dedicated to \u201cCinemas in Context,\u201d and a minimum of 1.0 credits in courses dedicated to \u201cGenres.\u201d A list of courses that count in each area is available on the Department website. Non-CIN courses may also count for credit in these areas with permission of the Undergraduate Counsellor.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 5,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Recommended Structure of Program Requirements:",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CIN101H5"
+              },
+              {
+                "type": "course",
+                "code": "CIN102H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          },
+          {
+            "type": "text",
+            "text": "an optional 0.5 CIN credit at the 200-level",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "Second Year: 1.5-2.0 credits of CIN (or cross-listed courses) at the 200- and/or 300-level",
+            "subject": "CIN",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "Third Year: 2.0 credits of CIN (or cross-listed courses) at the 200-level or above",
+            "subject": "CIN",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "Fourth Year: 2.0 credits of CIN (or cross-listed courses) at the 300-level or above, including at least 0.5 credit at the 400-level",
+            "subject": "CIN",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 0.5,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Cross-listed courses may count for up to 2.0 credits toward the CIN Major. Non-cross-listed courses with significant Cinema Studies content in other programs may be allowed to count for program credit only with permission, prior to enrolment, from the Undergraduate Counsellor.",
+      "Cross-listed courses: DRE350H5 Film Genres in Performance (HUM) DRE352H5 Stage to Screen (HUM) FRE393H5 French Society through Film (HUM) FRE397H5 Colonialism and Post-colonialism in French Cinema (HUM) GER353H5 German National Cinemas (HUM) GER354H5 Topics in German Cinema Studies (HUM) ITA242H5 Classics of Italian Cinema (HUM,INTLO) ITA247H5 Contemporary Italian Cinema II (HUM) ITA307H5 Modern Italian Literature and Cinema (HUM) ITA313H5 Quentin Tarantino and the Spaghetti Western Effect (HUM) ITA342H5 Post War Italian Cinema I: Mastering Neorealism (HUM) ITA343H5 Post War Italian Cinema II: Moving Beyond Neorealism (HUM) PHL221H5 Philosophy at the Movies (HUM) RLG331H5 Religion on Screen (HUM) SPA275H5 Latin American Cinema (HUM) VCC205H5 Monsters (HUM) VST410H5 or VST410Y5 Internship in Visual Studies (HUM)"
+    ]
+  }
+}

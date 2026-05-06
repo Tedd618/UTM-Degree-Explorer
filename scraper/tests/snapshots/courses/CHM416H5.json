@@ -1,0 +1,12 @@
+{
+  "code": "CHM416H5",
+  "title": "Separations, Chromatography and Microfluidics",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM311H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM311H5"
+  },
+  "exclusions_raw": "CHM416H1",
+  "corequisites_raw": null
+}

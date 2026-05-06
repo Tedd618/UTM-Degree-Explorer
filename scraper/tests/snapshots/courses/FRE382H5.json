@@ -1,0 +1,21 @@
+{
+  "code": "FRE382H5",
+  "title": "Advanced Language Practice: Written French",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE282H5 or a minimum grade of 77% in FSL406H5 or the equivalent as determined by the department's French Language Placement Test ( https://frenchpt.utm.utoronto.ca/ ).",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE282H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL406H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FSL420H1 or FSL422H1 . Not normally open to francophones and/or holders of the French baccalaureat but contingent on the results of the French Language Placement Test ( https://frenchpt.utm.utoronto.ca/ ).",
+  "corequisites_raw": null
+}

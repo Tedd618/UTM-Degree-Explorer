@@ -1,0 +1,12 @@
+{
+  "code": "LIN329H5",
+  "title": "Phonological Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN229H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN229H5"
+  },
+  "exclusions_raw": "LIN322H5 or LIN322H1 or LINC02H3",
+  "corequisites_raw": null
+}

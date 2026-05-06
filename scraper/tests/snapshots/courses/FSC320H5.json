@@ -1,0 +1,21 @@
+{
+  "code": "FSC320H5",
+  "title": "Forensic Psychopathology",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC220H5 and FSC271H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC220H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC271H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

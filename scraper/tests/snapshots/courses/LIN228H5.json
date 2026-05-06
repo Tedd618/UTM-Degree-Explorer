@@ -1,0 +1,12 @@
+{
+  "code": "LIN228H5",
+  "title": "Phonetics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN101H5"
+  },
+  "exclusions_raw": "LIN228H1 or LINB09H3",
+  "corequisites_raw": null
+}

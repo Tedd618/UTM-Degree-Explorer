@@ -1,0 +1,31 @@
+{
+  "code": "PHL354H5",
+  "title": "Philosophy of Mathematics",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL103H5 and PHL245H5 and (0.5 credit in PHL or CSC or MAT)",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": [
+          "PHL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL103H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL245H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHL344H5 and PHL354H1",
+  "corequisites_raw": null
+}

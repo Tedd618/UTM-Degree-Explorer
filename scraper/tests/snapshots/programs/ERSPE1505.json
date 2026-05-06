@@ -1,0 +1,304 @@
+{
+  "code": "ERSPE1505",
+  "name": "Forensic Psychology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 15,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "FSC239Y5"
+          },
+          {
+            "type": "course",
+            "code": "PSY100Y5"
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY201H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY202H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC271H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC220H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY210H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY220H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY230H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY240H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY270H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY280H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY290H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC300H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC302H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC303H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC316H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC320H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC330H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC335H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC360H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC370H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY309H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY328H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY340H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY341H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY393H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY344H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY346H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC481Y5"
+              },
+              {
+                "type": "course",
+                "code": "FSC482H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC483H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC484H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC485H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC407H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC302H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY329H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY369H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "FSC314H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC330H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC335H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC350H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC351H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC361H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC371H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC401H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC402H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC403H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC406H5"
+              },
+              {
+                "type": "course",
+                "code": "FSC407H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 credit from PSY 400 level series courses",
+            "subject": null,
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

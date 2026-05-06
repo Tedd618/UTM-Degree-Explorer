@@ -1,0 +1,12 @@
+{
+  "code": "PSY210H5",
+  "title": "Introduction to Developmental Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY210H1 or PSYB20H3 or PSYB21H3",
+  "corequisites_raw": null
+}

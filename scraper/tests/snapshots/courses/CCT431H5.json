@@ -1,0 +1,12 @@
+{
+  "code": "CCT431H5",
+  "title": "Drones, Robots, Artificial Intelligence",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum of 13.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

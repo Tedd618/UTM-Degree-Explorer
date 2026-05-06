@@ -1,0 +1,12 @@
+{
+  "code": "SOC231H5",
+  "title": "Classical Sociological Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOC201H1",
+  "corequisites_raw": null
+}

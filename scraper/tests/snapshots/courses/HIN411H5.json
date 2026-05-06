@@ -1,0 +1,12 @@
+{
+  "code": "HIN411H5",
+  "title": "Hindi Culture and Media",
+  "credits": 0.5,
+  "prerequisites_raw": "HIN313H5 or permission of instructor.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIN313H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "POL414H5",
+  "title": "The Future of Work",
+  "credits": 0.5,
+  "prerequisites_raw": "POL200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL200Y5"
+  },
+  "exclusions_raw": "POL485H5 (Winter 2021)",
+  "corequisites_raw": null
+}

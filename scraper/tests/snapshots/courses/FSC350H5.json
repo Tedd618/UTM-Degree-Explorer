@@ -1,0 +1,12 @@
+{
+  "code": "FSC350H5",
+  "title": "Special Topics in Forensic Science",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC239Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

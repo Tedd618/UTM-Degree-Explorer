@@ -1,0 +1,29 @@
+{
+  "code": "JAL453H5",
+  "title": "Language and Social Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT206H5 or JAL253H5 or LIN256H5 or permission of department",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JAL253H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT425H1 and ANT466H5",
+  "corequisites_raw": null
+}

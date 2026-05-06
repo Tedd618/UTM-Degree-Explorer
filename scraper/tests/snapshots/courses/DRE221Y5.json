@@ -1,0 +1,34 @@
+{
+  "code": "DRE221Y5",
+  "title": "Shakespeare",
+  "credits": 1.0,
+  "prerequisites_raw": "DRE121H5 or ENG121H5 , and DRE122H5 or ENG122H5 Students who do not meet the prerequisite may petition the department in writing for approval to take the course. See the guidelines for written petitions on the department website.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "DRE121H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ENG121H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "DRE122H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ENG122H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ENG220Y5 or DRE224H5 or DRE226H5 or DRE370H5",
+  "corequisites_raw": null
+}

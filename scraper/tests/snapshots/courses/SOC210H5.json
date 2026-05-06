@@ -1,0 +1,21 @@
+{
+  "code": "SOC210H5",
+  "title": "Canadian Criminal Justice",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5 and SOC109H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "SOC100H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "SOC109H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CRI205H1 or CRI210H1 or SOC209H5",
+  "corequisites_raw": null
+}

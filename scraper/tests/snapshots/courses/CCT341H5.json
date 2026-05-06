@@ -1,0 +1,12 @@
+{
+  "code": "CCT341H5",
+  "title": "Introduction to IT Consulting",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum of 8.0 credits.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

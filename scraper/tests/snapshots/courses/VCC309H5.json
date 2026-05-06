@@ -1,0 +1,12 @@
+{
+  "code": "VCC309H5",
+  "title": "Society and Spectacle",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5 or VCC201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "VCC101H5"
+  },
+  "exclusions_raw": "VCC209H5",
+  "corequisites_raw": null
+}

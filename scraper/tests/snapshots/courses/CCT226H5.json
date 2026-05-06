@@ -1,0 +1,34 @@
+{
+  "code": "CCT226H5",
+  "title": "Data Analysis I",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT109H5 and CCT110H5 and ( CCT111H5 or CCT112H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT109H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT110H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT111H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CCT112H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "ANT463H5",
+  "title": "Anthropologies of Water: On Meaning, Value, and Futures",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ENV100Y5 or permission of department",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ENV100Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,59 @@
+{
+  "code": "PSY474H5",
+  "title": "Special Topics in Human Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 300 level credit in Psychology including ( PSY315H5 or PSY374H5 or JLP315H5 or JLP383H5 or JLP384H5 ) and one of ( PSY312H5 or PSY315H5 or PSY316H5 or PSY319H5 or PSY374H5 or PSY379H5 or PSY384H5 or JLP315H5 or JLP383H5 or JLP384H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JLP315H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP383H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP384H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY316H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY319H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY379H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP315H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP383H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP384H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

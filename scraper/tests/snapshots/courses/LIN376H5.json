@@ -1,0 +1,21 @@
+{
+  "code": "LIN376H5",
+  "title": "Linguistic Phenomena in the World\u2019s Languages",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN229H5 and LIN232H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN229H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN232H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

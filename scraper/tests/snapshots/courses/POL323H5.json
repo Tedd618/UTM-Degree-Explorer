@@ -1,0 +1,12 @@
+{
+  "code": "POL323H5",
+  "title": "The Practice of Human Rights",
+  "credits": 0.5,
+  "prerequisites_raw": "POL322H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL322H5"
+  },
+  "exclusions_raw": "POL421H1 or POLC33H3",
+  "corequisites_raw": null
+}

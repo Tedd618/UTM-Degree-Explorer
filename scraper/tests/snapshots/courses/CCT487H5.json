@@ -1,0 +1,21 @@
+{
+  "code": "CCT487H5",
+  "title": "Advanced Communication Policy in a Global Context",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT206H5 and CCT332H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT332H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

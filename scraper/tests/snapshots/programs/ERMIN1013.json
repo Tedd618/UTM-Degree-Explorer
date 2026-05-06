@@ -1,0 +1,64 @@
+{
+  "code": "ERMIN1013",
+  "name": "Sociology",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Year 1",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "SOC100H5"
+          },
+          {
+            "type": "text",
+            "text": "Year 2",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 2.5,
+            "constraint": "at_least",
+            "description": "2.5 SOC credits at the 200 level",
+            "subject": "SOC",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "text",
+            "text": "Year 3",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 SOC credit at the 300 level",
+            "subject": "SOC",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

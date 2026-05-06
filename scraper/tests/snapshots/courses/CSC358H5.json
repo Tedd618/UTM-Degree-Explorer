@@ -1,0 +1,25 @@
+{
+  "code": "CSC358H5",
+  "title": "Principles of Computer Networks",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5 and CSC258H5 and CSC263H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC258H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC358H1 or CSC457H1",
+  "corequisites_raw": null
+}

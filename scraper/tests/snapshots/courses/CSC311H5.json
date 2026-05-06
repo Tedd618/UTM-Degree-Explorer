@@ -1,0 +1,47 @@
+{
+  "code": "CSC311H5",
+  "title": "Introduction to Machine Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC207H5 and ( MAT223H5 or MAT240H5 ) and MAT232H5 and ( STA246H5 or STA256H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC207H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT232H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CSC411H5 or CSC311H1 or CSCC11H3",
+  "corequisites_raw": null
+}

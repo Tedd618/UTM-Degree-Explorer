@@ -1,0 +1,12 @@
+{
+  "code": "GER300Y5",
+  "title": "Advanced German",
+  "credits": 1.0,
+  "prerequisites_raw": "GER200Y5 or GER201H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GER200Y5"
+  },
+  "exclusions_raw": "GER301H1",
+  "corequisites_raw": null
+}

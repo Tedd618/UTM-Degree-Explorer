@@ -1,0 +1,18 @@
+{
+  "code": "FAS330Y5",
+  "title": "Experimentation in Past and Present Techniques",
+  "credits": 1.0,
+  "prerequisites_raw": "Any FAS200 level course and 1.5 credits in FAH/VCC and permission of instructor",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 1.5,
+    "subjects": [
+      "and"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

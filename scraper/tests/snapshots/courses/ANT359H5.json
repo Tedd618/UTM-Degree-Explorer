@@ -1,0 +1,12 @@
+{
+  "code": "ANT359H5",
+  "title": "Sovereignty Matters: Indigenous North America in the 21st Century",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT204H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

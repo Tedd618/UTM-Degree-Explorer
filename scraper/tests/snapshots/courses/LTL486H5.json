@@ -1,0 +1,21 @@
+{
+  "code": "LTL486H5",
+  "title": "Teaching and Learning Cross-Cultural Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "[ FRE225Y5 or FRE227H5 ] and [ FRE280Y5 or FRE282H5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE227H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FRE282H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LIN486H5",
+  "corequisites_raw": null
+}

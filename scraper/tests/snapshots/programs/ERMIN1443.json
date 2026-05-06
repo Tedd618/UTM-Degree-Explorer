@@ -1,0 +1,35 @@
+{
+  "code": "ERMIN1443",
+  "name": "Women, Gender and Sexuality Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "WGS101H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "WGS200Y5"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

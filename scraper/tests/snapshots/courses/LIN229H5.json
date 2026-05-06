@@ -1,0 +1,12 @@
+{
+  "code": "LIN229H5",
+  "title": "Phonological Patterns in Language",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN101H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "LIN101H5"
+  },
+  "exclusions_raw": "LIN229H1 or LINB04H3 .",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "ECO102H5",
+  "title": "Principles of Macroeconomics",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO101H5 or ECO101H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ECO101H5"
+  },
+  "exclusions_raw": "ECO100Y5 or ECO102H1 or ECO100Y1 or ECO105Y1 or MGEA05H3 or MGEA06H3",
+  "corequisites_raw": null
+}

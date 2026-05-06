@@ -1,0 +1,33 @@
+{
+  "code": "WRI365Y5",
+  "title": "Editing: Principles and Practice",
+  "credits": 1.0,
+  "prerequisites_raw": "WRI227H5 or WRI273H5 or WRI291H5 or WRI292H5 or WRI293H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "WRI227H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI273H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI291H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI292H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WRI293H5"
+      }
+    ]
+  },
+  "exclusions_raw": "WRI365H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,25 @@
+{
+  "code": "BIO326H5",
+  "title": "Ornithology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5 and BIO205H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "EEB386H1",
+  "corequisites_raw": null
+}

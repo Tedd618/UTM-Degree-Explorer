@@ -1,0 +1,21 @@
+{
+  "code": "AST325H5",
+  "title": "Observational Astronomy",
+  "credits": 0.5,
+  "prerequisites_raw": "AST221H5 and AST222H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "AST221H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "AST222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "AST325H1 or AST326Y1",
+  "corequisites_raw": null
+}

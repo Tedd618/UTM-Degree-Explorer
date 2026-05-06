@@ -1,0 +1,21 @@
+{
+  "code": "FSC420H5",
+  "title": "Field and Lab Methods in Forensic Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC220H5 and PSY344H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC220H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY344H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

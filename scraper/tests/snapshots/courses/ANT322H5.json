@@ -1,0 +1,21 @@
+{
+  "code": "ANT322H5",
+  "title": "Anthropology of Youth",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT207H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT322H1",
+  "corequisites_raw": null
+}

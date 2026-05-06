@@ -1,0 +1,12 @@
+{
+  "code": "ITA256H5",
+  "title": "Italian-Canadian Studies: Literature, Theatre, Cinema",
+  "credits": 0.5,
+  "prerequisites_raw": "Open to all students. If enrolled in an Italian Minor, Major or Specialist program: ITA100Y5 .",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA255Y5",
+  "corequisites_raw": null
+}

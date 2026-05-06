@@ -1,0 +1,42 @@
+{
+  "code": "ERS303H5",
+  "title": "Geophysics",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS202H5 and ( MAT132H5 or MAT135H5 or MAT137H5 or MAT137Y5 or PHY136H5 or PHY146H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS202H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT132H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT135H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT137H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PHY146H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "JPE395H1",
+  "corequisites_raw": null
+}

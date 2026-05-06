@@ -1,0 +1,12 @@
+{
+  "code": "MGT353H5",
+  "title": "Introduction to Marketing Management",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT252H5 or MGM252H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT252H5"
+  },
+  "exclusions_raw": "RSM251H1",
+  "corequisites_raw": null
+}

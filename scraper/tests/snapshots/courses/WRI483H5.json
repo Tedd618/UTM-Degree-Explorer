@@ -1,0 +1,18 @@
+{
+  "code": "WRI483H5",
+  "title": "Character, Narrator and Psychic Space",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 WRI credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 2.0,
+    "subjects": [
+      "WRI"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

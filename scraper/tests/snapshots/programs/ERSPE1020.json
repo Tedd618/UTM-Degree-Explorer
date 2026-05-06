@@ -1,0 +1,322 @@
+{
+  "code": "ERSPE1020",
+  "name": "Ecology and Evolution",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14.5,
+      "max": null
+    },
+    "total_credits_note": "including at least 6.0 credits at the 300/400 level, of which 1.0 credits must be at the 400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLA201H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY137H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY100Y5"
+              },
+              {
+                "type": "course",
+                "code": "WRI173H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI307H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO325H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO326H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO339H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO353H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO354H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO356H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO370Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO371H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO332H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO416H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO444H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO311H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO329H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO330H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO331H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO333H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO337Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO341H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO357H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO361H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO373H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO376H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO378H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO406H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO424H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO427H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO445H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO464H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "STA302H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR278H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR311H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "( MAT132H5 and MAT134H5 ) Calculus for Life Sciences is highly recommended.",
+      "Second Year:",
+      "BIO202H5 and BIO203H5 and BIO205H5 and BIO206H5 and BIO207H5 and BIO259H5",
+      "Third and Fourth Years:",
+      "BIO313H5 and BIO342H5 and BIO360H5 and BIO443H5",
+      "1.0 credit from courses in organismal biology: BIO325H5 or BIO326H5 or BIO339H5 or BIO353H5 or BIO354H5 or BIO356H5 or ( BIO370Y5 or BIO371H5 )",
+      "0.5 credit from field courses: BIO332H5 or BIO416H5 or BIO444H5 or other 2-week Ontario Universities Program in Field Biology (OUPFB) courses",
+      "2.0 credits from core ecology/evolutionary biology courses: BIO311H5 or BIO329H5 or BIO330H5 or BIO331H5 or BIO333H5 or BIO337Y5 or BIO341H5 or BIO357H5 or BIO361H5 or BIO373H5 or BIO376H5 or BIO378H5 or BIO406H5 or BIO424H5 or BIO427H5 or BIO445H5 or BIO464H5 or JBH471H5",
+      "1.0 credit from other UTM biology courses at the 300/400 level.",
+      "1.0 credit from related courses from other departments: MAT232H5 or STA302H5 or GGR227H5 or GGR278H5 or GGR305H5 or GGR307H5 or GGR309H5 or GGR311H5 or from courses listed in #4, #5 and #6"
+    ]
+  }
+}

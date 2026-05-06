@@ -1,0 +1,21 @@
+{
+  "code": "FRE227H5",
+  "title": "Teaching and Learning a Second/Foreign Language",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE181H5 or FSL305Y5 or FSL306H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE181H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL306H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FRE225Y5",
+  "corequisites_raw": null
+}

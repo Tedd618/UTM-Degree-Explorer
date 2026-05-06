@@ -1,0 +1,25 @@
+{
+  "code": "DRS325H5",
+  "title": "Production 1",
+  "credits": 0.5,
+  "prerequisites_raw": "DRS222H5 and ( DRE200H5 or DRS220H5 ) and DRE222H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "DRS222H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "DRE200H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "DRE222H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

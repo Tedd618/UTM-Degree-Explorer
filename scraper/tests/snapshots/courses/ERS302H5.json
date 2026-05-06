@@ -1,0 +1,30 @@
+{
+  "code": "ERS302H5",
+  "title": "Tectonics",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS202H5 and 1.0 credits from ( ERS201H5 or ERS203H5 or ERS211H5 or ERS225H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "ERS201H5",
+          "ERS203H5",
+          "ERS211H5",
+          "ERS225H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS202H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ESS445H1",
+  "corequisites_raw": null
+}

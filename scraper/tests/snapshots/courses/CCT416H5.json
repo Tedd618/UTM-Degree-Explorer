@@ -1,0 +1,21 @@
+{
+  "code": "CCT416H5",
+  "title": "Social Data Analytics",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT203H5 or CCT208H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT203H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT208H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

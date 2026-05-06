@@ -1,0 +1,34 @@
+{
+  "code": "LIN311H5",
+  "title": "Linguistics and Poetics",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN101H5 and LIN102H5 and ( LIN228H5 or LIN229H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN102H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN228H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN229H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "LIN211H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "FSC340H5",
+  "title": "Research Design",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC271H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FSC271H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

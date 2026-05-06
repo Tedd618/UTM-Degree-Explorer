@@ -1,0 +1,31 @@
+{
+  "code": "SOC455H5",
+  "title": "Comparative Indigenous Politics",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 SSC credit, including 0.5 credit at the 300-level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "SSC"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "SOC445H5 (L0101) Advanced Topics in Sociology: Comparative Indigenous Politics (Fall 2018), SOC445H5 (L0102) Advanced Topics in Sociology: Comparative Indigenous Politics (Winter 2019)",
+  "corequisites_raw": null
+}

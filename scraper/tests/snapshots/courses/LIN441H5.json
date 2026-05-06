@@ -1,0 +1,21 @@
+{
+  "code": "LIN441H5",
+  "title": "Computing Meaning",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN237H5 and LIN340H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN237H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN340H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

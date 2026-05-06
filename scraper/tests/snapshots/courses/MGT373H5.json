@@ -1,0 +1,42 @@
+{
+  "code": "MGT373H5",
+  "title": "Predictive Analytics",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT201H5 and [ ECO220Y5 or MGT218H5 or STA218H5 or (1.0 credit from STA256H5 or STA258H5 or STA260H5 )]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "STA256H5",
+          "STA258H5",
+          "STA260H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ECO220Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT218H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MGT311H5 (Winter 2021 or Winter 2022) or MGT417H5 (Winter 2021 or Winter 2022 or Winter 2023)",
+  "corequisites_raw": null
+}

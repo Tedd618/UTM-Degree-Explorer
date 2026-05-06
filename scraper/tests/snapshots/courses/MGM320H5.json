@@ -1,0 +1,21 @@
+{
+  "code": "MGM320H5",
+  "title": "Financial Statement Analysis and Interpretation",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT231H5 and ( MGT120H5 or MGM221H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGT120H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT324H5 or MGT336H5",
+  "corequisites_raw": null
+}

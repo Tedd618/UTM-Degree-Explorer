@@ -1,0 +1,30 @@
+{
+  "code": "FRE399Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "FRE227H5 and ( FRE240H5 or FRE272H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE227H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FRE240H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FRE272H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

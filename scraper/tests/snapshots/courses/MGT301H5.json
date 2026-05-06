@@ -1,0 +1,12 @@
+{
+  "code": "MGT301H5",
+  "title": "Coding and Data Mining for Business Analytics",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT201H5"
+  },
+  "exclusions_raw": "MGT458H5",
+  "corequisites_raw": null
+}

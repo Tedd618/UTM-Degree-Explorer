@@ -1,0 +1,27 @@
+{
+  "code": "ENG315H5",
+  "title": "Special Topic in Nineteenth-Century British Literature",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credit in ENG and 3 additional credits.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "ENG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

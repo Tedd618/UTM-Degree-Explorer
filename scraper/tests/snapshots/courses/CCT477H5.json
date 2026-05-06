@@ -1,0 +1,12 @@
+{
+  "code": "CCT477H5",
+  "title": "UX Design - Understanding Users",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT380H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT380H5"
+  },
+  "exclusions_raw": "CCT485H5",
+  "corequisites_raw": null
+}

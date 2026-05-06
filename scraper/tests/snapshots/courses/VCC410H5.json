@@ -1,0 +1,21 @@
+{
+  "code": "VCC410H5",
+  "title": "The Collective Afterlife of Things",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5 and a minimum of 1.0 credit in VCC at the 300//400 level.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

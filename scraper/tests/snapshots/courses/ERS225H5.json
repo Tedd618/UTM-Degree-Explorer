@@ -1,0 +1,21 @@
+{
+  "code": "ERS225H5",
+  "title": "Earth as a Laboratory: How Earth Scientists Study Our Planet (Field Course)",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS101H5 or ERS120H5 or ERS111H5 or ERS103H5 or ENV100H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS111H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ERS325H5 or ERS425H5 or ESS234H1 or ESS324H1",
+  "corequisites_raw": null
+}

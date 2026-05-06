@@ -1,0 +1,12 @@
+{
+  "code": "STA380H5",
+  "title": "Computational Statistics",
+  "credits": 0.5,
+  "prerequisites_raw": "STA260H5 or STA238H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA260H5"
+  },
+  "exclusions_raw": "STA312H5 (Winter 2020 or Winter 2022) or STA410H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "BIO404H5",
+  "title": "Invertebrate Neurobiology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO304H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO304H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

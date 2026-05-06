@@ -1,0 +1,12 @@
+{
+  "code": "MGT223H5",
+  "title": "Managerial Accounting I",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT120H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT120H5"
+  },
+  "exclusions_raw": "RSM222H1 or MGAB03H3 or MGM222H5",
+  "corequisites_raw": null
+}

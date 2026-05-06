@@ -1,0 +1,12 @@
+{
+  "code": "WRI363H5",
+  "title": "Communicating in a World of Data",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 8.0 credits with a minimum CGPA of 2.0",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

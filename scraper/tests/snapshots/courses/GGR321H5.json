@@ -1,0 +1,21 @@
+{
+  "code": "GGR321H5",
+  "title": "Advanced GIScience",
+  "credits": 0.5,
+  "prerequisites_raw": "8.5 credits and GGR278H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.5
+      },
+      {
+        "type": "COURSE",
+        "code": "GGR278H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "POL404H5",
+  "title": "Political Theory for the Present",
+  "credits": 0.5,
+  "prerequisites_raw": "POL200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL200Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

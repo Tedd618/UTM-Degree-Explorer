@@ -1,0 +1,12 @@
+{
+  "code": "MGM364H5",
+  "title": "Labour Relations",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT260H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MGT260H5"
+  },
+  "exclusions_raw": "ECO244Y5 or IRE244H1 or MGHC53H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,25 @@
+{
+  "code": "HSC307H5",
+  "title": "Visual Presentation Design for Life Sciences",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5 and HSC200H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HSC200H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

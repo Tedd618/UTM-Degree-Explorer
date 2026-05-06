@@ -1,0 +1,30 @@
+{
+  "code": "FAH382H5",
+  "title": "Artists and Craftsmen from the Muslim World",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and FAH281H5 or FAH282H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH101H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH281H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH282H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FAH395H5 - Topics course: Artists and Craftsmen from the Muslim World",
+  "corequisites_raw": null
+}

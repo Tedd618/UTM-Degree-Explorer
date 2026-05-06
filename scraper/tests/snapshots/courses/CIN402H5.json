@@ -1,0 +1,25 @@
+{
+  "code": "CIN402H5",
+  "title": "Avant-Garde Film and Video",
+  "credits": 0.5,
+  "prerequisites_raw": "( CIN101H5 or CIN202H5 ) and 1.0 credits at the 300 level in CIN or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "CIN101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

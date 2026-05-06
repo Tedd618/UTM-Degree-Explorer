@@ -1,0 +1,33 @@
+{
+  "code": "POL448H5",
+  "title": "Protest and Social Movements in Comparative and Transnational Perspective",
+  "credits": 0.5,
+  "prerequisites_raw": "4.0 POL credits, including 1.0 POL credit at the 300-level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 4.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "POL443Y5 (2018-2019; Winter 2020; 2020-2021; 2021-2022; 2023-2024)",
+  "corequisites_raw": null
+}

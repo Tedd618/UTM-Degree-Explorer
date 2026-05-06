@@ -1,0 +1,27 @@
+{
+  "code": "POL312H5",
+  "title": "Managing Military Conflict",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 credits in POL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "POL310Y5 or POLC09H3",
+  "corequisites_raw": null
+}

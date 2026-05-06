@@ -1,0 +1,21 @@
+{
+  "code": "HIS393H5",
+  "title": "Slavery and the American South",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS271H5 or HIS272H5 or HIS272Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "HIS271H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS272H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

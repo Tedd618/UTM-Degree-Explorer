@@ -1,0 +1,12 @@
+{
+  "code": "ECO321H5",
+  "title": "Economic Analysis of Law: Part 2",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO320H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ECO320H5"
+  },
+  "exclusions_raw": "ECO320Y5",
+  "corequisites_raw": null
+}

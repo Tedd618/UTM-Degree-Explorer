@@ -1,0 +1,21 @@
+{
+  "code": "GGR201H5",
+  "title": "Introduction to Geomorphology",
+  "credits": 0.5,
+  "prerequisites_raw": "GGR112H5 or ENV100Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "GGR112H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ENV100Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "GGR201H1",
+  "corequisites_raw": null
+}

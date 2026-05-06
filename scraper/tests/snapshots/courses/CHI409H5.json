@@ -1,0 +1,21 @@
+{
+  "code": "CHI409H5",
+  "title": "Influence of Confucianism on Chinese Culture",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI211H5 and CHI212H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHI211H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHI212H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

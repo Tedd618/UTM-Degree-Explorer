@@ -1,0 +1,12 @@
+{
+  "code": "PHL447H5",
+  "title": "Seminar in Philosophy of Logic",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHL345H5 and 3.0 credits of PHL) or by permission of the Instructor or Department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL345H5"
+  },
+  "exclusions_raw": "PHL451H5",
+  "corequisites_raw": null
+}

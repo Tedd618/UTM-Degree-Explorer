@@ -1,0 +1,12 @@
+{
+  "code": "ARA400Y5",
+  "title": "Advanced Arabic for Heritage Learners",
+  "credits": 1.0,
+  "prerequisites_raw": "ARA300Y5 or appropriate language level as indicated by the Arabic Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ARA300Y5"
+  },
+  "exclusions_raw": "ARA412Y5 and NML410Y1",
+  "corequisites_raw": null
+}

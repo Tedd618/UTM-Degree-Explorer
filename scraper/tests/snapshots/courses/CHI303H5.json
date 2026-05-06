@@ -1,0 +1,12 @@
+{
+  "code": "CHI303H5",
+  "title": "Intermediate High Chinese I",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI204H5 or as indicated by the Chinese Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment\u2026 ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHI204H5"
+  },
+  "exclusions_raw": "CHI201H5 and CHI202H5 and LGGC60H3 and LGGC61H3 and EAS300Y1 .",
+  "corequisites_raw": null
+}

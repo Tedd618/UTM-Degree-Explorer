@@ -1,0 +1,12 @@
+{
+  "code": "PSY480H5",
+  "title": "Special Topics in Perception",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY280H5 and 1.0 300 level credit in Psychology",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY280H5"
+  },
+  "exclusions_raw": "PSY480H1 or PSYD51H3",
+  "corequisites_raw": null
+}

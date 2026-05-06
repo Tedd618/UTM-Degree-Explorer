@@ -1,0 +1,21 @@
+{
+  "code": "ANT439H5",
+  "title": "Advanced Forensic Anthropology",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT205H5 and ANT334H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT205H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT334H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CSC469H5",
+  "title": "Operating Systems Design and Implementation",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC369H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC369H5"
+  },
+  "exclusions_raw": "CSC469H1",
+  "corequisites_raw": null
+}

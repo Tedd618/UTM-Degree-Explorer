@@ -1,0 +1,21 @@
+{
+  "code": "CSC379H5",
+  "title": "Introduction to Medical Robotics",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC209H5 and CSC376H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC209H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC376H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC496H5 (Winter 2024)",
+  "corequisites_raw": null
+}

@@ -1,0 +1,29 @@
+{
+  "code": "JAL355H5",
+  "title": "Language and Gender",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN256H5 or JAL253H5 or ANT204H5 or WGS200Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "JAL253H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "WGS200Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "JAL355H1 or LINC28H3 or WSTC28H3",
+  "corequisites_raw": null
+}

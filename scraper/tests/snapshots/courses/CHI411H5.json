@@ -1,0 +1,12 @@
+{
+  "code": "CHI411H5",
+  "title": "Theory and Practice in English/Chinese Translation",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI211H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHI211H5"
+  },
+  "exclusions_raw": "ECTB61H3",
+  "corequisites_raw": null
+}

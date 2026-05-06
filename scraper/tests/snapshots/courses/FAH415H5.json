@@ -1,0 +1,21 @@
+{
+  "code": "FAH415H5",
+  "title": "Theory and Criticism of Photography",
+  "credits": 0.5,
+  "prerequisites_raw": "FAH101H5 and ( FAH291H5 or FAH391H5 ) and a minimum of 0.5 at the 300/400 level in FAH",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH291H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

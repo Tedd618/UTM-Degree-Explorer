@@ -1,0 +1,34 @@
+{
+  "code": "CSC478H5",
+  "title": "Robotic Perception",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC373H5 and ( CSC311H5 or CSC413H5 ) and CSC376H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC373H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CSC311H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CSC413H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC376H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC498H5 (Winter 2022)",
+  "corequisites_raw": null
+}

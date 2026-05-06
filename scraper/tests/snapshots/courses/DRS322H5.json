@@ -1,0 +1,12 @@
+{
+  "code": "DRS322H5",
+  "title": "Acting 6",
+  "credits": 0.5,
+  "prerequisites_raw": "DRS321H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "DRS321H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

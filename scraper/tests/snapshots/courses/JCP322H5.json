@@ -1,0 +1,12 @@
+{
+  "code": "JCP322H5",
+  "title": "Statistical Mechanics",
+  "credits": 0.5,
+  "prerequisites_raw": "JCP321H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "JCP321H5"
+  },
+  "exclusions_raw": "CHM328H1 or PHY452H1 or CHMC20H3",
+  "corequisites_raw": null
+}

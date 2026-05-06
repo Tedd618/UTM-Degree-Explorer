@@ -1,0 +1,25 @@
+{
+  "code": "CSC409H5",
+  "title": "Scalable Computing",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC309H5 and CSC369H5 and CSC373H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC309H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC369H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC373H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

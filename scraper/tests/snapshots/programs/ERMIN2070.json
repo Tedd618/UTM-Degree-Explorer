@@ -1,0 +1,137 @@
+{
+  "code": "ERMIN2070",
+  "name": "Geography",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": ":",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR201H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR214H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR217H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR304H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR315H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR316H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR317H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR338H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR374H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR376H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR377H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR379H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR383H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR384H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR404H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR406H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR407H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR417Y5"
+              },
+              {
+                "type": "course",
+                "code": "GGR479H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR484H5"
+              },
+              {
+                "type": "course",
+                "code": "JEG400Y5"
+              },
+              {
+                "type": "course",
+                "code": "JGE378H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

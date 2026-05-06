@@ -1,0 +1,148 @@
+{
+  "code": "ERMAJ1040",
+  "name": "Technology, Coding & Society",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": "including at least 3.5 at the 300/400 level. Program must be taken in combination with another major or two minors.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT109H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT110H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT111H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT204H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT205H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT208H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT211H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT202H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT226H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT285H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT286H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI293H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT320H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT380H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT432H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT477H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT308H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT382H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT383H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT410H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT416H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT478H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

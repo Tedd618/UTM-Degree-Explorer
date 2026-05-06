@@ -1,0 +1,48 @@
+{
+  "code": "LIN387H5",
+  "title": "Theoretical Issues in Teaching and Learning Second Language Vocabulary",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credit from LIN228H5 or LIN229H5 or LIN231H5 or LIN232H5 or LIN237H5 or ( LIN256H5 or JAL253H5 ) or JLP285H5 (formerly LIN288H5 ).",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "LIN228H5",
+          "LIN229H5",
+          "LIN231H5",
+          "LIN232H5",
+          "LIN237H5"
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "LIN256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JAL253H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "LTL387H5",
+  "corequisites_raw": null
+}

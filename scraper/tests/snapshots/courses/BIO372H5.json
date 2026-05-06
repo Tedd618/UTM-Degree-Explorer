@@ -1,0 +1,25 @@
+{
+  "code": "BIO372H5",
+  "title": "Molecular Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and BIO207H5 and CHM242H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM242H5"
+      }
+    ]
+  },
+  "exclusions_raw": "JBC372H5 or CHM360Y5 or JLM349H1 or MGB311Y1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,43 @@
+{
+  "code": "FAH472H5",
+  "title": "Early Modern Mobile Objects",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 and FAH274H5 ) or FAH279H5 and 1.0 credit in FAH/VCC at the 300/400 level or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "FAH101H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "FAH274H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "FAH279H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

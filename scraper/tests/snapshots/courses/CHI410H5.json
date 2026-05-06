@@ -1,0 +1,21 @@
+{
+  "code": "CHI410H5",
+  "title": "Modern Chinese Literature Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI211H5 and CHI212H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHI211H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHI212H5"
+      }
+    ]
+  },
+  "exclusions_raw": "EAS284H1 or EAS309H1 or EAS334H1",
+  "corequisites_raw": null
+}

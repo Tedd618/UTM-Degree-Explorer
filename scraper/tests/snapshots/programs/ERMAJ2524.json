@@ -1,0 +1,111 @@
+{
+  "code": "ERMAJ2524",
+  "name": "Italian",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8,
+      "max": null
+    },
+    "total_credits_note": "including at least 2.0 credits at the 300/400 level. Some written work and readings will be done in Italian in all courses",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA201Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA350H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA420H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA421H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA437H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA451H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA351H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA352H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA450H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit in Italian Cinema",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit in Italian Culture; Literature (excluding those listed above).",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit in any of the Italian course categories (excluding those listed above).",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

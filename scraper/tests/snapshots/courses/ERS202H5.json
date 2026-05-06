@@ -1,0 +1,12 @@
+{
+  "code": "ERS202H5",
+  "title": "Dynamic Earth",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS201H5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ERS201H5"
+  },
+  "exclusions_raw": "ESS241H1",
+  "corequisites_raw": null
+}

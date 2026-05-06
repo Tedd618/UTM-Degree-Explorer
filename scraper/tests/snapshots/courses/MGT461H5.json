@@ -1,0 +1,28 @@
+{
+  "code": "MGT461H5",
+  "title": "Negotiations",
+  "credits": 0.5,
+  "prerequisites_raw": "3.0 credits of MGM or MGT at the 200-level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 3.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 3.0,
+        "subjects": [
+          "MGM",
+          "MGT"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "MGHC52H3 or RSM461H1",
+  "corequisites_raw": null
+}

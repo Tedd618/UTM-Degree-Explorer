@@ -1,0 +1,12 @@
+{
+  "code": "ECO399H5",
+  "title": "Research Opportunity Program",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum of 10.0 credits completed.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 10.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,31 @@
+{
+  "code": "ERS301H5",
+  "title": "Geochemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "1.5 credits from ( ERS201H5 or ERS202H5 or ERS203H5 or ERS211H5 or ERS225H5 ) or permission of instructor.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "ERS201H5",
+          "ERS202H5",
+          "ERS203H5",
+          "ERS211H5",
+          "ERS225H5"
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ENV233H1 or ESS311H1",
+  "corequisites_raw": null
+}

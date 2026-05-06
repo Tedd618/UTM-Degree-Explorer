@@ -1,0 +1,130 @@
+{
+  "code": "CHM399Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "8.0 credits, including CHM110H5 and CHM120H5 with a minimum grade of 60% and [( MAT132H5 and MAT134H5 ) or ( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 ) or ( MAT157H5 and MAT159H5 ) or ( MAT134Y5 or MAT135Y5 or MAT137Y5 or MAT157Y5 )] and 2.0 credit of CHM/ JCP at the 200-level.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CHM110H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CHM120H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT132H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT134H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT135H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT137H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT157H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          }
+        ]
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": [
+          "CHM",
+          "JCP"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT134H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT157H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT159H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

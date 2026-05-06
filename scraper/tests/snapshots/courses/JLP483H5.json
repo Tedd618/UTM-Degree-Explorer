@@ -1,0 +1,50 @@
+{
+  "code": "JLP483H5",
+  "title": "Topics in Adult Psycholinguistics",
+  "credits": 0.5,
+  "prerequisites_raw": "JLP285H5 /equivalent and 1.0 credit from the following list: LIN318H5 or LIN328H5 or LIN329H5 or LIN332H5 or LIN385H5 or LIN418H5 or LIN421H5 or any JLP course",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN318H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN328H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN329H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN332H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN385H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN418H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN421H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

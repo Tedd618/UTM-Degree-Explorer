@@ -1,0 +1,12 @@
+{
+  "code": "ITA436Y5",
+  "title": "The 18th Century in Italy",
+  "credits": 1.0,
+  "prerequisites_raw": "ITA200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA200Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

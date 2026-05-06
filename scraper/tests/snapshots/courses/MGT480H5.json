@@ -1,0 +1,25 @@
+{
+  "code": "MGT480H5",
+  "title": "Internship",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credit at the 300/400 level and 2.5 CGPA and 14.0 credits. Prerequisites must be met before the application due date.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "ECO400Y5 and MGT480Y5",
+  "corequisites_raw": null
+}

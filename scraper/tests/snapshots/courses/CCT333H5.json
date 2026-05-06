@@ -1,0 +1,12 @@
+{
+  "code": "CCT333H5",
+  "title": "Social Innovation",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT250H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT250H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

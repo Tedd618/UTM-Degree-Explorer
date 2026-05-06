@@ -1,0 +1,21 @@
+{
+  "code": "FSC403H5",
+  "title": "Forensic Analytical Toxicology",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5 and CHM211H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC239Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM211H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

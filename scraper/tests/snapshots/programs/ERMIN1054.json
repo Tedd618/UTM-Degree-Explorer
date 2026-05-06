@@ -1,0 +1,33 @@
+{
+  "code": "ERMIN1054",
+  "name": "Francophone Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 2,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 FSL credits plus 2.0 FRC credits including 1.0 at the 300 level.",
+            "subject": "FSL",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

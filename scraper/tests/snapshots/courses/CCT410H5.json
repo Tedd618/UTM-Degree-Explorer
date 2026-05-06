@@ -1,0 +1,12 @@
+{
+  "code": "CCT410H5",
+  "title": "CCIT Internship I",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 13.0 credits with a minimum CGPA of 2.5 and approval of the internship coordinator/instructor, and evidence of additional career development (e.g. workshops, networking events, and professional communication with faculty, librarians, staff, and peers).",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "CCT409H5 and WRI410H5 .",
+  "corequisites_raw": null
+}

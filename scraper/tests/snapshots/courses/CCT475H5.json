@@ -1,0 +1,21 @@
+{
+  "code": "CCT475H5",
+  "title": "Thesis in Integrated Learning in Digital Media, Communication, and Technology",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT273H5 and CCT373H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT273H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT373H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

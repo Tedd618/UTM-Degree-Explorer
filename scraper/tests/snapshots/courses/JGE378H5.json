@@ -1,0 +1,12 @@
+{
+  "code": "JGE378H5",
+  "title": "Natural Hazards",
+  "credits": 0.5,
+  "prerequisites_raw": "9.0 credits",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 9.0
+  },
+  "exclusions_raw": "GGR378H5 or ERS317H5",
+  "corequisites_raw": null
+}

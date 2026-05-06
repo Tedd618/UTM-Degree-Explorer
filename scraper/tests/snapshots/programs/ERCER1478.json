@@ -1,0 +1,37 @@
+{
+  "code": "ERCER1478",
+  "name": "Certificate in Advanced Economics",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": {
+      "min": 2,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ECO325H5"
+          },
+          {
+            "type": "course",
+            "code": "ECO326H5"
+          },
+          {
+            "type": "course",
+            "code": "ECO375H5"
+          },
+          {
+            "type": "course",
+            "code": "ECO475H5"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

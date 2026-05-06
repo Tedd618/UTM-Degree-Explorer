@@ -1,0 +1,56 @@
+{
+  "code": "ENV430H5",
+  "title": "Environmental Law and Policy",
+  "credits": 0.5,
+  "prerequisites_raw": "14 credits including ( GGR111H5 and GGR112H5 ) or ENV100Y5 or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 14.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR111H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR112H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ENV100Y5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "GGR111H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "GGR112H5"
+              }
+            ]
+          },
+          {
+            "type": "COURSE",
+            "code": "ENV100Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

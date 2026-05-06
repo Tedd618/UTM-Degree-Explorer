@@ -1,0 +1,29 @@
+{
+  "code": "FAH490H5",
+  "title": "Topics in Ancient Art and Architecture",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) and ( FAH203H5 or FAH204H5 or FAH205H5 ) and 1.0 credits in FAH/VCC at the 300/400 level",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

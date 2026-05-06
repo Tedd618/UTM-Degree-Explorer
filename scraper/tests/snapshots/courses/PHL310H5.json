@@ -1,0 +1,27 @@
+{
+  "code": "PHL310H5",
+  "title": "Topics in 17th and 18th Century Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "1.5 credits in PHL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.5
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "PHL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "PHL309H5 or PHL310H1 or PHL311H1 or PHL313H5",
+  "corequisites_raw": null
+}

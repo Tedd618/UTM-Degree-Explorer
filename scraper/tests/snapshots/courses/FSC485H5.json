@@ -1,0 +1,33 @@
+{
+  "code": "FSC485H5",
+  "title": "Professional Opportunity in Forensic Science",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of ( ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5 ) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Students seeking 'crime scene' related experiences must have completed FSC302H5 or FSC303H5 . Course application is required. See the Forensic Science Program website for details.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT407H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO259H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC341H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "STA220H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FSC481Y5 or FSC483H5 or FSC484H5",
+  "corequisites_raw": null
+}

@@ -1,0 +1,27 @@
+{
+  "code": "POL314H5",
+  "title": "European Politics II",
+  "credits": 0.5,
+  "prerequisites_raw": "2.0 credits in POL",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 2.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 2.0,
+        "subjects": [
+          "POL"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "POL302Y5 or POL207Y1 or POL324H1 or POLB93H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,39 @@
+{
+  "code": "MAT236H5",
+  "title": "Vector Calculus",
+  "credits": 0.5,
+  "prerequisites_raw": "( MAT223H5 or MAT240H5 ) and ( MAT232H5 or MAT233H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT232H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT233H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MAT235Y1 or MAT237Y1 or MAT257Y1 or MAT257Y5 or MATB42H3",
+  "corequisites_raw": null
+}

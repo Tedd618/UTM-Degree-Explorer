@@ -1,0 +1,21 @@
+{
+  "code": "BIO368H5",
+  "title": "Medicinal Plants and Human Health",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO203H5 and BIO206H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO203H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      }
+    ]
+  },
+  "exclusions_raw": "NFS400H1",
+  "corequisites_raw": null
+}

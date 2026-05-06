@@ -1,0 +1,25 @@
+{
+  "code": "LIN458H5",
+  "title": "Analyzing Sociolinguistic Variation",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN256H5 , plus 0.5 credit in a 300-level LIN course",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 300,
+        "max_level": 399,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN256H5"
+      }
+    ]
+  },
+  "exclusions_raw": "LIN456H1",
+  "corequisites_raw": null
+}

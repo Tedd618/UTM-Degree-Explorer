@@ -1,0 +1,12 @@
+{
+  "code": "STA431H5",
+  "title": "Structural Equation Models",
+  "credits": 0.5,
+  "prerequisites_raw": "STA302H5 or STA302H",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "STA302H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

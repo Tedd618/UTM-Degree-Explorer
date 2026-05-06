@@ -1,0 +1,41 @@
+{
+  "code": "FAH455H5",
+  "title": "Photography and Humour",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or VCC101H5 ) and ( FAH291H5 or FAH391H5 ) and 1.0 credit in FAH or VCC at the 300/400 level or permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "FAH",
+          "VCC"
+        ],
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "FAH101H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "VCC101H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH291H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

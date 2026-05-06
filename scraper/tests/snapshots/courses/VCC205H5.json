@@ -1,0 +1,9 @@
+{
+  "code": "VCC205H5",
+  "title": "Monsters",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "VCC340H5",
+  "corequisites_raw": null
+}

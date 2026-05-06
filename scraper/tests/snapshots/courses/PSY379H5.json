@@ -1,0 +1,38 @@
+{
+  "code": "PSY379H5",
+  "title": "Cognitive Psychology Laboratory",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 and PSY202H5 (or equivalent) and PSY309H5 and ( PSY270H5 or PSY274H5 or JLP285H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY309H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY270H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JLP285H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY379H1 or PSYC58H3",
+  "corequisites_raw": null
+}

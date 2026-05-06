@@ -1,0 +1,52 @@
+{
+  "code": "PHY351H5",
+  "title": "Climate Physics",
+  "credits": 0.5,
+  "prerequisites_raw": "( PHY136H5 and PHY137H5 ) or ( PHY146H5 and PHY147H5 ) and 1.0 credit from any 200-level courses from PHY, ERS, AST, GGR, or ENV",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "PHY137H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "PHY146H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "PHY147H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PHY392H1",
+  "corequisites_raw": null
+}

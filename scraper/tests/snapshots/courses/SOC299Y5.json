@@ -1,0 +1,12 @@
+{
+  "code": "SOC299Y5",
+  "title": "Research Opportunity Program",
+  "credits": 1.0,
+  "prerequisites_raw": "SOC100H5 and 2nd Year Standing and permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "Students may not take SOC299H5 and SOC299Y5 concurrently.",
+  "corequisites_raw": null
+}

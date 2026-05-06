@@ -1,0 +1,12 @@
+{
+  "code": "POL244H5",
+  "title": "Research Methods for Political Science II",
+  "credits": 0.5,
+  "prerequisites_raw": "POL243H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL243H5"
+  },
+  "exclusions_raw": "POL242Y5 or POL232H1",
+  "corequisites_raw": null
+}

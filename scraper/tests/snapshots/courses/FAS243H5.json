@@ -1,0 +1,12 @@
+{
+  "code": "FAS243H5",
+  "title": "Drawing II",
+  "credits": 0.5,
+  "prerequisites_raw": "FAS143H5 or permission of instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FAS143H5"
+  },
+  "exclusions_raw": "VIS205H1 or VIS211H1 or VIS305H1 or VPSB74",
+  "corequisites_raw": null
+}

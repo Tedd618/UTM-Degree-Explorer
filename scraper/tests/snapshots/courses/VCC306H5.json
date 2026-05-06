@@ -1,0 +1,12 @@
+{
+  "code": "VCC306H5",
+  "title": "Visual Culture and Colonialism",
+  "credits": 0.5,
+  "prerequisites_raw": "VCC101H5 or VCC201H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "VCC101H5"
+  },
+  "exclusions_raw": "VCC302H5",
+  "corequisites_raw": null
+}

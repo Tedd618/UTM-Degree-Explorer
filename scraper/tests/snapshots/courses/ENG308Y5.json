@@ -1,0 +1,12 @@
+{
+  "code": "ENG308Y5",
+  "title": "Romantic Poetry and Prose",
+  "credits": 1.0,
+  "prerequisites_raw": "1.0 credit of ENG and 3.0 additional credits.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 1.0
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

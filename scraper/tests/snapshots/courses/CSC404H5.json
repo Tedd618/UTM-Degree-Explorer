@@ -1,0 +1,25 @@
+{
+  "code": "CSC404H5",
+  "title": "Video Game Design",
+  "credits": 0.5,
+  "prerequisites_raw": "Two of ( CSC301H5 or CSC318H5 or CSC384H5 or CSC418H1 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC301H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC318H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC384H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC404H1",
+  "corequisites_raw": null
+}

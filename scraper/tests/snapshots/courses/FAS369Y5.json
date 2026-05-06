@@ -1,0 +1,57 @@
+{
+  "code": "FAS369Y5",
+  "title": "Performance-Based Art",
+  "credits": 1.0,
+  "prerequisites_raw": "FAS143H5 and FAS145H5 and FAS147H5 and FAS232H5 and FAS236H5 and FAS248H5 , and an additional 0.5 credit in FAS at the 200-level, and 1.5 credits in FAH/VCC/VST and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": [
+          "FAS"
+        ],
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.5,
+        "subjects": [
+          "and"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS143H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS145H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS147H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS232H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS236H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAS248H5"
+      }
+    ]
+  },
+  "exclusions_raw": "VIS303H1",
+  "corequisites_raw": null
+}

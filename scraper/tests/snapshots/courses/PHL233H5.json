@@ -1,0 +1,21 @@
+{
+  "code": "PHL233H5",
+  "title": "Philosophy for Scientists",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL103H5 or PHL113H5 or 4.0 credits.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHL103H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL113H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

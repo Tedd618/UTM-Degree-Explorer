@@ -1,0 +1,200 @@
+{
+  "code": "ERCER1287",
+  "name": "Certificate in Sustainability (U of T Sustainability Scholar)",
+  "type": "Certificate",
+  "completion": {
+    "total_credits": {
+      "min": 2,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENV210H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV310H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT433H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO302H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO303H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO313H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO315H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO320H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO321H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO324H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO326H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO333H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO335H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO336H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO343H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO362H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO373Y5"
+              },
+              {
+                "type": "course",
+                "code": "GGR202H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR209H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR252H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BIO412H5"
+          },
+          {
+            "type": "course",
+            "code": "ENV430H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ANT357H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT368H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT370H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT464H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS220H5"
+              },
+              {
+                "type": "course",
+                "code": "EDS250H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG259H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR265H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR385H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR415H5"
+              },
+              {
+                "type": "course",
+                "code": "JBH471H5"
+              },
+              {
+                "type": "course",
+                "code": "PHL273H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC304H5"
+              },
+              {
+                "type": "course",
+                "code": "SOC356H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC207H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC236H5"
+              },
+              {
+                "type": "course",
+                "code": "VCC410H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI375H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

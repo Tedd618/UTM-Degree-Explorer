@@ -1,0 +1,21 @@
+{
+  "code": "MGT218H5",
+  "title": "Quantitative Analysis for Management",
+  "credits": 0.5,
+  "prerequisites_raw": "MGM101H5 and MGM102H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGM101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MGM102H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ECO220Y5 and STA218H5",
+  "corequisites_raw": null
+}

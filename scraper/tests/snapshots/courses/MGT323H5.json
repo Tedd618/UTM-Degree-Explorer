@@ -1,0 +1,56 @@
+{
+  "code": "MGT323H5",
+  "title": "Managerial Accounting II",
+  "credits": 0.5,
+  "prerequisites_raw": "MGT223H5 and ECO220Y5 or ECO227Y5 or ( STA256H5 and STA258H5 ) or ( STA256H5 and STA260H5 )",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MGT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO220Y5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO227Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA258H5"
+          }
+        ]
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA260H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "RSM322H1 or MGAC03H3",
+  "corequisites_raw": null
+}

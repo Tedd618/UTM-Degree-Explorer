@@ -1,0 +1,34 @@
+{
+  "code": "FSC416H5",
+  "title": "Population Genetics",
+  "credits": 0.5,
+  "prerequisites_raw": "( ANT202H5 or BIO207H5 ) and BIO259H5 and FSC315H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "ANT202H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO207H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO259H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC315H5"
+      }
+    ]
+  },
+  "exclusions_raw": "EEB459H1",
+  "corequisites_raw": null
+}

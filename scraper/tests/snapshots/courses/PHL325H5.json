@@ -1,0 +1,12 @@
+{
+  "code": "PHL325H5",
+  "title": "Early Analytic Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL245H5 and 1.5 additional credits in PHL",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PHL245H5"
+  },
+  "exclusions_raw": "PHLC43H3",
+  "corequisites_raw": null
+}

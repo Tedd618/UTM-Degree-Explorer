@@ -1,0 +1,25 @@
+{
+  "code": "PHY137H5",
+  "title": "Physics for Life and Environmental Sciences II",
+  "credits": 0.5,
+  "prerequisites_raw": "PHY136H5 or PHY146H5 or a minimum grade of 70% in PHY100H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHY136H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY146H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHY100H5"
+      }
+    ]
+  },
+  "exclusions_raw": "PHY132H1 or PHY152H1 or PHYA21H3 or PHYA22H3",
+  "corequisites_raw": null
+}

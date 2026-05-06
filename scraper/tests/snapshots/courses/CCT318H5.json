@@ -1,0 +1,21 @@
+{
+  "code": "CCT318H5",
+  "title": "Sustainability and the Digital Enterprise",
+  "credits": 0.5,
+  "prerequisites_raw": "Minimum of 8.0 credits including CCT112H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 8.0
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

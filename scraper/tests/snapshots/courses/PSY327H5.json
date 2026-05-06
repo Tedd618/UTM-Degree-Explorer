@@ -1,0 +1,30 @@
+{
+  "code": "PSY327H5",
+  "title": "Psychology of Intimate Relationships",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and ( PSY220H5 or PSY230H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY220H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY230H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY424H1 or PSYD11H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,468 @@
+{
+  "code": "ERSPE1384",
+  "name": "International Affairs",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14.5,
+      "max": null
+    },
+    "total_credits_note": "of which at least 1.0 must be at the 400 level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "1. 7.0 credits are required from the following list:",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO206Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO202Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO208Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO220Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL209H5"
+              },
+              {
+                "type": "course",
+                "code": "POL210H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ECO364H5"
+          },
+          {
+            "type": "course",
+            "code": "ECO365H5"
+          },
+          {
+            "type": "text",
+            "text": "2. 3.5 language credits from one language discipline, with at least 1.0 credit at the 300/400 level:",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSL105H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL106H5"
+              },
+              {
+                "type": "course",
+                "code": "FLS205Y5"
+              },
+              {
+                "type": "course",
+                "code": "FSL205H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL206H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL305Y5"
+              },
+              {
+                "type": "course",
+                "code": "FSL305H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL306H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL405H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL406H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL466H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL467H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE282H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE283H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE382H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE383H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA231H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA232H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA315Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA350H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA351H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA352H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA415Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA420H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA421H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA437H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA450H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA451H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA100Y5"
+              },
+              {
+                "type": "course",
+                "code": "SPA220Y5"
+              },
+              {
+                "type": "course",
+                "code": "SPA221H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA222H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA259H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA305H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA320Y5"
+              },
+              {
+                "type": "course",
+                "code": "SPA321H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA322H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA390H5"
+              },
+              {
+                "type": "course",
+                "code": "SPA420H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Note: An alternate language option can be taken with the approval of the Department. Contact the Economics Academic Advisor for more information.",
+            "courses": []
+          },
+          {
+            "type": "n_from",
+            "n": 3,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENV311H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR325H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR333H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR365H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS311H5"
+              },
+              {
+                "type": "course",
+                "code": "HIS392H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO302H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO303H5"
+              },
+              {
+                "type": "course",
+                "code": "POL302Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL302H5"
+              },
+              {
+                "type": "course",
+                "code": "POL311H5"
+              },
+              {
+                "type": "course",
+                "code": "POL312H5"
+              },
+              {
+                "type": "course",
+                "code": "POL327Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL327H5"
+              },
+              {
+                "type": "course",
+                "code": "POL340Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL343Y5"
+              },
+              {
+                "type": "course",
+                "code": "POL344H5"
+              },
+              {
+                "type": "course",
+                "code": "POL345H5"
+              },
+              {
+                "type": "course",
+                "code": "POL362H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO400Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO406H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO411H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO433H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO435H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO436H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO439Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO456H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO460H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO461H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO463H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO419H1"
+              },
+              {
+                "type": "course",
+                "code": "ECO459H1"
+              },
+              {
+                "type": "course",
+                "code": "POL475H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Contact the Economics Academic Advisor to request course alternates for approval."
+    ]
+  }
+}

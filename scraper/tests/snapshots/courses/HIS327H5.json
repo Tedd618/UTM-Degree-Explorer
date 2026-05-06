@@ -1,0 +1,25 @@
+{
+  "code": "HIS327H5",
+  "title": "The Early Medieval World",
+  "credits": 0.5,
+  "prerequisites_raw": "CLA231H5 or CLA370H5 or HIS221H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CLA231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CLA370H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS221H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

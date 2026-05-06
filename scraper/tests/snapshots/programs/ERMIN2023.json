@@ -1,0 +1,120 @@
+{
+  "code": "ERMIN2023",
+  "name": "Game Studies",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": "including 1.0 credit at the 300/ 400 level)",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG110H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT109H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG263H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT270H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Higher Years:",
+            "courses": []
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG218H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG279H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG319H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG321H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG328H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG410H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CCT285H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT311H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT334H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT382H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT419H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 additional credit from the ENG and CCT courses listed above",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "code": "ANT450H5",
+  "title": "Apocalypse: Anthropologies of Hope, Fear, and Survival",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ANT204H5"
+  },
+  "exclusions_raw": "ANT433H5 (Winter 2025)",
+  "corequisites_raw": null
+}

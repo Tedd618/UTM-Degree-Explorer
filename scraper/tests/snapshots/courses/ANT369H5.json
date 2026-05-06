@@ -1,0 +1,25 @@
+{
+  "code": "ANT369H5",
+  "title": "Religious Violence and Nonviolence",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT204H5 or ANT207H5 or RLG101H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT207H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "RLG101H5"
+      }
+    ]
+  },
+  "exclusions_raw": "RLG317H5",
+  "corequisites_raw": null
+}

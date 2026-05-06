@@ -1,0 +1,12 @@
+{
+  "code": "WRI306H5",
+  "title": "Writing for the Academic Sciences",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 8.0 credits with a minimum CGPA of 2.0",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 8.0
+  },
+  "exclusions_raw": "WRI490H5",
+  "corequisites_raw": null
+}

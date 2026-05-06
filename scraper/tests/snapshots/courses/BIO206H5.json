@@ -1,0 +1,25 @@
+{
+  "code": "BIO206H5",
+  "title": "Introductory Cell and Molecular Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and CHM110H5 and CHM120H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM120H5"
+      }
+    ]
+  },
+  "exclusions_raw": "BIO230H1 or BIO255H1 or BIOB10Y3 or BIOB11H3 or BIOB12H3",
+  "corequisites_raw": null
+}

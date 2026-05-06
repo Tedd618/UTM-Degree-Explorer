@@ -1,0 +1,21 @@
+{
+  "code": "VCC405H5",
+  "title": "Individual Project",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of 13.0 credits including VCC400H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 13.0
+      },
+      {
+        "type": "COURSE",
+        "code": "VCC400H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CSC413H5",
+  "title": "Neural Networks and Deep Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC311H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CSC311H5"
+  },
+  "exclusions_raw": "CSC321H5 or CSC321H1 or CSC413H1 or CSC421H1",
+  "corequisites_raw": null
+}

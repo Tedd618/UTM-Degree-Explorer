@@ -1,0 +1,12 @@
+{
+  "code": "CCT409H5",
+  "title": "Special Topics in Work-Based Learning",
+  "credits": 0.5,
+  "prerequisites_raw": "A minimum 13.0 credits and CGPA of 2.5.",
+  "prerequisites": {
+    "type": "CREDITS",
+    "minimum": 13.0
+  },
+  "exclusions_raw": "CCT410H5",
+  "corequisites_raw": null
+}

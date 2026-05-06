@@ -1,0 +1,123 @@
+{
+  "code": "ERMAJ0615",
+  "name": "Art History",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7.5,
+      "max": null
+    },
+    "total_credits_note": "distributed across 4 areas (see notes below).",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "The following program structure is highly recommended:",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "First Year: 1. FAH101H5 and VCC101H5 2. ISP100H5 3. 0.5-1.0 credit in FAH at the 200 level",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": null,
+            "specific_courses": [
+              "FAH101H5",
+              "VCC101H5",
+              "ISP100H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2.5,
+            "constraint": "at_least",
+            "description": "Second Year: 2.0-2.5 credits in FAH at the 200 level",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "Third Year: 2.0 credits in FAH or VCC at the 300/ 400 level.",
+            "subject": "FAH",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "Fourth Year: 1.0 credits in FAH or VCC or VST at the 400 level.",
+            "subject": "VST",
+            "min_level": 400,
+            "max_level": 499,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_most",
+            "description": "NOTES: 1. Completion of the Art History Major Program must include : FAH101H5 and VCC101H5 and ISP100H5 plus 2.0 credits of FAH at the 200 level and 3.0 credits of FAH or VCC or VST at the 300/400 level, of which 0.5 credit must be at the 400 level. 2. A minimum of 1.0 credit from each of the following four areas are required : Ancient & Medieval; 15th-18th Centuries; 19th-21st Centuries; and Visual Culture & Theory. It is highly recommended that students take at least one 300/400 level course in at least three of the four areas. Some courses may satisfy more than one of the distribution requirements. See the departmental website ( www.utm.utoronto.ca/dvs ) for the distribution of courses by area. 3. For the complete list of VCC courses that satisfy Art History program requirements, please see the departmental website ( www.utm.utoronto.ca/dvs ). 4. No St. George courses may be substituted for the required 100 or 200 level courses (see Note 5 below for exceptions). 5. VCC 200 level courses do not satisfy FAH 200 level requirements. 0.5 credit of FAH at the 200 level may be taken at St. George in an area not covered by current UTM offerings (i.e. one of the following courses \u2013 FAH248H1 or FAH260H1 or FAH262H1 or FAH270H1 or FAH272H1 ). 6. Courses in other programs which have a significant Art History or Visual Culture content, such as offerings in CCIT, Cinema Studies, Philosophy, Drama, English History, East Asian Studies, and Near & Middle Eastern Civilizations, may be substituted for up to 1.0 credit of FAH or VCC credit. Permission of the Art History Program Director prior to enrolment is required. For possible courses options with appropriate course content, please consult the DVS Undergraduate Counsellor. 7. No more than a total of 10.0 credits of FAH may be completed. 8. Recommended Language Study: Students wishing to pursue graduate studies in Art History must acquire a basic reading knowledge of at least two languages. A minimum of 2.0 credits in one language, or 1.0 credit each in two languages (for a total of 2.0 credits) is recommended. German, French, and Italian are recommended.",
+            "subject": "FAH",
+            "min_level": 200,
+            "max_level": 299,
+            "specific_courses": [
+              "FAH101H5",
+              "VCC101H5",
+              "ISP100H5",
+              "FAH248H1",
+              "FAH260H1",
+              "FAH262H1",
+              "FAH270H1",
+              "FAH272H1"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

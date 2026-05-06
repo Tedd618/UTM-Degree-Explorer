@@ -1,0 +1,25 @@
+{
+  "code": "ANT331H5",
+  "title": "The Biology of Human Sexuality",
+  "credits": 0.5,
+  "prerequisites_raw": "ANT202H5 or ANT203H5 or ANT211H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ANT202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT203H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ANT211H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ANT330H5 and ANT331Y5",
+  "corequisites_raw": null
+}

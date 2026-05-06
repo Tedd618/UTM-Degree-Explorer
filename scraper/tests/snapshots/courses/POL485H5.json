@@ -1,0 +1,12 @@
+{
+  "code": "POL485H5",
+  "title": "Topics in Political Thought",
+  "credits": 0.5,
+  "prerequisites_raw": "POL320Y5 or permission of the instructor",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL320Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

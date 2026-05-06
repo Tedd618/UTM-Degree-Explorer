@@ -1,0 +1,356 @@
+{
+  "code": "ERSPE0751",
+  "name": "Economics and Political Science",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "14.5 credits are required.",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          },
+          {
+            "type": "text",
+            "text": "Economics: 7.0 credits",
+            "courses": []
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO204Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO206Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO202Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO208Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO209Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO220Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "course",
+                "code": "STA256H5"
+              },
+              {
+                "type": "course",
+                "code": "STA258H5"
+              },
+              {
+                "type": "course",
+                "code": "STA260H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO302H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO303H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO322Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO323Y5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit of ECO at the 300/400-level",
+            "subject": "ECO",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 7,
+            "constraint": "at_most",
+            "description": "Political Science: 7.0 credits in POL, including at least 1.0 credit at the 400 level and no more than 1.0 credit at the 100 level.",
+            "subject": "POL",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1,
+                "description": ""
+              },
+              {
+                "constraint": "at_most",
+                "n": 1,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "POL200Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POL215H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POL216H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "POL243H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "POL244H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "POL309Y5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "1.0 credit each (total 2.0 credits) from two of the following three fields: a. Comparative Politics - POL203Y5 or POL203H5 or POL218Y5 or POL218H5 or POL219H5 or POL300Y5 or POL300H5 or POL302Y5 or POL313H5 and POL314H5 or POL302H5 or POL303Y5 or POL303H5 or POL304Y5 or POL304H5 or POL309Y5 or POL332Y5 or POL354Y5 or POL354H5 or POL360H5 or POL361H5 or POL362H5 or POL373H5 or POL390H5 or POL391H5 or POL438Y5 or POL438H5 or POL440Y5 or POL440H5 or POL441H5 or POL443Y5 or POL443H5 or POL444H5 or POL445H5 or POL446H5 or POL447H5 or POL448H5 b. International Relations - POL208Y5 or POL209H5 or POL210H5 or POL305H5 or POL307H5 or POL310Y5 or POL311H5 or POL312H5 or POL327Y5 or POL327H5 or POL340Y5 or POL343Y5 or POL344H5 or POL345H5 or POL370H5 or POL406H5 or POL407H5 or POL486Y5 or POL486H5 or POL487H5 c. Public Policy and Public Administration - POL316Y5 or POL317Y5 or POL317H5 or POL318H5 or POL336Y5 or POL346Y5 or POL346H5 or POL347H5 or POL353Y5 or POL355Y5 or POL355H5 or POL368H5 or POL368Y5 or POL369Y5 or POL371H5 or POL372H5 or POL493H5 or ( ENV351H5 or JEP351H5 ) or ( ENV356H5 or JEP356H5 ) or ( ENV452H5 or JEP452H5 ) or JPE250Y5 or JPE251H5 or JPE252H5",
+            "courses": [
+              "POL203Y5",
+              "POL203H5",
+              "POL218Y5",
+              "POL218H5",
+              "POL219H5",
+              "POL300Y5",
+              "POL300H5",
+              "POL302Y5",
+              "POL313H5",
+              "POL314H5",
+              "POL302H5",
+              "POL303Y5",
+              "POL303H5",
+              "POL304Y5",
+              "POL304H5",
+              "POL309Y5",
+              "POL332Y5",
+              "POL354Y5",
+              "POL354H5",
+              "POL360H5",
+              "POL361H5",
+              "POL362H5",
+              "POL373H5",
+              "POL390H5",
+              "POL391H5",
+              "POL438Y5",
+              "POL438H5",
+              "POL440Y5",
+              "POL440H5",
+              "POL441H5",
+              "POL443Y5",
+              "POL443H5",
+              "POL444H5",
+              "POL445H5",
+              "POL446H5",
+              "POL447H5",
+              "POL448H5",
+              "POL208Y5",
+              "POL209H5",
+              "POL210H5",
+              "POL305H5",
+              "POL307H5",
+              "POL310Y5",
+              "POL311H5",
+              "POL312H5",
+              "POL327Y5",
+              "POL327H5",
+              "POL340Y5",
+              "POL343Y5",
+              "POL344H5",
+              "POL345H5",
+              "POL370H5",
+              "POL406H5",
+              "POL407H5",
+              "POL486Y5",
+              "POL486H5",
+              "POL487H5",
+              "POL316Y5",
+              "POL317Y5",
+              "POL317H5",
+              "POL318H5",
+              "POL336Y5",
+              "POL346Y5",
+              "POL346H5",
+              "POL347H5",
+              "POL353Y5",
+              "POL355Y5",
+              "POL355H5",
+              "POL368H5",
+              "POL368Y5",
+              "POL369Y5",
+              "POL371H5",
+              "POL372H5",
+              "POL493H5",
+              "ENV351H5",
+              "JEP351H5",
+              "ENV356H5",
+              "JEP356H5",
+              "ENV452H5",
+              "JEP452H5",
+              "JPE250Y5",
+              "JPE251H5",
+              "JPE252H5"
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credits of POL",
+            "subject": "POL",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

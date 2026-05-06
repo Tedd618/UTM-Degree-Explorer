@@ -1,0 +1,12 @@
+{
+  "code": "HIS386H5",
+  "title": "Gender and History in South Asia",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS282H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "HIS282H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

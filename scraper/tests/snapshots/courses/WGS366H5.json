@@ -1,0 +1,12 @@
+{
+  "code": "WGS366H5",
+  "title": "Women and Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "PSYD18H or WGS372H1",
+  "corequisites_raw": null
+}

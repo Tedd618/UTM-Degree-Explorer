@@ -1,0 +1,21 @@
+{
+  "code": "FRE383H5",
+  "title": "Advanced Language Practice: Spoken French",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE283H5 or FSL406H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE283H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL406H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FSL420H1 or FSL422H1 . Not open to native speakers of French and holders of the French baccalaureat.",
+  "corequisites_raw": null
+}

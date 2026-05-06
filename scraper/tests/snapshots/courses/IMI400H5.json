@@ -1,0 +1,33 @@
+{
+  "code": "IMI400H5",
+  "title": "Innovation and Entrepreneurship",
+  "credits": 0.5,
+  "prerequisites_raw": "IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "IMI201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "IMI202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "IMI203H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "IMI301H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "IMI303H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT494H5",
+  "corequisites_raw": null
+}

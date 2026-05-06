@@ -1,0 +1,21 @@
+{
+  "code": "MGD415H5",
+  "title": "E-Business Strategies",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT112H5 and CCT355H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT355H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MGT415H5 or MGT471H5",
+  "corequisites_raw": null
+}

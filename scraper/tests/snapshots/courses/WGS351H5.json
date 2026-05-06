@@ -1,0 +1,12 @@
+{
+  "code": "WGS351H5",
+  "title": "Gender, Race, and Surveillance",
+  "credits": 0.5,
+  "prerequisites_raw": "WGS200Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "WGS200Y5"
+  },
+  "exclusions_raw": "WGS337H5 (Fall 2017)",
+  "corequisites_raw": null
+}

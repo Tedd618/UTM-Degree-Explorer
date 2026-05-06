@@ -1,0 +1,34 @@
+{
+  "code": "BIO354H5",
+  "title": "Vertebrate Form and Function",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5 and BIO153H5 and [( BIO208H5 and BIO209H5 ) or BIO210Y5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO152H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO153H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO208H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO209H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

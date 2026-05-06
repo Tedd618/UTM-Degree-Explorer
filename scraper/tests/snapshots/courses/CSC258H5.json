@@ -1,0 +1,21 @@
+{
+  "code": "CSC258H5",
+  "title": "Computer Organization",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC148H5 or CSC111H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC148H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC111H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC258H1 or CSCB58H3",
+  "corequisites_raw": null
+}

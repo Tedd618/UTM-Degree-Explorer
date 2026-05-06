@@ -1,0 +1,55 @@
+{
+  "code": "BIO412H5",
+  "title": "Climate Change Biology",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO205H5 and ( BIO202H5 or BIO203H5 ) and ( GGR377H5 or BIO312H5 or BIO330H5 or BIO331H5 or BIO333H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO205H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "BIO202H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO203H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR377H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO312H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO330H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO331H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "BIO333H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

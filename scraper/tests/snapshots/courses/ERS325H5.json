@@ -1,0 +1,21 @@
+{
+  "code": "ERS325H5",
+  "title": "Field Camp I",
+  "credits": 0.5,
+  "prerequisites_raw": "ERS201H5 and ERS202H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ERS201H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ERS202H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ESS234H1 or ESS330H1 or GLG340H1 or ESSC16H3 or ESSD07H3",
+  "corequisites_raw": null
+}

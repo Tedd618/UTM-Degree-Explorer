@@ -1,0 +1,40 @@
+{
+  "code": "FAH454H5",
+  "title": "Contemporary Jewish Art",
+  "credits": 0.5,
+  "prerequisites_raw": "( FAH101H5 or FAH105H5 or FAH202H5 ) and FAH288H5 and FAH289H5 , and at least 1.0 credit in FAH or VCC at the 300/400 level.",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "FAH",
+          "VCC"
+        ],
+        "min_level": 300,
+        "max_level": 499,
+        "specific_courses": []
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH288H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FAH289H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

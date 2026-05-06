@@ -1,0 +1,12 @@
+{
+  "code": "MAT264H5",
+  "title": "Introduction to Numerical Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT244H5 or MAT244H1 or MAT267H1 or MATB44H3",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MAT244H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

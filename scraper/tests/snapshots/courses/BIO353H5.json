@@ -1,0 +1,12 @@
+{
+  "code": "BIO353H5",
+  "title": "Plant Development",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO203H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO203H5"
+  },
+  "exclusions_raw": "CSB340H1",
+  "corequisites_raw": null
+}

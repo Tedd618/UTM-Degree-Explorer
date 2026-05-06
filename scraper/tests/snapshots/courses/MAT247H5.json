@@ -1,0 +1,12 @@
+{
+  "code": "MAT247H5",
+  "title": "Algebra II",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT240H5 or MAT240H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "MAT240H5"
+  },
+  "exclusions_raw": "MAT247H1",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "PHL237H5",
+  "title": "Introduction to East Asian Philosophy",
+  "credits": 0.5,
+  "prerequisites_raw": "PHL101H5 or PHL102H5 or PHL103H5 or PHL113H5 or 4.0 credits",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHL103H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "PHL113H5"
+      }
+    ]
+  },
+  "exclusions_raw": "EAS241H1 and PHL237H1",
+  "corequisites_raw": null
+}

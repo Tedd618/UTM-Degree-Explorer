@@ -1,0 +1,12 @@
+{
+  "code": "URD312Y5",
+  "title": "Intermediate Urdu",
+  "credits": 1.0,
+  "prerequisites_raw": "URD212Y5 or appropriate language level as indicated by the Urdu Language Assessment Questionnaire (( https://www.utm.utoronto.ca/language-studies/language-course-assessment\u2026 ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "URD212Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

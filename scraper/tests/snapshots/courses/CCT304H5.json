@@ -1,0 +1,12 @@
+{
+  "code": "CCT304H5",
+  "title": "Visual Culture and Communication",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT210H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT210H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

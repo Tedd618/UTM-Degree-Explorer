@@ -1,0 +1,12 @@
+{
+  "code": "FRE482H5",
+  "title": "Creative Writing",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE382H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "FRE382H5"
+  },
+  "exclusions_raw": "FSL482H5",
+  "corequisites_raw": null
+}

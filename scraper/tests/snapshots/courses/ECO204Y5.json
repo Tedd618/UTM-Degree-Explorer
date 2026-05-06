@@ -1,0 +1,21 @@
+{
+  "code": "ECO204Y5",
+  "title": "Microeconomic Theory and Applications (for Commerce and Management)",
+  "credits": 1.0,
+  "prerequisites_raw": "( ECO101H5 (63%) and ECO102H5 (63%)) or ECO100Y5 (63%)",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO102H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ECO200Y5 or ECO205Y5 or ECO206Y5 or ECO200Y1 or ECO204Y1 or ECO206Y1",
+  "corequisites_raw": null
+}

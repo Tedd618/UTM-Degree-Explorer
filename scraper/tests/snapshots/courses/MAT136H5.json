@@ -1,0 +1,29 @@
+{
+  "code": "MAT136H5",
+  "title": "Integral Calculus",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 or MAT135H1 or MATA29H3 or MATA30H3 or MATA31H3",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT132H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT135H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT137H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT157H5"
+      }
+    ]
+  },
+  "exclusions_raw": "MAT133Y5 or MAT134H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT133Y1 or MAT136H1 or MAT137Y1 or MAT157Y1 or MATA33H3 or MATA35H3 or MATA36H3 or MATA37H3",
+  "corequisites_raw": null
+}

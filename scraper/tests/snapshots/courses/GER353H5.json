@@ -1,0 +1,9 @@
+{
+  "code": "GER353H5",
+  "title": "German National Cinemas",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "GER351H5 , GER352H5",
+  "corequisites_raw": null
+}

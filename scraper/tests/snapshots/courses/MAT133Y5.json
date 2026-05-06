@@ -1,0 +1,9 @@
+{
+  "code": "MAT133Y5",
+  "title": "Calculus and Linear Algebra for Commerce",
+  "credits": 1.0,
+  "prerequisites_raw": "Minimum 70% in Grade 12 Advanced Functions (MHF4U).",
+  "prerequisites": [],
+  "exclusions_raw": "MAT132H5 or MAT134H5 or MAT135H5 or MAT136H5 or MAT137H5 or MAT137Y5 or MAT139H5 or MAT157H5 or MAT157Y5 or MAT159H5 or MAT135H1 or MAT136H1 or MAT133Y1 or MAT137Y1 or MAY157Y1 or MATA30H3 or MATA31H3 or MATA32H3 or MATA33H3 or MATA35H3 or MATA36H3 or MATA37H3",
+  "corequisites_raw": null
+}

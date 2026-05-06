@@ -1,0 +1,51 @@
+{
+  "code": "MGD421H5",
+  "title": "Technological Entrepreneurship",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT112H5 and ( CCT219H5 or CCT319H5 ) and ( CCT321H5 or MGM230H5 ) and ( CCT221H5 or CCT322H5 or MGT252H5 ) and ( CCT324H5 or MGT262H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CCT112H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT219H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CCT321H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT221H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT252H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CCT324H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT262H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

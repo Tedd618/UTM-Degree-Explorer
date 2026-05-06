@@ -1,0 +1,204 @@
+{
+  "code": "ERSPE1092",
+  "name": "French and Italian",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14,
+      "max": null
+    },
+    "total_credits_note": "The program must include a minimum of 4.0 300/400 level credits (2.0 in French and 2.0 in Italian), 1.0 credit at the 400 level (either in French or Italian).",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "French 7.0 credits are required.",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "First Year: FRE180H5 , FRE181H5 (or equivalent). Students exempt from these courses must replace them with a higher level 1.0 credit in FRE.",
+            "subject": "FRE",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [
+              "FRE180H5",
+              "FRE181H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "FRE227H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FRE382H5"
+              },
+              {
+                "type": "course",
+                "code": "FRE383H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "2.0 credits to be chosen among the FRE courses in Teaching and Learning: FRE325H5 , FRE352H5 , FRE354H5 , FRE355H5 , FRE384H5 , FRE389H5 , FRE453H5 ; JFL389H5 , JFL454H5 ; JLP388H5 (formerly JFL388H5 )",
+            "courses": [
+              "FRE325H5",
+              "FRE352H5",
+              "FRE354H5",
+              "FRE355H5",
+              "FRE384H5",
+              "FRE389H5",
+              "FRE453H5",
+              "JFL389H5",
+              "JFL454H5",
+              "JLP388H5",
+              "JFL388H5"
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "LTL380H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL382H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL383H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL387H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL456H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL486H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL487H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL488H5"
+              },
+              {
+                "type": "course",
+                "code": "LTL495Y5"
+              },
+              {
+                "type": "course",
+                "code": "LTL496H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Italian 7.0 credits are required. Some written work will be done in Italian in all courses.",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA200Y5"
+              },
+              {
+                "type": "course",
+                "code": "ITA201Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ITA350H5"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ITA351H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA352H5"
+              },
+              {
+                "type": "course",
+                "code": "ITA450H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ITA388H5"
+          },
+          {
+            "type": "course",
+            "code": "ITA437Y5"
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 additional credits in Italian Language; Linguistics; Teaching and Learning.",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 additional credits in any of the other Italian course categories (excluding those listed above).",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

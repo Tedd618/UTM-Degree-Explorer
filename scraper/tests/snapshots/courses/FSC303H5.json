@@ -1,0 +1,21 @@
+{
+  "code": "FSC303H5",
+  "title": "Techniques of Crime Scene Investigation",
+  "credits": 0.5,
+  "prerequisites_raw": "FSC239Y5 and FSC271H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC239Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSC271H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FSC300H5 or FSC302H5",
+  "corequisites_raw": null
+}

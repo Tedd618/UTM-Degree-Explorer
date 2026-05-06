@@ -1,0 +1,12 @@
+{
+  "code": "ITA237H5",
+  "title": "Italy, from 1815 to 1960",
+  "credits": 0.5,
+  "prerequisites_raw": "Open to all students. If enrolled in an Italian Minor, Major or Specialist program: ITA100Y5 or permission of department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "ITA100Y5"
+  },
+  "exclusions_raw": "ITA234Y5 or ITA235Y5 or ITA236H5",
+  "corequisites_raw": null
+}

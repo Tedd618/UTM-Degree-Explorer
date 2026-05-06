@@ -1,0 +1,12 @@
+{
+  "code": "GRK221H5",
+  "title": "Intermediate Ancient Greek",
+  "credits": 0.5,
+  "prerequisites_raw": "GRK213H5 or GRK201H1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GRK213H5"
+  },
+  "exclusions_raw": "GRK200H1 or GRK202H1",
+  "corequisites_raw": null
+}

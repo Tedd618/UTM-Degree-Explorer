@@ -1,0 +1,9 @@
+{
+  "code": "WGS367H5",
+  "title": "Women and Health",
+  "credits": 0.5,
+  "prerequisites_raw": "",
+  "prerequisites": [],
+  "exclusions_raw": "NEW367H1 or WGS367H1 or WSTC21H3",
+  "corequisites_raw": null
+}

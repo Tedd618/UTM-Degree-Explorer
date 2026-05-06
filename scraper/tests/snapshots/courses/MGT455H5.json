@@ -1,0 +1,34 @@
+{
+  "code": "MGT455H5",
+  "title": "Marketing Consulting:  Models for Analysis",
+  "credits": 0.5,
+  "prerequisites_raw": "( MGT252H5 or MGM252H5 ) and ( MGT218H5 or ECO220Y5 or STA221H5 or STA218H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MGT252H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MGT218H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO220Y5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA221H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MGMD01H3",
+  "corequisites_raw": null
+}

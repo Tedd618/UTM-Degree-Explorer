@@ -1,0 +1,35 @@
+{
+  "code": "ENG328H5",
+  "title": "Writing for Games and Narrative Design",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credits in ENG and 3.0 additional credits, which must include a 0.5 credit in a 200-level Game Studies course or permission from the director of Game Studies",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 0.5,
+        "subjects": null,
+        "min_level": 200,
+        "max_level": 299,
+        "specific_courses": []
+      },
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "ENG"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

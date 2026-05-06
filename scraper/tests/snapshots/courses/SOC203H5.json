@@ -1,0 +1,12 @@
+{
+  "code": "SOC203H5",
+  "title": "The Cultural Politics of the Body",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

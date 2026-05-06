@@ -1,0 +1,25 @@
+{
+  "code": "ITA420H5",
+  "title": "Dante's Inferno",
+  "credits": 0.5,
+  "prerequisites_raw": "ITA350H5 or ITA351H5 or ITA352H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ITA350H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA351H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ITA352H5"
+      }
+    ]
+  },
+  "exclusions_raw": "ITA420Y5 and ITA320H1",
+  "corequisites_raw": null
+}

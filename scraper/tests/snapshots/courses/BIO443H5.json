@@ -1,0 +1,21 @@
+{
+  "code": "BIO443H5",
+  "title": "Phylogenetic Principles",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO206H5 and BIO207H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "BIO206H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "BIO207H5"
+      }
+    ]
+  },
+  "exclusions_raw": "EEB462H1",
+  "corequisites_raw": null
+}

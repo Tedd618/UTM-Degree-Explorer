@@ -1,0 +1,21 @@
+{
+  "code": "FRE240H5",
+  "title": "Interpreting French Narratives",
+  "credits": 0.5,
+  "prerequisites_raw": "FRE181H5 or FSL306H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FRE181H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "FSL306H5"
+      }
+    ]
+  },
+  "exclusions_raw": "FRE240Y5 or FRE246H1",
+  "corequisites_raw": null
+}

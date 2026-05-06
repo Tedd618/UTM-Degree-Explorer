@@ -1,0 +1,25 @@
+{
+  "code": "ECO302H5",
+  "title": "World Economic History Prior to 1870",
+  "credits": 0.5,
+  "prerequisites_raw": "ECO200Y5 or ECO204Y5 or ECO206Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO200Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO204Y5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO206Y5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

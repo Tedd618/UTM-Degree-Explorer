@@ -1,0 +1,21 @@
+{
+  "code": "CHM436H5",
+  "title": "Metal-based Chemistry for Synthesis of Small Molecules and Functional Materials",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM231H5 and CHM243H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM243H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

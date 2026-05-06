@@ -1,0 +1,12 @@
+{
+  "code": "SOC224H5",
+  "title": "Sociology of Education",
+  "credits": 0.5,
+  "prerequisites_raw": "SOC100H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "SOC100H5"
+  },
+  "exclusions_raw": "SOCB26H3",
+  "corequisites_raw": null
+}

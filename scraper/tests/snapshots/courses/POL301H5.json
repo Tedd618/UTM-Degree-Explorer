@@ -1,0 +1,12 @@
+{
+  "code": "POL301H5",
+  "title": "Topics in Political Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "POL200Y5 or POL200Y1",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "POL200Y5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,12 @@
+{
+  "code": "CHM442H5",
+  "title": "Strategy & Control in Modern Drug Synthesis",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM341H5 or CHM345H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM345H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

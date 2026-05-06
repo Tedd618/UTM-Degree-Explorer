@@ -1,0 +1,12 @@
+{
+  "code": "CCT225H5",
+  "title": "Information Systems",
+  "credits": 0.5,
+  "prerequisites_raw": "CCT224H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CCT224H5"
+  },
+  "exclusions_raw": "MGM371H5 or MGT371H5 or RSM327H1 or MGAC70H3",
+  "corequisites_raw": null
+}

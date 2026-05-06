@@ -1,0 +1,45 @@
+{
+  "code": "HIS463H5",
+  "title": "Memory and Memorialization in South African History",
+  "credits": 0.5,
+  "prerequisites_raw": "HIS101H5 or HIS102H5 or HIS103H5 or HIS104H5 or HIS105H5 or HIS106H5 or HIS107H5 or HIS108H5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "HIS101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS102H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS103H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS104H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS105H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS106H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS107H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "HIS108H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

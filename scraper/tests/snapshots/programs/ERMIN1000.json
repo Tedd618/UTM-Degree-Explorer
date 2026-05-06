@@ -1,0 +1,64 @@
+{
+  "code": "ERMIN1000",
+  "name": "Functional French",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSL105H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL106H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSL205H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL206H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "FSL305H5"
+              },
+              {
+                "type": "course",
+                "code": "FSL306H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "FSL405H5"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

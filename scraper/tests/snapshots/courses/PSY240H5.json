@@ -1,0 +1,12 @@
+{
+  "code": "PSY240H5",
+  "title": "Introduction to Abnormal Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY100Y5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "PSY100Y5"
+  },
+  "exclusions_raw": "PSY240H1 or PSYB32H3",
+  "corequisites_raw": null
+}

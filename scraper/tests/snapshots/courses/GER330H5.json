@@ -1,0 +1,21 @@
+{
+  "code": "GER330H5",
+  "title": "Topics in German Cultural Studies",
+  "credits": 0.5,
+  "prerequisites_raw": "GER204H5 , GER205H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "GER204H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "GER205H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

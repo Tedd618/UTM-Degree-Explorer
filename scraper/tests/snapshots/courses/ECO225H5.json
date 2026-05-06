@@ -1,0 +1,69 @@
+{
+  "code": "ECO225H5",
+  "title": "Data Tools for Economists",
+  "credits": 0.5,
+  "prerequisites_raw": "(( ECO101H5 (63%) and ECO102H5 (63%)) and ( MAT133Y5 (63%) or ( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 )) and ( CSC108H5 or MGT201H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "ECO101H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO102H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT133Y5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CSC108H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MGT201H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "ECO225H1",
+  "corequisites_raw": null
+}

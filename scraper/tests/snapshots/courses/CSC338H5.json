@@ -1,0 +1,78 @@
+{
+  "code": "CSC338H5",
+  "title": "Numerical Methods",
+  "credits": 0.5,
+  "prerequisites_raw": "( CSC148H5 or CSC111H5 ) and ( MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5 ) and ( MAT223H5 or MAT240H5 ) and ( CSC263H5 or 1.0 MAT credit at the 200+ level)",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": [
+          "MAT"
+        ],
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": []
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CSC148H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "CSC111H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT134H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT136H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT139H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT159H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT233H5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT223H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT240H5"
+          }
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CSC350H5 or CSC336H1 or CSC350H1 or CSC351H1 or CSCC37H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,21 @@
+{
+  "code": "CHM331H5",
+  "title": "Inorganic Chemistry II:  Advanced Inorganic Chemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM231H5 and CHM242H5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM231H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM242H5"
+      }
+    ]
+  },
+  "exclusions_raw": "CHM338H1 or CHMC31Y3",
+  "corequisites_raw": null
+}

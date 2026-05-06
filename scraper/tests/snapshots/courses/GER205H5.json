@@ -1,0 +1,12 @@
+{
+  "code": "GER205H5",
+  "title": "Introduction to German Literature",
+  "credits": 0.5,
+  "prerequisites_raw": "GER100Y5 or GER101H1 or permission of department.",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "GER100Y5"
+  },
+  "exclusions_raw": "GER204H1",
+  "corequisites_raw": null
+}

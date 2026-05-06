@@ -1,0 +1,38 @@
+{
+  "code": "GGR379H5",
+  "title": "Field Methods in Physical Geography",
+  "credits": 0.5,
+  "prerequisites_raw": "1.0 credits from: ( GGR201H5 or GGR214H5 or GGR217H5 or GGR227H5 ) and 1.0 credits from any other GGR/ENV SCi course(s) and 2.0 credits from any science courses and permission of instructor",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "CREDITS",
+        "minimum": 1.0
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "GGR201H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR214H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR217H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "GGR227H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,18 @@
+{
+  "code": "POL367H5",
+  "title": "Feminist Political Theory",
+  "credits": 0.5,
+  "prerequisites_raw": "3.0 POL credits",
+  "prerequisites": {
+    "type": "LEVEL_POOL",
+    "n": 3.0,
+    "subjects": [
+      "POL"
+    ],
+    "min_level": null,
+    "max_level": null,
+    "specific_courses": []
+  },
+  "exclusions_raw": "PHL267H5 or PHL367H5 or WGS200Y5 or POLC79H3 or PHLB13H3 or PHL367H1",
+  "corequisites_raw": null
+}

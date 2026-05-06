@@ -1,0 +1,43 @@
+{
+  "code": "MAT309H5",
+  "title": "Introduction to Mathematical Logic",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT257Y5 or [ MAT236H5 and ( MAT202H5 or MAT224H5 or MAT240H5 ) and 0.5 additional credit of MAT at the 300+ level]",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT257Y5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT202H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT224H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT240H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "CSC438H1 or MAT309H1 or MAT409H1 or MATC09H3",
+  "corequisites_raw": null
+}

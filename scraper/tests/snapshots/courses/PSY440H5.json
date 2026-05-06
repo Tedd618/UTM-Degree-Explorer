@@ -1,0 +1,62 @@
+{
+  "code": "PSY440H5",
+  "title": "Special Topics in Abnormal Psychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY340H5 and one of ( PSY320H5 or PSY321H5 or PSY331H5 or PSY343H5 or PSY333H5 or PSY341H5 or PSY344H5 or PSY345H5 or PSY346H5 or PSY442Y5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY340H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY320H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY321H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY331H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY343H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY333H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY341H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY344H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY345H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY346H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY442Y5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY440H1 or PSYD33H3",
+  "corequisites_raw": null
+}

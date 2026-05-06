@@ -1,0 +1,12 @@
+{
+  "code": "CHI104H5",
+  "title": "Introductory Chinese II",
+  "credits": 0.5,
+  "prerequisites_raw": "CHI103H5 or as indicated by the Chinese Language Assessment Questionnaire ( https://www.utm.utoronto.ca/language-studies/language-course-assessment\u2026 ).",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHI103H5"
+  },
+  "exclusions_raw": "CHI100Y5 or EAS100Y1 or EAS101Y1 or LGGA60H3 or LGGA61H3",
+  "corequisites_raw": null
+}

@@ -1,0 +1,34 @@
+{
+  "code": "PSY331H5",
+  "title": "Psychology of Emotion",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY201H5 (or equivalent) and ( PSY220H5 or PSY230H5 or PSY240H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PSY201H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY220H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY230H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY240H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "PSY331H1",
+  "corequisites_raw": null
+}

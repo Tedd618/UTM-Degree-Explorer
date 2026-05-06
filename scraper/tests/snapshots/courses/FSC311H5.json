@@ -1,0 +1,25 @@
+{
+  "code": "FSC311H5",
+  "title": "Forensic Chemistry",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM211H5 and ( CHM110H5 and CHM120H5 ) or CHM140Y5",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM211H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM120H5"
+      }
+    ]
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

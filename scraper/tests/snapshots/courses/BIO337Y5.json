@@ -1,0 +1,12 @@
+{
+  "code": "BIO337Y5",
+  "title": "Research Methods in Applied River Ecology",
+  "credits": 1.0,
+  "prerequisites_raw": "BIO205H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO205H5"
+  },
+  "exclusions_raw": "",
+  "corequisites_raw": null
+}

@@ -1,0 +1,47 @@
+{
+  "code": "MAT392H5",
+  "title": "Ideas of Mathematics",
+  "credits": 0.5,
+  "prerequisites_raw": "MAT202H5 and MAT244H5 and ( MAT236H5 or MAT257Y5 ) and ( MAT224H5 or MAT247H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "MAT202H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "MAT244H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT236H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT257Y5"
+          }
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT224H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT247H5"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions_raw": "MATC90H3",
+  "corequisites_raw": null
+}
