@@ -1,0 +1,10 @@
+{
+  "code": "CHM120H5",
+  "title": "Chemical Principles 2",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM110H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "CHM110H5"
+  }
+}

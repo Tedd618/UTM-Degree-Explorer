@@ -1,0 +1,49 @@
+{
+  "code": "PSY490H5",
+  "title": "Advanced Topics in Neuroscience",
+  "credits": 0.5,
+  "prerequisites_raw": "( PSY270H5 or PSY290H5 ) and 1.0 credit from ( PSY346H5 or PSY351H5 or PSY352H5 or PSY353H5 or PSY354H5 or PSY355H5 or PSY362H5 or PSY369H5 or PSY372H5 or PSY391H5 or PSY392H5 or PSY393H5 or PSY394H5 or PSY395H5 or PSY397H5 or PSY398H5 or BIO304H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "PSY346H5",
+          "PSY351H5",
+          "PSY352H5",
+          "PSY353H5",
+          "PSY354H5",
+          "PSY355H5",
+          "PSY362H5",
+          "PSY369H5",
+          "PSY372H5",
+          "PSY391H5",
+          "PSY392H5",
+          "PSY393H5",
+          "PSY394H5",
+          "PSY395H5",
+          "PSY397H5",
+          "BIO304H5"
+        ]
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY270H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY290H5"
+          }
+        ]
+      }
+    ]
+  }
+}

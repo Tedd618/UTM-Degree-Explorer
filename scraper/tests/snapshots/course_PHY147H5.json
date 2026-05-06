@@ -1,0 +1,32 @@
+{
+  "code": "PHY147H5",
+  "title": "Principles of Physics II",
+  "credits": 0.5,
+  "prerequisites_raw": "PHY146H5 and ( MAT135H5 or MAT137H5 or MAT157H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "PHY146H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "MAT135H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT137H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT157H5"
+          }
+        ]
+      }
+    ]
+  }
+}

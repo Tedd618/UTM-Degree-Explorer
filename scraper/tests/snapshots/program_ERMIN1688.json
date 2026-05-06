@@ -1,0 +1,129 @@
+{
+  "code": "ERMIN1688",
+  "name": "Computer Science",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSC108H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "CSC110Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC111H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC148H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC207H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC236H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC209H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC258H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC263H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_most",
+            "description": "Third and Fourth Years: 1.0 credit from any 300/400 level CSC course (except for CSC392H5 and CSC393H5 and CSC492H5 and CSC493H5 and any CSC ROP courses) or GGR335H5 or GGR337H5 or GGR437H5 . No more than 0.5 credit of GGR courses may count to this requirement.",
+            "subject": "CSC",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [
+              "GGR335H5",
+              "GGR337H5",
+              "GGR437H5"
+            ],
+            "excluding": [
+              "CSC392H5",
+              "CSC393H5",
+              "CSC492H5",
+              "CSC493H5"
+            ],
+            "sub_constraints": [
+              {
+                "constraint": "at_most",
+                "n": 0.5,
+                "description": "GGR courses may count to this requirement",
+                "subject": "GGR"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Students in the Computer Science minor are limited to 1.5 credits of computer science courses at the 300/ 400-level. Enrolment in additional Computer Science courses is restricted to students in Computer Science Specialist, Information Security Specialist, and Computer Science Major programs.",
+      "Computer Science Minors can take no more than one of CSC392H5 or CSC393H5 or CSC492H5 or CSC493H5 or any CSC ROP courses."
+    ]
+  }
+}

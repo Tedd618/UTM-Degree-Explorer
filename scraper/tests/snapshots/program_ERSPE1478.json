@@ -1,0 +1,132 @@
+{
+  "code": "ERSPE1478",
+  "name": "Economics",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 13,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO206Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO208Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "course",
+                "code": "STA258H5"
+              },
+              {
+                "type": "course",
+                "code": "STA260H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO325H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO326H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO375H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO302H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO303H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO322Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO323Y5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "S pecialist Programs Note:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Economics Specialist Program (ERSPE1478) leads to an Honours BA degree.",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Economics Specialist \u2013 BCOM (ERSPE0137) program can only be taken jointly with the Specialist program in Commerce, and thus leads to a BCom degree.",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Enrolment in Economics (Commerce) Specialist Program ERSPE0137 Program is only open to those who have been admitted to the BCom degree program.",
+            "courses": []
+          },
+          {
+            "type": "course",
+            "code": "ECO205Y5"
+          },
+          {
+            "type": "text",
+            "text": "Only 1.0 ROP credit can be counted towards completion of an Economics program.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

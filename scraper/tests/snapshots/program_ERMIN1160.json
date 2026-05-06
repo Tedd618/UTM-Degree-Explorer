@@ -1,0 +1,117 @@
+{
+  "code": "ERMIN1160",
+  "name": "Psychology",
+  "type": "Minor",
+  "completion": {
+    "total_credits": {
+      "min": 4,
+      "max": 4.5
+    },
+    "total_credits_note": "including 1.0 credit at the 300 level or above.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "PSY100Y5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY201H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO220Y5"
+              },
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "course",
+                "code": "SOC350H5"
+              },
+              {
+                "type": "course",
+                "code": "STA218H5"
+              },
+              {
+                "type": "course",
+                "code": "STA220H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "PSY290H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY270H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY280H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY210H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY220H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY230H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY240H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit in PSY at the 300 level or above, excluding PSY399H5 and PSY399Y5",
+            "subject": "PSY",
+            "min_level": 300,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [
+              "PSY399H5",
+              "PSY399Y5"
+            ],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

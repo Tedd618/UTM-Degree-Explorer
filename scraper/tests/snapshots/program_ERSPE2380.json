@@ -1,0 +1,290 @@
+{
+  "code": "ERSPE2380",
+  "name": "Marketing",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 16,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year (3.0 credits)",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGM101H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT135Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "text",
+            "text": "Management: (8.0 credits)",
+            "courses": []
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT201H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT220H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT231H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT252H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT301H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT353H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT453H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT455H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT262H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT363H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT371H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT374H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT393H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT450H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT451H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "MGT341H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT354H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT355H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT373H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT450H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT451H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT452H5"
+              },
+              {
+                "type": "course",
+                "code": "MGT458H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT260H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT302H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT356H5"
+              },
+              {
+                "type": "course",
+                "code": "CCT456H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR252H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "* Note : It is recommended that students interested in pursuing the marketing stream consider completing CCT109H5 and CCT110H5 to ensure access to some upper year CCT courses. Students have the option to select some CCT courses to fulfill elective requirements in which prerequisites are strictly enforced.",
+      "** Note : MGT450H5 and MGT451H5 can fulfil only one.",
+      "Economics: (5.0 credits)",
+      "ECO200Y5 or ECO204Y5 or ECO206Y5",
+      "ECO202Y5 or ECO208Y5 or ECO209Y5",
+      "ECO220Y5 or ECO227Y5 or ( STA256H5 and STA258H5 ) or ( STA256H5 and STA260H5 )",
+      "ECO372H5",
+      "1.5 credits in ECO at 300/400 level ( ECO375H5 Recommended) (Cannot double count courses).",
+      "No more than 0.5 Economic History credit"
+    ]
+  }
+}

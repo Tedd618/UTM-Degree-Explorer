@@ -1,0 +1,429 @@
+{
+  "code": "ERMAJ1376",
+  "name": "Chemistry",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT157H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT159H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM211H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM231H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM242H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM243H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "JCP221H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHM372H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHM373H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHM394H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHM395H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CHM396H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CHM397H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM311H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM331H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM333H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM341H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM345H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM347H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM362H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM436H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM412H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM414H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM416H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM442H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM444H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM462H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP321H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP322H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP410H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP421H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP422H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP463H5"
+              }
+            ],
+            "label": "lecture courses"
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM311H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM323H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM331H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM333H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM341H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM345H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM347H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM362H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM372H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM373H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM394H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM395H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM396H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM397H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM399Y5"
+              },
+              {
+                "type": "course",
+                "code": "CHM412H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM414H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM416H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM436H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM442H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM444H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM462H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM485H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM489Y5"
+              },
+              {
+                "type": "course",
+                "code": "CPS489Y5"
+              },
+              {
+                "type": "course",
+                "code": "CPS398H5"
+              },
+              {
+                "type": "course",
+                "code": "CPS400Y5"
+              },
+              {
+                "type": "course",
+                "code": "FSC311H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP321H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP322H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP410H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP421H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP422H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP463H5"
+              },
+              {
+                "type": "course",
+                "code": "JBC472H5"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "code": "ERMAJ1944",
+  "name": "Physics",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY146H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY147H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY241H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY245H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP265H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT244H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third & Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "JCP321H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY343H5"
+              }
+            ],
+            "label": "UTM PHY or JCP courses at the 300 or 400-level"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

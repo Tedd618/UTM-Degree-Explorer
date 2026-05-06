@@ -1,0 +1,544 @@
+{
+  "code": "ERMAJ1645",
+  "name": "English",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 7,
+      "max": null
+    },
+    "total_credits_note": "At least 7.0 ENG credits, including at least 2.0 credits at the 300 or 400 level. Only 1.0 ENG course at the 100 level may be counted towards program requirements, and no more than 1.0 credit may be counted towards program requirements from the following courses: ENG217H5 , ENG218H5 , ENG234H5 , ENG235H5 , ENG236H5 , ENG237H5 , ENG238H5 , ENG239H5 , ENG261H5 , ENG263H5 , ENG276H5 , ENG277H5 , ENG279H5 , ENG289H5 , ENG291H5 , ENG319H5 , ENG328H5 , ENG373H5 , ENG374H5 , ENG376H5 , ENG377H5 , ENG378H5 , ENG381H5 , ENG410H5 . ENG100H5 may not be counted towards program requirements. No course may be counted towards the program requirements of more than one of the 6 areas below. The major also requires the following courses:",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ENG280H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG202H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG203H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG101H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG201Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG204H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG205H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG206H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG259H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG269H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG275H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG372H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG375H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG380H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG382Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG384H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG396H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG400H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG414H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG415H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG416H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG464H5"
+              }
+            ],
+            "label": "Group 1: Literary Theory/Methods"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG271H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG272H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG273H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG274H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG309H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG310H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG317H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG326H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG334H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG343H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG346H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG348H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG351H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG355H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG356H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG359H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG367H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG368H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG369H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG370H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG371H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG379H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG426H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG434H5"
+              }
+            ],
+            "label": "Group 2: Race, Ethnicity, Diaspora, Indigeneity"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG223H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG300Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG301H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG303H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG304H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG307H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG311H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG312H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG313H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG320H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG321H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG326H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG327H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG330H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG331H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG335H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG336H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG339H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG460H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG461H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG462H5"
+              }
+            ],
+            "label": "Group 3: Literature Pre-1700"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG305H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG306Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG308Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG314H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG315H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG318H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG322Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG323H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG324Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG325H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG332H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG337H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG338H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG345H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG383H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG385H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG386H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG387H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG463H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG470H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG471H5"
+              }
+            ],
+            "label": "Group 4; Literature 1700-1900"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG215H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG252Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG255H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG271H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG346H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG352H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG353Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG354Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG357H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG358H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG361H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG362H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG392H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG393H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG424H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG425H5"
+              }
+            ],
+            "label": "Group 5; Canadian Literature"
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "ENG250Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG251H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG347H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG351H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG360H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG363Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG364Y5"
+              },
+              {
+                "type": "course",
+                "code": "ENG365H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG366H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG367H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG379H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG394H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG395H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG435H5"
+              },
+              {
+                "type": "course",
+                "code": "ENG436H5"
+              }
+            ],
+            "label": "Group 6; American Literature"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

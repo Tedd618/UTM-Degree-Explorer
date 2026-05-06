@@ -1,0 +1,76 @@
+{
+  "code": "CHM242H5",
+  "title": "Introductory Organic Chemistry I",
+  "credits": 0.5,
+  "prerequisites_raw": "CHM110H5 and a minimum grade of 60% in CHM120H5 and [( MAT132H5 and MAT134H5 ) or ( MAT135H5 and MAT136H5 ) or ( MAT137H5 and MAT139H5 ) or ( MAT157H5 and MAT159H5 ) or ( MAT134Y5 or MAT135Y5 or MAT137Y5 or MAT157Y5 )].",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CHM110H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "CHM120H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT134H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT136H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT137H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT139H5"
+              }
+            ]
+          },
+          {
+            "type": "AND",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "MAT157H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "MAT159H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

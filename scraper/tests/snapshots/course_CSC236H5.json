@@ -1,0 +1,28 @@
+{
+  "code": "CSC236H5",
+  "title": "Introduction to the Theory of Computation",
+  "credits": 0.5,
+  "prerequisites_raw": "(60% or higher in CSC111H5 )or((60% or higher inCSC148H5) and (60% or higher in MAT102H5 ))",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC111H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "CSC148H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "MAT102H5"
+          }
+        ]
+      }
+    ]
+  }
+}

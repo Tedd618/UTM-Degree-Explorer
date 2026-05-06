@@ -1,0 +1,228 @@
+{
+  "code": "ERMAJ1149",
+  "name": "Biology for Health Sciences",
+  "type": "Major",
+  "completion": {
+    "total_credits": {
+      "min": 8.5,
+      "max": null
+    },
+    "total_credits_note": "including at least 2.0 at the 300/400 level.",
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "BIO152H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO208H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO209H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO259H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO304H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO310H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO380H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO200H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO314H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO315H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO324H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO360H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO368H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO370Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO371H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO372H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO374H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO375H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO377H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO404H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO417H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO419H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO422H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO436H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO475H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO476H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO477H5"
+              },
+              {
+                "type": "course",
+                "code": "JBC472H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO320H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO403H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO408H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO409H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO411H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO429H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO318Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO328H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO329H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO341H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO342H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO347H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO361H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO405H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO414H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO427H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO443H5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

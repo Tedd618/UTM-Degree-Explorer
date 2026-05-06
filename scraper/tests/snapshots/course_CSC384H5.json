@@ -1,0 +1,32 @@
+{
+  "code": "CSC384H5",
+  "title": "Introduction to Artificial Intelligence",
+  "credits": 0.5,
+  "prerequisites_raw": "CSC263H5 and ( STA246H5 or STA256H5 or STA237H1 or STA238H1 or ECO227Y5 or ECE286H1 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "CSC263H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "STA246H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "STA256H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "ECO227Y5"
+          }
+        ]
+      }
+    ]
+  }
+}

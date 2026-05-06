@@ -516,6 +516,15 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
   const noteChildren = allChildren.filter(c =>   c.max === 0 && (c.children?.length ?? 0) === 0)
   const noteTexts    = noteChildren.map(c => c.label ?? '').filter(Boolean)
 
+  // Synthetic group label produced by scraper/patch_missing_requirements.py when
+  // the parser dropped a section of the calendar text and the post-processor
+  // recovered an approximate requirement from the raw description. We surface
+  // this so users know not to rely on it as authoritative.
+  const isAutoRecovered = (group.label ?? '').includes('auto-recovered')
+  const displayLabel = isAutoRecovered
+    ? (group.label ?? '').replace(/\s*\(auto-recovered\)\s*/i, '').trim() || 'Additional Requirements'
+    : (group.label || 'Requirements')
+
   useEffect(() => {
     if (group.met) setOpen(false)
   }, [group.met])
@@ -535,7 +544,15 @@ function GroupRow({ index, group, courseMap }: GroupRowProps) {
           {group.met ? '✓' : '✗'}
         </span>
         <span className={`flex-1 text-xs font-medium leading-snug ${group.met ? 'text-emerald-800' : 'text-gray-700'}`}>
-          {group.label || 'Requirements'}
+          {displayLabel}
+          {isAutoRecovered && (
+            <span
+              title="This requirement was recovered from the calendar's description text by an automated post-processor — the parser dropped this section. Treat as a best-effort approximation; verify against the official calendar."
+              className="ml-1.5 inline-flex items-center px-1.5 py-px rounded text-[9px] font-semibold uppercase tracking-wider bg-amber-100 text-amber-700 border border-amber-200 align-middle"
+            >
+              auto-detected
+            </span>
+          )}
         </span>
         {credStr && (
           <span className={`text-[11px] shrink-0 tabular-nums ${group.met ? 'text-emerald-600' : 'text-gray-400'}`}>

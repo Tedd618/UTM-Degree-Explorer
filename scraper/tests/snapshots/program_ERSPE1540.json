@@ -1,0 +1,248 @@
+{
+  "code": "ERSPE1540",
+  "name": "Applied Statistics",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 12.5,
+      "max": 13
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "CSC108H5"
+          },
+          {
+            "type": "course",
+            "code": "MAT102H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT132H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT135H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT134H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT136H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT233H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT257Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "MAT244H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "STA256H5"
+              },
+              {
+                "type": "course",
+                "code": "STA258H5"
+              },
+              {
+                "type": "course",
+                "code": "STA260H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "STA302H5"
+              },
+              {
+                "type": "course",
+                "code": "STA304H5"
+              },
+              {
+                "type": "course",
+                "code": "STA305H5"
+              },
+              {
+                "type": "course",
+                "code": "STA348H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 2,
+            "constraint": "at_least",
+            "description": "2.0 credits of STA at the 300/400 level",
+            "subject": "STA",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC322H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC311H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT302H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT311H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT332H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT334H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT344H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT337H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 credit of STA",
+            "subject": "STA",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "MAT133Y5 is included in the credit count only if the student also completes MAT233H5 (in which case MAT232H5 is not required).",
+      "Students are strongly encouraged to familiarize themselves with the 100-level calculus pre-requisites to select the correct courses.",
+      "ECO220Y5 cannot be substituted for STA256H5 or STA258H5 or STA260H5 .",
+      "ECO227Y5 can be substituted for STA256H5 and STA258H5 , but not for STA260H5 .",
+      "STA107H5 is highly recommended in first year, but it is not required.",
+      "MAT337H5 is highly recommended for students intending to pursue graduate level studies in statistics.",
+      "Students in the Applied Statistics Specialist may take at most 1.0 credit of Statistics Research Project Courses from STA378H5 , STA398H5 , STA478H5 and STA498H5 .",
+      "STA246H5 will not be permitted as a pre-requisite for any other 200+ level STA courses. In addition, STA246H5 cannot be used towards any program(s) in Applied Statistics or Mathematics. The course is intended only for students in Computer Science programs who will not need STA256H5 for other program requirements."
+    ]
+  }
+}

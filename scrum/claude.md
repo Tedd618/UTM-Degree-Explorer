@@ -79,11 +79,41 @@ colors instead of template-literal class names.
 
 ## Dev Commands
 ```bash
-cd app && npm run dev          # start dev server
-cd app && npx tsc --noEmit    # type-check (run before committing)
-cd scraper && python parse_requirements.py   # regenerate programs_structured.json
-cd scraper && python scrape_courses.py       # regenerate courses.json
+cd app && npm run dev                           # start dev server
+cd app && npx tsc --noEmit                      # type-check (run before committing)
+cd app && npm test -- --run                     # vitest (70 tests)
+python3 -m pytest scraper/tests/ -q             # pytest (165 tests, includes snapshots + integrity)
+python3 scraper/parse_requirements.py           # regenerate programs_structured.json
+python3 scraper/patch_missing_requirements.py   # post-process: fix dropped sections
+python3 scraper/reparse_prereqs.py              # regenerate course prereq ASTs
+python3 scraper/scrape_courses.py               # regenerate courses.json
 ```
+
+## Data Integrity (must run green before any commit that touches scraper/ or data/)
+
+The parser silently dropped requirement sections in 30%+ of UTM programs in
+the past — bugs only surfaced via user reports. To prevent regressions:
+
+| Tool | What it does |
+|------|--------------|
+| `scraper/tests/test_data_snapshots.py` | Locks in AST shape for 25 most-used programs + 45 representative courses. Fails on any change. |
+| `scraper/tests/test_data_integrity.py` | Runs `validate_data_integrity.py`; fails if missing-code count INCREASED for any program/course vs the baseline. |
+| `scraper/validation_baseline.json` | Frozen drift counts. Updated only when intentional improvements land. |
+
+**Workflow when you intentionally change parsed data:**
+```bash
+# After running parse_requirements.py / patch_missing_requirements.py / reparse_prereqs.py:
+python3 scraper/validate_data_integrity.py            # check for regressions
+python3 -m pytest scraper/tests/ -q                   # snapshot + integrity tests
+
+# If improvements are real and tests fail because the data got better:
+UPDATE_SNAPSHOTS=1 python3 -m pytest scraper/tests/test_data_snapshots.py
+python3 scraper/validate_data_integrity.py --update-baseline
+git diff scraper/tests/snapshots/ scraper/validation_baseline.json   # review!
+```
+Never refresh snapshots/baseline without inspecting the diff. A regression
+disguised as "tests failed, just regenerate them" is exactly what this
+infrastructure exists to catch.
 
 ## Git Workflow (see SPRINT.md for full flow)
 1. `git pull origin main` before starting any work

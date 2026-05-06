@@ -1,0 +1,187 @@
+{
+  "code": "ERSPE2722",
+  "name": "Financial Economics",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 13,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO100Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "ECO101H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ECO102H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT133Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT233H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT136H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT135H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT136H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "ECO206Y5"
+          },
+          {
+            "type": "course",
+            "code": "ECO208Y5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO227Y5"
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "STA256H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA260H5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO325H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO326H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ECO375H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "ECO358H5"
+              },
+              {
+                "type": "course",
+                "code": "ECO359H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 5,
+            "constraint": "at_least",
+            "description": "5.0 credits of ECO at the 300/400-level of which at least 1.5 credits must be chosen from ECO348H5 , ECO349H5 , ECO356H1 , ECO434H5 , ECO440H5 , ECO456H5 , ECO460H5 , ECO461H5 , ECO462H1 , ECO463H5 , ECO475H5 . Not more than 1.0 credit in Economic History.",
+            "subject": "ECO",
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [
+              "ECO348H5",
+              "ECO349H5",
+              "ECO356H1",
+              "ECO434H5",
+              "ECO440H5",
+              "ECO456H5",
+              "ECO460H5",
+              "ECO461H5",
+              "ECO462H1",
+              "ECO463H5",
+              "ECO475H5"
+            ],
+            "excluding": [],
+            "sub_constraints": [
+              {
+                "constraint": "at_least",
+                "n": 1.5,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Note : Only 1.0 ROP credit can be counted towards completion of an Economics program.",
+            "courses": []
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

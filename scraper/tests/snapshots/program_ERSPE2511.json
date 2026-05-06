@@ -1,0 +1,274 @@
+{
+  "code": "ERSPE2511",
+  "name": "Mathematical Sciences",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CSC108H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC148H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT102H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT157Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "CSC236H5"
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT202H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT244H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT247H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT257Y5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "STA256H5"
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "STA258H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "STA260H5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Higher Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT301H5"
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT334H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT354H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT392H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT302H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT315H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 2,
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT302H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT309H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT311H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT315H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT332H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT337H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT344H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 additional credits in MAT at the 400 level ( MAT401H5 is recommended)",
+            "subject": "MAT",
+            "min_level": 400,
+            "max_level": null,
+            "specific_courses": [
+              "MAT401H5"
+            ],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 additional credits at the 300/400 level in CSC or STA or MAT, except MAT322H5",
+            "subject": null,
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [
+              "MAT322H5"
+            ],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 additional credits in MAT at the 300+level, except MAT322H5",
+            "subject": "MAT",
+            "min_level": 300,
+            "max_level": 399,
+            "specific_courses": [],
+            "excluding": [
+              "MAT322H5"
+            ],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "Mathematical Sciences Specialists are strongly encouraged to enroll in MAT157H5 , MAT159H5 , MAT257Y5 , and MAT354H5 .",
+      "Students are strongly encouraged to familiarize themselves with the 100-level calculus pre-requisites to select the correct courses.",
+      "Students may replace MAT257Y5 with [( MAT232H5 or MAT233H5 ) and MAT236H5 ], but if they do then MAT337H5 AND MAT405H5 are required as part of \u201cHigher Years\u201d.",
+      "Students who do not feel ready for MAT257Y5 in their Second Year, may wish to take MAT232H5 that year, and then take MAT257Y5 in their Third Year."
+    ]
+  }
+}

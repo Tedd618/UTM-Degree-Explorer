@@ -1,0 +1,80 @@
+{
+  "code": "LIN476H5",
+  "title": "Language Diversity and Language Universals",
+  "credits": 0.5,
+  "prerequisites_raw": "LIN232H5 and LIN231H5 and 0.5 credit from [ JLP384H5 or LIN310H5 or LIN328H5 or LIN329H5 or LIN332H5 or LIN337H5 or LIN338H5 or LIN360H5 or LIN366H5 or JFL369H5 (formerly LIN369H5 ) or LIN374H5 or LIN375H5 or LIN376H5 or LIN411H5 or LIN419H5 or LIN479H5 ]",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "LIN232H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "LIN231H5"
+      },
+      {
+        "type": "OR",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "JLP384H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN310H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN328H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN329H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN332H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN337H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN338H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN360H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "JFL369H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN374H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN375H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN376H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN411H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "LIN479H5"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "code": "ERSPE2364",
+  "name": "Biology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 13.5,
+      "max": null
+    },
+    "total_credits_note": "including at least 6.0 credits at the 300/400 level, of which 1.0 credit must be at the 400 level.",
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO152H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO153H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "CHM110H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM120H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT132H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT134H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT135H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT136H5"
+                  }
+                ]
+              },
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT139H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT137Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "CLA201H5"
+              },
+              {
+                "type": "course",
+                "code": "ENV100Y5"
+              },
+              {
+                "type": "course",
+                "code": "ERS101H5"
+              },
+              {
+                "type": "course",
+                "code": "ERS120H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY136H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY137H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY100Y5"
+              },
+              {
+                "type": "course",
+                "code": "WRI173H5"
+              },
+              {
+                "type": "course",
+                "code": "WRI307H5"
+              }
+            ]
+          },
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT132H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT134H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO202H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO203H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO205H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO207H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO259H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third and Fourth Years",
+        "condition": null,
+        "items": [
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO313H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO314H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO409H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "BIO360H5"
+          },
+          {
+            "type": "text",
+            "text": "5.5 additional UTM BIO credits. At least 5.0 of these credits must be at the 300 level or above, of which at least 1.0 must be at the 400 level",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "It is recommended that students in the specialist program include at least 0.5 credit from each of four of the following groups:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Ecology and Field Biology : BIO311H5 or BIO312H5 or BIO313H5 or BIO329H5 or BIO330H5 or BIO331H5 or BIO333H5 or BIO337Y5 or BIO373H5 or BIO376H5 or BIO378H5 or BIO412H5 or BIO416H5 or BIO424H5 or BIO444H5 or BIO464H5",
+            "courses": [
+              "BIO311H5",
+              "BIO312H5",
+              "BIO313H5",
+              "BIO329H5",
+              "BIO330H5",
+              "BIO331H5",
+              "BIO333H5",
+              "BIO337Y5",
+              "BIO373H5",
+              "BIO376H5",
+              "BIO378H5",
+              "BIO412H5",
+              "BIO416H5",
+              "BIO424H5",
+              "BIO444H5",
+              "BIO464H5"
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO325H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO326H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO329H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO353H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO354H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO356H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO376H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO378H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Genetics and Evolution: BIO329H5 or BIO341H5 or BIO342H5 or BIO347H5 or BIO357H5 or BIO407H5 or BIO422H5 or BIO427H5 or BIO443H5 or BIO445H5 or BIO464H5",
+            "courses": [
+              "BIO329H5",
+              "BIO341H5",
+              "BIO342H5",
+              "BIO347H5",
+              "BIO357H5",
+              "BIO407H5",
+              "BIO422H5",
+              "BIO427H5",
+              "BIO443H5",
+              "BIO445H5",
+              "BIO464H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Cell, Molecular and Developmental Biology : BIO314H5 or BIO315H5 or BIO324H5 or BIO353H5 or BIO362H5 or ( BIO370Y5 or BIO371H5 ) or BIO368H5 or BIO372H5 or BIO374H5 or BIO375H5 or BIO380H5 or BIO404H5 or BIO407H5 or BIO408H5 or BIO417H5 or BIO419H5 or BIO422H5 or BIO458H5 or BIO475H5 or BIO476H5 or BIO477H5",
+            "courses": [
+              "BIO314H5",
+              "BIO315H5",
+              "BIO324H5",
+              "BIO353H5",
+              "BIO362H5",
+              "BIO370Y5",
+              "BIO371H5",
+              "BIO368H5",
+              "BIO372H5",
+              "BIO374H5",
+              "BIO375H5",
+              "BIO380H5",
+              "BIO404H5",
+              "BIO407H5",
+              "BIO408H5",
+              "BIO417H5",
+              "BIO419H5",
+              "BIO422H5",
+              "BIO458H5",
+              "BIO475H5",
+              "BIO476H5",
+              "BIO477H5"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Physiology and Behaviour : BIO208H5 or BIO304H5 or BIO310H5 or BIO312H5 or ( BIO318Y5 or BIO328H5 ) or BIO320H5 or BIO324H5 or BIO368H5 or BIO405H5 or BIO408H5 or BIO409H5 or BIO410H5 or BIO411H5 or BIO414H5 or BIO429H5 or BIO434H5",
+            "courses": [
+              "BIO208H5",
+              "BIO304H5",
+              "BIO310H5",
+              "BIO312H5",
+              "BIO318Y5",
+              "BIO328H5",
+              "BIO320H5",
+              "BIO324H5",
+              "BIO368H5",
+              "BIO405H5",
+              "BIO408H5",
+              "BIO409H5",
+              "BIO410H5",
+              "BIO411H5",
+              "BIO414H5",
+              "BIO429H5",
+              "BIO434H5"
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "GGR227H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR305H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR307H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR309H5"
+              },
+              {
+                "type": "course",
+                "code": "GGR311H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM347H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM361H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM362H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM372H5"
+              },
+              {
+                "type": "course",
+                "code": "CHM373H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY332H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY333H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY290H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY355H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY392H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY395H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY397H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT334H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT336H5"
+              },
+              {
+                "type": "course",
+                "code": "ANT340H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "BIO361H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO400Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO481Y5"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

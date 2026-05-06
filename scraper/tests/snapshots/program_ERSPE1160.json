@@ -1,0 +1,615 @@
+{
+  "code": "ERSPE1160",
+  "name": "Psychology",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 10,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY100Y5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY201H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY202H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY210H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY290H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY270H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY280H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY220H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY230H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY240H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY309H5"
+              }
+            ]
+          },
+          {
+            "type": "n_from",
+            "n": 0.5,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY319H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY329H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY368H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY369H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY379H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY389H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "0.5 credits at 300-level from Cluster A",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "0.5 credits at 300-level from Cluster B",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "0.5 credits at 300-level from Cluster C",
+            "courses": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1.5,
+            "constraint": "at_least",
+            "description": "1.5 additional credits at 300/400-level from any of Clusters A, B, C, D",
+            "subject": null,
+            "min_level": 300,
+            "max_level": 400,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "open_pool",
+            "n": 1,
+            "constraint": "at_least",
+            "description": "1.0 additional credit at any level from Clusters A, B, C, D",
+            "subject": null,
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          },
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY402H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY410H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY415H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY420H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY424H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY430H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY435H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY440H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY442Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY471H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY480H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY490H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY495H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP481H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP483H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO403H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "STA441H5"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Psychology Specialist Clusters",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Cluster A - Biological Bases of Behaviour:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Cluster B - Perception/Cognition/Communication:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Cluster C - Developmental/Abnormal/Social/Personality:",
+            "courses": []
+          },
+          {
+            "type": "text",
+            "text": "Cluster D - Research and Applications:",
+            "courses": []
+          }
+        ]
+      },
+      {
+        "label": "Additional Requirements (auto-recovered)",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1.0,
+            "items": [
+              {
+                "type": "course",
+                "code": "PSY402H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY410H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY415H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY420H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY424H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY430H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY435H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY440H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY442Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY471H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY480H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY490H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY495H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP481H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP483H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO403H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO407H5"
+              },
+              {
+                "type": "course",
+                "code": "STA441H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY318H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY346H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY351H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY352H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY353H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY354H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY355H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY362H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY372H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY391H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY392H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY393H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY394H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY395H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY397H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY398H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO304H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO310H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO318Y5"
+              },
+              {
+                "type": "course",
+                "code": "BIO328H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY312H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY316H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY371H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY385H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY387H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP285H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP315H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP383H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP384H5"
+              },
+              {
+                "type": "course",
+                "code": "JLP388H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY220H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY230H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY240H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY310H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY311H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY313H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY314H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY317H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY320H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY321H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY324H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY325H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY327H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY328H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY330H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY331H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY333H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY340H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY341H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY343H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY344H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY345H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY399H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY399Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY400Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY401Y5"
+              },
+              {
+                "type": "course",
+                "code": "PSY403H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY404H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY405H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY406H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY499H5"
+              },
+              {
+                "type": "course",
+                "code": "PSY499Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": []
+  }
+}

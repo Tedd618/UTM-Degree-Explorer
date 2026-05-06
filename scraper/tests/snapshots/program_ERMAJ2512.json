@@ -1,0 +1,280 @@
+{
+  "code": "ERMAJ2512",
+  "name": "Applied Mathematics (Science)",
+  "type": "Program",
+  "completion": {
+    "total_credits": {
+      "min": 8.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "MAT102H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT132H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT135H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT137H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT134H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT136H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT139H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT159H5"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "one_of",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "MAT137Y5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT157Y5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT223H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT240H5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "ISP100H5"
+          }
+        ]
+      },
+      {
+        "label": "Second year",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "MAT244H5"
+          },
+          {
+            "type": "course",
+            "code": "STA256H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "all_of",
+                "items": [
+                  {
+                    "type": "one_of",
+                    "items": [
+                      {
+                        "type": "course",
+                        "code": "MAT232H5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT233H5"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT236H5"
+                  }
+                ]
+              },
+              {
+                "type": "course",
+                "code": "MAT257Y5"
+              }
+            ]
+          },
+          {
+            "type": "course",
+            "code": "STA260H5"
+          },
+          {
+            "type": "course",
+            "code": "MAT264H5"
+          }
+        ]
+      },
+      {
+        "label": "Higher years",
+        "condition": null,
+        "items": [
+          {
+            "type": "course",
+            "code": "MAT311H5"
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT322H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT332H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT334H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT354H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT386H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT406H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT486H5"
+              },
+              {
+                "type": "course",
+                "code": "STA312H5"
+              },
+              {
+                "type": "course",
+                "code": "STA313H5"
+              },
+              {
+                "type": "course",
+                "code": "STA348H5"
+              },
+              {
+                "type": "course",
+                "code": "STA380H5"
+              }
+            ]
+          },
+          {
+            "type": "one_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "MAT332H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT322H5"
+              },
+              {
+                "type": "course",
+                "code": "STA302H5"
+              },
+              {
+                "type": "course",
+                "code": "STA312H5"
+              },
+              {
+                "type": "course",
+                "code": "STA313H5"
+              },
+              {
+                "type": "course",
+                "code": "STA348H5"
+              },
+              {
+                "type": "course",
+                "code": "STA380H5"
+              },
+              {
+                "type": "course",
+                "code": "CSC338H5"
+              }
+            ]
+          },
+          {
+            "type": "open_pool",
+            "n": 0.5,
+            "constraint": "at_least",
+            "description": "0.5 additional credits in MAT at 300/400 level",
+            "subject": "MAT",
+            "min_level": null,
+            "max_level": null,
+            "specific_courses": [],
+            "excluding": [],
+            "sub_constraints": []
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "MAT305H5 or MAT337H5 or MAT386H5 or MAT406H5 or MAT486H5 are recommended."
+    ]
+  }
+}

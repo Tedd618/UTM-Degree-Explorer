@@ -1,0 +1,53 @@
+{
+  "code": "FSC483H5",
+  "title": "Collaborative Research Internship",
+  "credits": 0.5,
+  "prerequisites_raw": "Completion of FSC340H5 or ( PSY201H5 and PSY202H5 ) Completion of ( ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5 ) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Students seeking 'crime scene' related research must have completed FSC302H5 or FSC303H5 . Course application is required. See the Forensic Science Program website for details.",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "FSC340H5"
+      },
+      {
+        "type": "AND",
+        "operands": [
+          {
+            "type": "COURSE",
+            "code": "PSY201H5"
+          },
+          {
+            "type": "COURSE",
+            "code": "PSY202H5"
+          },
+          {
+            "type": "OR",
+            "operands": [
+              {
+                "type": "COURSE",
+                "code": "ANT407H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "BIO259H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "FSC341H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "STA220H5"
+              },
+              {
+                "type": "COURSE",
+                "code": "PSY201H5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

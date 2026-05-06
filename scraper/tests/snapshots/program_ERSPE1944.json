@@ -1,0 +1,164 @@
+{
+  "code": "ERSPE1944",
+  "name": "Biophysics",
+  "type": "Specialist",
+  "completion": {
+    "total_credits": {
+      "min": 14.5,
+      "max": null
+    },
+    "total_credits_note": null,
+    "groups": [
+      {
+        "label": "First Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY146H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY147H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Second Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY241H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY245H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP221H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP265H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT232H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT236H5"
+              },
+              {
+                "type": "course",
+                "code": "MAT244H5"
+              },
+              {
+                "type": "course",
+                "code": "BIO206H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Third Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "all_of",
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY325H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY332H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY333H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY347H5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Fourth Year",
+        "condition": null,
+        "items": [
+          {
+            "type": "n_from",
+            "n": 1,
+            "items": [
+              {
+                "type": "course",
+                "code": "PHY426H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP463H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP421H5"
+              },
+              {
+                "type": "course",
+                "code": "PHY473H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP410H5"
+              },
+              {
+                "type": "course",
+                "code": "JCP422H5"
+              },
+              {
+                "type": "course",
+                "code": "CPS400Y5"
+              },
+              {
+                "type": "course",
+                "code": "CPS489Y5"
+              },
+              {
+                "type": "course",
+                "code": "MAT322H5"
+              },
+              {
+                "type": "course",
+                "code": "JCB487Y5"
+              },
+              {
+                "type": "course",
+                "code": "PHY399Y5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "At least 65% mark in PHY147H5",
+      "Recommended 1st year MAT courses: ( MAT137H5 or MAT157H5 ) and ( MAT139H5 or MAT159H5 )",
+      "Students who have completed PHY136H5 and PHY137H5 should speak with the Department of Chemical & Physical Sciences Academic Counsellor."
+    ]
+  }
+}

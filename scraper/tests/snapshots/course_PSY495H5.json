@@ -1,0 +1,33 @@
+{
+  "code": "PSY495H5",
+  "title": "Special Topics in Neuropsychology",
+  "credits": 0.5,
+  "prerequisites_raw": "PSY290H5 and 1.0 credit from ( PSY315H5 or PSY318H5 or PSY346H5 or PSY362H5 or PSY372H5 or PSY374H5 or PSY379H5 or PSY393H5 or PSY394H5 or PSY397H5 or JLP383H5 )",
+  "prerequisites": {
+    "type": "AND",
+    "operands": [
+      {
+        "type": "LEVEL_POOL",
+        "n": 1.0,
+        "subjects": null,
+        "min_level": null,
+        "max_level": null,
+        "specific_courses": [
+          "PSY318H5",
+          "PSY346H5",
+          "PSY362H5",
+          "PSY372H5",
+          "PSY379H5",
+          "PSY393H5",
+          "PSY394H5",
+          "PSY397H5",
+          "JLP383H5"
+        ]
+      },
+      {
+        "type": "COURSE",
+        "code": "PSY290H5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "code": "STA304H5",
+  "title": "Surveys, Sampling and Observational Data",
+  "credits": 0.5,
+  "prerequisites_raw": "STA258H5 or STA260H5 or STA238H1 or STA255H1 or ECO227Y5",
+  "prerequisites": {
+    "type": "OR",
+    "operands": [
+      {
+        "type": "COURSE",
+        "code": "STA258H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "STA260H5"
+      },
+      {
+        "type": "COURSE",
+        "code": "ECO227Y5"
+      }
+    ]
+  }
+}

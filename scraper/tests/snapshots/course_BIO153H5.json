@@ -1,0 +1,10 @@
+{
+  "code": "BIO153H5",
+  "title": "Diversity of Organisms",
+  "credits": 0.5,
+  "prerequisites_raw": "BIO152H5",
+  "prerequisites": {
+    "type": "COURSE",
+    "code": "BIO152H5"
+  }
+}
