@@ -59,6 +59,7 @@
     "ERMAJ1465": 13,
     "ERMAJ1540": 5,
     "ERMAJ1645": 25,
+    "ERMAJ1688": 1,
     "ERMAJ1775": 3,
     "ERMAJ1850": 23,
     "ERMAJ1944": 8,
@@ -105,8 +106,8 @@
   },
   "summary": {
     "courses_with_drift": 46,
-    "programs_with_drift": 53,
+    "programs_with_drift": 54,
     "total_course_missing": 52,
-    "total_program_missing": 530
+    "total_program_missing": 531
   }
 }

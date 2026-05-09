@@ -216,6 +216,147 @@ def fix_criminology(prog, raw_text=None):
                 it['specific_courses'] = filtered
 
 
+# ── CS programs: dual-track First Year (CMP1 split) ─────────────────────────
+#
+# Starting Fall/Winter 2026-2027, UTM CS programs split First Year requirements
+# into two tracks based on admission category:
+#
+#   OLD track — admitted F-W 2025-26 or earlier
+#   NEW track — admitted to CMP1 admission category after F-W 2025-26
+#
+# The parser flattened these into nonsensical OR/AND mixes. The fix replaces
+# the First Year group's items with one_of[old_track, new_track].
+#
+# Source: https://utm.calendar.utoronto.ca/section/Mathematical-Computational-Sciences#computer-science
+
+def _math_option(extra_y_codes: list[str]) -> dict:
+    """Math option used in all CS First-Year tracks.
+
+    Always: [(MAT132/135/137/157) and (MAT134/136/139/159)] OR <Y-courses>
+    """
+    return {
+        "type": "one_of",
+        "items": [
+            {
+                "type": "all_of",
+                "items": [
+                    {"type": "one_of", "items": [
+                        {"type": "course", "code": "MAT132H5"},
+                        {"type": "course", "code": "MAT135H5"},
+                        {"type": "course", "code": "MAT137H5"},
+                        {"type": "course", "code": "MAT157H5"},
+                    ]},
+                    {"type": "one_of", "items": [
+                        {"type": "course", "code": "MAT134H5"},
+                        {"type": "course", "code": "MAT136H5"},
+                        {"type": "course", "code": "MAT139H5"},
+                        {"type": "course", "code": "MAT159H5"},
+                    ]},
+                ],
+            },
+            *[{"type": "course", "code": c} for c in extra_y_codes],
+        ],
+    }
+
+
+def _replace_first_year_items(prog: dict, new_items: list[dict]) -> bool:
+    """Replace items of the First Year group. Returns True if found."""
+    for g in prog.get("completion", {}).get("groups", []):
+        if (g.get("label") or "").strip().lower().startswith("first year"):
+            g["items"] = new_items
+            return True
+    return False
+
+
+@override("ERMAJ1688")
+def fix_cs_major(prog):
+    """
+    CS Major First Year (per current calendar):
+      OLD track: CSC108H5 + CSC148H5 + ISP100H5 + MAT102H5 + math_option(MAT137Y5,MAT157Y5)
+      NEW track: CSC110Y5 + CSC111H5 + ISP100H5 + math_option(MAT134Y5,MAT135Y5,MAT137Y5,MAT157Y5)
+    """
+    old_track = {
+        "type": "all_of",
+        "label": "Admitted F-W 2025-26 or earlier",
+        "items": [
+            {"type": "course", "code": "CSC108H5"},
+            {"type": "course", "code": "CSC148H5"},
+            {"type": "course", "code": "ISP100H5"},
+            {"type": "course", "code": "MAT102H5"},
+            _math_option(["MAT137Y5", "MAT157Y5"]),
+        ],
+    }
+    new_track = {
+        "type": "all_of",
+        "label": "Admitted to CMP1 after F-W 2025-26",
+        "items": [
+            {"type": "course", "code": "CSC110Y5"},
+            {"type": "course", "code": "CSC111H5"},
+            {"type": "course", "code": "ISP100H5"},
+            _math_option(["MAT134Y5", "MAT135Y5", "MAT137Y5", "MAT157Y5"]),
+        ],
+    }
+    _replace_first_year_items(prog, [{"type": "one_of", "items": [old_track, new_track]}])
+
+
+@override("ERSPE1688")
+def fix_cs_specialist(prog):
+    """
+    CS Specialist First Year — same dual-track structure as Major.
+    """
+    old_track = {
+        "type": "all_of",
+        "label": "Admitted F-W 2025-26 or earlier",
+        "items": [
+            {"type": "course", "code": "CSC108H5"},
+            {"type": "course", "code": "CSC148H5"},
+            {"type": "course", "code": "ISP100H5"},
+            {"type": "course", "code": "MAT102H5"},
+            _math_option(["MAT137Y5", "MAT157Y5"]),
+        ],
+    }
+    new_track = {
+        "type": "all_of",
+        "label": "Admitted to CMP1 after F-W 2025-26",
+        "items": [
+            {"type": "course", "code": "CSC110Y5"},
+            {"type": "course", "code": "CSC111H5"},
+            {"type": "course", "code": "ISP100H5"},
+            _math_option(["MAT134Y5", "MAT135Y5", "MAT137Y5", "MAT157Y5"]),
+        ],
+    }
+    _replace_first_year_items(prog, [{"type": "one_of", "items": [old_track, new_track]}])
+
+
+@override("ERMIN1688")
+def fix_cs_minor(prog):
+    """
+    CS Minor First Year (calendar text):
+      "( CSC108H5 and MAT102H5 ) or CSC110Y5 ; CSC111H5 or CSC148H5"
+    Modeled the same dual-track way for consistency:
+      OLD track: CSC108H5 + CSC148H5 + MAT102H5
+      NEW track: CSC110Y5 + CSC111H5
+    """
+    old_track = {
+        "type": "all_of",
+        "label": "Admitted F-W 2025-26 or earlier",
+        "items": [
+            {"type": "course", "code": "CSC108H5"},
+            {"type": "course", "code": "CSC148H5"},
+            {"type": "course", "code": "MAT102H5"},
+        ],
+    }
+    new_track = {
+        "type": "all_of",
+        "label": "Admitted to CMP1 after F-W 2025-26",
+        "items": [
+            {"type": "course", "code": "CSC110Y5"},
+            {"type": "course", "code": "CSC111H5"},
+        ],
+    }
+    _replace_first_year_items(prog, [{"type": "one_of", "items": [old_track, new_track]}])
+
+
 def auto_patch(prog: dict, raw_prog: dict, all_course_codes: list[str]) -> dict:
     """Append n_from nodes for raw segments with ≥3 missing courses.
 
@@ -284,6 +425,18 @@ def main():
     raw_list = raw_data if isinstance(raw_data, list) else raw_data.get('programs', [])
     struct_list = struct_data if isinstance(struct_data, list) else struct_data.get('programs', [])
     raw_by_code = {p['code']: p for p in raw_list}
+
+    # Idempotency: drop any pre-existing auto-recovered groups before re-patching.
+    # The auto-patcher appends to that group, so re-running without this step
+    # would duplicate every recovered node on each run.
+    for prog in struct_list:
+        groups = prog.get('completion', {}).get('groups', [])
+        if not groups:
+            continue
+        prog['completion']['groups'] = [
+            g for g in groups
+            if (g.get('label') or '') != 'Additional Requirements (auto-recovered)'
+        ]
 
     stats = {'patched': 0, 'no_missing': 0, 'no_action': 0,
              'overrides': 0, 'new_nodes': 0}

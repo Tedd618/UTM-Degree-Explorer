@@ -18,10 +18,15 @@
             "items": [
               {
                 "type": "all_of",
+                "label": "Admitted F-W 2025-26 or earlier",
                 "items": [
                   {
                     "type": "course",
                     "code": "CSC108H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSC148H5"
                   },
                   {
                     "type": "course",
@@ -30,21 +35,18 @@
                 ]
               },
               {
-                "type": "course",
-                "code": "CSC110Y5"
-              }
-            ]
-          },
-          {
-            "type": "one_of",
-            "items": [
-              {
-                "type": "course",
-                "code": "CSC111H5"
-              },
-              {
-                "type": "course",
-                "code": "CSC148H5"
+                "type": "all_of",
+                "label": "Admitted to CMP1 after F-W 2025-26",
+                "items": [
+                  {
+                    "type": "course",
+                    "code": "CSC110Y5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSC111H5"
+                  }
+                ]
               }
             ]
           }

@@ -407,9 +407,24 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
     )
   }
 
+  // ── Track label prefix (used for dual-track CS First Year, etc.) ──
+  // Renders the trackLabel as a small badge before the actual all_of/one_of body.
+  const trackPrefix = node.trackLabel ? (
+    <span
+      className={`text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded
+        ${node.met
+          ? 'bg-emerald-100 text-emerald-700'
+          : 'bg-gray-100 text-gray-500'
+        }`}
+      title={node.trackLabel}
+    >
+      {node.trackLabel}
+    </span>
+  ) : null
+
   // ── All of: join children with "and" ──
   if (label === 'All of:') {
-    return (
+    const body = (
       <span className="inline-flex flex-wrap items-center gap-1">
         {children.map((child, i) => (
           <React.Fragment key={i}>
@@ -419,6 +434,9 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
         ))}
       </span>
     )
+    return trackPrefix ? (
+      <span className="inline-flex flex-wrap items-center gap-1.5">{trackPrefix}{body}</span>
+    ) : body
   }
 
   // ── One of: show bracketed alternatives (collapse when large) ──
@@ -426,7 +444,7 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
     if (children.length > ONE_OF_COLLAPSE_THRESHOLD) {
       return <CollapsibleOneOfNode node={node} courseMap={courseMap} depth={depth} />
     }
-    return (
+    const body = (
       <span className={`inline-flex flex-wrap items-center gap-1 rounded-md px-1.5 py-0.5 border border-dashed
         ${node.met ? 'border-emerald-300 bg-emerald-50/40' : 'border-gray-300 bg-gray-50/40'}
       `}>
@@ -438,6 +456,9 @@ function InlineNode({ node, courseMap, depth = 0 }: InlineNodeProps) {
         ))}
       </span>
     )
+    return trackPrefix ? (
+      <span className="inline-flex flex-wrap items-center gap-1.5">{trackPrefix}{body}</span>
+    ) : body
   }
 
   // ── N from / Choose: credit pool — delegate to separate component to satisfy hooks rules ──

@@ -14,168 +14,175 @@
         "condition": null,
         "items": [
           {
-            "type": "all_of",
-            "items": [
-              {
-                "type": "course",
-                "code": "CSC108H5"
-              },
-              {
-                "type": "course",
-                "code": "CSC148H5"
-              },
-              {
-                "type": "course",
-                "code": "ISP100H5"
-              }
-            ]
-          },
-          {
-            "type": "course",
-            "code": "MAT102H5"
-          },
-          {
             "type": "one_of",
             "items": [
               {
                 "type": "all_of",
+                "label": "Admitted F-W 2025-26 or earlier",
                 "items": [
                   {
-                    "type": "one_of",
-                    "items": [
-                      {
-                        "type": "course",
-                        "code": "MAT132H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT135H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT137H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT157H5"
-                      }
-                    ]
+                    "type": "course",
+                    "code": "CSC108H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSC148H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ISP100H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "MAT102H5"
                   },
                   {
                     "type": "one_of",
                     "items": [
                       {
-                        "type": "course",
-                        "code": "MAT134H5"
+                        "type": "all_of",
+                        "items": [
+                          {
+                            "type": "one_of",
+                            "items": [
+                              {
+                                "type": "course",
+                                "code": "MAT132H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT135H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT137H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT157H5"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "one_of",
+                            "items": [
+                              {
+                                "type": "course",
+                                "code": "MAT134H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT136H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT139H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT159H5"
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "type": "course",
-                        "code": "MAT136H5"
+                        "code": "MAT137Y5"
                       },
                       {
                         "type": "course",
-                        "code": "MAT139H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT159H5"
+                        "code": "MAT157Y5"
                       }
                     ]
                   }
                 ]
               },
               {
-                "type": "course",
-                "code": "MAT137Y5"
-              },
-              {
-                "type": "course",
-                "code": "MAT157Y5"
-              }
-            ]
-          },
-          {
-            "type": "all_of",
-            "items": [
-              {
-                "type": "course",
-                "code": "CSC110Y5"
-              },
-              {
-                "type": "course",
-                "code": "CSC111H5"
-              }
-            ]
-          },
-          {
-            "type": "course",
-            "code": "ISP100H5"
-          },
-          {
-            "type": "one_of",
-            "items": [
-              {
                 "type": "all_of",
+                "label": "Admitted to CMP1 after F-W 2025-26",
                 "items": [
                   {
-                    "type": "one_of",
-                    "items": [
-                      {
-                        "type": "course",
-                        "code": "MAT132H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT135H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT137H5"
-                      },
-                      {
-                        "type": "course",
-                        "code": "MAT157H5"
-                      }
-                    ]
+                    "type": "course",
+                    "code": "CSC110Y5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "CSC111H5"
+                  },
+                  {
+                    "type": "course",
+                    "code": "ISP100H5"
                   },
                   {
                     "type": "one_of",
                     "items": [
                       {
-                        "type": "course",
-                        "code": "MAT134H5"
+                        "type": "all_of",
+                        "items": [
+                          {
+                            "type": "one_of",
+                            "items": [
+                              {
+                                "type": "course",
+                                "code": "MAT132H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT135H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT137H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT157H5"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "one_of",
+                            "items": [
+                              {
+                                "type": "course",
+                                "code": "MAT134H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT136H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT139H5"
+                              },
+                              {
+                                "type": "course",
+                                "code": "MAT159H5"
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "type": "course",
-                        "code": "MAT136H5"
+                        "code": "MAT134Y5"
                       },
                       {
                         "type": "course",
-                        "code": "MAT139H5"
+                        "code": "MAT135Y5"
                       },
                       {
                         "type": "course",
-                        "code": "MAT159H5"
+                        "code": "MAT137Y5"
+                      },
+                      {
+                        "type": "course",
+                        "code": "MAT157Y5"
                       }
                     ]
                   }
                 ]
-              },
-              {
-                "type": "course",
-                "code": "MAT134Y5"
-              },
-              {
-                "type": "course",
-                "code": "MAT135Y5"
-              },
-              {
-                "type": "course",
-                "code": "MAT137Y5"
-              },
-              {
-                "type": "course",
-                "code": "MAT157Y5"
               }
             ]
           }

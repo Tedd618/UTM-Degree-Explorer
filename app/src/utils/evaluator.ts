@@ -65,6 +65,13 @@ export interface NodeEvalResult {
   poolCourses?: string[]
   /** For open_pool nodes: subset of poolCourses the user has already taken */
   takenFromPool?: string[]
+  /**
+   * Optional human-readable track / branch label preserved from the AST.
+   * Used e.g. for the dual-track CS First Year ("Admitted F-W 2025-26 or earlier"
+   * vs "Admitted to CMP1 after F-W 2025-26"). The renderer surfaces this above
+   * the standard "All of:" / "One of:" group rendering.
+   */
+  trackLabel?: string
 }
 
 /** Normalize a raw course-level number to its century (367→300, 490→400, 215→200). */
@@ -95,16 +102,26 @@ export function evaluateNode(node: RequirementNode, userCodes: Set<string>, cour
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const earnedCredits = children.reduce((sum, c) => sum + c.value, 0)
       const totalCredits = children.reduce((sum, c) => sum + c.max, 0)
-      return { met: children.every(c => c.met), value: earnedCredits, max: totalCredits, label: 'All of:', children }
+      // `label` stays as "All of:" so the renderer's joiner logic ("and") still
+      // fires. Custom track labels (e.g. "Admitted F-W 2025-26 or earlier" for
+      // dual-track CS First Year) ride along in `trackLabel`.
+      const trackLabel = (node as any).label as string | undefined
+      return {
+        met: children.every(c => c.met),
+        value: earnedCredits, max: totalCredits, label: 'All of:', children,
+        ...(trackLabel ? { trackLabel } : {}),
+      }
     }
     case 'one_of': {
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
       const anyMet = children.some(c => c.met)
-      // max = minimum path cost (fewest credits needed to satisfy any one branch)
       const minMax = children.length > 0 ? Math.min(...children.map(c => c.max)) : 0
-      // value = credits earned toward the best-progress branch
       const bestValue = children.length > 0 ? Math.max(...children.map(c => c.value)) : 0
-      return { met: anyMet, value: Math.min(bestValue, minMax), max: minMax, label: 'One of:', children }
+      const trackLabel = (node as any).label as string | undefined
+      return {
+        met: anyMet, value: Math.min(bestValue, minMax), max: minMax, label: 'One of:', children,
+        ...(trackLabel ? { trackLabel } : {}),
+      }
     }
     case 'n_from': {
       const children = (node.items || []).map(child => evaluateNode(child, userCodes, courseMap))
