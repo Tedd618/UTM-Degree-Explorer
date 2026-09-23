@@ -2,7 +2,7 @@
 
 A local-first web app for UTM students to plan their degree, validate prerequisites, and track program progress. Built on top of a fully scraped copy of the [UTM Academic Calendar](https://utm.calendar.utoronto.ca/).
 
-See [`PLAN.md`](PLAN.md) for the full roadmap and upcoming features.
+See [`PLAN.md`](scrum/PLAN.md) for the full roadmap and upcoming features.
 
 ---
 
@@ -67,7 +67,8 @@ UTM-Degree-Explorer/
 │   ├── scrape_missing_courses.py     # Utility — probe gap codes not in paginated search
 │   └── requirements.txt              # Python dependencies (requests, beautifulsoup4)
 │
-├── PLAN.md                           # Full project roadmap and architecture
+├── scrum/
+│   └── PLAN.md                       # Full project roadmap and architecture
 └── README.md
 ```
 
@@ -282,7 +283,7 @@ This is used throughout the app to compare semesters without string parsing.
 
 ## Upcoming features
 
-See [`PLAN.md`](PLAN.md) for the full milestone breakdown. Next planned work:
+See [`PLAN.md`](scrum/PLAN.md) for the full milestone breakdown. Next planned work:
 
 - **Milestone 7** — Prerequisite DAG visualizer
 - **Milestone 8** — Polish, PDF export, mobile layout
